@@ -1,0 +1,7 @@
+_targets
+data/*
+!data/ppg_issues_edited.csv
+!data/ppg_comments.csv
+!data/ppgi_taxonomy_mod.csv
+*.docx
+*.pdf

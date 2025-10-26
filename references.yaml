@@ -1,0 +1,2413 @@
+---
+references:
+- id: adjie2007independent
+  abstract: >-
+    Ceratopteris thalictroides (L.) Brongn is a tetraploid fern species that
+    contains at least three cryptic species, the south, the north and the third
+    type. In this study we combined data from both chloroplast DNA (cpDNA) and
+    nuclear DNA sequences of three diploid species and three cryptic species of
+    C. thalictroides to unravel the origin of the cryptic species, particularly
+    of the reticulate relationships among the diploid and tetraploid taxa in the
+    genus Ceratopteris. Of the three diploid species examined, C. cornuta had
+    cpDNA identical to that of the tetraploid third type plants, and this
+    diploid species is a possible maternal ancestor of the tetraploid third
+    type. Analysis of the homologue of the Arabidopsis thaliana LEAFY gene
+    (CLFY1) identified ten alleles in the genus Ceratopteris, with six alleles
+    found in C. thalictroides. The unrooted tree of the CLFY1 gene revealed four
+    clusters. Each cryptic species showed fixed heterozygosity at the CLFY1
+    locus and had two alleles from different clusters of the CLFY1 tree.
+    Consideration of the cpDNA sequences, CLFY1 genotypes of the cryptic species
+    and CLFY1 gene tree in concert suggested that the cryptic species of C.
+    thalictroides had originated through independent allopolyploidization events
+    involving C. cornuta and two unknown hypothetical diploid species.
+  author:
+    - family: Adjie
+      given: Bayu
+    - family: Masuyama
+      given: Shigeo
+    - family: Ishikawa
+      given: Hiroshi
+    - family: Watano
+      given: Yasuyuki
+  citation-key: adjie2007independent
+  container-title: Journal of Plant Research
+  issue: '1'
+  issued:
+    - year: 2007
+  page: 129–138
+  title: >-
+    Independent origins of tetraploid cryptic species in the fern Ceratopteris
+    thalictroides
+  type: article-journal
+  URL: http://dx.doi.org/10.1007/s10265-006-0032-5
+  volume: '120'
+
+- id: adjie2008molecular
+  author:
+    - family: Adjie
+      given: Bayu
+    - family: Takamiya
+      given: Masayuki
+    - family: Ohto
+      given: Michihito
+    - family: Ohsawa
+      given: Takeshi A
+    - family: Watano
+      given: Yasuyuki
+  citation-key: adjie2008molecular
+  container-title: Acta Phytotaxonomica et Geobotanica
+  issue: '2'
+  issued:
+    - year: 2008
+  page: 79–95
+  title: >-
+    Molecular phylogeny of the lady fern genus Athyrium in Japan based on
+    chloroplast rbcL and trnL-trnF sequences
+  type: article-journal
+  volume: '59'
+
+- id: angiospermphylogenygroup2009update
+  author:
+    - literal: Angiosperm Phylogeny Group
+  citation-key: angiospermphylogenygroup2009update
+  container-title: Botanical Journal of the Linnean Society
+  issued:
+    - year: 2009
+  page: 105–121
+  title: >-
+    An update of the Angiosperm Phylogeny Group classification for the orders
+    and families of flowering plants: APG III.
+  type: article-journal
+  volume: '161'
+
+- id: angiospermphylogenygroup2016update
+  author:
+    - literal: Angiosperm Phylogeny Group
+  citation-key: angiospermphylogenygroup2016update
+  container-title: Botanical Journal of the Linnean Society
+  issued:
+    - year: 2016
+  page: 1-20
+  title: >-
+    An update of the Angiosperm Phylogeny Group classification for the orders
+    and families of flowering plants: APG IV
+  type: article-journal
+  volume: '181'
+
+- id: beck2010diploidsfirst
+  author:
+    - family: Beck
+      given: James B
+    - family: Windham
+      given: Michael D
+    - family: Yatskievych
+      given: George
+    - family: Pryer
+      given: Kathleen M
+  citation-key: beck2010diploidsfirst
+  container-title: Systematic Botany
+  issue: '2'
+  issued:
+    - year: 2010
+  page: 223–234
+  title: >-
+    A diploids-first approach to species delimitation and interpreting polyploid
+    evolution in the fern genus Astrolepis (Pteridaceae)
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=related:uwybbsPU8U8J
+  volume: '35'
+
+- id: benham1992generic
+  author:
+    - family: Benham
+      given: D M
+    - family: Windham
+      given: M D
+  citation-key: benham1992generic
+  container-title: American Fern Journal
+  issued:
+    - year: 1992
+  page: 47–58
+  title: Generic affinities of the star-scaled cloak ferns
+  type: article-journal
+  volume: '82'
+
+- id: bernhardi1805dritter
+  author:
+    - family: Bernhardi
+      given: Johann Jakob
+  citation-key: bernhardi1805dritter
+  container-title: Neues Journal für die Botanik
+  issue: '2'
+  issued:
+    - year: 1805
+  page: 1–50
+  title: Dritter Versuch einer Anordnung der Farrnkräuter
+  type: article-journal
+  volume: '1'
+
+- id: bishop1974revision
+  author:
+    - family: Bishop
+      given: L E
+  citation-key: bishop1974revision
+  container-title: Brittonia
+  issue: '3'
+  issued:
+    - year: 1974
+  page: 217–240
+  title: Revision of the genus Adenophorus (Grammitidaceae)
+  type: article-journal
+  volume: '26'
+
+- id: bomfleur2015osmunda
+  abstract: BMC Evolutionary Biology, 2015, doi:10.1186/s12862-015-0400-7
+  author:
+    - family: Bomfleur
+      given: Benjamin
+    - family: Grimm
+      given: Guido W
+    - family: McLoughlin
+      given: Stephen
+  citation-key: bomfleur2015osmunda
+  container-title: BMC Evolutionary Biology
+  DOI: 10.1186/s12862-015-0400-7
+  issued:
+    - year: 2015
+  page: 1–25
+  publisher: BMC Evolutionary Biology
+  title: >-
+    Osmunda pulchella sp. nov. from the Jurassic of Sweden—reconciling molecular
+    and fossil evidence in the phylogeny of modern royal ferns (Osmundaceae)
+  type: article-journal
+  URL: http://dx.doi.org/10.1186/s12862-015-0400-7
+
+- id: cardenas2016newly
+  author:
+    - family: Cárdenas
+      given: Glenda G
+    - family: Tuomisto
+      given: Hanna
+    - family: Lehtonen
+      given: Samuli
+  citation-key: cardenas2016newly
+  container-title: Kew Bulletin
+  DOI: 10.1007/s12225-016-9618-9
+  issue: '1'
+  issued:
+    - year: 2016
+  language: English
+  page: '5'
+  title: >-
+    Newly discovered diversity in the tropical fern genus Metaxya based on
+    morphology and molecular phylogenetic analyses
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s12225-016-9618-9
+  volume: '71'
+
+- id: cardenas2023third
+  abstract: >-
+    The current understanding of fern phylogeny is primarily based on plastid
+    and nuclear sequences, but the third genome—the mitogenome—has remained
+    practically unstudied. We inferred the first broad scale fern phylogeny
+    based on mitogenomic data, obtained from the One Thousand Plant
+    Transcriptomes Initiative project, and compared it with the plastid
+    phylogeny. The trees were mostly congruent and corresponded to the current
+    understanding of the fern phylogeny, but we observed different evolutionary
+    patterns between the two genomes. Protein-coding markers located in the
+    plastome had, on average, over two times higher substitution rate than the
+    markers from the mitogenome. The similar rate variation pattern between the
+    genomes in different fern lineages supports the idea that a common
+    mechanism, like life history traits, drives the rates of molecular
+    evolution. The few conflicting nodes we observed have also been difficult to
+    resolve in other studies, suggesting that even genomic data may not suffice
+    to resolve them.
+  accessed:
+    - year: 2023
+      month: 11
+      day: 15
+  author:
+    - family: Cárdenas
+      given: Glenda G.
+    - family: Lehtonen
+      given: Samuli
+  citation-key: cardenas2023third
+  container-title: Phytotaxa
+  container-title-short: Phytotaxa
+  DOI: 10.11646/phytotaxa.625.3.1
+  ISSN: 1179-3163, 1179-3155
+  issue: '3'
+  issued:
+    - year: 2023
+      month: 11
+      day: 14
+  language: en
+  page: 227-247
+  source: DOI.org (Crossref)
+  title: >-
+    The third opinion on fern phylogenetics with novel insights into their
+    mitogenome evolution
+  type: article-journal
+  URL: https://phytotaxa.mapress.com/pt/article/view/phytotaxa.625.3.1
+  volume: '625'
+
+- id: chao2014molecular
+  author:
+    - family: Chao
+      given: Yi-Shan
+    - family: Rouhan
+      given: Germinal
+    - family: Amoroso
+      given: Victor B
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chao2014molecular
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mcu086
+  issue: '1'
+  issued:
+    - year: 2014
+  language: English
+  page: 109–124
+  title: Molecular phylogeny and biogeography of the fern genus Pteris (Pteridaceae)
+  type: article-journal
+  URL: http://aob.oxfordjournals.org/cgi/doi/10.1093/aob/mcu086
+  volume: '114'
+
+- id: chen20162454
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Schuettpelz
+      given: Eric
+    - family: Lindsay
+      given: Stuart
+    - family: Middleton
+      given: David J
+  citation-key: chen20162454
+  container-title: Taxon
+  DOI: 10.12705/654.19
+  issue: '4'
+  issued:
+    - year: 2016
+  language: English
+  page: 884-885
+  title: >-
+    (2454) Proposal to conserve the name Haplopteris against Monogramma
+    (Pteridaceae)
+  type: article-journal
+  URL: >-
+    http://openurl.ingenta.com/content/xref?genre=article&amp;issn=0040-0262&amp;volume=65&amp;issue=4&amp;spage=884
+  volume: '65'
+
+- id: chen2017phylogenetic
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Sundue
+      given: Michael A
+    - family: Kuo
+      given: Li-Yaung
+    - family: Teng
+      given: Wei-Chih
+    - family: Huang
+      given: Yao-Moan
+  citation-key: chen2017phylogenetic
+  container-title: PhytoKeys
+  DOI: 10.1640/0002-8444-101.4.307
+  issue: '1'
+  issued:
+    - year: 2017
+  page: 83-107
+  title: >-
+    Phylogenetic analyses place the monotypic Dryopolystichum within
+    Lomariopsidaceae
+  type: article-journal
+  URL: http://phytokeys.pensoft.net/articles.php?id=12040
+  volume: '78'
+
+- id: chen2018end
+  abstract: >-
+    © 2017, The Botanical Society of Japan and Springer Japan KK. The
+    phylogenetic affinities of the fern genus Aenigmopteris have been the
+    subject of considerable disagreement, but until now, no molecular data were
+    available from the genus. Based on the analysis of three chloroplast DNA
+    regions (rbcL, rps16-matK, and trnL-F) we demonstrate that Aenigmopteris
+    dubia (the type species of the genus) and A. elegans are closely related and
+    deeply imbedded in Tectaria. The other three species of genus are
+    morphologically very similar; we therefore transfer all five known species
+    into Tectaria. Detailed morphological comparison further shows that
+    previously proposed diagnostic characters of Aenigmopteris fall within the
+    range of variation of a broadly circumscribed Tectaria.
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Rothfels
+      given: Carl J.
+    - family: Mustapeng
+      given: Andi Maryani A.
+    - family: Gubilil
+      given: Markus
+    - family: Karger
+      given: Dirk Nikolaus
+    - family: Kessler
+      given: Michael
+    - family: Huang
+      given: Yao Moan
+  citation-key: chen2018end
+  container-title: Journal of Plant Research
+  DOI: 10.1007/s10265-017-0966-9
+  ISSN: '09189440'
+  issue: '1'
+  issued:
+    - year: 2018
+  page: 67-76
+  title: >-
+    End of an enigma: *Aenigmopteris* belongs in *Tectaria* (tectariaceae:
+    Polypodiopsida)
+  type: article-journal
+  volume: '131'
+
+- id: chen2020exploring
+  accessed:
+    - year: 2020
+      month: 7
+      day: 8
+  author:
+    - family: Chen
+      given: Chi-Chuan
+    - family: Hyvönen
+      given: Jaakko
+    - family: Schneider
+      given: Harald
+  citation-key: chen2020exploring
+  container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Molecular Phylogenetics and Evolution
+  DOI: 10/gg37mf
+  ISSN: '10557903'
+  issued:
+    - year: 2020
+      month: 2
+  language: en
+  page: '106665'
+  source: DOI.org (Crossref)
+  title: >-
+    Exploring phylogeny of the microsoroid ferns (Polypodiaceae) based on six
+    plastid DNA markers
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1055790319303902
+  volume: '143'
+
+- id: chen2022global
+  abstract: >-
+    Lycopodiaceae are one of the oldest lineages of any living vascular plants
+    and contain about 400 species distributed on all continents except
+    Antarctica, with its highest diversity in tropical region...
+  author:
+    - family: Chen
+      given: De-Kui
+    - family: Zhou
+      given: Xin-Mao
+    - family: Rothfels
+      given: Carl J
+    - family: Shepherd
+      given: Lara D
+    - family: Knapp
+      given: Ralf
+    - family: Zhang
+      given: Liang
+    - family: Lu
+      given: Ngan Thi
+    - family: Fan
+      given: Xue Ping
+    - family: Wan
+      given: Xia
+    - family: Gao
+      given: Xin-Fen
+    - family: He
+      given: Hai
+    - family: Zhang
+      given: Li-Bing
+  citation-key: chen2022global
+  container-title: Taxon
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 2
+      day: 1
+  page: 25-51
+  title: >-
+    A global phylogeny of Lycopodiaceae (Lycopodiales; lycophytes) with the
+    description of a new genus, Brownseya, from Oceania
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12597
+  volume: '71'
+
+- id: chen2022plastid
+  author:
+    - family: Chen
+      given: Sisi
+    - family: Wang
+      given: Ting
+    - family: Shu
+      given: Jiangping
+    - family: Xiang
+      given: Qiaoping
+    - family: Yang
+      given: Tuo
+    - family: Zhang
+      given: Xianchun
+  citation-key: chen2022plastid
+  container-title: Genes
+  DOI: 10.3390/genes13071280
+  ISBN: '1777097223'
+  issue: July
+  issued:
+    - year: 2022
+  title: Plastid phylogenomics and plastomic diversity of the extant lycophytes
+  type: article-journal
+  volume: '13'
+
+- id: christenhusz2018ppg
+  accessed:
+    - year: 2024
+      month: 10
+      day: 14
+  author:
+    - family: Christenhusz
+      given: Maarten J.M.
+    - family: Chase
+      given: Mark W.
+  citation-key: christenhusz2018ppg
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.12705/673.2
+  ISSN: 0040-0262, 1996-8175
+  issue: '3'
+  issued:
+    - year: 2018
+      month: 6
+  language: en
+  page: 481-487
+  source: DOI.org (Crossref)
+  title: PPG recognises too many fern genera
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.12705/673.2
+  volume: '67'
+
+- id: crandall-stotler2009phylogeny
+  author:
+    - family: Crandall-Stotler
+      given: Barbara J
+    - family: Stotler
+      given: R E
+    - family: Long
+      given: D G
+  citation-key: crandall-stotler2009phylogeny
+  container-title: Edinburgh J Bot
+  DOI: 10.1017/S0960428609005393
+  issue: '01'
+  issued:
+    - year: 2009
+  page: '155'
+  title: Phylogeny and classification of the Marchantiophyta
+  type: article-journal
+  URL: http://www.journals.cambridge.org/abstract_S0960428609005393
+  volume: '66'
+
+- id: ebihara2006taxonomic
+  author:
+    - family: Ebihara
+      given: Atsushi
+    - family: Dubuisson
+      given: Jean-Yves
+    - family: Iwatsuki
+      given: Kunio
+    - family: Hennequin
+      given: Sabine
+    - family: Motomi
+      given: Ito
+  citation-key: ebihara2006taxonomic
+  container-title: Blumea
+  DOI: 10.3767/000651906X622210
+  issue: '2'
+  issued:
+    - year: 2006
+  page: 221-280
+  title: A taxonomic revision of Hymenophyllaceae
+  type: article-journal
+  URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p501
+  volume: '51'
+
+- id: fawcett2022two
+  abstract: Brittonia, doi:10.1007/s12228-022-09701-3
+  author:
+    - family: Fawcett
+      given: Susan
+    - family: Moran
+      given: Robbin C
+    - family: Smith
+      given: Alan R
+  citation-key: fawcett2022two
+  container-title: Brittonia
+  issue: '10'
+  issued:
+    - year: 2022
+      month: 4
+      day: 6
+  page: 1-8
+  publisher: Brittonia
+  title: Two new species of Goniopteris (Thelypteridaceae) from Ecuador and Peru
+  type: article-journal
+  URL: >-
+    https://www.researchgate.net/publication/359892341_Two_new_species_of_Goniopteris_Thelypteridaceae_from_Ecuador_and_Peru/references
+  volume: '20'
+
+- id: fraser-jenkins20172509
+  author:
+    - family: Fraser-Jenkins
+      given: Christopher R
+    - family: Smith
+      given: Alan R
+    - family: Windham
+      given: Michael D
+  citation-key: fraser-jenkins20172509
+  container-title: Taxon
+  DOI: 10.12705/662.21
+  issue: '2'
+  issued:
+    - year: 2017
+  language: English
+  page: 517-518
+  title: (2509) Proposal to reject the name Allosorus (Pteridaceae)
+  type: article-journal
+  URL: http://doi.wiley.com/10.12705/662.21
+  volume: '66'
+
+- id: ke2022systematics
+  abstract: >-
+    While the family Schizaeaceae (Schizaeales) represents only about 0.4% of
+    the extant fern species diversity, it differs from other ferns greatly in
+    gross morphologies, niche preferences, and life histories. One of the most
+    notable features in this family is its mycoheterotrophic life style in the
+    gametophytic stage, which appears to be associated with extensive losses of
+    plastid genes. However, the limited number of sequenced plastomes, and the
+    lack of a wellresolved phylogenetic framework of Schizaeaceae, makes it
+    difficult to gain any further insight. Here, with a comprehensive sampling
+    of ~77% of the species diversity of this family, we first inferred a plastid
+    phylogeny of Schizaeaceae using three DNA regions. To resolve the deep
+    relationships within this family, we then reconstructed a plastome-based
+    phylogeny focusing on a selection of representatives that covered all the
+    major clades. From this phylogenomic backbone, we traced the evolutionary
+    histories of plastid genes and examined whether gene losses were associated
+    with the evolution of gametophytic mycoheterotrophy. Our results reveal that
+    extant Schizaeaceae is comprised of four major clades—Microschizaea,
+    Actinostachys, Schizaea, and Schizaea pusilla. The loss of all plastid
+    NADH-like dehydrogenase (ndh) genes was confirmed to have occurred in the
+    ancestor of extant Schizaeaceae, which coincides with the evolution of
+    mycoheterotrophy in this family. For chlorophyll biosynthesis genes (chl),
+    the losses were interpreted as convergent in Schizaeaceae, and found not
+    only in Actinostachys, a clade producing achlorophyllous gametophytes, but
+    also in S. pusilla with chlorophyllous gametophytes. In addition, we
+    discovered a previously undescribed but phylogenetically distinct species
+    hidden in the Schizaea dichotoma complex and provided a taxonomic treatment
+    and morphological diagnostics for this new species—Schizaea medusa. Finally,
+    our phylogenetic results suggest that the current PPG I circumscription of
+    Schizaea is non-monophyletic, and we therefore proposed a three-genus
+    classification moving a subset of Schizaea species sensu PPG I to a third
+    genus—Microschizaea.
+  accessed:
+    - year: 2024
+      month: 2
+      day: 7
+  author:
+    - family: Ke
+      given: Bing-Feng
+    - family: Wang
+      given: Goang-Jiun
+    - family: Labiak
+      given: Paulo H.
+    - family: Rouhan
+      given: Germinal
+    - family: Chen
+      given: Cheng-Wei
+    - family: Shepherd
+      given: Lara D.
+    - family: Ohlsen
+      given: Daniel J.
+    - family: Renner
+      given: Matthew A. M.
+    - family: Karol
+      given: Kenneth G.
+    - family: Li
+      given: Fay-Wei
+    - family: Kuo
+      given: Li-Yaung
+  citation-key: ke2022systematics
+  container-title: Frontiers in Plant Science
+  container-title-short: Front. Plant Sci.
+  DOI: 10.3389/fpls.2022.885501
+  ISSN: 1664-462X
+  issued:
+    - year: 2022
+      month: 7
+      day: 13
+  language: en
+  page: '885501'
+  source: DOI.org (Crossref)
+  title: Systematics and Plastome Evolution in Schizaeaceae
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/fpls.2022.885501/full
+  volume: '13'
+
+- id: keskiniva2024danaea
+  abstract: >-
+    Here we describe 18 new species of the Marattialean genus Danaea: D. alba,
+    D. ampla, D. antioquiana, D. elongata, D. kessleri and D. panamensis (all in
+    D. subg. Danaea); D. dilatata and D. opaca (in D. subg. Arthrodanaea); and
+    D. andina, D. cuspidopsis, D. erosa, D. nasua, D. peruviana, D. polypinna,
+    D. pumila, D. robbinmoranii, D. ubatubensis, and D. velona (in D. subg.
+    Holodanaea). We provide illustrations, maps of geographical distribution,
+    and nomenclatural notes for the new species. We also lectotypify the name D.
+    media and propose that its recent resurrection was a mistake: both D. media
+    and D. elata are synonyms of D. nodosa, which is widespread in Central
+    America and the Greater Antilles; we find that D. pterorachis is a valid
+    name applicable to the Costa Rican material that has been referred to D.
+    media. We consider D. sellowiana and D. nigrescens as distinct species and
+    these names applicable to D. subg. Danaea material from the Brazilian
+    Atlantic Forest and Amazonia, respectively, and we also lectotypify the name
+    D. nigrescens here. We accept D. cuspidata and D. betancurii as species
+    distinct from D. moritziana. Evolutionary relationships and an
+    identification key for the 79 species we currently recognize in Danaea are
+    published in a parallel paper (Keskiniva & al. 2024).
+  accessed:
+    - year: 2024
+      month: 2
+      day: 5
+  author:
+    - family: Keskiniva
+      given: Venni
+    - family: Tuomisto
+      given: Hanna
+  citation-key: keskiniva2024danaea
+  container-title: Willdenowia
+  container-title-short: Willdenowia
+  DOI: 10.3372/wi.53.53303
+  ISSN: 0511-9618
+  issue: '3'
+  issued:
+    - year: 2024
+      month: 1
+      day: 22
+  language: en
+  source: DOI.org (Crossref)
+  title: 'Danaea (Marattiaceae) keeps diversifying, part 1: eighteen new species'
+  title-short: Danaea (Marattiaceae) keeps diversifying, part 1
+  type: article-journal
+  URL: >-
+    https://bioone.org/journals/willdenowia/volume-53/issue-3/wi.53.53303/Danaea-Marattiaceae-keeps-diversifying-part-1-eighteen-new-species/10.3372/wi.53.53303.full
+  volume: '53'
+
+- id: keskiniva2024danaeaa
+  abstract: >-
+    We have produced a near-complete phylogeny for the neotropical fern genus
+    Danaea (Marattiaceae). The phylogeny is based on four loci of the
+    chloroplast DNA and shows reconstructions of the evolutionary relationships
+    between 68 of the currently recognized 81 taxa of Danaea. A parallel paper
+    (Keskiniva & Tuomisto 2024) draws on this phylogeny to describe 18 new
+    species; here we discuss the phylogeny and its taxonomical implications more
+    broadly. We propose three new synonyms: D. atlantica Christenh. & al. (= D.
+    geniculata), D. draco Christenh. (= D. polymorpha), and D. moralesiana A.
+    Rojas (= D. erecta). On the other hand, we consider D. jamaicensis Underw.,
+    which has been synonymized before, to be a distinct species. In addition, we
+    propose that D. ×ushana is a hybrid between D. simplicifolia and D.
+    nigrescens. We also provide an open-access online key to the 81 taxa. The
+    key is available at
+    https://keys.lucidcentral.org/keys/v4/neo_fern_genus_danaea/.
+  accessed:
+    - year: 2024
+      month: 2
+      day: 5
+  author:
+    - family: Keskiniva
+      given: Venni
+    - family: Tuomisto
+      given: Hanna
+    - family: Lehtonen
+      given: Samuli
+  citation-key: keskiniva2024danaeaa
+  container-title: Willdenowia
+  container-title-short: Willdenowia
+  DOI: 10.3372/wi.53.53304
+  ISSN: 0511-9618
+  issue: '3'
+  issued:
+    - year: 2024
+      month: 1
+      day: 22
+  language: en
+  source: DOI.org (Crossref)
+  title: >-
+    Danaea (Marattiaceae) keeps diversifying, part 2: phylogeny and
+    identification key for 81 taxa
+  title-short: Danaea (Marattiaceae) keeps diversifying, part 2
+  type: article-journal
+  URL: >-
+    https://bioone.org/journals/willdenowia/volume-53/issue-3/wi.53.53304/Danaea-Marattiaceae-keeps-diversifying-part-2--phylogeny-and-identification/10.3372/wi.53.53304.full
+  volume: '53'
+
+- id: keskiniva2025rampant
+  abstract: >-
+    The number of hybrids has been reported to be lower in tropical than
+    temperate ferns, but patterns of hybridization are poorly known in the
+    tropics. We examine hybridization in the Neotropical fern genus Danaea
+    (Marattiaceae) using a phylogenomic approach with single or low-copy nuclear
+    and chloroplast loci and haplotype phasing. We find a high hybridization
+    rate of 10%–18% for Danaea, similar to the rates observed for temperate
+    ferns. We find further evidence for the previously proposed low reproductive
+    barriers in ferns, enabling hybridization and even the production of
+    hybridization-derived species between lineages separated possibly as far
+    back as the Cretaceous. We found that Danaea trifoliata and D. wendlandii
+    are fertile, hybridization-derived species between lineages diverged
+    potentially 14–72 million years ago (mya) and 23–62 mya, respectively. We
+    also confirm that the previously recognized species D. ×ushana is a likely
+    sterile hybrid between D. simplicifolia (D. subg. Arthrodanaea) and D.
+    nigrescens (D. subg. Danaea), which diverged potentially 27–83 mya. We find
+    that hybridization may function as a homogenizing force in Danaea, as the
+    subgenus with the highest signals for hybridization (D. subg. Arthrodanaea)
+    also has the fewest species that are the least morphologically and
+    genetically diverged. We describe a new hybrid between D. wendlandii (D.
+    subg. Holodanaea) and D. subg. Danaea as D. ×deltoidea.
+  accessed:
+    - year: 2025
+      month: 4
+      day: 8
+  author:
+    - family: Keskiniva
+      given: Venni
+    - family: Lehtonen
+      given: Samuli
+    - family: Testo
+      given: Weston
+    - family: Consortium
+      given: GoFlag
+    - family: Tuomisto
+      given: Hanna
+  citation-key: keskiniva2025rampant
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.13315
+  ISSN: 0040-0262, 1996-8175
+  issued:
+    - year: 2025
+      month: 3
+      day: 26
+  language: en
+  page: tax.13315
+  source: DOI.org (Crossref)
+  title: >-
+    Rampant hybridization in an old tropical fern genus (*Danaea* ,
+    Marattiaceae)
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13315
+
+- id: kuo2019updating
+  abstract: >-
+    Ferns and lycophytes of Taiwan display an extraordinarily high diversity.
+    Despite the detailed species documentation, the pteridophyte flora of Taiwan
+    as a whole has never been organized into a phylogenetic framework. Here we
+    provide an updated, phylogeny-based checklist that includes a total of 824
+    (infra)species taxa, of which eleven are first recorded. In addition,
+    lectotypification of Phlegmariurus salvinioides and new combinations of 25
+    taxa were made in this study. Our classification scheme is based on the most
+    recent phylogenetic evidence, and for all taxon names accepted here, we
+    provide their best corresponding names in Taiwanese Mandarin. Our appendix
+    and the online file also supply other details, such as synonyms, for the
+    Taiwanese pteridophytes in order to track their nomenclatural changes from
+    the previous floristic documentations. Finally, a discussion group for our
+    community-Taiwan Pteridophyte Group (TPG)- is established online. This
+    platform will allow more users to follow further updates of TPG or to
+    provide any comments on new versions of Taiwan pteridophyte checklist.
+  author:
+    - family: Kuo
+      given: Li-Yaung
+    - family: Hsu
+      given: Tian-Chuan
+    - family: Chao
+      given: Yi-Shan
+    - family: Liou
+      given: Wei-Ting
+    - family: Chang
+      given: Ho-Ming
+    - family: Chen
+      given: Cheng-Wei
+    - family: Huang
+      given: Yao-Moan
+    - family: Li
+      given: Fay-Wei
+    - family: Huang
+      given: Yu-Fang
+    - family: Shao
+      given: Wen
+    - family: Lu
+      given: Pi-Fong
+    - family: Chen
+      given: Chien-Wen
+    - family: Chang
+      given: Yi Han
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: kuo2019updating
+  container-title: Taiwaniana
+  DOI: 10.6165/tai.2019.64.367
+  issue: '4'
+  issued:
+    - year: 2019
+  page: 367-395
+  title: 'Updating Taiwanese pteridophyte checklist: A new phylogenetic classification'
+  type: article-journal
+  URL: >-
+    https://www.researchgate.net/profile/Li-Yaung_Kuo/publication/335393372_Updating_Taiwanese_pteridophyte_checklist_a_new_phylogenetic_classification/links/5d62fe22458515d610252fba/Updating-Taiwanese-pteridophyte-checklist-a-new-phylogenetic-classification.
+  volume: '64'
+
+- id: kurata1963notes
+  author:
+    - family: Kurata
+      given: Satoru
+  citation-key: kurata1963notes
+  container-title: The Journal of Geobotany
+  issue: '1'
+  issued:
+    - year: 1963
+  page: 12--16
+  title: Notes on Japanese ferns
+  type: article-journal
+  volume: '12'
+
+- id: li2023three
+  abstract: >-
+    In Indochina the species diversity of Cyatheaceae remains insufficiently
+    known. Here we demonstrate the scaly tree fern Gymnosphaera salletii in
+    Vietnam to be an assemblage of three distinct species based on molecular and
+    morphological data, and report for the first time the occurrence of foliar
+    nectaries in Gymnosphaera. The true G. salletii is morphologically unique
+    based on the protuberant glands present on the petiole. Gymnosphaera
+    phankelocii sp. nov. and Gymnosphaera vietnamensis sp. nov. are recognized
+    as new species; G. phankelocii is characterized by its distant two-rowed
+    sori and G. vietnamensis by the sub-tripinnate fronds. Our phylogenetic
+    analyses indicated that G. phankelocii is a relatively isolated species,
+    while G. vietnamensis is a member of the G. salletii clade along with G.
+    austroyunnanensis, G. salletii, and G. saxicola. The two new species and
+    members of the G. salletii clade are all local endemics, and provide good
+    examples to understand the frequent local endemics and their evolution in
+    scaly tree ferns. Eleven species of Gymnosphaera are now known from
+    Indochina; we provide a diagnostic key to these species.
+  accessed:
+    - year: 2023
+      month: 11
+      day: 17
+  author:
+    - family: Li
+      given: Shu-Han
+    - family: Zuo
+      given: Zheng-Yu
+    - family: Chen
+      given: Cheng-Wei
+    - family: Pham
+      given: Van The
+    - family: Luu
+      given: Hong Truong
+    - family: Dong
+      given: Shi-Yong
+  citation-key: li2023three
+  container-title: Botanical Journal of the Linnean Society
+  DOI: 10.1093/botlinnean/boad036
+  ISSN: 0024-4074, 1095-8339
+  issued:
+    - year: 2023
+      month: 11
+      day: 8
+  language: en
+  page: boad036
+  source: DOI.org (Crossref)
+  title: >-
+    Three out of one: revising the species delimitation of the tree fern
+    *Gymnosphaera salletii* (Cyatheaceae), with particular reference to the
+    foliar nectary
+  title-short: Three out of one
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/botlinnean/advance-article/doi/10.1093/botlinnean/boad036/7382148
+
+- id: liu2020evaluating
+  author:
+    - family: Liu
+      given: Hong-Mei
+    - family: Schuettpelz
+      given: Eric
+    - family: Schneider
+      given: Harald
+  citation-key: liu2020evaluating
+  container-title: Journal of Systematics and Evolution
+  DOI: 10.1111/jse.12641
+  issue: '6'
+  issued:
+    - year: 2020
+      month: 7
+      day: 21
+  page: 988-1002
+  title: >-
+    Evaluating the status of fern and lycophyte nothotaxa in the context of the
+    Pteridophyte Phylogeny Group classification (PPG I)
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1111/jse.12641
+  volume: '58'
+
+- id: liu2020significance
+  accessed:
+    - year: 2021
+      month: 9
+      day: 21
+  author:
+    - family: Liu
+      given: Hongmei
+    - family: Rakotondrainibe
+      given: France
+    - family: Hennequin
+      given: Sabine
+    - family: Schneider
+      given: Harald
+  citation-key: liu2020significance
+  container-title: Plant Systematics and Evolution
+  container-title-short: Plant Syst Evol
+  DOI: 10.1007/s00606-020-01657-9
+  ISSN: 0378-2697, 2199-6881
+  issue: '2'
+  issued:
+    - year: 2020
+      month: 4
+  language: en
+  page: '30'
+  source: DOI.org (Crossref)
+  title: >-
+    The significance of *Rouxopteris* (Gleicheniaceae, Polypodiopsida): A new
+    genus endemic to the Madagascan region
+  title-short: The significance of Rouxopteris (Gleicheniaceae, Polypodiopsida)
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s00606-020-01657-9
+  volume: '306'
+
+- id: marchant2022dynamic
+  abstract: >-
+    The large size and complexity of most fern genomes have hampered efforts to
+    elucidate fundamental aspects of fern biology and land plant evolution
+    through genome-enabled research. Here we present a chromosomal genome
+    assembly and associated methylome, transcriptome and metabolome analyses for
+    the model fern species Ceratopteris richardii . The assembly reveals a
+    history of remarkably dynamic genome evolution including rapid changes in
+    genome content and structure following the most recent whole-genome
+    duplication approximately 60 million years ago. These changes include
+    massive gene loss, rampant tandem duplications and multiple horizontal gene
+    transfers from bacteria, contributing to the diversification of
+    defence-related gene families. The insertion of transposable elements into
+    introns has led to the large size of the Ceratopteris genome and to
+    exceptionally long genes relative to other plants. Gene family analyses
+    indicate that genes directing seed development were co-opted from those
+    controlling the development of fern sporangia, providing insights into seed
+    plant evolution. Our findings and annotated genome assembly extend the
+    utility of Ceratopteris as a model for investigating and teaching plant
+    biology.
+  author:
+    - family: Marchant
+      given: D. Blaine
+    - family: Chen
+      given: Guang
+    - family: Cai
+      given: Shengguan
+    - family: Chen
+      given: Fei
+    - family: Schafran
+      given: Peter
+    - family: Jenkins
+      given: Jerry
+    - family: Shu
+      given: Shengqiang
+    - family: Plott
+      given: Chris
+    - family: Webber
+      given: Jenell
+    - family: Lovell
+      given: John T.
+    - family: He
+      given: Guifen
+    - family: Sandor
+      given: Laura
+    - family: Williams
+      given: Melissa
+    - family: Rajasekar
+      given: Shanmugam
+    - family: Healey
+      given: Adam
+    - family: Barry
+      given: Kerrie
+    - family: Zhang
+      given: Yinwen
+    - family: Sessa
+      given: Emily
+    - family: Dhakal
+      given: Rijan R.
+    - family: Wolf
+      given: Paul G.
+    - family: Harkess
+      given: Alex
+    - family: Li
+      given: Fay-Wei
+    - family: Rössner
+      given: Clemens
+    - family: Becker
+      given: Annette
+    - family: Gramzow
+      given: Lydia
+    - family: Xue
+      given: Dawei
+    - family: Wu
+      given: Yuhuan
+    - family: Tong
+      given: Tao
+    - family: Wang
+      given: Yuanyuan
+    - family: Dai
+      given: Fei
+    - family: Hua
+      given: Shuijin
+    - family: Wang
+      given: Hua
+    - family: Xu
+      given: Shengchun
+    - family: Xu
+      given: Fei
+    - family: Duan
+      given: Honglang
+    - family: Theißen
+      given: Günter
+    - family: McKain
+      given: Michael R.
+    - family: Li
+      given: Zheng
+    - family: McKibben
+      given: Michael T. W.
+    - family: Barker
+      given: Michael S.
+    - family: Schmitz
+      given: Robert J.
+    - family: Stevenson
+      given: Dennis W.
+    - family: Zumajo-Cardona
+      given: Cecilia
+    - family: Ambrose
+      given: Barbara A.
+    - family: Leebens-Mack
+      given: James H.
+    - family: Grimwood
+      given: Jane
+    - family: Schmutz
+      given: Jeremy
+    - family: Soltis
+      given: Pamela S.
+    - family: Soltis
+      given: Douglas E.
+    - family: Chen
+      given: Zhong-Hua
+  citation-key: marchant2022dynamic
+  container-title: Nature Plants
+  DOI: 10.1038/s41477-022-01226-7
+  ISBN: '4147702201'
+  ISSN: '20550278'
+  issued:
+    - year: 2022
+  title: Dynamic genome evolution in a model fern
+  type: article-journal
+
+- id: mendez-reneau2023target
+  abstract: >-
+    Like many fern lineages comprising reticulate species complexes, Polypodium
+    s.s. (Polypodiacaeae) has a history shaped by rapid diversiﬁcation,
+    hybridization, and polyploidy that poses substantial challenges for
+    phylogenetic inference with plastid and single-locus nuclear markers. Using
+    target capture probes for 408 nuclear loci developed by the GoFlag project
+    and a custom bioinformatic pipeline, SORTER, we constructed multi-locus
+    nuclear datasets for diploid temperate and Mesoamerican species of
+    Polypodium and ﬁve allotetraploid species belonging to the well-studied
+    Polypodium vulgare complex. SORTER employs a clustering approach to separate
+    putatively paralogous copies of targeted loci into orthologous matrices and
+    haplotype phasing to infer allopolyploid haplotypes across loci, resulting
+    in datasets amenable to both concatenated maximum likelihood and
+    multi-species coalescent phylogenetic analyses. By comparing phylogenies
+    derived from maximum likelihood and multi-species coalescent analyses of
+    unphased and phased datasets, as well as evaluating discordance among gene
+    trees and species trees, we recover support for incomplete lineage sorting
+    within Polypodium s.s., novel relationships among diploid taxa of the
+    Polypodium vulgare complex and its Mesoamerican sister clade, and the
+    placement of several Polypodium species within other genera. Additionally,
+    we were able to infer well-supported phylogenies that identiﬁed the
+    hypothesized progenitors of the allotetraploid species, indicating that
+    SORTER is an effective and accurate tool for reconstructing homeolog
+    haplotypes of allopolyploids in fern taxa and other nonmodel organisms from
+    target capture data.
+  accessed:
+    - year: 2023
+      month: 7
+      day: 13
+  author:
+    - family: Mendez-Reneau
+      given: Jonas
+    - family: Gordon Burleigh
+      given: J.
+    - family: Sigel
+      given: Erin M.
+  citation-key: mendez-reneau2023target
+  container-title: Systematic Botany
+  container-title-short: Systematic Botany
+  DOI: 10.1600/036364423X16758873924135
+  ISSN: 0363-6445
+  issue: '1'
+  issued:
+    - year: 2023
+      month: 3
+      day: 30
+  language: en
+  page: 96-109
+  source: DOI.org (Crossref)
+  title: >-
+    Target Capture Methods Offer Insight into the Evolution of Rapidly Diverged
+    Taxa and Resolve Allopolyploid Homeologs in the Fern Genus *Polypodium* s.s.
+  type: article-journal
+  URL: https://www.ingentaconnect.com/content/10.1600/036364423X16758873924135
+  volume: '48'
+
+- id: mendez-reneau2024lineage
+  abstract: >-
+    Methods: We employed a large target‐capture data set to investigate the
+    evolution of genetic, morphological, and ecological variation in P.
+    pellucidum. With a broad sampling across ﬁve Hawaiian Islands, we deciphered
+    the evolutionary history of P. pellucidum, identiﬁed nonhybrid lineages and
+    intraspeciﬁc hybrids, and inferred the relative inﬂuence of geography and
+    ecology on their distributions.
+
+    Results: Polypodium pellucidum is monophyletic, dispersing to the Hawaiian
+    archipelago 11.53–7.77 Ma and diversifying into extant clades between 5.66
+    and 4.73 Ma. We identiﬁed four nonhybrid clades with unique morphologies,
+    ecological niches, and distributions. Additionally, we elucidated several
+    intraspeciﬁc hybrid combinations and evidence for undiscovered or extinct
+    “ghost” lineages contributing to extant hybrid populations.
+
+    Conclusions: We provide a foundation for revising the taxonomy of P.
+    pellucidum to account for cryptic lineages and intraspeciﬁc hybrids.
+    Geologic succession of the Hawaiian Islands through cycles of volcanism,
+    vegetative succession, and erosion has determined the available habitats and
+    distribution of ecologically speciﬁc, divergent clades within P. pellucidum.
+    Intraspeciﬁc hybrids have likely arisen due to ecological and or geological
+    transitions, often persisting after the local extinction of their
+    progenitors. This research contributes to our understanding of the evolution
+    of Hawai'i's diverse fern ﬂora and illuminated cryptic taxa to allow
+    better‐informed conservation eﬀorts.
+  accessed:
+    - year: 2025
+      month: 1
+      day: 13
+  author:
+    - family: Mendez‐Reneau
+      given: Jonas I.
+    - family: Richards
+      given: Joseph L.
+    - family: Hobbie
+      given: Julia
+    - family: Bollich
+      given: Emily
+    - family: Kooyers
+      given: Nicholas J.
+    - family: Sigel
+      given: Erin M.
+  citation-key: mendez-reneau2024lineage
+  container-title: American Journal of Botany
+  container-title-short: American J of Botany
+  DOI: 10.1002/ajb2.16379
+  ISSN: 0002-9122, 1537-2197
+  issue: '9'
+  issued:
+    - year: 2024
+      month: 9
+  language: en
+  page: e16379
+  source: DOI.org (Crossref)
+  title: >-
+    Lineage diversification and rampant hybridization among subspecies explain
+    taxonomic confusion in the endemic Hawaiian fern *Polypodium pellucidum*
+  type: article-journal
+  URL: https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.16379
+  volume: '111'
+
+- id: mosyakin2018hemionitis
+  author:
+    - family: Mosyakin
+      given: Sergei L
+  citation-key: mosyakin2018hemionitis
+  container-title: Phytotaxa
+  DOI: 10.11646/phytotaxa.373.2.7
+  issue: '2'
+  issued:
+    - year: 2018
+  page: 164-165
+  title: >-
+    On Hemionitis atreyu, an invalid and unnecessary name, and on the correct
+    name for that species if placed in Hemionitis (Pteridaceae subfam.
+    Cheilanthoideae)
+  type: article-journal
+  URL: https://biotaxa.org/Phytotaxa/article/view/phytotaxa.373.2.7
+  volume: '373'
+
+- id: nardi1986807
+  accessed:
+    - year: 2022
+      month: 10
+      day: 23
+  author:
+    - family: Nardi
+      given: Enio
+    - family: Reichstein
+      given: Tadeus
+  citation-key: nardi1986807
+  container-title: Taxon
+  container-title-short: Taxon
+  DOI: 10.2307/1221062
+  ISSN: '00400262'
+  issue: '1'
+  issued:
+    - year: 1986
+      month: 2
+  language: en
+  page: '172'
+  source: DOI.org (Crossref)
+  title: >-
+    (807) Proposal to Reject Polypodium pteridioides Reichard and All
+    Combinations Based on It (Sinopteridaceae: Pteridophyta)
+  title-short: >-
+    (807) Proposal to Reject Polypodium pteridioides Reichard and All
+    Combinations Based on It (Sinopteridaceae
+  type: article-journal
+  URL: https://www.jstor.org/stable/1221062?origin=crossref
+  volume: '35'
+
+- id: nitta2022open
+  abstract: >-
+    Ferns, with about 12,000 species, are the second most diverse lineage of
+    vascular plants after angiosperms. They have been the subject of numerous
+    molecular phylogenetic studies, resulting in the publication of trees for
+    every major clade and DNA sequences from nearly half of all species. Global
+    fern phylogenies have been published periodically, but as molecular
+    systematics research continues at a rapid pace, these become quickly
+    outdated. Here, we develop a mostly automated, reproducible, open pipeline
+    to generate a continuously updated fern tree of life (FTOL) from DNA
+    sequence data available in GenBank. Our tailored sampling strategy combines
+    whole plastomes (few taxa, many loci) with commonly sequenced plastid
+    regions (many taxa, few loci) to obtain a global, species-level fern
+    phylogeny with high resolution along the backbone and maximal sampling
+    across the tips. We use a curated reference taxonomy to resolve synonyms in
+    general compliance with the community-driven Pteridophyte Phylogeny Group I
+    classification. The current FTOL includes 5,582 species, an increase of
+                  ca.
+                  40% relative to the most recently published global fern phylogeny. Using an updated and expanded list of 51 fern fossil constraints, we find estimated ages for most families and deeper clades to be considerably older than earlier studies. FTOL and its accompanying datasets, including the fossil list and taxonomic database, will be updated on a regular basis and are available via a web portal (
+                  https://fernphy.github.io
+                  ) and R packages, enabling immediate access to the most up-to-date, comprehensively sampled fern phylogeny. FTOL will be useful for anyone studying this important group of plants over a wide range of taxonomic scales, from smaller clades to the entire tree. We anticipate FTOL will be particularly relevant for macroecological studies at regional to global scales and will inform future taxonomic systems with the most recent hypothesis of fern phylogeny.
+  accessed:
+    - year: 2022
+      month: 9
+      day: 12
+  author:
+    - family: Nitta
+      given: Joel H.
+    - family: Schuettpelz
+      given: Eric
+    - family: Ramírez-Barahona
+      given: Santiago
+    - family: Iwasaki
+      given: Wataru
+  citation-key: nitta2022open
+  container-title: Frontiers in Plant Science
+  container-title-short: Front. Plant Sci.
+  DOI: 10.3389/fpls.2022.909768
+  ISSN: 1664-462X
+  issued:
+    - year: 2022
+      month: 8
+      day: 24
+  license: Creative Commons Attribution 4.0 International License (CC-BY)
+  page: '909768'
+  source: DOI.org (Crossref)
+  title: An open and continuously updated fern tree of life
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/fpls.2022.909768/full
+  volume: '13'
+
+- id: panigrahi1986821
+  accessed:
+    - year: 2022
+      month: 10
+      day: 23
+  author:
+    - family: Panigrahi
+      given: G.
+  citation-key: panigrahi1986821
+  container-title: Taxon
+  container-title-short: Taxon
+  DOI: 10.2307/1221305
+  ISSN: '00400262'
+  issue: '2'
+  issued:
+    - year: 1986
+      month: 5
+  language: en
+  page: '384'
+  source: DOI.org (Crossref)
+  title: (821) Proposal to Conserve Athyriaceae Alston (Pteridophyta)
+  type: article-journal
+  URL: https://www.jstor.org/stable/1221305?origin=crossref
+  volume: '35'
+
+- id: panigrahi1987867
+  author:
+    - family: Panigrahi
+      given: G
+  citation-key: panigrahi1987867
+  container-title: Taxon
+  DOI: 10.2307/1221391
+  issue: '1'
+  issued:
+    - year: 1987
+  page: 167–168
+  title: >-
+    (867) Proposal to delete Allosorus Bernhardi, nom. rej., and to emend
+    typification of Cheilanthes Swartz, nom. cons. (Pteridophyta)
+  type: article-journal
+  volume: '36'
+
+- id: pelosi2022phylotranscriptomics
+  abstract: >-
+    Ferns are the second largest clade of vascular plants with over 10,000
+    species, yet the generation of genomic resources for the group has lagged
+    behind other major clades of plants. Transcriptomic data have proven to be a
+    powerful tool to assess phylogenetic relationships, using thousands of
+    markers that are largely conserved across the genome, and without the need
+    to sequence entire genomes. We assembled the largest nuclear phylogenetic
+    dataset for ferns to date, including 2884 single-copy nuclear loci from 247
+    transcriptomes (242 ferns, ﬁve outgroups), and investigated phylogenetic
+    relationships across the fern tree, the placement of whole genome
+    duplications (WGDs), and gene retention patterns following WGDs. We
+    generated a well-supported phylogeny of ferns and identiﬁed several regions
+    of the fern phylogeny that demonstrate high levels of gene tree–species tree
+    conﬂict, which largely correspond to areas of the phylogeny that have been
+    difﬁcult to resolve. Using a combination of approaches, we identiﬁed 27 WGDs
+    across the phylogeny, including 18 largescale events (involving more than
+    one sampled taxon) and nine small-scale events (involving only one sampled
+    taxon). Most inferred WGDs occur within single lineages (e.g., orders,
+    families) rather than on the backbone of the phylogeny, although two
+    inferred events are shared by leptosporangiate ferns (excluding Osmundales)
+    and Polypodiales (excluding Lindsaeineae and Saccolomatineae), clades which
+    correspond to the majority of fern diversity. We further examined how
+    retained duplicates following WGDs compared across independent events and
+    found that functions of retained genes were largely convergent, with
+    processes involved in binding, responses to stimuli, and certain organelles
+    over-represented in paralogs while processes involved in transport,
+    organelles derived from endosymbiotic events, and signaling were
+    under-represented. To date, our study is the most comprehensive
+    investigation of the nuclear fern phylogeny, though several avenues for
+    future research remain unexplored.
+  accessed:
+    - year: 2022
+      month: 12
+      day: 9
+  author:
+    - family: Pelosi
+      given: Jessie A.
+    - family: Kim
+      given: Emily H.
+    - family: Barbazuk
+      given: W. Brad
+    - family: Sessa
+      given: Emily B.
+  citation-key: pelosi2022phylotranscriptomics
+  container-title: Frontiers in Plant Science
+  container-title-short: Front. Plant Sci.
+  DOI: 10.3389/fpls.2022.882441
+  ISSN: 1664-462X
+  issued:
+    - year: 2022
+      month: 7
+      day: 14
+  language: en
+  page: '882441'
+  source: DOI.org (Crossref)
+  title: >-
+    Phylotranscriptomics Illuminates the Placement of Whole Genome Duplications
+    and Gene Retention in Ferns
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/fpls.2022.882441/full
+  volume: '13'
+
+- id: perrie2017pteridophyte
+  author:
+    - family: Perrie
+      given: Leon R
+    - family: Brownsey
+      given: Patrick J
+  citation-key: perrie2017pteridophyte
+  container-title: New Zealand Botanical Society Newsletter
+  issue: '127'
+  issued:
+    - year: 2017
+  page: 14-7
+  title: >-
+    The Pteridophyte Phylogeny Group’s recommendations in relation to ferns and
+    lycophytes in the eFloraNZ
+  type: article-journal
+
+- id: perrie2021expansion
+  abstract: |-
+    The fern genus
+                  Microsorum
+                  is not monophyletic, with previous phylogenetic analyses finding three lineages to group not with the type species, but to form a grade related to the 13 species of
+                  Lecanopteris
+                  . These three lineages have recently been recognised as separate
+     genera:
+                  Bosmania
+                  ,
+                  Dendroconche
+                  , and
+                  Zealandia
+                  . Here, we explore the morphological characterisation of
+                  Lecanopteris
+                  and these other three lecanopteroid genera. While the\ traditional circumscription of
+                  Lecanopteris
+                  has seemed sacrosanct, its defining morphological
+     character states of rhizome cavities and ant brooding associations occur in other lecanopteroid ferns and elsewhere in the
+                  Polypodiaceae
+                  . Instead, we suggest that the morphological characterisation of an expanded
+                  Lecanopteris
+                  including the
+                  Dendroconche
+                  and
+                  Zealandia
+                  lineages is just as good, if not better, with the pertinent character states being the absence of sclerenchyma strands in the rhizome and atleast some fronds having Nooteboom's type 5 venation pattern. This wider circumscription is also better able to accommodate phylogenetic uncertainty,
+     and it means that groups of species traditionally placed together in a single genus are not distributed across different genera. General users familiar with the narrower circumscription of
+                  Lecanopteris
+                  will not be significantly disrupted, because there is little geographic overlap with
+     the lineages added to the genus. Consequently, we make new combinations in
+                  Lecanopteris
+                  for 11 species and one subspecies.
+  accessed:
+    - year: 2023
+      month: 7
+      day: 25
+  author:
+    - family: Perrie
+      given: L.R.
+    - family: Field
+      given: A.R.
+    - family: Ohlsen
+      given: D.J.
+    - family: Brownsey
+      given: P.J.
+  citation-key: perrie2021expansion
+  container-title: Blumea - Biodiversity, Evolution and Biogeography of Plants
+  container-title-short: blum - j plant tax and plant geog
+  DOI: 10.3767/blumea.2021.66.03.07
+  ISSN: 0006-5196
+  issue: '3'
+  issued:
+    - year: 2021
+      month: 12
+      day: 31
+  language: en
+  page: 242-248
+  source: DOI.org (Crossref)
+  title: >-
+    Expansion of the fern genus *Lecanopteris* to encompass some species
+    previously included in *Microsorum* and *Colysis* ( *Polypodiaceae* )
+  type: article-journal
+  URL: https://www.ingentaconnect.com/content/10.3767/blumea.2021.66.03.07
+  volume: '66'
+
+- id: ponce2025hidden
+  abstract: >-
+    Woodsiaceae is a monophyletic fern family comprising around 65 taxa that
+    inhabit mainly mountainous areas of the northern hemisphere but also with
+    numerous species in southern America and Africa. Recent molecular studies
+    recognize two genera in the family: Woodsia, restricted to the northern
+    hemisphere, and Physematium, present in Central and South America, Africa
+    and East Asia. Traditionally, in South America the family has been
+    considered to include a single species, Woodsia montevidensis, very variable
+    morphologically, a treatment that underestimates the diversity of South
+    American taxa. Therefore, we carried out a taxonomic review that included
+    comparative analyses of morphological and palynological characters as well
+    as distributional data. In the Southern Cone, Physematium is characterized
+    by sori with saucer- or bowl-shaped lower indusia, splitting into 1–3 lobes
+    in the mature sori. The taxa inhabit mountainous regions, between 200 m to
+    more than 4000 m in altitude. Four species are recognized in the genus
+    Physematium in the Southern Cone: one new species, P. hieronymi, and three
+    that were previously treated as synonyms of P. montevidense, publishing here
+    the corresponding new combinations. A key, descriptions, illustrations and
+    distribution maps of the species are provided.
+  accessed:
+    - year: 2025
+      month: 3
+      day: 22
+  author:
+    - family: Ponce
+      given: M. Mónica
+    - family: Gorrer
+      given: Daniel A.
+    - family: Arana
+      given: Marcelo D.
+  citation-key: ponce2025hidden
+  container-title: Willdenowia
+  container-title-short: Willdenowia
+  DOI: 10.3372/wi.55.04
+  ISSN: 0511-9618
+  issue: '1'
+  issued:
+    - year: 2025
+      month: 3
+      day: 20
+  language: en
+  source: DOI.org (Crossref)
+  title: >-
+    Hidden and neglected taxa inside a collective taxon: taxonomic revision of
+    Woodsiaceae in the Southern Cone of South America
+  title-short: Hidden and neglected taxa inside a collective taxon
+  type: article-journal
+  URL: >-
+    https://bioone.org/journals/willdenowia/volume-55/issue-1/wi.55.04/Hidden-and-neglected-taxa-inside-a-collective-taxon--taxonomic/10.3372/wi.55.04.full
+  volume: '55'
+
+- id: pryer2001horsetails
+  author:
+    - family: Pryer
+      given: Kathleen M
+    - family: Schneider
+      given: Harald
+    - family: Smith
+      given: Alan R.
+    - family: Cranfill
+      given: Raymond B
+    - family: Wolf
+      given: Paul G.
+    - family: Hunt
+      given: Jeffrey S
+    - family: Sipes
+      given: Sedonia D
+  citation-key: pryer2001horsetails
+  container-title: Nature
+  DOI: 10.1038/35054555
+  ISSN: '00280836'
+  issue: '6820'
+  issued:
+    - year: 2001
+  page: 618-622
+  title: >-
+    Horsetails and ferns are a monophyletic group and the closest living
+    relatives to seed plants
+  type: article-journal
+  volume: '409'
+
+- id: pteridophytephylogenygroupi2016communityderived
+  author:
+    - literal: Pteridophyte Phylogeny Group I
+  citation-key: pteridophytephylogenygroupi2016communityderived
+  container-title: Journal of Systematics and Evolution
+  DOI: 10.1111/jse.12229
+  issue: '6'
+  issued:
+    - year: 2016
+  page: 563-603
+  title: A community-derived classification for extant lycophytes and ferns
+  type: article-journal
+  volume: '54'
+
+- id: rasbach1991hybrids
+  abstract: >-
+    Rasbach H., Reichstein T. and Schneller J. J. 1991. Hybrids and polyploidy
+    in the genus Athyrium (Pteridophyta) in Europe 2. Origin and description of
+    two triploid hybrids and synthesis of allotetraploids. Bot. Helv. 101:
+    209-225.
+  author:
+    - family: Rasbach
+      given: Helga
+    - family: Reichstein
+      given: Tadeus
+    - family: Schneller
+      given: J Jakob
+  citation-key: rasbach1991hybrids
+  container-title: Botanical Helvetica
+  issued:
+    - year: 1991
+  language: en
+  page: 209--225
+  source: Zotero
+  title: >-
+    Hybrids and polyploidy in the genus Athyrium (Pteridophyta) in Europe. 2.
+    Origin and description of two triploid hybrids and synthesis of
+    allotetraploids
+  type: article-journal
+  volume: 101/2
+
+- id: schneller1984hybrids
+  author:
+    - family: Schneller
+      given: J Jakob
+    - family: Rasbach
+      given: Helga
+  citation-key: schneller1984hybrids
+  container-title: Botanical Helvetica
+  issue: '1'
+  issued:
+    - year: 1984
+  page: 82--99
+  title: Hybrids and polyploidy in the genus Athyrium (Pteridophyta) in Europe
+  type: article-journal
+  volume: '94'
+
+- id: schuettpelz2025phylogenetically
+  abstract: >-
+    The roughly 500 species of cheilanthoid ferns exhibit a diversity of
+    morphological adaptations to xeric environments. However, most of these
+    traits have evolved independently multiple times, impeding past efforts to
+    establish a natural classification for the group. Considerable progress has
+    been made over the past three decades resolving most of the major lineages,
+    with the notable exception of the hemionitids, the largest and most widely
+    distributed clade. The nearly 350 hemionitid species can be found in dry
+    regions across the globe and account for two-thirds of cheilanthoid
+    diversity. While some of the 17 genera commonly attributed to this group are
+    easily recognized and demonstrably monophyletic, others have been shown to
+    be clearly non-monophyletic. Here, we explore phylogenetic relationships
+    among hemionitid species using a dataset that greatly expands on earlier
+    studies. We carefully consider generic lines and propose a phylogenetically
+    informed classification that better aligns with morphology, geography, and
+    evolutionary history. Based on our analyses and morphological
+    investigations, we propose the recognition of 22 monophyletic hemionitid
+    genera. Nine of our generic circumscriptions are consistent with those of
+    most other recent studies. Two other genera are expanded relative to these
+    studies, while two are more narrowly defined. Two generic names are
+    resurrected herein and seven genera are newly described to accommodate
+    divergent clades. In all, 106 new species-level (plus 9 subspecific)
+    combinations are made.
+  accessed:
+    - year: 2025
+      month: 2
+      day: 27
+  author:
+    - family: Schuettpelz
+      given: Eric
+    - family: Windham
+      given: Michael D.
+    - family: Prado
+      given: Jefferson
+    - family: Hooper
+      given: Elisabeth A.
+    - family: Yatskievych
+      given: George
+    - family: Huiet
+      given: Layne
+    - family: Picard
+      given: Kathryn T.
+    - family: Pryer
+      given: Kathleen M.
+  citation-key: schuettpelz2025phylogenetically
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.13314
+  ISSN: 0040-0262, 1996-8175
+  issued:
+    - year: 2025
+      month: 2
+      day: 17
+  language: en
+  page: tax.13314
+  source: DOI.org (Crossref)
+  title: >-
+    A phylogenetically informed generic reclassification of the hemionitid ferns
+    (Pteridaceae: Cheilanthoideae)
+  title-short: >-
+    A phylogenetically informed generic reclassification of the hemionitid ferns
+    (Pteridaceae
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13314
+
+- id: serizawa1981taxonomic
+  author:
+    - family: Serizawa
+      given: Shunsuke
+  citation-key: serizawa1981taxonomic
+  container-title: Journal of Japanese Botany
+  issue: '7'
+  issued:
+    - year: 1981
+  page: 193--199
+  title: Taxonomic notes on Asian ferns (7)
+  type: article-journal
+  volume: '56'
+
+- id: smissen2024revisiting
+  abstract: >-
+    New Zealand is home to 16 endemic species of Lepidium (Brassicaceae),
+    including two species considered to have become extinct since European
+    colonisation and an additional species shared with Australia. Previous
+    meiotic chromosome counts suggest at least some are high polyploids. A
+    hybrid origin has been proposed for several of them, with African and
+    American species implicated as parents. We generated amplicon sequence data
+    for 15 genes derived from targeted enrichment data from a selection of
+    species endemic to New Zealand, and of African, American, and Australian
+    origin naturalised in New Zealand. These were analysed, along with publicly
+    available genomic data from other Lepidium species. Our results are
+    consistent with earlier work in supporting two main groups of endemic New
+    Zealand Lepidium, corresponding to different dominant nrDNA sequences. Our
+    data suggest that these two groups differ in ploidy (one octoploid, the
+    ploidy of the other uncertain). The octoploid species combine four
+    distinguishable subgenomes and the other species may be the products of
+    allopolyploidisation between octoploid species and a diploid species closely
+    related to, if not, L. africanum. Previously proposed links to American
+    Lepidium are also supported, with at least two Australasian Lepidium
+    subgenomes related to subgenomes present in American polyploid species. The
+    affinities of two further subgenomes present in Australasian Lepidium remain
+    to be determined, but they may also be of American origin. One New Zealand
+    endemic species, L. naufragorum, displays sequences broadly consistent with
+    it being the octodecaploid product of hybridisation between octoploid and
+    decaploid New Zealand groups.
+  accessed:
+    - year: 2024
+      month: 9
+      day: 19
+  author:
+    - family: Smissen
+      given: Rob D.
+    - family: Walker
+      given: Susan
+    - family: Heenan
+      given: Peter B.
+  citation-key: smissen2024revisiting
+  container-title: Plant Systematics and Evolution
+  container-title-short: Plant Syst Evol
+  DOI: 10.1007/s00606-024-01899-x
+  ISSN: 0378-2697, 1615-6110
+  issue: '3'
+  issued:
+    - year: 2024
+      month: 6
+  language: en
+  page: '17'
+  source: DOI.org (Crossref)
+  title: >-
+    Revisiting the bicontinental allopolyploid origin of Australasian Lepidium
+    species with amplicon sequencing of 15 nuclear genes
+  type: article-journal
+  URL: https://link.springer.com/10.1007/s00606-024-01899-x
+  volume: '310'
+
+- id: smith2006classification
+  author:
+    - family: Smith
+      given: Alan R.
+    - family: Pryer
+      given: Kathleen M
+    - family: Schuettpelz
+      given: Eric
+    - family: Korall
+      given: Petra
+    - family: Schneider
+      given: Harald
+    - family: Wolf
+      given: Paul G.
+  citation-key: smith2006classification
+  container-title: Taxon
+  issued:
+    - year: 2006
+  page: 705-731
+  title: A classification for extant ferns
+  type: article-journal
+  URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p490
+  volume: '55'
+
+- id: song2023resolving
+  abstract: >-
+    Relationships among the major subclades in the fern family Pteridaceae have
+    proven difﬁcult to resolve. Here, we examine the backbone of this large and
+    heterogeneous lineage using both phylotranscriptomic methods and a more
+    focused, curated approach. We ﬁnd that Pteridoideae and Parkerioideae are
+    together sister to the rest of Pteridaceae and that Cryptogrammoideae is
+    sister to Vittarioideae plus Cheilanthoideae. We ﬁnd independent support
+    from our phylotranscriptomic analyses, published cytological data, and
+    genomic distributions of substitutions per site for several whole-genome
+    duplication (WGD) events within Pteridaceae, mainly in Vittarioideae and
+    Cheilanthoideae. However, the various inference methods gave differing
+    approximations for the placement of WGD events within each clade. This study
+    demonstrates that phylotranscriptomic analyses, which employ large datasets
+    at the cost of requiring simpler models and potentially a greater risk of
+    systematic error, can be used in concert with more curated approaches to
+    resolve deep phylogenetic relationships. It also provides an example of the
+    difﬁculty of conﬁdently inferring ancient WGD event placement, even when
+    using multiple methods.
+  accessed:
+    - year: 2023
+      month: 10
+      day: 23
+  author:
+    - family: Song
+      given: Michael J.
+    - family: Rothfels
+      given: Carl J.
+    - family: Schuettpelz
+      given: Eric
+    - family: Nitta
+      given: Joel
+    - family: Huiet
+      given: Layne
+    - family: Li
+      given: Fay-Wei
+    - family: Wefferling
+      given: Keir M.
+  citation-key: song2023resolving
+  container-title: American Fern Journal
+  container-title-short: American Fern Journal
+  DOI: 10.1640/0002-8444-113.3.191
+  ISSN: 0002-8444
+  issue: '3'
+  issued:
+    - year: 2023
+      month: 9
+      day: 29
+  language: en
+  source: DOI.org (Crossref)
+  title: >-
+    Resolving Deep Relationships and Revealing Ancient Whole-Genome Duplications
+    in Pteridaceae using Transcriptomic Data
+  type: article-journal
+  URL: >-
+    https://bioone.org/journals/american-fern-journal/volume-113/issue-3/0002-8444-113.3.191/Resolving-Deep-Relationships-and-Revealing-Ancient-Whole-Genome-Duplications-in/10.1640/0002-8444-113.3.191.full
+  volume: '113'
+
+- id: testo2019phylogenetic
+  author:
+    - family: Testo
+      given: Weston L.
+    - family: Field
+      given: Ashley R
+    - family: Sessa
+      given: Emily B
+    - family: Sundue
+      given: Michael A
+    - family: Hall
+      given: Bartram
+  citation-key: testo2019phylogenetic
+  DOI: 10.1600/036364419X15650157948607
+  issued:
+    - year: 2019
+  page: 1-16
+  title: >-
+    Phylogenetic and morphological analyses support the resurrection of
+    *Dendroconche* and the recognition of two new genera in Polypodiaceae
+    subfamily Microsoroideae
+  type: article-journal
+  volume: '44'
+
+- id: triana-moreno2022phylogenetic
+  abstract: >-
+    We undertook a molecular phylogenetic revision of hayscented ferns
+    (Dennstaedtiaceae: Dennstaedtioideae) using four plastid markers. Our
+    sampling represents ca. 40% of the extant diversity and includes the type
+    species for each of the relevant segregate genera. We coded 18 discrete
+    morphological characters which we used to find diagnosable clades. We show
+    that Dennstaedtia is polyphyletic, with the majority of species forming
+    three morphologically distinct clades, but its type (D. flaccida) is nested
+    within Microlepia. As such, we support the conservation of Dennstaedtia with
+    a new type, D. dissecta. Following our results, we develop a classification
+    of four genera: Dennstaedtia, Microlepia, Mucura (gen. nov.) and Sitobolium.
+    Beyond the inclusion of D. flaccida, we propose to maintain Microlepia with
+    its current circumscription. Except for a single adventive species in the
+    Neotropics, Microlepia is a Paleotropical genus of about 60 species
+    diagnosed by their distinctive perispore ornamentation of rodlets, and by
+    petioles that lack epipetiolar buds. Mucura is a Neotropical genus of two
+    species that differ from all other Dennstaedtiaceae by the combination of
+    dichotomously branching rhizomes, petioles that lack epipetiolar buds,
+    marginal sori with both abaxial and adaxial indusia, and trilete spores with
+    a unique perispore ornamentation. As defined here, Dennstaedtia is a
+    pantropical genus of about 55 species recognized by having unbranched
+    rhizomes, petioles bearing epipetiolar buds, and by often bearing
+    proliferous buds upon the leaves. Sitobolium is a small clade of ca. five
+    species distinguished by their relatively small leaves that have elongate
+    catenate hairs. These hairs often bear a capitate non-glandular terminal
+    cell. In support of our classification, we provide a key to the eleven
+    genera of Dennstaedtiaceae, and for the four genera of Dennstaedtioideae we
+    provide morphological and geographic synopses, a list of constituent
+    species, and necessary new combinations.
+  accessed:
+    - year: 2022
+      month: 12
+      day: 19
+  author:
+    - family: Triana‐Moreno
+      given: Luz A.
+    - family: Yañez
+      given: Agustina
+    - family: Kuo
+      given: Li‐Yaung
+    - family: Rothfels
+      given: Carl J.
+    - family: Pena
+      given: Nelson Túlio L.
+    - family: Schwartsburd
+      given: Pedro B.
+    - family: Sundue
+      given: Michael
+  citation-key: triana-moreno2022phylogenetic
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.12858
+  ISSN: 0040-0262, 1996-8175
+  issued:
+    - year: 2022
+      month: 12
+      day: 14
+  language: en
+  page: tax.12858
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogenetic revision of Dennstaedtioideae (Dennstaedtiaceae: Polypodiales)
+    with description of *Mucura* , gen. nov.
+  title-short: Phylogenetic revision of Dennstaedtioideae (Dennstaedtiaceae
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12858
+
+- id: tseng2024role
+  abstract: >-
+    Methods: By phasing captured reads within a phylogenomic data set of GoFlag
+    408 nuclear loci using HybPhaser, we investigated candidate hybrids to
+    identify parental lineages. We estimated divergence ages by inferring a
+    dated phylogeny using fossil calibrations with treePL. We investigated
+    ecological niche conservatism between one conﬁrmed intergeneric
+    allotetraploid and its diploid progenitors using the centroid, overlap,
+    unﬁlling, and expansion (COUE) framework.
+
+    Results: We provide evidence for at least six instances of intergeneric
+    hybrid speciation within the christelloid clade and estimate up to 45
+    million years of divergence between progenitors. The niche quantiﬁcation
+    analysis showed moderate niche overlap between an allopolyploid species and
+    its progenitors, with signiﬁcant divergence from the niche of one progenitor
+    and conservatism to the other.
+
+    Conclusions: The examples provided here highlight the overlooked role that
+    allopolyploidization following intergeneric hybridization may play in fern
+    diversiﬁcation and range and niche expansions. Applying this approach to
+    other fern taxa may reveal a similar pattern of deep hybridization resulting
+    in highly successful novel lineages.
+  accessed:
+    - year: 2024
+      month: 10
+      day: 4
+  author:
+    - family: Tseng
+      given: Yu‐Hsin
+    - family: Kuo
+      given: Li‐Yaung
+    - family: Borokini
+      given: Israel
+    - family: Fawcett
+      given: Susan
+  citation-key: tseng2024role
+  container-title: American Journal of Botany
+  container-title-short: American J of Botany
+  DOI: 10.1002/ajb2.16388
+  ISSN: 0002-9122, 1537-2197
+  issue: '8'
+  issued:
+    - year: 2024
+      month: 8
+  language: en
+  page: e16388
+  source: DOI.org (Crossref)
+  title: >-
+    The role of deep hybridization in fern speciation: Examples from the
+    Thelypteridaceae
+  title-short: The role of deep hybridization in fern speciation
+  type: article-journal
+  URL: https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.16388
+  volume: '111'
+
+- id: vieiralima2023phylogenomic
+  accessed:
+    - year: 2024
+      month: 1
+      day: 24
+  author:
+    - family: Vieira Lima
+      given: Lucas
+    - family: Salino
+      given: Alexandre
+    - family: Kessler
+      given: Michael
+    - family: Rouhan
+      given: Germinal
+    - family: Testo
+      given: Weston L.
+    - family: Suzart Argolo
+      given: Caio
+    - family: Consortium
+      given: GoFlag
+    - family: Elias Almeida
+      given: Thaís
+  citation-key: vieiralima2023phylogenomic
+  container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2023.107782
+  ISSN: '10557903'
+  issued:
+    - year: 2023
+      month: 7
+  language: en
+  page: '107782'
+  source: DOI.org (Crossref)
+  title: Phylogenomic evolutionary insights in the fern family Gleicheniaceae
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1055790323000829
+  volume: '184'
+
+- id: wan2022three
+  abstract: >-
+    We reviewed the hybrid genera of ferns and propose three new nothogeneric
+    names, ×Apseudathyrium, ×Glaphyrocyclosorus, and ×Osmunimunda, and four new
+    combinations to accommodate the nothospecies related to these three new
+    nothogenera.
+  accessed:
+    - year: 2023
+      month: 11
+      day: 9
+  author:
+    - family: Wan
+      given: Xia
+    - family: Zhang
+      given: Li-Bing
+  citation-key: wan2022three
+  container-title: Phytotaxa
+  container-title-short: Phytotaxa
+  DOI: 10.11646/phytotaxa.575.1.8
+  ISSN: 1179-3163, 1179-3155
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 12
+      day: 6
+  language: en
+  source: DOI.org (Crossref)
+  title: >-
+    Three new fern names of hybrid genera and four new combinations in
+    Athyriaceae, Osmundaceae, and Thelypteridaceae
+  type: article-journal
+  URL: https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.575.1.8
+  volume: '575'
+
+- id: wei2017phylogeny
+  abstract: |-
+    Abstract
+                
+                  Pyrrosia
+                  s.l. comprises ca. 60 species with a disjunct Africa/Asia and Australia distribution. The infrageneric classification of
+                  Pyrrosia
+                  s.l. is controversial based on the phylogenetic analyses of chloroplast markers and morphology. Based on the expanded taxon sampling of
+                  Pyrrosia
+                  s.l. (51 species), we investigated its phylogeny, biogeography, character evolution and environmental adaptation by employing five chloroplastid markers (
+                  rbc
+                  L,
+                  mat
+                  K,
+                  psb
+                  A-
+                  trn
+                  H, and
+                  rps
+                  4 + 
+                  rps
+                  4-
+                  trn
+                  S) and one single (low)-copy nuclear gene,
+                  LEAFY
+                  .
+                  Pyrrosia
+                  s.l. was divided into six major clades and eight subclades. Reticulate evolution was revealed both among clades and among species in
+                  Pyrrosia
+                  s.l. Ancestral character state optimization revealed high levels of homoplastic evolution of the diagnostic characters in
+                  Pyrrosia
+                  s.l., while the crassulacean acid metabolism pathway seems to have an independent origin. Molecular dating and biogeographic diversification analyses suggested that
+                  Pyrrosia
+                  s.l. originated no later than the Oligocene and the main clades diversified during the Oligocene and Miocene, with southern Asia, the Indo-China Peninsula and southwestern and southern China as the most likely ancestral areas. Transoceanic long-distance dispersal, rather than vicariance, contributed to the intercontinental disjunction. Diversification scenarios of
+                  Pyrrosia
+                  s.l. under geological movements and climate fluctuation are also discussed.
+  accessed:
+    - year: 2024
+      month: 2
+      day: 7
+  author:
+    - family: Wei
+      given: Xueping
+    - family: Qi
+      given: Yaodong
+    - family: Zhang
+      given: Xianchun
+    - family: Luo
+      given: Li
+    - family: Shang
+      given: Hui
+    - family: Wei
+      given: Ran
+    - family: Liu
+      given: Haitao
+    - family: Zhang
+      given: Bengang
+  citation-key: wei2017phylogeny
+  container-title: Scientific Reports
+  container-title-short: Sci Rep
+  DOI: 10.1038/s41598-017-12839-w
+  ISSN: 2045-2322
+  issue: '1'
+  issued:
+    - year: 2017
+      month: 10
+      day: 6
+  language: en
+  page: '12757'
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogeny, historical biogeography and characters evolution of the drought
+    resistant fern Pyrrosia Mirbel (Polypodiaceae) inferred from plastid and
+    nuclear markers
+  type: article-journal
+  URL: https://www.nature.com/articles/s41598-017-12839-w
+  volume: '7'
+
+- id: wei2022revised
+  accessed:
+    - year: 2022
+      month: 1
+      day: 26
+  author:
+    - family: Wei
+      given: Ran
+    - family: Zhang
+      given: Xian‐Chun
+  citation-key: wei2022revised
+  container-title: Taxon
+  DOI: 10.1002/tax.12658
+  ISSN: 0040-0262, 1996-8175
+  issued:
+    - year: 2022
+      month: 1
+      day: 19
+  language: en
+  source: DOI.org (Crossref)
+  title: >-
+    A revised subfamilial classification of Polypodiaceae based on plastome,
+    nuclear ribosomal, and morphological evidence
+  type: article-journal
+
+- id: xu2025phylogeny
+  abstract: >-
+    Although considerable progress has recently been made in the phylogeny of
+    Hymenasplenium, the genus remains poorly investigated; speciﬁcally, the
+    diversiﬁcation and historical biogeography of the genus have been little
+    studied. Here, we infer an updated plastid DNA phylogeny and the ﬁrst
+    large‐scale nuclear DNA phylogeny to understand the biogeography of the
+    genus. The plastid phylogeny includes 312 accessions from across the genus′
+    distribution range (ca. 121% increase of the latest sampling), with special
+    attention paid to island accessions from 14 Indian Ocean and Paciﬁc islands,
+    whereas the nuclear phylogeny includes 161 accessions of the Afro–Eurasian
+    species. We identify one new major clade and two new subclades. Reticulate
+    evolution was revealed both among subclades and among species in the
+    Afro–Eurasian. Our divergence‐time analyses show that most of the extant
+    species diversity has arisen from diversiﬁcation after the Oligocene despite
+    a Cretaceous origin of the genus. Ancestral area reconstruction revealed
+    that vicariance likely played a major role in building biogeographic
+    patterns at deep evolutionary scales (the Afro–Eurasian clade and the
+    American clade) in Hymenasplenium, while the intercontinental disjunctions
+    within the Afro–Eurasian clade among Asia, Africa, and Oceania might have
+    resulted from frequent long‐distance dispersal events from Asia to Oceania
+    and Africa.
+  accessed:
+    - year: 2025
+      month: 6
+      day: 28
+  author:
+    - family: Xu
+      given: Ke‐Wang
+    - family: Deng
+      given: Meng‐Dan
+    - family: Zhou
+      given: Lin
+    - family: Shang
+      given: Hui
+    - family: Zhang
+      given: Liang
+    - family: Li
+      given: Chun‐Xiang
+    - family: Rothfels
+      given: Carl J.
+    - family: Lorence
+      given: David
+    - family: Wood
+      given: Kenneth R.
+    - family: Ranker
+      given: Tom A.
+    - family: Thi Lu
+      given: Ngan
+    - family: Zhou
+      given: Xin‐Mao
+    - family: Knapp
+      given: Ralf
+    - family: He
+      given: Zhao‐Rong
+    - family: Yan
+      given: Yue‐Hong
+    - family: Gao
+      given: Xin‐Fen
+    - family: Zhang
+      given: Li‐Bing
+  citation-key: xu2025phylogeny
+  container-title: Journal of Systematics and Evolution
+  container-title-short: J of Systematics Evolution
+  DOI: 10.1111/jse.13194
+  ISSN: 1674-4918, 1759-6831
+  issued:
+    - year: 2025
+      month: 6
+      day: 24
+  language: en
+  page: jse.13194
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogeny and biogeography of the fern genus *Hymenasplenium*
+    (Aspleniaceae), with special reference to island speciation
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1111/jse.13194
+
+- id: zhang2017phylogeny
+  abstract: >-
+    As the second most genera-rich fern family, Pteridaceae contain more than
+    1000 species contributing to ca. 10% of extant leptosporangiate fern
+    diversity. The subfamily Pteridoideae is one of the five subfamilies often
+    recognized. The circumscription of Pteridoideae has not been clear. A large
+    number of species have not yet been included in any molecular analyses
+    before. In this study, DNA sequences of six plastid loci of 154 accessions
+    representing ca. 87 species in 14 genera of Pteridaceae subfam. Pteridoideae
+    and four accessions representing two species in subfam. Parkerioideae and
+    one species of subfam. Adiantoideae as outgroups were used to infer a
+    phylogeny using maximum likelihood and maximum parsimony. Our analyses show
+    that (1) Pteridoideae is monophyletic and the newly defined subfamily is
+    composed of 14 genera including a newly described genus; (2) Pteridoideae is
+    resolved into four strongly supported monophyletic clades: the Pteris clade,
+    the Actiniopteris + Onychium clade, the JAPSTT clade, and the GAPCC clade,
+    these being supported by not only molecular data but also morphological
+    features and distribution information; (3) Onychium is confirmed as
+    monophyletic and accessions of Onychium are resolved into two strongly
+    supported clades, the O. cryptogrammoides clade and the O. siliculosum
+    clade; and (4) Accessions of the traditionally defined Anogramma are
+    resolved as paraphyletic in relation to Cerosora, Cosentinica, and
+    Pityrogramma. Three species traditionally treated in Anogramma are in fact
+    more closely related to Cerosora and Pityrogramma than they are to
+    Anogramma. Gastoniella Li Bing Zhang & Liang Zhang, gen. nov. is described
+    to accommodate these species and three new combinations are provided. Three
+    currently known species of Gastoniella are distributed in the Ascension
+    Island in South Atlantic Ocean, central Mexico, and tropical America,
+    respectively. The new genus is distinct from Anogramma s.s. in having
+    ultimate segments linear not obviously broadening toward the upper portion.
+  author:
+    - family: Zhang
+      given: Liang
+    - family: Zhou
+      given: Xin Mao
+    - family: Lu
+      given: Ngan Thi
+    - family: Zhang
+      given: Li Bing
+  citation-key: zhang2017phylogeny
+  container-title: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2016.12.037
+  ISSN: '10959513'
+  issued:
+    - year: 2017
+  page: 59-72
+  title: >-
+    Phylogeny of the fern subfamily Pteridoideae (Pteridaceae; Pteridophyta),
+    with the description of a new genus: *Gastoniella*
+  type: article-journal
+  URL: http://dx.doi.org/10.1016/j.ympev.2016.12.037
+  volume: '109'
+
+- id: zhang2017ppg
+  author:
+    - family: Zhang
+      given: Li-Bing
+  citation-key: zhang2017ppg
+  container-title: Biodiversity Science
+  DOI: 10.17520/biods.2016372
+  issue: '3'
+  issued:
+    - year: 2017
+  language: English
+  page: 340-342
+  title: The PPG I classification and pteridophytes of China
+  type: article-journal
+  URL: http://www.biodiversity-science.net/EN/10.17520/biods.2016372
+  volume: '25'
+
+- id: zhang2020evolutionary
+  author:
+    - family: Zhang
+      given: Liang
+    - family: Fan
+      given: Xue Ping
+    - family: Petchsri
+      given: Sahanat
+    - family: Zhou
+      given: Lin
+    - family: Pollawatn
+      given: Rossarin
+    - family: Zhang
+      given: Xin
+    - family: Zhou
+      given: Xin-Mao
+    - family: Thi Lu
+      given: Ngan
+    - family: Knapp
+      given: Ralf
+    - family: Chantanaorrapint
+      given: Sahut
+    - family: Limpanasittichai
+      given: Ponpipat
+    - family: Sun
+      given: Hang
+    - family: Gao
+      given: Xin-Fen
+    - family: Zhang
+      given: Li-Bing
+  citation-key: zhang2020evolutionary
+  container-title: Cladistics
+  issued:
+    - year: 2020
+      month: 1
+      day: 17
+  page: 14-16
+  publisher: Wiley/Blackwell (10.1111)
+  title: >-
+    Evolutionary relationships of the ancient fern lineage the adder's tongues
+    (Ophioglossaceae) with description of Sahashia gen. nov
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/cla.12408
+  volume: '16'
+...
