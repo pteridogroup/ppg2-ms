@@ -391,24 +391,40 @@ ppg_issues_count |>
 #|   based on Fern Tree of Life v`r ft_data_ver()`.
 #| "
 
-# Format clade labels on right side (order and suborder)
+# Format family labels with genus/species counts. Keep num species for tip
+# points
+family_tip_labels <-
+  ppg |>
+  filter(taxonRank == "family", taxonomicStatus == "accepted") |>
+  select(taxonID) |>
+  left_join(children_tally, by = join_by(taxonID)) |>
+  select(taxon_name, n_genera, n_species) |>
+  mutate(
+    family_label = glue::glue("{taxon_name} ({n_genera}/{n_species})") |>
+      as.character()
+  ) |>
+  select(tip = taxon_name, family_label, n_species)
+
+# Format clade labels for formal taxa
 subclass_labels <- format_tip_labels("subclass", phy_family, ppg, ppg_tl)
 order_labels <- format_tip_labels("order", phy_family, ppg, ppg_tl)
 suborder_labels <- format_tip_labels("suborder", phy_family, ppg, ppg_tl)
 
-# Format labels at internal nodes (class)
+# Format labels for informal clade names
 informal_clades <- tribble(
   ~node, ~label,
   getMRCA(phy_family, c("Blechnaceae", "Polypodiaceae")), "eupolypods"
 ) |>
   mutate(label_type = "clade")
 
+# Combine
 all_labs <- subclass_labels |>
   bind_rows(order_labels) |>
   bind_rows(suborder_labels) |>
   bind_rows(informal_clades) |>
   rename(taxon = label)
 
+# - right side clades
 clade_labs_side <- all_labs |>
   filter(label_type == "clade") |>
   filter(
@@ -421,8 +437,10 @@ clade_labs_side <- all_labs |>
       "Schizaeales"
     )
   ) |>
+  # ggtree wants different column names for each 'label' in every dataset
   rename(taxon_clade = taxon)
 
+# - internal nodes
 clade_labs_node <- all_labs |>
   filter(label_type == "clade") |>
   filter(
@@ -435,17 +453,28 @@ clade_labs_node <- all_labs |>
   ) |>
   rename(taxon_node = taxon)
 
+# - right side tips
 tip_labs_side <- all_labs |>
   filter(label_type == "tip") |>
   select(tip, taxon_tip = taxon)
 
+# set font sizes
 lab_font_size <- 2.5
 tip_font_size <- 2.5
-clade_lab_offset <- 6
+clade_lab_offset <- 8
 
+# generate figure
 tree_fig <- ggtree(phy_family, branch.length = "none") %<+%
+  family_tip_labels %<+%
   clade_labs_node %<+%
   tip_labs_side +
+  # Triangles scaled by species count
+  geom_tippoint(
+    aes(size = n_species),
+    shape = 18, # triangle shape
+    # x = triangle_offset,
+    color = "black"
+  ) +
   # Clade labels (nodes)
   geom_text_repel(
     aes(label = taxon_node),
@@ -462,14 +491,21 @@ tree_fig <- ggtree(phy_family, branch.length = "none") %<+%
     extend = 0.25
   ) +
   # Tip labels (family)
-  geom_tiplab(size = tip_font_size) +
+  geom_tiplab(
+    aes(label = family_label),
+    size = tip_font_size,
+    offset = 0.45
+  ) +
   # Tip labels (higher taxon)
   geom_tiplab(
     aes(label = taxon_tip),
     size = tip_font_size,
     offset = clade_lab_offset
   ) +
-  xlim(-1, 33)
+  xlim(-1, 33) +
+  theme(
+    legend.position = "none"
+  )
 
 ggsave(
   plot = tree_fig,
@@ -480,8 +516,6 @@ ggsave(
 )
 
 tree_fig
-
 ```
-
 
 ## References
