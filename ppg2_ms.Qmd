@@ -487,8 +487,18 @@ tree_fig <- ggtree(phy_family, branch.length = "none") %<+%
     data = clade_labs_side,
     mapping = aes(node = node, label = taxon_clade),
     offset = clade_lab_offset,
-    size = lab_font_size,
+    fontsize = lab_font_size,
     extend = 0.25
+  ) +
+  # Paraphyletic group labels (right side)
+  geom_strip(
+    "Gleicheniaceae",
+    "Matoniaceae",
+    label = "Gleicheniales",
+    offset = clade_lab_offset,
+    fontsize = lab_font_size,
+    extend = 0.25,
+    offset.text = 0.2
   ) +
   # Tip labels (family)
   geom_tiplab(
