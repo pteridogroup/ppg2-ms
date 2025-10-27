@@ -695,10 +695,10 @@ count_ppgi <- function(ppg_i) {
     # manual changes
     rows_upsert(
       tribble(
-        ~taxonRank, ~accepted,
-        "subclass",         4,
-        "genus"   ,       337,
-        "species" ,     11916
+        ~taxonRank , ~accepted ,
+        "subclass" ,         4 ,
+        "genus"    ,       337 ,
+        "species"  ,     11916
       )
     )
 }
@@ -777,7 +777,12 @@ fetch_parent_single <- function(query, rank, ppg, ppg_tl) {
     concept = query_id
   )
 
-  taxlist::print_name(ppg_tl, parent_id, italics = FALSE, include_author = FALSE)
+  taxlist::print_name(
+    ppg_tl,
+    parent_id,
+    italics = FALSE,
+    include_author = FALSE
+  )
 }
 
 # Retrieve the parent taxon at a specified taxonomic level
@@ -806,29 +811,30 @@ format_tip_labels <- function(rank_select, phy_family, ppg, ppg_tl) {
     mutate(
       label_type = if_else(n > 1, "clade", "tip")
     )
-    
-    clade_labels <-
-      tips_to_higher_taxon |>
-      filter(label_type == "clade") |>
-      select(-n)
-    
-    tip_labels <-
-      tips_to_higher_taxon |>
-      filter(label_type == "tip") |>
-      select(-n)
-    
-    if (nrow(clade_labels) > 0) {
-      clade_labels <-
-        clade_labels |>
-        group_by(label) |>
-        summarize(node = getMRCA(phy_family, tip)) |>
-        mutate(label_type = "clade")
-    }
 
-    bind_rows(
-      tip_labels,
-      clade_labels
-    ) |>
+  clade_labels <-
+    tips_to_higher_taxon |>
+    filter(label_type == "clade") |>
+    select(-n)
+
+  tip_labels <-
+    tips_to_higher_taxon |>
+    filter(label_type == "tip") |>
+    select(-n)
+
+  if (nrow(clade_labels) > 0) {
+    clade_labels <-
+      clade_labels |>
+      group_by(label) |>
+      summarize(node = getMRCA(phy_family, tip)) |>
+      mutate(label_type = "clade")
+  }
+
+  bind_rows(
+    tip_labels,
+    clade_labels
+  ) |>
     select(all_of(c("label", "label_type", "tip", "node")))
+}
 
 }
