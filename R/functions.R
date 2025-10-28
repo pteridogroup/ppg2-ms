@@ -837,4 +837,55 @@ format_tip_labels <- function(rank_select, phy_family, ppg, ppg_tl) {
     select(all_of(c("label", "label_type", "tip", "node")))
 }
 
+# Convert family-level fern tree to a tree including other major tracheophyte
+# lineages
+fern_to_tracheo_phy <- function(phy_family) {
+
+  # Start with fern phylogeny
+  fern_tree <- phy_family
+  fern_tree$edge.length <- NULL
+  fern_tree$root.edge <- 1
+
+  # Make a lycophyte tree
+  lyco_tree <- ape::read.tree(
+    text = "(((Selaginellaceae, Isoetaceae), Lycopodiaceae), Algae);"
+  )
+
+  # Bind seed plants to ferns
+  megaphyll_tree <- phytools::bind.tip(
+    fern_tree,
+    "Spermatophytes",
+    where = "root"
+  )
+
+  # Re-root the tree so the root is between spermatophytes and ferns
+  megaphyll_tree <- ape::root(
+    megaphyll_tree,
+    outgroup = "Spermatophytes",
+    resolve.root = TRUE
+  )
+
+  megaphyll_tree$root.edge <- 1
+
+  # Bind lycophytes to megaphylls
+  tracheo_tree <-
+    ape::bind.tree(
+      megaphyll_tree,
+      lyco_tree,
+      where = "root"
+    )
+
+  # Fix rooting
+  tracheo_tree <- ape::root(
+    tracheo_tree,
+    outgroup = "Algae",
+    resolve.root = TRUE
+  ) |>
+    ape::drop.tip("Algae") |>
+    root(
+      outgroup = c("Lycopodiaceae", "Isoetaceae", "Selaginellaceae"),
+      resolve.root = TRUE
+    )
+
+  tracheo_tree
 }
