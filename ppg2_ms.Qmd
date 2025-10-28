@@ -425,7 +425,9 @@ suborder_labels <- format_tip_labels("suborder", phy_tracheo, ppg, ppg_tl)
 other_labels <- tribble(
   ~node, ~label,
   getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae")), "eupolypods",
-  getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")), "Lycopodiopsida"
+  getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")), "Lycopodiopsida",
+  getMRCA(phy_tracheo, c("Equisetaceae", "Polypodiaceae")), "Polypodiopsida",
+  getMRCA(phy_tracheo, c("Spermatophytes", "Polypodiaceae")), "euphyllophytes"
 ) |>
   mutate(label_type = "clade")
 
@@ -460,8 +462,25 @@ clade_labs_node <- all_labs |>
       "eupolypods",
       "Polypodiales",
       "Polypodiidae",
-      "Ophioglossidae"
+      "Ophioglossidae",
+      "Polypodiopsida",
+      "euphyllophytes"
     )
+  ) |>
+  mutate(
+    taxon = taxon |>
+      str_replace_all(
+        "Polypodiidae",
+        "Polypodiidae (leptosporangiates)"
+      ) |>
+      str_replace_all(
+        "Polypodiopsida",
+        "Polypodiopsida (ferns)"
+      ) |>
+      str_replace_all(
+        "Polypodiales",
+        "Polypodiales (cathetogyrates)"
+      )
   ) |>
   rename(taxon_node = taxon)
 
@@ -516,7 +535,7 @@ branch_lab_vjust <- -0.6
 # generate figure
 tree_fig <-
   # Base tree
-  ggtree(phy_tracheo, branch.length = "none") %<+%
+  ggtree(phy_tracheo, layout = "rectangular") %<+%
   # Add datasets
   family_tip_labels %<+%
   clade_labs_node %<+%
@@ -589,7 +608,7 @@ tree_fig <-
   ) +
   # seems geom_rootedge() requires brn lengths
   # geom_rootedge() +
-  xlim(-1, 33) +
+  xlim(-2, 33) +
   theme(
     legend.position = "none"
   )
