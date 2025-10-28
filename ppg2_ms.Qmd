@@ -421,18 +421,19 @@ subclass_labels <- format_tip_labels("subclass", phy_tracheo, ppg, ppg_tl)
 order_labels <- format_tip_labels("order", phy_tracheo, ppg, ppg_tl)
 suborder_labels <- format_tip_labels("suborder", phy_tracheo, ppg, ppg_tl)
 
-# Format labels for informal clade names
-informal_clades <- tribble(
+# Format labels for other clade names
+other_labels <- tribble(
   ~node, ~label,
-  getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae")), "eupolypods"
+  getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae")), "eupolypods",
+  getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")), "Lycopodiopsida"
 ) |>
   mutate(label_type = "clade")
 
-# Combine
+# Combine label datasets
 all_labs <- subclass_labels |>
   bind_rows(order_labels) |>
   bind_rows(suborder_labels) |>
-  bind_rows(informal_clades) |>
+  bind_rows(other_labels) |>
   rename(taxon = label)
 
 # - right side clades
@@ -464,26 +465,69 @@ clade_labs_node <- all_labs |>
   ) |>
   rename(taxon_node = taxon)
 
-# - right side tips
+# - right side tips labels (order or suborder)
 tip_labs_side <- all_labs |>
   filter(label_type == "tip") |>
-  select(tip, taxon_tip = taxon)
+  select(tip, taxon_tip = taxon) |>
+  left_join(
+    ppg |> filter(taxonomicStatus == "accepted") |>
+      select(
+        taxon_tip = scientificName,
+        rank = taxonRank
+      ),
+    by = "taxon_tip"
+  ) |>
+  filter(rank %in% c("order", "suborder"))
 
-# set font sizes
-lab_font_size <- 2.5
-tip_font_size <- 2.5
+# - node labels above branches
+clade_labs_branch <- all_labs |>
+  filter(label_type == "clade") |>
+  filter(
+    taxon %in% c(
+      "Lycopodiopsida"
+    )
+  ) |>
+  mutate(
+    taxon = str_replace_all(
+      taxon,
+      "Lycopodiopsida",
+      "Lycopodiopsida (lycophytes)"
+    )
+  ) |>
+  rename(taxon_branch = taxon)
+
+# Since we can only adjust x-nudge for an entire layer at a time,
+# need to define separate datasets for each label with a different x-nudge
+branch_labs_equisetaceae <- tribble(
+  ~tip, ~equisetaceae_lab,
+  "Equisetaceae", "Equisetidae"
+)
+
+branch_labs_marattiaceae <- tribble(
+  ~tip, ~marattiaceae_lab,
+  "Marattiaceae", "Marattiidae"
+)
+
+# set font sizes etc
+fig_font_size <- 2.5
 clade_lab_offset <- 8
+branch_lab_vjust <- -0.6
 
 # generate figure
-tree_fig <- ggtree(phy_tracheo, branch.length = "none") %<+%
+tree_fig <-
+  # Base tree
+  ggtree(phy_tracheo, branch.length = "none") %<+%
+  # Add datasets
   family_tip_labels %<+%
   clade_labs_node %<+%
+  clade_labs_branch %<+%
+  branch_labs_equisetaceae %<+%
+  branch_labs_marattiaceae %<+%
   tip_labs_side +
-  # Triangles scaled by species count
+  # Diamonds scaled by species count
   geom_tippoint(
     aes(size = n_species),
-    shape = 18, # triangle shape
-    # x = triangle_offset,
+    shape = 18,
     color = "black"
   ) +
   # Clade labels (nodes)
@@ -491,14 +535,21 @@ tree_fig <- ggtree(phy_tracheo, branch.length = "none") %<+%
     aes(label = taxon_node),
     min.segment.length = 0,
     position = position_nudge_repel(x = -2.5, y = 1),
-    size = lab_font_size
+    size = fig_font_size
+  ) +
+  # Clade labels (above branch)
+  geom_nodelab(
+    aes(label = taxon_branch),
+    size = fig_font_size,
+    vjust = branch_lab_vjust,
+    nudge_x = -10
   ) +
   # Clade labels (right side)
   geom_cladelab(
     data = clade_labs_side,
     mapping = aes(node = node, label = taxon_clade),
     offset = clade_lab_offset,
-    fontsize = lab_font_size,
+    fontsize = fig_font_size,
     extend = 0.25
   ) +
   # Paraphyletic group labels (right side)
@@ -507,22 +558,37 @@ tree_fig <- ggtree(phy_tracheo, branch.length = "none") %<+%
     "Matoniaceae",
     label = "Gleicheniales",
     offset = clade_lab_offset,
-    fontsize = lab_font_size,
+    fontsize = fig_font_size,
     extend = 0.25,
     offset.text = 0.2
   ) +
   # Tip labels (family)
   geom_tiplab(
     aes(label = family_label),
-    size = tip_font_size,
+    size = fig_font_size,
     offset = 0.45
   ) +
-  # Tip labels (higher taxon)
+  # Tip labels (higher taxon on right side)
   geom_tiplab(
     aes(label = taxon_tip),
-    size = tip_font_size,
+    size = fig_font_size,
     offset = clade_lab_offset
   ) +
+  # Branch labels (monotypic groups, above branch)
+  geom_tiplab(
+    aes(label = equisetaceae_lab),
+    size = fig_font_size,
+    offset = -2,
+    vjust = branch_lab_vjust
+  ) +
+  geom_tiplab(
+    aes(label = marattiaceae_lab),
+    size = fig_font_size,
+    offset = -10,
+    vjust = branch_lab_vjust
+  ) +
+  # seems geom_rootedge() requires brn lengths
+  # geom_rootedge() +
   xlim(-1, 33) +
   theme(
     legend.position = "none"
