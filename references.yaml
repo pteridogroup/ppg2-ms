@@ -540,6 +540,67 @@ references:
   URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p501
   volume: '51'
 
+- id: fauskee2025ynesmexia
+  abstract: >-
+    Here we focus on the “skinneri clade” of cheilanthoid ferns (Pteridaceae),
+    revising its taxonomy based on a new set of molecular, cytogenetic, and
+    morphological analyses. Though previously assigned to disparate genera, the
+    five taxa formally recognized in this clade form a strongly supported
+    monophyletic group when analyzed with both plastid (rbcL, atpA, trnG-R) and
+    nuclear (gapCp) datasets. This novel lineage is recognized here as Ynesmexia
+    gen. nov. in honor of Ynés Mexía, a pioneering Mexican-American botanist.
+    Our molecular analyses indicate that Ynesmexia comprises two monophyletic
+    groups, referred to here as the “subcordata” and “seemannii” subclades. The
+    “subcordata” subclade encompasses plants previously treated as Cheilanthes
+    skinneri, ×Hemionanthes gryphus and Hemionitis subcordata. Our data indicate
+    that the first taxon comprises two species: a diploid treated here as
+    Ynesmexia fournieri (comb. nov.) and a tetraploid corresponding to Y.
+    skinneri (comb. nov.) s.str. Amplifying the differences in ploidy, these two
+    taxa are distinguished by several aspects of sporophyte morphology,
+    non-overlapping spore sizes, and allopatric geographic distributions. Our
+    analyses also highlight the role of hybridization and polyploidy in the
+    evolution of the group, indicating that: (1) Y. ×gryphus (comb. nov.) is a
+    largely fertile homoploid hybrid between Y. subcordata (comb. nov.) and Y.
+    fournieri, and (2) Y. skinneri s.str. is an allotetraploid between members
+    of the “subcordata” and “seemannii” subclades. Although the latter subclade
+    is morphologically (and likely cytogenetically) diverse, current data are
+    insufficient to propose formal subdivision of the only recognized species,
+    Y. seemannii (comb. nov.). The findings presented here challenge earlier
+    taxonomic frameworks and offer new insights into the evolutionary history of
+    this xeric-adapted fern lineage, underscoring the importance of using
+    multi-faceted approaches to resolve complex taxonomic issues in plant
+    biology.
+  accessed:
+    - year: 2025
+      month: 10
+      day: 25
+  author:
+    - family: Fauskee
+      given: Blake D.
+    - family: Windham
+      given: Michael D.
+    - family: Pryer
+      given: Kathleen M.
+  citation-key: fauskee2025ynesmexia
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.13340
+  ISSN: 0040-0262, 1996-8175
+  issue: '4'
+  issued:
+    - year: 2025
+      month: 8
+  language: en
+  page: 768-786
+  source: DOI.org (Crossref)
+  title: >-
+    *Ynesmexia* : A novel genus uniting morphologically disparate cheilanthoid
+    ferns (Pteridaceae)
+  title-short: '*Ynesmexia*'
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13340
+  volume: '74'
+
 - id: fawcett2022two
   abstract: Brittonia, doi:10.1007/s12228-022-09701-3
   author:
@@ -660,6 +721,32 @@ references:
   type: article-journal
   URL: https://www.frontiersin.org/articles/10.3389/fpls.2022.885501/full
   volume: '13'
+
+- id: kenrick1997origin
+  abstract: >-
+    The origin and early evolution of land plants in the mid-Palaeozoic era,
+    between about 480 and 360 million years ago, wasan important event in the
+    history of life, with far-reaching consequences for the evolution of
+    terrestrial organisms and global environments. A recent surge of interest,
+    catalysed by palaeobotanical discoveries and advances in the systematics of
+    living plants, provides a revised perspective on the evolution of early land
+    plants and suggests new directions for future research.
+  author:
+    - family: Kenrick
+      given: Paul
+    - family: Crane
+      given: Peter R
+  citation-key: kenrick1997origin
+  container-title: Nature
+  DOI: 10.1038/37918
+  ISSN: 0028-0836
+  issued:
+    - year: 1997
+  page: 33-39
+  PMID: '1526'
+  title: The origin and early evolution of plants on land
+  type: article-journal
+  volume: '389'
 
 - id: keskiniva2024danaea
   abstract: >-
@@ -1620,6 +1707,34 @@ references:
   type: article-journal
   volume: '409'
 
+- id: pryer2004phylogeny
+  author:
+    - family: Pryer
+      given: Kathleen M
+    - family: Schuettpelz
+      given: Eric
+    - family: Wolf
+      given: Paul G.
+    - family: Schneider
+      given: Harald
+    - family: Smith
+      given: Alan R.
+    - family: Cranfill
+      given: Raymond B
+  citation-key: pryer2004phylogeny
+  container-title: American Journal of Botany
+  DOI: 10.3732/ajb.91.10.1582
+  ISSN: 1537-2197
+  issue: '10'
+  issued:
+    - year: 2004
+  page: 1582-1598
+  title: >-
+    Phylogeny and evolution of ferns (monilophytes) with a focus on the early
+    leptosporangiate divergences
+  type: article-journal
+  volume: '91'
+
 - id: pteridophytephylogenygroupi2016communityderived
   author:
     - literal: Pteridophyte Phylogeny Group I
@@ -1660,6 +1775,32 @@ references:
     allotetraploids
   type: article-journal
   volume: 101/2
+
+- id: schneider2004ferns
+  author:
+    - family: Schneider
+      given: Harald
+    - family: Schuettpelz
+      given: Eric
+    - family: Pryer
+      given: Kathleen M
+    - family: Cranfill
+      given: Raymond B
+    - family: Magallón
+      given: Susana
+    - family: Lupia
+      given: Richard
+  citation-key: schneider2004ferns
+  container-title: Nature
+  DOI: 10.1038/nature02361
+  ISSN: '00280836'
+  issue: '6982'
+  issued:
+    - year: 2004
+  page: 553-557
+  title: Ferns diversified in the shadow of angiosperms
+  type: article-journal
+  volume: '428'
 
 - id: schneller1984hybrids
   author:
