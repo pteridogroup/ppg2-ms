@@ -541,6 +541,26 @@ branch_labs_marattiaceae <- tribble(
   "Marattiaceae", "Marattiidae"
 )
 
+# Uncertain nodes for linetype
+# unfortunately not working for now, but leave in for later
+line_types_nodes <- as_tibble(ggtree::fortify(phy_tracheo))
+
+line_types_nodes_add <-  all_labs |>
+  filter(label_type == "clade") |>
+  filter(taxon %in% c("1", "2", "3")) |>
+  select(node) |>
+  mutate(uncertain = TRUE)
+
+line_types_nodes <- left_join(
+  line_types_nodes,
+  line_types_nodes_add,
+  by = "node",
+  relationship = "one-to-one"
+) |>
+  mutate(
+    uncertain = tidyr::replace_na(uncertain, FALSE)
+  )
+
 # Set up branch lengths
 phy_tracheo_rescale <- 
   phy_tracheo |>
@@ -564,9 +584,15 @@ branch_lab_vjust <- -0.6
 tree_fig <-
   # Base tree
   ggtree(phy_tracheo_rescale) %<+%
-  # groupClade(c(55, 66), group_name = "one") # |>
-  # ggtree(aes(linetype = one), layout = "rectangular") %<+%
+  
+  # unfortunately we can't use linetype and geom_strip together, so
+  # comment this out until
+  # https://github.com/YuLab-SMU/ggtree/issues/676
+  # gets fixed
+  # ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
+  
   # Add datasets
+  # line_types_nodes %<+%
   family_tip_labels %<+%
   clade_labs_node %<+%
   clade_labs_branch %<+%
