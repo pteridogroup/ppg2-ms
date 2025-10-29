@@ -921,3 +921,8 @@ modify_node_height <- function(tree, tax_set, mod_length) {
 
   tree
 }
+
+add_root_length <- function(tree, length) {
+  tree$root.edge <- length
+  tree
+}
