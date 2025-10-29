@@ -203,7 +203,7 @@ Recent phylogenies show that the myrmecophilous *Lecanopteris* s.s. is nested wi
 During voting, multiple competing proposals were put forward, including recognition of *Lecanopteris* s.s. and recognition of separate genera for each of the former *Microsorum* lineages, as well as a broadly circumscribed *Lecanopteris* that would subsume the former *Microsorum* lineages.
 Ultimately, *Lecanopteris* sensu lato was rejected, but only one of the segregate generea, *Bosmania* was recognized, leaving *Microsorum* paraphyletic.
 We anticipate that further systematic studies of this group will provide more robust results that will eventually allow for a recognition of monophyletic genera.
-While a complete description of every area of taxonomic uncertainty is beyond the scope of this paper, a summary may be found in Table 3.
+While a complete description of every area of taxonomic uncertainty is beyond the scope of this paper, a summary may be found in @tbl-uncertain.
 
 One advantage of the current approach is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
 Furthermore, the taxonomy can be updated and circulated online (see Next Steps) with much greater frequency than possible under a model whereby only major updates are published via traditional channels.
@@ -382,17 +382,37 @@ ppg_issues_count |>
   knitr::kable()
 ```
 
+```{r}
+#| label: tbl-uncertain
+#| tbl-cap:
+#|   - "Uncertain relationships in pteridophytes. Node indicates numbered nodes in Fig. 1."
+read_csv("data/table_uncertainty.csv") |>
+  knitr::kable()
+```
+
 ## Figures
+
+```{r}
+#| label: fig1-caption
+
+fig1_cap <- glue::glue("
+  Summary cladogram showing relationships between families of tracheophytes recognized by PPG II.
+  Topology for Polypodiopsida based on Fern Tree of Life v{ft_data_ver()}, which was inferred using plastid data.
+  Numbers next to each family indicate number of genera followed by number of species.
+  Diamonds at tips indicate relative number of species in each family.
+  Numbers at nodes indicate uncertain relationships (Table 3).
+  ") |>
+  as.character() |>
+  str_remove_all("//\n") |>
+  str_squish()
+
+```
 
 ```{r}
 #| label: fig-tree
 #| fig-width: 6.5
 #| fig-height: 9
-#| fig-cap:
-#|   - "Summary cladogram showing relationships between families of
-#|   tracheophytes recognized by PPG II. Topology for class Polypodiopsida
-#|   based on Fern Tree of Life v`r ft_data_ver()`.
-#| "
+#| fig-cap: !expr 'fig1_cap'
 
 # Add other tracheophytes to fern tree
 phy_tracheo <- fern_to_tracheo_phy(phy_family)
@@ -545,7 +565,7 @@ branch_labs_marattiaceae <- tribble(
 # unfortunately not working for now, but leave in for later
 line_types_nodes <- as_tibble(ggtree::fortify(phy_tracheo))
 
-line_types_nodes_add <-  all_labs |>
+line_types_nodes_add <- all_labs |>
   filter(label_type == "clade") |>
   filter(taxon %in% c("1", "2", "3")) |>
   select(node) |>
@@ -562,7 +582,7 @@ line_types_nodes <- left_join(
   )
 
 # Set up branch lengths
-phy_tracheo_rescale <- 
+phy_tracheo_rescale <-
   phy_tracheo |>
   # Add branchlengths evenly
   compute.brlen(method = "grafen", power = 0.9) |>
@@ -584,13 +604,13 @@ branch_lab_vjust <- -0.6
 tree_fig <-
   # Base tree
   ggtree(phy_tracheo_rescale) %<+%
-  
+
   # unfortunately we can't use linetype and geom_strip together, so
   # comment this out until
   # https://github.com/YuLab-SMU/ggtree/issues/676
   # gets fixed
   # ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
-  
+
   # Add datasets
   # line_types_nodes %<+%
   family_tip_labels %<+%

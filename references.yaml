@@ -1749,6 +1749,74 @@ references:
   type: article-journal
   volume: '54'
 
+- id: qi2018wellresolved
+  abstract: >-
+    Ferns account for 80% of nonflowering vascular plant species and are the
+    sister lineage of seed plants. Recent molecular phylogenetics have greatly
+    advanced understanding of fern tree of life, but relationships among some
+    major lineages remain unclear. To better resolve the phylogenetic
+    relationships of ferns, we generated transcriptomes from 125 ferns and two
+    lycophytes, with three additional public datasets, to represent all 11
+    orders and 85% of families of ferns. Our nuclear phylogeny provides strong
+    supports for the monophyly of all four subclasses and nearly all orders and
+    families, and for relationships among these lineages. The only exception is
+    Gleicheniales, which was highly supported as being paraphyletic with
+    Dipteridaceae sister to a clade with Gleicheniaceae + Hymenophyllales. In
+    addition, new and strongly supported phylogenetic relationships are found
+    for suborders and families in Polypodiales. We provide the first dated fern
+    phylogenomic tree using many nuclear genes from a large majority of
+    families, with an estimate for separation of the ancestors of ferns and seed
+    plants in early Devonian at ∼400 Mya and subsequent gradual divergences of
+    fern orders from ∼380 to 200 Mya. Moreover, the newly obtained fern
+    phylogeny provides a framework for gene family analyses, which indicate that
+    the vast majority of transcription factor families found in seed plants were
+    already present in the common ancestor of extant vascular plants. In
+    addition, fern transcription factor genes show similar duplication patterns
+    to those in seed plants, with some showing stable copy number and others
+    displaying independent expansions in both ferns and seed plants. This study
+    provides a robust phylogenetic and gene family evolution framework, as well
+    as rich molecular resources for understanding the morphological and
+    functional evolution in ferns.
+  author:
+    - family: Qi
+      given: Xinping
+    - family: Kuo
+      given: Li-Yaung
+    - family: Guo
+      given: Chunce
+    - family: Li
+      given: Hao
+    - family: Li
+      given: Zhongyang
+    - family: Qi
+      given: Ji
+    - family: Wang
+      given: Linbo
+    - family: Hu
+      given: Yi
+    - family: Xiang
+      given: Jianying
+    - family: Zhang
+      given: Caifei
+    - family: Guo
+      given: Jing
+    - family: Huang
+      given: Chien Hsun
+    - family: Ma
+      given: Hong
+  citation-key: qi2018wellresolved
+  container-title: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2018.06.043
+  ISSN: '10959513'
+  issued:
+    - year: 2018
+  page: 961-977
+  title: >-
+    A well-resolved fern nuclear phylogeny reveals the evolution history of
+    numerous transcription factor families
+  type: article-journal
+  volume: '127'
+
 - id: rasbach1991hybrids
   abstract: >-
     Rasbach H., Reichstein T. and Schneller J. J. 1991. Hybrids and polyploidy
@@ -1897,6 +1965,44 @@ references:
   title: Taxonomic notes on Asian ferns (7)
   type: article-journal
   volume: '56'
+
+- id: shen2018largescale
+  author:
+    - family: Shen
+      given: Hui
+    - family: Jin
+      given: Dongmei
+    - family: Shu
+      given: Jiang-Ping
+    - family: Zhou
+      given: Xi-Le
+    - family: Lei
+      given: Ming
+    - family: Wei
+      given: Ran
+    - family: Shang
+      given: Hui
+    - family: Wei
+      given: Hong-jin
+    - family: Zhang
+      given: Rui
+    - family: Liu
+      given: Li
+    - family: Gu
+      given: Yu-Feng
+    - family: Zhang
+      given: Xian-Chun
+    - family: Yan
+      given: Yue-Hong
+  citation-key: shen2018largescale
+  container-title: GigaScience
+  DOI: 10.1093/gigascience/gix116/
+  issued:
+    - year: 2018
+  page: gix116
+  title: Large-scale phylogenomic analysis resolves a backbone phylogeny in ferns
+  type: article-journal
+  volume: '7'
 
 - id: smissen2024revisiting
   abstract: >-
