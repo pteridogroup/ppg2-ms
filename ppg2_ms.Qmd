@@ -394,6 +394,7 @@ ppg_issues_count |>
 #|   based on Fern Tree of Life v`r ft_data_ver()`.
 #| "
 
+# Add other tracheophytes to fern tree
 phy_tracheo <- fern_to_tracheo_phy(phy_family)
 
 # Format family labels with genus/species counts. Keep num species for tip
@@ -462,7 +463,6 @@ clade_labs_node <- all_labs |>
       "eupolypods",
       "Polypodiales",
       "Polypodiidae",
-      "Ophioglossidae",
       "Polypodiopsida",
       "euphyllophytes"
     )
@@ -503,7 +503,8 @@ clade_labs_branch <- all_labs |>
   filter(label_type == "clade") |>
   filter(
     taxon %in% c(
-      "Lycopodiopsida"
+      "Lycopodiopsida",
+      "Ophioglossidae"
     )
   ) |>
   mutate(
@@ -519,7 +520,7 @@ clade_labs_branch <- all_labs |>
 # need to define separate datasets for each label with a different x-nudge
 branch_labs_equisetaceae <- tribble(
   ~tip, ~equisetaceae_lab,
-  "Equisetaceae", "Equisetidae"
+  "Equisetaceae", "Equisetidae (horsetails)"
 )
 
 branch_labs_marattiaceae <- tribble(
@@ -532,10 +533,25 @@ fig_font_size <- 2.5
 clade_lab_offset <- 8
 branch_lab_vjust <- -0.6
 
+# Set up branch lengths
+phy_tracheo_rescale <- 
+  phy_tracheo |>
+  # Add branchlengths evenly
+  compute.brlen(method = "grafen", power = 1) |>
+  # Rescale total height (arbitrarily select 20)
+  rescale_tree(20) |>
+  # Tweak node for Equisetaceae + Ophioglossales
+  modify_node_height(
+    tax_set = c("Equisetaceae", "Psilotaceae"),
+    mod_length = 17
+  )
+
 # generate figure
 tree_fig <-
   # Base tree
-  ggtree(phy_tracheo, layout = "rectangular") %<+%
+  ggtree(phy_tracheo_rescale) %<+%
+  # groupClade(c(55, 66), group_name = "one") # |>
+  # ggtree(aes(linetype = one), layout = "rectangular") %<+%
   # Add datasets
   family_tip_labels %<+%
   clade_labs_node %<+%
@@ -561,7 +577,7 @@ tree_fig <-
     aes(label = taxon_branch),
     size = fig_font_size,
     vjust = branch_lab_vjust,
-    nudge_x = -10
+    nudge_x = -8
   ) +
   # Clade labels (right side)
   geom_cladelab(
@@ -597,7 +613,7 @@ tree_fig <-
   geom_tiplab(
     aes(label = equisetaceae_lab),
     size = fig_font_size,
-    offset = -2,
+    offset = -11.5,
     vjust = branch_lab_vjust
   ) +
   geom_tiplab(
@@ -607,7 +623,7 @@ tree_fig <-
     vjust = branch_lab_vjust
   ) +
   # seems geom_rootedge() requires brn lengths
-  # geom_rootedge() +
+  geom_rootedge() +
   xlim(-2, 33) +
   theme(
     legend.position = "none"

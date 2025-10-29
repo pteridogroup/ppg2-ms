@@ -840,7 +840,6 @@ format_tip_labels <- function(rank_select, phy_family, ppg, ppg_tl) {
 # Convert family-level fern tree to a tree including other major tracheophyte
 # lineages
 fern_to_tracheo_phy <- function(phy_family) {
-
   # Start with fern phylogeny
   fern_tree <- phy_family
   fern_tree$edge.length <- NULL
@@ -888,4 +887,37 @@ fern_to_tracheo_phy <- function(phy_family) {
     )
 
   tracheo_tree
+}
+
+rescale_tree <- function(tree, scale) {
+  tree$edge.length <-
+    tree$edge.length / max(phytools::nodeHeights(tree)[, 2]) * scale
+  return(tree)
+}
+
+modify_node_height <- function(tree, tax_set, mod_length) {
+
+  # Identify MRCA of taxon set
+  mrca_node <- ape::getMRCA(
+    tree,
+    tax_set
+  )
+
+  # Modify length of branches leading to node
+  edge_in <- which(tree$edge[, 2] == mrca_node)
+
+  tree$edge.length[edge_in] <- tree$edge.length[edge_in] - mod_length
+
+  # Get edges going out from the mrca node
+  out_edges <- which(tree$edge[, 1] == mrca_node)
+
+  # Adjust them to compensate
+  tree$edge.length[out_edges] <- tree$edge.length[out_edges] + mod_length
+
+  assertthat::assert_that(
+    !isTRUE(any(tree$edge.length < 0)),
+    msg = "Modification resulted in negative branchlengths"
+  )
+
+  tree
 }
