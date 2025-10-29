@@ -413,7 +413,8 @@ family_tip_labels <-
   bind_rows(
     tibble(
       tip = "Spermatophytes",
-      family_label = "SEED PLANTS"
+      family_label = "SEED PLANTS",
+      seed_plant_image = "images/starburst.png"
     )
   )
 
@@ -579,6 +580,13 @@ tree_fig <-
     shape = 18,
     color = "black"
   ) +
+  geom_tiplab(
+    aes(image = seed_plant_image),
+    geom = "image",
+    shape = 11,
+    size = 0.019,
+    nudge_x = -0.1
+  ) +
   # Clade labels (nodes)
   geom_text_repel(
     aes(label = taxon_node),
@@ -646,7 +654,6 @@ tree_fig <-
     offset = -10,
     vjust = branch_lab_vjust
   ) +
-  geom_point2(aes(subset=(node==60)), shape=21, size=5, fill='green') +
   # seems geom_rootedge() requires brn lengths
   geom_rootedge() +
   xlim(-4, 33) +
