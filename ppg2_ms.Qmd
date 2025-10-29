@@ -473,7 +473,7 @@ clade_labs_node <- all_labs |>
     taxon = taxon |>
       str_replace_all(
         "Polypodiidae",
-        "Polypodiidae (leptosporangiates)"
+        "Polypodiidae\n(leptosporangiates)"
       ) |>
       str_replace_all(
         "Polypodiopsida",
@@ -481,7 +481,7 @@ clade_labs_node <- all_labs |>
       ) |>
       str_replace_all(
         "Polypodiales",
-        "Polypodiales (cathetogyrates)"
+        "Polypodiales\n(cathetogyrates)"
       )
   ) |>
   rename(taxon_node = taxon)
@@ -530,16 +530,11 @@ branch_labs_marattiaceae <- tribble(
   "Marattiaceae", "Marattiidae"
 )
 
-# set font sizes etc
-fig_font_size <- 2.5
-clade_lab_offset <- 8
-branch_lab_vjust <- -0.6
-
 # Set up branch lengths
 phy_tracheo_rescale <- 
   phy_tracheo |>
   # Add branchlengths evenly
-  compute.brlen(method = "grafen", power = 1) |>
+  compute.brlen(method = "grafen", power = 0.7) |>
   # Rescale total height (arbitrarily select 20)
   rescale_tree(20) |>
   # Tweak node for Equisetaceae + Ophioglossales
@@ -548,6 +543,11 @@ phy_tracheo_rescale <-
     mod_length = 17
   ) |>
   add_root_length(1)
+
+# set font sizes etc
+fig_font_size <- 2.5
+clade_lab_offset <- 9
+branch_lab_vjust <- -0.6
 
 # generate figure
 tree_fig <-
@@ -572,7 +572,7 @@ tree_fig <-
   geom_text_repel(
     aes(label = taxon_node),
     min.segment.length = 0,
-    position = position_nudge_repel(x = -2.5, y = 1),
+    position = position_nudge_repel(x = -4, y = 1),
     size = fig_font_size
   ) +
   # Clade labels (above branch)
@@ -604,7 +604,7 @@ tree_fig <-
   geom_tiplab(
     aes(label = family_label),
     size = fig_font_size,
-    offset = 0.45
+    offset = 0.5
   ) +
   # Tip labels (higher taxon on right side)
   geom_tiplab(
@@ -627,7 +627,7 @@ tree_fig <-
   ) +
   # seems geom_rootedge() requires brn lengths
   geom_rootedge() +
-  xlim(-3, 33) +
+  xlim(-4, 33) +
   theme(
     legend.position = "none"
   )
