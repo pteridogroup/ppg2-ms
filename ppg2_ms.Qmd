@@ -429,7 +429,11 @@ other_labels <- tribble(
   getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")), "Lycopodiopsida",
   getMRCA(phy_tracheo, c("Equisetaceae", "Polypodiaceae")), "Polypodiopsida",
   getMRCA(phy_tracheo, c("Spermatophytes", "Polypodiaceae")), "euphyllophytes",
-  getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae")), "tracheophytes"
+  getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae")), "tracheophytes",
+  # uncertain relationships
+  getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae")), "1",
+  getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae")), "2",
+  getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae")), "3"
 ) |>
   mutate(label_type = "clade")
 
@@ -518,6 +522,12 @@ clade_labs_branch <- all_labs |>
   ) |>
   rename(taxon_branch = taxon)
 
+# - node labels to add to uncertain nodes
+node_labs_nums <- all_labs |>
+  filter(label_type == "clade") |>
+  filter(taxon %in% c("1", "2", "3")) |>
+  rename(node_num = taxon)
+
 # Since we can only adjust x-nudge for an entire layer at a time,
 # need to define separate datasets for each label with a different x-nudge
 branch_labs_equisetaceae <- tribble(
@@ -534,13 +544,13 @@ branch_labs_marattiaceae <- tribble(
 phy_tracheo_rescale <- 
   phy_tracheo |>
   # Add branchlengths evenly
-  compute.brlen(method = "grafen", power = 0.7) |>
+  compute.brlen(method = "grafen", power = 0.9) |>
   # Rescale total height (arbitrarily select 20)
   rescale_tree(20) |>
   # Tweak node for Equisetaceae + Ophioglossales
   modify_node_height(
     tax_set = c("Equisetaceae", "Psilotaceae"),
-    mod_length = 17
+    mod_length = 16
   ) |>
   add_root_length(1)
 
@@ -561,7 +571,8 @@ tree_fig <-
   clade_labs_branch %<+%
   branch_labs_equisetaceae %<+%
   branch_labs_marattiaceae %<+%
-  tip_labs_side +
+  tip_labs_side %<+%
+  node_labs_nums +
   # Diamonds scaled by species count
   geom_tippoint(
     aes(size = n_species),
@@ -581,6 +592,16 @@ tree_fig <-
     size = fig_font_size,
     vjust = branch_lab_vjust,
     nudge_x = -8
+  ) +
+  # Node labels (at node, showing doubtful relationships)
+  geom_nodelab(
+    aes(label = node_num),
+    geom = "label",
+    size = fig_font_size * 0.7,
+    nudge_x = -0.1,
+    hjust = 0.5,
+    vjust = 0.5,
+    fill = "grey"
   ) +
   # Clade labels (right side)
   geom_cladelab(
@@ -625,6 +646,7 @@ tree_fig <-
     offset = -10,
     vjust = branch_lab_vjust
   ) +
+  geom_point2(aes(subset=(node==60)), shape=21, size=5, fill='green') +
   # seems geom_rootedge() requires brn lengths
   geom_rootedge() +
   xlim(-4, 33) +
