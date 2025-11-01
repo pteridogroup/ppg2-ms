@@ -1,5 +1,82 @@
 ---
 references:
+- id: aagaard2009resolving
+  abstract: >-
+    Diphasiastrum comprises 20–30 species. In addition to a number of species
+    with a circumboreal distribution, several island endemics and putative
+    diploid hybrid species contribute to the diversity of the group. To assess
+    the integrity and relationships of the ...
+  author:
+    - family: Aagaard
+      given: S M D
+    - family: Vogel
+      given: Johannes C
+    - family: Wikström
+      given: Niklas
+  citation-key: aagaard2009resolving
+  container-title: Taxon
+  issue: '3'
+  issued:
+    - year: 2009
+  page: 835-848
+  title: >-
+    Resolving maternal relationships in the clubmoss genus Diphasiastrum
+    (Lycopodiaceae)
+  type: article-journal
+  URL: >-
+    http://www.ingentaconnect.com/content/iapt/tax/2009/00000058/00000003/art00012
+  volume: '58'
+
+- id: abbasi1993worlds
+  author:
+    - family: Abbasi
+      given: S A
+    - family: Nipaney
+      given: P C
+  citation-key: abbasi1993worlds
+  event-place: Dehradun
+  issued:
+    - year: 1993
+  publisher: International Book Distributors
+  publisher-place: Dehradun
+  title: World's worst weed (salvinia) - its impact and utilization
+  type: book
+
+- id: aderkas1983studies
+  abstract: >-
+    The sex expression of gametophytes of Matteuccia struthiopteris (L.) Todaro
+    was compared in nature and in culture. Plants raised from multispore
+    cultures (100 spores/cm
+                  2
+                  ) exhibited the most variety in sexual–morphological types. Individually raised plants were slower to develop and showed less variety of sexual types than was found in the multispore cultures. There appeared to be a density effect on development. Field-collected gametophytes showed the least diversity, the populations being largely composed of poorly developed male and neuter plants. The experimental and field data are considered in relation to antheridiogen and population density studies.
+  accessed:
+    - year: 2022
+      month: 10
+      day: 23
+  author:
+    - family: Aderkas
+      given: P.
+      dropping-particle: von
+  citation-key: aderkas1983studies
+  container-title: Canadian Journal of Botany
+  container-title-short: Can. J. Bot.
+  DOI: 10.1139/b83-364
+  ISSN: 0008-4026
+  issue: '12'
+  issued:
+    - year: 1983
+      month: 12
+      day: 1
+  language: en
+  page: 3267-3270
+  source: DOI.org (Crossref)
+  title: >-
+    Studies of gametophytes of *Matteuccia struthiopteris* (ostrich fern) in
+    nature and in culture
+  type: article-journal
+  URL: http://www.nrcresearchpress.com/doi/10.1139/b83-364
+  volume: '61'
+
 - id: adjie2007independent
   abstract: >-
     Ceratopteris thalictroides (L.) Brongn is a tetraploid fern species that
@@ -66,6 +143,327 @@ references:
   type: article-journal
   volume: '59'
 
+- id: ahad2012azolla
+  author:
+    - family: Ahad
+      given: Burhan
+    - family: Reshi
+      given: Zafar A
+    - family: Ganaie
+      given: Aijaz H
+    - family: Yousuf
+      given: A R
+  citation-key: ahad2012azolla
+  container-title: American Fern Journal
+  DOI: 10.1640/0002-8444-102.3.224
+  issue: '3'
+  issued:
+    - year: 2012
+  language: English
+  page: 224–227
+  title: Azolla cristata in the Kashmir Himalaya
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-102.3.224
+  volume: '102'
+
+- id: aldasoro2004diversity
+  author:
+    - family: Aldasoro
+      given: Juan José
+    - family: Cabezas
+      given: F
+    - family: Aedo
+      given: C
+  citation-key: aldasoro2004diversity
+  container-title: J Biogeography
+  issue: '10'
+  issued:
+    - year: 2004
+  page: 1579–1604
+  publisher: Wiley Online Library
+  title: >-
+    Diversity and distribution of ferns in sub‐Saharan Africa, Madagascar and
+    some islands of the South Atlantic
+  type: article-journal
+  URL: http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2004.01106.x/full
+  volume: '31'
+
+- id: alderwerelt1915new
+  author:
+    - family: Alderwerelt
+      given: C R W K
+  citation-key: alderwerelt1915new
+  container-title: Bulletin de l'Institut botanique de Buitenzorg
+  issued:
+    - year: 1915
+  page: 1–44
+  title: New or interesting Malayan ferns 7
+  type: article-journal
+  volume: '20'
+
+- id: alderwerelt1916new
+  author:
+    - family: Alderwerelt
+      given: C R W K
+  citation-key: alderwerelt1916new
+  container-title: Bulletin de l'Institut botanique de Buitenzorg
+  issued:
+    - year: 1916
+  page: 1–40
+  title: New or interesting Malayan ferns 8
+  type: article-journal
+  volume: '23'
+
+- id: alderwerelt1917new
+  author:
+    - family: Alderwerelt
+      given: C R W K
+  citation-key: alderwerelt1917new
+  container-title: Bulletin de l'Institut botanique de Buitenzorg
+  issued:
+    - year: 1917
+  page: 1–11
+  title: New or interesting Malayan ferns 9
+  type: article-journal
+  volume: '24'
+
+- id: almeida2015thirteen
+  author:
+    - family: Almeida
+      given: Thaís Elias
+    - family: Salino
+      given: Alexandre
+  citation-key: almeida2015thirteen
+  container-title: BDJ
+  DOI: 10.1007/BF02860999
+  issue: '3'
+  issued:
+    - year: 2015
+  page: e4421
+  title: Thirteen new records of ferns from Brazil
+  type: article-journal
+  URL: http://bdj.pensoft.net/articles.php?id=4421
+  volume: '3'
+
+- id: almeida2016state
+  abstract: >-
+    For ferns and lycophytes, the Neotropics is a hotspot of diversity
+    (3000–4500 species), and second only to Southeastern Asia in richness and
+    endemism. This paper presents the current state of knowle...
+  author:
+    - family: Almeida
+      given: Thaís Elias
+    - family: Salino
+      given: Alexandre
+  citation-key: almeida2016state
+  container-title: Journal of Systematics and Evolution
+  issue: '6'
+  issued:
+    - year: 2016
+      month: 11
+      day: 1
+  page: 679-690
+  publisher: John Wiley & Sons, Ltd
+  title: >-
+    State of the art and perspectives on neotropical fern and lycophyte
+    systematics
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/full/10.1111/jse.12223
+  volume: '54'
+
+- id: almeida2017adetogramma
+  author:
+    - family: Almeida
+      given: Thaís Elias
+    - family: Salino
+      given: Alexandre
+    - family: Dubuisson
+      given: Jean-Yves
+    - family: Hennerquin
+      given: Sabine
+  citation-key: almeida2017adetogramma
+  container-title: PhytoKeys
+  DOI: 10.5962/bhl.title.2547
+  issue: 3–4
+  issued:
+    - year: 2017
+  page: 109-131
+  title: >-
+    Adetogramma (Polypodiaceae), a new monotypic fern genus segregated from
+    Polypodium
+  type: article-journal
+  URL: http://phytokeys.pensoft.net/articles.php?id=12189
+  volume: '78'
+
+- id: alston1951overlooked
+  author:
+    - family: Alston
+      given: A H G
+  citation-key: alston1951overlooked
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 1951
+  page: 76–78
+  title: An overlooked North American fern
+  type: article-journal
+  volume: '41'
+
+- id: alston1956subdivision
+  author:
+    - family: Alston
+      given: A H G
+  citation-key: alston1956subdivision
+  container-title: Taxon
+  issue: '2'
+  issued:
+    - year: 1956
+  page: 23–25
+  title: The subdivision of the Polypodiaceae
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=10558609835471702347related:S4k8FbS3h5IJ
+  volume: '5'
+
+- id: alt1960cytotaxonomic
+  abstract: >-
+    The fronds of Pityrogramma triangularis sens. str. are triangular or
+    pentagonal (Fig. 1 AD). A powdery indument on the lower surface of the
+    frond, varying from bright to pale yellow, is secreted by numerous glandular
+    trichomcs. In some strains, particularly those in the ...
+  author:
+    - family: Alt
+      given: K S
+    - family: Grant
+      given: V
+  citation-key: alt1960cytotaxonomic
+  container-title: Brittonia
+  issue: '3'
+  issued:
+    - year: 1960
+  page: 153-170
+  title: Cytotaxonomic observation of the goldback fern
+  type: article-journal
+  volume: '12'
+
+- id: alvarado2006nueva
+  author:
+    - family: Alvarado
+      given: A F R
+  citation-key: alvarado2006nueva
+  container-title: MES
+  issue: '2'
+  issued:
+    - year: 2006
+  page: 18–21
+  title: Una nueva especie de Notholaena (Pteridaceae) para Costa Rica
+  type: article-journal
+  volume: '2'
+
+- id: alvaradotwo
+  abstract: >-
+    In this paper two new species of Adiantum are described as new: A. caribense
+    A. Rojas and A. reptans A. Rojas and are presently known only from Costa
+    Rica and Nicaragua. The first species is characterized by short-creeping
+    rhizome, gold rhizome scales, bipinnate fronds, pilose blade and sori
+    present also in apical basiscopic side of the pinnules. The second is also
+    similar to the first but with long creeping rhizome, brown and shorter
+    rhizome scales, pinnae without an proyected basal acroscopic lobe and more
+    light indusium.
+  author:
+    - family: Alvarado
+      given: Alexander Fco Rojas
+  citation-key: alvaradotwo
+  language: en
+  page: '8'
+  source: Zotero
+  title: >-
+    Two new species of Adiantum (Filicales: Pteridaceae) from Costa Rica and
+    Nicaragua
+  type: article-journal
+
+- id: alverson1993cryptogramma
+  author:
+    - family: Alverson
+      given: Edward R
+  citation-key: alverson1993cryptogramma
+  container-title: Flora of North America
+  editor:
+    - literal: Flora of North America Editorial Committee
+  event-place: New York
+  issued:
+    - year: 1993
+  page: '475'
+  publisher: Oxford University Press
+  publisher-place: New York
+  title: Cryptogramma
+  type: chapter
+  volume: 2 Pteridop
+
+- id: andersson1999field
+  abstract: >-
+    Field horsetail shoots were severed from the rhizomes and grown
+    hydroponically with and without shade (40 and 190 μmol m
+                  –2
+                  s
+                  –1
+                  photosynthetic photon flux) under six different nutrient regimes, by using nutrient solutions with different amounts of nitrogen (N) and potassium (K) (6/42 mmol L
+                  –1
+                  N; 7/15/24 mmol L
+                  –1
+                  K). Nutrients were supplied daily with the same volumes for the six different nutrient solutions at exponentially increasing rates corresponding to a maximum relative growth rate (RGR) of 12.5% from days 0 to 31 and 6% from days 32 to 48. RGR was calculated for the highest N and K rate. Photosynthetic rate and stomatal conductance to water vapor were determined on day 48, then the plants were harvested. The fresh weight (FW) and dry weight (DW) of different plant components were determined. Shade completely inhibited growth of tubers and fertile shoots and drastically reduced RGR, average aerial shoot height, and DW of shoots and rhizomes. N supplied at the high rate to unshaded plants increased the growth of all parts or the plant except fertile shoots and tubers. No effects of K were detected at the low N rate, whereas at the high N rate, K significantly increased total DW and belowsurface DW. RGR never exceeded 10% d
+                  –1
+                  . In the unshaded treatments, the K concentration was higher in aerial shoots, 150 to 240 μmol g
+                  –1
+                  FW, than in belowsurface organs, 30 to 90 μmol g
+                  –1
+                  FW. Shoot growth was significantly reduced at shoot K concentrations below 150 to 210 μmol g
+                  –1
+                  FW, and root growth was significantly reduced at root K concentrations below 30 to 50 μmol g
+                  –1
+                  FW. K significantly increased maximum net photosynthetic rate, 10 μmol CO
+                  2
+                  m
+                  –2
+                  s
+                  –1
+                  , at light saturation, 1,300 μmol m
+                  –2
+                  s
+                  –1
+                  , in unshaded plants, whereas it reduced the light compensation point and respiratory losses of CO
+                  2
+                  in darkness. It is concluded that field horsetail is a typical sunny habitat species with a rather high K demand.
+  accessed:
+    - year: 2024
+      month: 10
+      day: 31
+  author:
+    - family: Andersson
+      given: Torsten N.
+    - family: Lundegårdh
+      given: Bengt
+  citation-key: andersson1999field
+  container-title: Weed Science
+  container-title-short: Weed sci.
+  DOI: 10.1017/S0043174500090640
+  ISSN: 0043-1745, 1550-2759
+  issue: '1'
+  issued:
+    - year: 1999
+      month: 2
+  language: en
+  license: https://www.cambridge.org/core/terms
+  page: 47-54
+  source: DOI.org (Crossref)
+  title: >-
+    Field horsetail (*Equisetum arvense*)—effects of potassium under different
+    light and nitrogen conditions
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/product/identifier/S0043174500090640/type/journal_article
+  volume: '47'
+
 - id: angiospermphylogenygroup2009update
   author:
     - literal: Angiosperm Phylogeny Group
@@ -94,6 +492,642 @@ references:
   type: article-journal
   volume: '181'
 
+- id: anthelme2011are
+  abstract: Journal of Arid Environments, doi:10.1016/j.jaridenv.2011.01.009
+  author:
+    - family: Anthelme
+      given: F
+    - family: Abdoulkader
+      given: A
+    - family: Viane
+      given: R
+  citation-key: anthelme2011are
+  container-title: Journal of Arid Environments
+  DOI: 10.1016/j.jaridenv.2011.01.009
+  issued:
+    - year: 2011
+  page: 1–8
+  title: >-
+    Are ferns in arid environments underestimated? Contribution from the Saharan
+    Mountains
+  type: article-journal
+
+- id: arana2004sinopsis
+  author:
+    - family: Arana
+      given: Marcelo Daniel
+    - family: Ponce
+      given: Mónica
+    - family: Vischi
+      given: Norma B
+  citation-key: arana2004sinopsis
+  container-title: Bol. Soc. Argent. Bot.
+  issue: 1-2
+  issued:
+    - year: 2004
+  page: 89–114
+  title: >-
+    Sinopsis de los helechos y grupos relacionados (Pteridophyta) de la Provicia
+    de Córdoba, Argentina
+  type: article-journal
+  volume: '39'
+
+- id: arana2014ltstronggtan
+  author:
+    - family: Arana
+      given: Marcelo Daniel
+    - family: Yañez
+      given: Agustina
+    - family: Schwartsburd
+      given: P B
+  citation-key: arana2014ltstronggtan
+  container-title: Phytotaxa
+  DOI: 10.11646/phytotaxa.188.2.3
+  issue: '2'
+  issued:
+    - year: 2014
+  page: '91'
+  title: >-
+    &lt;strong&gt;An updated synopsis of &lt;em&gt;Hypolepis&lt;/em&gt; Bernh.
+    (Dennstaedtiaceae) from Argentina&lt;/strong&gt;
+  type: article-journal
+  URL: http://biotaxa.org/Phytotaxa/article/view/phytotaxa.188.2.3
+  volume: '188'
+
+- id: arana2014morfologia
+  author:
+    - family: Arana
+      given: Marcelo Daniel
+    - family: Reinoso
+      given: Herminda
+    - family: Oggero
+      given: Antonia Josefina
+  citation-key: arana2014morfologia
+  container-title: Revista de Biologia Tropical
+  issue: '3'
+  issued:
+    - year: 2014
+  page: 1217–1227
+  title: >-
+    Morfología y anatomía de ejes caulinares, licofilos y esporangios de
+    Phlegmariurus phylicifolius: Un aporte a la sistemáticade las Lycopodiaceae
+    neotropicales
+  type: article-journal
+  volume: '62'
+
+- id: arana2015cystopteris
+  abstract: >-
+    Resumen. Se presenta el tratamiento taxonómico de los representantes de
+    Cystopteris (Cystopteridaceae) que habitan en Argentina, Bolivia, Brasil,
+    Chile y Uruguay. En esta región, el género está representado por tres
+    especies: Cystopteris apiiformis en Argentina y Chile, C. diaphana en
+    Argentina, Bolivia, Brasil y Uruguay, y C. ulei, endémica de la Serra
+    Dourada (Goiás), Brasil. Se brindan claves de identificación para todas las
+    especies, ...
+  author:
+    - family: Arana
+      given: Marcelo Daniel
+    - family: Mynssen
+      given: Claudine M
+  citation-key: arana2015cystopteris
+  container-title: Darwiniana
+  DOI: 10.14522/darwiniana.2015.31.639
+  issue: '1'
+  issued:
+    - year: 2015
+  page: 73-88
+  title: Cystopteris (Cystopteridaceae) del cono sur y Brasil
+  type: article-journal
+  URL: >-
+    http://www.scielo.org.ar/scielo.php?script=sci_arttext&amp;pid=S0011-67932015000100006
+  volume: '3'
+
+- id: arana2017synopsis
+  author:
+    - family: Arana
+      given: Marcelo Daniel
+    - family: Mynssen
+      given: Claudine M
+    - family: Ponce
+      given: M Mónica
+  citation-key: arana2017synopsis
+  container-title: Phytotaxa
+  DOI: 10.11646/phytotaxa.291.1.5
+  issue: '1'
+  issued:
+    - year: 2017
+  page: '53'
+  title: 'Synopsis of Diplazium (Polypodiales: Athyriaceae) from Argentina'
+  type: article-journal
+  URL: http://biotaxa.org/Phytotaxa/article/view/phytotaxa.291.1.5
+  volume: '291'
+
+- id: arora2003comparison
+  author:
+    - family: Arora
+      given: Anju
+    - family: Singh
+      given: P K
+  citation-key: arora2003comparison
+  container-title: Biomass Bioenerg
+  issue: '3'
+  issued:
+    - year: 2003
+  page: 175–178
+  publisher: Elsevier
+  title: >-
+    Comparison of biomass productivity and nitrogen fixing potential of Azolla
+    spp.
+  type: article-journal
+  URL: http://www.sciencedirect.com/science/article/pii/S0961953402001332
+  volume: '24'
+
+- id: arora2005cultivation
+  author:
+    - family: Arora
+      given: Anju
+    - family: Saxena
+      given: Sudhir
+  citation-key: arora2005cultivation
+  container-title: Biomass Bioenerg
+  DOI: 10.1016/j.biombioe.2005.02.002
+  issue: '1'
+  issued:
+    - year: 2005
+  language: English
+  page: 60–64
+  title: >-
+    Cultivation of Azolla microphylla biomass on secondary-treated Delhi
+    municipal effluents
+  type: article-journal
+  URL: http://linkinghub.elsevier.com/retrieve/pii/S0961953405000310
+  volume: '29'
+
+- id: arora2005tolerance
+  author:
+    - family: Arora
+      given: Anju
+    - family: Saxena
+      given: Sudhir
+    - family: Sharma
+      given: Dinesh Kumar
+  citation-key: arora2005tolerance
+  container-title: World Journal of Microbiology & Biotechnology
+  DOI: 10.1007/s11274-005-9000-9
+  issue: '2'
+  issued:
+    - year: 2005
+  language: English
+  page: 97–100
+  title: Tolerance and phytoaccumulation of chromium by three Azolla species
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s11274-005-9000-9
+  volume: '22'
+
+- id: atkinson1964comparative
+  author:
+    - family: Atkinson
+      given: L R
+    - family: Stokey
+      given: A G
+  citation-key: atkinson1964comparative
+  container-title: Phytomorphology
+  issued:
+    - year: 1964
+  page: 51–70
+  title: Comparative morphology of the gametophyte of homosporous ferns
+  type: article-journal
+  volume: '14'
+
+- id: atkinson1973gametophyte
+  author:
+    - family: Atkinson
+      given: Lenette R
+  citation-key: atkinson1973gametophyte
+  container-title: The phylogeny and classification of ferns
+  editor:
+    - family: Jermy
+      given: A C
+    - family: Crabbe
+      given: J A
+    - family: Thomas
+      given: B A
+  issued:
+    - year: 1973
+  page: 73–90
+  publisher: Linnean Society
+  title: The gametophyte and family relationships
+  type: chapter
+
+- id: auquiere1974developpement
+  author:
+    - family: Auquiere
+      given: J P
+    - family: Moens
+      given: P
+  citation-key: auquiere1974developpement
+  container-title: Cellule
+  issued:
+    - year: 1974
+  page: 135–56
+  title: >-
+    Développement du gamétophyte et vascularisation du jeune sporophyte dans le
+    genre Cystopteris
+  type: article-journal
+  volume: '70'
+
+- id: azizbidin1995ecology
+  author:
+    - family: Aziz Bidin
+      given: A
+  citation-key: azizbidin1995ecology
+  container-title: Fern Gaz. (UK)
+  issue: '1'
+  issued:
+    - year: 1995
+  page: 21–24
+  title: 'The ecology and cytology of Brainea insignis (Blechnaceae: Pteridophyta)'
+  type: article-journal
+  volume: '15'
+
+- id: babaee2015first
+  author:
+    - family: Babaee
+      given: Giti
+    - family: Moniri
+      given: Mahroo Haji
+  citation-key: babaee2015first
+  container-title: Fern Gazette
+  issue: '1'
+  issued:
+    - year: 2015
+  page: 19-22
+  title: >-
+    First chromosome number report for Cystopteris fragilis (Cystopteridaceae:
+    Pteridophyta) in Iran
+  type: article-journal
+  URL: >-
+    https://www.researchgate.net/publication/273763488_FIRST_CHROMOSOME_NUMBER_REPORT_FOR_CYSTOPTERIS_FRAGILIS_CYSTOPTERIDACEAE_PTERIDOPHYTA_IN_IRAN/references?citationKey=CIT%3A3283761706&amp;citedPublicationKey=PB%3A272145242&amp;tab=references
+  volume: '20'
+
+- id: badre1983two
+  author:
+    - family: Badré
+      given: F
+    - family: Reichstein
+      given: T
+  citation-key: badre1983two
+  container-title: Willdenowia
+  issued:
+    - year: 1983
+  page: 361–367
+  title: The two cytotypes of Notholaena lanuginosa (Sinopteridaceae, Pteridophyta)
+  type: article-journal
+  volume: '13'
+
+- id: bainard2011dna
+  author:
+    - family: Bainard
+      given: Jillian D
+    - family: Henry
+      given: Thomas A
+    - family: Bainard
+      given: Luke D
+    - family: Newmaster
+      given: Steven G
+  citation-key: bainard2011dna
+  container-title: Chromosome Res
+  issue: '6'
+  issued:
+    - year: 2011
+  page: 763–775
+  title: >-
+    DNA content variation in monilophytes and lycophytes: large genomes that are
+    not endopolyploid
+  type: article-journal
+  URL: http://www.springerlink.com/index/10.1007/s10577-011-9228-1
+  volume: '19'
+
+- id: balick1978biochemical
+  author:
+    - family: Balick
+      given: M J
+    - family: Furth
+      given: D G
+    - family: Cooper-Driver
+      given: G
+  citation-key: balick1978biochemical
+  container-title: Oecologia
+  issue: '1'
+  issued:
+    - year: 1978
+  page: 55–89
+  title: Biochemical and evolutionary aspects of arthropod predation on ferns
+  type: article-journal
+  volume: '35'
+
+- id: barke2012coeval
+  abstract: >-
+    Palaeogeography, Palaeoclimatology, Palaeoecology,
+    doi:10.1016/j.palaeo.2012.04.002
+  author:
+    - family: Barke
+      given: Judith
+    - family: Burgh
+      given: Johan
+      non-dropping-particle: van der
+    - family: Konijnenburg-van Cittert
+      given: Johanna H A
+      non-dropping-particle: van
+    - family: Collinson
+      given: Margaret E
+    - family: Pearce
+      given: Martin A
+    - family: Bujak
+      given: Jonathan
+    - family: Heilmann-Clausen
+      given: Claus
+    - family: Speelman
+      given: Eveline N
+    - family: Kempen
+      given: Monique M L
+      non-dropping-particle: van
+    - family: Reichart
+      given: Gert-Jan
+    - family: Lotter
+      given: André F
+    - family: Brinkhuis
+      given: Henk
+  citation-key: barke2012coeval
+  container-title: Palaeogeography, Palaeoclimatology, Palaeoecology
+  DOI: 10.1016/j.palaeo.2012.04.002
+  issued:
+    - year: 2012
+  page: 1-12
+  publisher: Elsevier B.V.
+  title: >-
+    Coeval Eocene blooms of the freshwater fern Azolla in and around Arctic and
+    Nordic seas
+  type: article-journal
+  URL: http://dx.doi.org/10.1016/j.palaeo.2012.04.002
+
+- id: barker2006taxonomic
+  abstract: >-
+    Adiantopsis Fe´e (Pteridaceae) is a relatively unstudied tropical
+    cheilanthoid fern genus. In the present work, we evaluated the taxonomy and
+    relationships among Caribbean Adiantopsis by examining 136 characters from
+    approximately 500 herbarium specimens. This study identified nine Caribbean
+    Adiantopsis species, three of which are newly described (A. parvisegmenta,
+    A. pentagona, and A. vincentii). Additionally, an intriguing pattern of
+    morphological and reticulate evolution was revealed by the analyses.
+    Adiantopsis consists of three different laminar morphologies; palmate,
+    pedate, and pinnate. The two pedate taxa are hypothesized to be fertile
+    allotetraploid derivatives of the palmate A. radiata (L.) Fe´e and two
+    different pinnate taxa. In this regard they parallel the origin of the South
+    American A. 3australopedata Hickey, M. S. Barker & Ponce. Based on our
+    analyses, it appears that pedate laminar morphologies in Adiantopsis
+    independently originated multiple times via hybridization. This study
+    provides testable hypotheses of morphological and reticulate evolution in
+    the genus and presents a novel view of Caribbean Adiantopsis.
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Barker
+      given: Michael S.
+    - family: James Hickey
+      given: R.
+  citation-key: barker2006taxonomic
+  container-title: Annals of the Missouri Botanical Garden
+  container-title-short: Annals of the Missouri Botanical Garden
+  DOI: 10.3417/0026-6493(2007)93[371:ATROCA]2.0.CO;2
+  ISSN: 0026-6493
+  issue: '3'
+  issued:
+    - year: 2006
+      month: 10
+      day: 24
+  language: en
+  page: 371-401
+  source: DOI.org (Crossref)
+  title: A TAXONOMIC REVISION OF CARIBBEAN ADIANTOPSIS (PTERIDACEAE) ^1,^ ^2^
+  type: article-journal
+  URL: >-
+    http://www.bioone.org/doi/abs/10.3417/0026-6493%282007%2993%5B371%3AATROCA%5D2.0.CO%3B2
+  volume: '93'
+
+- id: barker2009evolutionary
+  author:
+    - family: Barker
+      given: Michael S
+  citation-key: barker2009evolutionary
+  container-title: American Fern Journal
+  issued:
+    - year: 2009
+  page: 136–141
+  publisher: JSTOR
+  title: >-
+    Evolutionary genomic analyses of ferns reveal that high chromosome numbers
+    are a product of high retention and fewer rounds of polyploidy relative to
+    angiosperms
+  type: article-journal
+  URL: http://www.jstor.org/stable/25639816
+
+- id: barker2010unfurling
+  author:
+    - family: Barker
+      given: Michael S
+    - family: Wolf
+      given: Paul G
+  citation-key: barker2010unfurling
+  container-title: Bioscience
+  DOI: 10.1525/bio.2010.60.3.4
+  issue: '3'
+  issued:
+    - year: 2010
+  page: 177–185
+  title: Unfurling fern biology in the genomics age
+  type: article-journal
+  volume: '60'
+
+- id: barker2013karyotype
+  author:
+    - family: Barker
+      given: Michael S
+  citation-key: barker2013karyotype
+  container-title: Plant Genome Diversity
+  ISBN: 978-3-7091-1160-4
+  issue: Chapter 15
+  issued:
+    - year: 2013
+  page: 245–253
+  publisher: Springer Vienna
+  title: Karyotype and Genome Evolution in Pteridophytes
+  type: chapter
+  URL: http://www.springerlink.com/index/10.1007/978-3-7091-1160-4_15
+
+- id: barkworthsporebearing
+  author:
+    - family: Barkworth
+      given: Mary E
+  citation-key: barkworthsporebearing
+  language: en
+  page: '26'
+  source: Zotero
+  title: Spore-bearing plants of Utah, Nevada, and adjacent regions
+  type: article-journal
+
+- id: baron2014ontogenia
+  abstract: >-
+    Resumen Los estudios sobre aspectos reproductivos no son muy abundantes en
+    la literatura científica sobre los taxones de Lycopodiaceae y constituyen
+    información esencial para apoyar la taxonomía y relaciones sistemáticas en
+    el grupo. Por lo tanto, se presenta ...
+  author:
+    - family: Baron
+      given: E J R
+    - family: Rolleri
+      given: C H
+    - family: Guarin
+      given: F A
+  citation-key: baron2014ontogenia
+  container-title: Revista de Biología …
+  issued:
+    - year: 2014
+  title: >-
+    Ontogenia de los esporangios, formación y citoquímica de esporas en
+    licopodios (Lycopodiaceae) colombianos
+  type: article-journal
+  URL: http://www.revistas.ucr.ac.cr/index.php/rbt/article/view/9795
+
+- id: barrington1986systematic
+  author:
+    - family: Barrington
+      given: David
+    - family: Paris
+      given: C A
+    - family: Ranker
+      given: Thomas A
+  citation-key: barrington1986systematic
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 1986
+  page: 149–159
+  title: Systematic inferences from spore and stomate size in the ferns
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=9968755882051574997related:1RxFcqgiWIoJ
+  volume: '76'
+
+- id: barrington1989hybridization
+  author:
+    - family: Barrington
+      given: David S
+    - family: Haufler
+      given: Christopher H
+    - family: Werth
+      given: Charles R
+  citation-key: barrington1989hybridization
+  container-title: American Fern Journal
+  issue: '2'
+  issued:
+    - year: 1989
+  page: 55–64
+  publisher: American Fern Society
+  title: Hybridization, Reticulation, and Species Concepts in the Ferns
+  type: article-journal
+  URL: http://www.jstor.org/stable/1547160
+  volume: '79'
+
+- id: barrington2012fern
+  author:
+    - family: Barrington
+      given: David S
+  citation-key: barrington2012fern
+  container-title: Annals of the Missouri Botanical Garden
+  DOI: 10.3417/2011051
+  issue: '4'
+  issued:
+    - year: 2012
+  page: 431–446
+  title: The fern genus Polystichum (Dryopteridaceae) in Costa Rica
+  type: article-journal
+  volume: '98'
+
+- id: barthlott2009classification
+  author:
+    - family: Barthlott
+      given: Wilhelm
+    - family: Wiersch
+      given: Sabine
+    - family: Čolić
+      given: Zdravko
+    - family: Koch
+      given: Kerstin
+  citation-key: barthlott2009classification
+  container-title: Botany
+  DOI: 10.1139/B09-048
+  issue: '9'
+  issued:
+    - year: 2009
+  language: English
+  page: 830–836
+  title: >-
+    Classification of trichome types within species of the water fern Salvinia,
+    and ontogeny of the egg-beater trichomes
+  type: article-journal
+  URL: http://www.nrcresearchpress.com/doi/10.1139/B09-048
+  volume: '87'
+
+- id: bauer1999ustilaginomycetes
+  author:
+    - family: Bauer
+      given: Robert
+    - family: Oberwinkler
+      given: Franz
+    - family: Vánky
+      given: Kálmán
+  citation-key: bauer1999ustilaginomycetes
+  container-title: Mycologia
+  issue: '4'
+  issued:
+    - year: 1999
+  page: 669–675
+  publisher: JSTOR
+  title: Ustilaginomycetes on Osmunda
+  type: article-journal
+  URL: http://www.jstor.org/stable/10.2307/3761254
+  volume: '91'
+
+- id: bauer2016megaspore
+  author:
+    - family: Bauer
+      given: Dennise S
+    - family: Prado
+      given: Jefferson
+    - family: Trovó
+      given: Marcelo
+    - family: Coan
+      given: Alessandra I
+    - family: Stützel
+      given: Thomas
+    - family: Schulz
+      given: Christian
+  citation-key: bauer2016megaspore
+  container-title: American Fern Journal
+  DOI: 10.1640/0002-8444-106.2.55.1
+  issue: '2'
+  issued:
+    - year: 2016
+  language: English
+  page: 55-86
+  title: Megaspore investigations of Selaginella species from São Paulo, Brazil
+  type: article-journal
+  URL: http://www.bioone.org/doi/10.1640/0002-8444-106.2.55.1
+  volume: '106'
+
 - id: beck2010diploidsfirst
   author:
     - family: Beck
@@ -118,6 +1152,87 @@ references:
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=related:uwybbsPU8U8J
   volume: '35'
 
+- id: beck2011asexual
+  author:
+    - family: Beck
+      given: James B
+    - family: Windham
+      given: Michael D
+    - family: Pryer
+      given: Kathleen M
+  citation-key: beck2011asexual
+  container-title: Evolution
+  issued:
+    - year: 2011
+  page: 3217–3229
+  title: >-
+    Do asexual polyploid lineages lead short evolutionary lives? A case study
+    from the fern genus Astrolepis
+  type: article-journal
+  volume: '65'
+
+- id: beck2012identifying
+  author:
+    - family: Beck
+      given: James B
+    - family: Allison
+      given: J R
+    - family: Pryer
+      given: Kathleen M
+    - family: Windham
+      given: Michael D
+  citation-key: beck2012identifying
+  container-title: American Journal of Botany
+  DOI: 10.3732/ajb.1200199
+  issue: '11'
+  issued:
+    - year: 2012
+  language: English
+  page: 1857–1865
+  title: >-
+    Identifying multiple origins of polyploid taxa: A multilocus study of the
+    hybrid cloak fern (Astrolepis integerrima; Pteridaceae)
+  type: article-journal
+  URL: http://www.amjbot.org/cgi/doi/10.3732/ajb.1200199
+  volume: '99'
+
+- id: bellefroid2010base
+  author:
+    - family: Bellefroid
+      given: E
+    - family: Rambe
+      given: S K
+    - family: Leroux
+      given: O
+    - family: Viane
+      given: R L L
+  citation-key: bellefroid2010base
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mcq095
+  issue: '1'
+  issued:
+    - year: 2010
+  language: English
+  page: 157-171
+  title: >-
+    The base number of "loxoscaphoid" Asplenium species and its implication for
+    cytoevolution in Aspleniaceae
+  type: article-journal
+  URL: http://aob.oxfordjournals.org/cgi/doi/10.1093/aob/mcq095
+  volume: '106'
+
+- id: benham1989biosystematic
+  author:
+    - family: Benham
+      given: Dale M
+  citation-key: benham1989biosystematic
+  issued:
+    - year: 1989
+  publisher: Northern Arizona University
+  title: A biosystematic revision of the fern genus Astrolepis (Adiantaceae)
+  type: thesis
+  volume: Ph.D.
+
 - id: benham1992generic
   author:
     - family: Benham
@@ -133,6 +1248,131 @@ references:
   type: article-journal
   volume: '82'
 
+- id: benham1993astrolepis
+  author:
+    - family: Benham
+      given: D M
+    - family: Windham
+      given: M D
+  citation-key: benham1993astrolepis
+  container-title: Flora of North America
+  editor:
+    - literal: Flora of North America Editorial Committee
+  event-place: New York
+  issued:
+    - year: 1993
+  page: '475'
+  publisher: Oxford University Press
+  publisher-place: New York
+  title: Astrolepis
+  type: chapter
+  volume: 2 Pteridop
+
+- id: bennert2005triploidy
+  author:
+    - family: Bennert
+      given: W
+  citation-key: bennert2005triploidy
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mci084
+  issue: '5'
+  issued:
+    - year: 2005
+  page: 807–815
+  title: Triploidy in Equisetum subgenus Hippochaete (Equisetaceae, Pteridophyta)
+  type: article-journal
+  volume: '95'
+
+- id: bennert2011flow
+  author:
+    - family: Bennert
+      given: H W
+    - family: Horn
+      given: K
+    - family: Kauth
+      given: M
+    - family: Fuchs
+      given: J
+    - family: Bisgaard Jakobsen
+      given: I S
+    - family: Øllgaard
+      given: B
+    - family: Schnittler
+      given: M
+    - family: Steinberg
+      given: M
+    - family: Viane
+      given: R
+  citation-key: bennert2011flow
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mcr208
+  issue: '5'
+  issued:
+    - year: 2011
+  page: 867–876
+  title: >-
+    Flow cytometry confirms reticulate evolution and reveals triploidy in
+    Central European Diphasiastrum taxa (Lycopodiaceae, Lycophyta)
+  type: article-journal
+  volume: '108'
+
+- id: bennett2010pteridophyte
+  author:
+    - family: Bennett
+      given: M D
+    - family: Leitch
+      given: I J
+  citation-key: bennett2010pteridophyte
+  issue: February 2011
+  issued:
+    - year: 2010
+  title: Pteridophyte DNA C-values database (release 4.0, Dec. 2010)
+  type: webpage
+  URL: http://www.kew.org/cvalues/homepage.html
+
+- id: bennicelli2004ability
+  author:
+    - family: Bennicelli
+      given: R
+    - family: Stępniewska
+      given: Z
+    - family: Banach
+      given: A
+    - family: Szajnocha
+      given: K
+    - family: Ostrowski
+      given: J
+  citation-key: bennicelli2004ability
+  container-title: Chemosphere
+  DOI: 10.1016/j.chemosphere.2003.11.015
+  issue: '1'
+  issued:
+    - year: 2004
+  language: English
+  page: 141–146
+  title: >-
+    The ability of Azolla caroliniana to remove heavy metals (Hg(II), Cr(III),
+    Cr(VI)) from municipal waste water
+  type: article-journal
+  URL: http://linkinghub.elsevier.com/retrieve/pii/S0045653503011317
+  volume: '55'
+
+- id: berg1992sporevariasjon
+  author:
+    - family: Berg
+      given: R Y
+  citation-key: berg1992sporevariasjon
+  container-title: Blyttia
+  issue: '4'
+  issued:
+    - year: 1992
+  page: 143–157
+  title: Sporevariasjon i skandinaviske populasjoner av Cystopteris fragilis
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=11627712641437146936related:OB8uhwrvXaEJ
+  volume: '50'
+
 - id: bernhardi1805dritter
   author:
     - family: Bernhardi
@@ -147,6 +1387,264 @@ references:
   type: article-journal
   volume: '1'
 
+- id: bidin1995ecology
+  author:
+    - family: Bidin
+      given: A Aziz
+  citation-key: bidin1995ecology
+  container-title: Fern Gazette
+  issue: '1'
+  issued:
+    - year: 1995
+  page: 21–24
+  title: The ecology and cytology of Brainea insignis (Blechnaceae; Pteridophyta)
+  type: article-journal
+  volume: '15'
+
+- id: bierhorst1977systematic
+  author:
+    - family: Bierhorst
+      given: David W
+  citation-key: bierhorst1977systematic
+  container-title: Brittonia
+  issue: '1'
+  issued:
+    - year: 1977
+  page: 3–13
+  publisher: Springer
+  title: The systematic position of Psilotum and Tmesipteris
+  type: article-journal
+  URL: http://link.springer.com/article/10.2307/2805738
+  volume: '29'
+
+- id: bir1966correlation
+  abstract: >-
+    It has been noted that there is no definite correlation between spore-size
+    and the level of polyploidy in the Hamalayan members of Asplenium,
+    Cystopteris, Athyrium, and Diplazium. On the basis of average spore-size it
+    is practically impossible to surmise the grade of polyploidy of a particular
+    species, since several tetraploid species of Asplenium, Diplazium, and
+    Athyrium show spores smaller than the diploid ones. However, within a
+    'species complex' with differen tcytotypes, the increase in the level of
+    poloidy is always associated with a corresponding increase in the size of
+    the spore. this may prove useful in plotting out from herbarium material the
+    distribution of various cytotypes.
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1966correlation
+  container-title: J Palynology
+  issue: '2'
+  issued:
+    - year: 1966
+  page: 41–48
+  title: >-
+    Correlation between spore-size and polyploid-level in the Himalayan
+    asplenioid and athyrioid ferns
+  type: article-journal
+  volume: 41-42
+
+- id: bir1967cytology
+  author:
+    - family: Bir
+      given: S S
+    - family: Shukla
+      given: P
+  citation-key: bir1967cytology
+  container-title: Cytologia
+  issued:
+    - year: 1967
+  page: 24–30
+  title: Cytology of some north Indian ferns
+  type: article-journal
+  volume: '32'
+
+- id: bir1969observations
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1969observations
+  container-title: Plant Science
+  issued:
+    - year: 1969
+  page: 110–118
+  title: >-
+    Observations on the morphology and anatomy of Diplaziopsis javanica (Bl.) C.
+    Chr.
+  type: article-journal
+  volume: '1'
+
+- id: bir1969stelar
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1969stelar
+  container-title: American Fern Journal
+  issued:
+    - year: 1969
+  page: 23–26
+  publisher: JSTOR
+  title: The stelar anatomy of Diplazium latifolium Moore
+  type: article-journal
+  URL: http://www.jstor.org/stable/10.2307/1546019
+
+- id: bir1970anatomical
+  author:
+    - family: Bir
+      given: S S
+    - family: Trikha
+      given: Chander K
+  citation-key: bir1970anatomical
+  container-title: Proceedings of the Indian National Science Academy
+  issued:
+    - year: 1970
+  page: 192–204
+  title: Anatomical observations on the genus Cystopteris Bernhardi
+  type: article-journal
+  volume: 36B
+
+- id: bir1970note
+  author:
+    - family: Bir
+      given: S
+  citation-key: bir1970note
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 1970
+  page: 98–101
+  title: A note on the gametophytes of Cystopteris tenuisecta
+  type: article-journal
+  volume: '60'
+
+- id: bir1971anatomy
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1971anatomy
+  container-title: Journal of the Indian Botanical Society
+  issued:
+    - year: 1971
+  page: 247–252
+  title: Anatomy of some Himalayan species of Athyrium
+  type: article-journal
+  volume: '50'
+
+- id: bir1971cytological
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1971cytological
+  container-title: Nucleus
+  issue: '1'
+  issued:
+    - year: 1971
+  page: 56–62
+  title: Cytological observations on some Indian species of Cystopteris Bernh
+  type: article-journal
+  volume: '14'
+
+- id: bir1973evolution
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1973evolution
+  container-title: Advancing frontiers in Cytogenetics
+  editor:
+    - family: P.
+      given: Kachroo
+  event-place: Delhi
+  issued:
+    - year: 1973
+  page: 286–292
+  publisher: Hindustan Publ. Corp.
+  publisher-place: Delhi
+  title: Evolution and inter-relationship of athyrioid and diplazioid genera of ferns
+  type: chapter
+
+- id: bir1974taxonomy
+  author:
+    - family: Bir
+      given: S S
+    - family: Trikha
+      given: Chander K
+  citation-key: bir1974taxonomy
+  container-title: Nova Hedwigia
+  issued:
+    - year: 1974
+  page: 1–21
+  title: Taxonomy of the Indian species of the genus Cystopteris Bernh.
+  type: article-journal
+  volume: '47'
+
+- id: bir1976cystopteris
+  author:
+    - family: Bir
+      given: S S
+    - family: Trikha
+      given: Chander K
+  citation-key: bir1976cystopteris
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 1976
+  page: 109–110
+  publisher: American Fern Society
+  title: Cystopteris fragilis in the Western Himalayas
+  type: article-journal
+  URL: http://www.jstor.org/stable/1546924
+  volume: '66'
+
+- id: bir1976morphological
+  author:
+    - family: Bir
+      given: S S
+    - family: Trikha
+      given: Chander K
+  citation-key: bir1976morphological
+  container-title: New Botanist
+  issue: 1-4
+  issued:
+    - year: 1976
+  page: 17–23
+  title: Morphological observations on genus Cystopteris Bernhardi.
+  type: article-journal
+  volume: '3'
+
+- id: bir1979further
+  author:
+    - family: Bir
+      given: S S
+    - family: Satija
+      given: C K
+    - family: Goyal
+      given: Parmod
+    - family: Vasudeva
+      given: S M
+  citation-key: bir1979further
+  container-title: Phyta
+  issued:
+    - year: 1979
+  page: 62–66
+  title: >-
+    Further studies on the distribution and taxonomy of Cystopteris fragilis
+    (L.) Bernh. from the Western Hamalayas
+  type: article-journal
+  volume: 2,3
+
+- id: birmorphological
+  author:
+    - family: Bir
+      given: S S
+    - family: Ikha
+      given: CHANDElI K TR
+  citation-key: birmorphological
+  language: en
+  page: '8'
+  source: Zotero
+  title: MORPHOLOGICAL OBSERVATIONS ON GENUS CrSTOPTERIS BERNHARDI
+  type: article-journal
+
 - id: bishop1974revision
   author:
     - family: Bishop
@@ -160,6 +1658,192 @@ references:
   title: Revision of the genus Adenophorus (Grammitidaceae)
   type: article-journal
   volume: '26'
+
+- id: bjork2020notes
+  author:
+    - family: Björk
+      given: Curtis R
+  citation-key: bjork2020notes
+  container-title: Annales Botanici Fennici
+  issue: 4-6
+  issued:
+    - year: 2020
+      month: 10
+      day: 22
+  page: 255-278
+  title: >-
+    Notes on the holarctic species of Huperzia (Lycopodiaceae), with emphasis on
+    British Columbia, Canada
+  type: article-journal
+  URL: >-
+    https://bioone.org/journals/annales-botanici-fennici/volume-57/issue-4-6/085.057.0410/Notes-on-the-Holarctic-Species-of-Huperzia-Lycopodiaceae-with-Emphasis/10.5735/085.057.0410.full
+  volume: '57'
+
+- id: blasdell1963monographic
+  author:
+    - family: Blasdell
+      given: R F
+  citation-key: blasdell1963monographic
+  container-title: Mem Torrey Bot Club
+  issue: '4'
+  issued:
+    - year: 1963
+  page: 1–102
+  title: A monographic study of the fern genus Cystopteris
+  type: article-journal
+  volume: '21'
+
+- id: bloesch2021hybphaser
+  abstract: >-
+    Hybridisation can lead to reproductive isolation and consequently
+    speciation. It has been proposed to play an important role in fern
+    evolution, but has been difficult to investigate. This study explores the
+    utility of target sequence capture and reference guided read phasing to
+    investigate the role of evolutionary reticulation in ferns using Australian
+    Thelypteridaceae as a model. The bioinformatics workflow HybPhaser was used
+    to assess divergence between alleles, phase sequence reads to references to
+    construct accessions resembling parental haplotpes, and include them in
+    phylogenetic and network analyses to detect hybrids and parentage. This
+    approach identified two novel hybrid lineages in Thelypteridaceae, one
+    occurring between two different genera ( Abacopteris and Christella ), and
+    provided evidence that reticulation is likely to have played an important
+    role in the diversification of Australian thelypterids. In addition, hybrid
+    phasing successfully reduced conflicting data and improved overall
+    resolution in the Thelypteridaceae phylogeny, highlighting the power of this
+    approach for reconstructing evolutionary history in reticulated lineages.
+    ### Competing Interest Statement The authors have declared no competing
+    interest.
+  author:
+    - family: Bloesch
+      given: Zoë
+    - family: Nauheimer
+      given: Lars
+    - family: Almeida
+      given: Thaís Elias
+    - family: Crayn
+      given: Darren
+    - family: Field
+      given: Ashley Raymond
+  citation-key: bloesch2021hybphaser
+  container-title: bioRxiv
+  issued:
+    - year: 2021
+      month: 12
+      day: 1
+  page: 2021.11.29.470477
+  publisher: Cold Spring Harbor Laboratory
+  title: HybPhaser identifies hybrid evolution in Australian thelypterid ferns
+  type: article-journal
+  URL: https://www.biorxiv.org/content/10.1101/2021.11.29.470477v1.abstract
+
+- id: blume1827enumeratio
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Blume
+      given: C. L.
+  citation-key: blume1827enumeratio
+  DOI: 10.5962/bhl.title.44901
+  event-place: Lugduni Batavorum,
+  issued:
+    - year: 1827
+  language: en
+  publisher: Apud J.W. van Leeuwen,
+  publisher-place: Lugduni Batavorum,
+  source: DOI.org (Crossref)
+  title: >-
+    Enumeratio plantarum Javae et insularum adjacentium : minus cognitarum vel
+    novarum ex herbariis Reinwardtii, Kuhlii, Hasseltii et Blumii curavit Carol.
+    Ludov. Blume.
+  title-short: Enumeratio plantarum Javae et insularum adjacentium
+  type: book
+  URL: http://www.biodiversitylibrary.org/bibliography/44901
+
+- id: blume1828enumeratio
+  author:
+    - family: Blume
+      given: Carl Ludwig
+      dropping-particle: von
+  citation-key: blume1828enumeratio
+  issued:
+    - year: 1828
+  page: 1–20
+  title: Enumeratio Plantarum Javae
+  type: article-journal
+
+- id: bodle2008feathered
+  author:
+    - family: Bodle
+      given: M
+  citation-key: bodle2008feathered
+  container-title: Aquatics
+  issued:
+    - year: 2008
+  page: 4–8
+  title: Feathered mosquito fern (Azolla pinnata R. Br.) comes to Florida
+  type: article-journal
+  volume: '30'
+
+- id: boivin1950problem
+  author:
+    - family: Boivin
+      given: Bernard
+  citation-key: boivin1950problem
+  container-title: American Fern Journal
+  issue: '1'
+  issued:
+    - year: 1950
+  page: 32–41
+  title: The problem of generic segregates in the form-genus Lycopodium
+  type: article-journal
+  volume: '40'
+
+- id: boivin1960new
+  author:
+    - family: Boivin
+      given: Bernard
+  citation-key: boivin1960new
+  container-title: American Fern Journal
+  issue: '1'
+  issued:
+    - year: 1960
+  page: 107–109
+  title: A new Equisetum
+  type: article-journal
+  volume: '50'
+
+- id: boivin1962etudes
+  author:
+    - family: Boivin
+      given: Bernard
+  citation-key: boivin1962etudes
+  container-title: Bulletin de la Societé Botanique de France
+  issued:
+    - year: 1962
+  page: 127–128
+  title: Études ptéridologiques. II. Gymnocarpium Newman
+  type: article-journal
+
+- id: bomfleur2014fossilized
+  author:
+    - family: Bomfleur
+      given: Benjamin
+    - family: McLoughlin
+      given: Stephen
+    - family: Vajda
+      given: Vivi
+  citation-key: bomfleur2014fossilized
+  container-title: Science
+  issued:
+    - year: 2014
+  page: 1376–1377
+  title: >-
+    Fossilized nuclei and chromosomes reveal 180 million years of genomic stasis
+    in royal ferns
+  type: article-journal
+  volume: '343'
 
 - id: bomfleur2015osmunda
   abstract: BMC Evolutionary Biology, 2015, doi:10.1186/s12862-015-0400-7
@@ -182,6 +1866,943 @@ references:
     and fossil evidence in the phylogeny of modern royal ferns (Osmundaceae)
   type: article-journal
   URL: http://dx.doi.org/10.1186/s12862-015-0400-7
+
+- id: bosman1991monograph
+  author:
+    - family: Bosman
+      given: M T M
+  citation-key: bosman1991monograph
+  container-title: Leiden Bot. Ser.
+  issued:
+    - year: 1991
+  page: 1–161
+  title: A monograph of the fern genus Microsorum (Polypodiaceae)
+  type: article-journal
+  volume: '14'
+
+- id: bouma2010phylogeny
+  abstract: >-
+    ASchool of Biological Sciences, Victoria University of Wellington, PO Box
+    600, Wellington, New Zealand. BMuseum of New Zealand Te Papa Tongarewa, PO
+    Box 467, Wellington, New Zealand. CCorresponding author. Email:
+    leonp@tepapa.govt.nz
+  author:
+    - family: Bouma
+      given: W
+    - family: Ritchie
+      given: P
+    - family: Perrie
+      given: L
+  citation-key: bouma2010phylogeny
+  container-title: Australian Syst Bot
+  issued:
+    - year: 2010
+  page: 143–151
+  title: >-
+    Phylogeny and generic taxonomy of the New Zealand Pteridaceae ferns from
+    chloroplast rbcL DNA sequences
+  type: article-journal
+  volume: '23'
+
+- id: bower1914studies
+  author:
+    - family: Bower
+      given: F O
+  citation-key: bower1914studies
+  container-title: Annals of Botany
+  issued:
+    - year: 1914
+  page: 363–43
+  title: Studies in the phylogeny of the filicales, IV. Blechnum and allied genera
+  type: article-journal
+  volume: '28'
+
+- id: bower1928ferns
+  author:
+    - family: Bower
+      given: F O
+  citation-key: bower1928ferns
+  event-place: Cambridge
+  issued:
+    - year: 1928
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  title: The Ferns, Treated Comparatively with a View to their Natural Classification
+  type: book
+  volume: Volume III
+
+- id: braithwaite1964new
+  author:
+    - family: Braithwaite
+      given: A F
+  citation-key: braithwaite1964new
+  container-title: New Phytologist
+  issue: '3'
+  issued:
+    - year: 1964
+  language: English
+  page: 293–305
+  title: A new type of apogamy in ferns
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=A19646291400005
+  volume: '63'
+
+- id: brause1914nueu
+  author:
+    - family: Brause
+      given: Von G
+  citation-key: brause1914nueu
+  container-title: Hedwigia
+  issued:
+    - year: 1914
+  page: 199–204
+  title: Nueu farne von Yunnan
+  type: article-journal
+  volume: '54'
+
+- id: breckle1987distribution
+  abstract: >-
+    The distribution ofCystopteris fragilis andC. dickieana in Afghanistan
+    within the Flora Iranica region is studied. The latter species, for some
+    ecological reason, occurs more frequently at higher altitudes. In both taxa
+    higher polyploid levels also occur at high altitudes. The phenomenon can be
+    correlated with the boreal-arctic distribution pattern. Polyploidism and
+    spore-size classes are briefly mentioned as well as possible ecological
+    adaptations. Evolutionary differentiation within both taxa are complex and
+    still unknown.
+  author:
+    - family: Breckle
+      given: Siegmar W
+  citation-key: breckle1987distribution
+  container-title: Plant Systematics and Evolution
+  issue: '1'
+  issued:
+    - year: 1987
+  page: 59–65
+  title: >-
+    Distribution and ecology of Cystopteris (Athyriaceae) species within the
+    Flora Iranica region
+  type: article-journal
+  URL: http://dx.doi.org/10.1007/BF00936288
+  volume: '155'
+
+- id: britton1953chromosome
+  author:
+    - family: Britton
+      given: D M
+  citation-key: britton1953chromosome
+  container-title: American Journal of Botany
+  issue: '8'
+  issued:
+    - year: 1953
+  page: 575–583
+  title: Chromosome studies on ferns
+  type: article-journal
+  volume: '40'
+
+- id: britton1964chromosome
+  author:
+    - family: Britton
+      given: D M
+  citation-key: britton1964chromosome
+  container-title: Canadian Journal of Botany
+  issued:
+    - year: 1964
+  page: 1149–1154
+  title: Chromosome numbers of ferns in Ontario
+  type: article-journal
+  volume: '64'
+
+- id: britton1984cystopteris
+  author:
+    - family: Britton
+      given: Don M
+    - family: Stewart
+      given: W G
+    - family: Cody
+      given: W J
+  citation-key: britton1984cystopteris
+  container-title: Canadian Field-Naturalist
+  issued:
+    - year: 1984
+  page: 380–382
+  title: >-
+    Cystopteris protrusa, creeping fragile fern, an addition to the flora of
+    Canada
+  type: article-journal
+  volume: '99'
+
+- id: brouwer2014azolla
+  author:
+    - family: Brouwer
+      given: Paul
+    - family: Bräutigam
+      given: Andrea
+    - family: Külahoglu
+      given: Canan
+    - family: Tazelaar
+      given: Anne O E
+    - family: Kurz
+      given: Samantha
+    - family: Nierop
+      given: Klaas G J
+    - family: Werf
+      given: Adrie
+      non-dropping-particle: van der
+    - family: Weber
+      given: Andreas P M
+    - family: Schluepmann
+      given: Henriette
+  citation-key: brouwer2014azolla
+  container-title: New Phytologist
+  issue: '3'
+  issued:
+    - year: 2014
+  page: 1069–1082
+  title: Azolla domestication towards a biobased economy?
+  type: article-journal
+  URL: http://doi.wiley.com/10.1111/nph.12708
+  volume: '202'
+
+- id: brouwer2015lipid
+  author:
+    - family: Brouwer
+      given: Paul
+    - family: Werf
+      given: Adrie
+      non-dropping-particle: van der
+    - family: Schluepmann
+      given: Henriette
+    - family: Reichart
+      given: Gert-Jan
+    - family: Nierop
+      given: Klaas G J
+  citation-key: brouwer2015lipid
+  container-title: Bioenerg. Res.
+  DOI: 10.1007/s12155-015-9665-3
+  issued:
+    - year: 2015
+  language: English
+  title: >-
+    Lipid yield and composition of Azolla filiculoides and the implications for
+    biodiesel production
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s12155-015-9665-3
+
+- id: brown1810prodromus
+  author:
+    - family: Brown
+      given: R
+  citation-key: brown1810prodromus
+  event-place: London
+  issued:
+    - year: 1810
+  publisher: Richard Taylor & Sons
+  publisher-place: London
+  title: Prodromus Florae Novae Holandiae et Insulae Van-Diemen
+  type: book
+  volume: '1'
+
+- id: brown1964monographic
+  author:
+    - family: Brown
+      given: D F M
+  citation-key: brown1964monographic
+  container-title: Nova Hedwigia
+  issued:
+    - year: 1964
+  page: 1–156
+  title: A monographic study of the fern genus Woodsia Beih.
+  type: article-journal
+  volume: '16'
+
+- id: brownsey1981checklist
+  author:
+    - family: Brownsey
+      given: P J
+  citation-key: brownsey1981checklist
+  container-title: New Zealand Journal of Botany
+  issued:
+    - year: 1981
+  page: 9–11
+  title: Checklist of pteridophytes naturalized in New Zealand
+  type: article-journal
+  volume: '19'
+
+- id: brownsey1987chromosome
+  author:
+    - family: Brownsey
+      given: Patrick
+    - family: Lovis
+      given: J D
+  citation-key: brownsey1987chromosome
+  container-title: New Zealand Journal of Botany
+  issue: '3'
+  issued:
+    - year: 1987
+  page: 439–454
+  title: >-
+    Chromosome numbers for the New Zealand species of Psilotum and Tmesipteris,
+    and the phylogenetic relationships of the Psilotales
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=8791672353090392749related:rVKTw2xLAnoJ
+  volume: '25'
+
+- id: brownsey1989new
+  author:
+    - family: Brownsey
+      given: P J
+    - family: Smith-Dodsworth
+      given: J C S
+  citation-key: brownsey1989new
+  event-place: Aukland
+  issued:
+    - year: 1989
+  number-of-pages: '168'
+  publisher: David Bateman Ltd
+  publisher-place: Aukland
+  title: New Zealand ferns and allied plants
+  type: book
+
+- id: brownsey1989taxonomy
+  author:
+    - family: Brownsey
+      given: P J
+  citation-key: brownsey1989taxonomy
+  container-title: Australian Syst Bot
+  issue: '1'
+  issued:
+    - year: 1989
+  page: 113–128
+  title: 'The taxonomy of bracken (Pteridium: Dennstaedtiaceae) in Australia'
+  type: article-journal
+  volume: '2'
+
+- id: brownsey2017taxonomic
+  abstract: New Zealand Journal of Botany, 2017. doi:10.1080/0028825X.2017.1373678
+  author:
+    - family: Brownsey
+      given: Patrick J
+    - family: Perrie
+      given: Leon R
+  citation-key: brownsey2017taxonomic
+  container-title: New Zealand Journal of Botany
+  issue: '4'
+  issued:
+    - year: 2017
+      month: 11
+      day: 16
+  page: 530-533
+  publisher: Taylor & Francis
+  title: >-
+    Taxonomic notes on the New Zealand flora: Lectotypes in the fern families
+    Athyriaceae and Cystopteridaceae
+  type: article-journal
+  URL: https://doi.org/10.1080/0028825X.2017.1373678
+  volume: '55'
+
+- id: brownsey2018brownsey
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Brownsey
+      given: Patrick
+    - family: Perrie
+      given: Leon
+  citation-key: brownsey2018brownsey
+  DOI: 10.7931/B1263V
+  issued:
+    - year: 2018
+  language: en
+  publisher: Manaaki Whenua Press
+  source: DOI.org (Datacite)
+  title: >-
+    Brownsey, P.J. &amp; Perrie, L.R. 2018: Cystopteridaceae. In: Breitwieser,
+    I.; Wilton, A.D. Flora of New Zealand - Ferns and Lycophytes. Fascicle 23.
+  title-short: Brownsey, P.J. &amp; Perrie, L.R. 2018
+  type: article-journal
+  URL: >-
+    https://datastore.landcareresearch.co.nz/dataset/nzflora-brownsey-perrie-2018-cystopteridaceae
+
+- id: brownsey2018brownseya
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Brownsey
+      given: Patrick
+    - family: Perrie
+      given: Leon
+  citation-key: brownsey2018brownseya
+  DOI: 10.7931/B1562D
+  issued:
+    - year: 2018
+  language: en
+  publisher: Manaaki Whenua Press
+  source: DOI.org (Datacite)
+  title: >-
+    Brownsey, P.J. &amp; Perrie, L.R. 2018: Aspleniaceae. In: Breitwieser, I.;
+    Wilton, A.D. Flora of New Zealand - Ferns and Lycophytes. Fascicle 18.
+    Manaaki Whenua Press, Lincoln.
+  title-short: Brownsey, P.J. &amp; Perrie, L.R. 2018
+  type: article-journal
+  URL: >-
+    https://datastore.landcareresearch.co.nz/dataset/nzflora-brownsey-perrie-2018-aspleniaceae
+
+- id: brownsey2018fascicle
+  author:
+    - family: Brownsey
+      given: Patrick J
+    - family: Perrie
+      given: Leon R
+  citation-key: brownsey2018fascicle
+  container-title: 'Flora of New Zealand: Ferns and Lycophytes'
+  event-place: Lincoln, N.Z.
+  issued:
+    - year: 2018
+      month: 10
+      day: 1
+  page: 1-20
+  publisher: Manaaki Whenua Press
+  publisher-place: Lincoln, N.Z.
+  title: Fascicle 23, Cystopteridaceae
+  type: chapter
+
+- id: brownsey2018fasciclea
+  author:
+    - family: Brownsey
+      given: Patrick J
+    - family: Perrie
+      given: Leon R
+  citation-key: brownsey2018fasciclea
+  event-place: Lincoln, N.Z.
+  issued:
+    - year: 2018
+      month: 5
+      day: 1
+  number-of-pages: 1-100
+  publisher: Manaaki Whenua Press
+  publisher-place: Lincoln, N.Z.
+  title: Fascicle 18, Aspleniaceae
+  type: book
+  URL: >-
+    https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=flora+of+new+zealand+cystopteridaceae&btnG=
+
+- id: brownsey2021fascicle
+  author:
+    - family: Brownsey
+      given: Patrick J
+    - family: Perrie
+      given: Leon R
+  citation-key: brownsey2021fascicle
+  container-title: 'Flora of New Zealand: Ferns and Lycophytes'
+  event-place: Lincoln, N.Z.
+  issued:
+    - year: 2021
+      month: 1
+      day: 1
+  page: 1-89
+  publisher: Manaaki Whenua Press
+  publisher-place: Lincoln, N.Z.
+  title: Fascicle 30, Pteridaceae
+  type: chapter
+  URL: https://www.researchgate.net/publication/352373993_Pteridaceae/references
+
+- id: brownsey2021flora
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Brownsey
+      given: P
+    - family: Perrie
+      given: L
+  citation-key: brownsey2021flora
+  DOI: 10.7931/DTKJ-X078
+  issued:
+    - year: 2021
+  language: en
+  publisher: Manaaki Whenua Press
+  source: DOI.org (Datacite)
+  title: Flora of New Zealand — Ferns and Lycophytes. Fascicle 30
+  type: dataset
+  URL: >-
+    https://datastore.landcareresearch.co.nz/dataset/nzflora-brownsey-perrie-2021-pteridaceae
+
+- id: brune2008equisetum
+  author:
+    - family: Brune
+      given: T
+    - family: Thiv
+      given: M
+    - family: Haas
+      given: K
+  citation-key: brune2008equisetum
+  container-title: Plant Systematics and Evolution
+  issue: 1-2
+  issued:
+    - year: 2008
+  page: 67–81
+  title: >-
+    Equisetum (Equisetaceae) species or hybrids? ISSR fingerprinting profiles
+    help improve diagnoses based on morphology and anatomy
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s00606-008-0028-9
+  volume: '274'
+
+- id: brunton1979taxonomy
+  abstract: >-
+    ... Brunton DF. 1979 Taxonomy, distribution and ecology of the cliff -
+    brake  ferns ( Pellaea : Polypodiaceae ) in Alberta . Canad. Field-Nat. 93.
+    (3): 288 - 295 (1979) - Maps. Maps. Geog=3 Systematics: PTERIDOPHYTA
+    (FILICOPSIDA: PELLAEA ) ( , 197900468). ...
+  author:
+    - family: Brunton
+      given: D F
+  citation-key: brunton1979taxonomy
+  container-title: Canadian Field-Naturalist
+  issue: '3'
+  issued:
+    - year: 1979
+  page: 288-295
+  publisher: Canad. Field-Nat
+  title: >-
+    Taxonomy, distribution and ecology of the cliff-brake ferns (Pellaea:
+    Polypodiaceae) in Alberta
+  type: article-journal
+  URL: http://kbd.kew.org/kbd/detailedresult.do?id=195458
+  volume: '93'
+
+- id: brunton1990isoetes
+  author:
+    - family: Brunton
+      given: D F
+    - family: Taylor
+      given: W C
+  citation-key: brunton1990isoetes
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '3'
+  issued:
+    - year: 1990
+  page: 82–89
+  title: >-
+    Isoetes Xbrittonii Hyb Nov (Isoetaceae) - a Naturally-Occurring Hybrid
+    (I-Engelmannii X I-Riparia) in the Eastern United-States
+  type: article-journal
+  volume: '80'
+
+- id: brunton1994isoetes
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+    - family: Taylor
+      given: W C
+  citation-key: brunton1994isoetes
+  container-title: Castanea
+  issue: '1'
+  issued:
+    - year: 1994
+  page: 12–21
+  title: >-
+    isoetes hyemalis, sp. nov. (Isoetaceae): A New Quillwort from the
+    Southeastern United States
+  type: article-journal
+  volume: '59'
+
+- id: brunton1996status
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1996status
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '4'
+  issued:
+    - year: 1996
+  page: 105–113
+  title: >-
+    The status, distribution, and identification of Georgia Quillwort (Isoetes
+    georgiana; Isoetaceae)
+  type: article-journal
+  volume: '86'
+
+- id: brunton1996taxonomy
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1996taxonomy
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '1'
+  issued:
+    - year: 1996
+  page: 16–25
+  title: Taxonomy and distribution of Isoetes valida
+  type: article-journal
+  volume: '86'
+
+- id: brunton1997appalachian
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1997appalachian
+  container-title: Rhodora
+  ISBN: 0035-4902
+  issue: '898'
+  issued:
+    - year: 1997
+  page: 118–133
+  title: >-
+    Appalachian quillwort (Isoetes appalachiana, sp. nov.; Isoetaceae), a new
+    pteridophyte from the eastern United States
+  type: article-journal
+  volume: '99'
+
+- id: brunton1998isoetes
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1998isoetes
+  container-title: Rhodora
+  ISBN: 0035-4902
+  issue: '903'
+  issued:
+    - year: 1998
+  page: 261–275
+  title: >-
+    Isoetes microvela (Isoetaceae), a new quillwort from the coastal plain of
+    the southeastern United States
+  type: article-journal
+  volume: '100'
+
+- id: brunton1999isoetes
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1999isoetes
+  container-title: Canadian Journal of Botany-Revue Canadienne De Botanique
+  ISBN: 0008-4026
+  issue: '11'
+  issued:
+    - year: 1999
+  page: 1662–1668
+  title: >-
+    Isoetes +echtuckerii, hyb. nov., a new triploid quillwort from northeastern
+    North America
+  type: article-journal
+  volume: '77'
+
+- id: brunton1999rush
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton1999rush
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '3'
+  issued:
+    - year: 1999
+  page: 187–197
+  title: >-
+    Rush quillwort (Isoetes junciformis, sp nov.), a new pteridophyte from
+    southern Georgia
+  type: article-journal
+  volume: '89'
+
+- id: brunton2006isoetes
+  author:
+    - family: Brunton
+      given: D F
+    - family: Britton
+      given: D M
+  citation-key: brunton2006isoetes
+  container-title: Castanea
+  ISBN: 0008-7475
+  issue: '1'
+  issued:
+    - year: 2006
+  page: 15–30
+  title: >-
+    Isoetes melanopoda spp. silvatica (subsp nov.), a new quillwort (Isoetaceae)
+    from eastern North America
+  type: article-journal
+  volume: '71'
+
+- id: brunton2015isoetes
+  author:
+    - family: Brunton
+      given: Daniel F
+    - family: Mochalova
+      given: Olga A
+    - family: Bobrov
+      given: Alexander A
+  citation-key: brunton2015isoetes
+  container-title: Problems of Taxonomy and Geography of Aquatic Plants
+  event-place: Borok, Russia
+  issued:
+    - year: 2015
+  page: 1-5
+  publisher-place: Borok, Russia
+  title: >-
+    Isoetes (Isoetaceae) in the northern Pacific: Diversity, taxonomy and
+    distribution
+  type: article-journal
+
+- id: brunton2015key
+  abstract: >-
+    ... While the taxonomy and nomenclature of quillworts in the Southeast is
+    not settled and significant taxonomic questions ...  Isoëtes field
+    investigator extraordinaire Karen L. McIntosh of Ottawa, Ontario for her
+    manuscript review, key testing and ... Rush Quillwort ( Isoëtes junciformis,
+    sp. ...
+  author:
+    - family: Brunton
+      given: D F
+  citation-key: brunton2015key
+  container-title: American Fern Journal
+  issue: '2'
+  issued:
+    - year: 2015
+  page: 86-100
+  title: >-
+    Key to the Quillworts (Isoëtes: Isoëtaceae) of the Southeastern United
+    States
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/amfj-105-02-86-100.1
+  volume: '105'
+
+- id: brunton2015status
+  abstract: >-
+    Abstract The lycophyte Northern Quillwort (Isoetes septentrionalis DF
+    Brunton, sp. nov.) is the northern component of the Riverbank Quillwort (I.
+    riparia) complex. It is locally abundant in southeastern Ontario and
+    southwestern Quebec and is also widely distributed in the ...
+  author:
+    - family: Brunton
+      given: D F
+    - family: McNeill
+      given: J
+  citation-key: brunton2015status
+  container-title: The Canadian Field-Naturalist
+  issue: '2'
+  issued:
+    - year: 2015
+  page: 174-180
+  title: >-
+    Status, distribution, and nomenclature of Northern Quillwort, Isoetes
+    septentrionalis (Isoetaceae) in Canada
+  type: article-journal
+  URL: http://www.canadianfieldnaturalist.ca/index.php/cfn/article/view/1698
+  volume: '129'
+
+- id: brunton2018global
+  abstract: "With the advent of cytological analysis, Scanning Electron Microscopy, the recognition of sterile hybrids, improved access to wild populations and increasingly comprehensive molecular investigations, there has been a revolution in Isoetes taxonomy in recent times. The last 40 years have seen an almost 100% increase in the diversity documented during the previous two centuries. Four geographic areas account for over 90% of this diversity: northern-central South America, eastern North America, western Eurasia (including the\_…"
+  author:
+    - family: Brunton
+      given: Daniel F
+    - family: Troia
+      given: Angelo
+  citation-key: brunton2018global
+  container-title: Fern Gazette
+  issue: '8'
+  issued:
+    - year: 2018
+  page: 309-333
+  title: >-
+    Global review of recent taxonomic research into Isoetes (Isoetaceae), with
+    implications for biogeography and conservation
+  type: article-journal
+  URL: >-
+    https://www.researchgate.net/profile/Daniel_Brunton/publication/328968896_Global_Review_of_recent_taxonomic_research_into_Isoetes_Isoetaceae_with_implications_for_biogeography_and_conservation/links/5bf216924585150b2bc11af8/Global-Review-of-recent-taxonom
+  volume: '20'
+
+- id: brunton2019new
+  author:
+    - family: Brunton
+      given: Daniel F
+    - family: Bickerton
+      given: Holly J
+  citation-key: brunton2019new
+  container-title: The Canadian Field-Naturalist
+  DOI: 10.22621/cfn.v132i4.2033
+  issue: '4'
+  issued:
+    - year: 2019
+  page: 310-350
+  title: >-
+    New records for Eastern Mosquito Fern (Azolla cristata, Salviniaceae) in
+    Canada
+  type: article-journal
+  URL: http://journals.sfu.ca/cfn/index.php/cfn/article/view/2033
+  volume: '132'
+
+- id: bryan1987electrophoretic
+  author:
+    - family: Bryan
+      given: F A
+    - family: Soltis
+      given: D E
+  citation-key: bryan1987electrophoretic
+  container-title: Systematic Botany
+  issue: '4'
+  issued:
+    - year: 1987
+  page: 553–561
+  title: >-
+    Electrophoretic evidence for allopolyploidy in the fern Polypodium
+    virginianum
+  type: article-journal
+  volume: '12'
+
+- id: bures2003occurence
+  author:
+    - family: Bures
+      given: P
+    - family: Tichy
+      given: L
+    - family: Wang
+      given: Y F
+    - family: Bartos
+      given: J
+  citation-key: bures2003occurence
+  container-title: Preslia
+  issue: '4'
+  issued:
+    - year: 2003
+  page: 293–310
+  title: >-
+    Occurence of Polypodium x mantoniae and new localities for P. interjectum in
+    the Czech Republic confirmed using flow cytometry
+  type: article-journal
+  volume: '75'
+
+- id: cai2021evolution
+  author:
+    - family: Cai
+      given: Shengguan
+    - family: Huang
+      given: Yuqing
+    - family: Chen
+      given: Fei
+    - family: Zhang
+      given: Xin
+    - family: Sessa
+      given: Emily
+    - family: Zhao
+      given: Chenchen
+    - family: Marchant
+      given: D Blaine
+    - family: Xue
+      given: Dawei
+    - family: Chen
+      given: Guang
+    - family: Dai
+      given: Fei
+    - family: Leebens-Mack
+      given: James H
+    - family: Zhang
+      given: Guoping
+    - family: Shabala
+      given: Sergey
+    - family: Christie
+      given: John M
+    - family: Blatt
+      given: Michael R
+    - family: Nevo
+      given: Eviatar
+    - family: Soltis
+      given: Pamela S
+    - family: Soltis
+      given: Douglas E
+    - family: Franks
+      given: Peter J
+    - family: Wu
+      given: Feibo
+    - family: Chen
+      given: Zhong Hua
+  citation-key: cai2021evolution
+  container-title: New Phytologist
+  issued:
+    - year: 2021
+      month: 1
+      day: 7
+  page: 5-14
+  title: >-
+    Evolution of rapid blue‐light response linked to explosive diversification
+    of ferns in angiosperm forests
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1111/nph.17135
+  volume: '19'
+
+- id: caluff2002cyathidaria
+  author:
+    - family: Caluff
+      given: Manuel
+  citation-key: caluff2002cyathidaria
+  container-title: Willdenowia
+  issue: '2'
+  issued:
+    - year: 2002
+  page: 281–283
+  title: ×Cyathidaria, a new nothogenus in the Cyatheaceae (Pteridophyta)
+  type: article-journal
+  volume: '32'
+
+- id: canestraro2015fern
+  author:
+    - family: Canestraro
+      given: Bianca Kalinowski
+    - family: Labiak
+      given: Paulo Henrique
+  citation-key: canestraro2015fern
+  container-title: Brittonia
+  DOI: 10.1007/s12228-015-9369-1
+  issued:
+    - year: 2015
+  language: English
+  title: >-
+    The fern genus Polybotrya (Dryopteridaceae) in the Atlantic Forest of
+    Brazil, with the description of a new species
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s12228-015-9369-1
+
+- id: cantrill1998early
+  author:
+    - family: Cantrill
+      given: David J
+  citation-key: cantrill1998early
+  container-title: 'Alcheringa: An Australasian Journal of Palaeontology'
+  DOI: 10.1080/03115519808619203
+  issue: '3'
+  issued:
+    - year: 1998
+  language: English
+  page: 241-258
+  title: Early Cretaceous fern foliage from President Head, Snow Island, Antarctica
+  type: article-journal
+  URL: http://www.tandfonline.com/doi/abs/10.1080/03115519808619203
+  volume: '22'
 
 - id: cardenas2016newly
   author:
@@ -252,6 +2873,293 @@ references:
   URL: https://phytotaxa.mapress.com/pt/article/view/phytotaxa.625.3.1
   volume: '625'
 
+- id: carrapico1991are
+  author:
+    - family: Carrapiço
+      given: Francisco
+  citation-key: carrapico1991are
+  container-title: Plant and Soil
+  issue: '1'
+  issued:
+    - year: 1991
+  page: 157–160
+  publisher: Springer
+  title: Are bacteria the third partner of the Azolla-Anabaena symbiosis?
+  type: article-journal
+  URL: http://link.springer.com/article/10.1007/BF02187448
+  volume: '137'
+
+- id: carrapico2002azollaanabaenabacteria
+  author:
+    - family: Carrapiço
+      given: Francisco
+  citation-key: carrapico2002azollaanabaenabacteria
+  container-title: Proceedings of SPIE
+  issued:
+    - year: 2002
+  page: 261–265
+  title: The Azolla-Anabaena-bacteria system as a natural microcosm
+  type: article-journal
+  volume: '4495'
+
+- id: carrapico2010azolla
+  author:
+    - family: Carrapiço
+      given: Francisco
+  citation-key: carrapico2010azolla
+  container-title: Symbioses and Stress
+  DOI: 10.1007/978-90-481-9449-0_11
+  editor:
+    - family: Seckbach
+      given: J
+    - family: Grube
+      given: M
+  event-place: Dordrecht
+  ISBN: 978-90-481-9449-0
+  issue: Chapter 11
+  issued:
+    - year: 2010
+  page: 225–241
+  publisher: Springer Netherlands
+  publisher-place: Dordrecht
+  title: Azolla as a superorganism. Its implication in symbiotic studies
+  type: chapter
+  URL: http://link.springer.com/10.1007/978-90-481-9449-0_11
+  volume: '17'
+
+- id: chambers1998cheilanthes
+  author:
+    - family: Chambers
+      given: T C
+    - family: Farrant
+      given: P A
+  citation-key: chambers1998cheilanthes
+  container-title: Flora of Australia
+  editor:
+    - family: McCarthy
+      given: P M
+    - family: A.E.
+      given: Orchard
+  event-place: Melbourne
+  issued:
+    - year: 1998
+  page: '766'
+  publisher: CSIRO Australia
+  publisher-place: Melbourne
+  title: Cheilanthes
+  type: chapter
+  volume: 48 Ferns,
+
+- id: chambers2013review
+  author:
+    - family: Chambers
+      given: T Carrick
+  citation-key: chambers2013review
+  container-title: Telopea
+  issued:
+    - year: 2013
+  page: 13–36
+  title: >-
+    A review of the genus Stenochlaena (Blechnaceae, subfamily
+    Stenochlaenoideae)
+  type: article-journal
+  volume: '15'
+
+- id: chandra1970aspects
+  author:
+    - family: Chandra
+      given: S
+    - family: Nayar
+      given: B K
+  citation-key: chandra1970aspects
+  container-title: 'Proceedings: Plant Sciences'
+  issue: '3'
+  issued:
+    - year: 1970
+  page: 79–85
+  publisher: Springer
+  title: Some aspects of the morphology of the rhizome of Pteris wallichiana
+  type: article-journal
+  volume: '71'
+
+- id: chang2009molecular
+  author:
+    - family: Chang
+      given: Ho-Ming
+    - family: Chiou
+      given: Wen-Liang
+    - family: Wang
+      given: Jenn-Che
+  citation-key: chang2009molecular
+  container-title: American Fern Journal
+  DOI: 10.1640/0002-8444-99.2.61
+  issue: '2'
+  issued:
+    - year: 2009
+  language: English
+  page: 61–77
+  title: >-
+    Molecular evidence for genetic heterogeneity and the hybrid origin of
+    Acrorumohra subreflexipinna from Taiwan
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-99.2.61
+  volume: '99'
+
+- id: chang2013species
+  author:
+    - family: Chang
+      given: Yanfen
+    - family: Li
+      given: Jie
+    - family: Lu
+      given: Shugang
+    - family: Schneider
+      given: Harald
+  citation-key: chang2013species
+  container-title: Taxon (in press)
+  issued:
+    - year: 2013
+  page: 1–15
+  title: >-
+    Species diversity and reticulate evolution in the Asplenium normale complex
+    (Aspleniaceae) in China and adjacent areas
+  type: article-journal
+
+- id: chang2013stenolepia
+  author:
+    - family: Chang
+      given: Yi Han
+    - family: Kuo
+      given: Li-Yaung
+    - family: Chiou
+      given: Wen-Liang
+    - family: Chen
+      given: Cheng-Wei
+    - family: Chang
+      given: Ho-Ming
+    - family: Amoroso
+      given: Victor B
+  citation-key: chang2013stenolepia
+  container-title: Philippine Journal of Science
+  issued:
+    - year: 2013
+  page: 83–88
+  title: Stenolepia Alderw. (Dryopteridaceae), a fern genus new to the Philippines
+  type: article-journal
+  volume: '142'
+
+- id: channing2011equisetum
+  author:
+    - family: Channing
+      given: A
+    - family: Zamuner
+      given: A
+    - family: Edwards
+      given: D
+    - family: Guido
+      given: D
+  citation-key: channing2011equisetum
+  container-title: American Journal of Botany
+  DOI: 10.3732/ajb.1000211
+  issue: '4'
+  issued:
+    - year: 2011
+  page: 680–697
+  title: >-
+    Equisetum thermale sp. nov. (Equisetales) from the Jurassic San Agustin hot
+    spring deposit, Patagonia: Anatomy, paleoecology, and inferred
+    paleoecophysiology
+  type: article-journal
+  volume: '98'
+
+- id: chao2010reproductive
+  author:
+    - family: Chao
+      given: Yi-Shan
+    - family: Liu
+      given: Ho-Yih
+    - family: Huang
+      given: Yao-Moan
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chao2010reproductive
+  container-title: Botanical Studies
+  issue: '2'
+  issued:
+    - year: 2010
+  page: 209–216
+  title: >-
+    Reproductive traits of Pteris cadieri and P. grevilleana in Taiwan:
+    Implications for their hybrid origin
+  type: article-journal
+  volume: '51'
+
+- id: chao2012extreme
+  abstract: >-
+    The Pteris cadieri complex displays extensive morphological variation and
+    seems to have originated through hybridization. However, the members of this
+    complex reproduce by apogamy, which usually limits genetic variation. To
+    evaluate the hypotheses of hybrid origins, the pattern of evolution in this
+    species complex is reconstructed. Multiple methodologies were used.
+    Diploids, triploids, and tetraploids were identified by chromosome counts
+    and flow cytometry. Nuclear DNA markers (cytosolic phosphoglucose isomerase
+    gene, PgiC) were used, together with chloroplast DNA markers (atpB-rbcL
+    spacer and rbcL gene) to infer the biparental and maternal lineages of the
+    Pteris cadieri complex. The three cpDNA haplotype groups and five PgiC
+    alleles found in this study indicate that the evolution of the Pteris
+    cadieri complex has been extremely reticulate. Up to 11 taxa belonging to
+    eight morphs were identified. By comparing genetic variation in the Pteris
+    cadieri in two independent areas, Hainan and Taiwan, we inferred that
+    hybridization has occurred independently in different areas. Furthermore, we
+    found evidence for phenological divergence (evergreen and deciduous) within
+    Taiwan. We propose that the Pteris cadieri complex originated from different
+    genetic lineages through multiple hybridizations in different geographical
+    areas, leading to its present morphological diversity.
+  author:
+    - family: Chao
+      given: Yi-Shan
+    - family: Dong
+      given: Shi-Yong
+    - family: Chiang
+      given: Yu-Chung
+    - family: Liu
+      given: Ho-Yih
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chao2012extreme
+  container-title: International Journal of Molecular Sciences
+  DOI: 10.3390/ijms13044523
+  issue: '4'
+  issued:
+    - year: 2012
+  page: 4523–4544
+  title: >-
+    Extreme multiple reticulate origins of the Pteris cadieri complex
+    (Pteridaceae)
+  type: article-journal
+  volume: '13'
+
+- id: chao2012polyploidy
+  abstract: Journal of Botany
+  author:
+    - family: Chao
+      given: Yi-Shan
+    - family: Liu
+      given: Ho-Yih
+    - family: Chiang
+      given: Yu-Chung
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chao2012polyploidy
+  container-title: Journal of Botany
+  DOI: 10.1155/2012/817920
+  issued:
+    - year: 2012
+  page: 1–7
+  title: Polyploidy and speciation in Pteris (Pteridaceae)
+  type: article-journal
+  volume: '2012'
+
 - id: chao2014molecular
   author:
     - family: Chao
@@ -274,6 +3182,300 @@ references:
   type: article-journal
   URL: http://aob.oxfordjournals.org/cgi/doi/10.1093/aob/mcu086
   volume: '114'
+
+- id: chao2015taxonomic
+  abstract: >-
+    The Pteris cadieri complex is widely distributed in South and East Asia. Due
+    to tremendous morphological variation within and between taxa, previous
+    taxonomic treatments have been plagued with an element of uncertainty. In
+    this study, the morphological characteristics, along with data from previous
+    studies on reproductive modes, cytology, and genotypes, are integrated to
+    clarify and delineate each taxon. Nine taxa are recognized in the Pteris
+    cadieri complex: three original species (P. cadieri, P. hainanensis and P.
+    grevilleana), one reinstated name (P. dimorpha, synonymized under P.
+    cadieri), two new species (P. incurvata sp. nov. and P. perplexa sp. nov.),
+    two new varieties (P. dimorpha var. prolongata var. nov., and P. dimorpha
+    var. metagrevilleana var. nov.), and a forma (P. grevilleana f. ornata stat.
+    nov.). The lectotypes of P. cadieri, P. dimorpha, P. grevilleana, and P.
+    hainanensis are designated. Each taxon is described in detail. A key is
+    provided to facilitate the identification of all taxa.
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Chao
+      given: Yi-Shan
+    - family: Liu
+      given: Ho-Yih
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chao2015taxonomic
+  container-title: Phytotaxa
+  container-title-short: Phytotaxa
+  DOI: 10.11646/phytotaxa.230.2.2
+  ISSN: 1179-3163, 1179-3155
+  issue: '2'
+  issued:
+    - year: 2015
+      month: 10
+      day: 8
+  language: en
+  page: '130'
+  source: DOI.org (Crossref)
+  title: Taxonomic revision of the Pteris cadieri complex (Pteridaceae)
+  type: article-journal
+  URL: https://biotaxa.org/Phytotaxa/article/view/phytotaxa.230.2.2
+  volume: '230'
+
+- id: chau2013ecological
+  author:
+    - family: Chau
+      given: Marian M
+    - family: Reyes
+      given: W R
+    - family: Ranker
+      given: Thomas A
+  citation-key: chau2013ecological
+  container-title: American Journal of Botany
+  issue: '8'
+  issued:
+    - year: 2013
+  page: 1532–1543
+  title: >-
+    Ecological factors influencing growth of the endangered Hawaiian fern
+    Marsilea villosa (Marsileaceae) and implications for conservation management
+  type: article-journal
+  URL: http://www.amjbot.org/cgi/doi/10.3732/ajb.1200625
+  volume: '100'
+
+- id: chen1997early
+  abstract: "A lliYRlUMis a large genus of more than 200 species distributed in the temperate zone and mountain woodlands in the su btropics, especially in Himalayas, China and Japan. Of them, more than 100 species occur in China and form a centre of distribution in mountain\_…"
+  author:
+    - family: Chen
+      given: F
+    - family: Deng
+      given: S
+    - family: Sun
+      given: K
+  citation-key: chen1997early
+  container-title: Paleobotanist
+  issue: '3'
+  issued:
+    - year: 1997
+  page: 117-133
+  title: Early Cretaceous Athyrium Roth from northeastern China
+  type: article-journal
+  volume: '46'
+
+- id: chen2002arsenic
+  author:
+    - family: Chen
+      given: T
+    - family: Wei
+      given: C
+    - family: Huang
+      given: Z
+    - family: Huang
+      given: Q
+    - family: Lu
+      given: Q
+    - family: Fan
+      given: Z
+  citation-key: chen2002arsenic
+  container-title: Chinese Science Bulletin
+  issue: '11'
+  issued:
+    - year: 2002
+  page: 902–905
+  title: Arsenic hyperaccumulator Pteris vittata L. and its arsenic accumulation
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=17547207635667592792related:WCb9I2A0hPMJ
+  volume: '47'
+
+- id: chen2012development
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Kuo
+      given: Li-Yaung
+    - family: Wang
+      given: Chun-Neng
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2012development
+  container-title: American Journal of Botany
+  DOI: doi:10.3732/ajb.1100498
+  issued:
+    - year: 2012
+  page: e223–e225
+  title: >-
+    Development of a PCR primer set for intron 1 of the low-copy gene LEAFY in
+    Davalliaceae
+  type: article-journal
+  volume: '99'
+
+- id: chen2012developmenta
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Chen
+      given: C.-W.
+    - family: Kuo
+      given: L.-Y.
+    - family: Wang
+      given: C.-N.
+    - family: Chiou
+      given: W.-L.
+  citation-key: chen2012developmenta
+  container-title: American Journal of Botany
+  container-title-short: American Journal of Botany
+  DOI: 10.3732/ajb.1100498
+  ISSN: 0002-9122, 1537-2197
+  issue: '6'
+  issued:
+    - year: 2012
+      month: 6
+      day: 1
+  language: en
+  page: e223-e225
+  source: DOI.org (Crossref)
+  title: >-
+    Development of PCR primer sets for intron 1 of the low-copy gene LEAFY in
+    Davalliaceae
+  type: article-journal
+  URL: http://doi.wiley.com/10.3732/ajb.1100498
+  volume: '99'
+
+- id: chen2013new
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Huang
+      given: Yao-Moan
+    - family: Kuo
+      given: Li-Yaung
+    - family: Chang
+      given: Yi Han
+    - family: Liu
+      given: Yea-Chen
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2013new
+  container-title: Systematic Botany
+  issue: '4'
+  issued:
+    - year: 2013
+  page: 901–909
+  title: A new vittarioid fern species, Haplopteris heterophylla (Pteridaceae)
+  type: article-journal
+  URL: >-
+    http://openurl.ingenta.com/content/xref?genre=article&amp;issn=0363-6445&amp;volume=38&amp;issue=4&amp;spage=901
+  volume: '38'
+
+- id: chen2013trnlf
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Huang
+      given: Yao-Moan
+    - family: Kuo
+      given: Li-Yaung
+    - family: Nguyen
+      given: Quoc Dat
+    - family: Luu
+      given: Hong-Truong
+    - family: Callado
+      given: John Rey
+    - family: Farrar
+      given: Donald R
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2013trnlf
+  container-title: Annals of Botany
+  issued:
+    - year: 2013
+  title: >-
+    trnL-F is a powerful marker for DNA identification of field vittarioid
+    gametophytes (Pteridaceae)
+  type: article-journal
+  URL: http://aob.oxfordjournals.org/cgi/doi/10.1093/aob/mct004
+
+- id: chen2014first
+  abstract: >-
+    Davallia repens and its close relatives have been identified as a species
+    complex in this study because of the existence of continuously morphological
+    variation. To decipher its evolutionary history, integrated methodologies
+    were applied in this study including morphology, cytology, reproductive
+    biology and molecular phylogeny. Analysis of morphological characters
+    reveals several important discriminating characteristics, such as the shape
+    of stipe scales, frond and indusium. Both diploid and polyploid forms are
+    present in the complex and reproduce sexually and by apogamy, respectively.
+    The incongruence between cpDNA and nDNA phylogeny indicates a hybrid origin
+    for most polyploid individuals. Based on the present results, we hypothesize
+    that there were at least two ancestral lineages distributed in the Malesian
+    region. Through hybridization, polyploidization and apogamy, some polyploid
+    genotypes dispersed outwards to shape the extant distribution.
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Ngan
+      given: L T
+    - family: Hidayat
+      given: A
+    - family: Evangelista
+      given: L
+    - family: Nooteboom
+      given: H P
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2014first
+  container-title: Blumea
+  DOI: 10.3767/000651914X683827
+  issue: '1'
+  issued:
+    - year: 2014
+  page: 49–58
+  title: First insights into the evolutionary history of the Davallia repens complex
+  type: article-journal
+  URL: >-
+    http://www.ingentaconnect.com/content/nhn/blumea/pre-prints/content-nbc_blumea_0271
+  volume: '59'
+
+- id: chen2015antrophyum
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Nitta
+      given: Joel
+    - family: Fanerii
+      given: Moffat
+    - family: Yang
+      given: Tsung Yu Aleck
+    - family: Pitisopa
+      given: Fred
+    - family: Li
+      given: Chia Wei
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2015antrophyum
+  container-title: Systematic Botany
+  DOI: 10.1600/036364415X689357
+  issue: '3'
+  issued:
+    - year: 2015
+  language: English
+  page: 645-651
+  title: >-
+    Antrophyum solomonense (Pteridaceae), a new species from the Solomon
+    Islands, and its systematic position based on phylogenetic analysis
+  type: article-journal
+  URL: >-
+    http://openurl.ingenta.com/content/xref?genre=article&amp;issn=0363-6445&amp;volume=40&amp;issue=3&amp;spage=645
+  volume: '40'
 
 - id: chen20162454
   author:
@@ -327,6 +3529,38 @@ references:
   URL: http://phytokeys.pensoft.net/articles.php?id=12040
   volume: '78'
 
+- id: chen2017systematic
+  author:
+    - family: Chen
+      given: Cheng-Wei
+    - family: Lindsay
+      given: Stuart
+    - family: Kuo
+      given: Li-Yaung
+    - family: Fraser-Jenkins
+      given: Christopher R
+    - family: Ebihara
+      given: Atsushi
+    - family: Luu
+      given: Hong-Truong
+    - family: Park
+      given: Chong Wook
+    - family: Chao
+      given: Yi-Shan
+    - family: Huang
+      given: Yao-Moan
+    - family: Chiou
+      given: Wen-Liang
+  citation-key: chen2017systematic
+  issued:
+    - year: 2017
+  title: >-
+    A systematic study of East Asian vittarioid ferns (Pteridaceae:
+    Vittarioideae)
+  type: article-journal
+  URL: http://scholar.google.com#
+  volume: '183'
+
 - id: chen2018end
   abstract: >-
     © 2017, The Botanical Society of Japan and Springer Japan KK. The
@@ -365,6 +3599,47 @@ references:
   page: 67-76
   title: >-
     End of an enigma: *Aenigmopteris* belongs in *Tectaria* (tectariaceae:
+    Polypodiopsida)
+  type: article-journal
+  volume: '131'
+
+- id: chen2018enda
+  abstract: >-
+    © 2017, The Botanical Society of Japan and Springer Japan KK. The
+    phylogenetic affinities of the fern genus Aenigmopteris have been the
+    subject of considerable disagreement, but until now, no molecular data were
+    available from the genus. Based on the analysis of three chloroplast DNA
+    regions (rbcL, rps16-matK, and trnL-F) we demonstrate that Aenigmopteris
+    dubia (the type species of the genus) and A. elegans are closely related and
+    deeply imbedded in Tectaria. The other three species of genus are
+    morphologically very similar; we therefore transfer all five known species
+    into Tectaria. Detailed morphological comparison further shows that
+    previously proposed diagnostic characters of Aenigmopteris fall within the
+    range of variation of a broadly circumscribed Tectaria.
+  author:
+    - family: Chen
+      given: C.-W.
+    - family: Rothfels
+      given: Carl J
+    - family: Mustapeng
+      given: A.M.A.
+    - family: Gubilil
+      given: M.
+    - family: Karger
+      given: D.N.
+    - family: Kessler
+      given: M.
+    - family: Huang
+      given: Y.-M.
+  citation-key: chen2018enda
+  container-title: Journal of Plant Research
+  DOI: 10.1007/s10265-017-0966-9
+  ISSN: '09189440'
+  issue: '1'
+  issued:
+    - year: 2018
+  title: >-
+    End of an enigma: Aenigmopteris belongs in Tectaria (Tectariaceae:
     Polypodiopsida)
   type: article-journal
   volume: '131'
@@ -469,6 +3744,729 @@ references:
   type: article-journal
   volume: '13'
 
+- id: ching1933nomenclalure
+  author:
+    - family: Ching
+      given: C
+  citation-key: ching1933nomenclalure
+  issued:
+    - year: 1933
+  language: en
+  page: '15'
+  source: Zotero
+  title: >-
+    ON THE NOMENCLA'l'URE AND SYSTEMATIC POSITION OF POLYPODIUM DRYOPTERIS L.
+    AND RELATED SPECIES
+  type: article-journal
+
+- id: ching1933nomenclature
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1933nomenclature
+  container-title: >-
+    Contributions from the Biological Laboratory of the Science Society of China
+    Botanical Series
+  issue: '1'
+  issued:
+    - year: 1933
+  page: 30–45
+  title: >-
+    On the nomenclature and systematic position of Polypodium dryopteris L. and
+    related species
+  type: article-journal
+
+- id: ching1936revision
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1936revision
+  container-title: Bulletin of the Fan Memorial Institute of Biology
+  issue: '5'
+  issued:
+    - year: 1936
+  page: 237–352
+  title: >-
+    A revision of the Chinese and Sikkim-Himalayan Dryopteris with reference to
+    some species from neighbouring regions
+  type: article-journal
+  volume: '6'
+
+- id: ching1940genus
+  author:
+    - family: Ching
+      given: R C
+  citation-key: ching1940genus
+  container-title: Sunyatsenia
+  issue: '4'
+  issued:
+    - year: 1940
+  page: 269-289
+  title: On the genus Gleichenia Smith
+  type: article-journal
+  URL: >-
+    http://scholar.google.com/scholar?q=related:WDCGJ6m8DoEJ:scholar.google.com/&amp;hl=en&amp;num=20&amp;as_sdt=0,5
+  volume: '5'
+
+- id: ching1940natural
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1940natural
+  container-title: Sunyatsenia
+  issue: '4'
+  issued:
+    - year: 1940
+  page: 1–37
+  title: On natural classification of the family "Polypodiaceae"
+  type: article-journal
+  volume: '5'
+
+- id: ching1940studies
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1940studies
+  container-title: Bulletin of the Fan Memorial Institute of Biology Botanical Series
+  issued:
+    - year: 1940
+  page: 173–184
+  title: The studies of Chinese ferns--XXXIII
+  type: article-journal
+  volume: '10'
+
+- id: ching1940studiesa
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1940studiesa
+  container-title: Bulletin of the Fan Memorial Instiute of Biology Botanical Series
+  issue: '1'
+  issued:
+    - year: 1940
+  page: 1–22
+  title: The studies of Chinese ferns XXX
+  type: article-journal
+  volume: '10'
+
+- id: ching1941studies
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1941studies
+  container-title: Hong Kong Naturalist
+  issued:
+    - year: 1941
+  page: 194–204
+  title: The studies of Chinese ferns—XXXI
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=14336768477734903923related:cyBolvhu9sYJ
+  volume: '10'
+
+- id: ching1945studies
+  author:
+    - family: Ching
+      given: R C
+  citation-key: ching1945studies
+  container-title: Lingnan Science Journal
+  issued:
+    - year: 1945
+  page: 31–37
+  title: The studies of Chinese ferns—XXXII
+  type: article-journal
+  volume: '20'
+
+- id: ching1954ching
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1954ching
+  container-title: A.phy.sin, maybe?
+  issue: '1'
+  issued:
+    - year: 1954
+  page: 1–7
+  title: ching paper?
+  type: article-journal
+  volume: '3'
+
+- id: ching1964confused
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1964confused
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '1'
+  issued:
+    - year: 1964
+  page: 41–84
+  title: On some confused genera of the family Athyriaceae
+  type: article-journal
+  volume: '9'
+
+- id: ching1964genus
+  abstract: >-
+    Email Alert. Relative Information. Articles with No Contents! Other article
+    of author. · Ching Ren-Chang.     C. Chr. Ching Ren-Chang. 
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1964genus
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '1'
+  issued:
+    - year: 1964
+  page: 31–38
+  title: On the genus Diplaziopsis C. Chr.
+  type: article-journal
+  volume: '9'
+
+- id: ching1965new
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1965new
+  container-title: Acta Phytotax. Sin
+  issue: '4'
+  issued:
+    - year: 1965
+  page: 301–304
+  title: Some new nomenclatural combinations of ferns
+  type: article-journal
+  volume: '10'
+
+- id: ching1966gymnogrammitidaceae
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1966gymnogrammitidaceae
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '1'
+  issued:
+    - year: 1966
+  page: 11–16
+  title: Gymnogrammitidaceae Ching, a new fern family
+  type: article-journal
+  volume: '11'
+
+- id: ching1966three
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1966three
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '1'
+  issued:
+    - year: 1966
+  page: 11–30
+  title: Three new fern genera
+  type: article-journal
+  volume: '11'
+
+- id: ching1978chinese
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1978chinese
+  container-title: Acta Phytotax. Sin.
+  issue: '4'
+  issued:
+    - year: 1978
+  page: 16–37
+  title: >-
+    The Chinese fern families and genera: Systematic arrangement and historical
+    origin (Cont.)
+  type: article-journal
+  URL: >-
+    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=16374593994062294975related:v-9TNXs-PuMJ
+  volume: '16'
+
+- id: ching1978chinesea
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ching1978chinesea
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '3'
+  issued:
+    - year: 1978
+  page: 1–19
+  title: >-
+    The Chinese fern families and genera: Systematic arrangement and historical
+    origin
+  type: article-journal
+  volume: '16'
+
+- id: ching1982systematic
+  abstract: >-
+    Relative Information. Articles with No Contents! Other article of author. ·
+    Ching Ren-Chang · Wang Zhong-Ren. On the     crenulato-serrulatum Makino
+    from North-eastern Asia. Ching Ren-Chang, Wang Zhong-Ren. Received Revised
+    Online Accepted
+  author:
+    - family: Ching
+      given: Ren-Chang
+    - family: Wang
+      given: Zhong-ren
+  citation-key: ching1982systematic
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '1'
+  issued:
+    - year: 1982
+  page: 73–77
+  title: >-
+    On the systematic position of Athyrium crenulato-serrulatum Makino from
+    North-Eastern Asia
+  type: article-journal
+  volume: '20'
+
+- id: chingstudies
+  author:
+    - family: Ching
+      given: C
+  citation-key: chingstudies
+  language: en
+  page: '12'
+  source: Zotero
+  title: THE STUDIES OF CHTNESE FERNS-XXXIfr.
+  type: article-journal
+
+- id: chiou1997antheridiogen
+  author:
+    - family: Chiou
+      given: W L
+    - family: Farrar
+      given: D R
+  citation-key: chiou1997antheridiogen
+  container-title: American Journal of Botany
+  ISBN: 0002-9122
+  issue: '5'
+  issued:
+    - year: 1997
+  page: 633–640
+  title: Antheridiogen production and response in Polypodiaceae species
+  type: article-journal
+  volume: '84'
+
+- id: chiou1997comparative
+  author:
+    - family: Chiou
+      given: W L
+    - family: Farrar
+      given: D R
+  citation-key: chiou1997comparative
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '3'
+  issued:
+    - year: 1997
+  page: 77–86
+  title: >-
+    Comparative gametophyte morphology of selected species of the family
+    Polypodiaceae
+  type: article-journal
+  volume: '87'
+
+- id: chiou1998gametophyte
+  author:
+    - family: Chiou
+      given: W L
+    - family: Farrar
+      given: D R
+    - family: Ranker
+      given: Thomas A
+  citation-key: chiou1998gametophyte
+  container-title: Canadian Journal of Botany-Revue Canadienne De Botanique
+  ISBN: 0008-4026
+  issue: '11'
+  issued:
+    - year: 1998
+  page: 1967–1977
+  title: Gametophyte morphology and reproductive biology in Elaphoglossum
+  type: article-journal
+  volume: '76'
+
+- id: chiou2002mating
+  author:
+    - family: Chiou
+      given: W L
+    - family: Farrar
+      given: D R
+    - family: Ranker
+      given: Thomas A
+  citation-key: chiou2002mating
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '2'
+  issued:
+    - year: 2002
+  page: 65–79
+  title: The mating systems of some epiphytic polypodiaceae
+  type: article-journal
+  volume: '92'
+
+- id: chippindalephylogenetic
+  abstract: >-
+    The transition from aquatic to terrestrial eggs is a key evolutionary change
+    that has allowed vertebrates to successfully colonize and exploit the land.
+    Although most amphibians retain the primitive biphasic life cycle (eggs
+    deposited in water that hatch into free-living aquatic larvae), direct
+    development of terrestrial eggs has evolved repeatedly and may have been
+    critical to the evolutionary success of several amphibian groups. We provide
+    the ﬁrst conclusive evidence for evolutionary reversal of direct development
+    in vertebrates. The family Plethodontidae (lungless salamanders) contains
+    the majority of salamander species, including major radiations of direct
+    developers. We reconstruct the higher level phylogenetic relationships of
+    plethodontid salamanders using molecular and morphological data and use this
+    phylogeny to examine the evolution of direct development. We show that the
+    predominantly biphasic desmognathines, previously considered the sister
+    group of other plethodontids, are nested inside a group of directdeveloping
+    species (Plethodontini) and have re-evolved the aquatic larval stage. Rather
+    than being an evolutionary dead end, the reversal from direct developing to
+    biphasic life history may have helped communities in eastern North America
+    to achieve the highest local diversity of salamander species in the world.
+  author:
+    - family: Chippindale
+      given: Paul T
+    - family: Bonett
+      given: Ronald M
+    - family: Baldwin
+      given: Andrew S
+    - family: Wiens
+      given: John J
+  citation-key: chippindalephylogenetic
+  language: en
+  page: '14'
+  source: Zotero
+  title: >-
+    PHYLOGENETIC EVIDENCE FOR A MAJOR REVERSAL OF LIFE-HISTORY EVOLUTION IN
+    PLETHODONTID SALAMANDERS
+  type: article-journal
+
+- id: choo2014gametophytes
+  author:
+    - family: Choo
+      given: Thereis Y S
+    - family: Matos
+      given: Fernando B
+    - family: Moran
+      given: Robbin C
+  citation-key: choo2014gametophytes
+  container-title: American Fern Journal
+  DOI: 10.1640/0002-8444-104.2.49
+  issue: '2'
+  issued:
+    - year: 2014
+  language: English
+  page: 49–57
+  title: >-
+    The gametophytes and young sporophytes of Elaphoglossum decursivum
+    (Dryopteridaceae) in Costa Rica
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-104.2.49
+  volume: '104'
+
+- id: christ1900farnkrauter
+  author:
+    - family: Christ
+      given: Hermann
+  citation-key: christ1900farnkrauter
+  event-place: Bern
+  issued:
+    - year: 1900
+  number-of-pages: '195'
+  publisher: Druck und Verlag von K. J. Wyss
+  publisher-place: Bern
+  title: Die Farnkräuter der Schweiz
+  type: book
+
+- id: christ1900monographie
+  author:
+    - family: Christ
+      given: Hermann
+  citation-key: christ1900monographie
+  issued:
+    - year: 1900
+  page: 1–342
+  title: Monographie des genus Elaphoglossum
+  type: article-journal
+
+- id: christ1902filices
+  author:
+    - family: Christ
+      given: Hermann
+  citation-key: christ1902filices
+  container-title: Bulletin de l'Herbier Boissier
+  issue: '10'
+  issued:
+    - year: 1902
+  page: 825–832
+  title: Filices Faurieanae
+  type: article-journal
+  volume: '2'
+
+- id: christ1907primitiae
+  author:
+    - family: Christ
+      given: Hermann
+  citation-key: christ1907primitiae
+  container-title: Bulletin de l'Herbier Boissier
+  issued:
+    - year: 1907
+  page: 257–276
+  title: Primitiae florae Costaricensis filices
+  type: article-journal
+  volume: ser. 2 v.7
+
+- id: christenhusz2008evolutionary
+  author:
+    - family: Christenhusz
+      given: M J M
+    - family: Tuomisto
+      given: H
+    - family: Metzgar
+      given: J S
+    - family: Pryer
+      given: Kathleen M
+  citation-key: christenhusz2008evolutionary
+  container-title: Molecular Phylogenetics and Evolution
+  issue: '1'
+  issued:
+    - year: 2008
+  page: 34–48
+  title: >-
+    Evolutionary relationships within the Neotropical, eusporangiate fern genus
+    Danaea (Marattiaceae)
+  type: article-journal
+  URL: http://linkinghub.elsevier.com/retrieve/pii/S1055790307003296
+  volume: '46'
+
+- id: christenhusz2011corrections
+  author:
+    - family: Christenhusz
+      given: Maarten J M
+    - family: Schneider
+      given: Harald
+  citation-key: christenhusz2011corrections
+  container-title: Phytotaxa
+  issued:
+    - year: 2011
+  page: 50–52
+  title: 'Corrections to Phytotaxa 19: Linear sequence of lycophytes and ferns'
+  type: article-journal
+  volume: '28'
+
+- id: christenhusz2011linear
+  author:
+    - family: Christenhusz
+      given: MAARTEN J M
+    - family: Zhang
+      given: Xian-Chun
+    - family: Schneider
+      given: Harald
+  citation-key: christenhusz2011linear
+  container-title: Phytotaxa
+  issued:
+    - year: 2011
+  page: 7–54
+  title: A linear sequence of extant families and genera of lycophytes and ferns
+  type: article-journal
+  volume: '19'
+
+- id: christenhusz2011linearb
+  author:
+    - family: Christenhusz
+      given: Maarten J. M.
+    - family: Zhang
+      given: Xian-Chun
+    - family: Schneider
+      given: Harald
+  citation-key: christenhusz2011linearb
+  issued:
+    - year: 2011
+  title: A linear sequence of extant families and genera of lycophytes and ferns
+  type: article-journal
+  URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p1581
+
+- id: christenhusz2013phylogenetic
+  abstract: >-
+    The phylogenetic position of Dracoglossum Christenh. is studied here for the
+    first time using DNA sequence data. Based on a broad sampling of eupolypod
+    ferns and four plastid genes (atpA, atpB, rbcL, rps4), we show that
+    Dracoglossum does not belong to the genus Tectaria Cav., in which it was
+    previously placed, nor is it closely related to that genus or any other
+    member of Tectariaceae. Our results provide strong support to suggest that
+    Dracoglossum forms a rather isolated lineage, which is sister to Lomariopsis
+    Fe´e, and that the genus should therefore be placed in Lomariopsidaceae.
+  accessed:
+    - year: 2022
+      month: 10
+      day: 22
+  author:
+    - family: Christenhusz
+      given: Maarten J. M.
+    - family: Jones
+      given: Mirkka
+    - family: Lehtonen
+      given: Samuli
+  citation-key: christenhusz2013phylogenetic
+  container-title: American Fern Journal
+  container-title-short: American Fern Journal
+  DOI: 10.1640/0002-8444-103.2.131
+  ISSN: 0002-8444, 1938-422X
+  issue: '2'
+  issued:
+    - year: 2013
+      month: 4
+  language: en
+  page: 131-138
+  source: DOI.org (Crossref)
+  title: Phylogenetic Placement of the Enigmatic Fern Genus *Dracoglossum*
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-103.2.131
+  volume: '103'
+
+- id: christenhusz2014trends
+  abstract: >-
+    Background and Aims Throughout the history of fern classification, familial
+    and generic concepts have been highly labile. Many classifications and
+    evolutionary schemes have been proposed during the last two centuries,
+    reflecting different interpretations of the available evidence. Knowledge of
+    fern structure and life histories has increased through time, providing more
+    evidence on which to base ideas of possible relationships, and
+    classification has changed accordingly. This paper reviews previous
+    classifications of ferns and presents ideas on how to achieve a more stable
+    consensus. Scope An historical overview is provided from the first to the
+    most recent fern classifications, from which conclusions are drawn on past
+    changes and future trends. The problematic concept of family in ferns is
+    discussed, with a particular focus on how this has changed over time. The
+    history of molecular studies and the most recent findings are also
+    presented. Key Results Fern classification generally shows a trend from
+    highly artificial, based on an interpretation of a few extrinsic characters,
+    via natural classifications derived from a multitude of intrinsic
+    characters, towards more evolutionary circumscriptions of groups that do not
+    in general align well with the distribution of these previously used
+    characters. It also shows a progression from a few broad family concepts to
+    systems that recognized many more narrowly and highly controversially
+    circumscribed families; currently, the number of families recognized is
+    stabilizing somewhere between these extremes. Placement of many genera was
+    uncertain until the arrival of molecular phylogenetics, which has rapidly
+    been improving our understanding of fern relationships. As a collective
+    category, the so-called 'fern allies' (e.g. Lycopodiales, Psilotaceae,
+    Equisetaceae) were unsurprisingly found to be polyphyletic, and the term
+    should be abandoned. Lycopodiaceae, Selaginellaceae and Isoëtaceae form a
+    clade (the lycopods) that is sister to all other vascular plants, whereas
+    the whisk ferns (Psilotaceae), often included in the lycopods or believed to
+    be associated with the first vascular plants, are sister to Ophioglossaceae
+    and thus belong to the fern clade. The horsetails (Equisetaceae) are also
+    members of the fern clade (sometimes inappropriately called 'monilophytes'),
+    but, within that clade, their placement is still uncertain. Leptosporangiate
+    ferns are better understood, although deep relationships within this group
+    are still unresolved. Earlier, almost all leptosporangiate ferns were placed
+    in a single family (Polypodiaceae or Dennstaedtiaceae), but these families
+    have been redefined to narrower more natural entities. Conclusions
+    Concluding this paper, a classification is presented based on our current
+    understanding of relationships of fern and lycopod clades. Major changes in
+    our understanding of these families are highlighted, illustrating issues of
+    classification in relation to convergent evolution and false homologies.
+    Problems with the current classification and groups that still need study
+    are pointed out. A summary phylogenetic tree is also presented. A new
+    classification in which Aspleniaceae, Cyatheaceae, Polypodiaceae and
+    Schizaeaceae are expanded in comparison with the most recent classifications
+    is presented, which is a modification of those proposed by Smith et al.
+    (2006, 2008) and Christenhusz et al. (2011). These classifications are now
+    finding a wider acceptance and use, and even though a few amendments are
+    made based on recently published results from molecular analyses, we have
+    aimed for a stable family and generic classification of ferns.
+  author:
+    - family: Christenhusz
+      given: Maarten J M
+    - family: Chase
+      given: Mark W
+  citation-key: christenhusz2014trends
+  container-title: Annals of Botany
+  issue: '4'
+  issued:
+    - year: 2014
+  page: 571–594
+  title: Trends and concepts in fern classification
+  type: article-journal
+  URL: >-
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;id=24532607&amp;retmode=ref&amp;cmd=prlinks
+  volume: '113'
+
+- id: christenhusz2014trendsb
+  abstract: >-
+    Background and AimsThroughout the history of fern classification, familial
+    and generic concepts have been highly labile. Many classifications and
+    evolutionary schemes have been proposed during the last two centuries,
+    reflecting different interpretations of the available evidence. Knowledge of
+    fern structure and life histories has increased through time, providing more
+    evidence on which to base ideas of possible relationships, and
+    classification has changed accordingly. This paper reviews previous
+    classifications of ferns and presents ideas on how to achieve a more stable
+    consensus.ScopeAn historical overview is provided from the first to the most
+    recent fern classifications, from which conclusions are drawn on past
+    changes and future trends. The problematic concept of family in ferns is
+    discussed, with a particular focus on how this has changed over time. The
+    history of molecular studies and the most recent findings are also
+    presented.Key ResultsFern classification generally shows a trend from highly
+    artificial, based on an interpretation of a few extrinsic characters, via
+    natural classifications derived from a multitude of intrinsic characters,
+    towards more evolutionary circumscriptions of groups that do not in general
+    align well with the distribution of these previously used characters. It
+    also shows a progression from a few broad family concepts to systems that
+    recognized many more narrowly and highly controversially circumscribed
+    families; currently, the number of families recognized is stabilizing
+    somewhere between these extremes. Placement of many genera was uncertain
+    until the arrival of molecular phylogenetics, which has rapidly been
+    improving our understanding of fern relationships. As a collective category,
+    the so-called 'fern allies' (e.g. Lycopodiales, Psilotaceae, Equisetaceae)
+    were unsurprisingly found to be polyphyletic, and the term should be
+    abandoned. Lycopodiaceae, Selaginellaceae and Isoëtaceae form a clade (the
+    lycopods) that is sister to all other vascular plants, whereas the whisk
+    ferns (Psilotaceae), often included in the lycopods or believed to be
+    associated with the first vascular plants, are sister to Ophioglossaceae and
+    thus belong to the fern clade. The horsetails (Equisetaceae) are also
+    members of the fern clade (sometimes inappropriately called 'monilophytes'),
+    but, within that clade, their placement is still uncertain. Leptosporangiate
+    ferns are better understood, although deep relationships within this group
+    are still unresolved. Earlier, almost all leptosporangiate ferns were placed
+    in a single family (Polypodiaceae or Dennstaedtiaceae), but these families
+    have been redefined to narrower more natural entities.ConclusionsConcluding
+    this paper, a classification is presented based on our current understanding
+    of relationships of fern and lycopod clades. Major changes in our
+    understanding of these families are highlighted, illustrating issues of
+    classification in relation to convergent evolution and false homologies.
+    Problems with the current classification and groups that still need study
+    are pointed out. A summary phylogenetic tree is also presented. A new
+    classification in which Aspleniaceae, Cyatheaceae, Polypodiaceae and
+    Schizaeaceae are expanded in comparison with the most recent classifications
+    is presented, which is a modification of those proposed by Smith et al.
+    (2006, 2008) and Christenhusz et al. (2011). These classifications are now
+    finding a wider acceptance and use, and even though a few amendments are
+    made based on recently published results from molecular analyses, we have
+    aimed for a stable family and generic classification of ferns.
+  author:
+    - family: Christenhusz
+      given: Maarten J M
+    - family: Chase
+      given: Mark W
+  citation-key: christenhusz2014trendsb
+  container-title: Annals of botany
+  DOI: 10.1093/aob/mct299
+  ISSN: 1095-8290
+  issue: '1973'
+  issued:
+    - year: 2014
+      month: 2
+  page: 1-24
+  PMID: '24532607'
+  title: Trends and concepts in fern classification.
+  type: article-journal
+  URL: http://www.ncbi.nlm.nih.gov/pubmed/24532607
+
 - id: christenhusz2018ppg
   accessed:
     - year: 2024
@@ -496,6 +4494,547 @@ references:
   URL: https://onlinelibrary.wiley.com/doi/10.12705/673.2
   volume: '67'
 
+- id: christenhusz2018special
+  author:
+    - family: Christenhusz
+      given: Maarten J M
+    - family: Fay
+      given: Michael F
+    - family: Byng
+      given: James W
+  citation-key: christenhusz2018special
+  event-place: Bradford, U.K.
+  issued:
+    - year: 2018
+  page: 1–155
+  publisher: Plant Gateway Ltd.
+  publisher-place: Bradford, U.K.
+  title: Special Edition GLOVAP, Nomenclature part I, vol. 4
+  title-short: 'The Global Flora: A practical flora to vascular pl'
+  type: chapter
+
+- id: christenhusz2019phylogenetics
+  abstract: "Abstract Horsetails (Equisetum, Equisetaceae) are one of the oldest groups of vascular plants with a nearly continuous fossil record dating back to the Carboniferous. Only a few studies have addressed relationships among and within the extant members of this fern genus. We here present the first complete phylogenetic analysis of one or more samples of all extant species covering the full geographical range. Using three plastid loci, we evaluate species limits, taxon circumscription and inter-relationships. Several known hybrids were\_…"
+  author:
+    - family: Christenhusz
+      given: M J M
+    - family: Bangiolo
+      given: Lois
+    - family: Chase
+      given: Mark W
+    - family: Fay
+      given: Michael
+    - family: Husby
+      given: Chad
+    - family: Witkus
+      given: Marika
+    - family: Viruel
+      given: Juan
+  citation-key: christenhusz2019phylogenetics
+  container-title: Botanical Journal of the Linnean Society
+  issued:
+    - year: 2019
+  page: 311-352
+  title: >-
+    Phylogenetics, classification and typification of extant horsetails
+    (Equisetum, Equisetaceae)
+  type: article-journal
+  URL: https://academic.oup.com/botlinnean/article-abstract/189/4/311/5420235
+  volume: '189'
+
+- id: christensen1906index
+  abstract: Bibliography, Indexes, Nomenclature, Pteridophyta
+  author:
+    - family: Christensen
+      given: Carl
+  citation-key: christensen1906index
+  event-place: Copenhagen
+  issued:
+    - year: 1906
+  number-of-pages: 1–800
+  publisher: H. Hagerup
+  publisher-place: Copenhagen
+  title: >-
+    Index Filicum, sive Enumeratio Omnium Generum Specierumque Filicum et
+    Hydropteridum, ab Anno 1753 ad Finem Anni 1905, Descriptorum adjectis
+    Synonymis Principalibus, Area Geographica, etc.
+  type: book
+
+- id: christensen1913monograph
+  author:
+    - family: Christensen
+      given: C
+  citation-key: christensen1913monograph
+  container-title: Kgl. Dansk Vid.-Selsk. Skr. 7.X.2.
+  issued:
+    - year: 1913
+  title: >-
+    A monograph of the genus Dryopteris part I, the tropical American
+    pinnatifid-bipinnatifid species
+  type: article-journal
+
+- id: christensen1927small
+  author:
+    - family: Christensen
+      given: Carl
+  citation-key: christensen1927small
+  container-title: Journal of the Washington Academy of Sciences
+  issued:
+    - year: 1927
+  page: 497–501
+  title: On a small collection of pteridophytes from the province of Kansu, China
+  type: article-journal
+  volume: '17'
+
+- id: christensen1938filicinae
+  author:
+    - family: Christensen
+      given: C
+  citation-key: christensen1938filicinae
+  container-title: Manual of Pteridology
+  editor:
+    - family: Verdoorn
+      given: Fr.
+  event-place: The Hague
+  issued:
+    - year: 1938
+  page: 522–550
+  publisher: Martinus Nijhoff
+  publisher-place: The Hague
+  title: Filicinae
+  type: chapter
+
+- id: chu1994pteridophytes
+  abstract: >-
+    Relative Information. Articles with “New records”. Other article of author.
+    · CHU Wei-Ming ZHOU Hou-Gao.      AND CHINA. CHU Wei-Ming ZHOU Hou-Gao.
+    Yunnan University. Received Revised Online 2003-8-8 8:43:00 Accepted.
+  author:
+    - family: Chu
+      given: Wei-Ming
+    - family: Zhou
+      given: Hou-Gao
+  citation-key: chu1994pteridophytes
+  container-title: Acta Botanica Yunnanica
+  issue: '2'
+  issued:
+    - year: 1994
+  page: 123–130
+  title: Some pteridophytes new to Hainan and China
+  type: article-journal
+  volume: '16'
+
+- id: chu1999diplaziopsis
+  author:
+    - family: Chu
+      given: Wei-Ming
+    - family: He
+      given: Zhao-Rong
+  citation-key: chu1999diplaziopsis
+  container-title: Flora Reipublicae Popularis Sinicae
+  editor:
+    - family: Chu
+      given: Wei-Ming
+  issue: '2'
+  issued:
+    - year: 1999
+  page: 599–509
+  publisher: Science Press
+  title: Diplaziopsis C. Chr.
+  type: chapter
+  volume: '3'
+
+- id: cicuzza2014rediscovery
+  author:
+    - family: Cicuzza
+      given: D
+  citation-key: cicuzza2014rediscovery
+  container-title: Notes Rec
+  DOI: 10.1098/rsnr.2014.0035
+  issue: '4'
+  issued:
+    - year: 2014
+  language: English
+  page: 403-412
+  title: >-
+    A rediscovery of Alfred Russel Wallace&apos;s fern collection from Borneo at
+    the Cambridge University Herbarium
+  type: article-journal
+  URL: http://rsnr.royalsocietypublishing.org/cgi/doi/10.1098/rsnr.2014.0035
+  volume: '68'
+
+- id: clark2016genome
+  author:
+    - family: Clark
+      given: James
+    - family: Hidalgo
+      given: Oriane
+    - family: Pellicer
+      given: Jaume
+    - family: Liu
+      given: Hong-Mei
+    - family: Marquardt
+      given: Jeannine
+    - family: Robert
+      given: Yannis
+    - family: Christenhusz
+      given: Maarten
+    - family: Zhang
+      given: Shouzhou
+    - family: Gibby
+      given: Mary
+    - family: Leitch
+      given: Ilia J
+    - family: Schneider
+      given: Harald
+  citation-key: clark2016genome
+  container-title: New Phytologist
+  DOI: 10.1111/nph.13833
+  issue: '3'
+  issued:
+    - year: 2016
+  language: English
+  page: 1072-1082
+  title: >-
+    Genome evolution of ferns: Evidence for relative stasis of genome size
+    across the fern phylogeny
+  type: article-journal
+  URL: http://doi.wiley.com/10.1111/nph.13833
+  volume: '210'
+
+- id: clark2019origin
+  author:
+    - family: Clark
+      given: James W
+    - family: Puttick
+      given: Mark N
+    - family: Donoghue
+      given: Philip C J
+  citation-key: clark2019origin
+  container-title: Proceedings Biological sciences / The Royal Society
+  issue: '1914'
+  issued:
+    - year: 2019
+      month: 10
+      day: 30
+  page: 20191610-20191662
+  title: >-
+    Origin of horsetails and the role of whole-genome duplication in plant
+    macroevolution
+  type: article-journal
+  URL: https://royalsocietypublishing.org/doi/10.1098/rspb.2019.1662
+  volume: '286'
+
+- id: cleal2015generic
+  abstract: "Traditionally, most adpressions of Pennsylvanian marattialean fronds from Euramerica belong to a family for which the correct name is Psaroniaceae. Most were assigned to just one fossil-genus (Pecopteris) but in recent years there has been increasing awareness that these fronds are far more heterogeneous and should be split into different fossil-genera based on a combination of venation, pinnule morphology, soral morphology and spores. Seven such genera can be recognised: Asterotheca, Lobatopteris sensu stricto, Lobatopteris\_…"
+  author:
+    - family: Cleal
+      given: Christopher J
+  citation-key: cleal2015generic
+  container-title: Palaeontographica Abteilung B
+  issue: 1-3
+  issued:
+    - year: 2015
+      month: 1
+      day: 23
+  page: 1-21
+  title: >-
+    The generic taxonomy of Pennsylvanian age marattialean fern frond
+    adpressions
+  type: article-journal
+  URL: >-
+    http://www.schweizerbart.de/papers/palb/detail/292/85434/The_generic_taxonomy_of_Pennsylvanian_age_marattia?af=crossref
+  volume: '292'
+
+- id: cochran2014tryonia
+  author:
+    - family: Cochran
+      given: Alyssa
+    - family: Prado
+      given: Jefferson
+    - family: Schuettpelz
+      given: Eric
+  citation-key: cochran2014tryonia
+  container-title: PhytoKeys
+  issued:
+    - year: 2014
+  page: 23–43
+  title: "Tryonia, a new taenitidoid fern genus segregated from\_Jamesonia and Eriosorus (Pteridaceae)"
+  type: article-journal
+  URL: >-
+    http://www.pensoft.net/journals/phytokeys/article/6886/abstract/tryonia-a-new-taenitidoid-fern-genus-segregated-from
+  volume: '35'
+
+- id: cohen2002diodegradation
+  author:
+    - family: Cohen
+      given: Michael F
+    - family: Williams
+      given: Jolene
+    - family: Yamasaki
+      given: Hideo
+  citation-key: cohen2002diodegradation
+  container-title: J Environ Sci Heal A
+  DOI: 10.1081/ESE-120015423
+  issue: '9'
+  issued:
+    - year: 2002
+  language: English
+  page: 1593–1606
+  title: Diodegradation of diesel fuel by an Azolla-derived bacterial consortium
+  type: article-journal
+  URL: http://www.tandfonline.com/doi/abs/10.1081/ESE-120015423
+  volume: '37'
+
+- id: colenso1898description
+  author:
+    - family: Colenso
+      given: W
+  citation-key: colenso1898description
+  container-title: Transactions and Proceedings of the New Zealand Institute
+  issued:
+    - year: 1898
+  page: 263–266
+  title: A description of some newly discovered indigenous New Zealand ferns
+  type: article-journal
+  volume: '31'
+
+- id: collinson2002ecology
+  author:
+    - family: Collinson
+      given: Margaret E
+    - family: Konijnenburg-van Cittert
+      given: Johanna H A
+      non-dropping-particle: van
+  citation-key: collinson2002ecology
+  container-title: Review of Paleobotany and Palynology
+  issued:
+    - year: 2002
+  page: 7–8
+  title: Ecology of ferns through time (IOPC-VI)
+  type: article-journal
+  volume: '2427'
+
+- id: collinson2009new
+  author:
+    - family: Collinson
+      given: Margaret E
+    - family: Barke
+      given: Judith
+    - family: Burgh
+      given: Johan
+      non-dropping-particle: van der
+    - family: Konijnenburg-van Cittert
+      given: Johanna H A
+      non-dropping-particle: van
+  citation-key: collinson2009new
+  container-title: Rev Palaeobot Palyno
+  DOI: 10.1016/j.revpalbo.2008.12.014
+  issue: 1-2
+  issued:
+    - year: 2009
+  page: 1–14
+  publisher: Elsevier B.V.
+  title: >-
+    A new species of the freshwater fern Azolla (Azollaceae) from the Eocene
+    Arctic Ocean
+  type: article-journal
+  URL: http://dx.doi.org/10.1016/j.revpalbo.2008.12.014
+  volume: '155'
+
+- id: collinson2010did
+  author:
+    - family: Collinson
+      given: Margaret E
+    - family: Barke
+      given: Judith
+    - family: Burgh
+      given: Johan
+      non-dropping-particle: van der
+    - family: Konijnenburg-van Cittert
+      given: Johanna H A
+      non-dropping-particle: van
+    - family: Heilmann-Clausen
+      given: Claus
+    - family: Howard
+      given: Lauren E
+    - family: Brinkhuis
+      given: Henk
+  citation-key: collinson2010did
+  container-title: Rev Palaeobot Palyno
+  DOI: 10.1016/j.revpalbo.2009.12.001
+  issue: 3-4
+  issued:
+    - year: 2010
+  page: 152–165
+  publisher: Elsevier B.V.
+  title: >-
+    Did a single species of Eocene Azolla spread from the Arctic Basin to the
+    southern North Sea?
+  type: article-journal
+  URL: http://dx.doi.org/10.1016/j.revpalbo.2009.12.001
+  volume: '159'
+
+- id: condack2013polystichum
+  author:
+    - family: Condack
+      given: João Paulo S
+    - family: McHenry
+      given: Monique A
+    - family: Morero
+      given: Rita E
+    - family: Sylvestre
+      given: Lana S
+    - family: Barrington
+      given: David S
+  citation-key: condack2013polystichum
+  container-title: American Fern Journal
+  DOI: 10.1640/0002-8444-103.2.118
+  issue: '2'
+  issued:
+    - year: 2013
+  language: English
+  page: 118-130
+  title: >-
+    Polystichum montevidense demystified: Molecular and morphological data
+    reveal a cohesive, widespread South American species
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-103.2.118
+  volume: '103'
+
+- id: copeland1909new
+  author:
+    - family: Copeland
+      given: Edwin Bingham
+  citation-key: copeland1909new
+  container-title: Philippine Journal of Science
+  issued:
+    - year: 1909
+  page: 111–115
+  title: New or interesting Philippine ferns. IV
+  type: article-journal
+  volume: 4(C)
+
+- id: copeland1929new
+  author:
+    - family: Copeland
+      given: E
+  citation-key: copeland1929new
+  container-title: Philippine Journal of Science
+  issued:
+    - year: 1929
+  page: 129–155
+  title: New or interesting ferns
+  type: article-journal
+  volume: '38'
+
+- id: copeland1929oriental
+  author:
+    - family: Copeland
+      given: Edwin Bingham
+  citation-key: copeland1929oriental
+  container-title: University of California Publications in Botany
+  issued:
+    - year: 1929
+  page: 45–128
+  title: The Oriental genera of Polypodiaceae
+  type: article-journal
+  volume: '16'
+
+- id: copeland1935additional
+  author:
+    - family: Copeland
+      given: E B
+  citation-key: copeland1935additional
+  container-title: The Philippine Journal of Science
+  issue: '4'
+  issued:
+    - year: 1935
+  page: 471-493
+  title: Additional ferns of Kinabalu
+  type: article-journal
+  URL: >-
+    http://scholar.google.com/scholar?q=related:PoVzGMaz-7UJ:scholar.google.com/&amp;hl=en&amp;num=20&amp;as_sdt=0,5
+  volume: '56'
+
+- id: copeland1942filicum
+  author:
+    - family: Copeland
+      given: E B
+  citation-key: copeland1942filicum
+  container-title: University of California Publications in Botany
+  issue: '10'
+  issued:
+    - year: 1942
+  page: 217-226
+  title: Filicum novarum CXXVIII diagnoses
+  type: article-journal
+  URL: >-
+    http://scholar.google.com/scholar?q=related:VMxJI6cnjIYJ:scholar.google.com/&amp;hl=en&amp;num=20&amp;as_sdt=0,5
+  volume: '18'
+
+- id: copeland1947genera
+  author:
+    - family: Copeland
+      given: E B
+  citation-key: copeland1947genera
+  event-place: Waltham
+  issued:
+    - year: 1947
+  publisher: Chronica Botanica Co.
+  publisher-place: Waltham
+  title: Genera Filicum
+  type: book
+  volume: '75'
+
+- id: courchamp2013alien
+  author:
+    - family: Courchamp
+      given: Franck
+  citation-key: courchamp2013alien
+  container-title: Nature
+  issue: '7452'
+  issued:
+    - year: 2013
+  page: '37'
+  title: 'Alien species: Monster fern makes IUCN invader list'
+  type: article-journal
+  volume: '498'
+
+- id: crabbe1973seven
+  author:
+    - family: Crabbe
+      given: J A
+    - family: Jermy
+      given: A C
+  citation-key: crabbe1973seven
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 1973
+  page: 135–144
+  title: Seven new species of Selaginella from tropical South America
+  type: article-journal
+  volume: '63'
+
+- id: crabbe1975new
+  author:
+    - family: Crabbe
+      given: J A
+    - family: Jermy
+      given: A C
+    - family: Mickel
+      given: John
+  citation-key: crabbe1975new
+  container-title: Fern Gazette
+  issue: 2&3
+  issued:
+    - year: 1975
+  page: 141–162
+  title: A new generic sequence for the pteridophyte herbarium
+  type: article-journal
+  volume: '11'
+
 - id: crandall-stotler2009phylogeny
   author:
     - family: Crandall-Stotler
@@ -515,6 +5054,112 @@ references:
   type: article-journal
   URL: http://www.journals.cambridge.org/abstract_S0960428609005393
   volume: '66'
+
+- id: crane1995phylogeny
+  author:
+    - family: Crane
+      given: E H
+    - family: Farrar
+      given: D R
+    - family: Wendel
+      given: J F
+  citation-key: crane1995phylogeny
+  container-title: American Fern Journal
+  ISBN: 0002-8444
+  issue: '4'
+  issued:
+    - year: 1995
+  page: 283–305
+  title: >-
+    Phylogeny of the Vittariaceae: Convergent simplification leads to a
+    polyphyletic Vittaria
+  type: article-journal
+  volume: '85'
+
+- id: crane1997revised
+  author:
+    - family: Crane
+      given: E H
+  citation-key: crane1997revised
+  container-title: Systematic Botany
+  ISBN: 0363-6445
+  issue: '3'
+  issued:
+    - year: 1997
+  page: 509–517
+  title: A revised circumscription of the genera of the fern family Vittariaceae
+  type: article-journal
+  volume: '22'
+
+- id: cranfill2001phylogenetic
+  author:
+    - family: Cranfill
+      given: R
+  citation-key: cranfill2001phylogenetic
+  event-place: Berkeley
+  issued:
+    - year: 2001
+  publisher: University of California
+  publisher-place: Berkeley
+  title: >-
+    Phylogenetic Studies in the Polypodiales (Pteridophyta) with an Emphasis on
+    the Family Blechnaceae
+  type: thesis
+  volume: PhD
+
+- id: cranfill2003phylogenetics
+  author:
+    - family: Cranfill
+      given: Raymond
+    - family: Kato
+      given: Masahiro
+  citation-key: cranfill2003phylogenetics
+  container-title: Pteridology in the New Millennium
+  editor:
+    - family: Chandra
+      given: S
+    - family: Srivastava
+      given: M
+  event-place: Dordrecht
+  issued:
+    - year: 2003
+  page: 25–47
+  publisher: Kluwer Academic Publishers
+  publisher-place: Dordrecht
+  title: >-
+    Phylogenetics, biogeography, and classification of the woodwardioid ferns
+    (Blechnaceae)
+  type: chapter
+
+- id: crowden19743deoxyanthocyanins
+  author:
+    - family: Crowden
+      given: R K
+    - family: Jarman
+      given: S J
+  citation-key: crowden19743deoxyanthocyanins
+  container-title: Phytochemistry
+  issued:
+    - year: 1974
+  page: 1947–1948
+  title: 3-deoxyanthocyanins from the fern Blechnum procerum
+  type: article-journal
+  volume: '13'
+
+- id: croxdale1978salvinia
+  author:
+    - family: Croxdale
+      given: Judith G
+  citation-key: croxdale1978salvinia
+  container-title: Canadian Journal of Botany
+  issued:
+    - year: 1978
+  page: 1982–1991
+  title: >-
+    Salvinia leaves. I. Origin and early differentiation of floating and
+    submerged leaves
+  type: article-journal
+  volume: '56'
 
 - id: ebihara2006taxonomic
   author:

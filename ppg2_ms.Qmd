@@ -79,42 +79,41 @@ n <- ppg_2_taxa_count |>
 **Abstract** 
 
 The taxonomy of ferns and lycophytes--the paraphyletic group known as the pteridophytes--has undergone several major revisions as knowledge about the phylogenetic relationships of these plants has accumulated.
-The most recent widely accepted taxonomy for ferns and lycophytes is Pteridophyte Phylogeny Group I, published in 2016.
-Since that time, many new names have been published and the relationships of various taxa have come into clearer focus.
-Here, we present a revised taxonomy that reflects advances made in pteridophyte systematics since PPG I.
+The most recent widely accepted classification for ferns and lycophytes is Pteridophyte Phylogeny Group I, published in 2016.
+Since that time, many new names have been published and the phylogenetic relationships of various taxa have come into clearer focus.
+Here, we present a revised classification that reflects advances made in pteridophyte systematics since PPG I.
 PPG II recognizes `r n$class$ppg2` classes, `r n$order$ppg2` orders, `r n$family$ppg2` families, `r n$genus$ppg2` genera, and `r n$species$ppg2` species of ferns and lycophytes.
-Like PPG I, PPG II is the result of decisions made by a diverse community of taxonomic experts, but we have made improvements to the system to increase transparency and efficiency, including posting all discussions on an openly available website and voting on taxonomic proposals on a rolling, monthly basis.
+Like PPG I, PPG II is the result of decisions made by a diverse community of taxonomic experts, but we have made improvements to increase transparency and efficiency, including posting all discussions on an openly available website and voting on taxonomic proposals on a rolling, monthly basis.
 Furthermore, PPG II includes names to the species level and nothogenera, neither of which were treated in PPG I.
-Using online resources, updates to PPG II will be made on a much more frequent basis going forward, obviating the lengthy delay between updated treatments.
+Going forward, incremental updates to PPG II will be made online, obviating the lengthy delay between updated treatments.
 The PPG II classification can be accessed on our website (<https://pteridogroup.github.io/ppg>) or World Flora Online (<https://wfoplantlist.org>).
 
-**Key words:** classification, ferns, lycophytes, open science, phylogeny, pteridophytes, taxonomy
+**Key words:** classification, ferns, lycophytes, open science, phylogeny, pteridophytes, taxonomy, World Flora Online
 
 ##
 
-Ferns and lycophytes--collectively composing the paraphyletic pteridophytes--are globally important groups of plants known for their resilience during their long phylogenetic history. 
-Early taxonomic classifications of pteridophytes relied on macroscopic characteristics, in particular, the form and arrangement of sporangia and spores.
-After Darwin’s theory of evolution became widely recognized, taxonomists sought to recognize natural groups, which was subsequently facilitated by the introduction of phylogenetic analyses.
-Understanding of relationships of ferns and lycophytes were revolutionized by DNA sequencing, starting with the plastid *rbcL* gene.
-In particular, DNA analysis revealed that ferns are sister to seed plants (thus "pteridophytes" are not a natural group) and that horsetails and whisk ferns are not merely "fern allies" but nested within ferns [@pryer2001horsetails].
-The first major revised classification of the molecular-phylogenetic era was @smith2006classification, but this only treated taxa at the level of family and higher.
-The next major taxonomy was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived], which extended the taxonomic scope to genera.
+Ferns and lycophytes--comprising the paraphyletic pteridophytes--are globally important groups of plants known for their resilience during their long phylogenetic history. 
+Understanding of fern and lycophyte relationships was revolutionized by DNA sequencing.
+In particular, DNA analysis revealed that ferns are sister to seed plants and only distantly related to the lycophytes (thus "pteridophytes" are not monophyletic) and that horsetails and whisk ferns are nested within ferns [@pryer2001horsetails].
+The first major revised classification of the molecular-phylogenetic era was @smith2006classification, which was limited to taxa at the rank of family and higher.
+Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linearb; @christenhusz2014trendsb] but due to changes including drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community.
+The next widely accepted classification was published by Pteridophyte Phylogeny Group (PPG) [-@pteridophytephylogenygroupi2016communityderived].
 PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts by including nearly 90 co-authors.
-Since the publication of PPG I, phylogenetic relationships have been clarified and taxonomic novelties have accrued.
-Accordingly, the PPG community here puts forth a revised taxonomic system for ferns and lycophytes, PPG v2.0 (equivalently, PPG II).
+
+Since the publication of PPG I, phylogenetic relationships have been further clarified and taxonomic novelties have accrued.
+Accordingly, the PPG community here puts forth a revised taxonomic system for ferns and lycophytes, PPG v2.0.0 (equivalently, PPG II).
 
 ## Methods
 
-To enable maximal participation in taxonomic discussions and ensure that the reasoning behind each taxonomic decision is openly available, we have implemented a system that is, to our knowledge, unique amongst taxonomic communities.
-We briefly discuss this below.
-Further technical details concerning the implementation of this system will be the focus of another publication.
+To enable maximal participation in taxonomic discussions and ensure that the reasoning behind each taxonomic decision is openly available, we implemented a system that is, to our knowledge, unique amongst taxonomic communities.
+We briefly discuss this system below; further technical details will be the focus of another publication.
 
 ### Discussion forum and voting
 
 We set up a GitHub repo (<https://www.github.com/pteridogroup/ppg>) to solicit taxonomic proposals from the PPG community.
 We used GitHub's "issue" functionality to track and discuss proposals; GitHub issues are normally used to track bugs during software development, but we found they work well for managing taxonomic discussions as well.
 We designed a custom issue template to ensure that all proposals included standard information such as the proposed taxon, (approximate) number of affected species, reason for the change, and citations of relevant literature.
-Any member of the PPG could submit a proposal providing they agreed to our Code of Conduct and the proposal met the following criteria: the proposal implemented a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; the proposal only included names that have already been validly published under the International Code for Algae, Fungi, and Plants (hereafter, “the Code”); and the proposed change was to name at the genus level or higher.
+Any member of the PPG could submit a proposal providing they agreed to our Code of Conduct and the proposal met the following criteria: the proposal implemented a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; the proposal only included names that have already been validly published under the International Code for Algae, Fungi, and Plants (hereafter, “the Code”); and the proposed change was to a taxon at the genus level or higher.
 Proposals meeting the criteria for inclusion were then subject to a discussion period of at least one month.
 During this time, anyone who agreed to our Code of Conduct could comment on the proposal.
 Our general criteria for approving taxonomic proposals remained unchanged from PPG I [-@pteridophytephylogenygroupi2016communityderived]: we sought to only recognize monophyletic groups (clades), while minimizing taxonomic disruption and maximizing usefulness (diagnosability).
@@ -179,13 +178,18 @@ Most taxonomic changes come via the addition of new names, i.e., splitting (@tbl
 A smaller number of changes stems from the subsumption of existing names, i.e., lumping (@tbl-changes).
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated at all in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 
+<!-- FIXME need to finish this -->
+Overall, XX proposals were made, of which XX were accepted and adopted into PPG II.
+Proposals averaged XX votes, and XX proposals featured a discussion among PPG members beyond the initial proposal itself.
+
 ## Discussion
 
 ### An open, community-based approach to taxonomy
 
 PPG is unique in its open, community-based approach to taxonomy.
-While other community efforts have been established (e.g., Legume Phylogeny Working Group), to our knowledge, no other taxonomic group exists with a similar number of members that makes its discussions and results completely transparent and available.
-It is our hope that this approach has resulted, and will continue to result, in a high-quality taxonomy that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
+While other community efforts have been established (e.g., Legume Phylogeny Working Group)<!--FIXME add citation-->, to our knowledge, no other taxonomic group exists with a similar number of members that makes its discussions and results completely transparent and publicly available.
+In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority. 
+It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
 Of course, this is not to say that the community approach is not without its shortcomings.
 In some cases, unilateral decisions may result in a more standardized system in which, for example, the evolutionary depth where various taxa are recognized is more comparable.
 However, during the discussion period, we have frequently seen participants engaging in discussions where a proposed circumscription is compared with previous cases and the arguments are presented for and against the proposed change.
@@ -196,18 +200,18 @@ The community approach allows us to distribute the workload and stay abreast of 
 
 ### Areas of uncertainty
 
-The vast majority of taxa recognized herein are well established as monophyletic and supported by a strong majority of the pteridological community.
-However, there are still parts of our lycophyte and fern taxonomy that need resolution, or at least improvements, to overcome ambiguities.
-One complicated case concerns *Lecanopteris* and related lineages.
+The vast majority of taxa recognized herein are well established as monophyletic and were supported by a strong majority of voting members.
+However, there are still areas of the classification that need resolution, and in some case we recognize non-monophyletic taxa because no clear monophyletic option exists.
+An example of one such complicated case concerns *Lecanopteris* and related lineages.
 Recent phylogenies show that the myrmecophilous *Lecanopteris* s.s. is nested within a clade that includes taxa formerly placed in *Microsorum*, but that this clade is distinct from the lineage containing the type species of *Microsorum* [@chen2020exploring; @perrie2021expansion].
-During voting, multiple competing proposals were put forward, including recognition of *Lecanopteris* s.s. and recognition of separate genera for each of the former *Microsorum* lineages, as well as a broadly circumscribed *Lecanopteris* that would subsume the former *Microsorum* lineages.
+During voting, multiple competing proposals were put forward, including one recognizing *Lecanopteris* s.s. plus separate genera for each of the former *Microsorum* lineages, as well as one recognizing a broadly circumscribed *Lecanopteris* that would subsume the former *Microsorum* lineages.
 Ultimately, *Lecanopteris* sensu lato was rejected, but only one of the segregate generea, *Bosmania* was recognized, leaving *Microsorum* paraphyletic.
 We anticipate that further systematic studies of this group will provide more robust results that will eventually allow for a recognition of monophyletic genera.
 While a complete description of every area of taxonomic uncertainty is beyond the scope of this paper, a summary may be found in @tbl-uncertain.
 
-One advantage of the current approach is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
-Furthermore, the taxonomy can be updated and circulated online (see Next Steps) with much greater frequency than possible under a model whereby only major updates are published via traditional channels.
-This allows us to revisit taxonomic areas of uncertainty and revise them as soon as new data come to light.
+One advantage of our approach using rolling, monthly voting is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
+Furthermore, the classification can be updated and circulated online (see Next Steps) with much greater frequency than possible under a traditional print-based model whereby only major updates are published.
+This flexibility allows us to revisit taxonomic areas of uncertainty and revise them as soon as new data are available.
 
 While the continuously updated online approach allows us to make incremental updates, this has sometimes presented a challenge vis-a-vis the model used by the International Committee on Plant Nomenclature, which only votes on proposals to conserve names on a much less frequent basis.
 Rather than requiring every taxonomic treatment needing nomenclatural approval to wait on a vote by the nomenclatural committee, which could delay its usage by several years, we have established the rule that such names may be voted on and approved by PPG as long as a nomenclatural proposal has already been submitted.
@@ -215,11 +219,10 @@ In the case that the nomenclatural proposal is rejected, PPG would also then rej
 
 ### Next steps
 
-A major difference in approach between PPG I and PPG II is that incremental updates to PPG II will be made online.
-Starting with PPG II (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at species or below, the middle digit indicates changes at the level of genus to family, and the largest digit indicates major changes (order and higher, or major rearrangements of the taxonomic hierarchy).
-New versions will be issued as needed, for example following recognition of a new genus or synonymization of an old genus.
-We anticipate that new versions will be published much more frequently than the time that has elapsed between PPG I and PPG II.
-This will greatly benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes.
+Starting with this version of the PPG classification (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at the species-level or below, the middle digit indicates changes at genus-level or higher, and the largest digit indicates major changes (major rearrangements of the taxonomic hierarchy).
+New versions will be issued as needed, for example following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open].
+We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
+This will greatly benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the version system, the ability to unambiguously reference a specific snapshot of the classification.
 
 Another major change is that starting with PPG II, the taxonomy will include names at the level of species and below (PPG I treated only to genus).
 This amount of data is too large to include in a traditional publication so it is omitted here, but it may be found online at our website or World Flora Online.
@@ -231,7 +234,7 @@ This work will continue indefinitely with the publication of PPG II.
 
 ## Classification
 
-Circumscription and synonymy are not shown; this information can be found on the digital version of the classification at <https://pteridogroup.github.io>.
+Circumscription and synonymy are not shown; this information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online.
 Species counts should be considered approximate.
 All taxa are considered monophyletic unless otherwise mentioned.
 
@@ -562,7 +565,6 @@ branch_labs_marattiaceae <- tribble(
 )
 
 # Uncertain nodes for linetype
-# unfortunately not working for now, but leave in for later
 line_types_nodes <- as_tibble(ggtree::fortify(phy_tracheo))
 
 line_types_nodes_add <- all_labs |>
@@ -602,17 +604,10 @@ branch_lab_vjust <- -0.6
 
 # generate figure
 tree_fig <-
-  # Base tree
-  ggtree(phy_tracheo_rescale) %<+%
-
-  # unfortunately we can't use linetype and geom_strip together, so
-  # comment this out until
-  # https://github.com/YuLab-SMU/ggtree/issues/676
-  # gets fixed
-  # ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
-
+  # Base tree, with line type by uncertainty
+  ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
   # Add datasets
-  # line_types_nodes %<+%
+  line_types_nodes %<+%
   family_tip_labels %<+%
   clade_labs_node %<+%
   clade_labs_branch %<+%
