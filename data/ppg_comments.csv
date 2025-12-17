@@ -67,8 +67,8 @@ wfo-4000032102,Ptisana,Murdock,genus,NA
 wfo-4100003344,Polypodiidae,"Cronquist, Takht. & W.Zimm.",subclass,NA
 wfo-9000000368,Osmundales,Link,order,NA
 wfo-7000000433,Osmundaceae,Martinov,family,NA
-wfo-4100000768,× Osmunasium,"Hong M.Liu, Schuettp. & H.Schneid.",genus,"Nothogenus between *Osmunda* and *Plenasium*".
-wfo-4100002000,× Osmunimunda,Xia Wan & Li Bing Zhang,genus,"Nothogenus between *Osmunda* and *Claytosmunda*".
+wfo-4100000768,× Osmunasium,"Hong M.Liu, Schuettp. & H.Schneid.",genus,Nothogenus between *Osmunda* and *Plenasium*.
+wfo-4100002000,× Osmunimunda,Xia Wan & Li Bing Zhang,genus,Nothogenus between *Osmunda* and *Claytosmunda*.
 wfo-4000043335,Claytosmunda,"(Y.Yatabe, N.Murak. & K.Iwats.) Metzgar & Rouhan",genus,NA
 wfo-4000021324,Leptopteris,C.Presl,genus,NA
 wfo-4000027394,Osmunda,L.,genus,NA
@@ -88,7 +88,7 @@ wfo-4000011648,Didymoglossum,Desv.,genus,NA
 wfo-4000030769,Polyphlebium,Copel.,genus,NA
 wfo-4000039008,Trichomanes,L.,genus,NA
 wfo-4000039997,Vandenboschia,Copel.,genus,NA
-wfo-9000000230,Gleicheniales,Link,order,NA
+wfo-9000000230,Gleicheniales,Link,order,"Paraphyletic in plastid [@du2022structurala; @nitta2022open] and nuclear [@qi2018wellresolved; @shen2018largescale] phylogenomic analyses, but a vote to revise the treatment did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
 wfo-7000000251,Gleicheniaceae,C.Presl,family,NA
 wfo-4000011525,Dicranopteris,Bernh.,genus,NA
 wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,NA
@@ -153,7 +153,7 @@ wfo-4000010574,Cystodium,J.Sm.,genus,NA
 wfo-7000000345,Lonchitidaceae,A.R.Sm. & M.Kessler,family,NA
 wfo-4000022148,Lonchitis,L.,genus,NA
 wfo-7000000341,Lindsaeaceae,M.R.Schomb.,family,NA
-wfo-4000021862,× Lindsaeosoria,W.H.Wagner,genus,"Nothogenus between *Lindsaea* and *Odontosoria*".
+wfo-4000021862,× Lindsaeosoria,W.H.Wagner,genus,Nothogenus between *Lindsaea* and *Odontosoria*.
 wfo-4000021858,Lindsaea,Dryand. ex Sm.,genus,NA
 wfo-4000025984,Nesolindsaea,Lehtonen & Christenh.,genus,NA
 wfo-4000026608,Odontosoria,(C.Presl) Fée,genus,NA
@@ -252,7 +252,7 @@ wfo-6500000583,Monachosoroideae,"Crabbe, Jermy & Mickel",subfamily,NA
 wfo-4000024609,Monachosorum,Kunze,genus,NA
 wfo-4100005210,Aspleniineae,H.Schneid. & C.J.Rothf.,suborder,NA
 wfo-7000000174,Cystopteridaceae,(Payer) Shmakov,family,NA
-wfo-4000010571,× Cystocarpium,Fraser-Jenk.,genus,"Nothogenus between *Cystopteris* and *Gymnocarpium*".
+wfo-4000010571,× Cystocarpium,Fraser-Jenk.,genus,Nothogenus between *Cystopteris* and *Gymnocarpium*.
 wfo-4000000550,Acystopteris,Nakai,genus,NA
 wfo-4000010579,Cystopteris,Bernh.,genus,NA
 wfo-4000016453,Gymnocarpium,Newman,genus,NA
@@ -273,10 +273,10 @@ wfo-4000022793,Macrothelypteris,(H.Ito) Ching,genus,NA
 wfo-4000029166,Phegopteris,(C.Presl) Fée,genus,NA
 wfo-4000031624,Pseudophegopteris,Ching,genus,NA
 wfo-6500000526,Thelypteridoideae,C.F.Reed,subfamily,NA
-wfo-4100002532,× Abacopterella,T.E.Almeida & A.R.Field,genus,"Nothogenus between *Abacopteris* and *Christella*".
+wfo-4100002532,× Abacopterella,T.E.Almeida & A.R.Field,genus,Nothogenus between *Abacopteris* and *Christella*.
 wfo-4000008130,× Chrinephrium,Nakaike,genus,NA
 wfo-4000008131,× Chrismatopteris,Quansah & D.S.Edwards,genus,NA
-wfo-4100003432,× Christelliopsis,Miles K.Thomas,genus,"Nothogenus between *Christella* and *Menisciopsis*"
+wfo-4100003432,× Christelliopsis,Miles K.Thomas,genus,Nothogenus between *Christella* and *Menisciopsis*
 wfo-4100002001,× Glaphyrocyclosorus,Xia Wan & Li Bing Zhang,genus,NA
 wfo-4000000007,Abacopteris,Fée,genus,NA
 wfo-4000001490,Amauropelta,Kunze,genus,NA
@@ -315,8 +315,8 @@ wfo-4000039168,Trigonospora,Holttum,genus,NA
 wfo-7000000646,Woodsiaceae,Herter,family,NA
 wfo-4000040814,Woodsia,R.Br.,genus,NA
 wfo-7000000055,Athyriaceae,Alston,family,NA
-wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,"Nothogenus between *Athyrium* and *Pseudathyrium*"
-wfo-4000009334,× Cornoathyrium,Nakaike,genus,"Nothogenus between *Athyrium* and *Cornopteris*"
+wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,Nothogenus between *Athyrium* and *Pseudathyrium*
+wfo-4000009334,× Cornoathyrium,Nakaike,genus,Nothogenus between *Athyrium* and *Cornopteris*
 wfo-4000002164,Anisocampium,C.Presl,genus,NA
 wfo-4000003575,Athyrium,Roth,genus,NA
 wfo-4000009335,Cornopteris,Nakai,genus,NA
@@ -368,7 +368,7 @@ wfo-7000000205,Dryopteridaceae,Herter,family,NA
 wfo-4100004703,Ctenitidoideae,Z.Y.Zuo & Jin Mei Lu,subfamily,NA
 wfo-4000009957,Ctenitis,(C.Chr.) C.Chr.,genus,NA
 wfo-6500000507,Dryopteridoideae,B.K.Nayar,subfamily,NA
-wfo-4000012666,× Dryostichum,W.H.Wagner,genus,"Nothogenus between *Dryopteris* and *Polystichum*"
+wfo-4000012666,× Dryostichum,W.H.Wagner,genus,Nothogenus between *Dryopteris* and *Polystichum*
 wfo-4000002821,Arachniodes,Blume,genus,NA
 wfo-4000010535,Cyrtomium,C.Presl,genus,NA
 wfo-4000012657,Dryopteris,Adans.,genus,NA
@@ -390,7 +390,7 @@ wfo-4000033622,Rumohra,Raddi,genus,NA
 wfo-4100004701,Pleocnemioideae,Z.Y.Zuo,subfamily,NA
 wfo-4000030264,Pleocnemia,C.Presl,genus,NA
 wfo-6500000522,Polybotryoideae,Hong M.Liu & X.C.Zhang,subfamily,NA
-wfo-4100004291,× Cyclobotrya,Engels & Canestraro,genus,"Nothogenus between *Cyclodium* and *Polybotrya*"
+wfo-4100004291,× Cyclobotrya,Engels & Canestraro,genus,Nothogenus between *Cyclodium* and *Polybotrya*
 wfo-4000010259,Cyclodium,C.Presl,genus,NA
 wfo-4000023387,Maxonia,C.Chr.,genus,NA
 wfo-4000026714,Olfersia,Raddi,genus,NA
