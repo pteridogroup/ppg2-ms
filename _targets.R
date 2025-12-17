@@ -16,14 +16,28 @@ tar_plan(
     read_csv(!!.x)
   ),
 
-  # Download PPG GitHub issues ----
+  # Process GitHub issues ----
+
+  # - Download issues
   tar_url(
     ppg_repo_url,
     "https://github.com/pteridogroup/ppg/",
   ),
-  ppg_issues = fetch_issues(ppg_repo_url),
+  ppg_issues_raw = fetch_issues(ppg_repo_url),
+
+  # - Remove invalid issues
+  ppg_issues = remove_invalid_issues(ppg_issues_raw),
+
+  # - Get github user names of commenters for each valid issue
+  commenters = fetch_commenters(ppg_issues$number),
+
+  # - Get voting results for each valid issue
+  voting_results = fetch_voting_results(ppg_issues$number),
+
+  # - Generate initial automatic count of isses by type (sink/split)
   ppg_issues_count_raw = count_issues(ppg_issues),
-  # load manual issues count
+
+  # - Load manual issues count by type (sink/split)
   tar_file_read(
     ppg_issues_count,
     "data/ppg_issues_edited.csv",

@@ -651,6 +651,137 @@ fetch_issues <- function(repo_url, n_max = 1000) {
     dplyr::select(-body)
 }
 
+# Make tibble of commenters on an issue
+fetch_commenter_single <- function(issue_num) {
+  data <- gh::gh(
+    "GET /repos/pteridogroup/ppg/issues/{issue_num}/timeline",
+    issue_num = issue_num,
+    .limit = Inf
+  )
+
+  commenters <- purrr::map(data, ~ purrr::pluck(.x, "user", "login")) |>
+    purrr::flatten() |>
+    unlist()
+
+  tibble::tibble(
+    issue = issue_num,
+    commenter = commenters
+  )
+}
+
+fetch_commenters <- function(issue_num) {
+  issue_num |>
+    unique() |>
+    purrr::map_df(fetch_commenter_single)
+}
+
+
+# Make tibble of voting results on an issue
+fetch_voting_results_single <- function(issue_num) {
+
+  data <- gh::gh(
+    "GET /repos/pteridogroup/ppg/issues/{issue_num}/timeline",
+    issue_num = issue_num,
+    .limit = Inf
+  )
+
+  results <- purrr::map_df(data, function(x) {
+    # Only process comments that have a body field
+    if (
+      !is.null(x$body) &&
+        stringr::str_detect(x$body, "voted on during PPG Ballot")
+    ) {
+      tibble::tibble(
+        total_votes = stringr::str_extract(x$body, "A total of (\\d+) votes") |>
+          stringr::str_extract("\\d+") |>
+          as.numeric(),
+        yes_votes = stringr::str_extract(x$body, "(\\d+) 'Yes' votes") |>
+          stringr::str_extract("\\d+") |>
+          as.numeric(),
+        yes_percent = stringr::str_extract(
+          x$body,
+          "'Yes' votes \\((\\d+(?:\\.\\d+)?)%\\)"
+        ) |>
+          stringr::str_extract("\\d+(?:\\.\\d+)?") |>
+          as.numeric(),
+        no_votes = stringr::str_extract(x$body, "(\\d+) 'No' votes") |>
+          stringr::str_extract("\\d+") |>
+          as.numeric(),
+        no_percent = stringr::str_extract(
+          x$body,
+          "'No' votes \\((\\d+(?:\\.\\d+)?)%\\)"
+        ) |>
+          stringr::str_extract("\\d+(?:\\.\\d+)?") |>
+          as.numeric(),
+        ballot = stringr::str_extract(x$body, "PPG Ballot (\\d+)") |>
+          stringr::str_extract("\\d+") |>
+          as.numeric(),
+        result = stringr::str_extract(
+          x$body,
+          "The proposal (passes|does not pass)\\."
+        ) |>
+          stringr::str_remove("The proposal ") |>
+          stringr::str_remove("\\.")
+      )
+    } else {
+      NULL
+    }
+  })
+
+  # If no voting results found, return tibble with issue number and NAs
+  if (nrow(results) == 0) {
+    results <- tibble::tibble(
+      total_votes = NA_real_,
+      yes_votes = NA_real_,
+      yes_percent = NA_real_,
+      no_votes = NA_real_,
+      no_percent = NA_real_,
+      ballot = NA_real_,
+      result = NA_character_
+    )
+  }
+
+  # Add issue number to results
+  results |>
+    dplyr::mutate(issue = issue_num, .before = 1)
+}
+
+fetch_commenters <- function(issue_num) {
+  issue_num |>
+    unique() |>
+    purrr::map_df(fetch_commenter_single)
+}
+
+
+fetch_voting_results <- function(issue_num) {
+  issue_num |>
+    unique() |>
+    purrr::map_df(fetch_voting_results_single)
+}
+
+#' Remove Invalid Issues from Issue Tracker Data
+#'
+#' Filters a data frame of GitHub issues to retain only those with a valid
+#' status designation. Valid statuses are "PASSED" or "NOT PASSED", which
+#' should appear in square brackets at the end of the issue title (e.g.,
+#' "[PASSED]").
+#'
+#' @param issues A data frame containing GitHub issue data, expected to have
+#'   at least a `title` column containing the issue title and a `number`
+#'   column for the issue number.
+#'
+#' @return A tibble containing only the issues with valid status
+#'   designations (PASSED or NOT PASSED in the title).
+remove_invalid_issues <- function(issues) {
+  issues |>
+    mutate(
+      status = str_extract(title, "\\[([^\\]]+)\\]$"),
+      status = str_remove_all(status, "\\[|\\]"),
+      status = replace_na(status, "TBA")
+    ) |>
+    filter(status != "NOT VALID")
+}
+
 count_issues <- function(issues) {
   issues |>
     filter(str_detect(title, "\\[PASSED\\]")) |>
@@ -896,7 +1027,6 @@ rescale_tree <- function(tree, scale) {
 }
 
 modify_node_height <- function(tree, tax_set, mod_length) {
-
   # Identify MRCA of taxon set
   mrca_node <- ape::getMRCA(
     tree,
