@@ -67,6 +67,11 @@ tar_plan(
   ppg_2_taxa_count = count_ppg2_taxa(ppg),
   ppg_i_taxa_count = count_ppgi(ppg_i),
 
+  # Generate figures ----
+
+  # - proposal count
+  issues_count_plot = make_issues_plot(ppg_issues),
+
   # Output manuscript ----
   tar_quarto(
     ppg2_ms,

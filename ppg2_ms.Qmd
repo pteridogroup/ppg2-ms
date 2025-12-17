@@ -23,6 +23,7 @@ library(knitr)
 library(ggtree)
 library(ggrepel)
 library(ftolr)
+library(patchwork)
 
 conflicted::conflict_prefer("filter", "dplyr")
 
@@ -35,6 +36,7 @@ tar_load(
     commenters,
     families_in_phy_order,
     children_tally,
+    issues_count_plot,
     ppg_issues,
     ppg_issues_count,
     ppg_i_taxa_count,
@@ -163,6 +165,79 @@ This will greatly benefit stakeholders who need an up-to-date, standardized taxo
 ## Results
 
 ```{r}
+#| label: proposal-results
+#| include: false
+
+# Check that analysis of voting results matches issue status extracted
+# from issue header
+ppg_issues |>
+  select(issue = number, state, status) |>
+  left_join(
+    voting_results,
+    by = join_by(issue),
+    relationship = "one-to-one"
+  ) |>
+  mutate(
+    result = str_replace_all(result, "passes", "PASSED") |>
+      str_replace_all("does not pass", "NOT PASSED"),
+    result = tidyr::replace_na(result, "TBA")
+  ) |>
+  verify(all.equal(status, result), success_fun = success_logical)
+
+# Summarize time period of submitted issues
+# For month, add period only if abbreviated (not for May)
+months_abb <- as.character(month(1:12, label = TRUE, abbr = TRUE))
+months_full <- as.character(month(1:12, label = TRUE, abbr = FALSE))
+months_abb_punc <- ifelse(months_abb == months_full, months_abb, paste0(months_abb, "."))
+
+issues_time <-
+  ppg_issues |>
+  select(created_at) |>
+  mutate(created_at = lubridate::ymd_hms(created_at)) |>
+  summarize(
+    min = min(created_at),
+    max = max(created_at)
+  ) |>
+  mutate(
+    min_year = year(min),
+    min_month = months_abb_punc[month(min)],
+    max_year = year(max),
+    max_month = months_abb_punc[month(max)]
+  )
+
+# Count number of commenters per valid issue
+comment_count <- commenters |>
+  filter(!is.na(commenter)) |>
+  group_by(issue) |>
+  mutate(n_commenters = n_distinct(commenter)) |>
+  # don't count if joelnitta was the only commenter
+  # (standard announcement, not discussion)
+  filter(!(commenter == "joelnitta" & n_commenters == 1)) |>
+  ungroup() |>
+  select(issue, n_commenters) |>
+  unique() |>
+  arrange(desc(n_commenters))
+
+# Summarize voting stastics
+n_issues_passed <- ppg_issues |>
+  filter(str_detect(title, "\\[PASSED\\]")) |>
+  nrow()
+
+vote_stats <-
+  voting_results |>
+  filter(!is.na(result)) |>
+  summarize(
+    mean = round(mean(total_votes), 1),
+    min = min(total_votes),
+    max = max(total_votes)
+  )
+
+```
+
+A total of `r nrow(ppg_issues)` valid proposals were made from `r issues_time$min_year` `r issues_time$min_month` to `r issues_time$max_year` `r issues_time$max_month`, of which `r n_issues_passed` were accepted and adopted into PPG II (@fig-voting).
+Proposals averaged `r vote_stats$mean` votes (range `r vote_stats$min` to `r vote_stats$max` votes), and `r nrow(comment_count)` proposals featured a discussion among PPG members beyond the initial proposal itself or standard announcements such as voting results.
+
+```{r}
 #| label: results
 #| include: false
 
@@ -200,57 +275,6 @@ Most taxonomic changes come via the addition of new names, i.e., splitting (@tbl
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The number of taxa at the level of species and below (PPG II recognizes approximately 14,000 accepted species) precludes publishing those names here, but the full classification (extending to subspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
 
-```{r}
-#| label: proposal-results
-#| include: false
-
-# Check that analysis of voting results matches issue status extracted
-# from issue header
-ppg_issues |>
-  select(issue = number, state, status) |>
-  left_join(
-    voting_results,
-    by = join_by(issue),
-    relationship = "one-to-one"
-  ) |>
-  mutate(
-    result = str_replace_all(result, "passes", "PASSED") |>
-      str_replace_all("does not pass", "NOT PASSED"),
-    result = tidyr::replace_na(result, "TBA")
-  ) |>
-  verify(all.equal(status, result), success_fun = success_logical)
-
-# Count number of commenters per valid issue
-comment_count <- commenters |>
-  filter(!is.na(commenter)) |>
-  group_by(issue) |>
-  mutate(n_commenters = n_distinct(commenter)) |>
-  # don't count if joelnitta was the only commenter
-  # (standard announcement, not discussion)
-  filter(!(commenter == "joelnitta" & n_commenters == 1)) |>
-  ungroup() |>
-  select(issue, n_commenters) |>
-  unique() |>
-  arrange(desc(n_commenters))
-
-n_issues_passed <- ppg_issues |>
-  filter(str_detect(title, "\\[PASSED\\]")) |>
-  nrow()
-
-vote_stats <-
-  voting_results |>
-  filter(!is.na(result)) |>
-  summarize(
-    mean = round(mean(total_votes), 1),
-    min = min(total_votes),
-    max = max(total_votes)
-  )
-
-```
-
-Overall, `r nrow(ppg_issues)` valid proposals were made, of which `r n_issues_passed` were accepted and adopted into PPG II.
-Proposals averaged `r vote_stats$mean` votes (range `r vote_stats$min` to `r vote_stats$max` votes), and `r nrow(comment_count)` proposals featured a discussion among PPG members beyond the initial proposal itself or standard announcements such as voting results.
-
 ## Discussion
 
 ### An open, community-based approach to taxonomy
@@ -280,7 +304,7 @@ Notable exceptions to the trend of splitting include recognition of a broadly co
 The vast majority of taxa recognized herein are well established as monophyletic and were supported by a strong majority of voting members.
 However, there are still areas of the classification that need resolution, and in some case we recognize non-monophyletic taxa because no clear monophyletic option exists.
 Known non-monophyletic taxa have been noted in the classification.
-While a complete description of every area of taxonomic uncertainty is beyond the scope of this paper, a summary may be found in @tbl-uncertain.
+In some cases, relatively deep relationships have still not been adequately resolved, especially due to conflicts between nuclear and plastid datasets, as indicated by the dashed lines in @fig-tree and summarized in @tbl-uncertain.
 
 One advantage of our approach using rolling, monthly voting is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
 Furthermore, the classification can be updated and circulated online with much greater frequency than possible under a traditional print-based model whereby only major updates are published.
@@ -450,14 +474,30 @@ read_csv("data/table_uncertainty.csv") |>
 ## Figures
 
 ```{r}
-#| label: fig1-caption
+#| label: fig-voting
+#| fig-width: 6.5
+#| fig-height: 5
+#| fig-cap: "Number (A) and results of voting (B) on taxonomic proposals submitted by PPG community members for PPG II."
+ggsave(
+  plot = issues_count_plot,
+  width = 6.5,
+  height = 5,
+  units = "in",
+  file = "fig_1.pdf"
+)
 
-fig1_cap <- glue::glue("
+issues_count_plot
+```
+
+```{r}
+#| label: fig-tree-caption
+
+fig_tree_cap <- glue::glue("
   Summary cladogram showing relationships between families of tracheophytes recognized by PPG II.
   Topology for Polypodiopsida based on Fern Tree of Life v{ft_data_ver()}, which was inferred using plastid data.
   Numbers next to each family indicate number of genera followed by number of species.
   Diamonds at tips indicate relative number of species in each family.
-  Numbers at nodes indicate uncertain relationships (Table 3).
+  Numbers at nodes indicate uncertain relationships, summarized in Table 3.
   ") |>
   as.character() |>
   str_remove_all("//\n") |>
@@ -469,7 +509,7 @@ fig1_cap <- glue::glue("
 #| label: fig-tree
 #| fig-width: 6.5
 #| fig-height: 9
-#| fig-cap: !expr 'fig1_cap'
+#| fig-cap: !expr 'fig_tree_cap'
 
 # Add other tracheophytes to fern tree
 phy_tracheo <- fern_to_tracheo_phy(phy_family)
@@ -761,7 +801,7 @@ ggsave(
   width = 6.5,
   height = 8.5,
   units = "in",
-  file = "fig_1.pdf"
+  file = "fig_2.pdf"
 )
 
 tree_fig
