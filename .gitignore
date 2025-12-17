@@ -7,3 +7,4 @@ data/*
 *.docx
 *.pdf
 .DS_Store
+working*
