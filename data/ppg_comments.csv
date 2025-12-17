@@ -88,7 +88,7 @@ wfo-4000011648,Didymoglossum,Desv.,genus,NA
 wfo-4000030769,Polyphlebium,Copel.,genus,NA
 wfo-4000039008,Trichomanes,L.,genus,NA
 wfo-4000039997,Vandenboschia,Copel.,genus,NA
-wfo-9000000230,Gleicheniales,Link,order,"Paraphyletic in plastid [@du2022structurala; @nitta2022open] and nuclear [@qi2018wellresolved; @shen2018largescale] phylogenomic analyses, but a vote to revise the treatment did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
+wfo-9000000230,Gleicheniales,Link,order,"Paraphyletic in plastid [@du2022structural; @nitta2022open] and nuclear [@qi2018wellresolved; @shen2018largescale] phylogenomic analyses, but a vote to revise the treatment did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
 wfo-7000000251,Gleicheniaceae,C.Presl,family,NA
 wfo-4000011525,Dicranopteris,Bernh.,genus,NA
 wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,NA

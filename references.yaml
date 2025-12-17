@@ -6602,6 +6602,73 @@ references:
   URL: http://www.jstor.org/stable/23313559
   volume: '105'
 
+- id: du2022structural
+  abstract: >-
+    Structural variation of plastid genomes (plastomes), particularly large
+    inversions and gene losses, can provide key evidence for the deep phylogeny
+    of plants. In this study, we investigated the structural variation of fern
+    plastomes in a phylogenetic context. A total of 127 plastomes representing
+    all 50 recognized families and 11 orders of ferns were sampled, making it
+    the most comprehensive plastomic analysis of fern lineages to date. The
+    samples included 42 novel plastomes of 15 families with a focus on
+    Hymenophyllales and Gleicheniales. We reconstructed a well-supported
+    phylogeny of all extant fern families, detected significant structural
+    synapomorphies, including 9 large inversions, 7 invert repeat region (IR)
+    boundary shifts, 10 protein-coding gene losses, 7 tRNA gene losses or
+    anticodon changes, and 19 codon indels (insertions or deletions) across the
+    deep phylogeny of ferns, particularly on the backbone nodes. The newly
+    identified inversion V5, together with the newly inferred expansion of the
+    IR boundary R5, can be identified as a synapomorphy of a clade composed of
+    Dipteridaceae, Matoniaceae, Schizaeales, and the core leptosporangiates,
+    while a unique inversion V4, together with an expansion of the IR boundary
+    R4, was verified as a synapomorphy of Gleicheniaceae. This structural
+    evidence is in support of our phylogenetic inference, thus providing key
+    insight into the paraphyly of Gleicheniales. The inversions of V5 and V7
+    together filled the crucial gap regarding how the “reversed” gene
+    orientation in the IR region characterized by most extant ferns (Schizaeales
+    and the core leptosporangiates) evolved from the inferred ancestral type as
+    retained in Equisetales and Osmundales. The tRNA genes
+                  trnR-ACG
+                  and
+                  trnM-CAU
+                  were assumed to be relicts of the early-divergent fern lineages but intact in most Polypodiales, particularly in eupolypods; and the loss of the tRNA genes
+                  trnR-CCG, trnV-UAC
+                  , and
+                  trnR-UCU
+                  in fern plastomes was much more prevalent than previously thought. We also identified several codon indels in protein-coding genes within the core leptosporangiates, which may be identified as synapomorphies of specific families or higher ranks. This study provides an empirical case of integrating structural and sequence information of plastomes to resolve deep phylogeny of plants.
+  accessed:
+    - year: 2022
+      month: 5
+      day: 25
+  author:
+    - family: Du
+      given: Xin-Yu
+    - family: Kuo
+      given: Li-Yaung
+    - family: Zuo
+      given: Zheng-Yu
+    - family: Li
+      given: De-Zhu
+    - family: Lu
+      given: Jin-Mei
+  citation-key: du2022structural
+  container-title: Frontiers in Plant Science
+  container-title-short: Front. Plant Sci.
+  DOI: 10.3389/fpls.2022.862772
+  ISSN: 1664-462X
+  issued:
+    - year: 2022
+      month: 5
+      day: 2
+  page: '862772'
+  source: DOI.org (Crossref)
+  title: >-
+    Structural variation of plastomes provides key insight into the deep
+    phylogeny of ferns
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/fpls.2022.862772/full
+  volume: '13'
+
 - id: duan2014nomenclatural
   author:
     - family: Duan
@@ -31478,44 +31545,6 @@ references:
   title: Cryo Sem Examination of Gemma Formation in Vittaria graminifolia
   type: article-journal
   volume: '75'
-
-- id: shen2018largescale
-  author:
-    - family: Shen
-      given: Hui
-    - family: Jin
-      given: Dongmei
-    - family: Shu
-      given: Jiang-Ping
-    - family: Zhou
-      given: Xi-Le
-    - family: Lei
-      given: Ming
-    - family: Wei
-      given: Ran
-    - family: Shang
-      given: Hui
-    - family: Wei
-      given: Hong-jin
-    - family: Zhang
-      given: Rui
-    - family: Liu
-      given: Li
-    - family: Gu
-      given: Yu-Feng
-    - family: Zhang
-      given: Xian-Chun
-    - family: Yan
-      given: Yue-Hong
-  citation-key: shen2018largescale
-  container-title: GigaScience
-  DOI: 10.1093/gigascience/gix116/
-  issued:
-    - year: 2018
-  page: gix116
-  title: Large-scale phylogenomic analysis resolves a backbone phylogeny in ferns
-  type: article-journal
-  volume: '7'
 
 - id: shen2018largescale
   abstract: >-
