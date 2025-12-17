@@ -72,6 +72,9 @@ tar_plan(
   # - proposal count
   issues_count_plot = make_issues_plot(ppg_issues),
 
+  # - tree figure
+  tree_fig = make_tree_figure(phy_family, ppg, ppg_tl, children_tally),
+
   # Output manuscript ----
   tar_quarto(
     ppg2_ms,

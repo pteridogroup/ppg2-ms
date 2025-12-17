@@ -1186,3 +1186,336 @@ make_issues_plot <- function(ppg_issues) {
 
   combined_plot
 }
+
+#' Create Phylogenetic Tree Figure for PPG II
+#'
+#' Generates a comprehensive cladogram showing relationships between
+#' families of tracheophytes recognized by PPG II. The tree includes
+#' various label types (tips, clades, nodes) and visual elements to
+#' represent taxonomic diversity and uncertain relationships.
+#'
+#' @param phy_family A phylo object containing the family-level fern
+#'   phylogeny from the Fern Tree of Life.
+#' @param ppg A cleaned data frame of PPG taxonomic data, typically the
+#'   output of clean_ppg().
+#' @param ppg_tl A taxlist object containing PPG taxonomy.
+#' @param children_tally A data frame with taxon counts, typically the
+#'   output of count_children_ppg().
+#'
+#' @return A ggtree object showing the phylogenetic tree with families,
+#'   clade labels, genus/species counts, and uncertainty indicators.
+make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
+  require(ggtree)
+  require(ggimage)
+  require(ggrepel)
+  require(ape)
+  require(phytools)
+
+  # Add other tracheophytes to fern tree
+  phy_tracheo <- fern_to_tracheo_phy(phy_family)
+
+  # Format family labels with genus/species counts. Keep num species
+  # for tip points
+  family_tip_labels <-
+    ppg |>
+    filter(taxonRank == "family", taxonomicStatus == "accepted") |>
+    select(taxonID) |>
+    left_join(children_tally, by = join_by(taxonID)) |>
+    select(taxon_name, n_genera, n_species) |>
+    mutate(
+      family_label = glue::glue("{taxon_name} ({n_genera}/{n_species})") |>
+        as.character()
+    ) |>
+    select(tip = taxon_name, family_label, n_species) |>
+    bind_rows(
+      tibble(
+        tip = "Spermatophytes",
+        family_label = "SEED PLANTS",
+        seed_plant_image = "images/starburst.png"
+      )
+    )
+
+  # Format clade labels for formal taxa
+  subclass_labels <- format_tip_labels(
+    "subclass",
+    phy_tracheo,
+    ppg,
+    ppg_tl
+  )
+  order_labels <- format_tip_labels("order", phy_tracheo, ppg, ppg_tl)
+  suborder_labels <- format_tip_labels(
+    "suborder",
+    phy_tracheo,
+    ppg,
+    ppg_tl
+  )
+
+  # Format labels for other clade names
+  other_labels <- tribble(
+    ~node                                                       , ~label ,
+    getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae"))     ,
+    "eupolypods"                                                ,
+    getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")) ,
+    "Lycopodiopsida"                                            ,
+    getMRCA(phy_tracheo, c("Equisetaceae", "Polypodiaceae"))    ,
+    "Polypodiopsida"                                            ,
+    getMRCA(phy_tracheo, c("Spermatophytes", "Polypodiaceae"))  ,
+    "euphyllophytes"                                            ,
+    getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae"))   ,
+    "tracheophytes"                                             ,
+    # uncertain relationships
+    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1"    ,
+    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2"    ,
+    getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))  , "3"
+  ) |>
+    mutate(label_type = "clade")
+
+  # Combine label datasets
+  all_labs <- subclass_labels |>
+    bind_rows(order_labels) |>
+    bind_rows(suborder_labels) |>
+    bind_rows(other_labels) |>
+    rename(taxon = label)
+
+  # - right side clades
+  clade_labs_side <- all_labs |>
+    filter(label_type == "clade") |>
+    filter(
+      taxon %in%
+        c(
+          "Polypodiineae",
+          "Aspleniineae",
+          "Lindsaeineae",
+          "Cyatheales",
+          "Salviniales",
+          "Schizaeales"
+        )
+    ) |>
+    # ggtree wants different column names for each 'label' in every
+    # dataset
+    rename(taxon_clade = taxon)
+
+  # - internal nodes
+  clade_labs_node <- all_labs |>
+    filter(label_type == "clade") |>
+    filter(
+      taxon %in%
+        c(
+          "eupolypods",
+          "Polypodiales",
+          "Polypodiidae",
+          "Polypodiopsida",
+          "euphyllophytes",
+          "tracheophytes"
+        )
+    ) |>
+    mutate(
+      taxon = taxon |>
+        str_replace_all(
+          "Polypodiidae",
+          "Polypodiidae\\n(leptosporangiates)"
+        ) |>
+        str_replace_all(
+          "Polypodiopsida",
+          "Polypodiopsida (ferns)"
+        ) |>
+        str_replace_all(
+          "Polypodiales",
+          "Polypodiales\\n(cathetogyrates)"
+        )
+    ) |>
+    rename(taxon_node = taxon)
+
+  # - right side tips labels (order or suborder)
+  tip_labs_side <- all_labs |>
+    filter(label_type == "tip") |>
+    select(tip, taxon_tip = taxon) |>
+    left_join(
+      ppg |>
+        filter(taxonomicStatus == "accepted") |>
+        select(
+          taxon_tip = scientificName,
+          rank = taxonRank
+        ),
+      by = "taxon_tip"
+    ) |>
+    filter(rank %in% c("order", "suborder"))
+
+  # - node labels above branches
+  clade_labs_branch <- all_labs |>
+    filter(label_type == "clade") |>
+    filter(
+      taxon %in%
+        c(
+          "Lycopodiopsida",
+          "Ophioglossidae"
+        )
+    ) |>
+    mutate(
+      taxon = str_replace_all(
+        taxon,
+        "Lycopodiopsida",
+        "Lycopodiopsida (lycophytes)"
+      )
+    ) |>
+    rename(taxon_branch = taxon)
+
+  # - node labels to add to uncertain nodes
+  node_labs_nums <- all_labs |>
+    filter(label_type == "clade") |>
+    filter(taxon %in% c("1", "2", "3")) |>
+    rename(node_num = taxon)
+
+  # Since we can only adjust x-nudge for an entire layer at a time,
+  # need to define separate datasets for each label with a different
+  # x-nudge
+  branch_labs_equisetaceae <- tribble(
+    ~tip           , ~equisetaceae_lab          ,
+    "Equisetaceae" , "Equisetidae (horsetails)"
+  )
+
+  branch_labs_marattiaceae <- tribble(
+    ~tip           , ~marattiaceae_lab ,
+    "Marattiaceae" , "Marattiidae"
+  )
+
+  # Uncertain nodes for linetype
+  line_types_nodes <- as_tibble(ggtree::fortify(phy_tracheo))
+
+  line_types_nodes_add <- all_labs |>
+    filter(label_type == "clade") |>
+    filter(taxon %in% c("1", "2", "3")) |>
+    select(node) |>
+    mutate(uncertain = TRUE)
+
+  line_types_nodes <- left_join(
+    line_types_nodes,
+    line_types_nodes_add,
+    by = "node",
+    relationship = "one-to-one"
+  ) |>
+    mutate(
+      uncertain = tidyr::replace_na(uncertain, FALSE)
+    )
+
+  # Set up branch lengths
+  phy_tracheo_rescale <-
+    phy_tracheo |>
+    # Add branchlengths evenly
+    compute.brlen(method = "grafen", power = 0.9) |>
+    # Rescale total height (arbitrarily select 20)
+    rescale_tree(20) |>
+    # Tweak node for Equisetaceae + Ophioglossales
+    modify_node_height(
+      tax_set = c("Equisetaceae", "Psilotaceae"),
+      mod_length = 16
+    ) |>
+    add_root_length(1)
+
+  # set font sizes etc
+  fig_font_size <- 2.5
+  clade_lab_offset <- 9
+  branch_lab_vjust <- -0.6
+
+  # generate figure
+  tree_fig <-
+    # Base tree, with line type by uncertainty
+    ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
+    # Add datasets
+    line_types_nodes %<+%
+    family_tip_labels %<+%
+    clade_labs_node %<+%
+    clade_labs_branch %<+%
+    branch_labs_equisetaceae %<+%
+    branch_labs_marattiaceae %<+%
+    tip_labs_side %<+%
+    node_labs_nums +
+    # Diamonds scaled by species count
+    geom_tippoint(
+      aes(size = n_species),
+      shape = 18,
+      color = "black"
+    ) +
+    geom_tiplab(
+      aes(image = seed_plant_image),
+      geom = "image",
+      shape = 11,
+      size = 0.019,
+      nudge_x = -0.1
+    ) +
+    # Clade labels (nodes)
+    geom_text_repel(
+      aes(label = taxon_node),
+      min.segment.length = 0,
+      position = position_nudge_repel(x = -4, y = 1),
+      size = fig_font_size
+    ) +
+    # Clade labels (above branch)
+    geom_nodelab(
+      aes(label = taxon_branch),
+      size = fig_font_size,
+      vjust = branch_lab_vjust,
+      nudge_x = -8
+    ) +
+    # Node labels (at node, showing doubtful relationships)
+    geom_nodelab(
+      aes(label = node_num),
+      geom = "label",
+      size = fig_font_size * 0.7,
+      nudge_x = -0.1,
+      hjust = 0.5,
+      vjust = 0.5,
+      fill = "grey"
+    ) +
+    # Clade labels (right side)
+    geom_cladelab(
+      data = clade_labs_side,
+      mapping = aes(node = node, label = taxon_clade),
+      offset = clade_lab_offset,
+      fontsize = fig_font_size,
+      extend = 0.25
+    ) +
+    # Paraphyletic group labels (right side)
+    geom_strip(
+      "Gleicheniaceae",
+      "Matoniaceae",
+      label = "Gleicheniales",
+      offset = clade_lab_offset,
+      fontsize = fig_font_size,
+      extend = 0.25,
+      offset.text = 0.2
+    ) +
+    # Tip labels (family)
+    geom_tiplab(
+      aes(label = family_label),
+      size = fig_font_size,
+      offset = 0.5
+    ) +
+    # Tip labels (higher taxon on right side)
+    geom_tiplab(
+      aes(label = taxon_tip),
+      size = fig_font_size,
+      offset = clade_lab_offset
+    ) +
+    # Branch labels (monotypic groups, above branch)
+    geom_tiplab(
+      aes(label = equisetaceae_lab),
+      size = fig_font_size,
+      offset = -11.5,
+      vjust = branch_lab_vjust
+    ) +
+    geom_tiplab(
+      aes(label = marattiaceae_lab),
+      size = fig_font_size,
+      offset = -10,
+      vjust = branch_lab_vjust
+    ) +
+    # seems geom_rootedge() requires brn lengths
+    geom_rootedge() +
+    xlim(-4, 33) +
+    theme(
+      legend.position = "none"
+    )
+
+  tree_fig
+}
