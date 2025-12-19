@@ -284,7 +284,7 @@ get_ladderized_tips <- function(tree) {
 format_ppg_comments <- function(comments_raw) {
   comments_raw |>
     filter(!is.na(comment)) |>
-    select(taxonID, comment)
+    select(taxonID = taxon_id, comment)
 }
 
 # Helper function for format_ppg_taxa_count()

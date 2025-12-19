@@ -1,4 +1,4 @@
-taxonID,scientificName,scientificNameAuthorship,taxonRank,comment
+taxon_id,scientific_name,scientific_name_authorship,taxon_rank,comment
 wfo-4100003338,Lycopodiopsida,Bartl.,class,NA
 wfo-9000000308,Lycopodiales,DC. ex Bercht. & J.Presl,order,NA
 wfo-7000000354,Lycopodiaceae,P.Beauv. ex Mirb.,family,NA
@@ -9,7 +9,7 @@ wfo-4000029442,Phylloglossum,Kunze,genus,NA
 wfo-6500000514,Lycopodielloideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,NA
 wfo-4000020714,Lateristachys,Holub,genus,NA
 wfo-4000022506,Lycopodiella,Holub,genus,NA
-wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,NA
+wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,"Palhinhaea Franco & Vasc. is conserved against Lepidotis (@greuter20142292, @applequist2016report)."
 wfo-4000031578,Pseudolycopodiella,Holub,genus,NA
 wfo-6500000515,Lycopodioideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,NA
 wfo-4000003736,Austrolycopodium,Holub,genus,NA
@@ -177,7 +177,7 @@ wfo-4000004948,Bommeria,E.Fourn.,genus,NA
 wfo-4100005082,Brasiliopteris,"J.Prado, Schuettp. & Yatsk.",genus,NA
 wfo-4000005992,Calciphilopteris,Yesilyurt & H.Schneid.,genus,NA
 wfo-4100005083,Carlottahallia,Windham,genus,NA
-wfo-4000007749,Cheilanthes,Sw.,genus,NA
+wfo-4000007749,Cheilanthes,Sw.,genus,"Cheilanthes is more narrowly defined here than in most previous classifications. The bulk of the genus consists of a moderately supported clade within the hemionitids (@schuettpelz2025phylogenetically), but a few species treated in this genus are known to fall elsewhere in the cheilanthoid phylogeny (e.g., @kao2019lowcopy)."
 wfo-4000007762,Cheiloplecton,Fée,genus,NA
 wfo-4000008112,Choristosoria,Mett. ex Kuhn,genus,NA
 wfo-4100005084,Christenhuszia,Schuettp. & J.Prado,genus,NA
@@ -190,11 +190,10 @@ wfo-4000024291,Mildella,Trevis.,genus,NA
 wfo-4100001950,Mineirella,Ponce & Scataglini,genus,NA
 wfo-4000025145,Myriopteris,Fée,genus,NA
 wfo-4100005086,Namaquapteris,Windham & Pryer,genus,NA
-wfo-4000026281,Notholaena,R.Br.,genus,NA
-wfo-4000026659,Oeosporangium,Vis.,genus,NA
+wfo-4000026281,Notholaena,R.Br.,genus,"Not monophyletic as circumscribed (@rothfels2008monophyletic, @johnson2012unique, @kao2019lowcopy)"
 wfo-4000027168,Ormopteris,J.Sm. ex J.Sm.,genus,NA
 wfo-4000028034,Paragymnopteris,K.H.Shing,genus,NA
-wfo-4000028038,Parahemionitis,Panigrahi,genus,NA
+wfo-4000028038,Parahemionitis,Panigrahi,genus,Was there a conservation of this name or something like that?
 wfo-4000028472,Pellaea,Link,genus,NA
 wfo-4000028473,Pellaeopsis,J.Sm.,genus,NA
 wfo-4000028587,Pentagramma,"Yatsk., Windham & E.Wollenw.",genus,NA
@@ -209,7 +208,7 @@ wfo-4000000472,Acrostichum,L.,genus,NA
 wfo-4000007376,Ceratopteris,Brongn.,genus,NA
 wfo-1200009692,Pteridoideae,Link,subfamily,NA
 wfo-4000000500,Actiniopteris,Link,genus,NA
-wfo-4000002269,Anogramma,Link,genus,NA
+wfo-4000002269,Anogramma,Link,genus,This wasn't monophyletic in PPGI but is now?
 wfo-4000003730,Austrogramme,E.Fourn.,genus,NA
 wfo-4000007431,Cerosora,(Baker) Domin,genus,NA
 wfo-4000009439,Cosentinia,Tod.,genus,NA
