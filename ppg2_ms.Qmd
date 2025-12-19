@@ -30,11 +30,7 @@ conflicted::conflict_prefer("filter", "dplyr")
 # Load targets
 tar_load(
   c(
-    ppg_tl,
-    ppg,
-    comments,
     commenters,
-    families_in_phy_order,
     children_tally,
     issues_count_plot,
     ppg_issues,
@@ -42,7 +38,8 @@ tar_load(
     ppg_i_taxa_count,
     ppg_2_taxa_count,
     voting_results,
-    tree_fig
+    tree_fig,
+    ppg_classification
   ),
   store = here::here("_targets")
 )
@@ -67,7 +64,7 @@ authors <- read_csv("data/ppg2_author_list.csv") |>
     country = tidyr::replace_na(country, "?"),
     name_print = glue::glue("{name}^{auth_num}^"),
     inst_print = glue::glue("^{auth_num}^ {institution}, {country}")
-    )
+  )
 
 other_authors <- paste(authors$name_print, collapse = ", ")
 institutions <- paste(authors$inst_print, collapse = "\n")
@@ -344,80 +341,7 @@ All taxa are considered monophyletic unless otherwise mentioned.
 #| label: ppg-treatment
 #| results: asis
 
-children_taxa_count <- format_ppg_taxa_count(children_tally) |>
-  assert(not_na, taxon_count) |>
-  mutate(taxon_count = paste0(taxon_count, "."))
-
-priority_sort <- set_taxon_priority(ppg, families_in_phy_order)
-
-parent_taxon_count <-
-  ppg |>
-  dwc_to_tl(families_in_phy_order, return_taxlist = FALSE) |>
-  count_taxon_parents() |>
-  select(taxonID, n_parents) |>
-  assert(not_na, everything()) |>
-  assert(is_uniq, taxonID)
-
-ppg_tl |>
-  sort_taxa(priority = priority_sort) |>
-  indented_list(print = FALSE) |>
-  as_tibble() |>
-  janitor::clean_names() |>
-  select(
-    taxonID = taxon_concept_id,
-    scientificName = taxon_name,
-    scientificNameAuthorship = author_name,
-    taxonRank = level
-  ) |>
-  left_join(
-    children_taxa_count,
-    by = "taxonID",
-    relationship = "one-to-one"
-  ) |>
-  left_join(
-    parent_taxon_count,
-    by = "taxonID",
-    relationship = "one-to-one"
-  ) |>
-  left_join(
-    select(
-      ppg,
-      taxonID,
-      namePublishedIn
-    ),
-    by = "taxonID",
-    relationship = "one-to-one"
-  ) |>
-  left_join(
-    comments,
-    by = "taxonID",
-    relationship = "one-to-one"
-  ) |>
-  mutate(
-    taxonRank_print = str_replace_all(taxonRank, "genus", "") |>
-      str_to_sentence(),
-    indent = rep_collapse("  ", n_parents),
-    indent = paste0(indent, "* "),
-    comment = tidyr::replace_na(comment, ""),
-    taxon_count = tidyr::replace_na(taxon_count, "")
-  ) |>
-  mutate(
-    # genera in bold italics, everything else in bold
-    name_print = case_when(
-      taxonRank == "genus" ~ glue("***{scientificName}***"),
-      .default = glue("**{scientificName}**")
-    ),
-    pretty = glue(
-      "{taxonRank_print} {name_print}　{scientificNameAuthorship}. {taxon_count} {comment}"
-    ) |>
-      as.character() |>
-      str_replace_all("\\.+", ".") |>
-      str_squish(),
-    pretty = glue("{indent}{pretty}")
-  ) |>
-  select(pretty) |>
-  pull(pretty) |>
-  cat(sep = "\n")
+cat(ppg_classification, sep = "\n")
 ```
 
 ## Tables

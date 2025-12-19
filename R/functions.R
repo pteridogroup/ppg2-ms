@@ -1533,3 +1533,98 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
 
   tree_fig
 }
+
+#' Format PPG Classification for Printing
+#'
+#' Creates a formatted, indented list of the PPG classification ready for
+#' printing in the manuscript.
+#'
+#' @param ppg Data frame containing the PPG taxonomy in Darwin Core format
+#' @param ppg_tl taxlist object with PPG taxonomy
+#' @param children_tally Data frame with counts of children taxa
+#' @param comments Data frame with comments for taxa
+#' @param families_in_phy_order Character vector of family names in
+#'   phylogenetic order
+#'
+#' @return Character vector of formatted classification lines
+format_ppg_classification <- function(
+  ppg,
+  ppg_tl,
+  children_tally,
+  comments,
+  families_in_phy_order
+) {
+  children_taxa_count <- format_ppg_taxa_count(children_tally) |>
+    assertr::assert(assertr::not_na, taxon_count) |>
+    dplyr::mutate(taxon_count = paste0(taxon_count, "."))
+
+  priority_sort <- set_taxon_priority(ppg, families_in_phy_order)
+
+  parent_taxon_count <-
+    ppg |>
+    dwc_to_tl(families_in_phy_order, return_taxlist = FALSE) |>
+    count_taxon_parents() |>
+    dplyr::select(taxonID, n_parents) |>
+    assertr::assert(assertr::not_na, dplyr::everything()) |>
+    assertr::assert(assertr::is_uniq, taxonID)
+
+  ppg_tl |>
+    taxlist::sort_taxa(priority = priority_sort) |>
+    taxlist::indented_list(print = FALSE) |>
+    tibble::as_tibble() |>
+    janitor::clean_names() |>
+    dplyr::select(
+      taxonID = taxon_concept_id,
+      scientificName = taxon_name,
+      scientificNameAuthorship = author_name,
+      taxonRank = level
+    ) |>
+    dplyr::left_join(
+      children_taxa_count,
+      by = "taxonID",
+      relationship = "one-to-one"
+    ) |>
+    dplyr::left_join(
+      parent_taxon_count,
+      by = "taxonID",
+      relationship = "one-to-one"
+    ) |>
+    dplyr::left_join(
+      dplyr::select(
+        ppg,
+        taxonID,
+        namePublishedIn
+      ),
+      by = "taxonID",
+      relationship = "one-to-one"
+    ) |>
+    dplyr::left_join(
+      comments,
+      by = "taxonID",
+      relationship = "one-to-one"
+    ) |>
+    dplyr::mutate(
+      taxonRank_print = stringr::str_replace_all(taxonRank, "genus", "") |>
+        stringr::str_to_sentence(),
+      indent = rep_collapse("  ", n_parents),
+      indent = paste0(indent, "* "),
+      comment = tidyr::replace_na(comment, ""),
+      taxon_count = tidyr::replace_na(taxon_count, "")
+    ) |>
+    dplyr::mutate(
+      # genera in bold italics, everything else in bold
+      name_print = dplyr::case_when(
+        taxonRank == "genus" ~ glue::glue("***{scientificName}***"),
+        .default = glue::glue("**{scientificName}**")
+      ),
+      pretty = glue::glue(
+        "{taxonRank_print} {name_print}　{scientificNameAuthorship}. {taxon_count} {comment}"
+      ) |>
+        as.character() |>
+        stringr::str_replace_all("\\.+", ".") |>
+        stringr::str_squish(),
+      pretty = glue::glue("{indent}{pretty}")
+    ) |>
+    dplyr::select(pretty) |>
+    dplyr::pull(pretty)
+}

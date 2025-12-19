@@ -77,6 +77,15 @@ tar_plan(
   # - tree figure
   tree_fig = make_tree_figure(phy_family, ppg, ppg_tl, children_tally),
 
+  # Format classification ----
+  ppg_classification = format_ppg_classification(
+    ppg,
+    ppg_tl,
+    children_tally,
+    comments,
+    families_in_phy_order
+  ),
+
   # Output manuscript ----
   tar_quarto(
     ppg2_ms,
