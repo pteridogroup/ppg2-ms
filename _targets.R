@@ -1,6 +1,8 @@
 source("R/packages.R")
 source("R/functions.R")
 
+Sys.setenv(TAR_PROJECT = "main")
+
 tar_plan(
   # Download PPG taxonomy ----
   tar_url(

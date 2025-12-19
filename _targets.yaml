@@ -1,0 +1,6 @@
+pre:
+  script: _targets_pre.R
+  store: _targets_pre
+main:
+  script: _targets.R
+  store: _targets
