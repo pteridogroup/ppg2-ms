@@ -1,3 +1,17 @@
+#' Extract Last Name from Full Name
+#'
+#' Extracts the last word from a person's name string, typically the
+#' surname or family name.
+#'
+#' @param name A character string containing a person's full name.
+#'
+#' @return A character string containing the last name.
+extract_last_name <- function(name) {
+  # Split by spaces and take the last element
+  parts <- stringr::str_split(name, "\\s+")[[1]]
+  parts[length(parts)]
+}
+
 #' Make a Family-Level Fern Phylogeny
 #'
 #' Constructs a family-level phylogenetic tree for ferns using the FTOL

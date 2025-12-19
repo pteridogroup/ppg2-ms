@@ -52,7 +52,31 @@ Running title: PPG II
 
 The Pteridophyte Phylogeny Group
 
-Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Eric Schuettpelz\*^2^, Harald Schneider^3^, Carl Rothfels^4^, ...
+```{r}
+#| label: load-names
+
+authors <- read_csv("data/ppg2_author_list.csv") |>
+  filter(str_detect(name, "Nitta|Schuettpelz|Schneider|Rothfels", negate = TRUE)) |>
+  mutate(
+    last_name = map_chr(name, extract_last_name)
+  ) |>
+  arrange(last_name) %>%
+  mutate(auth_num = seq(5, nrow(.) + 4, by = 1)) |>
+  mutate(
+    institution = tidyr::replace_na(institution, "?"),
+    country = tidyr::replace_na(country, "?"),
+    name_print = glue::glue("{name}^{auth_num}^"),
+    inst_print = glue::glue("^{auth_num}^ {institution}, {country}")
+    )
+
+other_authors <- paste(authors$name_print, collapse = ", ")
+institutions <- paste(authors$inst_print, collapse = "\n")
+
+```
+
+Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Eric Schuettpelz\*^2^, Harald Schneider^3^, Carl Rothfels^4^; with additional contributions from (in alphabetical order): `r other_authors`
+
+`r institutions`
 
 \*Authors for correspondence
 
@@ -95,13 +119,13 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 
 **Key words:** classification, ferns, lycophytes, open science, phylogeny, pteridophytes, taxonomy, World Flora Online
 
-##
+{{< pagebreak >}}
 
 Ferns and lycophytes--comprising the paraphyletic pteridophytes--are globally important groups of plants known for their resilience during their long phylogenetic history [@li2025fernsa].
 Our understanding of fern and lycophyte relationships was revolutionized by DNA sequencing, which revealed that ferns are sister to seed plants and only distantly related to the lycophytes (thus "pteridophytes" are not monophyletic), and that horsetails and whisk ferns are nested within ferns [@pryer2001horsetails].
 The first major revised classification of the molecular-phylogenetic era was @smith2006classification, which was limited to taxa at the rank of family and higher.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due to their drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community [@schuettpelz2018are].
-The next widely accepted classification was published by Pteridophyte Phylogeny Group (PPG) [-@pteridophytephylogenygroupi2016communityderived].
+The next widely accepted classification was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
 PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts by including nearly 90 co-authors.
 
 Since the publication of PPG I, phylogenetic relationships have been further clarified and taxonomic novelties have accrued.
