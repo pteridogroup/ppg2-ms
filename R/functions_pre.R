@@ -33,6 +33,12 @@ load_votes <- function(ballot_url) {
     )
 }
 
+load_taxon_comments <- function(taxon_comments_url) {
+  googlesheets4::read_sheet(taxon_comments_url) |>
+    janitor::clean_names() |>
+    select(taxon_id:comment)
+}
+
 load_emails <- function(email_url) {
   ppg_emails <- googlesheets4::read_sheet(email_url) |>
     janitor::clean_names()
@@ -97,7 +103,7 @@ tally_votes <- function(votes, ppg_emails, exclude_emails) {
     mutate(
       across(
         c(institution, country, status),
-        ~tidyr::replace_na(.x, "?")
+        ~ tidyr::replace_na(.x, "?")
       )
     )
 }
