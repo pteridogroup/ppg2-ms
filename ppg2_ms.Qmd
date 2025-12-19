@@ -408,7 +408,7 @@ ppg_tl |>
       .default = glue("**{scientificName}**")
     ),
     pretty = glue(
-      "{taxonRank_print} {name_print}　{scientificNameAuthorship}, {namePublishedIn}. {taxon_count} {comment}"
+      "{taxonRank_print} {name_print}　{scientificNameAuthorship}. {taxon_count} {comment}"
     ) |>
       as.character() |>
       str_replace_all("\\.+", ".") |>
