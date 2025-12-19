@@ -571,6 +571,73 @@ references:
     Mountains
   type: article-journal
 
+- id: applequist2016report
+  abstract: >-
+    The following seven generic names are recommended for conservation:
+    Anisomeles against Epimeridi, Goodallia Benth. against Goodallia T.E.
+    Bowdich, Leysera against Asteropterus, Limniris against Pseudo-iris,
+    Palhinhaea against Lepidotis, Razumovskia against Razoumofskya, and
+    Volutaria against Amberboi. The following eleven species names are
+    recommended for conservation: Allium saxatile M. Bieb., non Pall., with a
+    conserved type, Carex leersii F.W. Schultz, nom. cons., against C. cuprina,
+    Cereus adscendens against C. platygonus, Chirita hamosawith a conserved
+    type, Clethra alnifolia with a conserved type, Cuscuta campestris against C.
+    gymnocarpa, Eucalyptus rossii with a conserved type, Hemionitis plantaginea
+    Cav., non Sm., Orobanche foetida with a conserved type, Senecio sarracenicus
+    with a conserved type, and Sisymbrium pumilum Stephan, non Lam. The
+    following five species names are not recommended for conservation: Acacia
+    multipinnata Ducke against A. multipinnata Willd., Calamus laevigatus
+    against C. plicatus, Dianthus crassipes against D. ferrugineus, Ophrys
+    subfusca with a conserved type (because it is believed to be unnecessary),
+    and Paullinia thalictrifolia against P. bipinnata. The following eleven
+    species names are recommended for rejection: Anavinga ovata, Cestrum
+    subsessile, Myosotis collina, Rosa ferruginea, Solanum ambrosiacum, Solanum
+    coronatum, Solanum diantherum, Solanum jubeba, Solanum multiangulatum,
+    Solanum perianthomega, and Trichomanes adiantoides. Cupressus tortulosa is
+    not recommended for rejection because it is believed to be an orthographic
+    variant of C. torulosa. It is not recommended that the conserved place of
+    publication of Lecythidaceae be changed. It is recommended that Habenaria
+    rodriguesii Cogn. and H. rodriguezii R. González & Lizb. Hern. be treated as
+    homonyms. It is recommended that Bonannia and Bonania, Petteria and Peteria,
+    and Ceropegia oculata and C. occulta be treated as not being homonyms. It is
+    recommended that Agave gustaviana be treated as validly published. It is
+    recommended that “Alonsoa intermedia G. Lodd.”, “Caladium lividum G. Lodd.”,
+    “Cerbera laurifolia G. Lodd.”, “Dichorisandra picta G. Lodd.”, “Govenia
+    Lindl. ex G. Lodd.”, “Govenia superba G. Lodd.”, “Hedychium flavescens G.
+    Lodd.”, and “Maxillaria galeata Lindl. ex G. Lodd.” be treated as not
+    validly published. After two ballots, no vote of at least 11 either for or
+    against has been obtained for proposals to reject Dianthus hungaricus or to
+    conserve Salsola with a conserved type, Tweedia with a conserved type,
+    Calandrinia grandiflora against C. glauca, Cliffortia filicaulis with a
+    conserved type, Leucostegia immersa against Davallia truncata, Maackia
+    hupehensis against M. chinensis, or Tamarix ramosissima against T.
+    pentandra, or for a request to treat Hoppea Willd. and Hoppia Nees as
+    homonyms.
+  accessed:
+    - year: 2025
+      month: 12
+      day: 18
+  author:
+    - family: Applequist
+      given: Wendy L.
+  citation-key: applequist2016report
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.12705/655.16
+  ISSN: 0040-0262, 1996-8175
+  issue: '5'
+  issued:
+    - year: 2016
+      month: 10
+  language: en
+  page: 1153–1165
+  source: DOI.org (Crossref)
+  title: 'Report of the Nomenclature Committee for Vascular Plants: 68'
+  title-short: Report of the Nomenclature Committee for Vascular Plants
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.12705/655.16
+  volume: '65'
+
 - id: arana2004sinopsis
   author:
     - family: Arana
@@ -4573,19 +4640,17 @@ references:
 - id: christenhusz2011linear
   author:
     - family: Christenhusz
-      given: MAARTEN J M
+      given: Maarten J. M.
     - family: Zhang
       given: Xian-Chun
     - family: Schneider
       given: Harald
   citation-key: christenhusz2011linear
-  container-title: Phytotaxa
   issued:
     - year: 2011
-  page: 7–54
   title: A linear sequence of extant families and genera of lycophytes and ferns
   type: article-journal
-  volume: '19'
+  URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p1581
 
 - id: christenhusz2013phylogenetic
   abstract: >-
@@ -9536,6 +9601,35 @@ references:
   title: Unreported ferns from Montana
   type: article-journal
   volume: '47'
+
+- id: greuter20142292
+  accessed:
+    - year: 2025
+      month: 12
+      day: 18
+  author:
+    - family: Greuter
+      given: Werner
+    - family: Troia
+      given: Angelo
+  citation-key: greuter20142292
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.12705/633.23
+  ISSN: 0040-0262, 1996-8175
+  issue: '3'
+  issued:
+    - year: 2014
+      month: 6
+  language: en
+  page: 680–682
+  source: DOI.org (Crossref)
+  title: >-
+    (2292) Proposal to conserve the name *Palhinhaea* against *Lepidotis*
+    (*Lycopodiaceae*)
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.12705/633.23
+  volume: '63'
 
 - id: greuter2025solving
   abstract: >-
@@ -17518,6 +17612,36 @@ references:
   title: A new species of Rhachidosorus (Rhachidosoraceae), a genus new to Thailand
   type: article-journal
   volume: '40'
+
+- id: lindsay20212836
+  accessed:
+    - year: 2025
+      month: 12
+      day: 19
+  author:
+    - family: Lindsay
+      given: Stuart
+    - family: Middleton
+      given: David J.
+  citation-key: lindsay20212836
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.12579
+  ISSN: 0040-0262, 1996-8175
+  issue: '5'
+  issued:
+    - year: 2021
+      month: 10
+  language: en
+  page: 1133–1134
+  source: DOI.org (Crossref)
+  title: >-
+    (2836) Proposal to conserve the name *Asplenium arifolium* ( *Hemionitis
+    arifolia*, *Parahemionitis arifolia* ) ( *Pteridaceae* ) with a conserved
+    type
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12579
+  volume: '70'
 
 - id: link-perez2010revision
   author:
@@ -35863,6 +35987,43 @@ references:
     http://www.ingentaconnect.com/content/iapt/tax/2016/00000065/00000006/art00002
   volume: '65'
 
+- id: turland2024xx
+  accessed:
+    - year: 2025
+      month: 12
+      day: 19
+  author:
+    - family: Turland
+      given: Nicholas J.
+    - family: Álvarez
+      given: Inés
+    - family: Knapp
+      given: Sandra
+    - family: Monro
+      given: Anna M.
+    - family: Wiersema
+      given: John H.
+  citation-key: turland2024xx
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.1002/tax.13258
+  ISSN: 0040-0262, 1996-8175
+  issue: '5'
+  issued:
+    - year: 2024
+      month: 10
+  language: en
+  page: 1308–1323
+  source: DOI.org (Crossref)
+  title: >-
+    <span style="font-variant:small-caps;" smallcaps="smallcaps">XX</span>
+    International Botanical Congress, Madrid 2024: Report of Congress action on
+    nomenclature proposals
+  title-short: ''
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13258
+  volume: '73'
+
 - id: tyron1949spores
   accessed:
     - year: 2022
@@ -41340,6 +41501,21 @@ references:
     sequences of two chloroplast markers
   type: article-journal
   volume: '56'
+
+- id: zhang2011linear
+  author:
+    - family: Zhang
+      given: Xian-Chun
+    - family: Schneider
+      given: Harald
+  citation-key: zhang2011linear
+  container-title: Phytotaxa
+  issued:
+    - year: 2011
+  page: 7–54
+  title: A linear sequence of extant families and genera of lycophytes and ferns
+  type: article-journal
+  volume: '19'
 
 - id: zhang2012hypodematiaceae
   author:
