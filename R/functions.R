@@ -1313,7 +1313,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       taxon = taxon |>
         str_replace_all(
           "Polypodiidae",
-          "Polypodiidae\\n(leptosporangiates)"
+          "Polypodiidae\n(leptosporangiates)"
         ) |>
         str_replace_all(
           "Polypodiopsida",
@@ -1321,7 +1321,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
         ) |>
         str_replace_all(
           "Polypodiales",
-          "Polypodiales\\n(cathetogyrates)"
+          "Polypodiales\n(cathetogyrates)"
         )
     ) |>
     rename(taxon_node = taxon)
