@@ -157,11 +157,23 @@ dwc_to_tl <- function(
 
 # vectorized version of count_children_single that accepts a character vector
 # of taxa to count
-count_children <- function(tax_list, taxon, level) {
-  purrr::map_dbl(taxon, ~ count_children_single(tax_list, .x, level))
+count_children <- function(tax_list, taxon, level, exclude_hybrids = FALSE) {
+  purrr::map_dbl(
+    taxon,
+    ~ count_children_single(
+      tax_list,
+      .x,
+      level,
+      exclude_hybrids
+    )
+  )
 }
 
-count_children_ppg <- function(ppg, families_in_phy_order) {
+count_children_ppg <- function(
+  ppg,
+  families_in_phy_order,
+  exclude_hybrids = FALSE
+) {
   # Filter to accepted names and convert to taxlist
   ppg_for_counting_tl <- dwc_to_tl(
     ppg,
@@ -173,7 +185,6 @@ count_children_ppg <- function(ppg, families_in_phy_order) {
       "suborder",
       "family",
       "subfamily",
-      "tribe",
       "genus",
       "species"
     )
@@ -190,55 +201,92 @@ count_children_ppg <- function(ppg, families_in_phy_order) {
   # levels. Exclude if the level to count equals or exceeds the target taxon.
   ppg_for_counting_df |>
     mutate(
-      n_species = count_children(ppg_for_counting_tl, taxon_name, "species"),
+      is_nothogenus = if_else(
+        level == "genus" & str_detect(taxon_name, "^×"), TRUE, FALSE
+      ),
+      n_species = case_when(
+        is_nothogenus ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "species",
+          exclude_hybrids = FALSE
+        ),
+        .default = count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "species",
+          exclude_hybrids = TRUE
+        )
+      ),
       n_genera = case_when(
         level == "genus" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "genus")
-      ),
-      n_tribe = case_when(
-        level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "tribe")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "genus",
+          exclude_hybrids = TRUE
+        )
       ),
       n_subfamily = case_when(
         level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
         level == "subfamily" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "subfamily")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "subfamily",
+          # subfamily and higher don't include hybrids (names with ×) anyways 
+          exclude_hybrids = FALSE
+        )
       ),
       n_family = case_when(
         level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "family")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "family",
+          exclude_hybrids = FALSE
+        )
       ),
       n_suborder = case_when(
         level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "suborder")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "suborder",
+          exclude_hybrids = FALSE
+        )
       ),
       n_order = case_when(
         level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
         level == "order" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "order")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "order",
+          exclude_hybrids = FALSE
+        )
       ),
       n_subclass = case_when(
         level == "genus" ~ NaN,
-        level == "tribe" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
         level == "order" ~ NaN,
         level == "subclass" ~ NaN,
-        TRUE ~ count_children(ppg_for_counting_tl, taxon_name, "subclass")
+        TRUE ~ count_children(
+          ppg_for_counting_tl,
+          taxon_name,
+          "subclass",
+          exclude_hybrids = FALSE
+        )
       )
     ) |>
     select(taxonID = taxon_concept_id, contains("n_"))
@@ -246,7 +294,12 @@ count_children_ppg <- function(ppg, families_in_phy_order) {
 
 
 # function for counting taxa within a group
-count_children_single <- function(tax_list, taxon, level) {
+count_children_single <- function(
+  tax_list,
+  taxon,
+  level,
+  exclude_hybrids = FALSE
+) {
   require(taxlist)
 
   taxon_select <- taxon
@@ -259,6 +312,14 @@ count_children_single <- function(tax_list, taxon, level) {
   ]
   tax_filter <- taxlist::clean(tax_filter)
   tax_filter <- get_children(tax_list, tax_filter)
+
+  # Optionally exclude hybrids from children
+  if (exclude_hybrids) {
+    tax_filter@taxonNames <- tax_filter@taxonNames[
+      !str_detect(tax_filter@taxonNames$TaxonName, "×"),
+    ]
+    tax_filter <- taxlist::clean(tax_filter)
+  }
 
   # Now count children
   return(taxlist::count_taxa(tax_filter, level = level_select))
@@ -360,7 +421,6 @@ format_ppg_taxa_count <- function(children_tally) {
           suborder,
           family,
           subfamily,
-          tribe,
           genus,
           species
         )
@@ -844,8 +904,8 @@ count_ppgi <- function(ppg_i) {
     )
 }
 
-count_ppg2_taxa <- function(ppg) {
-  ppg |>
+count_ppg2_taxa <- function(ppg, exclude_hybrids = FALSE) {
+  initial_count <- ppg |>
     mutate(
       nomenclaturalStatus = tidyr::replace_na(
         nomenclaturalStatus,
@@ -887,10 +947,27 @@ count_ppg2_taxa <- function(ppg) {
           "nothogenus",
           "species"
         )
-      )
+      ),
+      is_nothotaxon = str_detect(scientificName, "×")
     ) |>
+    group_by(taxonRank, taxonomicStatus, is_nothotaxon) |>
+    count()
+
+  # Optionally exclude hybrid species from count
+  if (exclude_hybrids) {
+    initial_count <- initial_count |>
+      filter(!(taxonRank == "species" & is_nothotaxon == TRUE)) |>
+      # Should only be one row that is a nothotaxon (taxonRank == "nothgenus")
+      verify(sum(is_nothotaxon) == 1) |>
+      verify(all((taxonRank == "nothogenus") == is_nothotaxon))
+  }
+
+  # Format as wide table
+  initial_count |>
+    ungroup() |>
+    select(-is_nothotaxon) |>
     group_by(taxonRank, taxonomicStatus) |>
-    count() |>
+    summarize(n = sum(n)) |>
     ungroup() |>
     pivot_wider(
       names_from = taxonomicStatus,

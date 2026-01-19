@@ -63,10 +63,15 @@ tar_plan(
   # - convert DarwinCore format to dataframe in taxonomic order for printing
   #   (only includes accepted taxa at genus and higher)
   ppg_tl = dwc_to_tl(ppg, families_in_phy_order),
-  # - count number of children taxa
-  children_tally = count_children_ppg(ppg, families_in_phy_order),
+  # - count number of children taxa, while excluding any hybrids
+  #   (names with '×')
+  children_tally = count_children_ppg(
+    ppg,
+    families_in_phy_order,
+    exclude_hybrids = TRUE
+  ),
   # - count number of taxa per rank in PPG II
-  ppg_2_taxa_count = count_ppg2_taxa(ppg),
+  ppg_2_taxa_count = count_ppg2_taxa(ppg, exclude_hybrids = TRUE),
   ppg_i_taxa_count = count_ppgi(ppg_i),
 
   # Generate figures ----
