@@ -1,3 +1,159 @@
+#' Clean PPG Taxonomic Data
+#'
+#' Cleans raw PPG (Pteridophyte Phylogeny Group) taxonomic data by
+#' removing duplicates, deleting invalid nothogenera, and filtering to
+#' valid nomenclatural and taxonomic statuses.
+#'
+#' @param ppg_raw A data frame in Darwin Core format containing raw PPG
+#'   taxonomic data. Expected to have columns taxonID,
+#'   nomenclaturalStatus, taxonomicStatus, and other Darwin Core
+#'   standard fields.
+#'
+#' @return A cleaned data frame with duplicate taxa removed, invalid
+#'   nothogenera deleted, and filtered to only include taxa with
+#'   nomenclatural status of "conserved", "valid", or "unknown" and
+#'   taxonomic status of "accepted" or "synonym".
+#'
+#' @details
+#' The function performs the following cleaning steps:
+#' \enumerate{
+#'   \item Removes a duplicate taxon (Selaginella sanguinolenta)
+#'   \item Deletes three nothogenera that have not passed PPG voting:
+#'     × Chrinephrium, × Chrismatopteris, and × Glaphyrocyclosorus
+#'   \item Replaces NA values in nomenclaturalStatus with "unknown"
+#'   \item Filters to retain only taxa with nomenclatural status of
+#'     "conserved", "valid", or "unknown"
+#'   \item Filters to retain only taxa with taxonomic status of
+#'     "accepted" or "synonym"
+#' }
+clean_ppg <- function(ppg_raw) {
+  ppg_raw |>
+    # TODO fix these in Rhakhis
+    # Remove bad taxa
+    filter(
+      # Duplicate of Selaginella sanguinolenta (L.) Spring
+      # in different publication
+      taxonID != "wfo-0001114160"
+    ) |>
+    # TODO fix these in Rhakhis
+    # Delete nothogenera that are still in Rhakhis but have not passed
+    # voting
+    delete_taxon("× Chrinephrium", quiet = TRUE) |>
+    delete_taxon("× Chrismatopteris", quiet = TRUE) |>
+    delete_taxon("× Glaphyrocyclosorus", quiet = TRUE) |>
+    mutate(
+      nomenclaturalStatus = tidyr::replace_na(
+        nomenclaturalStatus,
+        "unknown"
+      )
+    ) |>
+    filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
+    filter(taxonomicStatus %in% c("accepted", "synonym"))
+}
+
+#' Delete a Taxon and All Its Descendants and Synonyms
+#'
+#' Removes a taxon from a Darwin Core taxonomic database along with all
+#' its descendant taxa and all synonyms that point to it or its
+#' descendants.
+#'
+#' @param dwc A data frame in Darwin Core format with columns taxonID,
+#'   scientificName, parentNameUsageID, and acceptedNameUsageID.
+#' @param name Character string; the scientific name of the taxon to
+#'   delete.
+#' @param taxonomic_status Character vector; taxonomic status values to
+#'   consider when matching the name. Default is "accepted".
+#' @param verbose Logical; if TRUE, prints the scientific names of all
+#'   deleted taxa. Default is FALSE.
+#' @param quiet Logical; if TRUE, suppresses all messages and warnings.
+#'   Default is FALSE.
+#'
+#' @return A data frame with the specified taxon, its descendants, and
+#'   related synonyms removed.
+delete_taxon <- function(
+  dwc,
+  name,
+  taxonomic_status = "accepted",
+  verbose = FALSE,
+  quiet = FALSE
+) {
+  require(dplyr)
+
+  # Find the taxonID(s) for the given scientific name
+  target_ids <- dwc |>
+    filter(scientificName == name) |>
+    filter(taxonomicStatus %in% taxonomic_status) |>
+    pull(taxonID)
+
+  if (length(target_ids) == 0) {
+    if (!quiet) {
+      warning(paste("No taxon found with name:", name))
+    }
+    return(dwc)
+  }
+
+  if (length(target_ids) > 1) {
+    if (!quiet) {
+      warning(paste(
+        "Multiple taxa found with name:",
+        name,
+        "- deleting all matches"
+      ))
+    }
+  }
+
+  # Recursively find all descendant taxonIDs
+  all_ids <- target_ids
+  current_ids <- target_ids
+
+  while (length(current_ids) > 0) {
+    # Find children of current set
+    children_ids <- dwc |>
+      filter(parentNameUsageID %in% current_ids) |>
+      pull(taxonID)
+
+    # Add new children to our collection
+    new_ids <- setdiff(children_ids, all_ids)
+    all_ids <- c(all_ids, new_ids)
+    current_ids <- new_ids
+  }
+
+  # Find all synonyms pointing to any of these taxa
+  synonym_ids <- dwc |>
+    filter(acceptedNameUsageID %in% all_ids) |>
+    pull(taxonID)
+
+  # Combine all IDs to delete
+  ids_to_delete <- unique(c(all_ids, synonym_ids))
+
+  # Print deleted names if verbose
+  if (verbose && !quiet) {
+    deleted_names <- dwc |>
+      filter(taxonID %in% ids_to_delete) |>
+      pull(scientificName)
+    message("Deleted taxa:")
+    message(paste(deleted_names, collapse = "\n"))
+  }
+
+  # Remove these taxa from the database
+  result <- dwc |>
+    filter(!taxonID %in% ids_to_delete)
+
+  if (!quiet) {
+    message(paste(
+      "Deleted",
+      length(ids_to_delete),
+      "taxa:",
+      length(all_ids),
+      "accepted taxa and their descendants,",
+      length(synonym_ids),
+      "synonyms"
+    ))
+  }
+
+  return(result)
+}
+
 #' Extract Last Name from Full Name
 #'
 #' Extracts the last word from a person's name string, typically the
@@ -108,8 +264,6 @@ dwc_to_tl <- function(
     "suborder",
     "family",
     "subfamily",
-    "tribe",
-    "subtribe",
     "genus"
   ),
   return_taxlist = TRUE
@@ -121,12 +275,7 @@ dwc_to_tl <- function(
     ppg |>
     # Only keeping higher, accepted taxa
     filter(taxonRank %in% higher_tax_levels) |>
-    filter(taxonomicStatus == "accepted") |>
-    # TODO fix these in Rhakhis
-    # Remove bad taxa
-    filter(
-      taxonID != "wfo-0001114160" # Duplicate of Selaginella sanguinolenta (L.) Spring in different publication
-    )
+    filter(taxonomicStatus == "accepted")
 
   # Identify higher taxonomic levels actually used
   higher_tax_levels_used <- higher_tax_levels[
@@ -202,7 +351,9 @@ count_children_ppg <- function(
   ppg_for_counting_df |>
     mutate(
       is_nothogenus = if_else(
-        level == "genus" & str_detect(taxon_name, "^×"), TRUE, FALSE
+        level == "genus" & str_detect(taxon_name, "^×"),
+        TRUE,
+        FALSE
       ),
       n_species = case_when(
         is_nothogenus ~ count_children(
@@ -234,7 +385,7 @@ count_children_ppg <- function(
           ppg_for_counting_tl,
           taxon_name,
           "subfamily",
-          # subfamily and higher don't include hybrids (names with ×) anyways 
+          # subfamily and higher don't include hybrids (names with ×) anyways
           exclude_hybrids = FALSE
         )
       ),
@@ -906,14 +1057,8 @@ count_ppgi <- function(ppg_i) {
 
 count_ppg2_taxa <- function(ppg, exclude_hybrids = FALSE) {
   initial_count <- ppg |>
-    mutate(
-      nomenclaturalStatus = tidyr::replace_na(
-        nomenclaturalStatus,
-        "unknown"
-      )
-    ) |>
-    filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
-    filter(taxonomicStatus %in% c("synonym", "accepted")) |>
+    assert(in_set(c("conserved", "valid", "unknown")), nomenclaturalStatus) |>
+    assert(in_set(c("synonym", "accepted")), taxonomicStatus) |>
     filter(
       taxonRank %in%
         c(

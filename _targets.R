@@ -9,7 +9,11 @@ tar_plan(
     ppg_csv_url,
     "https://github.com/pteridogroup/ppg/raw/refs/heads/main/data/ppg.csv"
   ),
-  ppg = read_csv(ppg_csv_url),
+  ppg_raw = read_csv(ppg_csv_url),
+  # Clean PPG data
+  # - remove invalid nomenclatural status and unchecked taxa
+  # - remove nothogenera that haven't received votes
+  ppg = clean_ppg(ppg_raw),
 
   # Load PPG I taxonomy ----
   tar_file_read(
