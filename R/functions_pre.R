@@ -108,6 +108,19 @@ tally_votes <- function(votes, ppg_emails, exclude_emails) {
     )
 }
 
+format_author_list <- function(vote_tally, ppg_emails) {
+ 
+ # Ensure that Harald Schneider is on author list
+ hs_data <- ppg_emails |>
+   filter(str_detect(name, "Harald Schneider")) |>
+   select(-email)
+
+ vote_tally |>
+   select(-n_votes) |>
+   bind_rows(hs_data) |>
+   unique()
+}
+
 tar_write_csv <- function(x, file, ...) {
   write_csv(x = x, file = file, ...)
   file

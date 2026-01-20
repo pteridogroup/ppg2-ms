@@ -34,11 +34,11 @@ tar_plan(
     ppg_emails,
     load_emails(email_url),
     cue = tar_cue("always")
-  ), 
+  ),
   # Tally votes
   vote_tally = tally_votes(votes, ppg_emails, exclude_emails),
   # Format author list
-  author_list = select(vote_tally, -n_votes),
+  author_list = format_author_list(vote_tally, ppg_emails),
   # Write out author list
   tar_file(
     author_csv,

@@ -52,21 +52,35 @@ The Pteridophyte Phylogeny Group
 ```{r}
 #| label: load-names
 
+auth_order <- tibble::tribble(
+  ~name, ~order,
+  "Joel H. Nitta", 1,
+  "Carl J. Rothfels", 2,
+  "Harald Schneider", 3,
+  "Eric Schuettpelz", 4
+)
+
 authors <- read_csv("data/ppg2_author_list.csv") |>
-  filter(str_detect(name, "Nitta|Schuettpelz|Schneider|Rothfels", negate = TRUE)) |>
+  left_join(auth_order, by = "name") |>
   mutate(
     last_name = map_chr(name, extract_last_name)
   ) |>
-  arrange(last_name) %>%
-  mutate(auth_num = seq(5, nrow(.) + 4, by = 1)) |>
+  arrange(order, last_name) %>%
   mutate(
+    other_author = str_detect(name, "Nitta|Rothfels|Schneider|Schuettpelz", negate = TRUE),
+    auth_num = seq(nrow(.)),
     institution = tidyr::replace_na(institution, "?"),
     country = tidyr::replace_na(country, "?"),
     name_print = glue::glue("{name}^{auth_num}^"),
     inst_print = glue::glue("^{auth_num}^ {institution}, {country}")
   )
 
-other_authors <- paste(authors$name_print, collapse = ", ")
+other_authors <- 
+  authors |>
+  filter(other_author) |>
+  pull(name_print) |>
+  paste(collapse = ", ")
+  
 institutions <- paste(authors$inst_print, collapse = "\n")
 
 ```
