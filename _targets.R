@@ -18,7 +18,7 @@ tar_plan(
   # Load PPG I taxonomy ----
   tar_file_read(
     ppg_i,
-    "data/ppgi_taxonomy_mod.csv",
+    "data/ppgi_taxonomy_original.csv",
     read_csv(!!.x)
   ),
 
@@ -93,6 +93,13 @@ tar_plan(
     children_tally,
     comments,
     families_in_phy_order
+  ),
+
+  # Check that all PPG I taxa are accounted for ----
+  ppg_i_check = check_ppg_i_taxa_accounted(
+    ppg_i,
+    ppg_classification,
+    comments_path = "data/ppg_comments.csv"
   ),
 
   # Output manuscript ----

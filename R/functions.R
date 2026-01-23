@@ -1035,7 +1035,6 @@ count_issues <- function(issues) {
 
 count_ppgi <- function(ppg_i) {
   ppg_i |>
-    filter(notes == "original PPGI 2016") |>
     select(class:genus) |>
     mutate(across(everything(), ~ n_distinct(., na.rm = TRUE))) |>
     unique() |>
@@ -1049,7 +1048,6 @@ count_ppgi <- function(ppg_i) {
       tribble(
         ~taxonRank , ~accepted ,
         "subclass" ,         4 ,
-        "genus"    ,       337 ,
         "species"  ,     11916
       )
     )
@@ -1896,4 +1894,76 @@ format_ppg_classification <- function(
     ) |>
     dplyr::select(pretty) |>
     dplyr::pull(pretty)
+}
+
+#' Check That All PPG I Taxa Are Accounted For
+#'
+#' Verifies that all taxa from PPG I (the original classification) are
+#' mentioned either in the manuscript or in the comments file. This
+#' ensures that readers know what happened to taxa that were synonymized
+#' or otherwise removed in PPG II.
+#'
+#' @param ppg_i Data frame containing PPG I taxonomy with a 'genus'
+#'   column.
+#' @param ppg_classification Character string; the PPG II classification.
+#' @param comments_path Character string; path to the comments CSV file.
+#'   Default is "data/ppg_comments.csv".
+#'
+#' @return Invisible NULL if all taxa are accounted for.
+#'
+#' @details
+#' The function extracts all unique genus names from PPG I, then checks
+#' if each name appears in either the manuscript text or the comments
+#' file. If any names are missing, it throws an error listing the
+#' unaccounted taxa.
+check_ppg_i_taxa_accounted <- function(
+  ppg_i,
+  ppg_classification,
+  comments_path = "data/ppg_comments.csv"
+) {
+  require(dplyr)
+  require(readr)
+  require(stringr)
+
+  # Get all unique genus names from PPG I
+  ppg_i_taxa <- ppg_i |>
+    filter(!is.na(genus)) |>
+    select(class:genus) |>
+    pivot_longer(values_to = "taxon", names_to = "rank", everything()) |>
+    filter(!is.na(taxon)) |>
+    pull(taxon) |>
+    unique()
+
+  # Read comments
+  comments_text <- if (file.exists(comments_path)) {
+    readr::read_csv(comments_path, show_col_types = FALSE) |>
+      pull(comment) |>
+      paste(collapse = " ")
+  } else {
+    ""
+  }
+
+  # Combine text sources
+  all_text <- paste(
+    comments_text, ppg_classification, collapse = " ")
+
+  # Check which genera are missing
+  missing_genera <- ppg_i_taxa[
+    !stringr::str_detect(
+      all_text,
+      stringr::fixed(ppg_i_taxa)
+    )
+  ]
+
+  if (length(missing_genera) > 0) {
+    stop(
+      "The following PPG I taxa are not accounted for in the PPG II ",
+      "classification or comments:\n",
+      paste(sort(missing_genera), collapse = "\n"),
+      "\n\nPlease add mentions of these taxa or add comments explaining ",
+      "what happened to them."
+    )
+  }
+  
+  invisible(NULL)
 }
