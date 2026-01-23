@@ -1814,22 +1814,30 @@ format_ppg_classification <- function(
     dplyr::group_by(parentNameUsageID) |>
     dplyr::mutate(
       # Within each family, nothogenera get placed after the last regular genus
-      # Use a small offset based on position within nothogenera in this family
       genus_position = dplyr::row_number(),
-      max_regular_order = max(original_order[!is_nothogenus], na.rm = TRUE),
-      has_nothogenus = any(is_nothogenus),
-      min_nothogenus_pos = dplyr::if_else(
-        has_nothogenus,
-        min(genus_position[is_nothogenus]),
-        NA_real_
-      ),
+      max_regular_order = max(original_order[!is_nothogenus], na.rm = TRUE)
+    ) |>
+    dplyr::ungroup()
+
+  # Compute min position for nothogenera separately to avoid warnings
+  nothogenus_min_pos <- genera_data |>
+    dplyr::filter(is_nothogenus) |>
+    dplyr::group_by(parentNameUsageID) |>
+    dplyr::summarize(
+      min_nothogenus_pos = min(genus_position),
+      .groups = "drop"
+    )
+
+  # Combine and compute sort keys
+  genera_data <- genera_data |>
+    dplyr::left_join(nothogenus_min_pos, by = "parentNameUsageID") |>
+    dplyr::mutate(
       sort_key = dplyr::if_else(
         is_nothogenus,
         max_regular_order + (genus_position - min_nothogenus_pos + 1) * 0.1,
         as.numeric(original_order)
       )
     ) |>
-    dplyr::ungroup() |>
     dplyr::select(taxonID, sort_key)
 
   # Apply the new sort key and re-order
@@ -1945,7 +1953,10 @@ check_ppg_i_taxa_accounted <- function(
 
   # Combine text sources
   all_text <- paste(
-    comments_text, ppg_classification, collapse = " ")
+    comments_text,
+    ppg_classification,
+    collapse = " "
+  )
 
   # Check which genera are missing
   missing_genera <- ppg_i_taxa[
@@ -1964,6 +1975,6 @@ check_ppg_i_taxa_accounted <- function(
       "what happened to them."
     )
   }
-  
+
   invisible(NULL)
 }
