@@ -9,7 +9,7 @@ wfo-4000029442,Phylloglossum,Kunze,genus,NA
 wfo-6500000514,Lycopodielloideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,NA
 wfo-4000020714,Lateristachys,Holub,genus,NA
 wfo-4000022506,Lycopodiella,Holub,genus,NA
-wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,"Palhinhaea Franco & Vasc. is conserved against Lepidotis (@greuter20142292, @applequist2016report)."
+wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,"*Palhinhaea* Franco & Vasc. is conserved against *Lepidotis* P.Beauv. ex Mirb. [@greuter20142292, @applequist2016report]."
 wfo-4000031578,Pseudolycopodiella,Holub,genus,NA
 wfo-6500000515,Lycopodioideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,NA
 wfo-4000003736,Austrolycopodium,Holub,genus,NA
@@ -47,13 +47,12 @@ wfo-4100000868,Sahashia,Li Bing Zhang & Liang Zhang,genus,NA
 wfo-4000034272,Sceptridium,Lyon,genus,NA
 wfo-6500000510,Helminthostachyoideae,C.Presl,subfamily,NA
 wfo-4000017297,Helminthostachys,Kaulf.,genus,NA
-wfo-4000043360,Helmithostachys,Kaulf.,genus,NA
 wfo-6500000516,Mankyuoideae,J.R.Grant & B.Dauphin,subfamily,NA
 wfo-4000023047,Mankyua,"B.Y.Sun, M.H.Kim & C.H.Kim",genus,NA
 wfo-6500000518,Ophioglossoideae,C.Presl,subfamily,NA
 wfo-4000007779,Cheiroglossa,C.Presl,genus,NA
 wfo-4000026936,Ophioderma,(Blume) Endl.,genus,NA
-wfo-4000026939,Ophioglossum,L.,genus,NA
+wfo-4000026939,Ophioglossum,L.,genus,Includes *Rhizoglossum* C.Presl.
 wfo-4100003343,Marattiidae,Klinge,subclass,NA
 wfo-9000000314,Marattiales,Link,order,NA
 wfo-7000000362,Marattiaceae,Kaulf.,family,NA
@@ -88,14 +87,14 @@ wfo-4000011648,Didymoglossum,Desv.,genus,NA
 wfo-4000030769,Polyphlebium,Copel.,genus,NA
 wfo-4000039008,Trichomanes,L.,genus,NA
 wfo-4000039997,Vandenboschia,Copel.,genus,NA
-wfo-9000000230,Gleicheniales,Link,order,"Paraphyletic in plastid [@du2022structural; @nitta2022open] and nuclear [@qi2018wellresolved; @shen2018largescale] phylogenomic analyses, but a vote to revise the treatment did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
+wfo-9000000230,Gleicheniales,Link,order,"The monophyly of Gleicheniales is uncertain. It tends to be resolved as monophyletic in analyses of small-to-medium sized datasets [e.g., @schuettpelz2007fern; @rothfels2015evolutionary; @testo20164000species] but non-monophyletic in phylogenomic analyses [e.g.,  @qi2018wellresolved; @shen2018largescale; @du2022structural; @nitta2022open]. A vote to revise the treatment did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
 wfo-7000000251,Gleicheniaceae,C.Presl,family,NA
 wfo-4000011525,Dicranopteris,Bernh.,genus,NA
 wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,NA
 wfo-4000015735,Gleichenella,Ching,genus,NA
 wfo-4000015736,Gleichenia,Sm.,genus,NA
 wfo-4100000867,Rouxopteris,Hong M.Liu,genus,NA
-wfo-4000036680,Sticherus,C.Presl,genus,"Paraphyletic [@vieiralima2023phylogenomic], but no name meeting the requirements of the Code is currently available (<https://github.com/pteridogroup/ppg/issues/78>)."
+wfo-4000036680,Sticherus,C.Presl,genus,"Not monophyletic [@vieiralima2023phylogenomic], but no set of monophyletic taxa meeting the requirements of the Code is currently available (<https://github.com/pteridogroup/ppg/issues/78>)."
 wfo-4000036909,Stromatopteris,Mett.,genus,NA
 wfo-7000000368,Matoniaceae,C.Presl,family,NA
 wfo-4000023323,Matonia,R.Br. ex Wall.,genus,NA
@@ -167,7 +166,7 @@ wfo-1200096492,Adiantoideae,Horvat,subfamily,NA
 wfo-4000000695,Adiantum,L.,genus,NA
 wfo-6500000504,Cheilanthoideae,Horvat,subfamily,NA
 wfo-4000000687,Adiantopsis,Fée,genus,NA
-wfo-4000001160,Aleuritopteris,Fée,genus,NA
+wfo-4000001160,Aleuritopteris,Fée,genus,Include *Mildella* Trevis.
 wfo-4100005079,Anthonya,Windham & Pryer,genus,NA
 wfo-4000003007,Argyrochosma,(J.Sm.) Windham,genus,NA
 wfo-4000003334,Aspidotis,(Nutt. ex Hook.) Copel.,genus,NA
@@ -177,23 +176,23 @@ wfo-4000004948,Bommeria,E.Fourn.,genus,NA
 wfo-4100005082,Brasiliopteris,"J.Prado, Schuettp. & Yatsk.",genus,NA
 wfo-4000005992,Calciphilopteris,Yesilyurt & H.Schneid.,genus,NA
 wfo-4100005083,Carlottahallia,Windham,genus,NA
-wfo-4000007749,Cheilanthes,Sw.,genus,"Cheilanthes is more narrowly defined here than in most previous classifications. The bulk of the genus consists of a moderately supported clade within the hemionitids (@schuettpelz2025phylogenetically), but a few species treated in this genus are known to fall elsewhere in the cheilanthoid phylogeny (e.g., @kao2019lowcopy)."
+wfo-4000007749,Cheilanthes,Sw.,genus,"*Cheilanthes* is more narrowly defined here than in most previous classifications. The bulk of the genus consists of a moderately supported clade within the hemionitids [@schuettpelz2025phylogenetically], but a few species treated in this genus are known to fall elsewhere in the cheilanthoid phylogeny [e.g., @kao2019lowcopy]."
 wfo-4000007762,Cheiloplecton,Fée,genus,NA
 wfo-4000008112,Choristosoria,Mett. ex Kuhn,genus,NA
 wfo-4100005084,Christenhuszia,Schuettp. & J.Prado,genus,NA
 wfo-4000012463,Doryopteris,J.Sm.,genus,NA
 wfo-4100005085,Estrella,Windham,genus,NA
 wfo-4000043352,Gaga,"Pryer, Fay W.Li & Windham",genus,NA
-wfo-4000017399,Hemionitis,L.,genus,NA
+wfo-4000017399,Hemionitis,L.,genus,Includes *Allosorus* Bernh.
 wfo-4000043379,Lytoneuron,(Klotzsch) Yesilyurt,genus,NA
 wfo-4000024291,Mildella,Trevis.,genus,NA
 wfo-4100001950,Mineirella,Ponce & Scataglini,genus,NA
 wfo-4000025145,Myriopteris,Fée,genus,NA
 wfo-4100005086,Namaquapteris,Windham & Pryer,genus,NA
-wfo-4000026281,Notholaena,R.Br.,genus,"Not monophyletic as circumscribed (@rothfels2008monophyletic, @johnson2012unique, @kao2019lowcopy)"
+wfo-4000026281,Notholaena,R.Br.,genus,Not monophyletic as circumscribed [@rothfels2008monophyletic; @johnson2012unique; @kao2019lowcopy].
 wfo-4000027168,Ormopteris,J.Sm. ex J.Sm.,genus,NA
 wfo-4000028034,Paragymnopteris,K.H.Shing,genus,NA
-wfo-4000028038,Parahemionitis,Panigrahi,genus,Was there a conservation of this name or something like that?
+wfo-4000028038,Parahemionitis,Panigrahi,genus,*Parahemionitis* is conserved with a conserved type to avoid nomenclatural instability in the genus name and in the epithet of the sole recognized species; *Mickelopteris* Fraser-Jenk. is thus a homotypic synonym [@lindsay20212836; @turland2024xx].
 wfo-4000028472,Pellaea,Link,genus,NA
 wfo-4000028473,Pellaeopsis,J.Sm.,genus,NA
 wfo-4000028587,Pentagramma,"Yatsk., Windham & E.Wollenw.",genus,NA
@@ -208,7 +207,7 @@ wfo-4000000472,Acrostichum,L.,genus,NA
 wfo-4000007376,Ceratopteris,Brongn.,genus,NA
 wfo-1200009692,Pteridoideae,Link,subfamily,NA
 wfo-4000000500,Actiniopteris,Link,genus,NA
-wfo-4000002269,Anogramma,Link,genus,This wasn't monophyletic in PPGI but is now?
+wfo-4000002269,Anogramma,Link,genus,"Monophyletic as circumscribed, due to the recognition of *Gastoniella* [@zhang2017phylogenya]."
 wfo-4000003730,Austrogramme,E.Fourn.,genus,NA
 wfo-4000007431,Cerosora,(Baker) Domin,genus,NA
 wfo-4000009439,Cosentinia,Tod.,genus,NA
@@ -216,7 +215,7 @@ wfo-4001303218,Gastoniella,Li Bing Zhang & Liang Zhang,genus,NA
 wfo-4000019485,Jamesonia,Hook. & Grev.,genus,NA
 wfo-4000026900,Onychium,Kaulf.,genus,NA
 wfo-4000029942,Pityrogramma,Link,genus,NA
-wfo-4000031909,Pteris,L.,genus,NA
+wfo-4000031909,Pteris,L.,genus,Potentially rendered non-monophyletic by the inclusion of *Pterozonium* [@zhang2015global; @zhang2017phylogenya].
 wfo-4000032050,Pterozonium,Fée,genus,NA
 wfo-4000037302,Syngramma,J.Sm.,genus,NA
 wfo-1000070087,Taenitis,Willd. ex Spreng.,genus,NA
@@ -236,8 +235,8 @@ wfo-4000040387,Vittaria,Sm.,genus,NA
 wfo-4100005209,Dennstaedtiineae,Schwartsb. & Hovenkamp,suborder,NA
 wfo-7000000183,Dennstaedtiaceae,Lotsy,family,NA
 wfo-4100004386,Dennstaedtioideae,Pic.Serm.,subfamily,NA
-wfo-1200105051,Dennstaedtia,T.Moore,genus,NA
-wfo-4000024129,Microlepia,C.Presl,genus,NA
+wfo-1200105051,Dennstaedtia,T.Moore,genus,"Includes *Leptolepia* Mett. ex Kuhn and *Oenotrichia* Copel. To avoid extensive nomenclatural instability---effectively, the species of *Microlepia* needing to be recognized in *Dennstaedtia*, and the bulk of *Dennstaedtia* needing recognition in *Patania* C.Presl [@triana-moreno2022phylogenetic]---*Dennstaedtia* was conserved on a conserved type [@triana-moreno20222892; @turland2024xx]."
+wfo-4000024129,Microlepia,C.Presl,genus,"*Microlepia* is conserved against the much older name, *Scyphofilix* Thouars [@schwartsburd20172508; @turland2024xx]."
 wfo-4100002053,Mucura,L.A.Triana & Sundue,genus,NA
 wfo-4000035560,Sitobolium,Desv.,genus,NA
 wfo-4100004442,Hypolepidoideae,Lovis,subfamily,NA
@@ -258,7 +257,7 @@ wfo-4000016453,Gymnocarpium,Newman,genus,NA
 wfo-7000000521,Rhachidosoraceae,X.C.Zhang,family,NA
 wfo-4000032836,Rhachidosorus,Ching,genus,NA
 wfo-7000000195,Diplaziopsidaceae,X.C.Zhang & Christenh.,family,NA
-wfo-4000011937,Diplaziopsis,C.Chr.,genus,NA
+wfo-4000011937,Diplaziopsis,C.Chr.,genus,Includes *Homalosorus* Pic.Serm.
 wfo-7000000051,Aspleniaceae,Newman,family,NA
 wfo-4000003342,Asplenium,L.,genus,NA
 wfo-4000018635,Hymenasplenium,Hayata,genus,NA
@@ -275,15 +274,15 @@ wfo-6500000526,Thelypteridoideae,C.F.Reed,subfamily,NA
 wfo-4100002532,× Abacopterella,T.E.Almeida & A.R.Field,genus,Nothogenus between *Abacopteris* and *Christella*.
 wfo-4000008130,× Chrinephrium,Nakaike,genus,NA
 wfo-4000008131,× Chrismatopteris,Quansah & D.S.Edwards,genus,NA
-wfo-4100003432,× Christelliopsis,Miles K.Thomas,genus,Nothogenus between *Christella* and *Menisciopsis*
+wfo-4100003432,× Christelliopsis,Miles K.Thomas,genus,Nothogenus between *Christella* and *Menisciopsis*.
 wfo-4100002001,× Glaphyrocyclosorus,Xia Wan & Li Bing Zhang,genus,NA
 wfo-4000000007,Abacopteris,Fée,genus,NA
-wfo-4000001490,Amauropelta,Kunze,genus,NA
+wfo-4000001490,Amauropelta,Kunze,genus,Includes part of *Parathelypteris* (H.Ito) Ching (see also *Coryphopteris*.)
 wfo-4000001505,Amblovenatum,J.P.Roux,genus,NA
 wfo-4000001673,Ampelopteris,Kunze,genus,NA
 wfo-4000007900,Chingia,Holttum,genus,NA
 wfo-4000008133,Christella,H.Lév.,genus,NA
-wfo-4000009422,Coryphopteris,Holttum,genus,NA
+wfo-4000009422,Coryphopteris,Holttum,genus,Includes part of *Parathelypteris* (see also *Amauropelta*.)
 wfo-4000010261,Cyclogramma,Tagawa,genus,NA
 wfo-4000010284,Cyclosorus,Link,genus,NA
 wfo-4000015704,Glaphyropteridopsis,Ching,genus,NA
@@ -302,7 +301,7 @@ wfo-4100000960,Pakau,S.E.Fawc. & A.R.Sm.,genus,NA
 wfo-4000043402,Pelazoneuron,(Holttum) A.R.Sm. & S.E.Fawc.,genus,NA
 wfo-4000030286,Plesioneuron,(Holttum) Holttum,genus,NA
 wfo-4000030435,Pneumatopteris,Nakai,genus,NA
-wfo-4000031222,Pronephrium,C.Presl,genus,NA
+wfo-4000031222,Pronephrium,C.Presl,genus,Includes *Nannothelypteris* Holttum.
 wfo-4000031481,Pseudocyclosorus,Ching,genus,NA
 wfo-4100000964,Reholttumia,S.E.Fawc. & A.R.Sm.,genus,NA
 wfo-4000036004,Sphaerostephanos,J.Sm.,genus,NA
@@ -314,8 +313,8 @@ wfo-4000039168,Trigonospora,Holttum,genus,NA
 wfo-7000000646,Woodsiaceae,Herter,family,NA
 wfo-4000040814,Woodsia,R.Br.,genus,NA
 wfo-7000000055,Athyriaceae,Alston,family,NA
-wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,Nothogenus between *Athyrium* and *Pseudathyrium*
-wfo-4000009334,× Cornoathyrium,Nakaike,genus,Nothogenus between *Athyrium* and *Cornopteris*
+wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,Nothogenus between *Athyrium* and *Pseudathyrium*.
+wfo-4000009334,× Cornoathyrium,Nakaike,genus,Nothogenus between *Athyrium* and *Cornopteris*.
 wfo-4000002164,Anisocampium,C.Presl,genus,NA
 wfo-4000003575,Athyrium,Roth,genus,NA
 wfo-4000009335,Cornopteris,Nakai,genus,NA
@@ -365,9 +364,9 @@ wfo-7000000792,Didymochlaenaceae,Ching ex Li Bing Zhang & Liang Zhang,family,NA
 wfo-4000011627,Didymochlaena,Desv.,genus,NA
 wfo-7000000205,Dryopteridaceae,Herter,family,NA
 wfo-4100004703,Ctenitidoideae,Z.Y.Zuo & Jin Mei Lu,subfamily,NA
-wfo-4000009957,Ctenitis,(C.Chr.) C.Chr.,genus,NA
+wfo-4000009957,Ctenitis,(C.Chr.) C.Chr.,genus,Includes *Atalopteris* Maxon & C.Chr. *Ctenitis* is proposed for conservation against *Atalopteris* [@regalado20243047].
 wfo-6500000507,Dryopteridoideae,B.K.Nayar,subfamily,NA
-wfo-4000012666,× Dryostichum,W.H.Wagner,genus,Nothogenus between *Dryopteris* and *Polystichum*
+wfo-4000012666,× Dryostichum,W.H.Wagner,genus,Nothogenus between *Dryopteris* and *Polystichum*.
 wfo-4000002821,Arachniodes,Blume,genus,NA
 wfo-4000010535,Cyrtomium,C.Presl,genus,NA
 wfo-4000012657,Dryopteris,Adans.,genus,NA
@@ -380,7 +379,7 @@ wfo-4000004901,Bolbitis,Schott,genus,NA
 wfo-4000013129,Elaphoglossum,Schott ex J.Sm.,genus,NA
 wfo-4000022096,Lomagramma,J.Sm.,genus,NA
 wfo-4000024012,Mickelia,"R.C.Moran, Labiak & Sundue",genus,NA
-wfo-4000037784,Teratophyllum,Mett. ex Kuhn,genus,NA
+wfo-4000037784,Teratophyllum,Mett. ex Kuhn,genus,Includes *Arthrobotrya* J.Sm.
 wfo-4100004702,Lastreopsidoideae,Z.Y.Zuo,subfamily,NA
 wfo-4000020709,Lastreopsis,Ching,genus,NA
 wfo-4000023486,Megalastrum,Holttum,genus,NA
@@ -389,7 +388,7 @@ wfo-4000033622,Rumohra,Raddi,genus,NA
 wfo-4100004701,Pleocnemioideae,Z.Y.Zuo,subfamily,NA
 wfo-4000030264,Pleocnemia,C.Presl,genus,NA
 wfo-6500000522,Polybotryoideae,Hong M.Liu & X.C.Zhang,subfamily,NA
-wfo-4100004291,× Cyclobotrya,Engels & Canestraro,genus,Nothogenus between *Cyclodium* and *Polybotrya*
+wfo-4100004291,× Cyclobotrya,Engels & Canestraro,genus,Nothogenus between *Cyclodium* and *Polybotrya*.
 wfo-4000010259,Cyclodium,C.Presl,genus,NA
 wfo-4000023387,Maxonia,C.Chr.,genus,NA
 wfo-4000026714,Olfersia,Raddi,genus,NA
@@ -401,17 +400,17 @@ wfo-7000000344,Lomariopsidaceae,Alston,family,NA
 wfo-4000010271,Cyclopeltis,J.Sm.,genus,NA
 wfo-4000012510,Dracoglossum,Christenh.,genus,NA
 wfo-4000012650,Dryopolystichum,Copel.,genus,NA
-wfo-4000022120,Lomariopsis,Fée,genus,NA
+wfo-4000022120,Lomariopsis,Fée,genus,Includes *Thysanosoria*. *** HAVENT VOTED ON THIS YET
 wfo-7000000411,Nephrolepidaceae,Pic.Serm.,family,NA
 wfo-4000025936,Nephrolepis,Schott,genus,NA
 wfo-7000000917,Arthropteridaceae,"Hong M.Liu, Hovenkamp & H.Schneid.",family,NA
 wfo-4000003177,Arthropteris,J.Sm.,genus,NA
 wfo-7000000601,Tectariaceae,Panigrahi,family,NA
 wfo-4000018845,Hypoderris,R.Br. ex Hook.,genus,NA
-wfo-4000037670,Tectaria,Cav.,genus,NA
+wfo-4000037670,Tectaria,Cav.,genus,Includes *Aenigmopteris* Holttum.
 wfo-4000039293,Triplophyllum,Holttum,genus,NA
 wfo-4100000410,Pteridryaceae,"Li Bing Zhang, X.M.Zhou, Liang Zhang & N.T.Lu",family,NA
-wfo-4001303196,Draconopteris,Li Bing Zhang & Liang Zhang,genus,NA
+wfo-4001303196,Draconopteris,Li Bing Zhang & Liang Zhang,genus,"*Draconopteris* has been conserved with a new type to avoid a confusing set of nomenclatural changes to its sole species and to *Hypoderris nicotianifolia* (Baker) R.C.Moran, Labiak & J.Prado [@rothfels20182579; @turland2024xx]."
 wfo-4000043381,Malaifilix,Li Bing Zhang & Schuettp.,genus,NA
 wfo-4000030730,Polydictyum,C.Presl,genus,NA
 wfo-4000031881,Pteridrys,Christensen & Ching,genus,NA
@@ -426,9 +425,9 @@ wfo-4100001023,Campyloneuroideae,X.C.Zhang & R.Wei,subfamily,NA
 wfo-4000006470,Campyloneurum,C.Presl,genus,NA
 wfo-4000024114,Microgramma,C.Presl,genus,NA
 wfo-4000026148,Niphidium,J.Sm.,genus,NA
-wfo-6500000589,Crypsinoideae,B.K.Nayar,subfamily,NA
-wfo-4000012640,Drynaria,(Bory) J.Sm.,genus,NA
-wfo-4000035000,Selliguea,Bory,genus,NA
+wfo-6500000589,Crypsinoideae,B.K.Nayar,subfamily,"Includes Drynarioideae Crabbe, Jermy & Mickel."
+wfo-4000012640,Drynaria,(Bory) J.Sm.,genus,Includes *Aglaomorpha* Schott. *Drynaria* is conserved against *Aglaomorpha* [@christenhusz20122054; @turland2017xix].
+wfo-4000035000,Selliguea,Bory,genus,"Includes *Arthromeris* (T.Moore) J.Sm., *Gymnogrammitis* Griff., *Paraselliguea* Hovenkamp, and *Polypodiopteris* C.F.Reed."
 wfo-4000037249,Synammia,C.Presl,genus,NA
 wfo-6500000509,Grammitidoideae,Parris & Sundue,subfamily,NA
 wfo-4000000458,Acrosorus,Copel.,genus,NA
@@ -446,7 +445,7 @@ wfo-4000008746,Cochlidium,Kaulf.,genus,NA
 wfo-4000009976,Ctenopterella,Parris,genus,NA
 wfo-4000010822,Dasygrammitis,Parris,genus,NA
 wfo-4100002418,Devolia,"Li Bing Zhang, X.M.Zhou, Jian Jun Yang & Ralf Knapp",genus,NA
-wfo-4000013496,Enterosora,Baker,genus,NA
+wfo-4000013496,Enterosora,Baker,genus,Includes *Zygophlebia* L.E.Bishop.
 wfo-4000043353,Galactodenia,Dundue & Labiak,genus,NA
 wfo-4100002419,Glabrigrammitis,"Li Bing Zhang, X.M.Zhou, Jian Jun Yang & Parris",genus,NA
 wfo-4100003317,Grammitastrum,"(E.Fourn.) Parris, Sundue, Li Bing Zhang & X.M.Zhou",genus,NA
@@ -462,7 +461,7 @@ wfo-4000024828,Moranopteris,R.Y.Hirai & J.Prado,genus,NA
 wfo-4000043387,Mycopteris,Sundue,genus,NA
 wfo-4100003319,Nanogrammitis,"Parris, Li Bing Zhang, X.M.Zhou & Liang Zhang",genus,NA
 wfo-4000043393,Notogrammitis,Parris,genus,NA
-wfo-4000027085,Oreogrammitis,Copel.,genus,NA
+wfo-4000027085,Oreogrammitis,Copel.,genus,Includes *Radiogrammitis* Parris and *Themelium* (T.Moore) Parris.
 wfo-4100003320,Oxygrammitis,Parris & Sundue,genus,NA
 wfo-4100001048,Parrisia,Shalisko & Sundue,genus,NA
 wfo-4000031224,Prosaptia,C.Presl,genus,NA
@@ -477,25 +476,19 @@ wfo-6500000513,Loxogrammoideae,H.Schneid.,subfamily,NA
 wfo-4000011564,Dictymia,J.Sm.,genus,NA
 wfo-4000022340,Loxogramme,(Blume) C.Presl,genus,NA
 wfo-6500000517,Microsoroideae,B.K.Nayar,subfamily,NA
-wfo-4100001071,Goniophlebieae,C.C.Chen & H.Schneid.,tribe,NA
 wfo-4000016002,Goniophlebium,(Blume) C.Presl,genus,NA
-wfo-4100001073,Lecanoptereae,C.C.Chen & H.Schneid.,tribe,NA
 wfo-4100000745,Bosmania,Testo,genus,NA
 wfo-4000020829,Lecanopteris,Reinw.,genus,NA
-wfo-4100004452,Lepisoreae,"Ching ex E.Hennipman, P.Veldhoen & K.U.Kramer",tribe,NA
-wfo-4000021173,Lepisorus,(J.Sm.) Ching,genus,NA
-wfo-5000000563,Microsoreae,V.N.Tu,tribe,NA
+wfo-4000021173,Lepisorus,(J.Sm.) Ching,genus,"Includes *Lemmaphyllum* C.Presl, *Paragramma* (Blume) T.Moore, *Neocheiropteris* Christ, *Neolepisorus* Ching, *Tricholepidium* Ching, and *Lepidomicrosorium* Ching & K.H.Shing."
 wfo-4000021236,Leptochilus,Kaulf.,genus,NA
-wfo-4000024217,Microsorum,Link,genus,Paraphyletic [@testo2019phylogenetic].
+wfo-4000024217,Microsorum,Link,genus,Not monophyletic as currently circumscribed [@testo2019phylogenetic].
 wfo-4000030518,Podosorus,Holttum,genus,NA
-wfo-4100001077,Thylacoptereae,C.C.Chen & H.Schneid.,tribe,NA
 wfo-4000038325,Thylacopteris,Kunze ex J.Sm.,genus,NA
 wfo-6500000521,Platycerioideae,B.K.Nayar,subfamily,NA
 wfo-4001303254,Hovenkampia,Li Bing Zhang & X.M.Zhou,genus,NA
 wfo-4000030087,Platycerium,Desv.,genus,NA
 wfo-4000032323,Pyrrosia,Mirb.,genus,NA
 wfo-6500000523,Polypodioideae,B.K.Nayar,subfamily,NA
-wfo-4100000771,× Phlebosia,Viane & Pompe,genus,NA
 wfo-4000028385,Pecluma,M.G.Price,genus,NA
 wfo-4000029265,Phlebodium,(R.Br.) J.Sm.,genus,NA
 wfo-4000030272,Pleopeltis,Humb. & Bonpl. ex Willd.,genus,NA
