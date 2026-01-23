@@ -1000,7 +1000,7 @@ remove_invalid_issues <- function(issues) {
       status = str_remove_all(status, "\\[|\\]"),
       status = replace_na(status, "TBA")
     ) |>
-    filter(status != "NOT VALID")
+    filter(!status %in% c("NOT VALID", "RETRACTED"))
 }
 
 count_issues <- function(issues) {
