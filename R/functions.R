@@ -1787,7 +1787,7 @@ format_ppg_classification <- function(
     assertr::assert(assertr::not_na, dplyr::everything()) |>
     assertr::assert(assertr::is_uniq, taxonID)
 
-  ppg_tl |>
+  classification_data <- ppg_tl |>
     taxlist::sort_taxa(priority = priority_sort) |>
     taxlist::indented_list(print = FALSE) |>
     tibble::as_tibble() |>
@@ -1797,6 +1797,56 @@ format_ppg_classification <- function(
       scientificName = taxon_name,
       scientificNameAuthorship = author_name,
       taxonRank = level
+    ) |>
+    # Add original order to preserve hierarchy
+    dplyr::mutate(original_order = dplyr::row_number()) |>
+    # Join parent info
+    dplyr::left_join(
+      dplyr::select(ppg, taxonID, parentNameUsageID),
+      by = "taxonID",
+      relationship = "one-to-one"
+    ) |>
+    dplyr::mutate(
+      is_nothogenus = stringr::str_detect(scientificName, "^×")
+    )
+
+  # For genera only: create a sort key that moves nothogenera to end of family
+  genera_data <- classification_data |>
+    dplyr::filter(taxonRank == "genus") |>
+    dplyr::group_by(parentNameUsageID) |>
+    dplyr::mutate(
+      # Within each family, nothogenera get placed after the last regular genus
+      # Use a small offset based on position within nothogenera in this family
+      genus_position = dplyr::row_number(),
+      max_regular_order = max(original_order[!is_nothogenus], na.rm = TRUE),
+      has_nothogenus = any(is_nothogenus),
+      min_nothogenus_pos = dplyr::if_else(
+        has_nothogenus,
+        min(genus_position[is_nothogenus]),
+        NA_real_
+      ),
+      sort_key = dplyr::if_else(
+        is_nothogenus,
+        max_regular_order + (genus_position - min_nothogenus_pos + 1) * 0.1,
+        as.numeric(original_order)
+      )
+    ) |>
+    dplyr::ungroup() |>
+    dplyr::select(taxonID, sort_key)
+
+  # Apply the new sort key and re-order
+  classification_data |>
+    dplyr::left_join(genera_data, by = "taxonID") |>
+    dplyr::mutate(
+      final_order = dplyr::coalesce(sort_key, original_order)
+    ) |>
+    dplyr::arrange(final_order) |>
+    dplyr::select(
+      -parentNameUsageID,
+      -is_nothogenus,
+      -original_order,
+      -sort_key,
+      -final_order
     ) |>
     dplyr::left_join(
       children_taxa_count,
