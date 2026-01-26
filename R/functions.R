@@ -2424,3 +2424,34 @@ check_ppg_classification_changes <- function(
     ) |>
     arrange(desc(needs_attention), genus)
 }
+
+#' Summarize classification check results
+#'
+#' Create a summary of the PPG I vs PPG II classification check,
+#' showing how many genera changed and how many have passed issues.
+#'
+#' @param classification_check Output from check_ppg_classification_changes()
+#' @return List with summary statistics
+summarize_classification_check <- function(classification_check) {
+  require(dplyr)
+
+  list(
+    total_genera = nrow(classification_check),
+    genera_changed = sum(classification_check$classification_changed),
+    genera_with_issues = sum(classification_check$has_passed_issue),
+    genera_needing_attention = sum(classification_check$needs_attention),
+    match_rate = round(
+      sum(
+        classification_check$has_passed_issue &
+          classification_check$classification_changed
+      ) /
+        sum(classification_check$classification_changed) *
+        100,
+      1
+    ),
+    sample_matched = classification_check |>
+      filter(classification_changed, has_passed_issue) |>
+      select(genus, ranks_changed, issue_numbers) |>
+      head(10)
+  )
+}

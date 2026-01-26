@@ -97,7 +97,12 @@ tar_plan(
   classification_check = check_ppg_classification_changes(
     ppg_ii,
     ppg_i,
-    ppg_issues
+    ppg_issues,
+    ppg
+  ),
+  # - Summarize classification check results
+  classification_summary = summarize_classification_check(
+    classification_check
   ),
 
   # Generate figures ----
