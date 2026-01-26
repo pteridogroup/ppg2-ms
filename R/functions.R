@@ -2044,109 +2044,94 @@ ppg_to_wide <- function(
 ) {
   require(dplyr)
   require(tidyr)
-  require(purrr)
 
   # Filter to accepted taxa if requested
   if (accepted_only) {
-    ppg <- ppg |>
+    ppg_data <- ppg |>
       filter(taxonomicStatus == "accepted")
+  } else {
+    ppg_data <- ppg
   }
 
-  # Filter to only ranks we care about
-  ppg_filtered <- ppg |>
-    filter(taxonRank %in% ranks)
-
-  # Build a lookup of taxonID to rank and name
-  taxon_lookup <- ppg_filtered |>
-    select(taxonID, scientificName, taxonRank)
-
-  # Function to get all ancestors of a taxon
-  get_ancestors <- function(taxon_id, ppg_filtered, taxon_lookup) {
-    ancestors <- tibble(rank = character(), name = character())
-    current_id <- taxon_id
-
-    # Add the taxon itself
-    current_taxon <- taxon_lookup |>
-      filter(taxonID == current_id)
-
-    if (nrow(current_taxon) > 0) {
-      ancestors <- bind_rows(
-        ancestors,
-        tibble(
-          rank = current_taxon$taxonRank[1],
-          name = current_taxon$scientificName[1]
-        )
-      )
-    }
-
-    # Walk up the hierarchy
-    while (!is.na(current_id)) {
-      parent_info <- ppg_filtered |>
-        filter(taxonID == current_id) |>
-        select(parentNameUsageID)
-
-      if (nrow(parent_info) == 0 || is.na(parent_info$parentNameUsageID[1])) {
-        break
-      }
-
-      current_id <- parent_info$parentNameUsageID[1]
-
-      # Get parent taxon info
-      parent_taxon <- taxon_lookup |>
-        filter(taxonID == current_id)
-
-      if (nrow(parent_taxon) > 0) {
-        ancestors <- bind_rows(
-          ancestors,
-          tibble(
-            rank = parent_taxon$taxonRank[1],
-            name = parent_taxon$scientificName[1]
-          )
-        )
-      }
-    }
-
-    ancestors
-  }
-
-  # Get the lowest rank to determine which taxa to include as rows
+  # Get the lowest rank (should be "genus")
   lowest_rank <- ranks[length(ranks)]
 
-  # Get all taxa at the lowest rank
-  taxa_at_lowest_rank <- ppg_filtered |>
-    filter(taxonRank == lowest_rank)
+  # Get all unique genera (taxa at the lowest rank, typically genus)
+  # This ensures we only get genus-level taxa, not species
+  genera <- ppg_data |>
+    filter(taxonRank == lowest_rank) |>
+    group_by(scientificName) |>
+    slice(1) |>
+    ungroup() |>
+    select(taxonID, genus = scientificName)
 
-  # For each taxon at the lowest rank, get its full hierarchy
-  result <- taxa_at_lowest_rank |>
-    select(taxonID, scientificName) |>
-    mutate(
-      hierarchy = map(
-        taxonID,
-        ~ get_ancestors(.x, ppg_filtered, taxon_lookup)
-      )
-    ) |>
-    unnest(hierarchy) |>
-    select(-taxonID) |>
-    pivot_wider(
-      names_from = rank,
-      values_from = name,
-      values_fn = first
-    )
+  # For each rank, build a lookup table of taxonID -> name at that rank
+  # by walking up parent hierarchy
+  rank_lookups <- list()
 
-  # Ensure all rank columns exist (even if empty) and are in the
-  # correct order
-  for (rank in ranks) {
-    if (!rank %in% names(result)) {
-      result[[rank]] <- NA_character_
+  for (rank_name in ranks) {
+    # Get all taxa at this rank
+    taxa_at_rank <- ppg_data |>
+      filter(taxonRank == rank_name) |>
+      select(taxonID, rank_value = scientificName)
+
+    # Build a mapping: for each taxonID in ppg, what is its ancestor at
+    # this rank?
+    # Walk up to 10 levels (should be enough for any taxonomy)
+    current_ids <- ppg_data |>
+      select(original_id = taxonID, current_id = taxonID) |>
+      mutate(rank_value = NA_character_)
+
+    for (i in 1:10) {
+      # Check if current_id is at the target rank
+      current_ids <- current_ids |>
+        left_join(
+          taxa_at_rank,
+          by = c("current_id" = "taxonID"),
+          suffix = c("", "_new")
+        )
+
+      # If we found a rank value, use it
+      current_ids <- current_ids |>
+        mutate(
+          rank_value = coalesce(rank_value, rank_value_new)
+        ) |>
+        select(-rank_value_new)
+
+      # Get parent for those that don't have rank_value yet
+      current_ids <- current_ids |>
+        left_join(
+          select(ppg_data, current_id = taxonID, parent_id = parentNameUsageID),
+          by = "current_id"
+        ) |>
+        mutate(
+          current_id = if_else(is.na(rank_value), parent_id, current_id)
+        ) |>
+        select(original_id, current_id, rank_value)
+
+      # If all have rank_value or no parents left, stop
+      if (all(is.na(current_ids$current_id) | !is.na(current_ids$rank_value))) {
+        break
+      }
     }
+
+    # Store the final mapping
+    rank_lookups[[rank_name]] <- current_ids |>
+      select(taxonID = original_id, !!rank_name := rank_value) |>
+      distinct()
   }
 
-  # Reorder columns: all ranks in order
-  result <- result |>
-    select(all_of(ranks), everything()) |>
-    select(-scientificName)
+  # Join all rank lookups to genera
+  result <- genera
+  for (rank_name in ranks[ranks != "genus"]) {
+    result <- result |>
+      left_join(rank_lookups[[rank_name]], by = "taxonID")
+  }
 
-  result
+  # Clean up and select only rank columns (genus already exists)
+  result |>
+    select(all_of(ranks)) |>
+    distinct()
 }
 
 #' Check if PPG I to PPG II Classification Changes Have Passed Issues
