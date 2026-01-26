@@ -1980,3 +1980,10 @@ check_ppg_i_taxa_accounted <- function(
 
   invisible(NULL)
 }
+
+check_issue_type_count <- function(ppg_issues, ppg_issues_count) {
+  ppg_issues |>
+    filter(str_detect(status, "^PASSED$")) |>
+    anti_join(ppg_issues_count, by = "number") %>%
+    verify(nrow(.) == 0)
+}

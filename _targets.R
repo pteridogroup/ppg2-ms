@@ -46,13 +46,19 @@ tar_plan(
   voting_results = fetch_voting_results(ppg_issues$number),
 
   # - Generate initial automatic count of isses by type (sink/split)
-  ppg_issues_count_raw = count_issues(ppg_issues),
+  ppg_issue_count_raw = count_issues(ppg_issues),
 
   # - Load manual issues count by type (sink/split)
   tar_file_read(
     ppg_issues_count,
     "data/ppg_issues_edited.csv",
     read_csv(!!.x)
+  ),
+
+  # - Check that all passed issues have been included in issue type count
+  issue_type_count_check = check_issue_type_count(
+    ppg_issues,
+    ppg_issues_count
   ),
 
   # Make family-level tree ----
