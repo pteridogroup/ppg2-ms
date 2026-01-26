@@ -29,7 +29,12 @@ tar_plan(
     ppg_repo_url,
     "https://github.com/pteridogroup/ppg/",
   ),
-  ppg_issues_raw = fetch_issues(ppg_repo_url),
+
+  tar_target(
+    ppg_issues_raw,
+    fetch_issues(ppg_repo_url),
+    cue = tar_cue("always")
+  ),
 
   # - Remove invalid and TBD issues
   ppg_issues = remove_invalid_issues(ppg_issues_raw),
