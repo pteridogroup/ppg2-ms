@@ -987,7 +987,7 @@ fetch_voting_results <- function(issue_num) {
 #' status designation. Valid statuses are "PASSED" or "NOT PASSED", which
 #' should appear in square brackets at the end of the issue title (e.g.,
 #' "[PASSED]").
-#' 
+#'
 #' Also removes issues that have not been voted on yet ('TBD' issues).
 #'
 #' @param issues A data frame containing GitHub issue data, expected to have
@@ -1986,4 +1986,373 @@ check_issue_type_count <- function(ppg_issues, ppg_issues_count) {
     filter(str_detect(status, "^PASSED$")) |>
     anti_join(ppg_issues_count, by = "number") %>%
     verify(nrow(.) == 0)
+}
+
+#' Convert PPG from Long Format to Wide Hierarchical Format
+#'
+#' Transforms PPG II Darwin Core taxonomic data from long format (where
+#' hierarchy is encoded via parentNameUsageID) to wide format with
+#' separate columns for each taxonomic rank. This enables direct
+#' comparison with PPG I data.
+#'
+#' @param ppg A data frame in Darwin Core format containing PPG
+#'   taxonomic data with columns taxonID, scientificName, taxonRank,
+#'   parentNameUsageID, and taxonomicStatus. Typically the output of
+#'   clean_ppg().
+#' @param ranks Character vector of taxonomic ranks to include as
+#'   columns in wide format, in hierarchical order from highest to
+#'   lowest. Default is c("class", "subclass", "order", "suborder",
+#'   "family", "subfamily", "genus").
+#' @param accepted_only Logical; if TRUE (default), only include
+#'   accepted taxa. If FALSE, include both accepted and synonym taxa.
+#'
+#' @return A tibble in wide format with one row per taxon and columns
+#'   for each specified rank, plus additional columns like notes. Taxa
+#'   are filtered to only include those matching the lowest specified
+#'   rank.
+#'
+#' @details The function builds the hierarchical structure by
+#'   traversing the parent-child relationships encoded in
+#'   parentNameUsageID. It creates a lookup table mapping each taxon
+#'   to its ancestors at each taxonomic rank, then pivots this to wide
+#'   format. Only taxa at the lowest specified rank (typically genus)
+#'   are returned as rows.
+#'
+#' @examples
+#' \dontrun{
+#' # Convert PPG to wide format matching PPG I structure
+#' ppg_wide <- ppg_to_wide(ppg)
+#'
+#' # Include species and subspecies ranks
+#' ppg_wide_species <- ppg_to_wide(
+#'   ppg,
+#'   ranks = c("class", "order", "family", "genus", "species")
+#' )
+#' }
+ppg_to_wide <- function(
+  ppg,
+  ranks = c(
+    "class",
+    "subclass",
+    "order",
+    "suborder",
+    "family",
+    "subfamily",
+    "genus"
+  ),
+  accepted_only = TRUE
+) {
+  require(dplyr)
+  require(tidyr)
+  require(purrr)
+
+  # Filter to accepted taxa if requested
+  if (accepted_only) {
+    ppg <- ppg |>
+      filter(taxonomicStatus == "accepted")
+  }
+
+  # Filter to only ranks we care about
+  ppg_filtered <- ppg |>
+    filter(taxonRank %in% ranks)
+
+  # Build a lookup of taxonID to rank and name
+  taxon_lookup <- ppg_filtered |>
+    select(taxonID, scientificName, taxonRank)
+
+  # Function to get all ancestors of a taxon
+  get_ancestors <- function(taxon_id, ppg_filtered, taxon_lookup) {
+    ancestors <- tibble(rank = character(), name = character())
+    current_id <- taxon_id
+
+    # Add the taxon itself
+    current_taxon <- taxon_lookup |>
+      filter(taxonID == current_id)
+
+    if (nrow(current_taxon) > 0) {
+      ancestors <- bind_rows(
+        ancestors,
+        tibble(
+          rank = current_taxon$taxonRank[1],
+          name = current_taxon$scientificName[1]
+        )
+      )
+    }
+
+    # Walk up the hierarchy
+    while (!is.na(current_id)) {
+      parent_info <- ppg_filtered |>
+        filter(taxonID == current_id) |>
+        select(parentNameUsageID)
+
+      if (nrow(parent_info) == 0 || is.na(parent_info$parentNameUsageID[1])) {
+        break
+      }
+
+      current_id <- parent_info$parentNameUsageID[1]
+
+      # Get parent taxon info
+      parent_taxon <- taxon_lookup |>
+        filter(taxonID == current_id)
+
+      if (nrow(parent_taxon) > 0) {
+        ancestors <- bind_rows(
+          ancestors,
+          tibble(
+            rank = parent_taxon$taxonRank[1],
+            name = parent_taxon$scientificName[1]
+          )
+        )
+      }
+    }
+
+    ancestors
+  }
+
+  # Get the lowest rank to determine which taxa to include as rows
+  lowest_rank <- ranks[length(ranks)]
+
+  # Get all taxa at the lowest rank
+  taxa_at_lowest_rank <- ppg_filtered |>
+    filter(taxonRank == lowest_rank)
+
+  # For each taxon at the lowest rank, get its full hierarchy
+  result <- taxa_at_lowest_rank |>
+    select(taxonID, scientificName) |>
+    mutate(
+      hierarchy = map(
+        taxonID,
+        ~ get_ancestors(.x, ppg_filtered, taxon_lookup)
+      )
+    ) |>
+    unnest(hierarchy) |>
+    select(-taxonID) |>
+    pivot_wider(
+      names_from = rank,
+      values_from = name,
+      values_fn = first
+    )
+
+  # Ensure all rank columns exist (even if empty) and are in the
+  # correct order
+  for (rank in ranks) {
+    if (!rank %in% names(result)) {
+      result[[rank]] <- NA_character_
+    }
+  }
+
+  # Reorder columns: all ranks in order
+  result <- result |>
+    select(all_of(ranks), everything()) |>
+    select(-scientificName)
+
+  result
+}
+
+#' Check if PPG I to PPG II Classification Changes Have Passed Issues
+#'
+#' Compares classification changes between PPG I and PPG II at the genus
+#' level and verifies whether each change has a corresponding GitHub
+#' issue that passed voting. This function helps ensure that all
+#' taxonomic changes are properly documented and approved.
+#'
+#' @param ppg_ii A data frame containing PPG II data in wide format with
+#'   columns for taxonomic ranks (class, subclass, order, suborder,
+#'   family, subfamily, genus). Typically the output of ppg_to_wide().
+#' @param ppg_i A data frame containing PPG I data with columns for
+#'   taxonomic ranks (class, order, suborder, family, subfamily, genus).
+#' @param ppg_issues A data frame containing GitHub issue data with
+#'   columns: number, title (containing [PASSED] for passed issues),
+#'   name (taxon name), and rank (taxonomic rank).
+#' @param ranks Character vector of ranks to compare. Default is
+#'   c("class", "subclass", "order", "suborder", "family", "subfamily").
+#'
+#' @return A tibble with columns:
+#'   \describe{
+#'     \item{genus}{Genus name}
+#'     \item{classification_changed}{Logical; TRUE if any rank changed}
+#'     \item{ranks_changed}{Character; which ranks changed}
+#'     \item{has_passed_issue}{Logical; TRUE if genus has a passed
+#'       issue}
+#'     \item{issue_numbers}{Character; comma-separated issue numbers}
+#'     \item{needs_attention}{Logical; TRUE if changed but no passed
+#'       issue}
+#'     \item{*_ii}{PPG II values for each rank}
+#'     \item{*_i}{PPG I values for each rank}
+#'   }
+#'
+#' @details The function performs a full join of PPG I and PPG II data
+#'   by genus, then identifies which ranks have changed. It cross-
+#'   references these changes with passed GitHub issues to flag any
+#'   changes lacking proper documentation. New genera in PPG II are
+#'   expected to have passed issues.
+#'
+#' @examples
+#' \dontrun{
+#' # Convert PPG II to wide format
+#' ppg_wide <- ppg_to_wide(ppg)
+#'
+#' # Check changes
+#' changes <- check_ppg_classification_changes(
+#'   ppg_wide,
+#'   ppg_i,
+#'   ppg_issues
+#' )
+#'
+#' # Find genera that need attention
+#' changes |> filter(needs_attention)
+#' }
+check_ppg_classification_changes <- function(
+  ppg_ii,
+  ppg_i,
+  ppg_issues,
+  ranks = c("class", "subclass", "order", "suborder", "family", "subfamily")
+) {
+  require(dplyr)
+  require(tidyr)
+  require(stringr)
+
+  # Prepare PPG I data: add _i suffix to rank columns
+  ppg_i_comp <- ppg_i |>
+    select(all_of(c(ranks, "genus"))) |>
+    rename_with(
+      ~ paste0(.x, "_i"),
+      .cols = -genus
+    )
+
+  # Prepare PPG II data: add _ii suffix to rank columns
+  ppg_ii_comp <- ppg_ii |>
+    select(all_of(c(ranks, "genus"))) |>
+    rename_with(
+      ~ paste0(.x, "_ii"),
+      .cols = -genus
+    )
+
+  # Get passed issues for all ranks (not just genus)
+  # We'll check if the taxon name matches the genus OR any of the
+  # higher ranks that changed
+  passed_issues_all <- ppg_issues |>
+    filter(str_detect(status, "^PASSED$")) |>
+    mutate(
+      # Standardize rank names
+      rank = str_to_lower(rank),
+      # Clean up taxon names: remove 'and', commas, normalize spacing
+      name = str_remove_all(name, regex("and|,", ignore_case = TRUE)) |>
+        str_squish()
+    ) |>
+    # Separate multiple taxa into individual rows
+    separate_rows(name, sep = "\\s+") |>
+    mutate(
+      # Remove × prefix from nothogenera
+      name = str_remove(name, "^×") |>
+        str_trim()
+    ) |>
+    filter(name != "") |>
+    select(number, rank, name) |>
+    distinct()
+
+  # Join and compare
+  result <- full_join(ppg_ii_comp, ppg_i_comp, by = "genus")
+
+  # Check each rank for changes - create a helper function
+  check_rank_changed <- function(df, rank) {
+    ii_col <- paste0(rank, "_ii")
+    i_col <- paste0(rank, "_i")
+
+    # Extract the columns
+    ii_val <- df[[ii_col]]
+    i_val <- df[[i_col]]
+
+    # Consider it changed if:
+    # - One is NA and the other isn't, OR
+    # - Both are non-NA but values differ
+    changed <- (is.na(ii_val) != is.na(i_val)) |
+      (!is.na(ii_val) & !is.na(i_val) & ii_val != i_val)
+
+    changed
+  }
+
+  # Create change indicator columns for each rank
+  for (rank in ranks) {
+    result[[paste0(rank, "_changed")]] <-
+      check_rank_changed(result, rank)
+  }
+
+  # Identify which ranks changed
+  rank_change_cols <- paste0(ranks, "_changed")
+  result <- result |>
+    mutate(
+      classification_changed = rowSums(
+        pick(all_of(rank_change_cols)),
+        na.rm = TRUE
+      ) >
+        0,
+      ranks_changed = pmap_chr(
+        pick(all_of(rank_change_cols)),
+        function(...) {
+          vals <- list(...)
+          changed <- ranks[unlist(vals)]
+          if (length(changed) == 0) {
+            return(NA_character_)
+          }
+          paste(changed, collapse = ", ")
+        }
+      )
+    ) |>
+    select(-all_of(rank_change_cols))
+
+  # Helper function to find matching issues for a single genus
+  find_matching_issues <- function(genus_val, rank_cols, issues_df) {
+    # Build list of taxa to check
+    taxa_to_check <- c(genus_val)
+
+    # Add all rank values (both _ii and _i)
+    for (rank in ranks) {
+      ii_val <- rank_cols[[paste0(rank, "_ii")]]
+      i_val <- rank_cols[[paste0(rank, "_i")]]
+      if (!is.na(ii_val)) {
+        taxa_to_check <- c(taxa_to_check, ii_val)
+      }
+      if (!is.na(i_val)) taxa_to_check <- c(taxa_to_check, i_val)
+    }
+
+    taxa_to_check <- unique(taxa_to_check)
+
+    # Find matching issues
+    matches <- issues_df |>
+      filter(name %in% taxa_to_check)
+
+    if (nrow(matches) > 0) {
+      paste(unique(matches$number), collapse = ", ")
+    } else {
+      NA_character_
+    }
+  }
+
+  # Apply the function to each row
+  result <- result |>
+    rowwise() |>
+    mutate(
+      issue_numbers = find_matching_issues(
+        genus,
+        pick(everything()),
+        passed_issues_all
+      ),
+      has_passed_issue = !is.na(issue_numbers),
+      needs_attention = classification_changed & !has_passed_issue
+    ) |>
+    ungroup()
+
+  # Reorder columns for readability
+  result |>
+    select(
+      genus,
+      classification_changed,
+      ranks_changed,
+      has_passed_issue,
+      issue_numbers,
+      needs_attention,
+      everything()
+    ) |>
+    arrange(desc(needs_attention), genus)
 }

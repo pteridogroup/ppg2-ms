@@ -89,6 +89,17 @@ tar_plan(
   ppg_2_taxa_count = count_ppg2_taxa(ppg, exclude_hybrids = TRUE),
   ppg_i_taxa_count = count_ppgi(ppg_i),
 
+  # Compare PPG I and PPG II ----
+  # - Convert PPG II to wide hierarchical format
+  ppg_ii = ppg_to_wide(ppg),
+  # - Check for classification changes and verify they have passed
+  #   issues
+  classification_check = check_ppg_classification_changes(
+    ppg_ii,
+    ppg_i,
+    ppg_issues
+  ),
+
   # Generate figures ----
 
   # - proposal count
