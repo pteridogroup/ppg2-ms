@@ -1397,64 +1397,8 @@ references:
   language: English
   page: 830–836
   title: >-
-    Classification of trichome types within species of the water fern Salvinia,
-    and ontogeny of the egg-beater trichomes
-  type: article-journal
-  URL: http://www.nrcresearchpress.com/doi/10.1139/B09-048
-  volume: '87'
-
-- id: barthlott2009classificationa
-  abstract: >-
-    Abstract: Species of the water fern Salvinia are well known for their
-    extremely water-repellent floating leaves. The architecture of Salvinia
-    surfaces is of great interest for biomimetic applications, because submersed
-    in water, they retain air films for a long period. Knowledge of these
-    surfaces is also important for pest control, since one species (Salvinia
-    molesta D.S. Mitch.) is a pantropic invasive aquatic weed. The
-    micromorphology of the leaf surfaces of six representative species has been
-    characterized by scanning electron microscopy. Based on their morphology,
-    the trichomes are classified in four types, named after the typical species.
-    Among the species examined, numbers, distribution, and sizes of the trichome
-    types vary significantly. The simplest types, the Cucullata trichomes, are
-    multicellular, uniseriate, and up to 800 mm high. Groups of two
-    multicellular, uniseriate trichomes are described as the Oblongifolia
-    trichomes. The Natans trichomes are grouped as four multicellular,
-    uniseriate trichomes. The Molesta trichomes are composed of four trichomes,
-    which are connected by the second last apical cells of the trichome. The
-    ontogeny of the Molesta trichome groups was puzzling and resulted in various
-    names being applied to them (‘‘Kr¨onchenhaare,’’ ‘‘egg-beater,’’ or
-    ‘‘coroniform’’ hairs). Their unique development from four solitary
-    uniseriate trichomes to groups of four connected trichomes is described in
-    detail.
-  accessed:
-    - year: 2025
-      month: 12
-      day: 8
-  author:
-    - family: Barthlott
-      given: Wilhelm
-    - family: Wiersch
-      given: Sabine
-    - family: Čolić
-      given: Zdravko
-    - family: Koch
-      given: Kerstin
-  citation-key: barthlott2009classificationa
-  container-title: Botany
-  container-title-short: Botany
-  DOI: 10.1139/B09-048
-  ISSN: 1916-2790, 1916-2804
-  issue: '9'
-  issued:
-    - year: 2009
-      month: 9
-  language: en
-  license: http://www.nrcresearchpress.com/page/about/CorporateTextAndDataMining
-  page: 830–836
-  source: DOI.org (Crossref)
-  title: >-
-    Classification of trichome types within species of the water fern *Salvinia*
-    , and ontogeny of the egg-beater trichomes
+    Classification of trichome types within species of the water fern
+    *Salvinia*, and ontogeny of the egg-beater trichomes
   type: article-journal
   URL: http://www.nrcresearchpress.com/doi/10.1139/B09-048
   volume: '87'
@@ -5681,6 +5625,21 @@ references:
     - year: 2013
   page: '37'
   title: 'Alien species: Monster fern makes IUCN invader list'
+  type: article-journal
+  volume: '498'
+
+- id: courchamp2013monster
+  author:
+    - family: Courchamp
+      given: Franck
+  citation-key: courchamp2013monster
+  issue: '7452'
+  issued:
+    - year: 2013
+  language: en
+  page: 37--37
+  source: Zotero
+  title: Monster fern makes IUCN invader list
   type: article-journal
   volume: '498'
 
@@ -13347,6 +13306,51 @@ references:
     fern Asplenium majoricum
   type: article-journal
 
+- id: hussner2012alien
+  abstract: >-
+    Alien aquatic plant species cause serious ecological and economic impacts to
+    European freshwater ecosystems. This study presents a comprehensive overview
+    of all alien aquatic plants in Europe, their places of origin and their
+    distribution within the 46 European countries. In total, 96 aquatic species
+    from 30 families have been reported as aliens from at least one European
+    country. Most alien aquatic plants are native to Northern America, followed
+    by Asia and Southern America. Elodea canadensis is the most widespread alien
+    aquatic plant in Europe, reported from 41 European countries. Azolla
+    ﬁliculoides ranks second (25), followed by Vallisneria spiralis (22) and
+    Elodea nuttallii (20). The highest number of alien aquatic plant species has
+    been found in Italy and France (34 species), followed by Germany (27),
+    Belgium and Hungary (both 26) and the Netherlands (24). Even though the
+    number of alien aquatic plants seems relatively small, the European and
+    Mediterranean Plant Protection Organization (EPPO, http://www.eppo.org) has
+    listed 18 of these species as invasive or potentially invasive within the
+    EPPO region. As ornamental trade has been regarded as the major pathway for
+    the introduction of alien aquatic plants, trading bans seem to be the most
+    eﬀective option to reduce the risk of further unintended entry of alien
+    aquatic plants into Europe.
+  accessed:
+    - year: 2026
+      month: 1
+      day: 23
+  author:
+    - family: Hussner
+      given: A
+  citation-key: hussner2012alien
+  container-title: Weed Research
+  container-title-short: Weed Research
+  DOI: 10.1111/j.1365-3180.2012.00926.x
+  ISSN: 0043-1737, 1365-3180
+  issue: '4'
+  issued:
+    - year: 2012
+      month: 8
+  language: en
+  page: 297–306
+  source: DOI.org (Crossref)
+  title: Alien aquatic plant species in European countries
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3180.2012.00926.x
+  volume: '52'
+
 - id: imperato1991new
   author:
     - family: Imperato
@@ -14994,6 +14998,42 @@ references:
     formation
   type: article-journal
   volume: '6'
+
+- id: kay2001mail
+  abstract: >-
+    Aquatic and wetland weeds pose serious threats to the freshwater resources
+    of the United States. Essentially unregulated sale of plants for aquarium
+    and ornamental pool use has resulted in the recent introduction and spread
+    of several highly invasive weeds, including giant salvinia. This problem has
+    been exacerbated during the past few years by mail-order and e-commerce. The
+    objective of this study was to examine mail order and the internet as
+    sources for sale of invasive aquatic weeds, with primary emphasis on the
+    Internet. An online search was conducted using the search engine Yahoo™.
+    Data were collected on twelve of the most common and highly invasive weeds
+    sold by the industry. The data from the ﬁrst 100 hits were grouped into
+    regulatory, educational, commercial, hobbyist, and foreign sites.
+    Essentially every aquatic or wetland plant listed in the United States as
+    either a Federal Noxious Weed or as a noxious weed in one or more states was
+    found. Twelve highly invasive plants intentionally sold by the wetland
+    nurseries and water garden dealerships were found listed for sale by sites
+    throughout the United States and internationally. This study shows that
+    stronger enforcement of laws and regulations and an intensive education and
+    outreach effort are needed to prevent further introductions of invasive
+    weeds through the aquatic and wetland plant industry.
+  author:
+    - family: Kay
+      given: Stratford H
+    - family: Hoyle
+      given: Steve T
+  citation-key: kay2001mail
+  issued:
+    - year: 2001
+  language: en
+  page: 88--91
+  source: Zotero
+  title: Mail order, the internet, and invasive aquatic weeds
+  type: article-journal
+  volume: '39'
 
 - id: ke2022systematics
   abstract: >-
@@ -17726,6 +17766,36 @@ references:
 
 - id: lemon1997shoot
   accessed:
+    - year: 2026
+      month: 1
+      day: 23
+  author:
+    - family: Lemon
+      given: Gordon D.
+    - family: Posluszny
+      given: Usher
+  citation-key: lemon1997shoot
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/297481
+  ISSN: 1058-5893, 1537-5315
+  issue: '6'
+  issued:
+    - year: 1997
+      month: 11
+  language: en
+  page: 693–703
+  source: DOI.org (Crossref)
+  title: >-
+    Shoot morphology and organogenesis of the aquatic floating fern *Salvinia
+    molesta* D. S. Mitchell, examined with the aid of laser scanning confocal
+    microscopy
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/10.1086/297481
+  volume: '158'
+
+- id: lemon1997shoota
+  accessed:
     - year: 2025
       month: 12
       day: 8
@@ -17734,7 +17804,7 @@ references:
       given: Gordon D.
     - family: Posluszny
       given: Usher
-  citation-key: lemon1997shoot
+  citation-key: lemon1997shoota
   container-title: International Journal of Plant Sciences
   container-title-short: International Journal of Plant Sciences
   DOI: 10.1086/297481
