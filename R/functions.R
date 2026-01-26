@@ -32,6 +32,7 @@ clean_ppg <- function(ppg_raw) {
     # Remove bad taxa
     filter(
       # Duplicate of Selaginella sanguinolenta (L.) Spring
+
       # in different publication
       taxonID != "wfo-0001114160"
     ) |>
@@ -986,6 +987,8 @@ fetch_voting_results <- function(issue_num) {
 #' status designation. Valid statuses are "PASSED" or "NOT PASSED", which
 #' should appear in square brackets at the end of the issue title (e.g.,
 #' "[PASSED]").
+#' 
+#' Also removes issues that have not been voted on yet ('TBD' issues).
 #'
 #' @param issues A data frame containing GitHub issue data, expected to have
 #'   at least a `title` column containing the issue title and a `number`
@@ -998,9 +1001,9 @@ remove_invalid_issues <- function(issues) {
     mutate(
       status = str_extract(title, "\\[([^\\]]+)\\]$"),
       status = str_remove_all(status, "\\[|\\]"),
-      status = replace_na(status, "TBA")
+      status = replace_na(status, "TBD")
     ) |>
-    filter(!status %in% c("NOT VALID", "RETRACTED"))
+    filter(!status %in% c("NOT VALID", "RETRACTED", "TBD"))
 }
 
 count_issues <- function(issues) {
@@ -1388,11 +1391,10 @@ make_issues_plot <- function(ppg_issues) {
     scale_fill_manual(
       values = c(
         "passed" = okabe_ito_cols[["bluishgreen"]],
-        "not_passed" = okabe_ito_cols[["vermillion"]],
-        "under_vote" = okabe_ito_cols[["skyblue"]]
+        "not_passed" = okabe_ito_cols[["vermillion"]]
       ),
-      breaks = c("passed", "not_passed", "under_vote"),
-      labels = c("Passed", "Not passed", "TBD")
+      breaks = c("passed", "not_passed"),
+      labels = c("Passed", "Not passed")
     ) +
     scale_x_date(
       date_labels = "%Y-%m",

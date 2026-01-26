@@ -31,7 +31,7 @@ tar_plan(
   ),
   ppg_issues_raw = fetch_issues(ppg_repo_url),
 
-  # - Remove invalid issues
+  # - Remove invalid and TBD issues
   ppg_issues = remove_invalid_issues(ppg_issues_raw),
 
   # - Get github user names of commenters for each valid issue
