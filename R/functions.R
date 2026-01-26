@@ -2191,6 +2191,7 @@ check_ppg_classification_changes <- function(
   ppg_ii,
   ppg_i,
   ppg_issues,
+  ppg = NULL,
   ranks = c("class", "subclass", "order", "suborder", "family", "subfamily")
 ) {
   require(dplyr)
@@ -2206,7 +2207,20 @@ check_ppg_classification_changes <- function(
     )
 
   # Prepare PPG II data: add _ii suffix to rank columns
-  ppg_ii_comp <- ppg_ii |>
+  # For genera that are in PPG I but not in ppg_ii (because they're now
+  # synonyms), add them with all NA values
+  genera_in_i_not_in_ii <- ppg_i_comp |>
+    filter(!genus %in% ppg_ii$genus) |>
+    pull(genus)
+
+  # Create rows for these synonym genera with NA for all ranks
+  synonym_genera <- tibble(genus = genera_in_i_not_in_ii)
+  for (rank in ranks) {
+    synonym_genera[[rank]] <- NA_character_
+  }
+
+  # Combine accepted genera from ppg_ii with synonym genera
+  ppg_ii_comp <- bind_rows(ppg_ii, synonym_genera) |>
     select(all_of(c(ranks, "genus"))) |>
     rename_with(
       ~ paste0(.x, "_ii"),
@@ -2228,8 +2242,8 @@ check_ppg_classification_changes <- function(
     # Separate multiple taxa into individual rows
     separate_rows(name, sep = "\\s+") |>
     mutate(
-      # Remove × prefix from nothogenera
-      name = str_remove(name, "^×") |>
+      # Remove × or x prefix from nothogenera
+      name = str_remove(name, "^[×x]") |>
         str_trim()
     ) |>
     filter(name != "") |>
@@ -2287,11 +2301,44 @@ check_ppg_classification_changes <- function(
     select(-all_of(rank_change_cols))
 
   # Helper function to find matching issues for a single genus
-  find_matching_issues <- function(genus_val, rank_cols, issues_df) {
+  find_matching_issues <- function(
+    genus_val,
+    rank_cols,
+    issues_df,
+    ppg_data = NULL
+  ) {
     # Build list of taxa to check, removing × prefix to match issue
     # names (which have × removed during parsing)
     genus_clean <- str_remove(genus_val, "^×") |> str_trim()
     taxa_to_check <- c(genus_clean)
+
+    # If ppg_data provided, check if this genus is a synonym and get its
+    # accepted name
+    if (!is.null(ppg_data)) {
+      genus_record <- ppg_data |>
+        filter(
+          scientificName == genus_val,
+          taxonRank == "genus"
+        ) |>
+        slice(1)
+
+      if (
+        nrow(genus_record) > 0 &&
+          genus_record$taxonomicStatus == "synonym" &&
+          !is.na(genus_record$acceptedNameUsageID)
+      ) {
+        # Look up the accepted genus name
+        accepted_record <- ppg_data |>
+          filter(taxonID == genus_record$acceptedNameUsageID) |>
+          slice(1)
+
+        if (nrow(accepted_record) > 0) {
+          accepted_name <- str_remove(accepted_record$scientificName, "^×") |>
+            str_trim()
+          taxa_to_check <- c(taxa_to_check, accepted_name)
+        }
+      }
+    }
 
     # Add all rank values (both _ii and _i)
     for (rank in ranks) {
@@ -2356,7 +2403,8 @@ check_ppg_classification_changes <- function(
       issue_numbers = find_matching_issues(
         genus,
         pick(everything()),
-        passed_issues_all
+        passed_issues_all,
+        ppg
       ),
       has_passed_issue = !is.na(issue_numbers),
       needs_attention = classification_changed & !has_passed_issue
