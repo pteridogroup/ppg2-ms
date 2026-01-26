@@ -134,7 +134,7 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 {{< pagebreak >}}
 
 Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@li2025fernsa].
-Our understanding of fern and lycophyte relationships was revolutionized by molecular phylogenetics, which demonstrated that horsetails and whisk ferns are nested within ferns [@pryer2001horsetails] and further that ferns are sister to seed plants and only distantly related to the lycophytes.
+Our understanding of fern and lycophyte relationships was revolutionized by molecular phylogenetics, which demonstrated that horsetails and whisk ferns are nested within ferns and further that ferns are sister to seed plants and only distantly related to the lycophytes [@pryer2001horsetails].
 @smith2006classification published the first higher-level  fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due to their drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community [@schuettpelz2018are].
 The next widely accepted classification was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
@@ -168,17 +168,17 @@ Following the discussion period, voting on proposals was conducted via Google Fo
 For each proposal, PPG members could choose to agree, disagree, or abstain.
 Proposals receiving 2/3 agreement passed and were recognized by PPG.
 All taxonomic discussions and results of voting are available for anybody to access on our GitHub repository.
-The discussion and voting process ran continuously, with a ballot issued monthly.
+The proposal and discussion process ran continuously, with a ballot issued monthly.
 
 ### Database management
 
 To maintain taxonomic data, PPG uses World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://wfoplantlist.org>).
-World Flora Online relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs) to curate the taxonomy of specific plant groups.
+World Flora Online relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs), to curate the taxonomy of specific plant groups.
 PPG is the TEN for ferns and lycophytes.
 As such, all taxonomic decisions made by PPG also become the taxonomy available in WFO.
 
 The database editor provided by WFO, called Rhakhis (<https://list.worldfloraonline.org/rhakhis/ui>), is taxonomy-aware---that is, it enforces taxonomic rules, for example, that synonyms must map to an accepted name and not another synonym---and provides full functionality for tracking synonymy relationships, publication and author data, and nomenclatural status, among other taxonomically relevant information.
-Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in real-time, with no need for synchronizing database files across multiple machines.
+Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in realtime, with no need for synchronizing database files across multiple machines.
 
 The initial version of the taxonomic data was based on a copy of the World Ferns database provided by Michael Hassler (<https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list>), which was imported into Rhakhis and edited to reflect accepted taxonomic proposals from our voting process.
 
@@ -196,7 +196,7 @@ This work will continue indefinitely with the publication of PPG II.
 Starting with this version of the PPG classification (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at the species level or below, the middle digit indicates changes at the genus level or higher, and the largest digit indicates major changes (e.g., major rearrangements of the taxonomic hierarchy).
 New versions will be issued as needed, for example following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open].
 We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
-This will greatly benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the version system, the ability to unambiguously reference a specific snapshot of the classification.
+This will greatly benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the versioning system, the ability to unambiguously reference a specific snapshot of the classification.
 
 ## Results
 
@@ -333,8 +333,8 @@ nchild <- children_tally %>%
   split(.$taxon_name)
 ```
 
-The general trend has been an increase in genus number.
-This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. 30), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. 33), and Blechnaceae (`r nchild$Blechnaceae$n_genera` vs. 18; each comparison is number of genera recognized in PPG II vs. PPG I).
+The general trend, in comparison to PPG I, has been an increase in genus number.
+This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. 30), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. 33), and Blechnaceae (`r nchild$Blechnaceae$n_genera` vs. 18).
 Notable exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* and *Selliguea*, subsuming six and four genera, respectively, that were recognized in PPG I.
 
 ### Next steps
@@ -342,9 +342,9 @@ Notable exceptions to the trend of splitting include the recognition of broadly 
 The vast majority of taxa recognized herein are well established as monophyletic and were supported by a strong majority of voting members.
 However, there are still areas of the classification that need resolution, and in some cases we recognize non-monophyletic taxa because no clear monophyletic option exists.
 Known non-monophyletic taxa have been noted in the classification.
-In addition, there are some, relatively deep relationships have still not been adequately resolved, especially due to conflicts between inferences derived from nuclear versus plastid datasets, as indicated by the dashed lines in @fig-tree and summarized in @tbl-uncertain.
+In addition, there are some relatively deep relationships that have still not been adequately resolved, especially due to conflicts between inferences derived from nuclear versus plastid datasets, as indicated by the dashed lines in @fig-tree and summarized in @tbl-uncertain.
 
-One advantage of our approach using rolling, monthly voting is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
+One advantage of using rolling, monthly voting is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
 Furthermore, the classification can be updated and circulated online with much greater frequency than possible under a traditional print-based model whereby only major updates are published.
 This flexibility allows us to revisit taxonomic areas of uncertainty and revise them as soon as new data are available.
 
