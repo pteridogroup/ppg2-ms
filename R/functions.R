@@ -2288,24 +2288,59 @@ check_ppg_classification_changes <- function(
 
   # Helper function to find matching issues for a single genus
   find_matching_issues <- function(genus_val, rank_cols, issues_df) {
-    # Build list of taxa to check
-    taxa_to_check <- c(genus_val)
+    # Build list of taxa to check, removing × prefix to match issue
+    # names (which have × removed during parsing)
+    genus_clean <- str_remove(genus_val, "^×") |> str_trim()
+    taxa_to_check <- c(genus_clean)
 
     # Add all rank values (both _ii and _i)
     for (rank in ranks) {
       ii_val <- rank_cols[[paste0(rank, "_ii")]]
       i_val <- rank_cols[[paste0(rank, "_i")]]
       if (!is.na(ii_val)) {
-        taxa_to_check <- c(taxa_to_check, ii_val)
+        # Clean rank names too (remove × and extra spaces, remove
+        # parentheses)
+        clean_val <- str_remove(ii_val, "^×") |>
+          str_trim() |>
+          str_remove("\\s*\\(.*\\)$")
+        taxa_to_check <- c(taxa_to_check, clean_val)
       }
-      if (!is.na(i_val)) taxa_to_check <- c(taxa_to_check, i_val)
+      if (!is.na(i_val)) {
+        clean_val <- str_remove(i_val, "^×") |>
+          str_trim() |>
+          str_remove("\\s*\\(.*\\)$")
+        taxa_to_check <- c(taxa_to_check, clean_val)
+      }
     }
 
     taxa_to_check <- unique(taxa_to_check)
 
-    # Find matching issues
+    # Find matching issues by exact name match
     matches <- issues_df |>
       filter(name %in% taxa_to_check)
+
+    # If no exact matches found and the genus has all NA ranks
+    # (new genera), also try partial matching for the genus in case
+    # it was mentioned in a broader proposal
+    if (nrow(matches) == 0) {
+      # Check if all rank columns are NA
+      all_rank_values <- unlist(c(
+        rank_cols[paste0(ranks, "_ii")],
+        rank_cols[paste0(ranks, "_i")]
+      ))
+      all_ranks_na <- all(is.na(all_rank_values))
+
+      if (all_ranks_na) {
+        # Try matching the genus name anywhere in the issue names
+        matches <- issues_df |>
+          filter(
+            str_detect(
+              name,
+              regex(paste0("^", genus_clean, "$"), ignore_case = TRUE)
+            )
+          )
+      }
+    }
 
     if (nrow(matches) > 0) {
       paste(unique(matches$number), collapse = ", ")
