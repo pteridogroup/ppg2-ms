@@ -2463,3 +2463,70 @@ clean_wf_comp_list <- function(ppg_ii_vs_wf_raw) {
     filter(!str_detect(scientificName, "Japanobotrychum")) |>
     pull(scientificName)
 }
+
+
+check_ppg_higher_tax_changes <- function(ppg_ii, ppg_i, ppg_issues) {
+  # Get passed issues for all ranks (not just genus)
+  # We'll check if the taxon name matches the genus OR any of the
+  # higher ranks that changed
+  passed_issues_all <- ppg_issues |>
+    filter(str_detect(status, "^PASSED$")) |>
+    mutate(
+      # Standardize rank names
+      rank = str_to_lower(rank),
+      # Clean up taxon names: remove 'and', commas, normalize spacing
+      name = str_remove_all(name, regex("and|,", ignore_case = TRUE)) |>
+        str_squish()
+    ) |>
+    # Separate multiple taxa into individual rows
+    separate_rows(name, sep = "\\s+") |>
+    mutate(
+      # Remove × or x prefix from nothogenera
+      name = str_remove(name, "^[×x]") |>
+        str_trim()
+    ) |>
+    filter(name != "") |>
+    select(number, rank, name) |>
+    distinct()
+
+  ppg_ii_long <- ppg_ii |>
+    pivot_longer(names_to = "rank", values_to = "taxon", everything()) |>
+    filter(rank != "genus") |>
+    unique() |>
+    filter(!is.na(taxon))
+
+  ppg_i_long <- ppg_i |>
+    select(class:genus) |>
+    pivot_longer(names_to = "rank", values_to = "taxon", everything()) |>
+    filter(rank != "genus") |>
+    unique() |>
+    filter(!is.na(taxon))
+
+  ppg_ii_only <-
+    ppg_ii_long |>
+    anti_join(ppg_i_long) |>
+    mutate(diff = "In PPG II but not in PPG I")
+
+  ppg_i_only <-
+    ppg_i_long |>
+    anti_join(ppg_ii_long) |>
+    mutate(diff = "In PPG I but not in PPG II")
+
+  bind_rows(
+    ppg_ii_only,
+    ppg_i_only
+  ) |>
+    arrange(rank, taxon) |>
+    left_join(
+      select(passed_issues_all, -rank),
+      by = join_by(taxon == name)
+    ) |>
+    # manual fixes
+    mutate(
+      number = case_when(
+        taxon == "Ctenitidoideae" ~ 92L,
+        taxon == "Drynarioideae" ~ 52L,
+        .default = number
+      )
+    )
+}

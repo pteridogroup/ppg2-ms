@@ -1,5 +1,6 @@
 source("R/packages.R")
 source("R/functions.R")
+source("R/check_higher_ranks.R")
 
 Sys.setenv(TAR_PROJECT = "main")
 
@@ -111,7 +112,7 @@ tar_plan(
   ppg_ii = ppg_to_wide(ppg),
   # - Check for classification changes and verify they have passed
   #   issues
-  classification_check = check_ppg_classification_changes(
+  genus_check = check_ppg_classification_changes(
     ppg_ii,
     ppg_i,
     ppg_issues,
@@ -119,7 +120,14 @@ tar_plan(
   ),
   # - Summarize classification check results
   classification_summary = summarize_classification_check(
-    classification_check
+    genus_check
+  ),
+
+  # Check higher taxonomic ranks for changes
+  higher_taxa_check = check_ppg_higher_tax_changes(
+    ppg_ii,
+    ppg_i,
+    ppg_issues
   ),
 
   # Generate figures ----
