@@ -11227,6 +11227,28 @@ references:
   URL: http://homepages.caverock.net.nz/~bj/fern/
   volume: '2007'
 
+- id: hassler2025world
+  accessed:
+    - year: 2026
+      month: 1
+      day: 26
+  author:
+    - family: Hassler
+      given: Michael
+  citation-key: hassler2025world
+  container-title: >-
+    World Ferns. Synonymic Checklist and Distribution of Ferns and Lycophytes of
+    the World. Version 25.12
+  issued:
+    - year: 2025
+      month: 12
+      day: 21
+  title: >-
+    World Ferns. Synonymic Checklist and Distribution of Ferns and Lycophytes of
+    the World. Version 25.12
+  type: webpage
+  URL: https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list
+
 - id: haufler1985differential
   abstract: >-
     It has been demonstrated that antheridiogens determine gametangial
@@ -42600,6 +42622,34 @@ references:
     to the symposium
   type: article-journal
   volume: '29'
+
+- id: white1995anatomy
+  accessed:
+    - year: 2026
+      month: 1
+      day: 29
+  author:
+    - family: White
+      given: Richard A.
+    - family: Turner
+      given: Melvin D.
+  citation-key: white1995anatomy
+  container-title: The Botanical Review
+  container-title-short: Bot. Rev
+  DOI: 10.1007/BF02912620
+  ISSN: 0006-8101, 1874-9372
+  issue: '4'
+  issued:
+    - year: 1995
+      month: 10
+  language: en
+  license: http://www.springer.com/tdm
+  page: 281–305
+  source: DOI.org (Crossref)
+  title: Anatomy and development of the fern sporophyte
+  type: article-journal
+  URL: http://link.springer.com/10.1007/BF02912620
+  volume: '61'
 
 - id: white1995organization
   author:

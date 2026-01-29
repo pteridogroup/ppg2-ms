@@ -22,6 +22,23 @@ tar_plan(
     read_csv(!!.x)
   ),
 
+  # Load PPG II vs World Ferns comparison
+  tar_file_read(
+    ppg_ii_vs_wf_raw,
+    "data/compare_ppg_wf_2025-12-21.csv",
+    read_csv(!!.x)
+  ),
+
+  ppg_ii_vs_wf = clean_wf_comp_list(ppg_ii_vs_wf_raw),
+
+  # Load WF taxa count
+
+  tar_file_read(
+    wf_taxa_count,
+    "data/wf_taxa_count_2025-12-21.csv",
+    read_csv(!!.x)
+  ),
+
   # Process GitHub issues ----
 
   # - Download issues

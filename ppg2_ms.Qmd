@@ -1,5 +1,5 @@
 ---
-title: "An update of the Pteripophyte Phylogeny Group classification for extant ferns and lycophytes: PPG II"
+title: "An update of the Pteridophyte Phylogeny Group classification for extant ferns and lycophytes: PPG II"
 format: docx
 bibliography: references.yaml
 csl: https://www.zotero.org/styles/taxon
@@ -38,6 +38,7 @@ tar_load(
     ppg_issues_count,
     ppg_i_taxa_count,
     ppg_2_taxa_count,
+    wf_taxa_count,
     voting_results,
     tree_fig,
     ppg_classification
@@ -56,9 +57,10 @@ The Pteridophyte Phylogeny Group
 auth_order <- tibble::tribble(
   ~name, ~order,
   "Joel H. Nitta", 1,
-  "Carl J. Rothfels", 2,
-  "Harald Schneider", 3,
-  "Eric Schuettpelz", 4
+  "Michael Hassler", 2,
+  "Carl J. Rothfels", 3,
+  "Harald Schneider", 4,
+  "Eric Schuettpelz", 5,
 )
 
 authors <- read_csv("data/ppg2_author_list.csv") |>
@@ -68,7 +70,7 @@ authors <- read_csv("data/ppg2_author_list.csv") |>
   ) |>
   arrange(order, last_name) %>%
   mutate(
-    other_author = str_detect(name, "Nitta|Rothfels|Schneider|Schuettpelz", negate = TRUE),
+    other_author = str_detect(name, "Hassler|Nitta|Rothfels|Schneider|Schuettpelz", negate = TRUE),
     auth_num = seq(nrow(.)),
     institution = tidyr::replace_na(institution, "?"),
     country = tidyr::replace_na(country, "?"),
@@ -86,7 +88,7 @@ institutions <- paste(authors$inst_print, collapse = "\n")
 
 ```
 
-Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Carl Rothfels^2^, Harald Schneider^3^, Eric Schuettpelz\*^4^; with additional contributions from (in alphabetical order): `r other_authors`
+Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Michael Hassler^2^, Carl Rothfels^3^, Harald Schneider^4^, and Eric Schuettpelz\*^5^; with additional contributions from (in alphabetical order): `r other_authors`
 
 `r institutions`
 
@@ -180,12 +182,12 @@ As such, all taxonomic decisions made by PPG also become the taxonomy available 
 The database editor provided by WFO, called Rhakhis (<https://list.worldfloraonline.org/rhakhis/ui>), is taxonomy-aware---that is, it enforces taxonomic rules, for example, that synonyms must map to an accepted name and not another synonym---and provides full functionality for tracking synonymy relationships, publication and author data, and nomenclatural status, among other taxonomically relevant information.
 Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in realtime, with no need for synchronizing database files across multiple machines.
 
-The initial version of the taxonomic data was based on a copy of the World Ferns database provided by Michael Hassler (<https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list>), which was imported into Rhakhis and edited to reflect accepted taxonomic proposals from our voting process.
+The initial version of the taxonomic data was based on a copy of the World Ferns database [@hassler2025world], which was imported into Rhakhis and edited to reflect accepted taxonomic proposals from our voting process.
 
 ### Extension to the species level
 
 Another major change from PPG I is that the PPG II classification includes names at the rank of species and below (PPG I extended only to genus).
-By starting from the World Ferns classification (<https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list>), PPG II was "pre-populated" with these lower ranked taxa.
+By starting from the World Ferns classification [@hassler2025world], PPG II was "pre-populated" with these lower ranked taxa.
 As changes to higher taxa were approved through our voting process, we used Rhakhis to remap taxa at the level of species and below to the appropriate position in the revised classification.
 Given that there are >13,000 accepted species names, it is not feasible to implement the same discussion and voting protocol for ranks at species and below that we applied to ranks at genus and above.
 Instead, we have established committees of specialists who are each responsible for reviewing and maintaining taxonomic data at the species level and below in Rhakhis for a particular pteridophyte taxon (or taxa), such that all taxa are accounted for.
@@ -311,6 +313,8 @@ Most taxonomic changes come via the addition of new names, i.e., splitting (@tbl
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting genus-and-above PPG II classification is presented below.
 
+PPG II includes one genus not included in World Ferns v25.12 (*Thysanosoria* A.Gepp) and lacks six genera included there (*Brownseya* Li Bing Zhang, L.D.Sheph., D.K.Chen, X.M.Zhou & H.He, *Davallodes* (Copel.) Copel., *Orthiopteris* Copel., *Physematium* Kaulf., *Podosorus* Holttum, and *Sticheroides* L.V.Lima, Salino & T.E.Almeida).
+
 The number of taxa at the level of species and below (PPG II recognizes approximately 14,000 accepted species) precludes publishing those names here, but the full classification (extending to subspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
 
 ## Discussion
@@ -366,10 +370,21 @@ cat(ppg_classification, sep = "\n")
 
 ```{r}
 #| label: tbl-taxa
-#| tbl-cap: "Number of taxa in PPG II vs. PPG I by taxonomic status
+#| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2025world] by taxonomic status
 #|   (accepted or synonym). Hybrids not included in species count.
 #|   Complete synonymy was not presented in PPG I so this is not shown.
-#|   PPG I did not treat nothotaxa."
+#|   PPG I did not treat nothotaxa. World Ferns does not treat class, subclass, suborder, or subfamily."
+
+wf_taxa_count_wide <- wf_taxa_count |>
+  mutate(n = as.integer(n)) |>
+  pivot_wider(
+    names_from = taxonomicStatus,
+    values_from = n
+  ) |>
+  rename(
+    wf_accepted = accepted,
+    wf_synonym = synonym
+  )
 
 ppg_2_taxa_count |>
   left_join(
@@ -377,7 +392,12 @@ ppg_2_taxa_count |>
       ppg_i_taxa_count,
       taxonRank,
       ppgi_accepted = accepted
-    )
+    ),
+    by = "taxonRank"
+  ) |>
+  left_join(
+    wf_taxa_count_wide,
+    by = "taxonRank"
   ) |>
   filter(taxonRank != "tribe") |>
   mutate(
@@ -388,7 +408,9 @@ ppg_2_taxa_count |>
     Rank = taxonRank,
     `PPG II (accepted)` = accepted,
     `PPG II (synonym)` = synonym,
-    `PPG I (accepted)` = ppgi_accepted
+    `PPG I (accepted)` = ppgi_accepted,
+    `World Ferns (accepted)` = wf_accepted,
+    `World Ferns (synonym)` = wf_synonym
   ) |>
   knitr::kable()
 ```

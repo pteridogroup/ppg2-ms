@@ -2455,3 +2455,11 @@ summarize_classification_check <- function(classification_check) {
       head(10)
   )
 }
+
+clean_wf_comp_list <- function(ppg_ii_vs_wf_raw) {
+  ppg_ii_vs_wf_raw |>
+    filter(taxonRank %in% c("order", "family", "genus")) |>
+    filter(!str_detect(scientificName, "Japanobotrychium")) |>
+    filter(!str_detect(scientificName, "Japanobotrychum")) |>
+    pull(scientificName)
+}
