@@ -14,7 +14,9 @@ fix_email <- function(data) {
           "fittmatos\\@gmail\\.com$",
           "fbittmatos@gmail.com"
         ) |>
-        stringr::str_replace_all("\\.utexxas\\.", ".utexas.")
+        stringr::str_replace_all("\\.utexxas\\.", ".utexas.") |>
+        stringr::str_replace_all(
+          "ralf\\.knap\\@gmail\\.com", "ralf.knapp@gmail.com")
     )
 }
 
