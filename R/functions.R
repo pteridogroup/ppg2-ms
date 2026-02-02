@@ -229,6 +229,23 @@ make_family_tree <- function() {
 
   phy_family$tip.label <- new_tips
 
+  # Fix water ferns: they should not be sister to tree ferns
+  # Extract water ferns clade
+  wf <- ape::keep.tip(phy_family, c("Salviniaceae", "Marsileaceae"))
+
+  wf$root.edge <- 10
+
+  # Remove water ferns from main tree
+  tree <- ape::drop.tip(phy_family, c("Salviniaceae", "Marsileaceae"))
+
+  # Show node IDs on plot
+  # plot(tree)
+  # Show node IDs on plot
+  # nodelabels()
+
+  # Bind water ferns back at node 55
+  phy_family <- ape::bind.tree(tree, wf, where = 55) |> multi2di()
+
   ape::ladderize(phy_family)
 }
 
