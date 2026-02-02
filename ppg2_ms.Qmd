@@ -31,6 +31,7 @@ conflicted::conflict_prefer("filter", "dplyr")
 # Load targets
 tar_load(
   c(
+    ppg,
     commenters,
     children_tally,
     issues_count_plot,
@@ -126,7 +127,7 @@ The most recent widely accepted classification for ferns and lycophytes is the P
 Since that time, many new names have been published and phylogenetic relationships have come into clearer focus.
 Here, we present PPG II, an updated classification to reflect advances made in pteridophyte systematics since PPG I.
 PPG II recognizes `r n$class$ppg2` classes, `r n$order$ppg2` orders, `r n$family$ppg2` families, `r n$genus$ppg2` genera, and `r n$species$ppg2` species of ferns and lycophytes.
-Like PPG I, PPG II is the result of decisions made by a diverse community of taxonomic experts, but improvements have been made to increase transparency and efficiency, including posting all discussions on an openly available website and voting on taxonomic proposals on a rolling, monthly basis.
+Like PPG I, PPG II is the result of decisions made by a diverse community of pteridologists, but improvements have been made to increase transparency and efficiency, including posting all discussions on an openly available website and voting on taxonomic proposals on a rolling, monthly basis.
 PPG II also extends the classification to the species level and includes nothogenera, neither of which were treated in PPG I.
 Going forward, incremental updates to PPG II will be made online, obviating the lengthy delay between updated treatments.
 The PPG II classification can be accessed on our website (<https://pteridogroup.github.io/ppg>) or World Flora Online (<https://wfoplantlist.org>).
@@ -135,9 +136,9 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 
 {{< pagebreak >}}
 
-Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@li2025fernsa].
+Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns; @li2025fernsa].
 Our understanding of fern and lycophyte relationships was revolutionized by molecular phylogenetics, which demonstrated that horsetails and whisk ferns are nested within ferns and further that ferns are sister to seed plants and only distantly related to the lycophytes [@pryer2001horsetails].
-@smith2006classification published the first higher-level  fern classification in the molecular era.
+@smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due to their drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community [@schuettpelz2018are].
 The next widely accepted classification was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
 PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts and included nearly 90 co-authors.
@@ -299,6 +300,24 @@ assert_that(
   ),
   msg = "Number of higher taxa in PPG I and PPG II don't match"
 )
+
+# Check that assessment of World Ferns genera not in PPG II is correct
+gen_in_wf_not_ppg_2 <- c(
+  "Brownseya",
+  "Davallodes",
+  "Orthiopteris",
+  "Physematium",
+  "Podosorus"
+)
+
+ppg_2_accepted_gen <- ppg |>
+  filter(taxonRank == "genus", taxonomicStatus == "accepted") |>
+  pull(scientificName)
+
+assertthat::assert_that(
+  !any(gen_in_wf_not_ppg_2 %in% ppg_2_accepted_gen),
+  msg = "Statement about World Ferns genera not in PPG II is incorrect"
+)
 ```
 
 The higher taxonomic levels of PPG II are largely unchanged relative to PPG I.
@@ -313,7 +332,7 @@ Most taxonomic changes come via the addition of new names, i.e., splitting (@tbl
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting genus-and-above PPG II classification is presented below.
 
-PPG II includes one genus not included in World Ferns v25.12 (*Thysanosoria* A.Gepp) and lacks six genera included there (*Brownseya* Li Bing Zhang, L.D.Sheph., D.K.Chen, X.M.Zhou & H.He, *Davallodes* (Copel.) Copel., *Orthiopteris* Copel., *Physematium* Kaulf., *Podosorus* Holttum, and *Sticheroides* L.V.Lima, Salino & T.E.Almeida).
+PPG II recognizes one genus not included in World Ferns v25.12 (*Thysanosoria* A.Gepp) and lacks five genera recognized there (*Brownseya* Li Bing Zhang, L.D.Sheph., D.K.Chen, X.M.Zhou & H.He, *Davallodes* (Copel.) Copel., *Orthiopteris* Copel., *Physematium* Kaulf., and *Podosorus* Holttum).
 
 The number of taxa at the level of species and below (PPG II recognizes approximately 14,000 accepted species) precludes publishing those names here, but the full classification (extending to subspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
 
@@ -373,21 +392,10 @@ cat(ppg_classification, sep = "\n")
 #| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2025world] by taxonomic status
 #|   (accepted or synonym). Hybrids not included in species count.
 #|   Complete synonymy was not presented in PPG I so this is not shown.
-#|   PPG I did not treat nothotaxa. World Ferns does not treat class, subclass, suborder, or subfamily."
-
-wf_taxa_count_wide <- wf_taxa_count |>
-  mutate(n = as.integer(n)) |>
-  pivot_wider(
-    names_from = taxonomicStatus,
-    values_from = n
-  ) |>
-  rename(
-    wf_accepted = accepted,
-    wf_synonym = synonym
-  )
+#|   Not every rank is used by every treatment; for example PPG II does not use tribe."
 
 ppg_2_taxa_count |>
-  left_join(
+  full_join(
     select(
       ppg_i_taxa_count,
       taxonRank,
@@ -395,14 +403,14 @@ ppg_2_taxa_count |>
     ),
     by = "taxonRank"
   ) |>
-  left_join(
-    wf_taxa_count_wide,
+  full_join(
+    wf_taxa_count,
     by = "taxonRank"
   ) |>
-  filter(taxonRank != "tribe") |>
   mutate(
     taxonRank = str_to_sentence(taxonRank),
-    across(where(is.integer), ~ scales::number(., big.mark = ","))
+    across(where(is.integer)|where(is.numeric), ~ replace_na(., 0)),
+    across(where(is.integer)|where(is.numeric), ~ scales::number(., big.mark = ","))
   ) |>
   select(
     Rank = taxonRank,
@@ -509,5 +517,10 @@ ggsave(
 
 tree_fig
 ```
+
+## Acknowledgements
+
+We thank the organizers of the XX International Botanical Congress (Madrid, 2024) and the Botany 2025 (Palm Springs, CA) conferences for hosting in-person meetings and workshops that were vital to developing this update.
+We thank Allan Elliot and Roger Hyam for technical support in transitioning to the World Flora Online database, and World Flora Online for its cooperation and recognition of PPG as a TEN.
 
 ## References

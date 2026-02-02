@@ -672,7 +672,7 @@ references:
     - family: Applequist
       given: Wendy L.
   citation-key: applequist2016report
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.12705/655.16
   ISSN: 0040-0262, 1996-8175
@@ -2321,7 +2321,7 @@ references:
     - family: Song
       given: Hong
   citation-key: brach2006efloras
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.2307/25065540
   ISSN: 0040-0262, 1996-8175
@@ -3419,7 +3419,7 @@ references:
   issued:
     - year: 2002
   page: 281–283
-  title: ×Cyathidaria, a new nothogenus in the Cyatheaceae (Pteridophyta)
+  title: ×*Cyathidaria*, a new nothogenus in the Cyatheaceae (Pteridophyta)
   type: article-journal
   volume: '32'
 
@@ -3728,7 +3728,7 @@ references:
     - family: Schneider
       given: Harald
   citation-key: chang2013species
-  container-title: Taxon (in press)
+  container-title: Taxon
   issued:
     - year: 2013
   page: 1–15
@@ -4973,7 +4973,7 @@ references:
     - family: Schneider
       given: Harald
   citation-key: christenhusz20122054
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.612019
   ISSN: 0040-0262, 1996-8175
@@ -4985,8 +4985,8 @@ references:
   page: 465–466
   source: DOI.org (Crossref)
   title: >-
-    (2054) Proposal to conserve the name *Drynaria* against *Aglaomorpha* (
-    *Polypodiaceae* )
+    (2054) Proposal to conserve the name *Drynaria* against *Aglaomorpha*
+    (Polypodiaceae)
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.612019
   volume: '61'
@@ -5109,7 +5109,7 @@ references:
     - family: Chase
       given: Mark W.
   citation-key: christenhusz2018ppg
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.12705/673.2
   ISSN: 0040-0262, 1996-8175
@@ -5782,7 +5782,7 @@ references:
   issued:
     - year: 1974
   page: 1947–1948
-  title: 3-deoxyanthocyanins from the fern Blechnum procerum
+  title: 3-deoxyanthocyanins from the fern *Blechnum procerum*
   type: article-journal
   volume: '13'
 
@@ -8782,7 +8782,7 @@ references:
     - family: Pryer
       given: Kathleen M.
   citation-key: fauskee2025ynesmexia
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.13340
   ISSN: 0040-0262, 1996-8175
@@ -9194,7 +9194,7 @@ references:
     - year: 2017
   language: English
   page: 517–518
-  title: (2509) Proposal to reject the name Allosorus (Pteridaceae)
+  title: (2509) Proposal to reject the name *Allosorus* (Pteridaceae)
   type: article-journal
   URL: http://doi.wiley.com/10.12705/662.21
   volume: '66'
@@ -10280,7 +10280,7 @@ references:
     - family: Troia
       given: Angelo
   citation-key: greuter20142292
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.12705/633.23
   ISSN: 0040-0262, 1996-8175
@@ -10293,7 +10293,7 @@ references:
   source: DOI.org (Crossref)
   title: >-
     (2292) Proposal to conserve the name *Palhinhaea* against *Lepidotis*
-    (*Lycopodiaceae*)
+    (Lycopodiaceae)
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.12705/633.23
   volume: '63'
@@ -15309,7 +15309,7 @@ references:
     - family: Tuomisto
       given: Hanna
   citation-key: keskiniva2025rampant
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.13315
   ISSN: 0040-0262, 1996-8175
@@ -15725,7 +15725,7 @@ references:
     - year: 2007
   page: 504–518
   title: >-
-    Investigating the monophyly of Pellaea (Pteridaceae) in the context of a
+    Investigating the monophyly of *Pellaea* (Pteridaceae) in the context of a
     phylogenetic analysis of cheilanthoid ferns
   type: article-journal
   volume: '32'
@@ -16862,6 +16862,18 @@ references:
   type: article-journal
   volume: '40'
 
+- id: kurita1976chromosome
+  author:
+    - family: Kurita
+      given: Siro
+  citation-key: kurita1976chromosome
+  issued:
+    - year: 1976
+  page: 69--76
+  title: Chromosome numbers of some Japanese ferns 9
+  type: article-journal
+  volume: II-2
+
 - id: la2014phytodegradation
   abstract: >-
     Many organic hazardous pollutants, including phenol, which are toxic and not
@@ -17563,7 +17575,7 @@ references:
   language: English
   page: 7–18
   title: >-
-    × Lindsaeosoria flynnii (Lindsaeaceae), another confirmed example of deep
+    × *Lindsaeosoria flynnii* (Lindsaeaceae), another confirmed example of deep
     hybridization among the ferns
   type: article-journal
   URL: http://www.bioone.org/doi/10.1640/0002-8444-108.1.7
@@ -18816,7 +18828,7 @@ references:
     - family: Middleton
       given: David J.
   citation-key: lindsay20212836
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.12579
   ISSN: 0040-0262, 1996-8175
@@ -18828,9 +18840,8 @@ references:
   page: 1133–1134
   source: DOI.org (Crossref)
   title: >-
-    (2836) Proposal to conserve the name *Asplenium arifolium* ( *Hemionitis
-    arifolia*, *Parahemionitis arifolia* ) ( *Pteridaceae* ) with a conserved
-    type
+    (2836) Proposal to conserve the name *Asplenium arifolium* (*Hemionitis
+    arifolia*, *Parahemionitis arifolia*) (Pteridaceae) with a conserved type
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12579
   volume: '70'
@@ -19545,7 +19556,7 @@ references:
     - family: Löve
       given: Doris
   citation-key: love1977new
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.2307/1220575
   ISSN: 0040-0262, 1996-8175
@@ -21368,7 +21379,7 @@ references:
     - family: Pryer
       given: Kathleen M.
   citation-key: mcneill1985statusa
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.2307/1221578
   ISSN: 0040-0262, 1996-8175
@@ -21397,6 +21408,19 @@ references:
   title: Studies on the spores of some northeastern ferns
   type: article-journal
   volume: '25'
+
+- id: meades2019annotated
+  author:
+    - family: Meades
+      given: S.J.
+    - family: Brouillet
+      given: L.
+  citation-key: meades2019annotated
+  issued:
+    - year: 2019
+  title: Annotated checklist of the vascular plants of Newfoundland and Labrador
+  type: document
+  URL: https://newfoundland-labradorflora.ca/checklist
 
 - id: meharg2003variation
   author:
@@ -22266,6 +22290,19 @@ references:
   type: article-journal
   volume: '40'
 
+- id: mitui1968chromosomes
+  author:
+    - family: Mitui
+      given: Kunio
+  citation-key: mitui1968chromosomes
+  container-title: Sci. Rep. Tokyo Kyoiku Daigaku, Sect. B
+  issued:
+    - year: 1968
+  page: 285--333
+  title: Chromosomes and speciation in ferns
+  type: article-journal
+  volume: '13'
+
 - id: mitui1970chromosome
   author:
     - family: Mitui
@@ -22290,6 +22327,19 @@ references:
     - year: 1975
   page: 221–271
   title: Chromosome number of Japanese pteridophytes
+  type: article-journal
+  volume: '4'
+
+- id: mitui1975chromosome
+  author:
+    - family: Mitui
+      given: Kunio
+  citation-key: mitui1975chromosome
+  container-title: Bulletin of Nippon Dental College, General Education
+  issued:
+    - year: 1975
+  page: 221–271
+  title: Chromosome numbers of Japanese pteridophytes
   type: article-journal
   volume: '4'
 
@@ -23192,6 +23242,28 @@ references:
   type: article-journal
   volume: '2'
 
+- id: mulligan1990poisonous
+  author:
+    - family: Mulligan
+      given: Gerald A.
+    - family: Munro
+      given: Derek B.
+  citation-key: mulligan1990poisonous
+  collection-number: '1842'
+  collection-title: Publication / Agriculture Canada
+  contributor:
+    - literal: Kanada
+  ISBN: 978-0-660-13467-3
+  issued:
+    - year: 1990
+  language: en
+  number-of-pages: '96'
+  publisher: Minister of Supply and Services Canada
+  publisher-place: Ottawa
+  source: K10plus ISBN
+  title: Poisonous plants of Canada
+  type: book
+
 - id: murakami1992stelar
   author:
     - family: Murakami
@@ -24092,8 +24164,8 @@ references:
   page: '172'
   source: DOI.org (Crossref)
   title: >-
-    (807) Proposal to Reject Polypodium pteridioides Reichard and All
-    Combinations Based on It (Sinopteridaceae: Pteridophyta)
+    (807) Proposal to reject *Polypodium pteridioides* Reichard and all
+    combinations based on It (Sinopteridaceae: Pteridophyta)
   title-short: >-
     (807) Proposal to Reject Polypodium pteridioides Reichard and All
     Combinations Based on It (Sinopteridaceae
@@ -29223,7 +29295,7 @@ references:
     - family: Beck
       given: Andreas
   citation-key: regalado20243047
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.13251
   ISSN: 0040-0262, 1996-8175
@@ -29236,7 +29308,7 @@ references:
   source: DOI.org (Crossref)
   title: >-
     (3047) Proposal to conserve the name *Ctenitis* against *Atalopteris*
-    (*Dryopteridaceae*)
+    (Dryopteridaceae)
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13251
   volume: '73'
@@ -29867,7 +29939,7 @@ references:
   issued:
     - year: 2008
   title: >-
-    Toward a monophyletic Notholaena (Pteridaceae): Resolving patterns of
+    Toward a monophyletic *Notholaena* (Pteridaceae): Resolving patterns of
     evolutionary convergence in xeric-adapted ferns
   type: article-journal
   volume: '57'
@@ -30465,8 +30537,8 @@ references:
   issued:
     - year: 2018
   title: >-
-    (2579) Proposal to conserve Aspidium draconopterum (Draconopteris
-    draconoptera) (Tectariaceae) with a conserved type
+    (2579) Proposal to conserve *Aspidium draconopterum* (*Draconopteris
+    draconoptera*) (Tectariaceae) with a conserved type
   type: article-journal
   volume: '67'
 
@@ -33147,7 +33219,7 @@ references:
     - family: Pryer
       given: Kathleen M.
   citation-key: schuettpelz2025corrigendum
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.70092
   ISSN: 0040-0262, 1996-8175
@@ -33212,7 +33284,7 @@ references:
     - family: Pryer
       given: Kathleen M.
   citation-key: schuettpelz2025phylogenetically
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.13314
   ISSN: 0040-0262, 1996-8175
@@ -33392,7 +33464,7 @@ references:
     - family: Schwartsburd
       given: Pedro B.
   citation-key: schwartsburd20172508
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.12705/662.20
   ISSN: 0040-0262, 1996-8175
@@ -33405,7 +33477,7 @@ references:
   source: DOI.org (Crossref)
   title: >-
     (2508) Proposal to conserve the name *Microlepia* against *Scyphofilix*
-    (*Dennstaedtiaceae*)
+    (Dennstaedtiaceae)
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.12705/662.20
   volume: '66'
@@ -33581,7 +33653,7 @@ references:
     - family: Sermolli
       given: Rodolfo E. G. Pichi
   citation-key: sermolli1987report
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.2307/1221126
   ISSN: 0040-0262, 1996-8175
@@ -35455,7 +35527,7 @@ references:
     - family: Schneider
       given: Harald
   citation-key: smith2006serpocaulona
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: Taxon
   DOI: 10.2307/25065686
   ISSN: '00400262'
@@ -37394,16 +37466,33 @@ references:
   URL: http://link.springer.com/10.1007/s00606-014-1036-6
   volume: '300'
 
-- id: tatunocytological
+- id: tatuno1970cytological
   author:
     - family: Tatuno
       given: Seizi
     - family: Takei
       given: Masahiro
-  citation-key: tatunocytological
+  citation-key: tatuno1970cytological
   container-title: Botanical Magazine of Tokyo
   issue: 67–73
-  title: Cytological Studies of Salviniaceae II.
+  issued:
+    - year: 1970
+  title: Cytological studies of Salviniaceae II
+  type: article-journal
+  volume: '83'
+
+- id: tatuno1970karyological
+  author:
+    - family: Tatuno
+      given: Seizi
+    - family: Okada
+      given: Hirosi
+  citation-key: tatuno1970karyological
+  container-title: The Botanical Magazine, Tokyo
+  issued:
+    - year: 1970
+  page: 202--210
+  title: Karyological studies in Aspidiaceae I
   type: article-journal
   volume: '83'
 
@@ -38367,8 +38456,8 @@ references:
       day: 1
   page: 688–690
   title: >-
-    (2892) Proposal to conserve the name Dennstaedtia (Dennstaedtiaceae) with a
-    conserved type
+    (2892) Proposal to conserve the name *Dennstaedtia* (Dennstaedtiaceae) with
+    a conserved type
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12756
   volume: '71'
@@ -38436,7 +38525,7 @@ references:
   source: DOI.org (Crossref)
   title: >-
     Phylogenetic revision of Dennstaedtioideae (Dennstaedtiaceae: Polypodiales)
-    with description of *Mucura* , gen. nov.
+    with description of *Mucura*, gen. nov.
   title-short: Phylogenetic revision of Dennstaedtioideae (Dennstaedtiaceae
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12858
@@ -38996,7 +39085,7 @@ references:
     - family: Zhang
       given: Li
   citation-key: turland2017xix
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.12705/665.16
   ISSN: 0040-0262, 1996-8175
@@ -39032,7 +39121,7 @@ references:
     - family: Wiersema
       given: John H.
   citation-key: turland2024xx
-  container-title: TAXON
+  container-title: Taxon
   container-title-short: TAXON
   DOI: 10.1002/tax.13258
   ISSN: 0040-0262, 1996-8175
@@ -40404,7 +40493,9 @@ references:
   issued:
     - year: 1992
   page: 245–253
-  title: ×Dryostichum singulare (Dryopteridaceae), a new fern nothogenus from Ontario
+  title: >-
+    ×*Dryostichum singulare* (Dryopteridaceae), a new fern nothogenus from
+    Ontario
   type: article-journal
   volume: '70'
 
@@ -40812,6 +40903,22 @@ references:
   type: article-journal
   URL: https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.575.1.8
   volume: '575'
+
+- id: wang1981cytological
+  author:
+    - family: Wang
+      given: Zhong-Ren
+    - family: Zhang
+      given: Zhi-Xian
+  citation-key: wang1981cytological
+  container-title: Journal of Integrative Plant Biology
+  issue: '6'
+  issued:
+    - year: 1981
+  page: 427--433
+  title: Cytological observation on some Chinese ferns
+  type: article-journal
+  volume: '23'
 
 - id: wang1982chromosome
   abstract: >-

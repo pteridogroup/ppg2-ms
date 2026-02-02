@@ -1,6 +1,5 @@
 source("R/packages.R")
 source("R/functions.R")
-source("R/check_higher_ranks.R")
 
 Sys.setenv(TAR_PROJECT = "main")
 
@@ -36,7 +35,7 @@ tar_plan(
 
   tar_file_read(
     wf_taxa_count,
-    "data/wf_taxa_count_2025-12-21.csv",
+    "data/wf_taxa_count.csv",
     read_csv(!!.x)
   ),
 
