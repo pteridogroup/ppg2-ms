@@ -341,7 +341,7 @@ nchild <- children_tally %>%
 ```
 
 The general trend, in comparison to PPG I, has been an increase in genus number.
-This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. 30), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. 33), Cheilanthoideae (`r nchild$cheilanthoideae$n_genera` vs. 23), and Blechnaceae (`r nchild$Blechnaceae$n_genera` vs. 18).
+This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. 30), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. 33), Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. 23), and Blechnaceae (`r nchild$Blechnaceae$n_genera` vs. 18).
 Notable exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* and *Selliguea*, subsuming six and four genera, respectively, that were recognized in PPG I.
 
 ### Next steps
