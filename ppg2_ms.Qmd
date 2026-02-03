@@ -89,7 +89,7 @@ institutions <- paste(authors$inst_print, collapse = "\n")
 
 ```
 
-Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Michael Hassler^2^, Carl Rothfels^3^, Harald Schneider^4^, and Eric Schuettpelz\*^5^; with additional contributions from (in alphabetical order): `r other_authors`
+Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Michael Hassler^2^, Harald Schneider^3^, Carl Rothfels^4^, and Eric Schuettpelz\*^5^; with additional contributions from (in alphabetical order): `r other_authors`
 
 `r institutions`
 
