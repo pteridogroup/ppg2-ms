@@ -476,9 +476,9 @@ fig_tree_cap <- glue::glue("
   Summary cladogram showing relationships between families of tracheophytes recognized by PPG II.
   Topology for Polypodiopsida modified from Fern Tree of Life (FTOL) v{ft_data_ver()} [@nitta2022open].
   Numbers next to each family indicate number of genera followed by number of species.
-  Diamonds at tips indicate relative number of species in each family.
+  Size of diamonds at tips indicate relative number of species in each family.
   Numbers at nodes indicate uncertain relationships, summarized in Table 3.
-  @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @testo20164000species; @rothfels2015evolutionary; @du2022structural; @schuettpelz2007fern], so the consensus topology is shown instead.
+  @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
   ") |>
   as.character() |>
   str_remove_all("//\n") |>
