@@ -59,8 +59,8 @@ auth_order <- tibble::tribble(
   ~name, ~order,
   "Joel H. Nitta", 1,
   "Michael Hassler", 2,
-  "Carl J. Rothfels", 3,
-  "Harald Schneider", 4,
+  "Harald Schneider", 3,
+  "Carl J. Rothfels", 4,
   "Eric Schuettpelz", 5,
 )
 
