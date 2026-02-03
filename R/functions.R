@@ -1514,8 +1514,8 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
     getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae"))   ,
     "tracheophytes"                                             ,
     # uncertain relationships
-    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1"    ,
-    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2"    ,
+    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1",
+    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2",
     getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))  , "3"
   ) |>
     mutate(label_type = "clade")
