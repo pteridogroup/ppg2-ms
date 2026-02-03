@@ -136,14 +136,14 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 {{< pagebreak >}}
 
 Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns; @li2025fernsa].
-Our understanding of fern and lycophyte relationships has been revolutionized by molecular phylogenetics, which demonstrated that horsetails and whisk ferns are nested within ferns and further that ferns are sister to seed plants and only distantly related to the lycophytes [@pryer2001horsetails].
+Our understanding of fern and lycophyte relationships has been revolutionized by molecular phylogenetics, which demonstrated that horsetails and whisk ferns are nested within ferns and further that ferns are sister to seed plants and only distantly related to lycophytes [@pryer2001horsetails].
 @smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due in part to their drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community [@schuettpelz2018are].
 The next widely accepted classification was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
 PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts and included nearly 90 co-authors.
 
 Since the publication of PPG I, phylogenetic relationships have been further clarified and taxonomic novelties have accrued.
-Accordingly, the PPG community provides revised taxonomic system for ferns and lycophytes.
+Accordingly, the PPG community provides a revised taxonomic system for ferns and lycophytes, PPG II.
 
 ## Methods
 
@@ -170,11 +170,11 @@ Following the discussion period, voting on proposals was conducted via Google Fo
 For each proposal, PPG members could choose to agree, disagree, or abstain.
 Proposals receiving 2/3 agreement passed and were recognized by PPG.
 All taxonomic discussions and results of voting are available for anybody to access on our GitHub repository.
-The proposal and discussion process ran continuously, with a ballot issued monthly.
+The proposal, discussion, and voting process ran continuously, with a ballot issued monthly.
 
 ### Database management
 
-To maintain taxonomic data, PPG uses World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://wfoplantlist.org>).
+To maintain taxonomic data, PPG partners with World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://wfoplantlist.org>).
 World Flora Online relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs), to curate the taxonomy of specific plant groups.
 PPG is the TEN for ferns and lycophytes.
 As such, all taxonomic decisions made by PPG will also be reflected in WFO.
@@ -189,7 +189,7 @@ The initial version of the taxonomic data was based on a copy of the World Ferns
 Another major change from PPG I is that the PPG II classification includes names at the rank of species and below (PPG I extended only to genus).
 By starting from the World Ferns classification [@hassler2025world], PPG II was pre-populated with these lower ranked taxa.
 As changes to higher taxa were approved through our voting process, we used Rhakhis to remap taxa at the level of species and below to the appropriate position in the revised classification.
-Given that there are >13,000 accepted pteridophyte species names, it is not feasible to implement the same discussion and voting protocol for ranks at species and below that we applied to ranks at genus and above.
+Given that there are >13,000 accepted pteridophyte species names, it is not feasible to implement the same discussion and voting protocol that we applied to ranks at genus and above to ranks at species and below.
 Instead, we have established committees of specialists who are each responsible for reviewing and maintaining taxonomic data at the species level and below in Rhakhis for a particular pteridophyte taxon (or taxa), such that all taxa are accounted for.
 This work will continue indefinitely with the publication of PPG II.
 
@@ -456,7 +456,7 @@ read_csv("data/table_uncertainty.csv") |>
 #| label: fig-voting
 #| fig-width: 6.5
 #| fig-height: 5
-#| fig-cap: "Number (A) and results of voting (B) on taxonomic proposals
+#| fig-cap: "Cumulative count (A) and monthly voting results (B) of taxonomic proposals
 #|   submitted by PPG community members for PPG II."
 ggsave(
   plot = issues_count_plot,
