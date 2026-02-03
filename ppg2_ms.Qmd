@@ -43,7 +43,9 @@ tar_load(
     wf_taxa_count,
     voting_results,
     tree_fig,
-    ppg_classification
+    ppg_classification,
+    uncertainty_table,
+    references
   ),
   store = here::here("_targets")
 )
@@ -447,8 +449,7 @@ ppg_issues_count |>
 #| label: tbl-uncertain
 #| tbl-cap: "Uncertain relationships in pteridophytes. Node indicates numbered
 #|   nodes in Fig. 1."
-read_csv("data/table_uncertainty.csv") |>
-  knitr::kable()
+knitr::kable(uncertainty_table)
 ```
 
 ## Figures

@@ -154,6 +154,17 @@ tar_plan(
   ),
 
   # Output manuscript ----
+  tar_file_read(
+    uncertainty_table,
+    "data/table_uncertainty.csv",
+    read_csv(!!.x)
+  ),
+
+  tar_file(
+    references,
+    "references.yaml"
+  ),
+
   tar_quarto(
     ppg2_ms,
     "ppg2_ms.Qmd",
