@@ -16016,6 +16016,37 @@ references:
   title: A Survey of Trichomes of Dryopteridaceae sl from Taiwan
   type: article-journal
 
+- id: koenemann2011broadscale
+  accessed:
+    - year: 2026
+      month: 2
+      day: 2
+  author:
+    - family: Koenemann
+      given: Daniel M.
+    - family: Maisonpierre
+      given: Jacqueline A.
+    - family: Barrington
+      given: David S.
+  citation-key: koenemann2011broadscale
+  container-title: American Fern Journal
+  container-title-short: American Fern Journal
+  DOI: 10.1640/0002-8444-101.4.213
+  ISSN: 0002-8444, 1938-422X
+  issue: '4'
+  issued:
+    - year: 2011
+      month: 10
+  language: en
+  page: 213–230
+  source: DOI.org (Crossref)
+  title: >-
+    Broad-scale integrity and local divergence in the fiddlehead fern
+    *Matteuccia struthiopteris* (L.) Todaro (Onocleaceae)
+  type: article-journal
+  URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-101.4.213
+  volume: '101'
+
 - id: korall1999phylogeny
   abstract: >-
     A cladistic analysis based on rbcL gene sequences from a representative
@@ -26757,7 +26788,7 @@ references:
       month: 1
       day: 16
   author:
-    - family: Pichi-Sermolli
+    - family: Pichi Sermolli
       given: Rodolfo E.G.
   citation-key: pichi-sermolli1954nomenclature
   container-title: Webbia
@@ -33650,8 +33681,8 @@ references:
       month: 10
       day: 23
   author:
-    - family: Sermolli
-      given: Rodolfo E. G. Pichi
+    - family: Pichi Sermolli
+      given: Rodolfo E. G.
   citation-key: sermolli1987report
   container-title: Taxon
   container-title-short: TAXON
@@ -41965,6 +41996,21 @@ references:
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=2044568338011277671related:Z0ksIhLEXxwJ
   volume: '176'
+
+- id: weakley2026flora
+  author:
+    - family: Weakley
+      given: Alan S
+    - family: Southeastern Flora Team
+      given: ''
+  citation-key: weakley2026flora
+  issued:
+    - year: 2026
+  publisher: University of North Carolina Herbarium, North Carolina Botanical Garden
+  publisher-place: Chapel Hill, NC
+  title: Flora of the southeastern United States Web App
+  type: software
+  URL: fsus.ncbg.unc.edu
 
 - id: weatherby1926new
   author:
