@@ -673,7 +673,7 @@ references:
       given: Wendy L.
   citation-key: applequist2016report
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.12705/655.16
   ISSN: 0040-0262, 1996-8175
   issue: '5'
@@ -683,7 +683,7 @@ references:
   language: en
   page: 1153–1165
   source: DOI.org (Crossref)
-  title: 'Report of the Nomenclature Committee for Vascular Plants: 68'
+  title: 'Report of the nomenclature committee for vascular plants: 68'
   title-short: Report of the Nomenclature Committee for Vascular Plants
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.12705/655.16
@@ -2322,7 +2322,7 @@ references:
       given: Hong
   citation-key: brach2006efloras
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.2307/25065540
   ISSN: 0040-0262, 1996-8175
   issue: '1'
@@ -4956,11 +4956,14 @@ references:
     - family: Schneider
       given: Harald
   citation-key: christenhusz2011linear
+  container-title: Phytotaxa
+  DOI: 10.11646/phytotaxa.19.1.2
   issued:
     - year: 2011
+  page: 7–54
   title: A linear sequence of extant families and genera of lycophytes and ferns
   type: article-journal
-  URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p1581
+  volume: '19'
 
 - id: christenhusz20122054
   accessed:
@@ -4974,7 +4977,7 @@ references:
       given: Harald
   citation-key: christenhusz20122054
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.612019
   ISSN: 0040-0262, 1996-8175
   issue: '2'
@@ -5088,14 +5091,13 @@ references:
       given: Mark W
   citation-key: christenhusz2014trends
   container-title: Annals of Botany
+  DOI: 10.1093/aob/mct299
   issue: '4'
   issued:
     - year: 2014
   page: 571–594
   title: Trends and concepts in fern classification
   type: article-journal
-  URL: >-
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;id=24532607&amp;retmode=ref&amp;cmd=prlinks
   volume: '113'
 
 - id: christenhusz2018ppg
@@ -5110,7 +5112,7 @@ references:
       given: Mark W.
   citation-key: christenhusz2018ppg
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.12705/673.2
   ISSN: 0040-0262, 1996-8175
   issue: '3'
@@ -8783,7 +8785,7 @@ references:
       given: Kathleen M.
   citation-key: fauskee2025ynesmexia
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.13340
   ISSN: 0040-0262, 1996-8175
   issue: '4'
@@ -10281,7 +10283,7 @@ references:
       given: Angelo
   citation-key: greuter20142292
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.12705/633.23
   ISSN: 0040-0262, 1996-8175
   issue: '3'
@@ -11237,15 +11239,15 @@ references:
       given: Michael
   citation-key: hassler2025world
   container-title: >-
-    World Ferns. Synonymic Checklist and Distribution of Ferns and Lycophytes of
-    the World. Version 25.12
+    World Ferns. Synonymic checklist and distribution of ferns and lycophytes of
+    the world. Version 25.12
   issued:
     - year: 2025
       month: 12
       day: 21
   title: >-
-    World Ferns. Synonymic Checklist and Distribution of Ferns and Lycophytes of
-    the World. Version 25.12
+    World Ferns. Synonymic checklist and distribution of ferns and lycophytes of
+    the world. Version 25.12
   type: webpage
   URL: https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list
 
@@ -14312,6 +14314,7 @@ references:
   issue: '6'
   issued:
     - year: 2012
+  page: 1118–1124
   title: >-
     Unique expression of a sporophytic character on the gametophytes of
     notholaenid ferns (Pteridaceae)
@@ -14438,6 +14441,7 @@ references:
   ISSN: '10959513'
   issued:
     - year: 2019
+  page: 139–155
   title: >-
     Low-copy nuclear sequence data confirm complex patterns of farina evolution
     in notholaenid ferns (Pteridaceae)
@@ -15310,7 +15314,7 @@ references:
       given: Hanna
   citation-key: keskiniva2025rampant
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.13315
   ISSN: 0040-0262, 1996-8175
   issued:
@@ -18728,6 +18732,7 @@ references:
     - year: 2025
   language: eng
   note: 'OCLC: 1521830597'
+  number-of-pages: '192'
   publisher: Hardie Grant North America
   publisher-place: Berkeley, CA
   source: Open WorldCat
@@ -18860,7 +18865,7 @@ references:
       given: David J.
   citation-key: lindsay20212836
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.12579
   ISSN: 0040-0262, 1996-8175
   issue: '5'
@@ -19588,7 +19593,7 @@ references:
       given: Doris
   citation-key: love1977new
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.2307/1220575
   ISSN: 0040-0262, 1996-8175
   issue: 2–3
@@ -21411,7 +21416,7 @@ references:
       given: Kathleen M.
   citation-key: mcneill1985statusa
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.2307/1221578
   ISSN: 0040-0262, 1996-8175
   issue: '1'
@@ -28052,6 +28057,7 @@ references:
       given: S D
   citation-key: pryer2001horsetails
   container-title: Nature
+  DOI: 10.1038/35054555
   ISBN: 0028-0836
   issue: '6820'
   issued:
@@ -29327,7 +29333,7 @@ references:
       given: Andreas
   citation-key: regalado20243047
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.13251
   ISSN: 0040-0262, 1996-8175
   issue: '5'
@@ -29969,6 +29975,7 @@ references:
   issue: '3'
   issued:
     - year: 2008
+  page: 712–724
   title: >-
     Toward a monophyletic *Notholaena* (Pteridaceae): Resolving patterns of
     evolutionary convergence in xeric-adapted ferns
@@ -30453,6 +30460,7 @@ references:
   issue: '7'
   issued:
     - year: 2015
+  page: 1089–1107
   title: The evolutionary history of ferns inferred from 25 low-copy nuclear genes
   type: article-journal
   volume: '102'
@@ -32906,6 +32914,7 @@ references:
       given: Kathleen M
   citation-key: schuettpelz2007fern
   container-title: Taxon
+  DOI: 10.2307/25065903
   issue: '4'
   issued:
     - year: 2007
@@ -33223,6 +33232,7 @@ references:
   issue: '3'
   issued:
     - year: 2018
+  page: 473–480
   title: Are there too many fern genera?
   type: article-journal
   volume: '67'
@@ -33251,7 +33261,7 @@ references:
       given: Kathleen M.
   citation-key: schuettpelz2025corrigendum
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.70092
   ISSN: 0040-0262, 1996-8175
   issued:
@@ -33316,15 +33326,16 @@ references:
       given: Kathleen M.
   citation-key: schuettpelz2025phylogenetically
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.13314
   ISSN: 0040-0262, 1996-8175
+  issue: '2'
   issued:
     - year: 2025
       month: 2
       day: 17
   language: en
-  page: tax.13314
+  page: 260–291
   source: DOI.org (Crossref)
   title: >-
     A phylogenetically informed generic reclassification of the hemionitid ferns
@@ -33334,6 +33345,7 @@ references:
     (Pteridaceae
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.13314
+  volume: '74'
 
 - id: schulz2010overview
   author:
@@ -33496,7 +33508,7 @@ references:
       given: Pedro B.
   citation-key: schwartsburd20172508
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.12705/662.20
   ISSN: 0040-0262, 1996-8175
   issue: '2'
@@ -33685,7 +33697,7 @@ references:
       given: Rodolfo E. G.
   citation-key: sermolli1987report
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.2307/1221126
   ISSN: 0040-0262, 1996-8175
   issue: '4'
@@ -35479,6 +35491,7 @@ references:
       given: Paul G.
   citation-key: smith2006classification
   container-title: Taxon
+  DOI: 10.2307/25065646
   issued:
     - year: 2006
   page: 705–731
@@ -38480,6 +38493,7 @@ references:
       given: Michael A
   citation-key: triana-moreno20222892
   container-title: Taxon
+  DOI: 10.1002/tax.12756
   issue: '3'
   issued:
     - year: 2022
@@ -38490,7 +38504,6 @@ references:
     (2892) Proposal to conserve the name *Dennstaedtia* (Dennstaedtiaceae) with
     a conserved type
   type: article-journal
-  URL: https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12756
   volume: '71'
 
 - id: triana-moreno2022phylogenetic
@@ -38544,7 +38557,7 @@ references:
       given: Michael
   citation-key: triana-moreno2022phylogenetic
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.12858
   ISSN: 0040-0262, 1996-8175
   issue: '1'
@@ -38552,7 +38565,7 @@ references:
     - year: 2023
       month: 2
   language: en
-  page: tax.12858
+  page: 20–46
   source: DOI.org (Crossref)
   title: >-
     Phylogenetic revision of Dennstaedtioideae (Dennstaedtiaceae: Polypodiales)
@@ -39117,7 +39130,7 @@ references:
       given: Li
   citation-key: turland2017xix
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.12705/665.16
   ISSN: 0040-0262, 1996-8175
   issue: '5'
@@ -39153,7 +39166,7 @@ references:
       given: John H.
   citation-key: turland2024xx
   container-title: Taxon
-  container-title-short: TAXON
+  container-title-short: Taxon
   DOI: 10.1002/tax.13258
   ISSN: 0040-0262, 1996-8175
   issue: '5'
