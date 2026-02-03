@@ -2,7 +2,8 @@
 title: "An update of the Pteridophyte Phylogeny Group classification for extant ferns and lycophytes: PPG II"
 format: docx
 bibliography: references.yaml
-csl: https://www.zotero.org/styles/taxon
+link-bibliography: true
+csl: taxon.csl
 execute: 
   echo: false
   message: false
