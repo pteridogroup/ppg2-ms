@@ -1,0 +1,92 @@
+---
+title: "Appendix"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: false
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| label: setup
+source(here::here("R/packages.R"))
+source(here::here("R/functions.R"))
+
+conflicted::conflict_prefer("filter", "dplyr")
+
+# Load targets
+tar_load(
+  c(
+    ppg
+  ),
+  store = here::here("_targets")
+)
+```
+
+```{r}
+#| label: tbl-taxa
+#| tbl-cap: "Synonymy in PPG II. Accepted names indicated with a dash (-). Species and below not included."
+#| echo: false
+
+ppg |>
+  dplyr::filter_out(
+    taxonRank %in% c(
+      "form",
+      "lusus",
+      "prole",
+      "species",
+      "subspecies",
+      "subform",
+      "subvariety",
+      "unranked",
+      "variety"
+    )
+  ) |>
+  select(
+    scientificName,
+    scientificNameAuthorship,
+    taxonRank,
+    taxonomicStatus,
+    acceptedNameUsageID
+  ) |>
+  left_join(
+    select(
+      ppg,
+      acceptedNameUsageID = taxonID,
+      accepted_sci_name = scientificName,
+      accepted_sci_auth = scientificNameAuthorship,
+      accepted_rank = taxonRank
+    )
+  ) |>
+  arrange(scientificName) |>
+  select(-acceptedNameUsageID) |>
+  mutate(
+    scientificName = case_when(
+      taxonRank == "genus" ~ italicize_gen(scientificName),
+      taxonRank == "subgenus" ~ italicize_subgen(scientificName),
+      .default = scientificName
+    ),
+    accepted_sci_name = case_when(
+      accepted_rank == "genus" ~ italicize_gen(accepted_sci_name),
+      accepted_rank == "subgenus" ~ italicize_subgen(accepted_sci_name),
+      .default = accepted_sci_name
+    ),
+    name = paste(scientificName, scientificNameAuthorship),
+    acc_name = paste(accepted_sci_name, accepted_sci_auth) |>
+      replace_na("-"),
+    acc_name = case_when(
+      taxonomicStatus == "accepted" ~ "-",
+      .default = acc_name
+    )
+  ) |>
+  select(
+    Name = name,
+    `Accepted name` = acc_name
+  ) |>
+  unique() |>
+  knitr::kable()
+```

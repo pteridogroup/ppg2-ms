@@ -169,5 +169,11 @@ tar_plan(
     ppg2_ms,
     "ppg2_ms.Qmd",
     quiet = FALSE
+  ),
+
+  tar_quarto(
+    appendix,
+    "appendix.qmd",
+    quiet = FALSE
   )
 )
