@@ -1390,10 +1390,11 @@ make_issues_plot <- function(ppg_issues) {
       date_labels = "%Y-%m",
       date_breaks = "4 months"
     ) +
-    theme_gray(base_size = 12) +
+    theme_bw(base_size = 12) +
     theme(
       axis.text.x = element_text(angle = 45, hjust = 1),
-      axis.title.x = element_blank()
+      axis.title.x = element_blank(),
+      panel.grid.minor = element_blank()
     )
 
   vote_res_plot <-
@@ -1421,13 +1422,15 @@ make_issues_plot <- function(ppg_issues) {
       breaks = seq(0, 10, by = 2),
       expand = expansion(mult = c(0, 0.05))
     ) +
-    theme_gray(base_size = 12) +
+    theme_bw(base_size = 12) +
     theme(
       axis.text.x = element_text(angle = 45, hjust = 1),
       axis.title.x = element_blank(),
       axis.title.y = element_blank(),
-      legend.position = c(1, 1),
-      legend.justification = c(1, 1)
+      # Move legend just inside top-right corner of plot area
+      legend.position = c(0.99, 0.99),
+      legend.justification = c("right", "top"),
+      panel.grid.minor = element_blank()
     )
 
   combined_plot <- cum_issue_plot +
