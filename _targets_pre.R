@@ -38,7 +38,8 @@ tar_plan(
   # Tally votes
   vote_tally = tally_votes(votes, ppg_emails, exclude_emails),
   # Format author list
-  author_list = format_author_list(vote_tally, ppg_emails),
+  manual_authors = format_manual_authors(),
+  author_list = format_author_list(vote_tally, ppg_emails, manual_authors),
   # Write out author list
   tar_file(
     author_csv,

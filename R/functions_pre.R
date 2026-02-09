@@ -16,7 +16,13 @@ fix_email <- function(data) {
         ) |>
         stringr::str_replace_all("\\.utexxas\\.", ".utexas.") |>
         stringr::str_replace_all(
-          "ralf\\.knap\\@gmail\\.com", "ralf.knapp@gmail.com")
+          "ralf\\.knap\\@gmail\\.com",
+          "ralf.knapp@gmail.com"
+        ) |>
+        stringr::str_replace_all(
+          "zuozhengyu\\@mail\\.kib\\.ac\\.cn",
+          "zuozhengyu@sdau.edu.cn"
+        )
     )
 }
 
@@ -43,7 +49,17 @@ load_taxon_comments <- function(taxon_comments_url) {
 
 load_emails <- function(email_url) {
   ppg_emails <- googlesheets4::read_sheet(email_url) |>
-    janitor::clean_names()
+    janitor::clean_names() |>
+    mutate(
+      email = case_when(
+        email == "zuozhengyu@mail.kib.ac.cn" ~ "zuozhengyu@sdau.edu.cn",
+        .default = email
+      ),
+      secondary = case_when(
+        email == "zuozhengyu@sdau.edu.cn" ~ NA_character_,
+        .default = secondary
+      )
+    )
 
   ppg_emails |>
     dplyr::bind_rows(
@@ -110,17 +126,29 @@ tally_votes <- function(votes, ppg_emails, exclude_emails) {
     )
 }
 
-format_author_list <- function(vote_tally, ppg_emails) {
- 
- # Ensure that Harald Schneider is on author list
- hs_data <- ppg_emails |>
-   filter(str_detect(name, "Harald Schneider")) |>
-   select(-email)
+format_manual_authors <- function() {
+  tibble(
+    name = c(
+      "Bertrand Black",
+      "Muhammad Irfan",
+      "Jean-Yves Dubuisson",
+      "Sabine Hennequin",
+      "Jovani B. de S. Pereira"
+    )
+  )
+}
 
- vote_tally |>
-   select(-n_votes) |>
-   bind_rows(hs_data) |>
-   unique()
+format_author_list <- function(vote_tally, ppg_emails, manual_authors) {
+  # Add manually specified authors
+  manual_data <- ppg_emails |>
+    inner_join(manual_authors, by = join_by(name))
+
+  vote_tally |>
+    select(-n_votes) |>
+    bind_rows(manual_data) |>
+    unique() |>
+    assert(not_na, name, institution) |>
+    assert(is_uniq, name)
 }
 
 tar_write_csv <- function(x, file, ...) {
