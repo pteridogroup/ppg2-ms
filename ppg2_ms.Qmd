@@ -70,16 +70,24 @@ auth_order <- tibble::tribble(
 authors <- read_csv("data/ppg2_author_list.csv") |>
   left_join(auth_order, by = "name") |>
   mutate(
-    last_name = map_chr(name, extract_last_name)
+    last_name = map_chr(name, extract_last_name),
+    last_name_order = case_when(
+      name == "James E. Watkins, Jr." ~ "Watkins",
+      name == "Julián Mostacero Giannangeli" ~ "Mostacero",
+      .default = last_name
+    )
   ) |>
-  arrange(order, last_name) %>%
+  arrange(order, last_name_order) %>%
+  assert(not_na, name, institution) |>
+  assert(is_uniq, name) |>
   mutate(
-    other_author = str_detect(name, "Hassler|Nitta|Rothfels|Schneider|Schuettpelz", negate = TRUE),
-    auth_num = seq(nrow(.)),
-    institution = tidyr::replace_na(institution, "?"),
-    country = tidyr::replace_na(country, "?"),
-    name_print = glue::glue("{name}^{auth_num}^"),
-    inst_print = glue::glue("^{auth_num}^ {institution}, {country}")
+    other_author = str_detect(
+      name,
+      "Hassler|Nitta|Rothfels|Schneider|Schuettpelz",
+      negate = TRUE),
+    institution_num = as.numeric(as.factor(fct_inorder(institution))),
+    name_print = glue::glue("{name}^{institution_num}^"),
+    inst_print = glue::glue("^{institution_num}^{institution}, {country}")
   )
 
 other_authors <- 
@@ -88,7 +96,11 @@ other_authors <-
   pull(name_print) |>
   paste(collapse = ", ")
 
-institutions <- paste(authors$inst_print, collapse = "\n")
+institutions <- 
+  authors |>
+  pull(inst_print) |>
+  unique() |>
+  paste(collapse = "\n")
 
 ```
 
@@ -156,17 +168,17 @@ We briefly discuss this system below; technical details will be the focus of ano
 ### Taxonomic criteria
 
 Our general criteria for approving taxonomic proposals remained unchanged from PPG I [-@pteridophytephylogenygroupi2016communityderived]: we sought to only recognize monophyletic groups (clades), while minimizing taxonomic disruption and maximizing usefulness (diagnosability).
-Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) only include names that have been validly published under the International Code for Algae, Fungi, and Plants; (3) involve taxa at the genus level or higher.
-The one exception to the second rule is in the case where nomenclatural conservation proposals are before the International Committee on Plant Nomenclature (ICPN).
-Because such proposals may not be voted on by the ICPN for several years, we allowed such names to be voted on and approved by PPG.
-If the nomenclatural proposal is rejected, we will update the PPG classification accordingly.
+Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) only include names that have been validly published and are legitimate under the International Code of Nomenclature for Algae, Fungi, and Plants [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
+The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals are before the ICN.
+Because such proposals may not be voted on by the Nomenclatural Committees of the ICN for several years, we allowed such names to be voted on and approved by PPG.
+If a nomenclatural proposal is rejected, we will update the PPG classification accordingly.
 
 ### Discussion forum and voting
 
 We set up a GitHub repository (<https://www.github.com/pteridogroup/ppg>) to solicit taxonomic proposals from the PPG community.
 We used GitHub's "issue" functionality to track and discuss proposals; GitHub issues are normally used to track bugs during software development, but we found they also work well for managing taxonomic discussions.
 We designed a custom issue template to ensure that all proposals included standard information such as the proposed taxon, number of affected species, reason for the change, and citations of relevant literature.
-Anyone could submit a proposal providing it met the taxonomic criteria and they agreed to our Code of Conduct; proposals were then subject to an open discussion period of at least one month.
+Anyone could submit a proposal provided it met the taxonomic criteria and they agreed to our Code of Conduct; proposals were then subject to an open discussion period of at least one month.
 During this time, anyone who agreed to our Code of Conduct could comment on the proposal.
 
 Following the discussion period, voting on proposals was conducted via Google Forms.
@@ -177,7 +189,7 @@ The proposal, discussion, and voting process ran continuously, with a ballot iss
 
 ### Database management
 
-To maintain taxonomic data, PPG partners with World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://wfoplantlist.org>).
+To maintain taxonomic data, PPG partners with World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://www.worldfloraonline.org/>).
 World Flora Online relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs), to curate the taxonomy of specific plant groups.
 PPG is the TEN for ferns and lycophytes.
 As such, all taxonomic decisions made by PPG will also be reflected in WFO.
@@ -190,7 +202,7 @@ The initial version of the taxonomic data was based on a copy of the World Ferns
 ### Extension to the species level
 
 Another major change from PPG I is that the PPG II classification includes names at the rank of species and below (PPG I extended only to genus).
-By starting from the World Ferns classification [@hassler2025world], PPG II was pre-populated with these lower ranked taxa.
+By starting from the World Ferns classification [@hassler2025world], PPG II was pre-populated with these lower-ranked taxa.
 As changes to higher taxa were approved through our voting process, we used Rhakhis to remap taxa at the level of species and below to the appropriate position in the revised classification.
 Given that there are >13,000 accepted pteridophyte species names, it is not feasible to implement the same discussion and voting protocol that we applied to ranks at genus and above to ranks at species and below.
 Instead, we have established committees of specialists who are each responsible for reviewing and maintaining taxonomic data at the species level and below in Rhakhis for a particular pteridophyte taxon (or taxa), such that all taxa are accounted for.
@@ -205,7 +217,7 @@ This will benefit stakeholders who need an up-to-date, standardized taxonomy for
 
 ### Code availability
 
-All data and code used to generate this manuscript is available at <https://github.com/pteridogroup/ppg2-ms>.
+All data and code used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
 
 ## Results
 
@@ -328,7 +340,7 @@ The number of taxa at the level of species and below (PPG II recognizes approxim
 ### An open, community-based approach to taxonomy
 
 PPG is unique in its open, community-based approach to taxonomy.
-While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022experta] to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
+While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022experta], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
 
@@ -355,15 +367,16 @@ Known non-monophyletic taxa have been noted in the classification.
 In addition, there are some relatively deep relationships that have still not been adequately resolved, as indicated by the dashed lines in @fig-tree and summarized in @tbl-uncertain.
 
 One advantage of using rolling, monthly voting is that, going forward, a taxonomic proposal may be submitted at any time, and proposals that did not pass may be revised and/or revisited in the future.
-Furthermore, the classification can be updated and circulated online with much greater frequency than possible under a traditional print-based model whereby only major updates are published.
+Furthermore, the classification can be updated and circulated online with much greater frequency than possible under a traditional print-based model, whereby only major updates are published.
 This flexibility allows us to revisit taxonomic areas of uncertainty and revise them as soon as new data are available.
 
 ## Classification
 
 Circumscriptions and synonymy are generally not shown, although we account for all names recognized in PPG I (2016); such names are listed as synonyms if not recognized herein.
-Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online.
+A complete table of synonymy at the genus level and higher is provided in the Appendix.
 Species counts should be considered approximate.
 All taxa are considered monophyletic unless otherwise indicated.
+Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online.
 
 ```{r}
 #| label: ppg-treatment
@@ -397,7 +410,10 @@ ppg_2_taxa_count |>
   mutate(
     taxonRank = str_to_sentence(taxonRank),
     across(where(is.integer)|where(is.numeric), ~ replace_na(., 0)),
-    across(where(is.integer)|where(is.numeric), ~ scales::number(., big.mark = ","))
+    across(where(is.integer)|where(is.numeric), ~ scales::number(., big.mark = ",")),
+    across(
+      c(accepted, ppgi_accepted, wf_accepted, wf_synonym),
+      ~ str_replace_all(., "^0$", "not used"))
   ) |>
   select(
     Rank = taxonRank,
