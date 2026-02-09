@@ -2550,3 +2550,38 @@ check_ppg_higher_tax_changes <- function(ppg_ii, ppg_i, ppg_issues) {
       )
     )
 }
+
+# Apendix ----
+
+italicize_subgen_single <- function(x) {
+  x <- paste0("*", x, "*")
+  x <- str_replace_all(
+    x,
+    "subg. ",
+    "*subg. *"
+  )
+}
+
+italicize_subgen <- function(x) {
+  map_chr(x, italicize_subgen_single)
+}
+
+
+italicize_gen_single <- function(x) {
+  if (is.na(x)) {
+    return(NA)
+  }
+  is_hybrid <- str_detect(x, "×")
+  if (is_hybrid) {
+    res <- str_remove_all(x, "×") |> str_squish()
+    res <- paste0("*", res, "*")
+    res <- paste("×", res)
+  } else {
+    res <- paste0("*", x, "*")
+  }
+  str_squish(res)
+}
+
+italicize_gen <- function(x) {
+  map_chr(x, italicize_gen_single)
+}
