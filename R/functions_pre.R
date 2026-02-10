@@ -50,17 +50,20 @@ load_taxon_comments <- function(taxon_comments_url) {
 load_emails <- function(email_url) {
   ppg_emails <- googlesheets4::read_sheet(email_url) |>
     janitor::clean_names() |>
-    mutate(
-      email = case_when(
-        email == "zuozhengyu@mail.kib.ac.cn" ~ "zuozhengyu@sdau.edu.cn",
-        .default = email
-      ),
-      secondary = case_when(
-        email == "zuozhengyu@sdau.edu.cn" ~ NA_character_,
-        .default = secondary
-      )
+    rename_with(
+      ~ str_remove_all(., "_email"),
+      matches("secondary|tertiary")
+    ) |>
+    select(
+      name,
+      institution,
+      country,
+      email,
+      secondary,
+      tertiary,
+      status
     )
-
+  
   ppg_emails |>
     dplyr::bind_rows(
       dplyr::select(ppg_emails, name, email = secondary)
@@ -149,7 +152,8 @@ format_author_list <- function(vote_tally, ppg_emails, manual_authors) {
     bind_rows(manual_data) |>
     unique() |>
     assert(not_na, name, institution) |>
-    assert(is_uniq, name)
+    assert(is_uniq, name) |>
+    select(name, institution, country)
 }
 
 tar_write_csv <- function(x, file, ...) {
