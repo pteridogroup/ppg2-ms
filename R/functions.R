@@ -574,7 +574,7 @@ format_ppg_taxa_count <- function(children_tally) {
         .default = scales::number(n, big.mark = ",")
       ),
       text = glue("{n_eng} {level_eng}"),
-      text = str_replace_all(text, "one species", "monotypic")
+      text = str_replace_all(text, "one species", "monospecific")
     ) |>
     select(taxonID, level, text) |>
     pivot_wider(
