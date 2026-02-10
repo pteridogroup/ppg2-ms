@@ -133,7 +133,8 @@ format_manual_authors <- function() {
       "Muhammad Irfan",
       "Jean-Yves Dubuisson",
       "Sabine Hennequin",
-      "Jovani B. de S. Pereira"
+      "Jovani B. de S. Pereira",
+      "Shi-Yong Dong"
     )
   )
 }
