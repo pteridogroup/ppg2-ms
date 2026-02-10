@@ -25,13 +25,13 @@ wfo-9000000275,Isoetales,Prantl,order,NA
 wfo-7000000301,Isoetaceae,Dumort.,family,NA
 wfo-4000019273,Isoetes,L.,genus,NA
 wfo-9000000493,Selaginellales,Prantl,order,NA
-wfo-7000000562,Selaginellaceae,Willk.,family,NA
+wfo-7000000562,Selaginellaceae,Willk.,family,"Some treatments recognize multiple genera within Selaginellaceae [e.g., @zhou2023phylogeny; @zhouphylogeny; @zhao2026widespreada]. No such proposal has been submitted to PPG, so we continue to recognize only *Selaginella*."
 wfo-4000034966,Selaginella,P.Beauv.,genus,NA
 wfo-4100003341,Polypodiopsida,"Cronquist, Takht. & W.Zimm.",class,NA
 wfo-4100003340,Equisetidae,Warm.,subclass,NA
 wfo-9000000192,Equisetales,DC. ex Bercht. & J.Presl,order,NA
 wfo-7000000217,Equisetaceae,Michx. ex DC.,family,NA
-wfo-4000013663,Equisetum,L.,genus,NA
+wfo-4000013663,Equisetum,L.,genus,A proposal to raise the subgenera of *Equisetum* to genus level did not pass (<https://github.com/pteridogroup/ppg/issues/112>).
 wfo-4100003342,Ophioglossidae,Klinge,subclass,NA
 wfo-9000000437,Psilotales,Prantl,order,NA
 wfo-7000000502,Psilotaceae,J.W.Griff. & Henfr.,family,NA
@@ -94,7 +94,7 @@ wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,NA
 wfo-4000015735,Gleichenella,Ching,genus,NA
 wfo-4000015736,Gleichenia,Sm.,genus,NA
 wfo-4100000867,Rouxopteris,Hong M.Liu,genus,NA
-wfo-4000036680,Sticherus,C.Presl,genus,NA
+wfo-4000036680,Sticherus,C.Presl,genus,*Sticherus* was conserved with a conserved type to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
 wfo-4000036909,Stromatopteris,Mett.,genus,NA
 wfo-7000000368,Matoniaceae,C.Presl,family,NA
 wfo-4000023323,Matonia,R.Br. ex Wall.,genus,NA
@@ -310,7 +310,7 @@ wfo-4100000969,Strophocaulon,S.E.Fawc. & A.R.Sm.,genus,NA
 wfo-4000038147,Thelypteris,Schmidel,genus,NA
 wfo-4000039168,Trigonospora,Holttum,genus,NA
 wfo-7000000646,Woodsiaceae,Herter,family,NA
-wfo-4000040814,Woodsia,R.Br.,genus,NA
+wfo-4000040814,Woodsia,R.Br.,genus,A proposal to split the segregate genus *Physematium* Kaulf. out of *Woodsia* did not pass (<https://github.com/pteridogroup/ppg/issues/73>)
 wfo-7000000055,Athyriaceae,Alston,family,NA
 wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,Nothogenus between *Athyrium* and *Pseudathyrium*.
 wfo-4000009334,× Cornoathyrium,Nakaike,genus,Nothogenus between *Athyrium* and *Cornopteris*.
