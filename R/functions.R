@@ -1409,7 +1409,7 @@ make_issues_plot <- function(ppg_issues) {
     ) +
     scale_fill_manual(
       values = c(
-        "passed" = okabe_ito_cols[["bluishgreen"]],
+        "passed" = okabe_ito_cols[["blue"]],
         "not_passed" = okabe_ito_cols[["vermillion"]]
       ),
       breaks = c("passed", "not_passed"),
@@ -1518,8 +1518,8 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
     getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae"))   ,
     "tracheophytes"                                             ,
     # uncertain relationships
-    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1",
-    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2",
+    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1"    ,
+    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2"    ,
     getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))  , "3"
   ) |>
     mutate(label_type = "clade")
@@ -2594,3 +2594,263 @@ count_ppgi_gen <- function(ppg_i, ...) {
     pull(n)
 }
 
+#' Create Phylogenetic Tree Figure for PPG II
+#'
+#' Generates a comprehensive cladogram showing relationships between
+#' families of tracheophytes recognized by PPG II. The tree shows number of
+#' taxonomic changes relative to PPG I.
+#'
+#' @param phy_family A phylo object containing the family-level fern
+#'   phylogeny from the Fern Tree of Life.
+#' @param ppg A cleaned data frame of PPG taxonomic data, typically the
+#'   output of clean_ppg().
+#' @param ppg_ii PPG II data in wide format
+#' @param ppg_issues_count A data frame with category of taxonomic change
+#' (split vs. sink) for each taxonomic proposal
+#'
+#' @return A ggtree object showing the phylogenetic tree with families
+#'
+make_tree_figure_appendix <- function(
+  phy_family,
+  ppg,
+  ppg_ii,
+  ppg_issues_count
+) {
+  require(ggtree)
+  require(ggimage)
+  require(ggrepel)
+  require(ape)
+  require(phytools)
+  require(ggnewscale)
+
+  ppg_higher <- ppg |>
+    filter_out(
+      scientificName == "Dennstaedtia",
+      scientificNameAuthorship == "Bernh."
+    ) |>
+    mutate(
+      acceptedNameUsageID = case_when(
+        taxonomicStatus == "accepted" ~ taxonID,
+        .default = acceptedNameUsageID
+      )
+    )
+
+  ppg_issues_count_for_higher <-
+    ppg_issues_count |>
+    select(
+      name,
+      rank,
+      change
+    ) |>
+    left_join(
+      select(
+        ppg_higher,
+        name = scientificName,
+        acceptedNameUsageID
+      ),
+      by = "name"
+    ) |>
+    filter_out(change == "none") |>
+    assert(not_na, acceptedNameUsageID)
+
+  ppg_issues_count_genus <-
+    ppg_issues_count_for_higher |>
+    filter(rank %in% c("Genus", "Nothogenus")) |>
+    left_join(
+      select(
+        ppg_higher,
+        accepted_name = scientificName,
+        acceptedNameUsageID = taxonID
+      ),
+      by = "acceptedNameUsageID"
+    ) |>
+    assert(not_na, accepted_name) |>
+    left_join(
+      ppg_ii,
+      by = join_by(accepted_name == genus)
+    ) |>
+    unique() |>
+    assert(not_na, family) |>
+    assert(is_uniq, name)
+
+  ppg_issues_count_subfamily <-
+    ppg_issues_count_for_higher |>
+    filter(rank == "Subfamily") |>
+    left_join(
+      select(
+        ppg_higher,
+        accepted_name = scientificName,
+        acceptedNameUsageID = taxonID
+      ),
+      by = "acceptedNameUsageID"
+    ) |>
+    assert(not_na, accepted_name) |>
+    left_join(
+      unique(select(ppg_ii, -genus)),
+      by = join_by(accepted_name == subfamily)
+    ) |>
+    assert(not_na, family) |>
+    assert(is_uniq, name)
+
+  ppg_issues_count_family <-
+    ppg_issues_count_for_higher |>
+    filter(rank == "Family") |>
+    left_join(
+      select(
+        ppg_higher,
+        accepted_name = scientificName,
+        acceptedNameUsageID = taxonID
+      ),
+      by = "acceptedNameUsageID"
+    ) |>
+    assert(not_na, accepted_name) |>
+    left_join(
+      unique(select(ppg_ii, -c(genus, subfamily))),
+      by = join_by(accepted_name == family)
+    ) |>
+    mutate(family = accepted_name) |>
+    assert(not_na, family) |>
+    assert(is_uniq, name)
+
+  ppg_issues_count_higher <-
+    ppg_issues_count_genus |>
+    bind_rows(ppg_issues_count_subfamily) |>
+    bind_rows(ppg_issues_count_family) |>
+    assert(not_na, family, name) |>
+    assert(is_uniq, name) |>
+    # Group change into fct called change_fct,
+    # combine values other than "sink" or "split" into "other"
+    mutate(
+      change_fct = case_when(
+        change %in% c("sink", "split") ~ change,
+        TRUE ~ "other"
+      ) |>
+        factor(
+          levels = c("sink", "split", "other")
+        )
+    )
+
+  ppg_issues_count_by_family <-
+    ppg_issues_count_higher |>
+    group_by(family) |>
+    count(change_fct) |>
+    pivot_wider(
+      names_from = change_fct,
+      values_from = n,
+      values_fill = 0
+    ) |>
+    ungroup()
+
+  # Add other tracheophytes to fern tree
+  phy_tracheo <- fern_to_tracheo_phy(phy_family)
+
+  # Format family labels with genus/species counts. Keep num species
+  # for tip points
+  family_tip_labels <-
+    tibble(
+      taxon_name = phy_tracheo$tip.label
+    ) |>
+    left_join(
+      ppg_issues_count_by_family,
+      by = join_by(taxon_name == family),
+      relationship = "one-to-one"
+    ) |>
+    mutate(across(c(split, sink, other), ~ replace_na(., 0))) |>
+    filter_out(taxon_name == "Spermatophytes") |>
+    bind_rows(
+      tibble(
+        taxon_name = "Spermatophytes",
+        family_label = "SEED PLANTS",
+        seed_plant_image = "images/starburst.png"
+      )
+    ) |>
+    mutate(
+      family_label = case_when(
+        taxon_name != "Spermatophytes" ~ glue::glue(
+          "{taxon_name} ({split}/{sink})"
+        ) |>
+          as.character(),
+        .default = taxon_name
+      )
+    ) |>
+    select(tip = taxon_name, family_label, seed_plant_image, split, sink, other)
+
+  # Set up branch lengths
+  phy_tracheo_rescale <-
+    phy_tracheo |>
+    # Add branchlengths evenly
+    compute.brlen(method = "grafen", power = 0.9) |>
+    # Rescale total height (arbitrarily select 20)
+    rescale_tree(20) |>
+    # Tweak node for Equisetaceae + Ophioglossales
+    modify_node_height(
+      tax_set = c("Equisetaceae", "Psilotaceae"),
+      mod_length = 16
+    ) |>
+    add_root_length(1)
+
+  # set font sizes etc
+  fig_font_size <- 2.5
+  clade_lab_offset <- 9
+  branch_lab_vjust <- -0.6
+
+  # generate figure
+  tree_fig <-
+    # Base tree, with line type by uncertainty
+    ggtree(phy_tracheo_rescale) %<+%
+    # Add datasets
+    family_tip_labels +
+    # Diamonds scaled by number of splits
+    geom_tippoint(
+      aes(color = split),
+      shape = 18,
+      size = 4.5,
+      position = position_nudge(x = 0.2)
+    ) +
+    # Set color for splits and sinks to same maximum value
+    scale_color_viridis_c(
+      option = "D",
+      limits = c(0, max(family_tip_labels$split, na.rm = TRUE)),
+      na.value = "transparent",
+      name = "Number of changes"
+    ) +
+    # Circles scaled by number of sinks
+    # set color for NA values to transparent
+    new_scale_color() +
+    geom_tippoint(
+      aes(color = sink),
+      shape = 16,
+      size = 4,
+      position = position_nudge(x = 1.1)
+    ) +
+    scale_color_viridis_c(
+      option = "D",
+      limits = c(0, max(family_tip_labels$split, na.rm = TRUE)),
+      na.value = "transparent",
+      guide = "none"
+    ) +
+    # Tip label (seed plants)
+    geom_tiplab(
+      aes(image = seed_plant_image),
+      geom = "image",
+      shape = 11,
+      size = 0.019,
+      nudge_x = -0.1
+    ) +
+    # Tip labels (family)
+    geom_tiplab(
+      aes(label = family_label),
+      size = fig_font_size,
+      offset = 1.5
+    ) +
+    # seems geom_rootedge() requires brn lengths
+    geom_rootedge() +
+    xlim(-4, 33) +
+    theme(
+      # Set legend in upper left
+      legend.position = c(0.05, 0.95),
+      legend.justification = c("left", "top")
+    )
+
+  tree_fig
+}

@@ -137,6 +137,13 @@ tar_plan(
   # - tree figure
   tree_fig = make_tree_figure(phy_family, ppg, ppg_tl, children_tally),
 
+  tree_fig_appendix = make_tree_figure_appendix(
+    phy_family,
+    ppg,
+    ppg_ii,
+    ppg_issues_count
+  ),
+
   # Format classification ----
   ppg_classification = format_ppg_classification(
     ppg,
@@ -174,6 +181,12 @@ tar_plan(
   tar_quarto(
     appendix,
     "appendix.qmd",
+    quiet = FALSE
+  ),
+
+  tar_quarto(
+    appendix_2,
+    "appendix_2.qmd",
     quiet = FALSE
   )
 )

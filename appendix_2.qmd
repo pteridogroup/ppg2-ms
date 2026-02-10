@@ -1,0 +1,31 @@
+---
+title: "Appendix 2"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: false
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+Figure S1: Summary cladogram showing relationships between families of tracheophytes recognized by PPG II, colored by number of taxonomic changes relative to PPG I at the level of genus and higher. Topology for Polypodiopsida modified from Fern Tree of Life (FTOL) v1.7.0 (Nitta & al., 2022). Numbers next to each family indicate number of taxonomic changes, as number of splits (recognition of a new name) / number of sinks (subsumption of one name into another). Color of diamonds indicates number of splits; color of circles indicates number of sinks. Nitta & al. (2022) recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies (e.g., Schuettpelz & Pryer, 2007; Rothfels & al., 2015; Testo & Sundue, 2016; Du & al., 2022), so the consensus topology is shown instead.
+
+{{< pagebreak >}}
+
+```{r}
+#| label: figure-s1
+#| fig-width: 6.5
+#| fig-height: 8.5
+
+source(here::here("R/packages.R"))
+source(here::here("R/functions.R"))
+
+conflicted::conflict_prefer("filter", "dplyr")
+
+tar_load(tree_fig_appendix)
+
+tree_fig_appendix
+```
