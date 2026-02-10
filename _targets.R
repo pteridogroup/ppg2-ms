@@ -172,6 +172,11 @@ tar_plan(
     "references.yaml"
   ),
 
+  tar_file(
+    template,
+    "template.docx"
+  ),
+
   tar_quarto(
     ppg2_ms,
     "ppg2_ms.Qmd",

@@ -2289,6 +2289,109 @@ references:
   type: article-journal
   URL: http://dx.doi.org/10.1186/s12862-015-0400-7
 
+- id: borsch2020world
+  abstract: |-
+    Abstract
+                It is time to synthesize the knowledge that has been generated through more than 260 years of botanical exploration, taxonomic and, more recently, phylogenetic research throughout the world. The adoption of an updated Global Strategy for Plant Conservation (GSPC) in 2011 provided the essential impetus for the development of the World Flora Online (WFO) project. The project represents an international, coordinated effort by the botanical community to achieve GSPC Target 1, an electronic Flora of all plants. It will be a first‐ever unique and authoritative global source of information on the world's plant diversity, compiled, curated, moderated and updated by an expert and specialist‐based community (Taxonomic Expert Networks – “TENs” – covering a taxonomic group such as family or order) and actively managed by those who have compiled and contributed the data it includes. Full credit and acknowledgement will be given to the original sources, allowing users to refer back to the primary data. A strength of the project is that it is led and endorsed by a global consortium of more than 40 leading botanical institutions worldwide. A first milestone for producing the World Flora Online is to be accomplished by the end of 2020, but the WFO Consortium is committed to continuing the WFO programme beyond 2020 when it will develop its full impact as the authoritative source of information on the world's plant biodiversity.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 10
+  author:
+    - family: Borsch
+      given: Thomas
+    - family: Berendsohn
+      given: Walter
+    - family: Dalcin
+      given: Eduardo
+    - family: Delmas
+      given: Maïté
+    - family: Demissew
+      given: Sebsebe
+    - family: Elliott
+      given: Alan
+    - family: Fritsch
+      given: Peter
+    - family: Fuchs
+      given: Anne
+    - family: Geltman
+      given: Dmitry
+    - family: Güner
+      given: Adil
+    - family: Haevermans
+      given: Thomas
+    - family: Knapp
+      given: Sandra
+    - family: Le Roux
+      given: M. Marianne
+    - family: Loizeau
+      given: Pierre‐André
+    - family: Miller
+      given: Chuck
+    - family: Miller
+      given: James
+    - family: Miller
+      given: Joseph T.
+    - family: Palese
+      given: Raoul
+    - family: Paton
+      given: Alan
+    - family: Parnell
+      given: John
+    - family: Pendry
+      given: Colin
+    - family: Qin
+      given: Hai‐Ning
+    - family: Sosa
+      given: Victoria
+    - family: Sosef
+      given: Marc
+    - family: Von Raab‐Straube
+      given: Eckhard
+    - family: Ranwashe
+      given: Fhatani
+    - family: Raz
+      given: Lauren
+    - family: Salimov
+      given: Rashad
+    - family: Smets
+      given: Erik
+    - family: Thiers
+      given: Barbara
+    - family: Thomas
+      given: Wayt
+    - family: Tulig
+      given: Melissa
+    - family: Ulate
+      given: William
+    - family: Ung
+      given: Visotheary
+    - family: Watson
+      given: Mark
+    - family: Jackson
+      given: Peter Wyse
+    - family: Zamora
+      given: Nelson
+  citation-key: borsch2020world
+  container-title: Taxon
+  container-title-short: Taxon
+  DOI: 10.1002/tax.12373
+  ISSN: 0040-0262, 1996-8175
+  issue: '6'
+  issued:
+    - year: 2020
+      month: 12
+  language: en
+  page: 1311–1341
+  source: DOI.org (Crossref)
+  title: >-
+    World Flora Online: Placing taxonomists at the heart of a definitive and
+    comprehensive global resource on the world's plants
+  title-short: World Flora Online
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12373
+  volume: '69'
+
 - id: bosman1991monograph
   author:
     - family: Bosman
@@ -7439,7 +7542,7 @@ references:
   language: English
   page: 753–761
   title: >-
-    rbcL phylogeny of the fern genus Trichomanes (Hymenophyllaceae), with
+    rbcL phylogeny of the fern genus *Trichomanes* (Hymenophyllaceae), with
     special reference to neotropical taxa
   type: article-journal
   volume: '164'
@@ -8052,8 +8155,8 @@ references:
   language: English
   page: 499–505
   title: >-
-    Origin of Dryopteris shibipedis (Dryopteridaceae), a fern species extinct in
-    the wild
+    Origin of *Dryopteris shibipedis* (Dryopteridaceae), a fern species extinct
+    in the wild
   type: article-journal
   URL: http://link.springer.com/10.1007/s10265-012-0474-x
   volume: '125'
@@ -8126,7 +8229,9 @@ references:
   language: English
   page: 53–65
   publisher: The Japanese Society for Plant Systematics
-  title: New records of Asplenium varians (Aspleniaceae) and two new hybrids in Japan
+  title: >-
+    New records of *Asplenium varians* (Aspleniaceae) and two new hybrids in
+    Japan
   type: article-journal
   URL: >-
     https://www.jstage.jst.go.jp/article/apg/65/2/65_KJ00009406721/_article/-char/ja/
@@ -8165,7 +8270,7 @@ references:
   page: 19–28
   publisher: The Japanese Society for Plant Systematics
   title: >-
-    Allopolyploid origin and distribution range of Acystopteris taiwaniana
+    Allopolyploid origin and distribution range of *Acystopteris taiwaniana*
     (Cystopteridaceae: Polypodiales)
   type: article-journal
   URL: https://www.jstage.jst.go.jp/article/apg/70/1/70_201812/_article/-char/ja/
@@ -8337,7 +8442,7 @@ references:
   container-title: Botanical Journal of the Linnean Society
   issued:
     - year: 2022
-  title: "Cytogenetic, geographical, spore type and plastid haplotype data reveal cryptic patterns of species diversity in the cosmopolitan Cystopteris fragilis complex\_(Polypodiopsida: Cystopteridaceae)"
+  title: "Cytogenetic, geographical, spore type and plastid haplotype data reveal cryptic patterns of species diversity in the cosmopolitan *Cystopteris fragilis* complex\_(Polypodiopsida: Cystopteridaceae)"
   type: article-journal
   URL: >-
     https://academic.oup.com/botlinnean/advance-article-abstract/doi/10.1093/botlinnean/boab078/6510911
@@ -9401,7 +9506,7 @@ references:
   source: Zotero
   title: >-
     Phylogenetics and population structure of the western North American endemic
-    Pacific Laurasian clade of Isoëtes
+    Pacific Laurasian clade of *Isoëtes*
   type: article-journal
 
 - id: friesen2015gastonys
@@ -10047,8 +10152,8 @@ references:
     - year: 2001
   page: 197–213
   title: >-
-    Phylogenetic placements of Loxoscaphe thecifera (Aspleniaceae) and
-    Actiniopteris radiata (Pteridaceae) based on analysis of rbcL nucleotide
+    Phylogenetic placements of *Loxoscaphe thecifera* (Aspleniaceae) and
+    *Actiniopteris radiata* (Pteridaceae) based on analysis of rbcL nucleotide
     sequences
   type: article-journal
   URL: >-
@@ -10333,6 +10438,44 @@ references:
   title: Macrothelypteris torresiana (Thelypteridaceae) new to Kentucky
   type: article-journal
   volume: '5'
+
+- id: govaertsWorldChecklistVascular2021
+  abstract: |-
+    Abstract
+                The World Checklist of Vascular Plants (WCVP) is a comprehensive list of scientifically described plant species, compiled over four decades, from peer-reviewed literature, authoritative scientific databases, herbaria and observations, then reviewed by experts. It is a vital tool to facilitate plant diversity research, conservation and effective management, including sustainable use and equitable sharing of benefits. To maximise utility, such lists should be accessible, explicitly evidence-based, transparent, expert-reviewed, and regularly updated, incorporating new evidence and emerging scientific consensus. WCVP largely meets these criteria, being continuously updated and freely available online. Users can browse, search, or download a user-defined subset of accepted species with corresponding synonyms and bibliographic details, or a date-stamped full dataset. To facilitate appropriate data reuse by individual researchers and global initiatives including Global Biodiversity Information Facility, Catalogue of Life and World Flora Online, we document data collation and review processes, the underlying data structure, and the international data standards and technical validation that ensure data quality and integrity. We also address the questions most frequently received from users.
+  accessed:
+    - year: 2021
+      month: 8
+      day: 24
+  author:
+    - family: Govaerts
+      given: Rafaël
+    - family: Nic Lughadha
+      given: Eimear
+    - family: Black
+      given: Nicholas
+    - family: Turner
+      given: Robert
+    - family: Paton
+      given: Alan
+  citation-key: govaertsWorldChecklistVascular2021
+  container-title: Scientific Data
+  container-title-short: Scientific Data
+  DOI: 10/gmkc34
+  ISSN: 2052-4463
+  issue: '1'
+  issued:
+    - year: 2021
+      month: 12
+  language: en
+  page: '215'
+  source: DOI.org (Crossref)
+  title: >-
+    The World Checklist of Vascular Plants, a continuously updated resource for
+    exploring global plant diversity
+  type: article-journal
+  URL: https://www.nature.com/articles/s41597-021-00997-6
+  volume: '8'
 
 - id: graff1920unreported
   author:
@@ -11112,8 +11255,8 @@ references:
   PMID: '30541055'
   title: >-
     Widespread co-occurrence of multiple ploidy levels in fragile ferns
-    (Cystopteris fragilis complex; Cystopteridaceae) probably stems from similar
-    ecology of cytotypes, their efficient dispersal and inter-ploidy
+    (*Cystopteris fragilis* complex; Cystopteridaceae) probably stems from
+    similar ecology of cytotypes, their efficient dispersal and inter-ploidy
     hybridization
   type: article-journal
   URL: >-
@@ -11354,7 +11497,7 @@ references:
   publisher: Botanical Society of America
   title: >-
     Differential antheridiogen response and evolutionary mechanisms in
-    Cystopteris
+    *Cystopteris*
   type: article-journal
   URL: http://www.jstor.org/stable/2443677
   volume: '72'
@@ -11391,7 +11534,7 @@ references:
   issued:
     - year: 1985
   page: 1855–1863
-  title: Triploidy and its evolutionary significance in Cystopteris protrusa
+  title: Triploidy and its evolutionary significance in *Cystopteris protrusa*
   type: article-journal
   volume: '63'
 
@@ -11481,7 +11624,7 @@ references:
     - year: 1990
   page: 314–329
   title: >-
-    Biosystematic analysis of the Cystopteris tennesseensis (Dryopteridaceae)
+    Biosystematic analysis of the *Cystopteris tennesseensis* (Dryopteridaceae)
     complex
   type: article-journal
   URL: http://www.jstor.org/stable/2399546
@@ -11500,8 +11643,8 @@ references:
     - year: 1991
   page: 7–23
   title: >-
-    New species of North American Cystopteris and Polypodium, with comments on
-    their reticulate relationships
+    New species of North American *Cystopteris* and *Polypodium*, with comments
+    on their reticulate relationships
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=7898137831378795029related:FTpo8oLSm20J
@@ -11520,7 +11663,7 @@ references:
   page: '475'
   publisher: Oxford University Press
   publisher-place: New York
-  title: Bommeria
+  title: '*Bommeria*'
   type: chapter
   volume: 2 Pteridop
 
@@ -11541,7 +11684,7 @@ references:
   page: 263–270
   publisher: Oxford University Press
   publisher-place: New York
-  title: Cystopteris
+  title: '*Cystopteris*'
   type: chapter
   volume: '2'
 
@@ -11588,7 +11731,7 @@ references:
   page: '110'
   source: DOI.org (Crossref)
   title: >-
-    Phylogeny of the Polypodium vulgare Complex: Insights from Chloroplast DNA
+    Phylogeny of the *Polypodium vulgare* Complex: Insights from Chloroplast DNA
     Restriction Site Data
   title-short: Phylogeny of the Polypodium vulgare Complex
   type: article-journal
@@ -11609,7 +11752,7 @@ references:
   page: 361–374
   title: >-
     RbcL sequences provide phylogenetic insights among sister species of the
-    fern genus Polypodium
+    fern genus *Polypodium*
   type: article-journal
   volume: '85'
 
@@ -11627,7 +11770,7 @@ references:
   issued:
     - year: 1995
   page: 89–109
-  title: Reticulate evolution in the Polypodium vulgare complex
+  title: Reticulate evolution in the *Polypodium vulgare* complex
   type: article-journal
   volume: '20'
 
@@ -11689,7 +11832,7 @@ references:
   page: 217–227
   publisher: BioOne
   title: >-
-    Systematics of the ant-fern genus Lecanopteris (Polypodiaceae): Testing
+    Systematics of the ant-fern genus *Lecanopteris* (Polypodiaceae): Testing
     phylogenetic hypotheses with DNA sequences
   type: article-journal
   URL: http://www.bioone.org/doi/abs/10.1043/0363-6445-28.2.217
@@ -12302,8 +12445,8 @@ references:
     - year: 2002
   page: 214–228
   title: >-
-    A new hybrid Polypodium provides insights concerning the systematics of
-    Polypodium scouleri and its sympatric congeners
+    A new hybrid *Polypodium* provides insights concerning the systematics of
+    *Polypodium scouleri* and its sympatric congeners
   type: article-journal
   volume: '92'
 
@@ -13030,7 +13173,7 @@ references:
   language: English
   page: 661–684
   title: >-
-    Reticulate evolution in the apogamous Dryopteris varia complex
+    Reticulate evolution in the apogamous *Dryopteris varia* complex
     (Dryopteridaceae, subg. Erythrovariae, sect. Variae) and its related sexual
     species in Japan
   type: article-journal
@@ -14440,7 +14583,7 @@ references:
   issued:
     - year: 1986
   page: 26–31
-  title: Trophopods in North American species of Athyrium (Aspleniaceae)
+  title: Trophopods in North American species of *Athyrium* (Aspleniaceae)
   type: article-journal
   volume: '11'
 
@@ -14460,7 +14603,7 @@ references:
   issued:
     - year: 2000
   page: 423–431
-  title: Adaptations to extreme low light in the fern Trichomanes speciosum
+  title: Adaptations to extreme low light in the fern *Trichomanes speciosum*
   type: article-journal
   volume: '148'
 
@@ -14818,7 +14961,7 @@ references:
   issued:
     - year: 1975
   page: 160–163
-  title: Reticulate venation of Diplazium heterophlebium
+  title: Reticulate venation of *Diplazium heterophlebium*
   type: article-journal
   volume: '26'
 
@@ -14831,7 +14974,7 @@ references:
   issued:
     - year: 1975
   page: 56–60
-  title: On the systematic position of Athyrium mesosorum
+  title: On the systematic position of *Athyrium mesosorum*
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=4204463193356891282related:kvQ9h_9AWToJ
@@ -14846,7 +14989,7 @@ references:
   issued:
     - year: 1977
   page: 23–40
-  title: Classification of Athyrium and allied genera of Japan
+  title: Classification of *Athyrium* and allied genera of Japan
   type: article-journal
   volume: '90'
 
@@ -14859,7 +15002,7 @@ references:
   issued:
     - year: 1979
   page: 177–179
-  title: A new combination in Athyrium (Athyriaceae) of North America
+  title: A new combination in *Athyrium* (Athyriaceae) of North America
   type: article-journal
   volume: '49'
 
@@ -14873,7 +15016,7 @@ references:
   issued:
     - year: 1979
   page: 101–118
-  title: Taxonomic study of the genus Cornopteris (Athyriaceae)
+  title: Taxonomic study of the genus *Cornopteris* (Athyriaceae)
   type: article-journal
   volume: '30'
 
@@ -14920,8 +15063,8 @@ references:
     - year: 1984
   page: 375–430
   title: >-
-    A taxonomic study of the athyrioid fern genus Deparia with main reference to
-    the Pacific species
+    A taxonomic study of the athyrioid fern genus *Deparia* with main reference
+    to the Pacific species
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=5515140149193429030related:JlArx762iUwJ
@@ -14940,8 +15083,8 @@ references:
     - year: 1988
   page: 77–85
   title: >-
-    Taxonomic and phytogeographic relationships of Diplazium flavoviride, D.
-    pycnocarpon, and Diplaziopsis
+    Taxonomic and phytogeographic relationships of *Diplazium flavoviride, D.
+    pycnocarpon*, and *Diplaziopsis*
   type: article-journal
   volume: '78'
 
@@ -14983,7 +15126,7 @@ references:
   issued:
     - year: 1990
   page: 461–468
-  title: The systematic position of Asplenium cardiophyllum (Aspleniaceae)
+  title: The systematic position of *Asplenium cardiophyllum* (Aspleniaceae)
   type: article-journal
   volume: '103'
 
@@ -15015,7 +15158,7 @@ references:
   language: en
   page: 65--71
   source: Zotero
-  title: 'The systematic status of Matteuccia intermedia (Woodsiaceae: Pteridophyta)'
+  title: 'The systematic status of *Matteuccia intermedia* (Woodsiaceae: Pteridophyta)'
   type: article-journal
   volume: '14'
 
@@ -15068,7 +15211,7 @@ references:
   page: 252–253
   publisher: Oxford University Press
   publisher-place: New York
-  title: Diplazium
+  title: '*Diplazium*'
   type: chapter
   volume: 2 Pteridop
 
@@ -15172,7 +15315,7 @@ references:
   language: en
   page: 1–3
   source: DOI.org (Crossref)
-  title: Cytological study of a fern Cystopteris fragilis in Mongolian Altai
+  title: Cytological study of a fern *Cystopteris fragilis* in Mongolian Altai
   type: article-journal
   URL: http://www.jstage.jst.go.jp/article/iscb/5/1/5_1_1/_article
   volume: '5'
@@ -16768,6 +16911,42 @@ references:
   type: article-journal
   volume: '93'
 
+- id: kruk2015woodsia
+  accessed:
+    - year: 2026
+      month: 2
+      day: 9
+  author:
+    - family: Kruk
+      given: Jerzy
+    - family: Sliwinska
+      given: Elwira
+    - family: Grabowska-Joachimiak
+      given: Aleksandra
+    - family: Kromer
+      given: Krystyna
+    - family: Szymańska
+      given: Renata
+  citation-key: kruk2015woodsia
+  container-title: Annales Botanici Fennici
+  container-title-short: Annales Botanici Fennici
+  DOI: 10.5735/085.052.0310
+  ISSN: 0003-3847, 1797-2442
+  issue: 3–4
+  issued:
+    - year: 2015
+      month: 8
+  language: en
+  page: 193–201
+  source: DOI.org (Crossref)
+  title: >-
+    *Woodsia pulchella* in the Western Carpathians: A relict species at the
+    northern limit of Its distribution
+  title-short: '*Woodsia pulchella* in the Western Carpathians'
+  type: article-journal
+  URL: http://www.bioone.org/doi/10.5735/085.052.0310
+  volume: '52'
+
 - id: kumari2016bioremediation
   author:
     - family: Kumari
@@ -16807,7 +16986,7 @@ references:
   issued:
     - year: 2010
   page: 1–4
-  title: Phylogeny, Systematics, and Taxonomic Revision of Deparia
+  title: Phylogeny, Systematics, and Taxonomic Revision of *Deparia*
   type: article-journal
 
 - id: kuo2011first
@@ -16936,7 +17115,7 @@ references:
     - year: 2017
   language: English
   title: >-
-    Morphological characterization of infra-generic lineages in Deparia
+    Morphological characterization of infra-generic lineages in *Deparia*
     (Athyriaceae: Polypodiales)
   type: article-journal
   URL: http://doi.wiley.com/10.1111/cla.12192
@@ -17136,6 +17315,7 @@ references:
     - family: Kurita
       given: Siro
   citation-key: kurita1976chromosome
+  container-title: La Kromosomo
   issued:
     - year: 1976
   page: 69--76
@@ -17880,6 +18060,26 @@ references:
   title: Invasion of a Southeastern Pine Savanna by Japanese Climbing Fern
   type: article-journal
   volume: '76'
+
+- id: leitch2019pteridophyte
+  author:
+    - family: Leitch
+      given: Ilia J
+    - family: Johnson
+      given: E
+    - family: Pellicer
+      given: Jaume
+    - family: Hidalgo
+      given: Oriane
+    - family: Bennett
+      given: M D
+  citation-key: leitch2019pteridophyte
+  issued:
+    - year: 2019
+  title: Pteridophyte DNA C-values database
+  type: software
+  URL: https://cvalues.science.kew.org/
+  version: release 6.0
 
 - id: lekschas2004phylogenetic
   abstract: >-
@@ -20248,8 +20448,8 @@ references:
     - year: 2012
   page: 940–955
   title: >-
-    Biogeographical analysis of two Polypodium species complexes (Polypodiaceae)
-    in Mexico and Central America
+    Biogeographical analysis of two *Polypodium* species complexes
+    (Polypodiaceae) in Mexico and Central America
   type: article-journal
   volume: '106'
 
@@ -23422,7 +23622,7 @@ references:
   language: en
   page: '241'
   source: DOI.org (Crossref)
-  title: Notes on the ferns of the Eastern United States (Concluded)
+  title: Notes on the ferns of the eastern United States (concluded)
   type: article-journal
   URL: https://www.jstor.org/stable/1545864?origin=crossref
   volume: '40'
@@ -23437,7 +23637,7 @@ references:
   issued:
     - year: 1958
   page: 136–142
-  title: The Californian Species of Thelypteris
+  title: The Californian species of *Thelypteris*
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=9711936905432244029related:PZ9L0Si7x4YJ
@@ -23453,7 +23653,7 @@ references:
     - year: 1959
   page: 66–69
   publisher: JSTOR
-  title: The identification of a Costa Rican Blechnum
+  title: The identification of a Costa Rican *Blechnum*
   type: article-journal
   URL: http://www.jstor.org/stable/10.2307/1545923
 
@@ -23467,7 +23667,7 @@ references:
     - year: 1963
   page: 149–154
   publisher: JSTOR
-  title: The classification of Thelypteris
+  title: The classification of *Thelypteris*
   type: article-journal
   URL: http://www.jstor.org/stable/10.2307/1546152
 
@@ -23493,7 +23693,7 @@ references:
   language: en
   page: '141'
   source: DOI.org (Crossref)
-  title: New Data on North American Oak Ferns, Gymnocarpium
+  title: New data on North American oak ferns, *Gymnocarpium*
   type: article-journal
   URL: https://www.jstor.org/stable/1546241?origin=crossref
   volume: '57'
@@ -24230,7 +24430,7 @@ references:
     - year: 2003
   page: 490–502
   title: >-
-    Molecular phylogenetics of Anogramma species and related genera
+    Molecular phylogenetics of *Anogramma* species and related genera
     (Pteridaceae: Taenitidoideae)
   type: article-journal
   volume: '28'
@@ -24337,8 +24537,8 @@ references:
   page: 1141–1150
   source: DOI.org (Crossref)
   title: >-
-    A Genomewide Study of Reproductive Barriers Between Allopatric Populations
-    of a Homosporous Fern, *Ceratopteris richardii*
+    A genomewide study of reproductive barriers between allopatric populations
+    of a homosporous fern, *Ceratopteris richardii*
   type: article-journal
   URL: https://academic.oup.com/genetics/article/177/2/1141/6064351
   volume: '177'
@@ -28081,7 +28281,7 @@ references:
   publisher: American Society of Plant Taxonomists
   title: >-
     Isozymic and chromosomal evidence for the allotetraploid origin of
-    Gymnocarpium dryopteris (Dryopteridaceae)
+    *Gymnocarpium dryopteris* (Dryopteridaceae)
   type: article-journal
   URL: http://www.jstor.org/stable/2419795
   volume: '18'
@@ -29008,7 +29208,7 @@ references:
   page: 701–707
   publisher: JSTOR
   title: >-
-    Incipient polyploid speciation in the maidenhair fern (Adiantum pedatum;
+    Incipient polyploid speciation in the maidenhair fern (*Adiantum pedatum*;
     Adiantaceae)?
   type: article-journal
   URL: http://www.jstor.org/stable/2444885
@@ -29133,8 +29333,8 @@ references:
   page: 439–447
   publisher: American Society of Plant Taxonomists
   title: >-
-    Genetic evidence for allopolyploidy in the neotropical fern Hemionitis
-    pinnatifida (Adiantaceae) and the reconstruction of an ancestral genome
+    Genetic evidence for allopolyploidy in the neotropical fern *Hemionitis
+    pinnatifida* (Adiantaceae) and the reconstruction of an ancestral genome
   type: article-journal
   URL: http://www.jstor.org/stable/2418989
   volume: '14'
@@ -29277,7 +29477,7 @@ references:
   page: 337–347
   title: >-
     Molecular phylogenetics and evolution of the endemic Hawaiian genus
-    Adenophorus (Grammitidaceae)
+    *Adenophorus* (Grammitidaceae)
   type: article-journal
   URL: http://linkinghub.elsevier.com/retrieve/pii/S1055790302002348
   volume: '26'
@@ -29688,7 +29888,7 @@ references:
   issued:
     - year: 2001
   page: 1151–1163
-  title: Architecture of the sperm cell of Psilotum
+  title: Architecture of the sperm cell of *Psilotum*
   type: article-journal
   URL: >-
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;id=11454615&amp;retmode=ref&amp;cmd=prlinks
@@ -35065,7 +35265,7 @@ references:
   PMID: '12931072556324550334'
   title: >-
     Phylogeny, divergence time estimates, and phylogeography of the diploid
-    species of the Polypodium vulgare complex (Polypodiaceae)
+    species of the *Polypodium vulgare* complex (Polypodiaceae)
   type: article-journal
   URL: http://www.bioone.org/doi/abs/10.1600/036364414X683921
   volume: '39'
@@ -35123,6 +35323,50 @@ references:
     Overlapping patterns of gene expression between gametophyte and sporophyte
     phases in the fern Polypodium amorphum (Polypodiales)
   type: article-journal
+
+- id: siljak-yakovlev2010genome
+  accessed:
+    - year: 2026
+      month: 2
+      day: 10
+  author:
+    - family: Siljak-Yakovlev
+      given: S.
+    - family: Pustahija
+      given: F.
+    - family: Šolić
+      given: E. M.
+    - family: Bogunić
+      given: F.
+    - family: Muratović
+      given: E.
+    - family: Bašić
+      given: N.
+    - family: Catrice
+      given: O.
+    - family: Brown
+      given: S. C.
+  citation-key: siljak-yakovlev2010genome
+  container-title: Advanced Science Letters
+  container-title-short: adv sci lett
+  DOI: 10.1166/asl.2010.1115
+  ISSN: 19366612, 19367317
+  issue: '2'
+  issued:
+    - year: 2010
+      month: 6
+      day: 1
+  language: en
+  page: 190–213
+  source: DOI.org (Crossref)
+  title: >-
+    Towards a Genome Size and Chromosome Number Database of Balkan Flora:
+    C-Values in 343 Taxa with Novel Values for 242
+  title-short: Towards a Genome Size and Chromosome Number Database of Balkan Flora
+  type: article-journal
+  URL: >-
+    http://openurl.ingenta.com/content/xref?genre=article&issn=1936-6612&volume=3&issue=2&spage=190
+  volume: '3'
 
 - id: simpson2008two
   author:
@@ -35208,7 +35452,7 @@ references:
   language: en
   page: '133'
   source: DOI.org (Crossref)
-  title: 'Matteuccia struthiopteris (L.) Todaro (fiddlehead fern): an updated review'
+  title: '*Matteuccia struthiopteris* (L.) Todaro (fiddlehead fern): an updated review'
   title-short: Matteuccia struthiopteris (L.) Todaro (fiddlehead fern)
   type: article-journal
   URL: https://BNRC.springeropen.com/articles/10.1186/s42269-022-00822-z
@@ -35763,29 +36007,6 @@ references:
   type: article-journal
   URL: papers://ebd7d3df-d8f1-4be8-bcf7-4fb07ababf30/Paper/p490
   volume: '55'
-
-- id: smith2006serpocaulon
-  abstract: >-
-    The classical Linnaean genus Polypodium, as adopt- ed in most recent floras
-    and taxonomic treatises, com- prises about 125–150 species, most of them New
-    World. Sometimes, additional genera are subsumed within Polypodium, eg,
-  author:
-    - family: Smith
-      given: A R
-    - family: Kreier
-      given: H
-    - family: Haufler
-      given: C
-    - family: Ranker
-      given: Thomas A
-  citation-key: smith2006serpocaulon
-  container-title: Taxon
-  issued:
-    - year: 2006
-  title: Serpocaulon (Polypodiaceae), a new genus segregated from Polypodium
-  type: article-journal
-  URL: >-
-    http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=8491639140537015028related:9BqDxM5c2HUJ
 
 - id: smith2006serpocaulona
   abstract: >-
@@ -44629,6 +44850,66 @@ references:
   title: Fern Families and Genera of China
   type: book
 
+- id: wu2021two
+  abstract: |-
+    Two East Asian
+                  Lomariopsis
+                  (Lomariopsidaceae, Polypodiales) species,
+                  Lomariopsis moorei
+                  and
+                  Lomariopsis longini
+                  , which were previously misidentified as
+                  L. spectabilis
+                  , are here described as new species based on evidence from morphological characters and a molecular phylogeny. The two species differ from the three other described species in East Asia by their venation, pinna shapes, and perine morphology. A phylogeny based on a combined dataset of three chloroplast regions (
+                  rbcL
+                  +
+                  rps4-trnS
+                  +
+                  trnL-L-F
+                  ) showed that
+                  L. moorei
+                  and
+                  L. longini
+                  each formed a well-supported monophyletic group which was distantly related to both
+                  L. spectabilis
+                  and the other morphologically similar East Asian species,
+                  L. boninensis
+                  .
+  accessed:
+    - year: 2022
+      month: 9
+      day: 9
+  author:
+    - family: Wu
+      given: Yi-Hsuan
+    - family: Sun
+      given: Chih-Yun
+    - family: Ebihara
+      given: Atsushi
+    - family: Lu
+      given: Ngan Thi
+    - family: Rouhan
+      given: Germinal
+    - family: Kuo
+      given: Li-Yaung
+  citation-key: wu2021two
+  container-title: PhytoKeys
+  container-title-short: PK
+  DOI: 10.3897/phytokeys.187.77035
+  ISSN: 1314-2003, 1314-2011
+  issued:
+    - year: 2021
+      month: 12
+      day: 20
+  page: 161–176
+  source: DOI.org (Crossref)
+  title: >-
+    Two new species in the fern genus Lomariopsis (Lomariopsidaceae) from East
+    Asia
+  type: article-journal
+  URL: https://phytokeys.pensoft.net/article/77035/
+  volume: '187'
+
 - id: wubs2010mixed
   author:
     - family: Wubs
@@ -46465,6 +46746,46 @@ references:
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1111/cla.70024
 
+- id: zhao2026widespreada
+  accessed:
+    - year: 2026
+      month: 2
+      day: 9
+  author:
+    - family: Zhao
+      given: Jing
+    - family: Yu
+      given: Hong
+    - family: Rothfels
+      given: Carl J.
+    - family: Yang
+      given: Jian-Jun
+    - family: Fang
+      given: Shao-Li
+    - family: He
+      given: Zhao-Rong
+    - family: Zhang
+      given: Li-Bing
+    - family: Zhou
+      given: Xin-Mao
+  citation-key: zhao2026widespreada
+  container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2025.108454
+  ISSN: '10557903'
+  issued:
+    - year: 2026
+      month: 1
+  language: en
+  page: '108454'
+  source: DOI.org (Crossref)
+  title: >-
+    Widespread incongruence in the phylogenomics of the ancient land plant
+    lineage, Selaginellaceae (lycophytes)
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S105579032500171X
+  volume: '214'
+
 - id: zhong2014two
   abstract: >-
     We report the chloroplast genomes of a tree fern (Dicksonia squarrosa) and a
@@ -46848,6 +47169,33 @@ references:
   URL: http://doi.wiley.com/10.1111/jse.12305
   volume: '56'
 
+- id: zhou2023phylogeny
+  accessed:
+    - year: 2023
+      month: 7
+      day: 27
+  author:
+    - family: Zhou
+      given: Xin-Mao
+    - family: Zhang
+      given: Li-Bing
+  citation-key: zhou2023phylogeny
+  container-title: Plant Diversity
+  container-title-short: Plant Diversity
+  DOI: 10.1016/j.pld.2023.07.003
+  ISSN: '24682659'
+  issued:
+    - year: 2023
+      month: 7
+  language: en
+  page: S2468265923001026
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogeny, character evolution, and classification of Selaginellaceae
+    (lycophytes)
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S2468265923001026
+
 - id: zhouphylogeny
   abstract: >-
     In recent years, there has been a surge of interest in Selaginellaceae
@@ -46882,12 +47230,18 @@ references:
     - family: Zhang
       given: Li-Bing
   citation-key: zhouphylogeny
+  container-title: Phytotaxa
+  issue: '2'
+  issued:
+    - year: 2025
   language: en
+  page: 147–192
   source: Zotero
   title: >-
     Phylogeny and systematics of the New World Selaginellaceae in a global
     context
   type: article-journal
+  volume: '684'
 
 - id: zier2015ecophysiology
   author:
