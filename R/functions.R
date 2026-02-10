@@ -2586,3 +2586,11 @@ italicize_gen_single <- function(x) {
 italicize_gen <- function(x) {
   map_chr(x, italicize_gen_single)
 }
+
+count_ppgi_gen <- function(ppg_i, ...) {
+  ppg_i |>
+    filter(...) |>
+    summarize(n = n_distinct(genus)) |>
+    pull(n)
+}
+
