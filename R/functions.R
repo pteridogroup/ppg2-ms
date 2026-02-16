@@ -237,7 +237,7 @@ make_family_tree <- function() {
   wf$root.edge <- 10
 
   # Remove water ferns from main tree
-  tree <- ape::drop.tip(phy_family, c("Salviniaceae", "Marsileaceae"))
+  phy_family <- ape::drop.tip(phy_family, c("Salviniaceae", "Marsileaceae"))
 
   # Show node IDs on plot
   # plot(tree)
@@ -245,7 +245,22 @@ make_family_tree <- function() {
   # nodelabels()
 
   # Bind water ferns back at node 55
-  phy_family <- ape::bind.tree(tree, wf, where = 55) |> multi2di()
+  phy_family <- ape::bind.tree(phy_family, wf, where = 55) |> multi2di()
+
+  # Fix equisetales
+  equi <- ape::keep.tip(phy_family, "Equisetaceae")
+
+  equi$root.edge <- 10
+
+  phy_family <- ape::drop.tip(phy_family, "Equisetaceae")
+
+  phy_family <- ape::bind.tree(phy_family, equi, where = "root")
+
+  phy_family <- ape::root(
+    phy_family,
+    outgroup = "Equisetaceae",
+    resolve.root = TRUE
+  )
 
   ape::ladderize(phy_family)
 }
@@ -1656,14 +1671,9 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
   phy_tracheo_rescale <-
     phy_tracheo |>
     # Add branchlengths evenly
-    compute.brlen(method = "grafen", power = 0.9) |>
+    compute.brlen(method = "unif") |>
     # Rescale total height (arbitrarily select 20)
     rescale_tree(20) |>
-    # Tweak node for Equisetaceae + Ophioglossales
-    modify_node_height(
-      tax_set = c("Equisetaceae", "Psilotaceae"),
-      mod_length = 16
-    ) |>
     add_root_length(1)
 
   # set font sizes etc
@@ -1674,7 +1684,10 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
   # generate figure
   tree_fig <-
     # Base tree, with line type by uncertainty
-    ggtree(phy_tracheo_rescale, aes(linetype = uncertain)) %<+%
+    ggtree(
+      phy_tracheo_rescale #,
+      # aes(linetype = uncertain)
+    ) %<+%
     # Add datasets
     line_types_nodes %<+%
     family_tip_labels %<+%
@@ -2780,14 +2793,9 @@ make_tree_figure_appendix <- function(
   phy_tracheo_rescale <-
     phy_tracheo |>
     # Add branchlengths evenly
-    compute.brlen(method = "grafen", power = 0.9) |>
+    compute.brlen(method = "unif") |>
     # Rescale total height (arbitrarily select 20)
     rescale_tree(20) |>
-    # Tweak node for Equisetaceae + Ophioglossales
-    modify_node_height(
-      tax_set = c("Equisetaceae", "Psilotaceae"),
-      mod_length = 16
-    ) |>
     add_root_length(1)
 
   # set font sizes etc
