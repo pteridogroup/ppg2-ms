@@ -605,8 +605,8 @@ format_ppg_taxa_count <- function(children_tally) {
       ) |>
         str_to_sentence() |>
         str_replace_all(
-          "One genus and monotypic",
-          "Single monotypic genus"
+          "One genus and monospecific",
+          "Single monospecific genus"
         )
     ) |>
     select(taxonID, taxon_count = text_c)
@@ -2651,6 +2651,7 @@ make_tree_figure_appendix <- function(
       by = "name"
     ) |>
     filter_out(change == "none") |>
+    unique() |>
     assert(not_na, acceptedNameUsageID)
 
   ppg_issues_count_genus <-

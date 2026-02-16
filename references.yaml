@@ -184,7 +184,7 @@ references:
     - year: 2008
   page: 79–95
   title: >-
-    Molecular phylogeny of the lady fern genus Athyrium in Japan based on
+    Molecular phylogeny of the lady fern genus *Athyrium* in Japan based on
     chloroplast rbcL and trnL-trnF sequences
   type: article-journal
   volume: '59'
@@ -773,7 +773,7 @@ references:
   issued:
     - year: 2015
   page: 73–88
-  title: Cystopteris (Cystopteridaceae) del cono sur y Brasil
+  title: '*Cystopteris*  (Cystopteridaceae) del cono sur y Brasil'
   type: article-journal
   URL: >-
     http://www.scielo.org.ar/scielo.php?script=sci_arttext&amp;pid=S0011-67932015000100006
@@ -2719,7 +2719,7 @@ references:
     - year: 1984
   page: 380–382
   title: >-
-    Cystopteris protrusa, creeping fragile fern, an addition to the flora of
+    *Cystopteris protrusa*, creeping fragile fern, an addition to the flora of
     Canada
   type: article-journal
   volume: '99'
@@ -4181,7 +4181,7 @@ references:
   issued:
     - year: 2002
   page: 902–905
-  title: Arsenic hyperaccumulator Pteris vittata L. and its arsenic accumulation
+  title: Arsenic hyperaccumulator *Pteris vittata* L. and its arsenic accumulation
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=17547207635667592792related:WCb9I2A0hPMJ
@@ -4389,7 +4389,7 @@ references:
   language: English
   page: 884–885
   title: >-
-    (2454) Proposal to conserve the name Haplopteris against Monogramma
+    (2454) Proposal to conserve the name *Haplopteris* against *Monogramma*
     (Pteridaceae)
   type: article-journal
   URL: >-
@@ -4416,7 +4416,7 @@ references:
     - year: 2017
   page: 83–107
   title: >-
-    Phylogenetic analyses place the monotypic Dryopolystichum within
+    Phylogenetic analyses place the monotypic *Dryopolystichum* within
     Lomariopsidaceae
   type: article-journal
   URL: http://phytokeys.pensoft.net/articles.php?id=12040
@@ -5450,7 +5450,7 @@ references:
     - year: 1999
   page: 599–509
   publisher: Science Press
-  title: Diplaziopsis C. Chr.
+  title: '*Diplaziopsis* C. Chr.'
   type: chapter
   volume: '3'
 
@@ -8012,8 +8012,8 @@ references:
   page: 1535–1547
   title: >-
     Nuclear DNA, chloroplast DNA, and ploidy analysis clarified biological
-    complexity of the Vandenboschia radicans complex (Hymenophyllaceae) in Japan
-    and adjacent areas
+    complexity of the *Vandenboschia radicans* complex (Hymenophyllaceae) in
+    Japan and adjacent areas
   type: article-journal
   URL: http://www.amjbot.org/cgi/content/abstract/92/9/1535
   volume: '92'
@@ -13941,8 +13941,8 @@ references:
     - year: 2012
   page: 1–6
   title: >-
-    Genetic variation and structure of the endangered Lady Fern Athyrium
-    viridescentipes based on ubiquitous genotyping
+    Genetic variation and structure of the endangered Lady Fern *Athyrium
+    viridescentipes* based on ubiquitous genotyping
   type: article-journal
 
 - id: jacono2001adventive
@@ -19515,7 +19515,7 @@ references:
   page: 688–700
   title: >-
     Towards a phylogenetic classification of the climbing fern genus
-    Arthropteris.
+    *Arthropteris*
   type: article-journal
   URL: >-
     http://openurl.ingenta.com/content/xref?genre=article&amp;issn=0040-0262&amp;volume=62&amp;issue=4&amp;spage=688
@@ -21860,48 +21860,6 @@ references:
   title: The status and typification of Phegopteris and Gymnocarpium
   type: article-journal
 
-- id: mcneill1985statusa
-  abstract: >-
-    It is concludedthatPhegopterisF6e(Thelypteridaceaei)s an
-    apparentlynomenclaturallysuperfluous name,because,whenpublished,it
-    includedwhatis now establishedto be the type of Gymnocarpium Newman. Despite
-    this, Phegopterisis a legitimatename as it has a legitimatebasionym;it must,
-    however, be cited as Phegopteris(Presl)F6e. The protologueof the basionym of
-    Gymnocarpium dryopterisdoes not point to any specimen that could serve as
-    type of that name, and hence of GymnocarpiumNewman
-    (Athyriaceae).Moreover,there is no eligible specimen in the Linnaean
-    collectionsin London,Stockholmor Paris.Thereis, however,a Burserspecimenat
-    Uppsalawith a Bauhinname that is not cited in any Linnaeanwork.This
-    specimenwas determinedby Linnaeusin his catalogueof the Burserherbariumas
-    Polypodiumdryopterist,he basionymof G. dryopterisa, nd this is designatedas
-    the lectotype.This lectotypificationpreservesexistingusageof both the
-    generic and specificnames.
-  accessed:
-    - year: 2022
-      month: 10
-      day: 23
-  author:
-    - family: McNeill
-      given: J.
-    - family: Pryer
-      given: Kathleen M.
-  citation-key: mcneill1985statusa
-  container-title: Taxon
-  container-title-short: Taxon
-  DOI: 10.2307/1221578
-  ISSN: 0040-0262, 1996-8175
-  issue: '1'
-  issued:
-    - year: 1985
-      month: 2
-  language: en
-  page: 136–143
-  source: DOI.org (Crossref)
-  title: THE STATUS AND TYPIFICATION OF *PHEGOPTERIS* AND *GYMNOCARPIUM*
-  type: article-journal
-  URL: https://onlinelibrary.wiley.com/doi/abs/10.2307/1221578
-  volume: '34'
-
 - id: mcvaugh1935studies
   author:
     - family: McVaugh
@@ -23490,6 +23448,59 @@ references:
   type: article-journal
   volume: '89'
 
+- id: moran2022remarks
+  abstract: >-
+    Nearly all ferns support their stems and leaf axes with a sheath of
+    hypodermal sclerenchyma called sterome. The sheath consists of compact
+    fibers with few or no intercellular spaces. Although solving the need for
+    mechanical support, the sterome presents a problem: it blocks air that has
+    diffused through the stomata from diffusing farther into the plant where it
+    is needed for photosynthesis and respiration. In most ferns, the blockage is
+    overcome by means of aerophores, which typically appear as light-colored
+    lines flanking the leaf axes, with one line on either side. Each aerophore
+    bears stomata and overlies a parenchymatous gap in the sterome. The gap
+    contains intercellular spaces that facilitate the diffusion of air inward
+    after it has passed through the stomata. Only rarely do stomata occur off
+    the aerophore on areas of adjacent epidermis overlying the hypodermal
+    sterome. In such locations, stomata would be useless because air diffusing
+    through them would be blocked. In some ferns, aerophores also occur on
+    rhizomes in association with decurrent leaf bases. Developmentally,
+    aerophores arise from the marginal meristem. As such, they mark the boundary
+    between the adaxial and abaxial surfaces of the leaf. Phylogenetically,
+    aerophores constitute a synapomorphy for the clade consisting of the
+    Cyatheales and Polypodiales. Within this clade, aerophores have become
+    variously modified, including their complete loss, reduction to a single row
+    of stomata, co-option as nectaries, and enlargement as peg-like structures
+    at the pinna bases of mucilaginous leaves. Aerophores are absent in the
+    Marattiaceae, which bear a different type of aerating structure here termed
+    a porophore. These are scattered over the leaf axes, appearing as many pale,
+    short longitudinal streaks, with each streak bearing a central pore.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 12
+  author:
+    - family: Moran
+      given: Robbin C.
+  citation-key: moran2022remarks
+  container-title: Brittonia
+  container-title-short: Brittonia
+  DOI: 10.1007/s12228-022-09705-z
+  ISSN: 0007-196X, 1938-436X
+  issue: '2'
+  issued:
+    - year: 2022
+      month: 6
+  language: en
+  page: 123–147
+  source: DOI.org (Crossref)
+  title: >-
+    Remarks on aerophores and the relationship between sterome and stomata in
+    ferns
+  type: article-journal
+  URL: https://link.springer.com/10.1007/s12228-022-09705-z
+  volume: '74'
+
 - id: morbelli2001palynology
   author:
     - family: Morbelli
@@ -23982,7 +23993,7 @@ references:
   language: en
   page: 167–173
   source: DOI.org (Crossref)
-  title: Diplazium fimbriatum (Athyriaceae), a New Species from Brazil
+  title: '*Diplazium fimbriatum* (Athyriaceae), a New Species from Brazil'
   type: article-journal
   URL: http://www.bioone.org/doi/abs/10.1640/0002-8444-102.2.167
   volume: '102'
@@ -24008,7 +24019,7 @@ references:
   language: English
   page: 19–34
   title: >-
-    Desmophlebiaceae and Desmophlebium: A new family and genus of Eupolypod II
+    Desmophlebiaceae and *Desmophlebium*: A new family and genus of Eupolypod II
     ferns
   type: article-journal
   URL: >-
@@ -24395,7 +24406,7 @@ references:
     - year: 2006
   page: 219–232
   title: >-
-    Chromosome numbers, spores and sporangial annuli of Gymnocarpium oyamense
+    Chromosome numbers, spores and sporangial annuli of *Gymnocarpium oyamense*
     (Woodsiaceae) and the inferred cytogeography
   type: article-journal
   URL: http://sciencelinks.jp/j-east/article/200705/000020070507A0166720.php
@@ -25662,7 +25673,7 @@ references:
   page: 528–545
   publisher: American Society of Plant Taxonomists
   title: >-
-    The hybrid Cystopteris fragilis x C. tenuis (Dryopteridaceae) and the
+    The hybrid *Cystopteris fragilis* x *C. tenuis* (Dryopteridaceae) and the
     relationship between its tetraploid progenitors
   type: article-journal
   URL: http://www.jstor.org/stable/2419807
@@ -26644,8 +26655,8 @@ references:
     - year: 2005
   page: 235–242
   title: >-
-    New Zealand Asplenium (Aspleniaceae: Pteridophyta) revisited--DNA sequencing
-    and AFLP fingerprinting
+    New Zealand *Asplenium* (Aspleniaceae: Pteridophyta) revisited--DNA
+    sequencing and AFLP fingerprinting
   type: article-journal
   volume: '17'
 
@@ -26685,7 +26696,7 @@ references:
   page: 2916–2932
   title: >-
     Parallel polyploid speciation: Distinct sympatric gene-pools of recurrently
-    derived allo-octoploid Asplenium ferns
+    derived allo-octoploid *Asplenium* ferns
   title-short: PARALLEL POLYPLOID SPECIATION
   type: article-journal
   URL: http://doi.wiley.com/10.1111/j.1365-294X.2010.04705.x
@@ -26716,7 +26727,7 @@ references:
     - year: 2013
   page: 1–13
   publisher: Taylor & Francis
-  title: Hymenophyllum pluviatile, a new and uncommon fern from New Zealand
+  title: '*Hymenophyllum pluviatile*, a new and uncommon fern from New Zealand'
   type: article-journal
   URL: http://dx.doi.org/10.1080/0028825X.2013.834830
   volume: '00'
@@ -26754,7 +26765,7 @@ references:
   language: en
   page: 308–320
   source: DOI.org (Crossref)
-  title: '*Hymenophyllum pluviatile* , a new and uncommon fern from New Zealand'
+  title: '*Hymenophyllum pluviatile*, a new and uncommon fern from New Zealand'
   type: article-journal
   URL: http://www.tandfonline.com/doi/abs/10.1080/0028825X.2013.834830
   volume: '51'
@@ -26809,8 +26820,8 @@ references:
   language: English
   page: '256'
   title: >-
-    An expanded phylogeny of the Dennstaedtiaceae ferns: Oenotrichia falls
-    within a non-monophyletic Dennstaedtia, and Saccoloma is polyphyletic
+    An expanded phylogeny of the Dennstaedtiaceae ferns: *Oenotrichia* falls
+    within a non-monophyletic *Dennstaedtia*, and </>Saccoloma is polyphyletic
   type: article-journal
   URL: http://www.publish.csiro.au/?paper=SB15035
   volume: '28'
@@ -26929,7 +26940,7 @@ references:
   language: English
   page: 737–746
   title: >-
-    Three new hybrids of Ophioglossum (Ophioglossaceae) from Monte Pisano,
+    Three new hybrids of *Ophioglossum* (Ophioglossaceae) from Monte Pisano,
     Tuscany (Central Italy)
   type: article-journal
   URL: http://www.tandfonline.com/doi/full/10.1080/11263504.2015.1057264
@@ -32182,7 +32193,7 @@ references:
     - year: 2000
   page: 157–163
   title: >-
-    Diplazium subsinuatum and Di. tomitaroanum should be moved to Deparia
+    *Diplazium subsinuatum* and *Di. tomitaroanum* should be moved to *Deparia*
     according to molecular, morphological, and cytological characters
   type: article-journal
   volume: '113'
@@ -34913,7 +34924,7 @@ references:
     - year: 2008
   title: >-
     Conflict amongst chloroplast DNA sequences obscures the phylogeny of a group
-    of Asplenium ferns
+    of *Asplenium* ferns
   type: article-journal
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=17288124826848982982related:xvfxAO_B6-8J
@@ -34949,7 +34960,7 @@ references:
   page: 240–248
   title: >-
     Low-copy nuclear DNA sequences reveal a predominance of allopolyploids in a
-    New Zealand Asplenium fern complex
+    New Zealand *Asplenium* fern complex
   type: article-journal
   URL: >-
     http://www.sciencedirect.com/science/article/B6WNH-4SWN0P2-1/2/e6f6e8ddd6c35c87ce58bdd08b8568f7
@@ -37913,7 +37924,7 @@ references:
     - year: 2001
   page: 443–457
   title: >-
-    Cytological and reproductive studies of Japanese Diplazium (Woodsiaceae;
+    Cytological and reproductive studies of Japanese *Diplazium* (Woodsiaceae;
     Pteridophyta). III. The cytological complexity of species groups with simply
     pinnate to bipinnatifid leaves
   type: article-journal
@@ -37957,7 +37968,7 @@ references:
   page: 625–636
   title: >-
     Cytological, morphological, genetic, and molecular phylogenetic studies on
-    intraspecific differentiations within Diplazium doederleinii (Woodsiaceae:
+    intraspecific differentiations within *Diplazium doederleinii* (Woodsiaceae:
     Pteridophyta)
   type: article-journal
   URL: >-
@@ -40703,6 +40714,21 @@ references:
   type: article-journal
   URL: http://www.jstor.org/stable/20794025
 
+- id: vida1970genome
+  author:
+    - family: Vida
+      given: Gabor
+  citation-key: vida1970genome
+  container-title: Publ. Demograph. Res. Inst. (Budapest)
+  issue: '51'
+  issued:
+    - year: 1970
+  title: >-
+    Genome analysis of *Cystopteris fragilis* by means of hybridization and
+    induced apogamy
+  type: article-journal
+  volume: '32'
+
 - id: vida1972cytotaxonomy
   author:
     - family: Vida
@@ -40750,7 +40776,7 @@ references:
   page: 455–461
   title: >-
     Cytophotometric DNA studies in polyploid series of the fern genus
-    Cystopteris Bernh.
+    *Cystopteris* Bernh.
   type: article-journal
   volume: '26'
 
@@ -42888,7 +42914,7 @@ references:
   issued:
     - year: 1999
   page: 1–11
-  title: Diplaziopsis C. Chr.
+  title: '*Diplaziopsis* C. Chr.'
   type: article-journal
   volume: '3'
 
@@ -42917,7 +42943,7 @@ references:
     - year: 2010
   page: 46–54
   title: >-
-    Phylogeny of Diplaziopsis and Homalosorus based on two chloroplast DNA
+    Phylogeny of *Diplaziopsis* and *Homalosorus* based on two chloroplast DNA
     sequences: rbcL and rps4+rps4-trnS IGS
   type: article-journal
   volume: '17'
@@ -42937,7 +42963,7 @@ references:
     - year: 2013
   page: 441–457
   title: >-
-    Toward a new circumscription of the twinsorus-fern genus Diplazium
+    Toward a new circumscription of the twinsorus-fern genus *Diplazium*
     (Athyriaceae): A molecular phylogeny with morphological implications and
     infrageneric taxonomy
   type: article-journal
@@ -42972,8 +42998,9 @@ references:
     - year: 2014
   page: 450–457
   title: >-
-    Rediscovery of Cystoathyrium chinense Ching (Cystopteridaceae): Phylogenetic
-    placement of the critically endangered fern species endemic to China
+    Rediscovery of *Cystoathyrium chinense* Ching (Cystopteridaceae):
+    Phylogenetic placement of the critically endangered fern species endemic to
+    China
   type: article-journal
   volume: '52'
 
@@ -43046,9 +43073,9 @@ references:
   language: English
   page: 450–464
   title: >-
-    Phylogenetic position of the enigmatic fern genus Weatherbya (Polypodiaceae)
-    revisited: Evidence from chloroplast and nuclear gene regions and
-    morphological data
+    Phylogenetic position of the enigmatic fern genus *Weatherbya*
+    (Polypodiaceae) revisited: Evidence from chloroplast and nuclear gene
+    regions and morphological data
   type: article-journal
   URL: http://www.journals.uchicago.edu/doi/10.1086/692088
   volume: '178'
@@ -43125,7 +43152,7 @@ references:
   source: DOI.org (Crossref)
   title: >-
     Phylogeny, historical biogeography and characters evolution of the drought
-    resistant fern Pyrrosia Mirbel (Polypodiaceae) inferred from plastid and
+    resistant fern *Pyrrosia* Mirbel (Polypodiaceae) inferred from plastid and
     nuclear markers
   type: article-journal
   URL: https://www.nature.com/articles/s41598-017-12839-w
@@ -43191,7 +43218,7 @@ references:
     - year: 2017
   page: 1–48
   title: >-
-    A total-evidence phylogeny of the lady fern genus Athyrium Roth
+    A total-evidence phylogeny of the lady fern genus *Athyrium* Roth
     (Athyriaceae) with a new infrageneric classification
   type: article-journal
   URL: https://doi.org/10.1016/j.ympev.2017.10.019
@@ -46248,7 +46275,7 @@ references:
   title: >-
     Circumscription and phylogeny of the fern family Tectariaceae based on
     plastid and nuclear markers, with the description of two new genera:
-    Draconopteris and Malaifilix (Tectariaceae)
+    *Draconopteris* and *Malaifilix* (Tectariaceae)
   type: article-journal
   volume: '65'
 
