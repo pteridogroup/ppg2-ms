@@ -92,6 +92,16 @@ authors <- read_csv("data/ppg2_author_list.csv") |>
     inst_print = glue::glue("^{institution_num}^{institution}, {country}")
   )
 
+n_countries <- authors |>
+  assert(not_na, country) |>
+  pull(country) |>
+  n_distinct()
+
+n_authors <- authors |>
+  assert(not_na, name) |>
+  pull(name) |>
+  n_distinct()
+
 other_authors <- 
   authors |>
   filter(other_author) |>
@@ -102,7 +112,7 @@ institutions <-
   authors |>
   pull(inst_print) |>
   unique() |>
-  paste(collapse = "\n")
+  paste0(collapse = ", ")
 
 ```
 
@@ -160,7 +170,7 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 ## Introduction
 
 Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns; @li2025fernsa].
-Our understanding of fern and lycophyte relationships has been revolutionized by molecular methods, which demonstrated that horsetails (*Equisetum* L.) and whisk ferns (*Psilotum* Sw., *Tmesipteris* Bernh.) are nested within ferns and further that ferns are sister to seed plants and only distantly related to lycophytes [@pryer2001horsetails].
+Our understanding of fern and lycophyte relationships has been revolutionized by molecular methods, which demonstrated that horsetails (*Equisetum* L.) and whisk ferns (*Psilotum* Sw., *Tmesipteris* Bernh.) are nested within ferns, and further that ferns are sister to seed plants and only distantly related to lycophytes [@pryer2001horsetails].
 @smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due in part to their drastic consolidation of genera and families they were not widely accepted by the broader pteridophyte community [@schuettpelz2018are].
 The next widely accepted classification was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
@@ -193,7 +203,7 @@ During this time, anyone who agreed to our Code of Conduct could comment on the 
 Following the discussion period, voting on proposals was conducted via Google Forms.
 For each proposal, PPG members could choose to agree, disagree, or abstain.
 Proposals receiving 2/3 agreement passed and were recognized by PPG.
-All taxonomic discussions and results of voting are available for public access on our GitHub repository.
+All taxonomic discussions and results of voting are publicly available on our GitHub repository.
 The proposal, discussion, and voting process ran continuously, with a ballot issued monthly.
 
 ### Database management
@@ -204,7 +214,7 @@ PPG is the TEN for ferns and lycophytes.
 As such, all taxonomic decisions made by PPG will also be reflected in WFO.
 
 The database editor provided by WFO, called Rhakhis (<https://list.worldfloraonline.org/rhakhis/ui>), is taxonomy-aware---that is, it enforces taxonomic rules, for example, that synonyms must map to an accepted name and not another synonym---and provides full functionality for tracking synonymy relationships, publication and author data, and nomenclatural status, among other taxonomically relevant information.
-Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in real time, with no need for synchronizing database files across multiple machines.
+Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in real time, with no need for synchronizing database files across multiple computers.
 
 When PPG joined WFO as a TEN, data for ferns and lycophytes were already in Rhakhis, but the classification scheme was based on the World Checklist of Vascular Plants [@govaertsWorldChecklistVascular2021], which deviated largely from PPG I (2016).
 Therefore, taxonomic data from the World Ferns database [@hassler2025world], which more closely followed PPG I [-@pteridophytephylogenygroupi2016communityderived], were imported into Rhakhis and synchronized with the existing data while prioritizing the World Ferns classification.
@@ -225,7 +235,7 @@ Species-level curation will continue indefinitely with the publication of PPG II
 ### Versioning
 
 Starting with this version of the PPG classification (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at the species level or below, the middle digit indicates changes at the genus level or higher, and the largest digit indicates major changes (e.g., major rearrangements of the taxonomic hierarchy).
-New versions will be issued as needed, for example following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open].
+New versions will be issued as needed, for example, following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open].
 We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
 This will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the versioning system, the ability to unambiguously reference a specific snapshot of the classification.
 
@@ -343,7 +353,7 @@ Our recognition of `r n$subclass$ppg2` subclasses, `r n$order$ppg2` orders, and 
 
 PPG II begins to diverge from PPG I at the level of family, where `r n$family$ppg2` families are recognized in PPG II versus `r n$family$ppg1` in PPG I (@tbl-taxa).
 The number of subfamilies and genera is also greater in PPG II vs. PPG I (`r n$subfamily$ppg2` vs. `r n$subfamily$ppg1` and `r n$genus$ppg2` vs. `r n$genus$ppg1`, respectively).
-Most taxonomic changes come via the addition of new names, i.e., splitting (@tbl-changes), whereas a smaller number of changes stems from the subsumption of existing names, i.e., lumping (@tbl-changes).
+Most taxonomic changes were caused by the addition of new names, i.e., splitting (@tbl-changes), whereas a smaller number of changes stems from the subsumption of existing names, i.e., lumping (@tbl-changes).
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting PPG II classification at the level of genus and above is presented below.
 
@@ -356,6 +366,7 @@ The number of taxa at the level of species and below (PPG II recognizes approxim
 PPG is unique in its open, community-based approach to taxonomy.
 While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022experta], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
+Since PPG I [-@pteridophytephylogenygroupi2016communityderived], which included XX authors representing XX countries, the PPG community has grown to include `r n_authors` authors representing `r n_countries` countries.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
 
 One clear benefit of the community approach is the ability to keep up with the rapid pace of systematics research.
@@ -369,7 +380,7 @@ nchild <- children_tally %>%
   split(.$taxon_name)
 ```
 
-In comparison to PPG I, the general trend has been an increase in the number of genera (Figure S1).
+In comparison to PPG I, the general trend has been an increase in the number of genera (@tbl-changes; Figure S1).
 This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. `r count_ppgi_gen(ppg_i, family == "Thelypteridaceae")`), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae")`), and Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae")`).
 Notable exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* and *Selliguea*, subsuming six and four genera, respectively, that were recognized in PPG I.
 
