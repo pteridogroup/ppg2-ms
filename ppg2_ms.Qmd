@@ -511,7 +511,7 @@ ppg_issues_count |>
 ```{r}
 #| label: tbl-uncertain
 #| tbl-cap: "Uncertain relationships in pteridophytes. Node indicates numbered
-#|   nodes in Fig. 1."
+#|   nodes in Fig. 2."
 knitr::kable(uncertainty_table)
 ```
 
@@ -544,6 +544,7 @@ fig_tree_cap <- glue::glue("
   Size of diamonds at tips indicate relative number of species in each family.
   Numbers at nodes indicate uncertain relationships, summarized in Table 3.
   @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
+  Equisetales is also shown in the position that has been observed in most other recent studies, although it was recovered as sister to Ophioglossales in @nitta2022open; see Table 3.
   ") |>
   as.character() |>
   str_remove_all("//\n") |>

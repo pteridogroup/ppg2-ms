@@ -1521,21 +1521,23 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
 
   # Format labels for other clade names
   other_labels <- tribble(
-    ~node                                                       , ~label ,
-    getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae"))     ,
-    "eupolypods"                                                ,
-    getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae")) ,
-    "Lycopodiopsida"                                            ,
-    getMRCA(phy_tracheo, c("Equisetaceae", "Polypodiaceae"))    ,
-    "Polypodiopsida"                                            ,
-    getMRCA(phy_tracheo, c("Spermatophytes", "Polypodiaceae"))  ,
-    "euphyllophytes"                                            ,
-    getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae"))   ,
-    "tracheophytes"                                             ,
+    ~node                                                          , ~label ,
+    getMRCA(phy_tracheo, c("Blechnaceae", "Polypodiaceae"))        ,
+    "eupolypods"                                                   ,
+    getMRCA(phy_tracheo, c("Lycopodiaceae", "Selaginellaceae"))    ,
+    "Lycopodiopsida"                                               ,
+    getMRCA(phy_tracheo, c("Equisetaceae", "Polypodiaceae"))       ,
+    "Polypodiopsida"                                               ,
+    getMRCA(phy_tracheo, c("Spermatophytes", "Polypodiaceae"))     ,
+    "euphyllophytes"                                               ,
+    getMRCA(phy_tracheo, c("Lycopodiaceae", "Polypodiaceae"))      ,
+    "tracheophytes"                                                ,
     # uncertain relationships
-    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))  , "1"    ,
-    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))      , "2"    ,
-    getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))  , "3"
+    getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))     , "1"    ,
+    getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))         , "2"    ,
+    getMRCA(phy_tracheo, c("Hymenophyllaceae", "Gleicheniaceae"))  , "3"    ,
+    getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))     , "4"    ,
+    getMRCA(phy_tracheo, c("Hypodematiaceae", "Dennstaedtiaceae")) , "5"    ,
   ) |>
     mutate(label_type = "clade")
 
@@ -1632,7 +1634,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
   # - node labels to add to uncertain nodes
   node_labs_nums <- all_labs |>
     filter(label_type == "clade") |>
-    filter(taxon %in% c("1", "2", "3")) |>
+    filter(taxon %in% as.character(1:5)) |>
     rename(node_num = taxon)
 
   # Since we can only adjust x-nudge for an entire layer at a time,
@@ -1653,7 +1655,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
 
   line_types_nodes_add <- all_labs |>
     filter(label_type == "clade") |>
-    filter(taxon %in% c("1", "2", "3")) |>
+    filter(taxon %in% as.character(1:5)) |>
     select(node) |>
     mutate(uncertain = TRUE)
 
@@ -1667,27 +1669,27 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       uncertain = tidyr::replace_na(uncertain, FALSE)
     )
 
-  # Set up branch lengths
-  phy_tracheo_rescale <-
-    phy_tracheo |>
-    # Add branchlengths evenly
-    compute.brlen(method = "unif") |>
-    # Rescale total height (arbitrarily select 20)
-    rescale_tree(20) |>
-    add_root_length(1)
+  # Get root node for manually drawing root edge
+  # (needed because geom_rootedge() doesn't work with branch.length = "none")
+  n_tips <- length(phy_tracheo$tip.label)
+  root_node_num <- n_tips + 1
+
+  # Get the actual y-coordinate of the root from the tree layout
+  tree_layout <- as_tibble(ggtree::fortify(phy_tracheo))
+  root_y <- tree_layout |>
+    filter(node == root_node_num) |>
+    pull(y)
 
   # set font sizes etc
   fig_font_size <- 2.5
   clade_lab_offset <- 9
   branch_lab_vjust <- -0.6
+  root_edge_length <- 1
 
   # generate figure
   tree_fig <-
     # Base tree, with line type by uncertainty
-    ggtree(
-      phy_tracheo_rescale #,
-      # aes(linetype = uncertain)
-    ) %<+%
+    ggtree(phy_tracheo, branch.length = "none") %<+%
     # Add datasets
     line_types_nodes %<+%
     family_tip_labels %<+%
@@ -1777,8 +1779,11 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       offset = -10,
       vjust = branch_lab_vjust
     ) +
-    # seems geom_rootedge() requires brn lengths
-    geom_rootedge() +
+    # Manual root edge (horizontal line at root)
+    geom_segment(
+      aes(x = -root_edge_length, xend = 0, y = root_y, yend = root_y),
+      linewidth = 0.5
+    ) +
     xlim(-4, 33) +
     theme(
       legend.position = "none"
@@ -2789,24 +2794,27 @@ make_tree_figure_appendix <- function(
     ) |>
     select(tip = taxon_name, family_label, seed_plant_image, split, sink, other)
 
-  # Set up branch lengths
-  phy_tracheo_rescale <-
-    phy_tracheo |>
-    # Add branchlengths evenly
-    compute.brlen(method = "unif") |>
-    # Rescale total height (arbitrarily select 20)
-    rescale_tree(20) |>
-    add_root_length(1)
+  # Get root node for manually drawing root edge
+  # (needed because geom_rootedge() doesn't work with branch.length = "none")
+  n_tips <- length(phy_tracheo$tip.label)
+  root_node_num <- n_tips + 1
+
+  # Get the actual y-coordinate of the root from the tree layout
+  tree_layout <- as_tibble(ggtree::fortify(phy_tracheo))
+  root_y <- tree_layout |>
+    filter(node == root_node_num) |>
+    pull(y)
 
   # set font sizes etc
   fig_font_size <- 2.5
   clade_lab_offset <- 9
   branch_lab_vjust <- -0.6
+  root_edge_length <- 1
 
   # generate figure
   tree_fig <-
     # Base tree, with line type by uncertainty
-    ggtree(phy_tracheo_rescale) %<+%
+    ggtree(phy_tracheo, branch.length = "none") %<+%
     # Add datasets
     family_tip_labels +
     # Diamonds scaled by number of splits
@@ -2852,8 +2860,11 @@ make_tree_figure_appendix <- function(
       size = fig_font_size,
       offset = 1.5
     ) +
-    # seems geom_rootedge() requires brn lengths
-    geom_rootedge() +
+    # Manual root edge (horizontal line at root)
+    geom_segment(
+      aes(x = -root_edge_length, xend = 0, y = root_y, yend = root_y),
+      linewidth = 0.5
+    ) +
     xlim(-4, 33) +
     theme(
       # Set legend in upper left

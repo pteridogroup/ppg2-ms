@@ -2998,6 +2998,7 @@ references:
     - family: Perrie
       given: Leon R
   citation-key: brownsey2018fascicle
+  container-title: 'Flora of New Zealand: Ferns and Lycophytes'
   issued:
     - year: 2018
       month: 5
@@ -3293,7 +3294,6 @@ references:
       given: Alexander A
   citation-key: brunton2015isoetes
   container-title: Problems of Taxonomy and Geography of Aquatic Plants
-  event-place: Borok, Russia
   issued:
     - year: 2015
   page: 1–5
@@ -4632,6 +4632,58 @@ references:
   title: Plastid phylogenomics and plastomic diversity of the extant lycophytes
   type: article-journal
   volume: '13'
+
+- id: chen2026life
+  abstract: >-
+    Accumulating evidence suggests that speciation often resembles a reticulate
+    network rather than a bifurcating process. In ferns, which possess
+    independent gametophyte and sporophyte phases, reticulate evolution is
+    common, especially where sporophytes of congeneric species co-occur.
+    However, the role of long-lived gametophytes that distribute beyond their
+    sporophytic counterparts in facilitating reticulate evolution remains
+    underexplored.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 5
+  author:
+    - family: Chen
+      given: Cheng‐Wei
+    - family: Yoneoka
+      given: Katsuhiro
+    - family: Hori
+      given: Kiyotaka
+    - family: Fujiwara
+      given: Tao
+    - family: Van Do
+      given: Truong
+    - family: Murakami
+      given: Noriaki
+    - family: Huang
+      given: Yao‐Moan
+    - family: Chen
+      given: Ko‐Hsuan
+    - family: Ebihara
+      given: Atsushi
+    - family: Chung
+      given: Kuo‐Fang
+  citation-key: chen2026life
+  container-title: New Phytologist
+  container-title-short: New Phytologist
+  DOI: 10.1111/nph.70953
+  ISSN: 0028-646X, 1469-8137
+  issued:
+    - year: 2026
+      month: 1
+      day: 31
+  language: en
+  page: nph.70953
+  source: DOI.org (Crossref)
+  title: >-
+    Life phases integration uncovers long‐lived gametophytes mediated reticulate
+    evolution in *Haplopteris* (Pteridaceae)
+  type: article-journal
+  URL: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70953
 
 - id: ching1933nomenclalure
   author:
@@ -6298,7 +6350,7 @@ references:
       given: Patrick J
     - family: Lovis
       given: John D
-  citation-key: dawsonnew
+  citation-key: dawson2000new
   container-title: New Zealand Journal of Botany
   issued:
     - year: 2000
@@ -8513,9 +8565,6 @@ references:
       given: 'N'
   citation-key: elgorriaga2018origin
   container-title: American Journal of Botany
-  event-place: >-
-    CONICET, Museo Paleontológico Egidio Feruglio, Trelew, Chubut, 9100,
-    Argentina.
   issue: '8'
   issued:
     - year: 2018
@@ -10560,6 +10609,35 @@ references:
   URL: https://phytokeys.pensoft.net/article/173094/
   volume: '265'
 
+- id: grewe2013complete
+  abstract: BMC Evolutionary Biology 2013, 13:1. doi:10.1186/1471-2148-13-8
+  author:
+    - family: Grewe
+      given: F
+    - family: Guo
+      given: W
+    - family: Gubbels
+      given: E A
+    - family: Hansen
+      given: A K
+    - family: Mower
+      given: J P
+  citation-key: grewe2013complete
+  container-title: BMC Evolutionary Biology
+  DOI: 10.1186/1471-2148-13-8
+  ISSN: 1471-2148
+  issue: '8'
+  issued:
+    - year: 2013
+      month: 1
+  page: '1'
+  title: >-
+    Complete plastid genomes from *Ophioglossum californicum*, *Psilotum nudum*,
+    and *Equisetum hyemale* reveal an ancestral land plant genome structure and
+    resolve the position of Equisetales among monilophytes
+  type: article-journal
+  volume: '13'
+
 - id: grimm2014using
   abstract: >-
     Abstract A major concern in molecular clock dating is how to use information
@@ -10810,9 +10888,6 @@ references:
       given: Christopher H
   citation-key: grusz2021droughtdriven
   container-title: American Journal of Botany
-  event-place: >-
-    Department of Biology, University of Minnesota Duluth, Duluth, MN, 55812,
-    USA.
   issue: '2'
   issued:
     - year: 2021
@@ -13341,6 +13416,7 @@ references:
     - family: Hovenkamp
       given: P
   citation-key: hovenkamp1986monograph
+  container-title: Leiden Botanical Series
   issued:
     - year: 1986
   number-of-pages: '280'
@@ -13451,6 +13527,30 @@ references:
   type: article-journal
   URL: http://www.bioone.org/doi/10.1640/0002-8444-106.3.153
   volume: '106'
+
+- id: huanginReviewintegrative
+  author:
+    - family: Huang
+      given: Chen-Liang
+    - family: Javzandolgor
+      given: Chuluunbat
+    - family: Wu
+      given: Fei
+    - family: Zhang
+      given: Sheng-Bang
+    - family: Zhang
+      given: Xian-Chun
+    - family: Wei
+      given: Ran
+  citation-key: huanginReviewintegrative
+  container-title: Taxon
+  issued:
+    - literal: inReview
+  title: >-
+    Integrative species delimitation of two species complexes in *Cystopteris*,
+    with description of two new species from Asia: *C. shengbangii* and *C.
+    zhongrenii*
+  type: article-journal
 
 - id: huh2025phytochemistry
   abstract: >-
@@ -18016,6 +18116,26 @@ references:
   URL: http://www.bioone.org/doi/10.1640/0002-8444-108.1.7
   volume: '108'
 
+- id: lehtonen2019dynamism
+  author:
+    - family: Lehtonen
+      given: Samuli
+    - family: Cárdenas
+      given: Glenda G
+  citation-key: lehtonen2019dynamism
+  container-title: Botanical Journal of the Linnean Society
+  DOI: 10.1093/botlinnean/boz020
+  ISSN: 0024-4074
+  issue: '3'
+  issued:
+    - year: 2019
+  page: 229–241
+  title: >-
+    Dynamism in plastome structure observed across the phylogenetic tree of
+    ferns
+  type: article-journal
+  volume: '190'
+
 - id: lehtonen2020exploring
   author:
     - family: Lehtonen
@@ -18807,6 +18927,7 @@ references:
     - family: Pryer
       given: Kathleen M
   citation-key: li2015azolla
+  container-title: Plant and Animal Genome XXIII Conference
   issued:
     - year: 2015
   title: >-
@@ -21086,9 +21207,6 @@ references:
       given: Douglas E
   citation-key: marchant2019cfern
   container-title: Scientific Reports
-  event-place: >-
-    Department of Biology, Stanford University, Stanford, CA, 94305, USA.
-    dbmarchant@stanford.edu.
   issue: '1'
   issued:
     - year: 2019
@@ -27173,7 +27291,7 @@ references:
   author:
     - family: Pichi Sermolli
       given: Rodolfo E.G.
-  citation-key: pichi-sermolli1954nomenclature
+  citation-key: pichisermolli1954nomenclature
   container-title: Webbia
   container-title-short: Webbia
   DOI: 10.1080/00837792.1954.10669618
@@ -28794,7 +28912,6 @@ references:
     - family: Rothfels
       given: Carl J
   citation-key: pryerfern
-  event-place: Durham, NC
   issue: January 12
   publisher-place: Durham, NC
   title: Fern DNA Database
@@ -29528,7 +29645,6 @@ references:
     - family: Haufler
       given: Christopher H
   citation-key: ranker2008biology
-  event-place: Cambridge
   issued:
     - year: 2008
   page: '480'
@@ -30530,6 +30646,7 @@ references:
     - family: Rothfels
       given: Carl J
   citation-key: rothfels2012phylogenetics
+  container-title: Biology Department
   issued:
     - year: 2012
   number-of-pages: '242'
@@ -34336,6 +34453,29 @@ references:
   title: Evolution and Classification of Ferns and Lycophytes
   type: chapter
   URL: http://link.springer.com/10.1007/978-3-319-75103-0_9
+
+- id: sessa2024new
+  author:
+    - family: Sessa
+      given: Emily
+    - family: Pelosi
+      given: Jessie A.
+    - family: Fawcett
+      given: Susan
+    - family: Burleigh
+      given: J. Gordon
+  citation-key: sessa2024new
+  event-place: Madrid, Spain
+  event-title: XX International Botanical Congress
+  issued:
+    - year: 2024
+      month: 7
+      day: 22
+  publisher-place: Madrid, Spain
+  title: >-
+    New views on fern phylogenetics: Updates from the GoFlag targeted enrichment
+    probe set
+  type: paper-conference
 
 - id: seth2004pteridophytic
   author:
@@ -41219,7 +41359,7 @@ references:
   author:
     - family: Wagner
       given: Warren H
-  citation-key: wagnerjr.1952fern
+  citation-key: wagner1952fern
   issued:
     - year: 1952
   number-of-pages: '212'
@@ -41232,7 +41372,7 @@ references:
   author:
     - family: Wagner
       given: Warren H
-  citation-key: wagnerjr.1955cytotaxonomic
+  citation-key: wagner1955cytotaxonomic
   container-title: Rhodora
   issued:
     - year: 1955
@@ -41247,7 +41387,7 @@ references:
       given: W H
     - family: Hagenah
       given: Dale J
-  citation-key: wagnerjr.1956observations
+  citation-key: wagner1956observations
   container-title: American Fern Journal
   issue: '4'
   issued:
@@ -41276,7 +41416,7 @@ references:
       given: Anton A
     - family: Werth
       given: Charles R
-  citation-key: wagnerjr.1992dryostichum
+  citation-key: wagner1992dryostichum
   container-title: Can J Bot
   issued:
     - year: 1992
@@ -41394,7 +41534,7 @@ references:
   author:
     - family: Wagner
       given: Warren H
-  citation-key: wagnerwarrenh1963biosystematic
+  citation-key: wagner1963biosystematic
   container-title: American Fern Journal
   issue: '1'
   issued:
@@ -43998,6 +44138,7 @@ references:
     - family: Haulfer
       given: Christopher
   citation-key: windham1988origin
+  container-title: Department of Botany
   issued:
     - year: 1988
   number-of-pages: '138'
