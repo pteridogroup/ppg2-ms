@@ -61,5 +61,5 @@ tar_plan(
   tar_file(
     taxon_comments_csv,
     tar_write_csv(taxon_comments, "data/ppg_comments.csv")
-  ),
+  )
 )

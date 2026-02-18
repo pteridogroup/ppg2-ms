@@ -69,24 +69,20 @@ auth_order <- tibble::tribble(
   "Eric Schuettpelz", 5,
 )
 
-authors <- read_csv("data/ppg2_author_list.csv") |>
+authors <- read_csv(
+  "data/ppg2_author_list.csv",
+  show_col_types = FALSE
+) |>
   left_join(auth_order, by = "name") |>
-  mutate(
-    last_name = map_chr(name, extract_last_name),
-    last_name_order = case_when(
-      name == "James E. Watkins, Jr." ~ "Watkins",
-      name == "Julián Mostacero Giannangeli" ~ "Mostacero",
-      .default = last_name
-    )
-  ) |>
-  arrange(order, last_name_order) %>%
+  arrange(order, str_to_lower(surname)) %>%
   assert(not_na, name, institution) |>
   assert(is_uniq, name) |>
   mutate(
     other_author = str_detect(
       name,
       "Hassler|Nitta|Rothfels|Schneider|Schuettpelz",
-      negate = TRUE),
+      negate = TRUE
+    ),
     institution_num = as.numeric(as.factor(fct_inorder(institution))),
     name_print = glue::glue("{name}^{institution_num}^"),
     inst_print = glue::glue("^{institution_num}^{institution}, {country}")
@@ -102,13 +98,13 @@ n_authors <- authors |>
   pull(name) |>
   n_distinct()
 
-other_authors <- 
+other_authors <-
   authors |>
   filter(other_author) |>
   pull(name_print) |>
   paste(collapse = ", ")
 
-institutions <- 
+institutions <-
   authors |>
   pull(inst_print) |>
   unique() |>
@@ -364,7 +360,7 @@ The number of taxa at the level of species and below (PPG II recognizes approxim
 ### An open, community-based approach to taxonomy
 
 PPG is unique in its open, community-based approach to taxonomy.
-While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022experta], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
+While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022expert], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
 Since PPG I [-@pteridophytephylogenygroupi2016communityderived], which included XX authors representing XX countries, the PPG community has grown to include `r n_authors` authors representing `r n_countries` countries.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
@@ -448,11 +444,12 @@ ppg_2_taxa_count |>
   ) |>
   mutate(
     taxonRank = str_to_sentence(taxonRank),
-    across(where(is.integer)|where(is.numeric), ~ replace_na(., 0)),
-    across(where(is.integer)|where(is.numeric), ~ scales::number(., big.mark = ",")),
+    across(where(is.integer) | where(is.numeric), ~ replace_na(., 0)),
+    across(where(is.integer) | where(is.numeric), ~ scales::number(., big.mark = ",")),
     across(
       c(accepted, ppgi_accepted, wf_accepted, wf_synonym),
-      ~ str_replace_all(., "^0$", "not used")),
+      ~ str_replace_all(., "^0$", "not used")
+    ),
     accepted = case_when(
       taxonRank == "Species" ~ paste0(accepted, "\\*"),
       .default = accepted

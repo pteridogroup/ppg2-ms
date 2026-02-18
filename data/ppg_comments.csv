@@ -25,7 +25,7 @@ wfo-9000000275,Isoetales,Prantl,order,NA
 wfo-7000000301,Isoetaceae,Dumort.,family,NA
 wfo-4000019273,Isoetes,L.,genus,NA
 wfo-9000000493,Selaginellales,Prantl,order,NA
-wfo-7000000562,Selaginellaceae,Willk.,family,"Some treatments recognize multiple genera within Selaginellaceae [e.g., @zhou2023phylogeny; @zhouphylogeny; @zhao2026widespreada]. No such proposal has been submitted to PPG, so we continue to recognize only *Selaginella*."
+wfo-7000000562,Selaginellaceae,Willk.,family,"Some treatments recognize multiple genera within Selaginellaceae [e.g., @zhou2023phylogeny; @zhouphylogeny; @zhao2026widespread]. No such proposal has been submitted to PPG, so we continue to recognize only *Selaginella*."
 wfo-4000034966,Selaginella,P.Beauv.,genus,NA
 wfo-4100003341,Polypodiopsida,"Cronquist, Takht. & W.Zimm.",class,NA
 wfo-4100003340,Equisetidae,Warm.,subclass,NA
@@ -87,7 +87,7 @@ wfo-4000011648,Didymoglossum,Desv.,genus,NA
 wfo-4000030769,Polyphlebium,Copel.,genus,NA
 wfo-4000039008,Trichomanes,L.,genus,NA
 wfo-4000039997,Vandenboschia,Copel.,genus,NA
-wfo-9000000230,Gleicheniales,Link,order,"The monophyly of Gleicheniales is uncertain. It tends to be resolved as monophyletic in analyses of small-to-medium sized datasets [e.g., @schuettpelz2007fern; @rothfels2015evolutionary; @testo20164000species] but non-monophyletic in phylogenomic analyses [e.g., @qi2018wellresolved; @shen2018largescale; @du2022structural; @nitta2022open]. A vote to divide Gleicheniales among three orders did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
+wfo-9000000230,Gleicheniales,Link,order,"The monophyly of Gleicheniales is uncertain. They tend to be resolved as monophyletic in analyses of small-to-medium sized datasets [e.g., @schuettpelz2007fern; @rothfels2015evolutionary; @testo20164000species] but non-monophyletic in phylogenomic analyses [e.g., @qi2018wellresolved; @shen2018largescale; @du2022structural; @nitta2022open]. A vote to divide Gleicheniales among three orders did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
 wfo-7000000251,Gleicheniaceae,C.Presl,family,NA
 wfo-4000011525,Dicranopteris,Bernh.,genus,NA
 wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,NA
@@ -235,7 +235,7 @@ wfo-4100005209,Dennstaedtiineae,Schwartsb. & Hovenkamp,suborder,NA
 wfo-7000000183,Dennstaedtiaceae,Lotsy,family,NA
 wfo-4100004386,Dennstaedtioideae,Pic.Serm.,subfamily,NA
 wfo-1200105051,Dennstaedtia,T.Moore,genus,"Includes *Leptolepia* Mett. ex Kuhn and *Oenotrichia* Copel. To avoid extensive nomenclatural instability---effectively, the species of *Microlepia* needing to be recognized in *Dennstaedtia*, and the bulk of *Dennstaedtia* needing recognition in *Patania* C.Presl [@triana-moreno2022phylogenetic]---*Dennstaedtia* was conserved on a conserved type [@triana-moreno20222892; @turland2024xx]."
-wfo-4000024129,Microlepia,C.Presl,genus,"*Microlepia* is conserved against the much older name, *Scyphofilix* Thouars [@schwartsburd20172508; @turland2024xx]."
+wfo-4000024129,Microlepia,C.Presl,genus,*Microlepia* is conserved against *Scyphofilix* Thouars [@schwartsburd20172508; @turland2024xx].
 wfo-4100002053,Mucura,L.A.Triana & Sundue,genus,NA
 wfo-4000035560,Sitobolium,Desv.,genus,NA
 wfo-4100004442,Hypolepidoideae,Lovis,subfamily,NA
