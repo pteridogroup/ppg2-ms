@@ -2874,3 +2874,14 @@ make_tree_figure_appendix <- function(
 
   tree_fig
 }
+
+# Run all test files in a directory
+# Error if FALSE, return TRUE if passes
+run_tests <- function(dir) {
+  testthat::test_dir(
+    dir,
+    reporter = "progress",
+    stop_on_failure = TRUE
+  )
+  TRUE
+}

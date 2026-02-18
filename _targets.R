@@ -90,6 +90,12 @@ tar_plan(
     read_csv(!!.x)
   ),
   comments = format_ppg_comments(comments_raw),
+  # Run tests ----
+  tar_target(
+    test_results,
+    run_tests("tests/testthat"),
+    cue = tar_cue("always")
+  ),
 
   # Format data ----
   # - convert DarwinCore format to dataframe in taxonomic order for printing
