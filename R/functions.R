@@ -477,6 +477,93 @@ count_children_ppg <- function(
     select(taxonID = taxon_concept_id, contains("n_"))
 }
 
+#' Apply Manual Species Count Updates
+#'
+#' Updates species counts in children_tally with manually curated values from
+#' a CSV file. This is useful for correcting automated counts that may not
+#' reflect the most current taxonomic knowledge.
+#'
+#' @param children_tally Data frame with taxon counts, typically the output
+#'   of count_children_ppg().
+#' @param species_count_updates Data frame with columns 'genus' and 'species'
+#'   containing manual species count updates.
+#' @param ppg Data frame containing the PPG taxonomy in Darwin Core format.
+#'
+#' @return Updated children_tally data frame with corrected species counts.
+apply_species_count_updates <- function(
+  children_tally,
+  species_count_updates,
+  ppg
+) {
+  # Get taxonIDs for genera to update
+  genera_to_update <- ppg |>
+    filter(
+      scientificName %in% species_count_updates$genus,
+      taxonRank == "genus",
+      taxonomicStatus == "accepted"
+    ) |>
+    select(scientificName, taxonID) |>
+    left_join(
+      species_count_updates,
+      by = join_by(scientificName == genus)
+    ) |>
+    rename(n_species_manual = species)
+
+  # Update children_tally at genus level
+  children_tally_updated <- children_tally |>
+    left_join(genera_to_update, by = "taxonID") |>
+    mutate(
+      # Calculate the difference for propagation
+      species_diff = case_when(
+        !is.na(n_species_manual) ~ n_species_manual - n_species,
+        .default = 0
+      ),
+      n_species = coalesce(n_species_manual, n_species)
+    ) |>
+    select(-scientificName, -n_species_manual)
+
+  # Get parent relationships to propagate changes up the hierarchy
+  parent_map <- ppg |>
+    filter(taxonomicStatus == "accepted") |>
+    select(taxonID, parentNameUsageID)
+
+  # Calculate total species difference by parent
+  species_diff_by_parent <- children_tally_updated |>
+    filter(species_diff != 0) |>
+    left_join(parent_map, by = "taxonID") |>
+    group_by(parentNameUsageID) |>
+    summarize(total_species_diff = sum(species_diff), .groups = "drop") |>
+    rename(taxonID = parentNameUsageID)
+
+  # Recursively propagate changes up the hierarchy
+  while (nrow(species_diff_by_parent) > 0) {
+    children_tally_updated <- children_tally_updated |>
+      left_join(species_diff_by_parent, by = "taxonID") |>
+      mutate(
+        n_species = case_when(
+          !is.na(total_species_diff) ~ n_species + total_species_diff,
+          .default = n_species
+        )
+      ) |>
+      select(-total_species_diff)
+
+    # Find next level up
+    species_diff_by_parent <- species_diff_by_parent |>
+      left_join(parent_map, by = "taxonID") |>
+      filter(!is.na(parentNameUsageID)) |>
+      group_by(parentNameUsageID) |>
+      summarize(
+        total_species_diff = sum(total_species_diff),
+        .groups = "drop"
+      ) |>
+      rename(taxonID = parentNameUsageID)
+  }
+
+  # Remove temporary column
+  children_tally_updated |>
+    select(-species_diff)
+}
+
 
 # function for counting taxa within a group
 count_children_single <- function(

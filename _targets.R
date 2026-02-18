@@ -90,6 +90,14 @@ tar_plan(
     read_csv(!!.x)
   ),
   comments = format_ppg_comments(comments_raw),
+
+  # Load manual species count updates ----
+  tar_file_read(
+    species_count_updates,
+    "data/species_count_updates.csv",
+    read_csv(!!.x)
+  ),
+
   # Run tests ----
   tar_target(
     test_results,
@@ -103,10 +111,16 @@ tar_plan(
   ppg_tl = dwc_to_tl(ppg, families_in_phy_order),
   # - count number of children taxa, while excluding any hybrids
   #   (names with '×')
-  children_tally = count_children_ppg(
+  children_tally_raw = count_children_ppg(
     ppg,
     families_in_phy_order,
     exclude_hybrids = TRUE
+  ),
+  # - apply manual species count updates
+  children_tally = apply_species_count_updates(
+    children_tally_raw,
+    species_count_updates,
+    ppg
   ),
   # - count number of taxa per rank in PPG II
   ppg_2_taxa_count = count_ppg2_taxa(ppg, exclude_hybrids = TRUE),
