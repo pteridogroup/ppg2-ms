@@ -1,5 +1,170 @@
 ---
 references:
+- abstract: |-
+    Abstract
+                
+                  Background and Aims
+                  The sensitive fern, Onoclea sensibilis, is a widespread species in eastern North America and has an atypical timing of spore dispersal among temperate ferns. During early summer, this dimorphic species produces heavily modified spore-bearing fronds with leaflets tightly enveloping their sporangia and spores. These fronds senesce and persist above ground as dead mature structures until the following early spring when the leaflets finally open and spores are dispersed. While this timing of spore dispersal has been observed for over 120 years, the structural mechanisms underpinning this phenology have remained elusive.
+                
+                
+                  Methods
+                  Based on field observations, growth chamber manipulations and scanning electron microscopy, the mechanisms underlying this distinctive timing of spore dispersal in the sensitive fern were investigated.
+                
+                
+                  Key Results
+                  I show that fertile leaflets of the sensitive fern move in direct response to changes in humidity, exhibiting structural and functional parallels with multicellular hygromorphic structures in seed plants, such as pine cones. These parallels include differences in cellulose microfibril orientation in cells on the abaxial and adaxial sides of the leaflet. The dynamics of this hygroscopic movement concomitant with regular abscission zones along the pinnules and coordinated senescence lead to the specific timing of early spring spore dispersal in the sensitive fern.
+                
+                
+                  Conclusions
+                  While hygroscopic movement is common in seed-free plants, it mostly occurs in small structures that are either one or a few cells in size, such as the leptosporangium. Given its multicellular structure and integration across many cells and tissues, the movement and construction of the sensitive fern pinnules are more similar to structures in seed plants. The evolution of this complex trait in the sensitive fern efficiently regulates the timing of spore release, leading to early spring dispersal. This phenology likely gives gametophytes and subsequent sporophytes an advantage with early germination and growth.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Suissa
+      given: Jacob S
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mcab137
+  ISSN: 0305-7364, 1095-8290
+  issue: '5'
+  issued:
+    - year: 2022
+      month: 4
+      day: 13
+  language: en
+  license: >-
+    https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model
+  page: 519–528
+  source: DOI.org (Crossref)
+  title: >-
+    Fern fronds that move like pine cones: humidity-driven motion of fertile
+    leaflets governs the timing of spore dispersal in a widespread fern species
+  title-short: Fern fronds that move like pine cones
+  type: article-journal
+  URL: https://academic.oup.com/aob/article/129/5/519/6432223
+  volume: '129'
+
+- abstract: >-
+    Resource allocation theory posits that organisms distribute limited
+    resources across functions to maximize their overall fitness. In plants, the
+    allocation of resources among maintenance, reproduction, and growth
+    influences short-term economics and long-term evolutionary processes,
+    especially during resource scarcity. The evolution of specialized structures
+    to divide labor between reproduction and growth can create a feedback loop
+    where selection can act on individual organs, further increasing
+    specializaton and resource allocation. Ferns exhibit diverse reproductive
+    strategies, including dimorphism, where leaves can either be sterile (only
+    for photosynthesis) or fertile (for spore dispersal). This dimorphism is
+    similar to processes in seed plants (e.g., the production of fertile flowers
+    and sterile leaves), and presents an opportunity to investigate divergent
+    resource allocation between reproductive and vegetative functions in
+    specialized organs. Here, we conducted anatomical and hydraulic analyses on
+    Onoclea sensibilis L., a widespread dimorphic fern species, to reveal
+    significant structural and hydraulic divergences between fertile and sterile
+    leaves. Fertile fronds invest less in hydraulic architecture, with nearly
+    1.5 times fewer water-conducting cells and a nearly 0.5 times less
+    drought-resistant xylem compared to sterile fronds. This comes at the
+    increased relative investment in structural support, which may help
+    facilitate spore dispersal. These findings suggest that specialization in
+    ferns—in the form of reproductive dimorphism—can enable independent
+    selection pressures on each leaf type, potentially optimizing spore
+    dispersal in fertile fronds and photosynthetic efficiency in sterile fronds.
+    Overall, our study sheds light on the evolutionary implications of
+    functional specialization and highlights the importance of reproductive
+    strategies in shaping plant fitness and evolution.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Suissa
+      given: Jacob S.
+    - family: Barkoff
+      given: Noah
+    - family: Watkins
+      given: James E.
+  container-title: Ecology and Evolution
+  container-title-short: Ecology and Evolution
+  DOI: 10.1002/ece3.11552
+  ISSN: 2045-7758, 2045-7758
+  issue: '7'
+  issued:
+    - year: 2024
+      month: 7
+  language: en
+  page: e11552
+  source: DOI.org (Crossref)
+  title: >-
+    Extreme functional specialization of fertile leaves in a widespread fern
+    species and its implications on the evolution of reproductive dimorphism
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/ece3.11552
+  volume: '14'
+
+- abstract: >-
+    Phylogenetic conﬂicts limit our understanding of the evolution of
+    terrestrial life under multiple whole genome duplication events, and the
+    phylogeny of early terrestrial plants remains full of controversy. Although
+    much incongruence has been solved with so-called robust topology based on
+    single or lower copy genes, the evolutionary mechanisms behind phylogenetic
+    conﬂicts such as polyploidization remain poorly understood. Here, through
+    decreasing the effects of polyploidization and increasing the samples of
+    species, which represent all four orders and eight families that comprise
+    early leptosporangiate ferns, we have reconstructed a robust phylogenetic
+    tree and network with 1125 1-to-1 orthologs based on both coalescent and
+    concatenation methods. Our data consistently suggest that Matoniales, as a
+    monophyletic lineage including Matoniaceae and Dipteridaceae, should be
+    redeﬁned as an ordinal rank. Furthermore, we have identiﬁed and located at
+    least 11 whole-genome duplication events within the evolutionary history of
+    four leptosporangiates lineages, and associated polyploidization with higher
+    speciation rates and mass extinction events. We hypothesize that
+    paleopolyploidization may have enabled leptosporangiate ferns to survive
+    during mass extinction events at the end Permian period and then ﬂourish
+    throughout the Mesozoic era, which is supported by extensive fossil records.
+    Our results highlight how ancient polyploidy can result in rapid species
+    radiation, thus causing phylogenetic conﬂicts yet allowing plants to survive
+    and thrive during mass extinction events.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Shu
+      given: Jiang-Ping
+    - family: Wang
+      given: Hao
+    - family: Shen
+      given: Hui
+    - family: Wang
+      given: Rui-Jiang
+    - family: Fu
+      given: Qiang
+    - family: Wang
+      given: Yong-Dong
+    - family: Jiao
+      given: Yuan-Nian
+    - family: Yan
+      given: Yue-Hong
+  container-title: Plants
+  container-title-short: Plants
+  DOI: 10.3390/plants11121529
+  ISSN: 2223-7747
+  issue: '12'
+  issued:
+    - year: 2022
+      month: 6
+      day: 7
+  language: en
+  page: '1529'
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogenomic analysis reconstructed the order Matoniales from
+    paleopolyploidy veil
+  type: article-journal
+  URL: https://www.mdpi.com/2223-7747/11/12/1529
+  volume: '11'
+
 - id: 2015review
   abstract: >-
     The aquatic invasive plant species Eichhornia crassipes and Salvinia molesta
@@ -13528,30 +13693,6 @@ references:
   URL: http://www.bioone.org/doi/10.1640/0002-8444-106.3.153
   volume: '106'
 
-- id: huanginReviewintegrative
-  author:
-    - family: Huang
-      given: Chen-Liang
-    - family: Javzandolgor
-      given: Chuluunbat
-    - family: Wu
-      given: Fei
-    - family: Zhang
-      given: Sheng-Bang
-    - family: Zhang
-      given: Xian-Chun
-    - family: Wei
-      given: Ran
-  citation-key: huanginReviewintegrative
-  container-title: Taxon
-  issued:
-    - literal: inReview
-  title: >-
-    Integrative species delimitation of two species complexes in *Cystopteris*,
-    with description of two new species from Asia: *C. shengbangii* and *C.
-    zhongrenii*
-  type: article-journal
-
 - id: huh2025phytochemistry
   abstract: >-
     The Onocleaceae family, a small group within the Pteridophytes, comprises
@@ -13813,6 +13954,30 @@ references:
   type: article-journal
   URL: http://www.nrcresearchpress.com/doi/10.1139/b91-030
   volume: '69'
+
+- id: integrative
+  author:
+    - family: Huang
+      given: Chen-Liang
+    - family: Javzandolgor
+      given: Chuluunbat
+    - family: Wu
+      given: Fei
+    - family: Zhang
+      given: Sheng-Bang
+    - family: Zhang
+      given: Xian-Chun
+    - family: Wei
+      given: Ran
+  citation-key: integrative
+  container-title: Taxon
+  issued:
+    - literal: inReview
+  title: >-
+    Integrative species delimitation of two species complexes in *Cystopteris*,
+    with description of two new species from Asia: *C. shengbangii* and *C.
+    zhongrenii*
+  type: article-journal
 
 - id: irvine1991curltip
   abstract: >-
@@ -18438,7 +18603,7 @@ references:
   type: article-journal
   volume: '103'
 
-- id: leroux2022experta
+- id: leroux2022expert
   abstract: |-
     Abstract
                 The Legume Phylogeny Working Group’s Taxonomy Working Group was tasked to create a community endorsed global legume checklist that will serve as a primary source of taxa for biodiversity data platforms and legume-related research. The checklist was published in June 2021, recognising 772 genera and 22,360 species. It is disseminated through the new Legume Data Portal as part of the Global Biodiversity Information Facility (GBIF) hosted portal initiative. The process that was followed to publish and disseminate the checklist and its content is described here. The impact of the work by the Taxonomy Working Group are quantified by comparing the published checklist with the GBIF taxonomic backbone. A total of 44,157 names overlapped with the GBIF taxonomic backbone while 30,456 names were added, which enabled more accurate name matching of 61,235 legume occurrences. Continuous improvement to the World Checklist of Vascular Plants (WCVP): Fabaceae checklist will allow the GBIF taxonomic backbone and other checklist managers to converge to a consistent and comprehensive list of legume taxa globally over time.
@@ -18457,7 +18622,7 @@ references:
       given: Markus
     - family: Bruneau
       given: Anne
-  citation-key: leroux2022experta
+  citation-key: leroux2022expert
   container-title: Scientific Data
   container-title-short: Sci Data
   DOI: 10.1038/s41597-022-01812-6
@@ -19264,7 +19429,7 @@ references:
   type: thesis
   volume: PhD
 
-- id: lima2025newa
+- id: lima2025new
   abstract: >-
     Gleicheniaceae is an early diverging lineage of leptosporangiate ferns,
     characterized by pseudodichotomous frond branching. While six genera are
@@ -19291,7 +19456,7 @@ references:
       given: Germinal
     - family: Almeida
       given: Thaís Elias
-  citation-key: lima2025newa
+  citation-key: lima2025new
   container-title: Phytotaxa
   container-title-short: Phytotaxa
   DOI: 10.11646/phytotaxa.730.3.7
@@ -36708,7 +36873,7 @@ references:
     - year: 1958
   page: 541–546
   publisher: Wiley Online Library
-  title: Chromosome studies on Finnish pteridophyta I
+  title: Chromosome studies on Finnish Pteridophyta I
   type: article-journal
   URL: >-
     http://onlinelibrary.wiley.com/doi/10.1111/j.1601-5223.1958.tb03499.x/abstract
@@ -36754,7 +36919,7 @@ references:
     - year: 1963
   page: 337–344
   publisher: Wiley Online Library
-  title: Chromosome studies on Finnish pteridophyta III
+  title: Chromosome studies on Finnish Pteridophyta III
   type: article-journal
   URL: http://onlinelibrary.wiley.com/doi/10.1111/j.1601-5223.1963.tb01884.x/full
   volume: '49'
@@ -36769,7 +36934,7 @@ references:
     - year: 1966
   page: '1375'
   publisher: Nature Publishing Group
-  title: A diploid Gymnocarpium dryopteris (L.) Newman in Alaska
+  title: A diploid *Gymnocarpium dryopteris* (L.) Newman in Alaska
   type: article-journal
   URL: http://www.nature.com/nature/journal/v210/n5043/abs/2101375a0.html
   volume: '5043'
@@ -46914,7 +47079,7 @@ references:
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1111/cla.70024
 
-- id: zhao2026widespreada
+- id: zhao2026widespread
   accessed:
     - year: 2026
       month: 2
@@ -46936,7 +47101,7 @@ references:
       given: Li-Bing
     - family: Zhou
       given: Xin-Mao
-  citation-key: zhao2026widespreada
+  citation-key: zhao2026widespread
   container-title: Molecular Phylogenetics and Evolution
   container-title-short: Molecular Phylogenetics and Evolution
   DOI: 10.1016/j.ympev.2025.108454
