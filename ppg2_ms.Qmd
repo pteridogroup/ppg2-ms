@@ -3,6 +3,11 @@ title: "An update of the Pteridophyte Phylogeny Group classification for extant 
 format:
   docx:
     reference-doc: template.docx
+crossref:
+  fig-prefix: "Fig."
+  tbl-prefix: "Table"
+  fig-title: "Fig."
+  tbl-title: "Table"
 bibliography: references.yaml
 link-bibliography: true
 csl: taxon.csl
@@ -161,6 +166,8 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 
 **Key words:** open science, nomenclature, phylogenetic systematics, taxonomy, World Flora Online
 
+**Supplementary Material** Electronic supplementary material (Fig. S1; Table S1) are available in the Supplementary Data section of the online version of this article at <https://onlinelibrary.wiley.com/journal/19968175>.
+
 {{< pagebreak >}}
 
 ## Introduction
@@ -231,7 +238,7 @@ Species-level curation will continue indefinitely with the publication of PPG II
 ### Versioning
 
 Starting with this version of the PPG classification (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at the species level or below, the middle digit indicates changes at the genus level or higher, and the largest digit indicates major changes (e.g., major rearrangements of the taxonomic hierarchy).
-New versions will be issued as needed, for example, following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open].
+New versions will be issued as needed, for example, following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open] or PteridoPortal [@rothfels2025pteridoportal].
 We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
 This will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the versioning system, the ability to unambiguously reference a specific snapshot of the classification.
 
@@ -349,7 +356,7 @@ Our recognition of `r n$subclass$ppg2` subclasses, `r n$order$ppg2` orders, and 
 
 PPG II begins to diverge from PPG I at the level of family, where `r n$family$ppg2` families are recognized in PPG II versus `r n$family$ppg1` in PPG I (@tbl-taxa).
 The number of subfamilies and genera is also greater in PPG II vs. PPG I (`r n$subfamily$ppg2` vs. `r n$subfamily$ppg1` and `r n$genus$ppg2` vs. `r n$genus$ppg1`, respectively).
-Most taxonomic changes were caused by the addition of new names, i.e., splitting (@tbl-changes), whereas a smaller number of changes stems from the subsumption of existing names, i.e., lumping (@tbl-changes).
+Most taxonomic changes were caused by the addition of new names, i.e., splitting (@tbl-changes), whereas a smaller number of changes stems from the subsumption of existing names, i.e., sinking (@tbl-changes).
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting PPG II classification at the level of genus and above is presented below.
 
@@ -362,7 +369,7 @@ The number of taxa at the level of species and below (PPG II recognizes approxim
 PPG is unique in its open, community-based approach to taxonomy.
 While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022expert], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
-Since PPG I [-@pteridophytephylogenygroupi2016communityderived], which included XX authors representing XX countries, the PPG community has grown to include `r n_authors` authors representing `r n_countries` countries.
+PPG II includes `r n_authors` authors representing `r n_countries` countries, underscoring the breadth of participation in this process.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
 
 One clear benefit of the community approach is the ability to keep up with the rapid pace of systematics research.
@@ -376,7 +383,7 @@ nchild <- children_tally %>%
   split(.$taxon_name)
 ```
 
-In comparison to PPG I, the general trend has been an increase in the number of genera (@tbl-changes; Figure S1).
+In comparison to PPG I, the general trend has been an increase in the number of genera (@tbl-changes; Fig. S1).
 This is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. `r count_ppgi_gen(ppg_i, family == "Thelypteridaceae")`), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae")`), and Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae")`).
 Notable exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* and *Selliguea*, subsuming six and four genera, respectively, that were recognized in PPG I.
 
@@ -394,7 +401,7 @@ This flexibility allows us to revisit taxonomic areas of uncertainty and revise 
 ## Classification
 
 Circumscriptions and synonymy are generally not shown, although we account for all names recognized in PPG I (2016); such names are listed as synonyms if not recognized herein.
-A complete table of synonymy at the genus level and higher is provided in the Appendix.
+A complete table of synonymy at the genus level and higher is provided in Table S1.
 Species counts exclude hybrids and should be considered approximate.
 All taxa are considered monophyletic unless otherwise indicated.
 Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online.
@@ -508,7 +515,7 @@ ppg_issues_count |>
 ```{r}
 #| label: tbl-uncertain
 #| tbl-cap: "Uncertain relationships in ferns. Node indicates numbered
-#|   nodes in Figure 2."
+#|   nodes in Fig. 2."
 knitr::kable(uncertainty_table)
 ```
 
