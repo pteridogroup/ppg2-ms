@@ -424,7 +424,7 @@ All authors participated by submitting and/or voting on taxonomic proposals and 
 #| label: tbl-taxa
 #| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2025world] by taxonomic status
 #|   (accepted or synonym).
-#|   Species counts exclude hybrids and should be considered approximate.
+#|   Species counts exclude hybrids.
 #|   Complete synonymy was not presented in PPG I so this is not shown.
 #|   Not every rank is used by every treatment.
 #|   \\*Curation of species-level data in PPG II is ongoing, so this number is approximate."
@@ -507,8 +507,8 @@ ppg_issues_count |>
 
 ```{r}
 #| label: tbl-uncertain
-#| tbl-cap: "Uncertain relationships in pteridophytes. Node indicates numbered
-#|   nodes in Fig. 2."
+#| tbl-cap: "Uncertain relationships in ferns. Node indicates numbered
+#|   nodes in Figure 2."
 knitr::kable(uncertainty_table)
 ```
 

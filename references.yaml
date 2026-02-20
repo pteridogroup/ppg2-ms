@@ -2133,6 +2133,20 @@ references:
   type: article-journal
   volume: '14'
 
+- id: bir1971cytological
+  author:
+    - family: Bir
+      given: S S
+  citation-key: bir1971cytological
+  container-title: the nucleus
+  issue: '1'
+  issued:
+    - year: 1971
+  page: 56--62
+  title: Cytological observations on some Indian species of *Cystopteris* Bernh.
+  type: article-journal
+  volume: '14'
+
 - id: bir1973evolution
   author:
     - family: Bir
@@ -6765,6 +6779,23 @@ references:
     ferns
   type: article-journal
   volume: '99'
+
+- id: delasolta1999nature
+  author:
+    - family: Solta
+      given: E R
+      non-dropping-particle: de la
+  citation-key: delasolta1999nature
+  event-title: XVI International Botanical Congress
+  issue: '1'
+  issued:
+    - year: 1999
+      month: 8
+  page: '22'
+  publisher-place: St. Louis, Missouri
+  title: On the nature of the submerged organ in the fern genus *Salvinia*
+  type: paper-conference
+  volume: '3'
 
 - id: delasota2001two
   abstract: >-
@@ -17467,6 +17498,29 @@ references:
     https://www.researchgate.net/profile/Li-Yaung_Kuo/publication/335393372_Updating_Taiwanese_pteridophyte_checklist_a_new_phylogenetic_classification/links/5d62fe22458515d610252fba/Updating-Taiwanese-pteridophyte-checklist-a-new-phylogenetic-classification.
   volume: '64'
 
+- id: kuoroadmap
+  abstract: >-
+    The large genomes of ferns have long deterred genome sequencing efforts. To
+    date, only two heterosporous ferns with remarkably small genomes, Azolla
+    filiculoides and Salvinia cucullata, have been sequenced. However, as
+    sequencing technologies continue to improve and become more affordable,
+    generating high-quality, ‘‘normal-sized’’ fern genomes is within reach. Here
+    we provide new genome size data and discuss candidates for whole genome
+    sequencing. In particular, we identified 18 species representing major
+    branches in the fern phylogeny that are worth pursuing. We also review the
+    current sequencing technologies and offer our opinions on the best
+    sequencing approach for these fern species.
+  author:
+    - family: Kuo
+      given: Li-Yaung
+    - family: Li
+      given: Fay-Wei
+  citation-key: kuoroadmap
+  language: en
+  source: Zotero
+  title: A Roadmap for Fern Genome Sequencing
+  type: article-journal
+
 - id: kurata1963notes
   author:
     - family: Kurata
@@ -22395,6 +22449,58 @@ references:
   type: article-journal
   URL: https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.16379
   volume: '111'
+
+- id: mendez-reneau2026what
+  abstract: >-
+    Few fern taxa are as iconic as Polypodium vulgare, the type species of
+    Polypodium, the namesake genus of the largest fern family, Polypodiaceae.
+    Originally described by Linnaeus, P. vulgare was once considered a single
+    circumboreal species exhibiting subtle morphological and ecological
+    variation. Generations of researchers have revealed that P. vulgare is an
+    allotetraploid belonging to a reticulation complex of mainly northern
+    temperate species, but the P. vulgare complex continues to yield novel
+    taxonomic diversity. Here we apply broad sampling of P. vulgare in Europe
+    and Asia, maternally inherited plastome sequences, bi-parentally inherited
+    nuclear target capture datasets, and the updated SORTER2-Toolkit
+    bioinformatics pipeline to demonstrate that P. vulgare is restricted to
+    Europe, whereas specimens from Asia represent a second allopolyploid species
+    of distinct parentage. While both are of Pleistocene origin, our divergence
+    dating estimates suggest that the Asian taxon, putatively named Polypodium
+    ‘okiense’, probably formed prior to P. vulgare in Europe and support the
+    hypothesis that European P. vulgare is a progenitor of the allohexaploid
+    Polypodium interjectum. In addition, we infer the taxonomic identity of an
+    enigmatic population from South Africa, and address implications for
+    floristics and pharmaceutical applications of these conflated taxa.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 19
+  author:
+    - family: Mendez-Reneau
+      given: Jonas I
+    - family: Haufler
+      given: Christopher H
+    - family: Sigel
+      given: Erin M
+  citation-key: mendez-reneau2026what
+  container-title: Botanical Journal of the Linnean Society
+  DOI: 10.1093/botlinnean/boaf115
+  ISSN: 0024-4074, 1095-8339
+  issued:
+    - year: 2026
+      month: 2
+      day: 17
+  language: en
+  license: https://academic.oup.com/pages/standard-publication-reuse-rights
+  page: boaf115
+  source: DOI.org (Crossref)
+  title: >-
+    What is *Polypodium vulgare* ? Discerning disparate origins of an iconic
+    fern in Europe and Asia
+  title-short: What is *Polypodium vulgare* ?
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/botlinnean/advance-article/doi/10.1093/botlinnean/boaf115/8467971
 
 - id: mendoza-ruiz2009morphogenesis
   author:
@@ -42741,6 +42847,91 @@ references:
   URL: http://dx.plos.org/10.1371/journal.pone.0172729.s003
   volume: '12'
 
+- id: wang2022genome
+  abstract: >-
+    Ferns and lycophytes have remarkably large genomes. However, little is known
+    about how their genome size evolved in fern lineages. To explore the origins
+    and evolution of chromosome numbers and genome size in ferns, we used ﬂow
+    cytometry to measure the genomes of 240 species (255 samples) of extant
+    ferns and lycophytes comprising 27 families and 72 genera, of which 228
+    species (242 samples) represent new reports. We analyzed correlations among
+    genome size, spore size, chromosomal features, phylogeny, and habitat type
+    preference within a phylogenetic framework. We also applied ANOVA and
+    multinomial logistic regression analysis to preference of habitat type and
+    genome size. Using the phylogeny, we conducted ancestral character
+    reconstruction for habitat types and tested whether genome size changes
+    simultaneously with shifts in habitat preference. We found that 2C values
+    had weak phylogenetic signal, whereas the base number of chromosomes (x) had
+    a strong phylogenetic signal. Furthermore, our analyses revealed a positive
+    correlation between genome size and chromosome traits, indicating that the
+    base number of chromosomes (x), chromosome size, and polyploidization may be
+    primary contributors to genome expansion in ferns and lycophytes. Genome
+    sizes in different habitat types varied signiﬁcantly and were signiﬁcantly
+    correlated with habitat types; speciﬁcally, multinomial logistic regression
+    indicated that species with larger 2C values were more likely to be
+    epiphytes. Terrestrial habitat is inferred to be ancestral for both extant
+    ferns and lycophytes, whereas transitions to other habitat types occurred as
+    the major clades emerged. Shifts in habitat types appear be followed by
+    periods of genomic stability. Based on these results, we inferred that
+    habitat type changes and multiple whole-genome duplications have contributed
+    to the formation of large genomes of ferns and their allies during their
+    evolutionary history.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 19
+  author:
+    - family: Wang
+      given: Fa-Guo
+    - family: Wang
+      given: Ai-Hua
+    - family: Bai
+      given: Cheng-Ke
+    - family: Jin
+      given: Dong-Mei
+    - family: Nie
+      given: Li-Yun
+    - family: Harris
+      given: Aj
+    - family: Che
+      given: Le
+    - family: Wang
+      given: Juan-Juan
+    - family: Li
+      given: Shi-Yu
+    - family: Xu
+      given: Lei
+    - family: Shen
+      given: Hui
+    - family: Gu
+      given: Yu-Feng
+    - family: Shang
+      given: Hui
+    - family: Duan
+      given: Lei
+    - family: Zhang
+      given: Xian-Chun
+    - family: Chen
+      given: Hong-Feng
+    - family: Yan
+      given: Yue-Hong
+  citation-key: wang2022genome
+  container-title: Plant Diversity
+  container-title-short: Plant Diversity
+  DOI: 10.1016/j.pld.2021.11.007
+  ISSN: '24682659'
+  issue: '2'
+  issued:
+    - year: 2022
+      month: 3
+  language: en
+  page: 141–152
+  source: DOI.org (Crossref)
+  title: Genome size evolution of the extant lycophytes and ferns
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S2468265921001505
+  volume: '44'
+
 - id: wang2023insights
   accessed:
     - year: 2022
@@ -45272,6 +45463,66 @@ references:
   URL: >-
     http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=related:gNSX4qJS9LgJ
   volume: '106'
+
+- id: xia2025decoding
+  abstract: |-
+    Abstract
+                
+                  Ferns are an ancient lineage of vascular plants, yet limited genomic resources constrain both evolutionary and conservation inference. Here, we generate a chromosome-level genome assembly for the endangered cycad fern
+                  Brainea insignis
+                  (8.62 Gb), the sole species in its genus within eupolypods II, and integrate comparative and population genomics to resolve its evolutionary history and vulnerability. The genome retains the ancient whole-genome duplication shared by leptosporangiate ferns; however, its exceptional size is driven primarily by recent repeat accumulation and further shaped by lineage-specific evolutionary signatures linked to functional specialization. Resequencing across the range identifies three geographically and environmentally structured lineages shaped by Quaternary refugia, limited postglacial expansion and localized admixture. Recently reduced populations show pronounced genomic erosion, including inbreeding and elevated genetic load, due to insufficient time for purging. We detect climate-associated local adaptation and project substantial future genetic offsets, with southwestern Indochina populations at highest risk. Our results expand fern genomics and support spatially tailored conservation strategies that maintains habitat connectivity and promotes adaptive gene flow.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 19
+  author:
+    - family: Xia
+      given: Zengqiang
+    - family: Duan
+      given: Lei
+    - family: Fang
+      given: Yuhan
+    - family: Jiang
+      given: Yan
+    - family: Chen
+      given: Hongfeng
+    - family: Yan
+      given: Yuehong
+    - family: Wang
+      given: Aihua
+    - family: Li
+      given: Zixiang
+    - family: Liu
+      given: Ziyue
+    - family: Zhao
+      given: Guohua
+    - family: Shen
+      given: Hui
+    - family: Van De Peer
+      given: Yves
+    - family: Kang
+      given: Ming
+    - family: Wang
+      given: Faguo
+  citation-key: xia2025decoding
+  container-title: Nature Communications
+  container-title-short: Nat Commun
+  DOI: 10.1038/s41467-025-68053-0
+  ISSN: 2041-1723
+  issue: '1'
+  issued:
+    - year: 2025
+      month: 12
+      day: 30
+  language: en
+  page: '1292'
+  source: DOI.org (Crossref)
+  title: >-
+    Decoding the genome of *Brainea insignis* reveals insights into fern
+    evolution and conservation
+  type: article-journal
+  URL: https://www.nature.com/articles/s41467-025-68053-0
+  volume: '17'
 
 - id: xiang2015evolution
   author:
