@@ -204,14 +204,14 @@ tar_plan(
   ),
 
   tar_quarto(
-    appendix,
-    "appendix.qmd",
+    table_s1,
+    "table_s1.qmd",
     quiet = FALSE
   ),
 
   tar_quarto(
-    appendix_2,
-    "appendix_2.qmd",
+    fig_s1,
+    "fig_s1.qmd",
     quiet = FALSE
   )
 )
