@@ -1755,7 +1755,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
 
   # set font sizes etc
   fig_font_size <- 2.5
-  clade_lab_offset <- 9
+  clade_lab_offset <- 10
   branch_lab_vjust <- -0.6
   root_edge_length <- 1
 
@@ -1791,13 +1791,6 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       min.segment.length = 0,
       position = position_nudge_repel(x = -4, y = 1),
       size = fig_font_size
-    ) +
-    # Clade labels (above branch)
-    geom_nodelab(
-      aes(label = taxon_branch),
-      size = fig_font_size,
-      vjust = branch_lab_vjust,
-      nudge_x = -8
     ) +
     # Node labels (at node, showing doubtful relationships)
     geom_nodelab(
@@ -1839,17 +1832,24 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       size = fig_font_size,
       offset = clade_lab_offset
     ) +
-    # Branch labels (monotypic groups, above branch)
-    geom_tiplab(
-      aes(label = equisetaceae_lab),
+    # Branch labels (clades)
+    geom_nodelab(
+      aes(label = taxon_branch),
       size = fig_font_size,
-      offset = -11.5,
-      vjust = branch_lab_vjust
+      vjust = branch_lab_vjust,
+      nudge_x = -9
     ) +
+    # Branch labels (monotypic groups)
     geom_tiplab(
       aes(label = marattiaceae_lab),
       size = fig_font_size,
-      offset = -10,
+      offset = -12,
+      vjust = branch_lab_vjust
+    ) +
+    geom_tiplab(
+      aes(label = equisetaceae_lab),
+      size = fig_font_size,
+      offset = -14,
       vjust = branch_lab_vjust
     ) +
     # Manual root edge (horizontal line at root)
@@ -1857,7 +1857,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       aes(x = -root_edge_length, xend = 0, y = root_y, yend = root_y),
       linewidth = 0.5
     ) +
-    xlim(-4, 33) +
+    xlim(-4, 38) +
     theme(
       legend.position = "none"
     )
