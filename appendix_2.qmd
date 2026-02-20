@@ -1,17 +1,29 @@
 ---
-title: "Appendix 2"
 format:
   pdf:
     toc: false
     number-sections: false
     colorlinks: false
+    suppress-bibliography: true
+crossref:
+  fig-prefix: "Fig. S"
+  tbl-prefix: "Table S"
+  fig-title: "Fig. S"
+  tbl-title: "Table S"
+bibliography: references.yaml
 execute: 
   echo: false
   message: false
   warning: false
 ---
 
-Figure S1: Summary cladogram showing relationships between families of tracheophytes recognized by PPG II, colored by number of taxonomic changes relative to PPG I at the level of genus and higher. Topology for Polypodiopsida modified from Fern Tree of Life (FTOL) v1.7.0 (Nitta & al., 2022). Numbers next to each family indicate number of taxonomic changes, as number of splits (recognition of a new name) / number of sinks (subsumption of one name into another). Color of diamonds indicates number of splits; color of circles indicates number of sinks. Nitta & al. (2022) recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies (e.g., Schuettpelz & Pryer, 2007; Rothfels & al., 2015; Testo & Sundue, 2016; Du & al., 2022), so the consensus topology is shown instead.
+Fig. S1: Summary cladogram showing relationships between families of tracheophytes recognized by PPG II, colored by number of taxonomic changes relative to PPG I at the level of genus and higher.
+Topology for Polypodiopsida modified from Fern Tree of Life (FTOL) v1.7.0 [@nitta2022open].
+Numbers next to each family indicate number of taxonomic changes, as number of splits (recognition of a new name) / number of sinks (subsumption of one name into another).
+Newly recognized nothogenera counted as splits.
+Color of diamonds indicates number of splits; color of circles indicates number of sinks.
+@nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
+Equisetales is also shown in the position that has been observed in most other recent studies, although it was recovered as sister to Ophioglossales in @nitta2022open; see Table 3.
 
 {{< pagebreak >}}
 

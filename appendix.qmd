@@ -1,11 +1,18 @@
 ---
-title: "Appendix 1"
 format:
   pdf:
     toc: false
     number-sections: false
     colorlinks: false
-execute: 
+    include-in-header:
+      text: |
+        \renewcommand{\thetable}{S\arabic{table}}
+        \renewcommand{\thefigure}{S\arabic{figure}}
+
+crossref:
+  tbl-title: "Table"
+  fig-title: "Fig."
+execute:
   echo: false
   message: false
   warning: false
