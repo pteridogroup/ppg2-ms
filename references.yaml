@@ -1,169 +1,21 @@
 ---
 references:
-- abstract: |-
-    Abstract
-                
-                  Background and Aims
-                  The sensitive fern, Onoclea sensibilis, is a widespread species in eastern North America and has an atypical timing of spore dispersal among temperate ferns. During early summer, this dimorphic species produces heavily modified spore-bearing fronds with leaflets tightly enveloping their sporangia and spores. These fronds senesce and persist above ground as dead mature structures until the following early spring when the leaflets finally open and spores are dispersed. While this timing of spore dispersal has been observed for over 120 years, the structural mechanisms underpinning this phenology have remained elusive.
-                
-                
-                  Methods
-                  Based on field observations, growth chamber manipulations and scanning electron microscopy, the mechanisms underlying this distinctive timing of spore dispersal in the sensitive fern were investigated.
-                
-                
-                  Key Results
-                  I show that fertile leaflets of the sensitive fern move in direct response to changes in humidity, exhibiting structural and functional parallels with multicellular hygromorphic structures in seed plants, such as pine cones. These parallels include differences in cellulose microfibril orientation in cells on the abaxial and adaxial sides of the leaflet. The dynamics of this hygroscopic movement concomitant with regular abscission zones along the pinnules and coordinated senescence lead to the specific timing of early spring spore dispersal in the sensitive fern.
-                
-                
-                  Conclusions
-                  While hygroscopic movement is common in seed-free plants, it mostly occurs in small structures that are either one or a few cells in size, such as the leptosporangium. Given its multicellular structure and integration across many cells and tissues, the movement and construction of the sensitive fern pinnules are more similar to structures in seed plants. The evolution of this complex trait in the sensitive fern efficiently regulates the timing of spore release, leading to early spring dispersal. This phenology likely gives gametophytes and subsequent sporophytes an advantage with early germination and growth.
-  accessed:
-    - year: 2026
-      month: 2
-      day: 16
+- id: _taxonomic+significance+of+morphological+structure+in+azolla
   author:
-    - family: Suissa
-      given: Jacob S
-  container-title: Annals of Botany
-  DOI: 10.1093/aob/mcab137
-  ISSN: 0305-7364, 1095-8290
-  issue: '5'
+    - family: Kodit
+      given: Nur Izzati binti Abdul
+    - family: Razemin
+      given: Qatrunnada Qurratu’Aini binti Mohd
+    - family: Noh
+      given: Abdul Latif
+      dropping-particle: bin
+  citation-key: _taxonomic+significance+of+morphological+structure+in+azolla
+  container-title: Revelation and Science
   issued:
-    - year: 2022
-      month: 4
-      day: 13
-  language: en
-  license: >-
-    https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model
-  page: 519–528
-  source: DOI.org (Crossref)
-  title: >-
-    Fern fronds that move like pine cones: humidity-driven motion of fertile
-    leaflets governs the timing of spore dispersal in a widespread fern species
-  title-short: Fern fronds that move like pine cones
+    - year: 2023
+  title: Taxonomic significance of morphological structure in *Azolla*
   type: article-journal
-  URL: https://academic.oup.com/aob/article/129/5/519/6432223
-  volume: '129'
-
-- abstract: >-
-    Resource allocation theory posits that organisms distribute limited
-    resources across functions to maximize their overall fitness. In plants, the
-    allocation of resources among maintenance, reproduction, and growth
-    influences short-term economics and long-term evolutionary processes,
-    especially during resource scarcity. The evolution of specialized structures
-    to divide labor between reproduction and growth can create a feedback loop
-    where selection can act on individual organs, further increasing
-    specializaton and resource allocation. Ferns exhibit diverse reproductive
-    strategies, including dimorphism, where leaves can either be sterile (only
-    for photosynthesis) or fertile (for spore dispersal). This dimorphism is
-    similar to processes in seed plants (e.g., the production of fertile flowers
-    and sterile leaves), and presents an opportunity to investigate divergent
-    resource allocation between reproductive and vegetative functions in
-    specialized organs. Here, we conducted anatomical and hydraulic analyses on
-    Onoclea sensibilis L., a widespread dimorphic fern species, to reveal
-    significant structural and hydraulic divergences between fertile and sterile
-    leaves. Fertile fronds invest less in hydraulic architecture, with nearly
-    1.5 times fewer water-conducting cells and a nearly 0.5 times less
-    drought-resistant xylem compared to sterile fronds. This comes at the
-    increased relative investment in structural support, which may help
-    facilitate spore dispersal. These findings suggest that specialization in
-    ferns—in the form of reproductive dimorphism—can enable independent
-    selection pressures on each leaf type, potentially optimizing spore
-    dispersal in fertile fronds and photosynthetic efficiency in sterile fronds.
-    Overall, our study sheds light on the evolutionary implications of
-    functional specialization and highlights the importance of reproductive
-    strategies in shaping plant fitness and evolution.
-  accessed:
-    - year: 2026
-      month: 2
-      day: 16
-  author:
-    - family: Suissa
-      given: Jacob S.
-    - family: Barkoff
-      given: Noah
-    - family: Watkins
-      given: James E.
-  container-title: Ecology and Evolution
-  container-title-short: Ecology and Evolution
-  DOI: 10.1002/ece3.11552
-  ISSN: 2045-7758, 2045-7758
-  issue: '7'
-  issued:
-    - year: 2024
-      month: 7
-  language: en
-  page: e11552
-  source: DOI.org (Crossref)
-  title: >-
-    Extreme functional specialization of fertile leaves in a widespread fern
-    species and its implications on the evolution of reproductive dimorphism
-  type: article-journal
-  URL: https://onlinelibrary.wiley.com/doi/10.1002/ece3.11552
-  volume: '14'
-
-- abstract: >-
-    Phylogenetic conﬂicts limit our understanding of the evolution of
-    terrestrial life under multiple whole genome duplication events, and the
-    phylogeny of early terrestrial plants remains full of controversy. Although
-    much incongruence has been solved with so-called robust topology based on
-    single or lower copy genes, the evolutionary mechanisms behind phylogenetic
-    conﬂicts such as polyploidization remain poorly understood. Here, through
-    decreasing the effects of polyploidization and increasing the samples of
-    species, which represent all four orders and eight families that comprise
-    early leptosporangiate ferns, we have reconstructed a robust phylogenetic
-    tree and network with 1125 1-to-1 orthologs based on both coalescent and
-    concatenation methods. Our data consistently suggest that Matoniales, as a
-    monophyletic lineage including Matoniaceae and Dipteridaceae, should be
-    redeﬁned as an ordinal rank. Furthermore, we have identiﬁed and located at
-    least 11 whole-genome duplication events within the evolutionary history of
-    four leptosporangiates lineages, and associated polyploidization with higher
-    speciation rates and mass extinction events. We hypothesize that
-    paleopolyploidization may have enabled leptosporangiate ferns to survive
-    during mass extinction events at the end Permian period and then ﬂourish
-    throughout the Mesozoic era, which is supported by extensive fossil records.
-    Our results highlight how ancient polyploidy can result in rapid species
-    radiation, thus causing phylogenetic conﬂicts yet allowing plants to survive
-    and thrive during mass extinction events.
-  accessed:
-    - year: 2026
-      month: 2
-      day: 16
-  author:
-    - family: Shu
-      given: Jiang-Ping
-    - family: Wang
-      given: Hao
-    - family: Shen
-      given: Hui
-    - family: Wang
-      given: Rui-Jiang
-    - family: Fu
-      given: Qiang
-    - family: Wang
-      given: Yong-Dong
-    - family: Jiao
-      given: Yuan-Nian
-    - family: Yan
-      given: Yue-Hong
-  container-title: Plants
-  container-title-short: Plants
-  DOI: 10.3390/plants11121529
-  ISSN: 2223-7747
-  issue: '12'
-  issued:
-    - year: 2022
-      month: 6
-      day: 7
-  language: en
-  page: '1529'
-  source: DOI.org (Crossref)
-  title: >-
-    Phylogenomic analysis reconstructed the order Matoniales from
-    paleopolyploidy veil
-  type: article-journal
-  URL: https://www.mdpi.com/2223-7747/11/12/1529
-  volume: '11'
+  volume: '1'
 
 - id: 2015review
   abstract: >-
@@ -287,6 +139,24 @@ references:
   publisher-place: Dehradun
   title: World's worst weed (salvinia) - its impact and utilization
   type: book
+
+- id: abraham1962studies
+  author:
+    - family: Abraham
+      given: A
+    - family: Mathew
+      given: P M
+  citation-key: abraham1962studies
+  container-title: The Journal of the Indian Botanical Society
+  issue: '3'
+  issued:
+    - year: 1962
+  page: 339--421
+  title: >-
+    Studies on the cytology and phylogeny of the pteridophytes VII. Observations
+    on one hundred species of South Indian ferns
+  type: article-journal
+  volume: '41'
 
 - id: adjie2007independent
   abstract: >-
@@ -2088,7 +1958,7 @@ references:
   issued:
     - year: 1970
   page: 192–204
-  title: Anatomical observations on the genus Cystopteris Bernhardi
+  title: Anatomical observations on the genus *Cystopteris* Bernhardi
   type: article-journal
   volume: 36B
 
@@ -2130,20 +2000,6 @@ references:
     - year: 1971
   page: 56–62
   title: Cytological observations on some Indian species of Cystopteris Bernh
-  type: article-journal
-  volume: '14'
-
-- id: bir1971cytological
-  author:
-    - family: Bir
-      given: S S
-  citation-key: bir1971cytological
-  container-title: the nucleus
-  issue: '1'
-  issued:
-    - year: 1971
-  page: 56--62
-  title: Cytological observations on some Indian species of *Cystopteris* Bernh.
   type: article-journal
   volume: '14'
 
@@ -2204,12 +2060,13 @@ references:
     - family: Trikha
       given: Chander K
   citation-key: bir1976morphological
-  container-title: New Botanist
-  issue: 1–4
+  issue: 1&2
   issued:
     - year: 1976
-  page: 17–23
-  title: Morphological observations on genus Cystopteris Bernhardi.
+  language: en
+  page: 17--23
+  source: Zotero
+  title: Morphological observations on genus *Cystopteris *Bernhardi
   type: article-journal
   volume: '3'
 
@@ -2233,19 +2090,6 @@ references:
     (L.) Bernh. from the Western Hamalayas
   type: article-journal
   volume: 2,3
-
-- id: birmorphological
-  author:
-    - family: Bir
-      given: S S
-    - family: Ikha
-      given: CHANDElI K TR
-  citation-key: birmorphological
-  language: en
-  page: '8'
-  source: Zotero
-  title: MORPHOLOGICAL OBSERVATIONS ON GENUS CrSTOPTERIS BERNHARDI
-  type: article-journal
 
 - id: bishop1974revision
   author:
@@ -5502,6 +5346,7 @@ references:
       given: Mark W
   citation-key: christenhusz2014trends
   container-title: Annals of Botany
+  container-title-short: Ann. Bot.
   DOI: 10.1093/aob/mct299
   issue: '4'
   issued:
@@ -6213,6 +6058,57 @@ references:
     submerged leaves
   type: article-journal
   volume: '56'
+
+- id: cuneo2013regnellidium
+  abstract: >-
+    Premise of research. Fossils representing aquatic ferns with clear afﬁnities
+    to extant Regnellidium (Salviniales, Marsileaceae) are reported for the ﬁrst
+    time from Upper Cretaceous sediments of the La Colonia Formation, Chubut
+    Province, Argentina. Methodology. Preserved organs including rhizomes
+    bearing roots, compound leaves, and associated putative sporocarps were
+    collected from the Cerro Bosta and Quebrada del Helecho localities of the La
+    Colonia Formation. Spores were macerated for the macrofossil-bearing
+    sediments of the Cerro Bosta locality and examined with SEM. Pivotal
+    results. The macrofossils are morphologically similar to extant Regnellidium
+    diphyllum. The fossil plants are rhizomatous, with the rhizomes bearing
+    roots and leaves with two leaﬂets. The leaﬂets have dichotomizing venation
+    and a marginal vein. Associated megaspores attributed to Molaspora lobata
+    and microspores of the Crybeloporites type are also comparable to those of
+    extant Regnellidium. Conclusions. These fossils represent the ﬁrst report of
+    Regnellidium-like macrofossils and the widespread Cretaceous megaspore taxon
+    Molaspora from South America. Their presence in the La Colonia Formation
+    suggests that Regnellidium may have been present on the continent
+    continuously for more than 65 million years, although Cenozoic reports are
+    necessary to conﬁrm this hypothesis.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Cúneo
+      given: N. Rubén
+    - family: Hermsen
+      given: Elizabeth J.
+    - family: Gandolfo
+      given: Maria A.
+  citation-key: cuneo2013regnellidium
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/668811
+  ISSN: 1058-5893, 1537-5315
+  issue: '3'
+  issued:
+    - year: 2013
+      month: 3
+  language: en
+  page: 340–349
+  source: DOI.org (Crossref)
+  title: >-
+    *Regnellidium* (Salviniales, Marsileaceae) macrofossils and associated
+    spores from the Late Cretaceous of South America
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/10.1086/668811
+  volume: '174'
 
 - id: danton2015pleopeltis
   author:
@@ -9277,6 +9173,21 @@ references:
     https://www.ingentaconnect.com/contentone/aspt/sb/2021/00000046/00000004/art00001
   volume: '46'
 
+- id: fawcett2022phylogenomically
+  author:
+    - family: Fawcett
+      given: SUSAN
+  citation-key: fawcett2022phylogenomically
+  container-title: Ind. Fern J
+  container-title-short: Ind. Fern J
+  issue: '2'
+  issued:
+    - year: 2022
+  page: 193–202
+  title: A phylogenomically informed classification of Indian Thelypteridaceae
+  type: article-journal
+  volume: '39'
+
 - id: fawcett2022two
   abstract: Brittonia, doi:10.1007/s12228-022-09701-3
   author:
@@ -10277,6 +10188,98 @@ references:
   type: article-journal
   volume: '32'
 
+- id: garnett2026measuring
+  abstract: >-
+    Taxonomic lists are important tools for efficient communication about
+    biodiversity. The processes by which they are created and maintained need to
+    be robust, scientifically sound, and transparent. Articulating and scoring a
+    set of governance quality indicators provides a way to assess the relative
+    strengths of list management, gives list users a means to assess the quality
+    of this process, augments the information available to list aggregators, and
+    allows patterns to be measured over time and among forms of life. Based on
+    published principles, we created 12 governance quality indicators which we
+    tested on 16 lists spanning a range of taxonomic groups. Independence of
+    taxonomy from nomenclature scored most strongly, but scores for local and
+    regional involvement were lower. The governance quality indicators may
+    eventually provide a rubric for assessing best practice species list
+    governance but now need a period of further testing, review, and refinement
+    before they are institutionalized.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 23
+  author:
+    - family: Garnett
+      given: Stephen T
+    - family: Bánki
+      given: Olaf
+    - family: Barik
+      given: Saroj Kanta
+    - family: Berryman
+      given: Alex J
+    - family: Bouchard
+      given: Patrice
+    - family: Buckeridge
+      given: John
+    - family: Christidis
+      given: Les
+    - family: Cigliano
+      given: María Marta
+    - family: Conix
+      given: Stijn
+    - family: Crawford-Weaver
+      given: Haylee
+    - family: Van Dijk
+      given: Peter Paul
+    - family: Evenhuis
+      given: Neil L
+    - family: Hilton-Taylor
+      given: Craig
+    - family: Hobern
+      given: Donald
+    - family: Johnston
+      given: Claire
+    - family: Klopper
+      given: Ronell R
+    - family: Kroh
+      given: Andreas
+    - family: Le Roux
+      given: Marianne
+    - family: Pape
+      given: Thomas
+    - family: Pyle
+      given: Richard L
+    - family: Raz
+      given: Lauren
+    - family: Thomas
+      given: Philip
+    - family: Thomson
+      given: Scott
+    - family: Vandepitte
+      given: Leen
+    - family: Wambiji
+      given: Nina
+    - family: Zachos
+      given: Frank E
+    - family: Lien
+      given: Aaron M
+  citation-key: garnett2026measuring
+  container-title: BioScience
+  DOI: 10.1093/biosci/biaf071
+  ISSN: 0006-3568, 1525-3244
+  issued:
+    - year: 2026
+      month: 1
+      day: 28
+  language: en
+  license: https://creativecommons.org/licenses/by-nc/4.0/
+  page: biaf071
+  source: DOI.org (Crossref)
+  title: Measuring the quality of species list governance
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/bioscience/advance-article/doi/10.1093/biosci/biaf071/8443372
+
 - id: gastony1989species
   author:
     - family: Gastony
@@ -10705,7 +10708,7 @@ references:
       given: Alan
   citation-key: govaertsWorldChecklistVascular2021
   container-title: Scientific Data
-  container-title-short: Scientific Data
+  container-title-short: Sci. Data
   DOI: 10/gmkc34
   ISSN: 2052-4463
   issue: '1'
@@ -10820,6 +10823,7 @@ references:
       given: J P
   citation-key: grewe2013complete
   container-title: BMC Evolutionary Biology
+  container-title-short: BMC Evol. Biol.
   DOI: 10.1186/1471-2148-13-8
   ISSN: 1471-2148
   issue: '8'
@@ -12539,6 +12543,38 @@ references:
   URL: http://link.springer.com/10.1007/s00606-013-0886-7
   volume: '300'
 
+- id: hermsen2014new
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Hermsen
+      given: Elizabeth J.
+    - family: Gandolfo
+      given: María A.
+    - family: Cúneo
+      given: N. Rubén
+  citation-key: hermsen2014new
+  container-title: Plant Systematics and Evolution
+  container-title-short: Plant Syst Evol
+  DOI: 10.1007/s00606-013-0886-7
+  ISSN: 0378-2697, 1615-6110
+  issue: '2'
+  issued:
+    - year: 2014
+      month: 2
+  language: en
+  license: http://www.springer.com/tdm
+  page: 369–386
+  source: DOI.org (Crossref)
+  title: >-
+    New marsileaceous fossils from the Late Cretaceous of South America and a
+    reevaluation of *Marsileaceaephyllum*
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s00606-013-0886-7
+  volume: '300'
+
 - id: hermsen2019azolla
   author:
     - family: Hermsen
@@ -12563,6 +12599,67 @@ references:
   type: article-journal
   URL: https://www.journals.uchicago.edu/doi/10.1086/704377
   volume: '180'
+
+- id: hermsen2019revisions
+  abstract: >-
+    The fossil record of Marsilea is challenging to assess, due in part to
+    unreliable reports and conflicting opinions regarding the proper application
+    of the names Marsilea and Marsileaceaephyllum to fossil leaves and leaflets
+    similar to those of modern Marsilea. Specimens examined for this study
+    include material assigned to Marsileaceaephyllum johnhallii, purportedly the
+    oldest fossil record of a Marsilea-like sporophyte from the Lower Cretaceous
+    of the Dakota Formation, Kansas, U.S.A.; leaves and leaf whorls of the
+    extinct aquatic angiosperm Fortuna from several Late Cretaceous and
+    Paleocene localities in western North America; and leaves and leaflets
+    resembling Marsilea from the Eocene Green River Formation, Colorado and
+    Utah, U.S.A. Literature on the fossil record of Marsilea was also reviewed.
+    As a result, several taxonomic changes are proposed. Marsileace aephyllum
+    johnhallii is reinterpreted as an aquatic angiosperm that shares some
+    architectural features with the genus Fortuna, although Marsileaceaephyllum
+    is here maintained as a distinct genus with an emended diagnosis; under this
+    reinterpretation, the name Marsileaceaephyllum can no longer be applied to
+    sporophyte organs with affinities to Marsileaceae. Three valid fossil
+    Marsilea species are recognized on the basis of sporophyte material that
+    includes characteristic quadrifoliolate leaves and reticulate-veined
+    leaflets: Marsilea campanica (J. Kvaček & Herman) Hermsen, comb. nov., from
+    the Upper Cretaceous Grünbach Formation, Austria; Marsilea mascogos
+    Estrada-Ruiz et al., from the Upper Cretaceous Olmos Formation, Mexico; and
+    Marsilea sprungero rum Hermsen, sp. nov., from the Eocene Green River
+    Formation, U.S.A. The species are distinguished from one another based on
+    leaflet dimensions. Leaves from the Eocene Wasatch Formation, U.S.A., are
+    transferred from Marsileaceaephyllum back to Marsilea, although not assigned
+    to a fossil species. Finally, an occurrence of Marsilea from the Oligocene
+    of Ethiopia is reassigned to Salvinia. A critical evaluation of the fossil
+    record of Marsilea thus indicates that (1) the oldest fossil marsileaceous
+    sporophytes bearing Marsilea-like leaves are from the Campanian; (2) only
+    four credible records of sporophyte material attributable to Marsilea are
+    known; and (3) the oldest dispersed Marsilea spores are known from the
+    Oligocene.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Hermsen
+      given: Elizabeth J.
+  citation-key: hermsen2019revisions
+  container-title: Acta Palaeobotanica
+  DOI: 10.2478/acpa-2019-0005
+  ISSN: 2082-0259
+  issue: '1'
+  issued:
+    - year: 2019
+      month: 6
+      day: 1
+  language: en
+  license: http://creativecommons.org/licenses/by-nc-nd/3.0
+  page: 27–50
+  source: DOI.org (Crossref)
+  title: Revisions to the fossil sporophyte record of *Marsilea*
+  type: article-journal
+  URL: >-
+    https://acpa.botany.pl/Revisions-to-the-fossil-sporophyte-record-of-Marsilea-,118470,0,2.html
+  volume: '59'
 
 - id: hernandez2013pteridophytes
   author:
@@ -14870,6 +14967,20 @@ references:
   type: chapter
   URL: http://link.springer.com/10.1007/978-3-319-75103-0_4
 
+- id: johnson1985systematics
+  author:
+    - family: Johnson
+      given: David Mark
+  citation-key: johnson1985systematics
+  genre: PhD
+  issued:
+    - year: 1985
+  language: en
+  publisher: University of Michigan
+  source: Zotero
+  title: Systematics of the New World species of *Marsilea* (Marsileaceae)
+  type: thesis
+
 - id: johnson1986trophopods
   author:
     - family: Johnson
@@ -14951,6 +15062,7 @@ references:
   title: >-
     Unique expression of a sporophytic character on the gametophytes of
     notholaenid ferns (Pteridaceae)
+  title-short: Am. J. Bot.
   type: article-journal
   volume: '99'
 
@@ -15070,6 +15182,7 @@ references:
       given: C.J.
   citation-key: kao2019lowcopy
   container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2019.05.016
   ISSN: '10959513'
   issued:
@@ -16396,6 +16509,7 @@ references:
       given: R E B
   citation-key: kirkpatrick2007investigating
   container-title: Systematic Botany
+  container-title-short: Syst. Bot.
   DOI: 10.1600/036364407782250616
   issue: '3'
   issued:
@@ -17439,6 +17553,35 @@ references:
   URL: http://doi.wiley.com/10.1002/ajb2.1152
   volume: '105'
 
+- id: kuo2019roadmap
+  abstract: >-
+    The large genomes of ferns have long deterred genome sequencing efforts. To
+    date, only two heterosporous ferns with remarkably small genomes, Azolla
+    filiculoides and Salvinia cucullata, have been sequenced. However, as
+    sequencing technologies continue to improve and become more affordable,
+    generating high-quality, ‘‘normal-sized’’ fern genomes is within reach. Here
+    we provide new genome size data and discuss candidates for whole genome
+    sequencing. In particular, we identified 18 species representing major
+    branches in the fern phylogeny that are worth pursuing. We also review the
+    current sequencing technologies and offer our opinions on the best
+    sequencing approach for these fern species.
+  author:
+    - family: Kuo
+      given: Li-Yaung
+    - family: Li
+      given: Fay-Wei
+  citation-key: kuo2019roadmap
+  container-title: American Fern Journal
+  issue: '3'
+  issued:
+    - year: 2019
+  language: en
+  page: 212--223
+  source: Zotero
+  title: A roadmap for fern genome sequencing
+  type: article-journal
+  volume: '109'
+
 - id: kuo2019updating
   abstract: >-
     Ferns and lycophytes of Taiwan display an extraordinarily high diversity.
@@ -17498,29 +17641,6 @@ references:
     https://www.researchgate.net/profile/Li-Yaung_Kuo/publication/335393372_Updating_Taiwanese_pteridophyte_checklist_a_new_phylogenetic_classification/links/5d62fe22458515d610252fba/Updating-Taiwanese-pteridophyte-checklist-a-new-phylogenetic-classification.
   volume: '64'
 
-- id: kuoroadmap
-  abstract: >-
-    The large genomes of ferns have long deterred genome sequencing efforts. To
-    date, only two heterosporous ferns with remarkably small genomes, Azolla
-    filiculoides and Salvinia cucullata, have been sequenced. However, as
-    sequencing technologies continue to improve and become more affordable,
-    generating high-quality, ‘‘normal-sized’’ fern genomes is within reach. Here
-    we provide new genome size data and discuss candidates for whole genome
-    sequencing. In particular, we identified 18 species representing major
-    branches in the fern phylogeny that are worth pursuing. We also review the
-    current sequencing technologies and offer our opinions on the best
-    sequencing approach for these fern species.
-  author:
-    - family: Kuo
-      given: Li-Yaung
-    - family: Li
-      given: Fay-Wei
-  citation-key: kuoroadmap
-  language: en
-  source: Zotero
-  title: A Roadmap for Fern Genome Sequencing
-  type: article-journal
-
 - id: kurata1963notes
   author:
     - family: Kurata
@@ -17570,6 +17690,22 @@ references:
     - year: 1972
   page: 51–54
   title: Interspecific origin of Salvinia molesta Mitchell evidence from karyotype.
+  type: article-journal
+  volume: '2'
+
+- id: kuriachan1979interspecific
+  author:
+    - family: Kuriachan
+      given: P. I.
+  citation-key: kuriachan1979interspecific
+  container-title: Indian Journal of Botany
+  issued:
+    - year: 1979
+  page: 51--54
+  part-number: '1'
+  title: >-
+    Interspecific origin of *Salvinia molesta* Mitchell - Evidence from
+    karyotype
   type: article-journal
   volume: '2'
 
@@ -17895,6 +18031,48 @@ references:
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0308814621006439
   volume: '356'
 
+- id: large1989assessment
+  abstract: >-
+    Threenon-European speciesofPilularia (P. americana A. Braun, P.
+    novae-hollandiae A. Braun, P. novae-zelandiae Kirk), are compared. All
+    features previously used in taxonomic treatments are assessed. The three
+    taxa are morphologically similar and because the original descriptions of
+    some taxa were incorrect, key characters previously used to distinguish them
+    are unsuitable. The extent of this similarity is discussed, and suggestions
+    for further study are made.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Large
+      given: M. E
+    - family: Braggins
+      given: J. E.
+  citation-key: large1989assessment
+  container-title: New Zealand Journal of Botany
+  container-title-short: New Zealand Journal of Botany
+  DOI: 10.1080/0028825X.1989.10414129
+  ISSN: 0028-825X, 1175-8643
+  issue: '3'
+  issued:
+    - year: 1989
+      month: 7
+  language: en
+  license: http://onlinelibrary.wiley.com/termsAndConditions#vor
+  page: 481–486
+  source: DOI.org (Crossref)
+  title: >-
+    An assessment of characters of taxonomic significance in the genus
+    *Pilularia* (Marsiliaceae): with particular reference to *P americana, P
+    novae‐hollandiae* , and *P novae‐zelandiae* .
+  title-short: >-
+    An assessment of characters of taxonomic significance in the genus
+    *Pilularia* (Marsiliaceae)
+  type: article-journal
+  URL: https://rsnz.onlinelibrary.wiley.com/doi/10.1080/0028825X.1989.10414129
+  volume: '27'
+
 - id: larsen1952udbredelsen
   abstract: >-
     Making an investigation of Cystopteris fragilis coll. in Greenland, I found
@@ -18180,6 +18358,7 @@ references:
       given: Maarten J M
   citation-key: lehtonen2010phylogenetics
   container-title: Botanical Journal of the Linnean Society
+  container-title-short: Bot. J. Linn. Soc.
   issued:
     - year: 2010
   page: 305–359
@@ -18343,6 +18522,7 @@ references:
       given: Glenda G
   citation-key: lehtonen2019dynamism
   container-title: Botanical Journal of the Linnean Society
+  container-title-short: Bot. J. Linn. Soc.
   DOI: 10.1093/botlinnean/boz020
   ISSN: 0024-4074
   issue: '3'
@@ -18678,7 +18858,7 @@ references:
       given: Anne
   citation-key: leroux2022expert
   container-title: Scientific Data
-  container-title-short: Sci Data
+  container-title-short: Sci. Data
   DOI: 10.1038/s41597-022-01812-6
   ISSN: 2052-4463
   issue: '1'
@@ -20891,6 +21071,66 @@ references:
   type: article-journal
   volume: '161'
 
+- id: lupia2000marsileaceaea
+  abstract: >-
+    A new species provisionally assigned to the extant genus Regnellidium Lindm.
+    (Regnellidium upatoiensis sp. nov.) is established for isolated sporocarps
+    assignable to the heterosporous water fern family Marsileaceae. Three
+    sporocarps and hundreds of dispersed megaspores were recovered from
+    unconsolidated clays and silts of the Eutaw Formation (Santonian, Late
+    Cretaceous) along Upatoi Creek, Georgia, U.S.A. The sporocarps are
+    ellipsoidal and ﬂattened, contain both megasporangia and microsporangia, and
+    possess a two-layered wall—an outer sclerenchymatous layer and an inner
+    parenchymatous layer. In situ megaspores are spheroidal, with two distinct
+    wall layers—an exine, differentiated into two layers, and an outer
+    ornamented perine also differentiated into two layers. The megaspores also
+    possess an acrolamella consisting of six (ﬁve to seven) triangular lobes
+    that are twisted. In situ microspores are trilete and spheroidal, with a
+    strongly rugulate perine, and show modiﬁcation of the perine over the
+    laesura to form an acrolamella. Comparison of the fossil sporocarps with
+    those of four extant species of Marsileaceae reveal marked similarity with
+    Regnellidium diphyllum Lindm., particularly in megaspore and microspore
+    morphology. If found dispersed, the in situ megaspores would be assigned to
+    Molaspora lobata (Dijkstra) Hall and the microspores to Crybelosporites
+    Dettmann based on their size, shape, and ornamentation. Regnellidium
+    upatoiensis sp. nov. extends the stratigraphic range of the genus back to
+    the Santonian, nearly contemporaneous with the ﬁrst evidence of Marsilea,
+    and implies that the diversiﬁcation of the Marsileaceae into its extant
+    lineages occurred in the mid-Cretaceous.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Lupia
+      given: R.
+    - family: Schneider
+      given: H.
+    - family: Moeser
+      given: G. M.
+    - family: Pryer
+      given: K. M.
+    - family: Crane
+      given: P. R.
+  citation-key: lupia2000marsileaceaea
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/317567
+  ISSN: 1058-5893, 1537-5315
+  issue: '6'
+  issued:
+    - year: 2000
+      month: 11
+  language: en
+  page: 975–988
+  source: DOI.org (Crossref)
+  title: >-
+    Marsileaceae sporocarps and spores from the late Cretaceous of Georgia,
+    U.S.A.
+  type: article-journal
+  URL: http://www.journals.uchicago.edu/doi/10.1086/317567
+  volume: '161'
+
 - id: lyons2017insights
   abstract: >-
     Molecular Phylogenetics and Evolution, Accepted manuscript.
@@ -21140,6 +21380,54 @@ references:
   type: article-journal
   URL: http://www.tandfonline.com/doi/abs/10.1080/00380768.2002.10409224
   volume: '48'
+
+- id: mahabale1956trends
+  abstract: >-
+    The paper gives an account of the trends of specialization in the structure
+    of the sporocarp and spores in three living members of the Marsileaceae,
+    J',la/'silea, Pi/ularia and Regnellidium, and in the only definitely known
+    fossil member of this family, belonging to the genus Regnellidiutll named as
+    Rodeites dakshini by Sahni ( 1943 ), from one of the Tertiary horizons of
+    India, the Deccan Intertrappean Series of Mohgaon Kalan ( Dist. Chhindwara).
+    Apart from morphological differences in shape, size, position of spines and
+    their position on a sporocarp, it is the sporocarp wall which shows a good
+    deal of variation and specialization in the three genera. The tabular layers
+    of elongated cells forming a column below epidermis, sporoderm, and the mode
+    of germination of mega- and microspores differ in different species. The
+    spore wall is 4-layered in all genera, but the spore size and episporial
+    ornamentation are different in them. In the spores of all these plants
+    prismatic layer is conspicuous in both kinds of spores, but more so in
+    megaspores. The sori are bilaterally arranged in the living members and also
+    in the fossil member, Rodeites. The sporocarp wall, however, seems to have
+    been less differentiated in the fossil member, Rodeites dakshini Sahni than
+    in the living species Regnellidium diphyllum Lind., as the tabular cells
+    a.re not apparent in the former. The raphe, on the other hand, in this
+    member is more prominent than that in the living species.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Mahabale
+      given: T.S.
+  citation-key: mahabale1956trends
+  container-title: Journal of Palaeosciences
+  container-title-short: JPS
+  DOI: 10.54991/jop.1956.488
+  ISSN: 2583-4266
+  issued:
+    - year: 1956
+      month: 12
+      day: 31
+  language: en
+  page: 66–72
+  source: DOI.org (Crossref)
+  title: >-
+    Trends of specialization in the sporocarp and spores in the living and
+    fossil Marsileaceae
+  type: article-journal
+  URL: https://www.jpsonline.co.in/index.php/jop/article/view/488
+  volume: '5'
 
 - id: mahley2018geometry
   abstract: >-
@@ -22495,8 +22783,8 @@ references:
   page: boaf115
   source: DOI.org (Crossref)
   title: >-
-    What is *Polypodium vulgare* ? Discerning disparate origins of an iconic
-    fern in Europe and Asia
+    What is *Polypodium vulgare*? Discerning disparate origins of an iconic fern
+    in Europe and Asia
   title-short: What is *Polypodium vulgare* ?
   type: article-journal
   URL: >-
@@ -24476,6 +24764,53 @@ references:
   type: article-journal
   volume: '138'
 
+- id: nagalingum2007marsileaceaephyllum
+  abstract: >-
+    Three new taxa from Albian, Early Cretaceous assemblages in Gondwana
+    (Australia and Antarctica) and two previously described fossils from the
+    Late Cretaceous and Eocene of North America are attributable to the
+    heterosporous semi-aquatic fern family Marsileaceae. They are assigned to
+    Marsileaceaephyllum, a morphotaxon erected here for sterile remains (whole
+    plants, and isolated leaves and leaﬂets) of Marsileaceae. The Gondwanan
+    taxa, Marsileaceaephyllum lobatum and Marsileaceaephyllum spp. B-C, have
+    either a cruciform leaﬂet arrangement or dichotomous and anastomosing
+    venation characteristic of modern Marsileaceae. Two previously established
+    taxa, Marsilea johnhallii and Marsilea sp., which represent sterile
+    Marsileaceae, are also transferred to the new genus (now Marsileaceaephyllum
+    johnhallii and Marsileaceaephyllum sp. A, respectively). Examination of all
+    fossil venation patterns reveals four new venation types not present in
+    extant taxa, suggesting that most fossil Marsileaceae (leaves) are distinct
+    from extant genera, and are likely members of extinct lineages. This is
+    further supported by the absence of modern megaspore types in the Early
+    Cretaceous.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Nagalingum
+      given: N. S.
+  citation-key: nagalingum2007marsileaceaephyllum
+  container-title: Plant Systematics and Evolution
+  container-title-short: Plant Syst. Evol.
+  DOI: 10.1007/s00606-006-0497-7
+  ISSN: 0378-2697, 1615-6110
+  issue: 1–2
+  issued:
+    - year: 2007
+      month: 3
+  language: en
+  license: http://www.springer.com/tdm
+  page: 41–55
+  source: DOI.org (Crossref)
+  title: >-
+    *Marsileaceaephyllum*, a new genus for marsileaceous macrofossils: leaf
+    remains from the Early Cretaceous (Albian) of southern Gondwana
+  title-short: Marsileaceaephyllum, a new genus for marsileaceous macrofossils
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s00606-006-0497-7
+  volume: '264'
+
 - id: nagalingum2007molecular
   author:
     - family: Nagalingum
@@ -25057,6 +25392,32 @@ references:
   title: Cytological studies in the genus Azolla
   type: article-journal
   URL: http://jlc.jst.go.jp/JST.Journalarchive/cytologia1929/54.275?from=Google
+  volume: '54'
+
+- id: nayak1989cytologicala
+  accessed:
+    - year: 2026
+      month: 2
+      day: 21
+  author:
+    - family: Nayak
+      given: S. K.
+    - family: Singh
+      given: P. K.
+  citation-key: nayak1989cytologicala
+  container-title: CYTOLOGIA
+  container-title-short: cytologia
+  DOI: 10.1508/cytologia.54.275
+  ISSN: 0011-4545, 1348-7019
+  issue: '2'
+  issued:
+    - year: 1989
+  language: en
+  page: 275–286
+  source: DOI.org (Crossref)
+  title: Cytological studies in the genus *Azolla*
+  type: article-journal
+  URL: http://www.jstage.jst.go.jp/article/cytologia1929/54/2/54_2_275/_article
   volume: '54'
 
 - id: nayar1964morphology
@@ -26243,6 +26604,95 @@ references:
   type: article-journal
   volume: '36'
 
+- id: pape2026measuring
+  abstract: >-
+    Taxonomic lists, usually of species, have many functions. However, there is
+    currently no reliable and convenient way to determine whether a list
+    contains the information that a user requires other than by reading the list
+    in detail. We therefore developed 24 indicators to characterise list
+    contents. The indicators aim to describe the extent to which the scored list
+    covers their intended class of organisms, the quality of their taxonomic
+    scholarship, and additional information they provide for each taxon. We
+    tested the indicators on 16 lists drawn from a wide range of vertebrates,
+    invertebrates, and plants. A list content score was derived from individual
+    indicator scores after they had been weighted to reflect the preferences
+    that taxonomists had expressed in a global survey. The indicators aim to
+    help list creators provide the details taxonomists and list users consider
+    important. We expect indicators to be refined after public debate..
+  accessed:
+    - year: 2026
+      month: 2
+      day: 23
+  author:
+    - family: Pape
+      given: Thomas
+    - family: Pyle
+      given: Richard L
+    - family: Bánki
+      given: Olaf
+    - family: Barik
+      given: Saroj K
+    - family: Berryman
+      given: Alex J
+    - family: Bouchard
+      given: Patrice
+    - family: Buckeridge
+      given: John
+    - family: Christidis
+      given: Les
+    - family: Cigliano
+      given: María Marta
+    - family: Conix
+      given: Stijn
+    - family: Crawford-Weaver
+      given: Haylee
+    - family: "van\_Dijk"
+      given: Peter Paul
+    - family: Döring
+      given: Markus
+    - family: Evenhuis
+      given: Neal
+    - family: Hilton-Taylor
+      given: Craig
+    - family: Hobern
+      given: Donald
+    - family: Johnston
+      given: Claire
+    - family: Klopper
+      given: Ronell R
+    - family: Kroh
+      given: Andreas
+    - family: "Le\_Roux"
+      given: Marianne
+    - family: Lien
+      given: Aaron M
+    - family: Raz
+      given: Lauren
+    - family: Thomson
+      given: Scott
+    - family: Vandepitte
+      given: Leen
+    - family: Zachos
+      given: Frank E
+    - family: Garnett
+      given: Stephen T
+  citation-key: pape2026measuring
+  container-title: BioScience
+  DOI: 10.1093/biosci/biaf191
+  ISSN: 0006-3568, 1525-3244
+  issued:
+    - year: 2026
+      month: 1
+      day: 28
+  language: en
+  license: https://creativecommons.org/licenses/by/4.0/
+  page: biaf191
+  source: DOI.org (Crossref)
+  title: Measuring the quality of species list contents
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/bioscience/advance-article/doi/10.1093/biosci/biaf191/8442886
+
 - id: paris1988biosystematic
   author:
     - family: Paris
@@ -26417,8 +26867,8 @@ references:
   page: '4'
   source: Zotero
   title: >-
-    ADIANTUM TENERUM SWARTZ [ADIANTACEAE- PTERIDOPHYTA] : A NEW DISTRIBUTION
-    RECORD FOR INDIA
+    Adiantum tenerum Swartz [Adiantaceae- Pteridophyta]: a new distribution
+    record for India
   type: article-journal
 
 - id: patil2013isoetes
@@ -27297,6 +27747,57 @@ references:
   type: article-journal
   URL: https://www.ingentaconnect.com/content/10.3767/blumea.2021.66.03.07
   volume: '66'
+
+- id: perrie2026genetic
+  abstract: >-
+    The lastreopsid ferns currently comprise four genera, with two of them,
+    Lastreopsis and Parapolystichum, poorly delimited morphologically.
+    Attribution of species to Lastreopsis or Parapolystichum has principally
+    been by phylogenetic analysis of chloroplast DNA sequences. The last of the
+    Australasian species of Lastreopsis to have its phylogenetic placement
+    investigated is Lastreopsis nephrodioides, endemic to Lord Howe Island.
+    Phylogenetic analyses of the chloroplast loci rbcL, trnL-trnF, rps4-trnS,
+    and trnG-trnR place this species in Parapolystichum and accordingly a new
+    combination is made. A detailed description of Parapolystichum nephrodioides
+    is also given and, with a more detailed understanding of morphological
+    differences between the genera, the morphology of the Lord Howe Island
+    species provides additional support for its placement in Parapolystichum:
+    its spores have auriculate projections rather than being echinulate like
+    Lastreopsis subgenus Rhopalotricha; and its fronds generally have anadromous
+    venation, which is unknown in Australasian species of Lastreopsis subgenus
+    Lastreopsis but found in several other Parapolystichum species.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Perrie
+      given: Leon R.
+    - family: Ohlsen
+      given: Daniel J.
+    - family: Hutton
+      given: Ian
+    - family: Shepherd
+      given: Lara D.
+  citation-key: perrie2026genetic
+  container-title: New Zealand Journal of Botany
+  container-title-short: New Zealand Journal of Botany
+  DOI: 10.1002/nzb2.70049
+  ISSN: 0028-825X, 1175-8643
+  issue: '1'
+  issued:
+    - year: 2026
+      month: 3
+  language: en
+  page: e70049
+  source: DOI.org (Crossref)
+  title: >-
+    Genetic and morphological evidence for the transfer of the Lord Howe Island
+    endemic fern *Lastreopsis nephrodioides* to *Parapolystichum*
+    (Dryopteridaceae)
+  type: article-journal
+  URL: https://rsnz.onlinelibrary.wiley.com/doi/10.1002/nzb2.70049
+  volume: '64'
 
 - id: perrienew
   author:
@@ -28803,6 +29304,68 @@ references:
   type: article-journal
   volume: '160'
 
+- id: pryer1999phylogenya
+  abstract: >-
+    Recent phylogenetic studies have provided compelling evidence that conﬁrms
+    the once disputed hypothesis of monophyly for heterosporous leptosporangiate
+    ferns (Marsileaceae and Salviniaceae). Hypotheses for relationships among
+    the three genera of Marsileaceae (Marsilea, Regnellidium, and Pilularia),
+    however, have continued to be in conﬂict. The phylogeny of Marsileaceae is
+    investigated here using information from morphology and rbcL sequence data.
+    In addition, relationships among all heterosporous ferns, including the
+    wholeplant fossil Hydropteris pinnata are reconsidered. Data sets of 71
+    morphological and 1239 rbcL characters for 23 leptosporangiate ferns,
+    including eight heterosporous ingroup taxa and 15 homosporous outgroup taxa,
+    were subjected to maximum parsimony analysis. Morphological analyses were
+    carried out both with and without the fossil Hydropteris, and it was
+    excluded from all analyses with rbcL data. An annotated list of the 71
+    morphological characters is provided in the appendix. For comparative
+    purposes, the Rothwell and Stockey (1994) data set was also reanalyzed here.
+    The best estimate of phylogenetic relationships for Marsileaceae in all
+    analyses is that Pilularia and Regnellidium are sister taxa and Marsilea is
+    sister to that clade. Morphological synapomorphies for various nodes are
+    discussed. Analyses that included Hydropteris resulted in two
+    most-parsimonious trees that differ only in the placement of the fossil. One
+    topology is identical to the relationship found by Rothwell and Stockey
+    (1994), placing the fossil sister to the Azolla plus Salvinia clade. The
+    alternative topology places Hydropteris as the most basal member of the
+    heterosporous fern clade. Equivocal interpretations for character evolution
+    in heterosporous ferns are discussed in the context of these two
+    most-parsimonious trees. Because of the observed degree of character
+    ambiguity, the phylogenetic placement of Hydropteris is best viewed as
+    unresolved, and recognition of the suborder Hydropteridineae, as
+    circumscribed by Rothwell and Stockey (1994), is regarded as premature. The
+    two competing hypotheses of relationships for heterosporous ferns are also
+    compared with the known temporal distribution of relevant taxa.
+    Stratigraphic ﬁt of the phylogenetic estimates is measured by using the
+    Stratigraphic Consistency Index and by comparison with minimum divergence
+    times.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Pryer
+      given: Kathleen M.
+  citation-key: pryer1999phylogenya
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/314177
+  ISSN: 1058-5893, 1537-5315
+  issue: '5'
+  issued:
+    - year: 1999
+      month: 9
+  language: en
+  page: 931–954
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogeny of marsileaceous ferns and relationships of the fossil
+    *Hydropteris pinnata* reconsidered
+  type: article-journal
+  URL: http://www.journals.uchicago.edu/doi/10.1086/314177
+  volume: '160'
+
 - id: pryer2001horsetails
   abstract: >-
     Most of the 470-million-year history of plants on land belongs to
@@ -28982,6 +29545,7 @@ references:
       given: Raymond B
   citation-key: pryer2004phylogeny
   container-title: American Journal of Botany
+  container-title-short: Am. J. Bot.
   DOI: 10.3732/ajb.91.10.1582
   ISSN: 1537-2197
   issue: '10'
@@ -29249,6 +29813,7 @@ references:
     - literal: Pteridophyte Phylogeny Group I
   citation-key: pteridophytephylogenygroupi2016communityderived
   container-title: Journal of Systematics and Evolution
+  container-title-short: J. Syst. Evol.
   DOI: 10.1111/jse.12229
   issue: '6'
   issued:
@@ -29320,6 +29885,7 @@ references:
       given: Hong
   citation-key: qi2018wellresolved
   container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2018.06.043
   issued:
     - year: 2018
@@ -29941,6 +30507,24 @@ references:
   title: Why are there so few species of ferns?
   type: article-journal
   URL: http://dx.doi.org/10.1016/j.tplants.2015.05.001
+
+- id: raostructure
+  author:
+    - family: Rao
+      given: H S
+  citation-key: raostructure
+  container-title: Proceedings/Indian Academy of Sciences
+  issue: '2'
+  issued:
+    - year: 1935
+  language: en
+  page: 175--201
+  source: Zotero
+  title: >-
+    The structure and life-history of *Azolla pinnata* R. Brown with remarks on
+    the fossil history of the Hydropterideae
+  type: article-journal
+  volume: '2'
 
 - id: rasbach1991hybrids
   abstract: >-
@@ -31282,6 +31866,7 @@ references:
       given: K.M.
   citation-key: rothfels2015evolutionary
   container-title: American Journal of Botany
+  container-title-short: Am. J. Bot.
   DOI: 10.3732/ajb.1500089
   ISSN: '00029122'
   issue: '7'
@@ -31409,24 +31994,36 @@ references:
   volume: '67'
 
 - id: rothfels2025pteridoportal
-  abstract: >-
-    Premise: Pteridophytes—vascular land plants that disperse by spores—are a
-    powerful system for studying plant evolution, particularly with respect to
-    the impact of abiotic factors on evolutionary trajectories through deep
-    time. However, our ability to use pteridophytes to investigate such
-    questions—or to capitalize on the ecological and conservation‐related
-    applications of the group—has been impaired by the relative isolation of the
-    neo‐ and paleobotanical research communities and by the absence of
-    large‐scale biodiversity data sources.
+  abstract: |-
+    Abstract
+                
+                  Premise
+                  Pteridophytes—vascular land plants that disperse by spores—are a powerful system for studying plant evolution, particularly with respect to the impact of abiotic factors on evolutionary trajectories through deep time. However, our ability to use pteridophytes to investigate such questions—or to capitalize on the ecological and conservation‐related applications of the group—has been impaired by the relative isolation of the neo‐ and paleobotanical research communities and by the absence of large‐scale biodiversity data sources.
+                
+                
+                  Methods
+                  Here we present the Pteridophyte Collections Consortium (PCC), an interdisciplinary community uniting neo‐ and paleobotanists, and the associated PteridoPortal, a publicly accessible online portal that serves over three million pteridophyte records, including herbarium specimens, paleontological museum specimens, and iNaturalist observations. We demonstrate the utility of the PteridoPortal through discussion of three example PteridoPortal‐enabled research projects.
+                
+                
+                  Results
+                  The data within the PteridoPortal are global in scope and are queryable in a flexible manner. The PteridoPortal contains a taxonomic thesaurus (a digital version of a Linnaean classification) that includes both extant and extinct pteridophytes in a common phylogenetic framework. The PteridoPortal allows applications such as greatly accelerated classic floristics, entirely new “next‐generation” floristic approaches, and the study of environmentally mediated evolution of functional morphology across deep time.
+                
+                
+                  Discussion
+                  The PCC and PteridoPortal provide a comprehensive resource enabling novel research into plant evolution, ecology, and conservation across deep time, facilitating rapid floristic analyses and other biodiversity‐related investigations, and providing new opportunities for education and community engagement.
+  accessed:
+    - year: 2025
+      month: 3
+      day: 19
   author:
     - family: Rothfels
-      given: Carl J
+      given: Carl J.
     - family: Lee
       given: Jaemin
     - family: Sundue
-      given: Michael A
+      given: Michael A.
     - family: Smith
-      given: Alan R
+      given: Alan R.
     - family: Kasameyer
       given: Amy
     - family: Gross
@@ -31435,17 +32032,144 @@ references:
       given: Garth
     - family: Hu
       given: Shusheng
-    - family: MISSINGLOTSOFAUTHORS
-      given: ''
+    - family: Von Konrat
+      given: Matt
+    - family: Sessa
+      given: Emily B.
+    - family: Watson
+      given: Kimberly
+    - family: Weakley
+      given: Alan
+    - family: Zhang
+      given: Libing
+    - family: Gensel
+      given: Patricia
+    - family: Hassler
+      given: Michael
+    - family: Pearson
+      given: Katelin D.
+    - family: Gilbert
+      given: Ed
+    - family: Burnham
+      given: Robyn J.
+    - family: Rabeler
+      given: Richard K.
+    - family: Sweeney
+      given: Patrick
+    - family: Vasco
+      given: Alejandra
+    - family: Testo
+      given: Weston
+    - family: Giblin
+      given: David E.
+    - family: Ickert‐Bond
+      given: Stefanie M.
+    - family: Landis
+      given: Margaret
+    - family: Link‐Perez
+      given: Melanie
+    - family: Livshultz
+      given: Tatyana
+    - family: Miller
+      given: Ian
+    - family: Neefus
+      given: Christopher
+    - family: Pigg
+      given: Kathleen
+    - family: Power
+      given: Mitchell
+    - family: Prather
+      given: Alan
+    - family: Rehman
+      given: Tiana
+    - family: Struwe
+      given: Lena
+    - family: Vincent
+      given: Michael
+    - family: Weiblen
+      given: George
+    - family: Whitfeld
+      given: Timothy
+    - family: Windham
+      given: Michael D.
+    - family: Yatskievych
+      given: George
+    - family: Liston
+      given: Aaron
+    - family: Makings
+      given: Elizabeth
+    - family: Pryer
+      given: Kathleen M.
+    - family: Strömberg
+      given: Caroline
+    - family: Atri
+      given: Eve
+    - family: Best
+      given: Jason
+    - family: Glasspool
+      given: Ian
+    - family: Huiet
+      given: Layne
+    - family: Johnson
+      given: Elizabeth
+    - family: King
+      given: Megan R.
+    - family: Klymiuk
+      given: Az
+    - family: Lupia
+      given: Richard
+    - family: Majure
+      given: Lucas C.
+    - family: McCormick
+      given: Carol Ann
+    - family: McCourt
+      given: Richard
+    - family: Oberreiter
+      given: Shanna
+    - family: Perkins
+      given: Kent D.
+    - family: Rodriguez
+      given: Yarency
+    - family: Smith
+      given: Chelsea
+    - family: Solomon
+      given: James
+    - family: Teisher
+      given: Jordan
+    - family: Ford‐Werntz
+      given: Donna
+    - family: Fuehrding‐Potschkat
+      given: Petra
+    - family: Little
+      given: Holly
+    - family: Ranker
+      given: Tom A.
+    - family: Schuettpelz
+      given: Eric
+    - family: Tribble
+      given: Carrie M.
+    - family: Erwin
+      given: Diane M.
+    - family: Looy
+      given: Cindy V.
   citation-key: rothfels2025pteridoportal
+  container-title: Applications in Plant Sciences
+  container-title-short: Appl. Plant Sci.
+  DOI: 10.1002/aps3.70003
+  ISSN: 2168-0450, 2168-0450
   issued:
     - year: 2025
+      month: 3
+      day: 10
   language: en
-  source: Zotero
+  page: e70003
+  source: DOI.org (Crossref)
   title: >-
     The PteridoPortal: A publicly accessible collection of over three million
     records of extant and extinct pteridophytes
+  title-short: The PteridoPortal
   type: article-journal
+  URL: https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/aps3.70003
 
 - id: rothfels2027onocleaceae
   author:
@@ -32971,6 +33695,57 @@ references:
     Structure and function of spores in the aquatic heterosporous fern family
     Marsileaceae
   type: article-journal
+  volume: '163'
+
+- id: schneider2002structurea
+  abstract: >-
+    Spores of the aquatic heterosporous fern family Marsileaceae differ markedly
+    from spores of Salviniaceae, the only other family of heterosporous ferns
+    and sister group to Marsileaceae, and from spores of all homosporous ferns.
+    The marsileaceous outer spore wall (perine) is modiﬁed above the aperture
+    into a structure, the acrolamella, and the perine and acrolamella are
+    further modiﬁed into a remarkable gelatinous layer that envelops the spore.
+    Observations with light and scanning electron microscopy indicate that the
+    three living marsileaceous fern genera (Marsilea, Pilularia, and
+    Regnellidium) each have distinctive spores, particularly with regard to the
+    perine and acrolamella. Several spore characters support a division of
+    Marsilea into two groups. Spore character evolution is discussed in the
+    context of developmental and possible functional aspects. The gelatinous
+    perine layer acts as a ﬂexible, ﬂoating organ that envelops the spores only
+    for a short time and appears to be an adaptation of marsileaceous ferns to
+    amphibious habitats. The gelatinous nature of the perine layer is likely the
+    result of acidic polysaccharide components in the spore wall that have
+    hydrogel (swelling and shrinking) properties. Megaspores ﬂoating at the
+    water/air interface form a concave meniscus, at the center of which is the
+    gelatinous acrolamella that encloses a “sperm lake.” This meniscus creates a
+    vortex-like effect that serves as a trap for free-swimming sperm cells,
+    propelling them into the sperm lake.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Schneider
+      given: Harald
+    - family: Pryer
+      given: Kathleen M.
+  citation-key: schneider2002structurea
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/340736
+  ISSN: 1058-5893, 1537-5315
+  issue: '4'
+  issued:
+    - year: 2002
+      month: 7
+  language: en
+  page: 485–505
+  source: DOI.org (Crossref)
+  title: >-
+    Structure and function of spores in the aquatic heterosporous fern family
+    Marsileaceae
+  type: article-journal
+  URL: http://www.journals.uchicago.edu/doi/10.1086/340736
   volume: '163'
 
 - id: schneider2004chloroplast
@@ -34736,6 +35511,7 @@ references:
     - family: Burleigh
       given: J. Gordon
   citation-key: sessa2024new
+  container-title: XX International Botanical Congress
   event-place: Madrid, Spain
   event-title: XX International Botanical Congress
   issued:
@@ -35598,6 +36374,71 @@ references:
     (L.) Newman
   type: article-journal
 
+- id: shuPhylogenomicAnalysisReconstructed2022
+  abstract: >-
+    Phylogenetic conﬂicts limit our understanding of the evolution of
+    terrestrial life under multiple whole genome duplication events, and the
+    phylogeny of early terrestrial plants remains full of controversy. Although
+    much incongruence has been solved with so-called robust topology based on
+    single or lower copy genes, the evolutionary mechanisms behind phylogenetic
+    conﬂicts such as polyploidization remain poorly understood. Here, through
+    decreasing the effects of polyploidization and increasing the samples of
+    species, which represent all four orders and eight families that comprise
+    early leptosporangiate ferns, we have reconstructed a robust phylogenetic
+    tree and network with 1125 1-to-1 orthologs based on both coalescent and
+    concatenation methods. Our data consistently suggest that Matoniales, as a
+    monophyletic lineage including Matoniaceae and Dipteridaceae, should be
+    redeﬁned as an ordinal rank. Furthermore, we have identiﬁed and located at
+    least 11 whole-genome duplication events within the evolutionary history of
+    four leptosporangiates lineages, and associated polyploidization with higher
+    speciation rates and mass extinction events. We hypothesize that
+    paleopolyploidization may have enabled leptosporangiate ferns to survive
+    during mass extinction events at the end Permian period and then ﬂourish
+    throughout the Mesozoic era, which is supported by extensive fossil records.
+    Our results highlight how ancient polyploidy can result in rapid species
+    radiation, thus causing phylogenetic conﬂicts yet allowing plants to survive
+    and thrive during mass extinction events.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Shu
+      given: Jiang-Ping
+    - family: Wang
+      given: Hao
+    - family: Shen
+      given: Hui
+    - family: Wang
+      given: Rui-Jiang
+    - family: Fu
+      given: Qiang
+    - family: Wang
+      given: Yong-Dong
+    - family: Jiao
+      given: Yuan-Nian
+    - family: Yan
+      given: Yue-Hong
+  citation-key: shuPhylogenomicAnalysisReconstructed2022
+  container-title: Plants
+  container-title-short: Plants
+  DOI: 10.3390/plants11121529
+  ISSN: 2223-7747
+  issue: '12'
+  issued:
+    - year: 2022
+      month: 6
+      day: 7
+  language: en
+  page: '1529'
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogenomic analysis reconstructed the order Matoniales from
+    paleopolyploidy veil
+  type: article-journal
+  URL: https://www.mdpi.com/2223-7747/11/12/1529
+  volume: '11'
+
 - id: sigel2011species
   author:
     - family: Sigel
@@ -35632,6 +36473,7 @@ references:
       given: Kathleen M
   citation-key: sigel2014evidence
   container-title: American Journal of Botany
+  container-title-short: Am. J. Bot.
   DOI: 10.3732/ajb.1400190
   issue: '9'
   issued:
@@ -37627,6 +38469,112 @@ references:
   URL: https://academic.oup.com/evolut/article/79/2/164/7866821
   volume: '79'
 
+- id: suissaExtremeFunctionalSpecialization2024
+  abstract: >-
+    Resource allocation theory posits that organisms distribute limited
+    resources across functions to maximize their overall fitness. In plants, the
+    allocation of resources among maintenance, reproduction, and growth
+    influences short-term economics and long-term evolutionary processes,
+    especially during resource scarcity. The evolution of specialized structures
+    to divide labor between reproduction and growth can create a feedback loop
+    where selection can act on individual organs, further increasing
+    specializaton and resource allocation. Ferns exhibit diverse reproductive
+    strategies, including dimorphism, where leaves can either be sterile (only
+    for photosynthesis) or fertile (for spore dispersal). This dimorphism is
+    similar to processes in seed plants (e.g., the production of fertile flowers
+    and sterile leaves), and presents an opportunity to investigate divergent
+    resource allocation between reproductive and vegetative functions in
+    specialized organs. Here, we conducted anatomical and hydraulic analyses on
+    Onoclea sensibilis L., a widespread dimorphic fern species, to reveal
+    significant structural and hydraulic divergences between fertile and sterile
+    leaves. Fertile fronds invest less in hydraulic architecture, with nearly
+    1.5 times fewer water-conducting cells and a nearly 0.5 times less
+    drought-resistant xylem compared to sterile fronds. This comes at the
+    increased relative investment in structural support, which may help
+    facilitate spore dispersal. These findings suggest that specialization in
+    ferns—in the form of reproductive dimorphism—can enable independent
+    selection pressures on each leaf type, potentially optimizing spore
+    dispersal in fertile fronds and photosynthetic efficiency in sterile fronds.
+    Overall, our study sheds light on the evolutionary implications of
+    functional specialization and highlights the importance of reproductive
+    strategies in shaping plant fitness and evolution.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Suissa
+      given: Jacob S.
+    - family: Barkoff
+      given: Noah
+    - family: Watkins
+      given: James E.
+  citation-key: suissaExtremeFunctionalSpecialization2024
+  container-title: Ecology and Evolution
+  container-title-short: Ecology and Evolution
+  DOI: 10.1002/ece3.11552
+  ISSN: 2045-7758, 2045-7758
+  issue: '7'
+  issued:
+    - year: 2024
+      month: 7
+  language: en
+  page: e11552
+  source: DOI.org (Crossref)
+  title: >-
+    Extreme functional specialization of fertile leaves in a widespread fern
+    species and its implications on the evolution of reproductive dimorphism
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.1002/ece3.11552
+  volume: '14'
+
+- id: suissaFernFrondsThat2022
+  abstract: |-
+    Abstract
+                
+                  Background and Aims
+                  The sensitive fern, Onoclea sensibilis, is a widespread species in eastern North America and has an atypical timing of spore dispersal among temperate ferns. During early summer, this dimorphic species produces heavily modified spore-bearing fronds with leaflets tightly enveloping their sporangia and spores. These fronds senesce and persist above ground as dead mature structures until the following early spring when the leaflets finally open and spores are dispersed. While this timing of spore dispersal has been observed for over 120 years, the structural mechanisms underpinning this phenology have remained elusive.
+                
+                
+                  Methods
+                  Based on field observations, growth chamber manipulations and scanning electron microscopy, the mechanisms underlying this distinctive timing of spore dispersal in the sensitive fern were investigated.
+                
+                
+                  Key Results
+                  I show that fertile leaflets of the sensitive fern move in direct response to changes in humidity, exhibiting structural and functional parallels with multicellular hygromorphic structures in seed plants, such as pine cones. These parallels include differences in cellulose microfibril orientation in cells on the abaxial and adaxial sides of the leaflet. The dynamics of this hygroscopic movement concomitant with regular abscission zones along the pinnules and coordinated senescence lead to the specific timing of early spring spore dispersal in the sensitive fern.
+                
+                
+                  Conclusions
+                  While hygroscopic movement is common in seed-free plants, it mostly occurs in small structures that are either one or a few cells in size, such as the leptosporangium. Given its multicellular structure and integration across many cells and tissues, the movement and construction of the sensitive fern pinnules are more similar to structures in seed plants. The evolution of this complex trait in the sensitive fern efficiently regulates the timing of spore release, leading to early spring dispersal. This phenology likely gives gametophytes and subsequent sporophytes an advantage with early germination and growth.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 16
+  author:
+    - family: Suissa
+      given: Jacob S
+  citation-key: suissaFernFrondsThat2022
+  container-title: Annals of Botany
+  DOI: 10.1093/aob/mcab137
+  ISSN: 0305-7364, 1095-8290
+  issue: '5'
+  issued:
+    - year: 2022
+      month: 4
+      day: 13
+  language: en
+  license: >-
+    https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model
+  page: 519–528
+  source: DOI.org (Crossref)
+  title: >-
+    Fern fronds that move like pine cones: humidity-driven motion of fertile
+    leaflets governs the timing of spore dispersal in a widespread fern species
+  title-short: Fern fronds that move like pine cones
+  type: article-journal
+  URL: https://academic.oup.com/aob/article/129/5/519/6432223
+  volume: '129'
+
 - id: sun2015selaginella
   author:
     - family: Sun
@@ -38069,6 +39017,33 @@ references:
     - year: 1806
   title: Synopsis Filicum
   type: book
+
+- id: sweet1971study
+  accessed:
+    - year: 2026
+      month: 2
+      day: 21
+  author:
+    - family: Sweet
+      given: A.
+    - family: Hills
+      given: L. V.
+  citation-key: sweet1971study
+  container-title: American Fern Journal
+  container-title-short: American Fern Journal
+  DOI: 10.2307/1546281
+  ISSN: '00028444'
+  issue: '1'
+  issued:
+    - year: 1971
+      month: 1
+  language: en
+  page: '1'
+  source: DOI.org (Crossref)
+  title: A study of *Azolla pinnata* R. Brown
+  type: article-journal
+  URL: https://www.jstor.org/stable/1546281?origin=crossref
+  volume: '61'
 
 - id: szczesniak2015polypodium
   abstract: >-
@@ -38831,7 +39806,7 @@ references:
       given: Michael A.
   citation-key: testo20164000species
   container-title: Molecular Phylogenetics and Evolution
-  container-title-short: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2016.09.003
   ISSN: '10557903'
   issued:
@@ -41215,7 +42190,7 @@ references:
       given: Thaís
   citation-key: vieiralima2023phylogenomic
   container-title: Molecular Phylogenetics and Evolution
-  container-title-short: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2023.107782
   ISSN: '10557903'
   issued:
@@ -42932,6 +43907,53 @@ references:
   URL: https://linkinghub.elsevier.com/retrieve/pii/S2468265921001505
   volume: '44'
 
+- id: wang2022semiaquatic
+  abstract: >-
+    The present study reports unique leaﬂets of a semi-aquatic fern
+    (Marsileaceae) preserved in midCretaceous amber from Myanmar, and further
+    describes the new species Marsileaceaephyllum ciliatum sp. nov. The new
+    species has leaﬂets fan-shaped without a midvein, venation dichotomous and
+    partially anastomosing, and possesses unique dense hairs from the dorsal
+    base radiating to the upper 2/3. This occurrence represents the ﬁrst record
+    of semi-aquatic ferns of the Marsileaceae found in Myanmar amber. This
+    record further demonstrates the species richness of ferns in the Cretaceous,
+    and also reveals the ecological adaptability of Marsileaceae in the aquatic
+    environments of the mid-Cretaceous.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Wang
+      given: Shuo
+    - family: Long
+      given: Xiaoxuan
+    - family: Zhang
+      given: Hongrui
+    - family: Cai
+      given: Haohong
+    - family: Engel
+      given: Michael S.
+    - family: Shi
+      given: Chao
+  citation-key: wang2022semiaquatic
+  container-title: Cretaceous Research
+  container-title-short: Cretaceous Research
+  DOI: 10.1016/j.cretres.2021.105119
+  ISSN: '01956671'
+  issued:
+    - year: 2022
+      month: 5
+  language: en
+  page: '105119'
+  source: DOI.org (Crossref)
+  title: >-
+    A semi-aquatic fern (Marsileaceae) from the mid-Cretaceous amber of northern
+    Myanmar
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0195667121003670
+  volume: '133'
+
 - id: wang2023insights
   accessed:
     - year: 2022
@@ -42965,6 +43987,45 @@ references:
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S1055790322002858
   volume: '180'
+
+- id: wang2026coniopteris
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Wang
+      given: Bing-pu
+    - family: Wang
+      given: Huan
+    - family: Zhang
+      given: Xian-chun
+    - family: Tao
+      given: Rui-Qing
+    - family: Wang
+      given: Shuo
+    - family: Shi
+      given: Chao
+  citation-key: wang2026coniopteris
+  container-title: Cretaceous Research
+  container-title-short: Cretaceous Research
+  DOI: 10.1016/j.cretres.2026.106334
+  ISSN: '01956671'
+  issued:
+    - year: 2026
+      month: 2
+  language: en
+  page: '106334'
+  source: DOI.org (Crossref)
+  title: >-
+    *Coniopteris glaesifilix* sp. nov. (Polypodiales) from mid-Cretaceous
+    Myanmar amber: Implications for the biogeographic history of early polypod
+    ferns
+  title-short: >-
+    Coniopteris glaesifilix sp. nov. (Polypodiales) from mid-Cretaceous Myanmar
+    amber
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0195667126000236
 
 - id: wangacystopteris
   author:
@@ -45756,6 +46817,43 @@ references:
   URL: http://www.journals.uchicago.edu/doi/10.1086/342036
   volume: '163'
 
+- id: yamada2002regnellitesa
+  abstract: >-
+    The oldest macrofossil of Marsileaceae, Regnellites nagashimae gen. et sp.
+    nov. from the Upper Jurassic to Lower Cretaceous Kiyosue Formation of
+    western Japan is described. The new genus Regnellites is characterized by
+    two leaﬂets, anastomosing venation without a marginal vein, and very large
+    sporocarps at the nodes. A comparison between Regnellites and other
+    heterosporous water fern genera indicates that the genus is distinct from
+    the living and fossil genera of Marsileaceae.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 22
+  author:
+    - family: Yamada
+      given: Toshihiro
+    - family: Kato
+      given: Masahiro
+  citation-key: yamada2002regnellitesa
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/342036
+  ISSN: 1058-5893, 1537-5315
+  issue: '5'
+  issued:
+    - year: 2002
+      month: 9
+  language: en
+  page: 715–723
+  source: DOI.org (Crossref)
+  title: >-
+    *Regnellites nagashimae* gen. et sp. nov., the Oldest Macrofossil of
+    Marsileaceae, from the Upper Jurassic to Lower Cretaceous of Western Japan
+  type: article-journal
+  URL: http://www.journals.uchicago.edu/doi/10.1086/342036
+  volume: '163'
+
 - id: yamauchi2005analysis
   author:
     - family: Yamauchi
@@ -46978,6 +48076,7 @@ references:
       given: Li Bing
   citation-key: zhang2017phylogenya
   container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2016.12.037
   ISSN: '10959513'
   issued:
@@ -47354,7 +48453,7 @@ references:
       given: Xin-Mao
   citation-key: zhao2026widespread
   container-title: Molecular Phylogenetics and Evolution
-  container-title-short: Molecular Phylogenetics and Evolution
+  container-title-short: Mol. Phylogenet. Evol.
   DOI: 10.1016/j.ympev.2025.108454
   ISSN: '10557903'
   issued:
@@ -47369,6 +48468,36 @@ references:
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S105579032500171X
   volume: '214'
+
+- id: zheng2008structural
+  accessed:
+    - year: 2026
+      month: 2
+      day: 23
+  author:
+    - family: Zheng
+      given: Weiwen
+    - family: Rang
+      given: Liang
+    - family: Bergman
+      given: Birgitta
+  citation-key: zheng2008structural
+  container-title: Prokaryotic Symbionts in Plants
+  DOI: 10.1007/7171_2008_120
+  editor:
+    - family: Pawlowski
+      given: Katharina
+  ISBN: 978-3-540-75459-6 978-3-540-75460-2
+  issued:
+    - year: 2008
+  page: 235–263
+  publisher: Springer Berlin Heidelberg
+  publisher-place: Berlin, Heidelberg
+  source: DOI.org (Crossref)
+  title: Structural Characteristics of the Cyanobacterium–Azolla Symbioses
+  type: chapter
+  URL: http://link.springer.com/10.1007/7171_2008_120
+  volume: '8'
 
 - id: zhong2014two
   abstract: >-
@@ -47765,7 +48894,7 @@ references:
       given: Li-Bing
   citation-key: zhou2023phylogeny
   container-title: Plant Diversity
-  container-title-short: Plant Diversity
+  container-title-short: Plant Divers.
   DOI: 10.1016/j.pld.2023.07.003
   ISSN: '24682659'
   issued:
