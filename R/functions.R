@@ -607,8 +607,9 @@ get_ladderized_tips <- function(tree) {
 
 format_ppg_comments <- function(comments_raw) {
   comments_raw |>
-    filter(!is.na(comment)) |>
-    select(taxonID = taxon_id, comment)
+    mutate(conserved = na_if(conserved, "no")) |>
+    filter_out(is.na(comment), is.na(conserved)) |>
+    select(taxonID = taxon_id, conserved, comment)
 }
 
 # Helper function for format_ppg_taxa_count()
@@ -2006,6 +2007,8 @@ format_ppg_classification <- function(
       indent = rep_collapse("  ", n_parents),
       indent = paste0(indent, "* "),
       comment = tidyr::replace_na(comment, ""),
+      conserved = tidyr::replace_na(conserved, "") |>
+        str_replace_all("yes", ", *nom. cons.*"),
       taxon_count = tidyr::replace_na(taxon_count, "")
     ) |>
     dplyr::mutate(
@@ -2015,10 +2018,11 @@ format_ppg_classification <- function(
         .default = glue::glue("**{scientificName}**")
       ),
       pretty = glue::glue(
-        "{taxonRank_print} {name_print}　{scientificNameAuthorship}. {taxon_count} {comment}"
+        "{taxonRank_print} {name_print} {scientificNameAuthorship}{conserved}. {taxon_count} {comment}"
       ) |>
         as.character() |>
         stringr::str_replace_all("\\.+", ".") |>
+        stringr::str_replace_all("\\.\\*\\.+", ".*") |>
         stringr::str_squish(),
       pretty = glue::glue("{indent}{pretty}")
     ) |>
