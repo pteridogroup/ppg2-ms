@@ -6,14 +6,13 @@ Alejandra,Vasco,Alejandra Vasco,Botanical Research Institute of Texas,USA
 Aleksey,Vaganov,Aleksey Vaganov,Altai State University,Russian Federation
 Alexander,Shmakov,Alexander Shmakov,Altai State University,Russian Federation
 Alexandre,Salino,Alexandre Salino,Universidade Federal de Minas Gerais,Brazil
-Alison M.,Paul,Alison M. Paul,Natural History Museum,"England, UK"
+Alison M.,Paul,Alison M. Paul,Natural History Museum,England UK
 Amanda L.,Grusz,Amanda L. Grusz,University of Minnesota Duluth,USA
 Ana Gabriela,Martinez-Becerril,Ana Gabriela Martinez-Becerril,Smithsonian Institution,USA
-Andi Maryani A.,Mustapeng,Andi Maryani A. Mustapeng,Sabah Forestry Department,Malaysia
 André Luís de,Gasper,André Luís de Gasper,Universidade Regional de Blumenau,Brazil
 Angelo,Troia,Angelo Troia,University of Palermo,Italy
 Arthur V.,Gilman,Arthur V. Gilman,University of Vermont,USA
-Ashley R.,Field,Ashley R. Field,Queensland Herbarium,Australia
+Ashley R.,Field,Ashley R. Field,Australian Tropical Herbarium,Australia
 Atiles,Reis,Atiles Reis,Universidade Federal do Rio de Janeiro,Brazil
 Atsushi,Ebihara,Atsushi Ebihara,National Museum of Nature and Science,Japan
 Barbara,Parris,Barbara Parris,Fern Research Foundation,New Zealand
@@ -26,8 +25,10 @@ Carlos,Sánchez,Carlos Sánchez,Jardín Botánico Nacional Universidad de La Hab
 Carrie M.,Tribble,Carrie M. Tribble,University of Washington,USA
 Cheng-Wei,Chen,Cheng-Wei Chen,National Taiwan Normal University,Taiwan
 Chi-Chuan,Chen,Chi-Chuan Chen,University of Turku,Finland
+Chia-Tung,Chen,Chia-Tung Chen,National Taiwan Normal University,Taiwan
 Chinedum,Anajemba,Chinedum Anajemba,Utah State University,USA
-Christian A.,López,Christian A. López,University of Texas at Austin,USA
+Christian A.,López,Christian A. López,University of Texas Austin,USA
+Christopher,Haufler,Christopher Haufler,University of Kansas,USA
 Christopher,Hoess,Christopher Hoess,Delaware Technical Community College,USA
 Christopher P.,Krieg,Christopher P. Krieg,Wake Forest University,USA
 Chun-Xiang,Li,Chun-Xiang Li,Nanjing Institute of Geology and Palaeontology,China
@@ -52,7 +53,7 @@ Fernando B.,Matos,Fernando B. Matos,Centro de Referência em Informação Ambien
 Filipe Soares de,Souza,Filipe Soares de Souza,Biocev Projetos Inteligentes,Brazil
 Fulgent P.,Coritico,Fulgent P. Coritico,Central Mindanao University,Philippines
 Gbenga Festus,Akomolafe,Gbenga Festus Akomolafe,Federal University of Lafia,Nigeria
-George,Yatskievych,George Yatskievych,University of Texas at Austin,USA
+George,Yatskievych,George Yatskievych,University of Texas Austin,USA
 Germinal,Rouhan,Germinal Rouhan,Muséum national d'Histoire naturelle,France
 Guillermo,Santos,Guillermo Santos,Universidad Complutense de Madrid,Spain
 Hanna,Tuomisto,Hanna Tuomisto,Aarhus University,Denmark
@@ -72,15 +73,15 @@ Jonas I.,Mendez-Reneau,Jonas I. Mendez-Reneau,Missouri Botanical Garden,USA
 Jordan,Metzgar,Jordan Metzgar,Virginia Polytechnic Institute and State University,USA
 José,Murillo-A.,José Murillo-A.,Universidad Nacional de Colombia,Colombia
 Jovani B. de S.,Pereira,Jovani B. de S. Pereira,Rheinische Friedrich-Wilhelms-Universität Bonn,Germany
-Jovita Cislinski,Yesilyurt,Jovita Cislinski Yesilyurt,Natural History Museum,"England, UK"
+Jovita Cislinski,Yesilyurt,Jovita Cislinski Yesilyurt,Natural History Museum,England UK
 Julián,Mostacero,Julián Mostacero,Universidad Central de Venezuela,Venezuela
-K. P.,Rajesh,K. P. Rajesh,University of Calicut,India
+K. P.,Rajesh,K. P. Rajesh,Zamorin's Guruvayurappan College,India
 Kaimei,Zhang,Kaimei Zhang,Nanjing Forestry University,China
 Kathleen M.,Pryer,Kathleen M. Pryer,Duke University,USA
 Kathryn T.,Picard,Kathryn T. Picard,Smithsonian Institution,USA
 Ke-Wang,Xu,Ke-Wang Xu,Nanjing Forestry University,China
 Keir,Wefferling,Keir Wefferling,University of Wisconsin Green Bay,USA
-Kiyotaka,Hori,Kiyotaka Hori,The Kochi Prefectural Makino Botanical Garden,Japan
+Kiyotaka,Hori,Kiyotaka Hori,Kochi Prefectural Makino Botanical Garden,Japan
 Klaus,Mehltreter,Klaus Mehltreter,Instituto de Ecología A. C.,Mexico
 Lana da Silva,Sylvestre,Lana da Silva Sylvestre,Universidade Federal do Rio de Janeiro,Brazil
 Layne,Huiet,Layne Huiet,Duke University,USA
@@ -96,10 +97,11 @@ Marcelo,Arana,Marcelo Arana,Fundacion Miguel Lillo,Argentina
 Marcus,Lehnert,Marcus Lehnert,Martin-Luther-Universität Halle-Wittenberg,Germany
 Maria Amalia,Scataglini,Maria Amalia Scataglini,Instituto de Botánica Darwinion,Argentina
 Marielle,Wilson,Marielle Wilson,University of British Columbia,Canada
-Mario,Mairal,Mario Mairal,Complutense University of Madrid,Spain
+Mario,Mairal,Mario Mairal,Universidad Complutense de Madrid,Spain
 Marjorie D.,delos Angeles,Marjorie D. delos Angeles,University of the Philippines Los Baños,Philippines
+Maryani A. Mustapeng,Andi,Maryani A. Mustapeng Andi,Sabah Forestry Department,Malaysia
 María Vicent,Fernández,María Vicent Fernández,Universidad Alfonso X El Sabio,Spain
-Melanie A.,Link-Pérez,Melanie A. Link-Pérez,University of Wisconsin-Madison,USA
+Melanie A.,Link-Pérez,Melanie A. Link-Pérez,University of Wisconsin Madison,USA
 Michael D,Windham,Michael D Windham,Duke University,USA
 Michael,Hassler,Michael Hassler,Editor of WorldPlants database,Germany
 Michael,Kessler,Michael Kessler,University of Zurich,Switzerland
@@ -107,14 +109,14 @@ Michael S.,Barker,Michael S. Barker,University of Arizona,USA
 Michael,Sundue,Michael Sundue,Royal Botanic Garden Edinburgh,"Scotland, UK"
 Michel,Boudrie,Michel Boudrie,Muséum national d'Histoire naturelle,France
 Monica,Ponce,Monica Ponce,Instituto de Botánica Darwinion,Argentina
-Muhammad,Irfan,Muhammad Irfan,"University of Swabi, Swabi",Pakistan
+Muhammad,Irfan,Muhammad Irfan,University of Swabi,Pakistan
 Mwihaki J.,Karichu,Mwihaki J. Karichu,New York Botanical Garden,USA
 Ngan Lu,Thi,Ngan Lu Thi,Vietnam Academy of Science and Technology,Vietnam
 Olga G.,Martínez,Olga G. Martínez,Universidad Nacional de Salta,Argentina
-Paul G.,Wolf,Paul G. Wolf,University of Alabama in Huntsville,USA
-Paulo H.,Labiak,Paulo H. Labiak,Universidade Federal do Parana,Brazil
+Paul G.,Wolf,Paul G. Wolf,University of Alabama Huntsville,USA
+Paulo H.,Labiak,Paulo H. Labiak,Universidade Federal do Paraná,Brazil
 Pedro B.,Schwartsburd,Pedro B. Schwartsburd,Universidade Federal de Viçosa,Brazil
-Peter D.,Bostock,Peter D. Bostock,Queensland Herbarium,Australia
+Peter D.,Bostock,Peter D. Bostock,Queensland Herbarium and Biodiversity Science,Australia
 Radvilė,Rimgailė-Voicik,Radvilė Rimgailė-Voicik,Vilnius University,Lithuania
 Ralf,Knapp,Ralf Knapp,Muséum national d'Histoire naturelle,Germany
 Ran,Wei,Ran Wei,Institute of Botany Chinese Academy of Sciences,China
@@ -122,7 +124,7 @@ Ranil,Rajapaksha,Ranil Rajapaksha,University of Peradeniya,Sri Lanka
 Raquel Stauffer,Viveros,Raquel Stauffer Viveros,Universidade Federal de Minas Gerais,Brazil
 Regina Yoshie,Hirai,Regina Yoshie Hirai,Instituto de Pesquisas Ambientais,Brazil
 Robbin C.,Moran,Robbin C. Moran,New York Botanical Garden,USA
-Rubén Vázquez,Ferreira,Rubén Vázquez Ferreira,Complutense University of Madrid,Spain
+Rubén Vázquez,Ferreira,Rubén Vázquez Ferreira,Universidad Complutense de Madrid,Spain
 Sabine,Hennequin,Sabine Hennequin,Université Pierre et Marie Curie,France
 Sachin,Patil,Sachin Patil,Dr. Ghali College,India
 Samuli,Lehtonen,Samuli Lehtonen,University of Turku,Finland
