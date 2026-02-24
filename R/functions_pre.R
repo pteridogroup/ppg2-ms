@@ -62,7 +62,6 @@ load_emails <- function(email_url) {
     select(
       given_name,
       surname,
-      name,
       ppg2,
       institution,
       country,
@@ -71,6 +70,7 @@ load_emails <- function(email_url) {
       tertiary
     ) |>
     filter(ppg2 == "Yes") |>
+    mutate(name = paste(given_name, surname)) |>
     assert(is_uniq, name) |>
     assert(not_na, name)
 
