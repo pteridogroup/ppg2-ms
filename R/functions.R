@@ -49,6 +49,14 @@ clean_ppg <- function(ppg_raw) {
         "unknown"
       )
     ) |>
+    dct_modify_row(
+      taxonID = "wfo-4100005085",
+      scientificName = "Estrellita"
+    ) |>
+    dct_modify_row(
+      taxonID = "wfo-1000079650",
+      scientificName = "Estrellita mollis"
+    ) |>
     filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
     filter(taxonomicStatus %in% c("accepted", "synonym"))
 }
