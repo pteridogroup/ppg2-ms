@@ -10,6 +10,7 @@ tar_plan(
     "https://github.com/pteridogroup/ppg/raw/refs/heads/main/data/ppg.csv"
   ),
   ppg_raw = read_csv(ppg_csv_url),
+  
   # Clean PPG data
   # - remove invalid nomenclatural status and unchecked taxa
   # - remove nothogenera that haven't received votes
@@ -32,12 +33,19 @@ tar_plan(
   ppg_ii_vs_wf = clean_wf_comp_list(ppg_ii_vs_wf_raw),
 
   # Load WF taxa count
-
   tar_file_read(
     wf_taxa_count,
     "data/wf_taxa_count.csv",
     read_csv(!!.x)
   ),
+
+  # Load table with descriptions of uncertain nodes
+  tar_file_read(
+    uncertainty_table,
+    "data/table_uncertainty.csv",
+    read_csv(!!.x)
+  ),
+
 
   # Process GitHub issues ----
 
@@ -181,15 +189,14 @@ tar_plan(
   ),
 
   # Output manuscript ----
-  tar_file_read(
-    uncertainty_table,
-    "data/table_uncertainty.csv",
-    read_csv(!!.x)
-  ),
-
   tar_file(
     references,
     "references.yaml"
+  ),
+
+  tar_file(
+    citation_format,
+    "taxon.csl"
   ),
 
   tar_file(
@@ -200,6 +207,12 @@ tar_plan(
   tar_quarto(
     ppg2_ms,
     "ppg2_ms.Qmd",
+    quiet = FALSE
+  ),
+
+  tar_quarto(
+    contributions,
+    "author_contributions.qmd",
     quiet = FALSE
   ),
 

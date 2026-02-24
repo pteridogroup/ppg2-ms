@@ -1,0 +1,24 @@
+---
+format:
+  docx:
+    reference-doc: template.docx
+crossref:
+  fig-prefix: "Fig."
+  tbl-prefix: "Table"
+  fig-title: "Fig."
+  tbl-title: "Table"
+bibliography: references.yaml
+link-bibliography: true
+csl: taxon.csl
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+## Author Contributions
+
+Joel H. Nitta organized monthly voting, wrote code used for importing data, and lead writing of the manuscript.
+Michael Hassler provided taxonomic data.
+Joel H. Nitta, Carl Rothfels, Harald Schneider, and Eric Schuettpelz served on the PPG organizing committee.
+All authors participated by submitting and/or voting on taxonomic proposals and reviewed the manuscript.
