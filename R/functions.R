@@ -28,7 +28,9 @@
 #' }
 clean_ppg <- function(ppg_raw) {
   require(dwctaxon)
+
   dct_options(stamp_modified = FALSE)
+
   ppg_raw |>
     # TODO fix these in Rhakhis
     # Remove bad taxa
@@ -57,8 +59,51 @@ clean_ppg <- function(ppg_raw) {
       taxonID = "wfo-1000079650",
       scientificName = "Estrellita mollis"
     ) |>
+    # TODO add these in Rhakhis once voting finished
+    # - Podosorus
+    dct_add_row(
+      scientificName = "Podosorus",
+      scientificNameAuthorship = "Holttum",
+      taxonRank = "genus",
+      nomenclaturalStatus = "valid",
+      taxonomicStatus = "accepted",
+      parentNameUsage = "Microsoroideae"
+    ) |>
+    dct_add_row(
+      scientificName = "Podosorus angustatus",
+      scientificNameAuthorship = "Holttum",
+      taxonRank = "species",
+      nomenclaturalStatus = "valid",
+      taxonomicStatus = "accepted",
+      parentNameUsage = "Podosorus"
+    ) |>
+    # - Brownseya
+    dct_modify_row(
+      scientificName = "Brownseya",
+      nomenclaturalStatus = "valid",
+      taxonomicStatus = "accepted",
+      parentNameUsage = "Lycopodielloideae"
+    ) |>
+    dct_modify_row(
+      scientificName = "Brownseya serpentina",
+      nomenclaturalStatus = "valid",
+      taxonomicStatus = "accepted",
+      parentNameUsage = "Brownseya"
+    ) |>
+    dct_modify_row(
+      scientificName = "Pseudolycopodiella serpentina",
+      acceptedNameUsage = "Brownseya serpentina",
+      nomenclaturalStatus = "valid",
+      taxonomicStatus = "synonym"
+    ) |>
     filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
-    filter(taxonomicStatus %in% c("accepted", "synonym"))
+    filter(taxonomicStatus %in% c("accepted", "synonym")) |>
+    dct_fill_col(
+      fill_to = "parentNameUsageID",
+      fill_from = "taxonID",
+      match_to = "scientificName",
+      match_from = "parentNameUsage"
+    )
 }
 
 #' Delete a Taxon and All Its Descendants and Synonyms
