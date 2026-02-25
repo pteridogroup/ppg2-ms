@@ -2063,7 +2063,7 @@ format_ppg_classification <- function(
         .default = glue::glue("**{scientificName}**")
       ),
       pretty = glue::glue(
-        "{taxonRank_print} {name_print} {scientificNameAuthorship}{conserved}. {taxon_count} {comment}"
+        "{taxonRank_print} {name_print} {scientificNameAuthorship}. {taxon_count} {comment}"
       ) |>
         as.character() |>
         stringr::str_replace_all("\\.+", ".") |>
