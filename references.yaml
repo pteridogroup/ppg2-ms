@@ -6391,23 +6391,6 @@ references:
     https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1991.tb00220.x
   volume: '107'
 
-- id: dawson2000index
-  author:
-    - family: Dawson
-      given: Murray I
-    - family: Brownsey
-      given: Patrick
-    - family: Lovis
-      given: John D
-  citation-key: dawson2000index
-  container-title: New Zealand Journal of Botany
-  issued:
-    - year: 2000
-  page: 25–46
-  title: Index of chromosome numbers of indigenous New Zealand pteridophytes
-  type: article-journal
-  volume: '38'
-
 - id: dawsonnew
   abstract: >-
     An index of chromosome numbers for New Zealand pteridophytes is presented.
@@ -6462,6 +6445,35 @@ references:
   title: 'Heterosporous Ferns From Patagonia: The Case of Azolla'
   type: chapter
   URL: http://dx.doi.org/10.1016/B978-0-12-813012-4.00015-2
+
+- id: debenedetti2018heterosporousa
+  accessed:
+    - year: 2026
+      month: 2
+      day: 24
+  author:
+    - family: De Benedetti
+      given: Facundo
+    - family: Zamaloa
+      given: María Del C.
+    - family: Gandolfo
+      given: María A.
+    - family: Cúneo
+      given: Néstor Rubén
+  citation-key: debenedetti2018heterosporousa
+  container-title: Transformative Paleobotany
+  DOI: 10.1016/B978-0-12-813012-4.00015-2
+  ISBN: 978-0-12-813012-4
+  issued:
+    - year: 2018
+  language: en
+  license: https://www.elsevier.com/tdm/userlicense/1.0/
+  page: 361–373
+  publisher: Elsevier
+  source: DOI.org (Crossref)
+  title: Heterosporous Ferns From Patagonia
+  type: chapter
+  URL: https://linkinghub.elsevier.com/retrieve/pii/B9780128130124000152
 
 - id: debenedetti2020reinterpretation
   author:
@@ -12520,29 +12532,6 @@ references:
   URL: http://www.nrcresearchpress.com/doi/10.1139/gen-2014-0090
   volume: '57'
 
-- id: hermsen2013new
-  author:
-    - family: Hermsen
-      given: Elizabeth J
-    - family: Gandolfo
-      given: Maria A
-    - family: Cúneo
-      given: N Rubén
-  citation-key: hermsen2013new
-  container-title: Plant Systematics and Evolution
-  DOI: 10.1007/s00606-013-0886-7
-  issue: '2'
-  issued:
-    - year: 2013
-  language: English
-  page: 369–386
-  title: >-
-    New marsileaceous fossils from the Late Cretaceous of South America and a
-    reevaluation of Marsileaceaephyllum
-  type: article-journal
-  URL: http://link.springer.com/10.1007/s00606-013-0886-7
-  volume: '300'
-
 - id: hermsen2014new
   accessed:
     - year: 2026
@@ -18072,6 +18061,37 @@ references:
   type: article-journal
   URL: https://rsnz.onlinelibrary.wiley.com/doi/10.1080/0028825X.1989.10414129
   volume: '27'
+
+- id: large1993spore
+  abstract: |-
+    Abstract 
+                Sporocarps, megaspores, and micro‐spores of Azolla filiculoides are described from fresh fertile material from the South Island of New Zealand. Size estimates are given along with light and scanning electron microscope photographs. A brief discussion of spore morphology, perine substructure, and leaf trichomes is given with regard to the taxonomy of A. filiculoides and A. rubra. Differences between these taxa with regard to sporoderm substructure and the presence of filaments on the collar of the megaspore support their separation but may be considered insufficient to justify maintaining taxonomic separation beyond varietal status for rubra.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 24
+  author:
+    - family: Large
+      given: M. F.
+    - family: Braggins
+      given: J. E.
+  citation-key: large1993spore
+  container-title: New Zealand Journal of Botany
+  container-title-short: New Zealand Journal of Botany
+  DOI: 10.1080/0028825X.1993.10419519
+  ISSN: 0028-825X, 1175-8643
+  issue: '4'
+  issued:
+    - year: 1993
+      month: 10
+  language: en
+  license: http://onlinelibrary.wiley.com/termsAndConditions#vor
+  page: 419–423
+  source: DOI.org (Crossref)
+  title: Spore morphology of New Zealand *Azolla filiculoides* Lam. (Salviniaceae)
+  type: article-journal
+  URL: https://rsnz.onlinelibrary.wiley.com/doi/10.1080/0028825X.1993.10419519
+  volume: '31'
 
 - id: larsen1952udbredelsen
   abstract: >-
@@ -27541,36 +27561,6 @@ references:
   URL: http://doi.wiley.com/10.1111/j.1365-294X.2010.04705.x
   volume: '19'
 
-- id: perrie2013hymenophyllum
-  abstract: New Zealand Journal of Botany, 2013. doi:10.1080/0028825X.2013.834830
-  author:
-    - family: Perrie
-      given: L R
-    - family: Shepherd
-      given: L D
-    - family: Lange
-      given: P J
-      non-dropping-particle: de
-    - family: Batty
-      given: E L
-    - family: Ohlsen
-      given: D J
-    - family: Bayly
-      given: M J
-    - family: Brownsey
-      given: P J
-  citation-key: perrie2013hymenophyllum
-  container-title: New Zealand Journal of Botany
-  issue: '00'
-  issued:
-    - year: 2013
-  page: 1–13
-  publisher: Taylor & Francis
-  title: '*Hymenophyllum pluviatile*, a new and uncommon fern from New Zealand'
-  type: article-journal
-  URL: http://dx.doi.org/10.1080/0028825X.2013.834830
-  volume: '00'
-
 - id: perrie2013hymenophylluma
   accessed:
     - year: 2022
@@ -33697,57 +33687,6 @@ references:
   type: article-journal
   volume: '163'
 
-- id: schneider2002structurea
-  abstract: >-
-    Spores of the aquatic heterosporous fern family Marsileaceae differ markedly
-    from spores of Salviniaceae, the only other family of heterosporous ferns
-    and sister group to Marsileaceae, and from spores of all homosporous ferns.
-    The marsileaceous outer spore wall (perine) is modiﬁed above the aperture
-    into a structure, the acrolamella, and the perine and acrolamella are
-    further modiﬁed into a remarkable gelatinous layer that envelops the spore.
-    Observations with light and scanning electron microscopy indicate that the
-    three living marsileaceous fern genera (Marsilea, Pilularia, and
-    Regnellidium) each have distinctive spores, particularly with regard to the
-    perine and acrolamella. Several spore characters support a division of
-    Marsilea into two groups. Spore character evolution is discussed in the
-    context of developmental and possible functional aspects. The gelatinous
-    perine layer acts as a ﬂexible, ﬂoating organ that envelops the spores only
-    for a short time and appears to be an adaptation of marsileaceous ferns to
-    amphibious habitats. The gelatinous nature of the perine layer is likely the
-    result of acidic polysaccharide components in the spore wall that have
-    hydrogel (swelling and shrinking) properties. Megaspores ﬂoating at the
-    water/air interface form a concave meniscus, at the center of which is the
-    gelatinous acrolamella that encloses a “sperm lake.” This meniscus creates a
-    vortex-like effect that serves as a trap for free-swimming sperm cells,
-    propelling them into the sperm lake.
-  accessed:
-    - year: 2026
-      month: 2
-      day: 22
-  author:
-    - family: Schneider
-      given: Harald
-    - family: Pryer
-      given: Kathleen M.
-  citation-key: schneider2002structurea
-  container-title: International Journal of Plant Sciences
-  container-title-short: International Journal of Plant Sciences
-  DOI: 10.1086/340736
-  ISSN: 1058-5893, 1537-5315
-  issue: '4'
-  issued:
-    - year: 2002
-      month: 7
-  language: en
-  page: 485–505
-  source: DOI.org (Crossref)
-  title: >-
-    Structure and function of spores in the aquatic heterosporous fern family
-    Marsileaceae
-  type: article-journal
-  URL: http://www.journals.uchicago.edu/doi/10.1086/340736
-  volume: '163'
-
 - id: schneider2004chloroplast
   author:
     - family: Schneider
@@ -36572,6 +36511,44 @@ references:
   type: article-journal
   URL: http://doi.wiley.com/10.1111/jse.12226
   volume: '54'
+
+- id: sigel2025being
+  accessed:
+    - year: 2026
+      month: 2
+      day: 24
+  author:
+    - family: Sigel
+      given: Erin M.
+    - family: Mendez-Reneau
+      given: Jonas I.
+    - family: Sutherland
+      given: Brittany L.
+    - family: Schwartsburd
+      given: Pedro Bond
+    - family: Holt
+      given: Stacy D.
+    - family: Beck
+      given: James B.
+  citation-key: sigel2025being
+  container-title: Biological Invasions
+  container-title-short: Biol Invasions
+  DOI: 10.1007/s10530-025-03580-x
+  ISSN: 1387-3547, 1573-1464
+  issue: '5'
+  issued:
+    - year: 2025
+      month: 5
+  language: en
+  page: '121'
+  source: DOI.org (Crossref)
+  title: >-
+    Being ghosted: determining the progenitor genomes and biogeographic origin
+    of the invasive fern giant salvinia
+  title-short: Being ghosted
+  type: article-journal
+  URL: https://link.springer.com/10.1007/s10530-025-03580-x
+  volume: '27'
 
 - id: sigeloverlapping
   author:
@@ -42673,20 +42650,6 @@ references:
   type: article-journal
   volume: '70'
 
-- id: wagnerjr.1993new
-  author:
-    - family: Wagner
-      given: Warren H
-  citation-key: wagnerjr.1993new
-  container-title: Contrib Univ Mich Herb
-  issued:
-    - year: 1993
-  page: 63–82
-  title: New species of Hawaiian pteridophytes
-  type: article-journal
-  URL: http://kbd.kew.org/kbd/detailedresult.do?id=296935
-  volume: '19'
-
 - id: wagnerjr1966new
   author:
     - family: Wagner
@@ -42700,20 +42663,6 @@ references:
   title: New data on North American oak ferns, Gymnocarpium
   type: article-journal
   volume: '68'
-
-- id: wagnerjr1974structure
-  author:
-    - family: Wagner
-      given: Warren H
-  citation-key: wagnerjr1974structure
-  container-title: Annals of the Missouri Botanical Garden
-  issued:
-    - year: 1974
-  page: 332–353
-  publisher: JSTOR
-  title: Structure of spores in relation to fern phylogeny
-  type: article-journal
-  URL: http://www.jstor.org/stable/10.2307/2395061
 
 - id: wagnerjr1978new
   abstract: >-
@@ -42872,6 +42821,73 @@ references:
   type: article-journal
   URL: https://www.reabic.net/aquaticinvasions/2020/issue4.aspx
   volume: '15'
+
+- id: waldron2026phylogenomics
+  abstract: >-
+    Rapid species formation, cryptic species, and interspecific hybridization
+    present serious analytical challenges for systematists, yet are important
+    processes in the diversification of many taxa. We estimated the phylogenomic
+    history of the woodland salamanders (Plethodon), a genus with many
+    morphologically cryptic species and unresolved phylogenetic relationships.
+    Hybridization between many contemporary species is well-established, but its
+    effect on species tree topology has not yet been addressed in a phylogenetic
+    framework using genomic data. Using anchored hybrid enrichment data from 194
+    samples across all 57 recognized species of Plethodon, we estimated species
+    relationships and tested for gene flow using clustering analyses (DAPC),
+    hybrid detection statistics (HyDe), and species networks (SNaQ).
+    Relationships within most major clades were well-supported, with some
+    hybridization events corresponding to low node support or discordance across
+    tree-based methods. Cryptic phylogeographic structure was recovered in many
+    species, highlighting novel lineages in need of targeted species
+    delimitation studies. However, the “glutinosus group,” which includes half
+    of all described species, exhibited extensive hybridization and many
+    instances of clustering assignments discordant with the current taxonomy.
+    Phylogenetic network analyses revealed that a combination of reticulate
+    evolution, species-level polyphyly, and taxonomic over-splitting caused the
+    phylogenetic discordance. Our results suggest that hybridization has played
+    an important role in the history of Plethodon, and that species-level
+    taxonomy, particularly in the glutinosus group, should be revisited.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 24
+  author:
+    - family: Waldron
+      given: Brian P.
+    - family: Hantak
+      given: Maggie M.
+    - family: Watts
+      given: Emily F.
+    - family: Uyeda
+      given: Josef C.
+    - family: Lemmon
+      given: Alan R.
+    - family: Lemmon
+      given: Emily Moriarty
+    - family: Guralnick
+      given: Robert P.
+    - family: Blackburn
+      given: David C.
+    - family: Kuchta
+      given: Shawn R.
+  citation-key: waldron2026phylogenomics
+  container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2026.108579
+  ISSN: '10557903'
+  issued:
+    - year: 2026
+      month: 5
+  language: en
+  page: '108579'
+  source: DOI.org (Crossref)
+  title: >-
+    Phylogenomics of the woodland salamanders (Plethodon): Reticulate evolution
+    and indistinct species boundaries
+  title-short: Phylogenomics of the woodland salamanders (Plethodon)
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1055790326000497
+  volume: '218'
 
 - id: walker1962cytology
   author:
@@ -46609,6 +46625,66 @@ references:
   URL: http://doi.wiley.com/10.1111/jse.12141
   volume: '53'
 
+- id: xiang2020superrepellency
+  abstract: |-
+    Significance
+                
+                  Instability and collapse of the underwater slippery air mattress hinder its applications, after which the air mattress cannot be recovered even on superhydrophobic surfaces like lotus leaves. Beyond superhydrophobicity, we present the underwater superrepellent capacity of
+                  Salvinia
+                  leaves, which can efficiently and robustly recover the invalid slippery air mattress by trapping the replenished air to replace the water in the microstructures. The interconnected wedge-shaped grooves on the base are key to the recovery, which spontaneously transport the replenished air to the entire surface governed by a gas wicking effect. Using 3D printing technology, biomimetic artificial
+                  Salvinia
+                  surfaces are fabricated, which successfully achieves the recovery of the air mattress. This finding will greatly extend the underwater applications of water-repellant surfaces.
+                
+              , 
+                
+                  Biomimetic superhydrophobic surfaces display many excellent underwater functionalities, which attribute to the slippery air mattress trapped in the structures on the surface. However, the air mattress is easy to collapse due to various disturbances, leading to the fully wetted Wenzel state, while the water filling the microstructures is difficult to be repelled to completely recover the air mattress even on superhydrophobic surfaces like lotus leaves. Beyond superhydrophobicity, here we find that the floating fern,
+                  Salvinia molesta
+                  , has the superrepellent capability to efficiently replace the water in the microstructures with air and robustly recover the continuous air mattress. The hierarchical structures on the leaf surface are demonstrated to be crucial to the recovery. The interconnected wedge-shaped grooves between epidermal cells are key to the spontaneous spreading of air over the entire leaf governed by a gas wicking effect to form a thin air film, which provides a base for the later growth of the air mattress in thickness synchronously along the hairy structures. Inspired by nature, biomimetic artificial
+                  Salvinia
+                  surfaces are fabricated using 3D printing technology, which successfully achieves a complete recovery of a continuous air mattress to exactly imitate the superrepellent capability of
+                  Salvinia
+                  leaves. This finding will benefit the design principles of water-repellent materials and expand their underwater applications, especially in extreme environments.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 24
+  author:
+    - family: Xiang
+      given: Yaolei
+    - family: Huang
+      given: Shenglin
+    - family: Huang
+      given: Tian-Yun
+    - family: Dong
+      given: Ao
+    - family: Cao
+      given: Di
+    - family: Li
+      given: Hongyuan
+    - family: Xue
+      given: Yahui
+    - family: Lv
+      given: Pengyu
+    - family: Duan
+      given: Huiling
+  citation-key: xiang2020superrepellency
+  container-title: Proceedings of the National Academy of Sciences
+  container-title-short: Proc. Natl. Acad. Sci. U.S.A.
+  DOI: 10.1073/pnas.1900015117
+  ISSN: 0027-8424, 1091-6490
+  issue: '5'
+  issued:
+    - year: 2020
+      month: 2
+      day: 4
+  language: en
+  page: 2282–2287
+  source: DOI.org (Crossref)
+  title: Superrepellency of underwater hierarchical structures on *Salvinia* leaf
+  type: article-journal
+  URL: https://pnas.org/doi/full/10.1073/pnas.1900015117
+  volume: '117'
+
 - id: xing2013onocleaceae
   author:
     - family: Xing
@@ -46811,45 +46887,8 @@ references:
   language: English
   page: 715–723
   title: >-
-    Regnellites nagashimaegen. et sp. nov., the oldest macrofossil of
+    *Regnellites nagashimae* gen. et sp. nov., the oldest macrofossil of
     Marsileaceae, from the Upper Jurassic to Lower Cretaceous of western Japan
-  type: article-journal
-  URL: http://www.journals.uchicago.edu/doi/10.1086/342036
-  volume: '163'
-
-- id: yamada2002regnellitesa
-  abstract: >-
-    The oldest macrofossil of Marsileaceae, Regnellites nagashimae gen. et sp.
-    nov. from the Upper Jurassic to Lower Cretaceous Kiyosue Formation of
-    western Japan is described. The new genus Regnellites is characterized by
-    two leaﬂets, anastomosing venation without a marginal vein, and very large
-    sporocarps at the nodes. A comparison between Regnellites and other
-    heterosporous water fern genera indicates that the genus is distinct from
-    the living and fossil genera of Marsileaceae.
-  accessed:
-    - year: 2026
-      month: 2
-      day: 22
-  author:
-    - family: Yamada
-      given: Toshihiro
-    - family: Kato
-      given: Masahiro
-  citation-key: yamada2002regnellitesa
-  container-title: International Journal of Plant Sciences
-  container-title-short: International Journal of Plant Sciences
-  DOI: 10.1086/342036
-  ISSN: 1058-5893, 1537-5315
-  issue: '5'
-  issued:
-    - year: 2002
-      month: 9
-  language: en
-  page: 715–723
-  source: DOI.org (Crossref)
-  title: >-
-    *Regnellites nagashimae* gen. et sp. nov., the Oldest Macrofossil of
-    Marsileaceae, from the Upper Jurassic to Lower Cretaceous of Western Japan
   type: article-journal
   URL: http://www.journals.uchicago.edu/doi/10.1086/342036
   volume: '163'
