@@ -41,6 +41,7 @@ tar_load(
   c(
     ppg,
     commenters,
+    author_list,
     children_tally,
     issues_count_plot,
     ppg_issues,
@@ -75,10 +76,7 @@ auth_order <- tibble::tribble(
   "Eric Schuettpelz", 5,
 )
 
-authors <- read_csv(
-  "data/ppg2_author_list.csv",
-  show_col_types = FALSE
-) |>
+authors <- author_list|>
   left_join(auth_order, by = "name") |>
   arrange(order, str_to_lower(surname)) %>%
   assert(not_na, name, institution) |>
@@ -153,6 +151,32 @@ n <- ppg_2_taxa_count |>
 
 We thank the organizers of the XX International Botanical Congress (Madrid, 2024) and the Botany 2025 (Palm Springs, CA) conferences for hosting in-person meetings and workshops that were vital to developing this update.
 We thank Alan Elliott and Roger Hyam for technical support in transitioning to the World Flora Online database, and World Flora Online for its cooperation and recognition of PPG as a TEN.
+
+## Author contributions
+
+```{r}
+initials <- author_list |>
+  mutate(
+    # add initials from name
+    initials = str_extract_all(name, "\\b\\w") |>
+      map_chr(~ paste(.x, collapse = ""))
+  ) |>
+  add_count(initials) |>
+  filter(name %in% c(
+    "Joel H. Nitta",
+    "Michael Hassler",
+    "Carl Rothfels",
+    "Harald Schneider",
+    "Eric Schuettpelz"
+  ))
+
+# Initials are not unique so we cannot use these for author contributions
+```
+
+Joel H. Nitta organized monthly voting, wrote code used for importing data, and lead writing of the manuscript.
+Michael Hassler provided taxonomic data.
+Joel H. Nitta, Carl Rothfels, Harald Schneider, and Eric Schuettpelz served on the PPG organizing committee.
+All authors participated by submitting and/or voting on taxonomic proposals and reviewed the manuscript.
 
 ## Abstract
 
@@ -234,6 +258,9 @@ We anticipate that updates (new versions) will be published much more frequently
 This will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing, through the versioning system, the ability to unambiguously reference a specific snapshot of the classification.
 
 **Code availability. --** All data and code used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
+
+**AI usage. --** Generative AI was used to help write some of the code.
+Generative AI was not used to write any content of the manuscript.
 
 ## Results
 

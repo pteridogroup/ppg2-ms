@@ -10,7 +10,7 @@ tar_plan(
     "https://github.com/pteridogroup/ppg/raw/refs/heads/main/data/ppg.csv"
   ),
   ppg_raw = read_csv(ppg_csv_url),
-  
+
   # Clean PPG data
   # - remove invalid nomenclatural status and unchecked taxa
   # - remove nothogenera that haven't received votes
@@ -204,15 +204,15 @@ tar_plan(
     "template.docx"
   ),
 
-  tar_quarto(
-    ppg2_ms,
-    "ppg2_ms.Qmd",
-    quiet = FALSE
+  tar_file_read(
+    author_list,
+    "data/ppg2_author_list.csv",
+    read_csv(!!.x, show_col_types = FALSE)
   ),
 
   tar_quarto(
-    contributions,
-    "author_contributions.qmd",
+    ppg2_ms,
+    "ppg2_ms.Qmd",
     quiet = FALSE
   ),
 
