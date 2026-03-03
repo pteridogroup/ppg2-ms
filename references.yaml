@@ -308,6 +308,60 @@ references:
   type: article-journal
   volume: '24'
 
+- id: ali2025aquatic
+  abstract: >-
+    Salvinia, a free-floating aquatic, rootless fern, has a rich fossil record
+    in Cenozoic sediments of Southeast Asia, Europe, and North-South America.
+    However, none have been reported from the Cenozoic sediments of India, until
+    now. Here, we report the occurrence of vegetative remains (both impressions
+    and compressions), along with trichome bases, resembling both
+    morphologically and anatomically those of the extant genus Salvinia Se´guier
+    from the Late Paleocene-Early Eocene of the Subathu Formation in the Mandi
+    District of Himachal Pradesh, northwestern India. These newly discovered
+    fossils are characterized by round, elliptical, or elongate fronds, with
+    small hexagonal or quadrangular areolaes, usually 8–16 tubercles in a row
+    between adjacent lateral veins, and craspedodromous lateral veins lacking
+    marginal loops. Anatomically, epidermal cells are quadrangular or polygonal
+    with diacytic stomata composed of two guard cells and numerous conical,
+    filiform, slightly enlarged, and curved non-glandular trichomes. We describe
+    these Eocene specimens as a new species, namely Salvinia indica A. Ali & M.
+    A. Khan sp. nov. The discovery of this species suggests that the Eocene
+    Subathu Formation represents sediments deposited in mostly calm freshwater
+    bodies such as very low-energy meandering rivers, streams, or wetland ponds.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Ali
+      given: Ashif
+    - family: Spicer
+      given: Robert A.
+    - family: Su
+      given: Tao
+    - family: Kundu
+      given: Sampa
+    - family: Khan
+      given: Mahasin Ali
+  citation-key: ali2025aquatic
+  container-title: Aquatic Botany
+  container-title-short: Aquatic Botany
+  DOI: 10.1016/j.aquabot.2025.103916
+  ISSN: '03043770'
+  issued:
+    - year: 2025
+      month: 11
+  language: en
+  page: '103916'
+  source: DOI.org (Crossref)
+  title: >-
+    An aquatic pteridophyte, Salvinia, from the Subathu Formation (Late
+    Paleocene–Early Eocene) of Himachal Himalaya, India, and its biogeographical
+    implications
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0304377025000518
+  volume: '201'
+
 - id: almeida2015thirteen
   author:
     - family: Almeida
@@ -833,6 +887,51 @@ references:
   type: article-journal
   URL: http://biotaxa.org/Phytotaxa/article/view/phytotaxa.291.1.5
   volume: '291'
+
+- id: armitage2025adaptive
+  abstract: |-
+    Abstract
+                Plants fix nitrogen in concert with diverse microbial symbionts, often recruiting them from the surrounding environment each generation. Vertical transmission of a microbial symbiont from parent to offspring can produce extreme evolutionary consequences, including metabolic codependence, genome reduction, and synchronized life cycles. One of the few examples of vertical transmission of N-fixing symbionts occurs in Azolla ferns, which maintain an obligate mutualism with the cyanobacterium Trichormus azollae—but the genomic consequences of this interaction, and whether the symbiosis involves other vertically transmitted microbial partners, are currently unknown. We generated high-coverage metagenomes across the genus Azolla and reconstructed metagenome assembled genomes to investigate whether a core microbiome exists within Azolla leaf cavities, and how the genomes of T. azollae diverged from their free-living relatives. Our results suggest that T. azollae is the only consistent symbiont across all Azolla accessions, and that other bacterial groups are transient or facultative associates. Pangenomic analyses of T. azollae indicate extreme pseudogenization and gene loss compared to free-living relatives—especially in defensive, stress-tolerance, and secondary metabolite pathways—yet, the key functions of nitrogen fixation and photosynthesis remain intact. Additionally, differential codon bias and intensified positive selection on photosynthesis, intracellular transport, and carbohydrate metabolism genes suggest ongoing evolution in response to the unique conditions within Azolla leaf cavities. These findings highlight how genome erosion and shifting selection pressures jointly drive the evolution of this unique mutualism, while broadening the taxonomic scope of genomic studies on vertically transmitted symbioses.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Armitage
+      given: David W
+    - family: Alonso-Sánchez
+      given: Alexandro G
+    - family: Coy
+      given: Samantha R
+    - family: Cheng
+      given: Zhuli
+    - family: Hagenbeek
+      given: Arno
+    - family: López-Martínez
+      given: Karla P
+    - family: Phua
+      given: Yong Heng
+    - family: Sears
+      given: Alden R
+  citation-key: armitage2025adaptive
+  container-title: The ISME Journal
+  DOI: 10.1093/ismejo/wraf154
+  ISSN: 1751-7362, 1751-7370
+  issue: '1'
+  issued:
+    - year: 2025
+      month: 1
+      day: 2
+  language: en
+  license: https://creativecommons.org/licenses/by/4.0/
+  page: wraf154
+  source: DOI.org (Crossref)
+  title: >-
+    Adaptive pangenomic remodeling in the *Azolla* cyanobiont amid a transient
+    microbiome
+  type: article-journal
+  URL: https://academic.oup.com/ismej/article/doi/10.1093/ismejo/wraf154/8216778
+  volume: '19'
 
 - id: arora2003comparison
   author:
@@ -7076,6 +7175,64 @@ references:
   title: '? description of Woodsiaceae'
   type: article-journal
 
+- id: dijkhuizenThereFoulPlay2018
+  abstract: "Summary\n            \n              \n                \n                  \n                    Dinitrogen fixation by\n                    Nostoc azollae\n                    residing in specialized leaf pockets supports prolific growth of the floating fern\n                    Azolla filiculoides\n                    . To evaluate contributions by further microorganisms, the\n                    A.\_filiculoides\n                    microbiome and nitrogen metabolism in bacteria persistently associated with\n                    Azolla\n                    ferns were characterized.\n                  \n                \n                \n                  \n                    A metagenomic approach was taken complemented by detection of N\n                    2\n                    O released and nitrogen isotope determinations of fern biomass. Ribosomal RNA genes in sequenced DNA of natural ferns, their enriched leaf pockets and water filtrate from the surrounding ditch established that bacteria of\n                    A.\_filiculoides\n                    differed entirely from surrounding water and revealed species of the order Rhizobiales. Analyses of seven cultivated\n                    Azolla\n                    species confirmed persistent association with Rhizobiales.\n                  \n                \n                \n                  \n                    Two distinct nearly full‐length Rhizobiales genomes were identified in leaf‐pocket‐enriched samples from ditch grown\n                    A\n                    .\_\n                    filiculoides\n                    . Their annotation revealed genes for denitrification but not N\n                    2\n                    ‐fixation.\n                    15\n                    N\n                    2\n                    incorporation was active in ferns with\n                    N.\_azollae\n                    but not in ferns without. N\n                    2\n                    O was not detectably released from surface‐sterilized ferns with the Rhizobiales.\n                  \n                \n                \n                  \n                    N\n                    2\n                    ‐fixing\n                    N.\_azollae\n                    , we conclude, dominated the microbiome of\n                    Azolla\n                    ferns. The persistent but less abundant heterotrophic Rhizobiales bacteria possibly contributed to lowering O\n                    2\n                    levels in leaf pockets but did not release detectable amounts of the strong greenhouse gas N\n                    2\n                    O."
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Dijkhuizen
+      given: Laura W.
+    - family: Brouwer
+      given: Paul
+    - family: Bolhuis
+      given: Henk
+    - family: Reichart
+      given: Gert‐Jan
+    - family: Koppers
+      given: Nils
+    - family: Huettel
+      given: Bruno
+    - family: Bolger
+      given: Anthony M.
+    - family: Li
+      given: Fay‐Wei
+    - family: Cheng
+      given: Shifeng
+    - family: Liu
+      given: Xin
+    - family: Wong
+      given: Gane Ka‐Shu
+    - family: Pryer
+      given: Kathleen
+    - family: Weber
+      given: Andreas
+    - family: Bräutigam
+      given: Andrea
+    - family: Schluepmann
+      given: Henriette
+  citation-key: dijkhuizenThereFoulPlay2018
+  container-title: New Phytologist
+  container-title-short: New Phytologist
+  DOI: 10.1111/nph.14843
+  ISSN: 0028-646X, 1469-8137
+  issue: '1'
+  issued:
+    - year: 2018
+      month: 1
+  language: en
+  license: http://creativecommons.org/licenses/by/4.0/
+  page: 453–466
+  source: DOI.org (Crossref)
+  title: >-
+    Is there foul play in the leaf pocket? The metagenome of floating fern
+    *Azolla* reveals endophytes that do not fix N~2~ but may denitrify
+  title-short: Is there foul play in the leaf pocket?
+  type: article-journal
+  URL: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.14843
+  volume: '217'
+
 - id: dimichele1992diaphorodendraceae
   abstract: >-
     Synchysidendron, gen. nov., is segregated from Diaphorodendron DiMichele
@@ -13157,6 +13314,42 @@ references:
   type: article-journal
   volume: '173'
 
+- id: holt2023what
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Holt
+      given: Stacy D.
+    - family: Sigel
+      given: Erin M.
+    - family: Sutherland
+      given: Brittany L.
+    - family: Schwartsburd
+      given: Pedro Bond
+    - family: Beck
+      given: James B.
+  citation-key: holt2023what
+  container-title: Biological Invasions
+  container-title-short: Biol Invasions
+  DOI: 10.1007/s10530-023-03028-0
+  ISSN: 1387-3547, 1573-1464
+  issue: '7'
+  issued:
+    - year: 2023
+      month: 7
+  language: en
+  page: 2131–2141
+  source: DOI.org (Crossref)
+  title: >-
+    What is Salvinia molesta (Salviniaceae)? Determining the maternal progenitor
+    and genetic diversity of the clonal invasive fern giant salvinia
+  title-short: What is Salvinia molesta (Salviniaceae)?
+  type: article-journal
+  URL: https://link.springer.com/10.1007/s10530-023-03028-0
+  volume: '25'
+
 - id: holttum1940fern
   author:
     - family: Holttum
@@ -14955,6 +15148,31 @@ references:
   title-short: Biotechnology in Clone Gametophytes
   type: chapter
   URL: http://link.springer.com/10.1007/978-3-319-75103-0_4
+
+- id: johnson1985new
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Johnson
+      given: David M.
+  citation-key: johnson1985new
+  container-title: American Fern Journal
+  container-title-short: American Fern Journal
+  DOI: 10.2307/1546579
+  ISSN: '00028444'
+  issue: '1'
+  issued:
+    - year: 1985
+      month: 1
+  language: en
+  page: '30'
+  source: DOI.org (Crossref)
+  title: New records for longevity of *Marsilea* sporocarps
+  type: article-journal
+  URL: https://www.jstor.org/stable/1546579?origin=crossref
+  volume: '75'
 
 - id: johnson1985systematics
   author:
@@ -17668,33 +17886,17 @@ references:
   URL: http://www.jstage.jst.go.jp/article/cytologia1929/32/3-4/32_3-4_500/_article
   volume: '32'
 
-- id: kuriachan1972interspecific
-  author:
-    - family: Kuriachan
-      given: P. I.
-  citation-key: kuriachan1972interspecific
-  container-title: Indian Journal of Botany
-  issue: '1'
-  issued:
-    - year: 1972
-  page: 51–54
-  title: Interspecific origin of Salvinia molesta Mitchell evidence from karyotype.
-  type: article-journal
-  volume: '2'
-
 - id: kuriachan1979interspecific
   author:
     - family: Kuriachan
       given: P. I.
   citation-key: kuriachan1979interspecific
   container-title: Indian Journal of Botany
+  issue: '1'
   issued:
     - year: 1979
-  page: 51--54
-  part-number: '1'
-  title: >-
-    Interspecific origin of *Salvinia molesta* Mitchell - Evidence from
-    karyotype
+  page: 51–54
+  title: Interspecific origin of Salvinia molesta Mitchell - Evidence from karyotype
   type: article-journal
   volume: '2'
 
@@ -17766,6 +17968,50 @@ references:
   title: Chromosome numbers of some Japanese ferns 9
   type: article-journal
   volume: II-2
+
+- id: kwokvandergiezenHighConservationTranslationEnabling2025
+  abstract: |-
+    Abstract
+                RNA editing is essential for processing transcripts in plant chloroplasts and mitochondria. Levels of RNA editing vary between lineages, but some hornworts, lycophytes, and ferns have an extraordinary abundance of RNA editing. A feature of “hyper-editing” species is the prevalence of RNA editing events that promote translation by creating start codons or removing stop codons via C-to-U or U-to-C editing, respectively. These “translation-enabling” RNA editing events may play roles in regulating organelle gene expression. To investigate the importance of translation-enabling RNA editing events, we generated DNA and RNA sequence libraries for four Salviniales water ferns: Azolla rubra, Azolla pinnata, Marsilea mutica, and Salvinia molesta. We assembled chloroplast genomes, mitochondrial genes, and transcriptomes and identified RNA editing sites and candidate RNA editing factors. We reanalyzed sequence data of Azolla filiculoides and conducted a comparative analysis of RNA editing in chloroplasts and mitochondrial transcripts. Estimates of pyrimidine transition rates show that translation-enabling RNA editing sites are more conserved than other nonsynonymous editing sites, suggesting an emergent role in organelle gene expression that is not selectively neutral. This makes these events rare examples of RNA editing conferring adaptive advantage, in contrast to the prevailing view that RNA editing arises via constructive neutral evolutionary processes. Shotgun proteomics of M. mutica chloroplast thylakoid fractions verified the expected consequences of RNA editing on translation of chloroplast transcripts and implies that mechanisms exist to avoid translation of partially edited transcripts. Start codon editing may be one of those mechanisms.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Kwok Van Der Giezen
+      given: Farley M
+    - family: McDowell
+      given: Rose
+    - family: Duncan
+      given: Owen
+    - family: Zumkeller
+      given: Simon
+    - family: Colas Des Francs-Small
+      given: Catherine
+    - family: Small
+      given: Ian
+  citation-key: kwokvandergiezenHighConservationTranslationEnabling2025
+  container-title: Molecular Biology and Evolution
+  DOI: 10.1093/molbev/msaf241
+  editor:
+    - family: Lu
+      given: Jian
+  ISSN: 0737-4038, 1537-1719
+  issue: '10'
+  issued:
+    - year: 2025
+      month: 10
+      day: 1
+  language: en
+  license: https://creativecommons.org/licenses/by/4.0/
+  page: msaf241
+  source: DOI.org (Crossref)
+  title: >-
+    High conservation of translation-enabling RNA editing sites in hyper-editing
+    ferns implies they are not selectively neutral
+  type: article-journal
+  URL: https://academic.oup.com/mbe/article/doi/10.1093/molbev/msaf241/8268412
+  volume: '42'
 
 - id: la2014phytodegradation
   abstract: >-
@@ -18062,7 +18308,7 @@ references:
   URL: https://rsnz.onlinelibrary.wiley.com/doi/10.1080/0028825X.1989.10414129
   volume: '27'
 
-- id: large1993spore
+- id: largeSporeMorphologyNew1993
   abstract: |-
     Abstract 
                 Sporocarps, megaspores, and micro‐spores of Azolla filiculoides are described from fresh fertile material from the South Island of New Zealand. Size estimates are given along with light and scanning electron microscope photographs. A brief discussion of spore morphology, perine substructure, and leaf trichomes is given with regard to the taxonomy of A. filiculoides and A. rubra. Differences between these taxa with regard to sporoderm substructure and the presence of filaments on the collar of the megaspore support their separation but may be considered insufficient to justify maintaining taxonomic separation beyond varietal status for rubra.
@@ -18075,7 +18321,7 @@ references:
       given: M. F.
     - family: Braggins
       given: J. E.
-  citation-key: large1993spore
+  citation-key: largeSporeMorphologyNew1993
   container-title: New Zealand Journal of Botany
   container-title-short: New Zealand Journal of Botany
   DOI: 10.1080/0028825X.1993.10419519
@@ -21448,6 +21694,51 @@ references:
   type: article-journal
   URL: https://www.jpsonline.co.in/index.php/jop/article/view/488
   volume: '5'
+
+- id: mahlbergExperimentalStudiesMegaspore1975
+  abstract: >-
+    Megaspores of Marsilea, Pilularia, and Regnellidium possess an average
+    viability of 50%,-75%0 when grown in the presence or absence of sporocarp
+    contents. Approximately 96% of the viable megaspores in Regnellidium formed
+    sporophytes uhen grown in the presence of microspores. In Marsilea and
+    Pilularia in contrast sporophytes formed on 58% and 38CXo respectively of
+    the viable megaspores. Factors influencing fertilization remain unknown but
+    it was determined for Marsilea that archegonium receptivity to fertilization
+    progressively decreased when archegonia were not fertilized within
+    approximately 12-24 h and no fertilization occurred after 24 h. The
+    appearance of sporophytes on nearly all isolated megagametophytes of
+    Regnellidilem indicated the occurrence of parthenogenesis rather than
+    apogamy. In contrast this phenomenon M as absent for isolated megaspores of
+    Pilularia and for nearly all megaspores of Marsilea. Parthenogenesis appears
+    to perform a major role in the reproduction of Regnellidium but not in
+    Marsilea and Pillularia.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Mahlberg
+      given: Paul G.
+    - family: Baldwin
+      given: Margaret
+  citation-key: mahlbergExperimentalStudiesMegaspore1975
+  container-title: Botanical Gazette
+  container-title-short: Botanical Gazette
+  DOI: 10.1086/336813
+  ISSN: 0006-8071
+  issue: '3'
+  issued:
+    - year: 1975
+      month: 9
+  language: en
+  page: 269–273
+  source: DOI.org (Crossref)
+  title: >-
+    Experimental studies on megaspore viability, parthenogenesis, and sporophyte
+    formation in *Marsilea, Pilularia,* and *Regnellidium*
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/10.1086/336813
+  volume: '136'
 
 - id: mahley2018geometry
   abstract: >-
@@ -34236,6 +34527,25 @@ references:
   type: chapter
   volume: '1'
 
+- id: schneller1990salviniaceae
+  author:
+    - family: Kramer
+      given: K U
+  citation-key: schneller1990salviniaceae
+  collection-editor:
+    - family: Kubitzki
+      given: K
+  collection-title: The Family and Genera of Vascular Plants
+  container-title: Pteridophytes and Gymnosperms
+  issued:
+    - year: 1990
+  page: 256–258
+  publisher: Spring
+  publisher-place: Berlin
+  title: Marsileaceae
+  type: chapter
+  volume: '1'
+
 - id: scholch2013sorus
   abstract: >-
     This paper deals with a detailed investigation of the sorus development in
@@ -40114,6 +40424,68 @@ references:
   type: article-journal
   volume: '14'
 
+- id: thomsonGlobalListAccepted2021
+  abstract: >-
+    Species lists are widely used in legislation and regulation to manage and
+    conserve biodiversity. In this paper, we explore the issues caused by the
+    lack of an adequately governed and universally accepted list of the world’s
+    species. These include lack of quality control, duplicated effort, conflicts
+    of interest, lack of currency, and confusion in the scientific use of
+    taxonomic information. If species lists are to fulfill their role
+    efficiently, then the governance systems underlying their creation must keep
+    pace. Fortunately, modernization of species list governance is now possible
+    as a result of advances in biodiversity informatics and two decades of
+    experience working to create the backbone of a global species list.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Thomson
+      given: Scott A.
+    - family: Thiele
+      given: Kevin
+    - family: Conix
+      given: Stijn
+    - family: Christidis
+      given: Les
+    - family: Costello
+      given: Mark John
+    - family: Hobern
+      given: Donald
+    - family: Nikolaeva
+      given: Svetlana
+    - family: Pyle
+      given: Richard L.
+    - family: Van Dijk
+      given: Peter Paul
+    - family: Weaver
+      given: Haylee
+    - family: Zachos
+      given: Frank E.
+    - family: Zhang
+      given: Zhi-Qiang
+    - family: Garnett
+      given: Stephen T.
+  citation-key: thomsonGlobalListAccepted2021
+  container-title: Organisms Diversity & Evolution
+  container-title-short: Org Divers Evol
+  DOI: 10.1007/s13127-021-00518-8
+  ISSN: 1439-6092, 1618-1077
+  issue: '4'
+  issued:
+    - year: 2021
+      month: 12
+  language: en
+  page: 623–630
+  source: DOI.org (Crossref)
+  title: >-
+    Towards a global list of accepted species II. Consequences of inadequate
+    taxonomic list governance
+  type: article-journal
+  URL: https://link.springer.com/10.1007/s13127-021-00518-8
+  volume: '21'
+
 - id: tian2015systematic
   author:
     - family: Tian
@@ -41452,6 +41824,61 @@ references:
   type: article-journal
   URL: http://www.bioone.org/doi/10.3417/2011022
   volume: '24'
+
+- id: valle2026mesoamerican
+  abstract: >-
+    The genus Pleopeltis stands out for its high species richness in tropical
+    montane regions and its disjunct neotropical–afrotropical distribution, with
+    most species occurring in the Neotropics. This distribution provides a
+    unique opportunity to explore dispersal patterns, a key mechanism in fern
+    biogeography. In this study, we aimed to identify the biogeographic
+    processes shaping the distribution of Pleopeltis and the directionality of
+    its dispersal events throughout evolutionary history. We analysed a combined
+    dataset of three plastid regions from 70 species to infer divergence times.
+    Ancestral range estimation and stochastic biogeographic mapping were used to
+    elucidate biogeographic patterns and processes. Our findings showed that
+    dispersal was the main process driving the genus’s distribution, accounting
+    for nearly half of the inferred biogeographic events. Notably, we identified
+    a recent west-to-east dispersal pattern connecting the Neotropics with the
+    Paleotropics, highlighting the significance of long-distance dispersal in
+    ferns. Mexico and Central America were identified as the centre of origin
+    and diversity for the genus and the main source of dispersal. The Andes were
+    the second most important centre, functioning as a source and sink for
+    dispersal events. These findings emphasize the critical roles of these
+    dynamic centres in the diversification and distribution of global
+    biodiversity.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Valle
+      given: Carolina Do
+    - family: Salino
+      given: Alexandre
+    - family: Lima
+      given: Lucas Vieira
+    - family: Moura
+      given: Ingridy Oliveira
+    - family: Almeida
+      given: Thaís Elias
+  citation-key: valle2026mesoamerican
+  container-title: Botanical Journal of the Linnean Society
+  DOI: 10.1093/botlinnean/boaf108
+  ISSN: 0024-4074, 1095-8339
+  issued:
+    - year: 2026
+      month: 2
+      day: 6
+  language: en
+  license: https://academic.oup.com/pages/standard-publication-reuse-rights
+  page: boaf108
+  source: DOI.org (Crossref)
+  title: 'Mesoamerican roots: the biogeographic history of the fern genus *Pleopeltis*'
+  title-short: Mesoamerican roots
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/botlinnean/advance-article/doi/10.1093/botlinnean/boaf108/8466360
 
 - id: vanalderwereltvanrosenburgh1918new
   author:
@@ -48533,7 +48960,7 @@ references:
   publisher: Springer Berlin Heidelberg
   publisher-place: Berlin, Heidelberg
   source: DOI.org (Crossref)
-  title: Structural Characteristics of the Cyanobacterium–Azolla Symbioses
+  title: Structural Characteristics of the Cyanobacterium–*Azolla* Symbioses
   type: chapter
   URL: http://link.springer.com/10.1007/7171_2008_120
   volume: '8'
