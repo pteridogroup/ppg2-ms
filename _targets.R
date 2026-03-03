@@ -83,7 +83,8 @@ tar_plan(
   # - Check that all passed issues have been included in issue type count
   issue_type_count_check = check_issue_type_count(
     ppg_issues,
-    ppg_issues_count
+    ppg_issues_count,
+    ppg_issue_count_raw
   ),
 
   # Make family-level tree ----
