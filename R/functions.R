@@ -1512,6 +1512,28 @@ make_issues_plot <- function(ppg_issues) {
       under_vote = sum(voting)
     )
 
+  # Calculate date range for consistent x-axis across both plots
+  # Add buffer to both ends to ensure all data points are visible
+  date_range <- issues %>%
+    mutate(year_month = lubridate::ym(year_month)) %>%
+    summarize(
+      min_date_actual = min(year_month),
+      min_date = min(year_month) - lubridate::days(15),
+      max_date_actual = max(year_month),
+      max_date = max(year_month) + lubridate::days(15)
+    )
+
+  # Create breaks that include start and end months
+  date_breaks_seq <- seq(
+    from = date_range$min_date_actual,
+    to = date_range$max_date_actual,
+    by = "4 months"
+  )
+  # Ensure the last date is included
+  if (max(date_breaks_seq) < date_range$max_date_actual) {
+    date_breaks_seq <- c(date_breaks_seq, date_range$max_date_actual)
+  }
+
   # Make plot of cumulative count of submitted proposals
   cum_issue_plot <-
     issues %>%
@@ -1531,7 +1553,8 @@ make_issues_plot <- function(ppg_issues) {
     ) +
     scale_x_date(
       date_labels = "%Y-%m",
-      date_breaks = "4 months"
+      breaks = date_breaks_seq,
+      limits = c(date_range$min_date, date_range$max_date)
     ) +
     theme_bw(base_size = 12) +
     theme(
@@ -1559,7 +1582,8 @@ make_issues_plot <- function(ppg_issues) {
     ) +
     scale_x_date(
       date_labels = "%Y-%m",
-      date_breaks = "4 months"
+      breaks = date_breaks_seq,
+      limits = c(date_range$min_date, date_range$max_date)
     ) +
     scale_y_continuous(
       breaks = seq(0, 10, by = 2),
