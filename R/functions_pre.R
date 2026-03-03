@@ -51,9 +51,10 @@ load_taxon_comments <- function(taxon_comments_url) {
 load_emails <- function(email_url) {
   ppg_emails <- googlesheets4::read_sheet(email_url) |>
     janitor::clean_names() |>
-    rename_with(
-      ~ str_remove_all(., "_email"),
-      matches("secondary|tertiary")
+    rename(
+      email = email_our_ppg,
+      secondary = email_official,
+      tertiary = email_other
     ) |>
     rename_with(
       ~ str_remove_all(., "_s"),
