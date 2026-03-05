@@ -1,0 +1,30 @@
+# Git files
+.git/
+.gitignore
+
+# RStudio files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# targets cache (will be rebuilt)
+_targets/
+
+# Output files (will be generated)
+*.docx
+*.pdf
+~$*.docx
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Working directory
+working/
+
+# Pre-workflow (contains sensitive data)
+_targets_pre/
+_targets_pre.R
+R/functions_pre.R
