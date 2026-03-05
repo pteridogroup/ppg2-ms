@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libtiff5-dev \
   libjpeg-dev \
   libglpk-dev \
+  libcairo2-dev \
+  libmagick++-dev \
+  libx11-dev \
   pandoc \
   git \
   curl \
