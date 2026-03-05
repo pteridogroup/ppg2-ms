@@ -52,4 +52,5 @@ RUN useradd -m -u 1000 rstudio \
 USER rstudio
 
 # Set default command to run the workflow
-CMD ["R", "-e", "targets::tar_make()"]
+CMD ["R", "--no-save", "-e", "source('renv/activate.R'); targets::tar_make()"]
+
