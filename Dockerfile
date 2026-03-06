@@ -52,5 +52,6 @@ RUN useradd -m -u 1000 rstudio \
 USER rstudio
 
 # Set default command to run the workflow
-CMD ["R", "--no-save", "-e", "source('renv/activate.R'); targets::tar_make()"]
+# The .Rprofile in the mounted directory will activate renv automatically
+CMD ["R", "--no-save", "-e", "targets::tar_make()"]
 
