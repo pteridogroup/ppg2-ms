@@ -31,13 +31,18 @@ RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v${QUART
 # Set working directory
 WORKDIR /project
 
+# Set renv paths to persist packages outside /project
+# This prevents them from being overwritten when mounting volumes
+ENV RENV_PATHS_LIBRARY=/usr/local/lib/R/renv-library
+ENV RENV_PATHS_CACHE=/usr/local/lib/R/renv-cache
+
 # Copy renv files first for better caching
 COPY renv.lock renv.lock
 COPY .Rprofile .Rprofile
 COPY renv/activate.R renv/activate.R
 COPY renv/settings.json renv/settings.json
 
-# Install renv and restore R package environment
+# Install renv and restore R package environment to persistent location
 RUN R -e "install.packages('renv', repos='https://cloud.r-project.org')" \
   && R -e "renv::restore()"
 
@@ -46,7 +51,9 @@ COPY . .
 
 # Create non-root user for security
 RUN useradd -m -u 1000 rstudio \
-  && chown -R rstudio:rstudio /project
+  && chown -R rstudio:rstudio /project \
+  && chmod -R 755 /usr/local/lib/R/renv-library \
+  && chmod -R 755 /usr/local/lib/R/renv-cache
 
 # Switch to non-root user
 USER rstudio
