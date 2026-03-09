@@ -1,5 +1,7 @@
 # PPG II Manuscript
 
+[![DOI](https://zenodo.org/badge/1117987924.svg)](https://doi.org/10.5281/zenodo.18919380)
+
 This repository contains the source code and data for the manuscript "An
 update of the Pteridophyte Phylogeny Group classification for extant
 ferns and lycophytes: PPG II" (submitted).
