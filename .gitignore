@@ -1,11 +1,8 @@
 .Rhistory
 _targets/
 _targets_pre/
-data/*
-!data/ppg_issues_edited.csv
-!data/ppg_comments.csv
-!data/table_uncertainty.csv
 *.docx
 *.pdf
 .DS_Store
 working*
+data_raw
