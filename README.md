@@ -34,10 +34,17 @@ updated classification building on [PPG I (2016)](https://doi.org/10.1111/jse.12
 - `tests/`: Unit tests for data validation
 - `_targets.R`: Main workflow orchestration using the
   [`targets`](https://docs.ropensci.org/targets/) package
-- `_targets_pre.R`: Pre-workflow for generating data files from raw data (not all raw data made public due to personally identifiable information)
+- `_targets_pre.R`: Pre-workflow for generating data files from raw data
+  (not all raw data made public due to personally identifiable
+  information)
 - `images/`: Image files used in the manuscript (not figures produced by
   analysis)
 - `renv.lock`: Package dependency specification for reproducibility
+- `Dockerfile`: Docker image specification for containerized
+  reproducibility
+- `.dockerignore`: Files to exclude from Docker build context
+- `.github/workflows/`: GitHub Actions workflows
+  - `docker-build.yml`: Automated Docker image building and publishing
 
 ## Reproducibility
 
@@ -92,6 +99,68 @@ renv::restore()
 ```r
 # Run the workflow
 targets::tar_make()
+```
+
+The manuscript and figures will be generated automatically by the
+workflow.
+
+### Alternative: Using Docker
+
+For improved reproducibility, you can use Docker to run the analysis in
+a containerized environment with all dependencies pre-installed:
+
+```bash
+# Clone the repository
+git clone https://github.com/pteridogroup/ppg2-ms.git
+cd ppg2-ms
+
+# Pull the pre-built Docker image
+docker pull joelnitta/ppg2-ms:latest
+
+# Run the workflow (must be run from the repository directory)
+docker run --rm -v $(pwd):/project joelnitta/ppg2-ms:latest
+
+# Or run interactively
+docker run --rm -it -v $(pwd):/project \
+  --entrypoint bash joelnitta/ppg2-ms:latest
+# Then inside the container, start R:
+# R
+# The .Rprofile will automatically activate renv
+```
+
+**Important:** The Docker command must be run from the cloned repository
+directory, as it mounts the current directory into the container.
+
+The Docker image includes:
+- R 4.5.0
+- Quarto 1.5.57
+- All R package dependencies from `renv.lock`
+- Required system libraries
+
+#### For Maintainers: Docker Image Updates
+
+The Docker image is automatically built and pushed to Docker Hub via
+GitHub Actions whenever:
+- Changes are pushed to `main` branch that affect `Dockerfile` or
+  `renv.lock`
+- A new release is published
+- Manually triggered via GitHub Actions
+
+**Setup (one-time):**
+
+Add Docker Hub credentials as GitHub repository secrets:
+1. Go to Settings → Secrets and variables → Actions
+2. Add `DOCKER_USERNAME` (your Docker Hub username)
+3. Add `DOCKER_PASSWORD` (your Docker Hub access token)
+
+**Manual build (if needed):**
+
+```bash
+# Build locally
+docker build -t joelnitta/ppg2-ms:latest .
+
+# Push to Docker Hub (requires docker login)
+docker push joelnitta/ppg2-ms:latest
 ```
 
 ## Contributing
