@@ -104,11 +104,26 @@ clean_ppg <- function(ppg_raw) {
       taxonID = "wfo-4100005085",
       scientificName = "Estrellita"
     ) |>
+    # TODO these have been corrected in Rhakhis, should remove this code
+    # once PPG data are updated
     dct_modify_row(
       taxonID = "wfo-1000079650",
       scientificName = "Estrellita mollis"
     ) |>
-    # TODO add these in Rhakhis once voting finished
+    dct_modify_row(
+      taxonID = "wfo-4000031881",
+      scientificNameAuthorship = "C.Chr. & Ching"
+    ) |>
+    dct_modify_row(
+      taxonID = "wfo-4000004741",
+      scientificNameAuthorship = "T.Moore"
+    ) |>
+    dct_modify_row(
+      taxonID = "wfo-4000031359",
+      scientificNameAuthorship = "Newman"
+    ) |>
+    # TODO these have been updated in Rhakhis, should remove this code
+    # once PPG data are updated
     # - Podosorus
     dct_add_row(
       scientificName = "Podosorus",
@@ -145,6 +160,7 @@ clean_ppg <- function(ppg_raw) {
       nomenclaturalStatus = "valid",
       taxonomicStatus = "synonym"
     ) |>
+    # Filter by nomenclatural, taxonomic status
     filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
     filter(taxonomicStatus %in% c("accepted", "synonym")) |>
     dct_fill_col(
