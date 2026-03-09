@@ -5,11 +5,9 @@ Sys.setenv(TAR_PROJECT = "main")
 
 tar_plan(
   # Download PPG taxonomy ----
-  tar_url(
-    ppg_csv_url,
-    "https://github.com/pteridogroup/ppg/raw/refs/heads/main/data/ppg.csv"
+  ppg_raw = read_ppg_from_archive(
+    "https://github.com/pteridogroup/ppg/archive/refs/tags/v0.0.0.9003.tar.gz"
   ),
-  ppg_raw = read_csv(ppg_csv_url),
 
   # Clean PPG data
   # - remove invalid nomenclatural status and unchecked taxa
@@ -46,45 +44,40 @@ tar_plan(
     read_csv(!!.x)
   ),
 
-
   # Process GitHub issues ----
 
-  # - Download issues
-  tar_url(
-    ppg_repo_url,
-    "https://github.com/pteridogroup/ppg/",
+  # - Load valid issues
+  tar_file_read(
+    ppg_issues,
+    "data/ppg_issues.csv",
+    read_csv(!!.x)
   ),
 
-  tar_target(
-    ppg_issues_raw,
-    fetch_issues(ppg_repo_url),
-    cue = tar_cue("always")
+  # - Load github user names of commenters for each valid issue
+  tar_file_read(
+    commenters,
+    "data/commenters.csv",
+    read_csv(!!.x)
   ),
 
-  # - Remove invalid and TBD issues
-  ppg_issues = remove_invalid_issues(ppg_issues_raw),
-
-  # - Get github user names of commenters for each valid issue
-  commenters = fetch_commenters(ppg_issues$number),
-
-  # - Get voting results for each valid issue
-  voting_results = fetch_voting_results(ppg_issues$number),
-
-  # - Generate initial automatic count of isses by type (sink/split)
-  ppg_issue_count_raw = count_issues(ppg_issues),
+  # - Load voting results for each valid issue
+  tar_file_read(
+    voting_results,
+    "data/voting_results.csv",
+    read_csv(!!.x)
+  ),
 
   # - Load manual issues count by type (sink/split)
   tar_file_read(
     ppg_issues_count,
-    "data/ppg_issues_edited.csv",
+    "data/ppg_issues_type.csv",
     read_csv(!!.x)
   ),
 
   # - Check that all passed issues have been included in issue type count
   issue_type_count_check = check_issue_type_count(
     ppg_issues,
-    ppg_issues_count,
-    ppg_issue_count_raw
+    ppg_issues_count
   ),
 
   # Make family-level tree ----

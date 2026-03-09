@@ -3,20 +3,20 @@ source("R/functions_pre.R")
 
 Sys.setenv(TAR_PROJECT = "pre")
 
-# Pre-work for main workflow. The main purpose is to generate a list of
-# PPG 2 authors and to fetch the taxon comments.
+# Pre-work for main workflow. This generates various data files in data/ used
+# in the main workflow. The raw data files include PII and are not made public.
 
 tar_plan(
   # Load emails to exclude from author list (can't identify owner, etc)
   tar_file_read(
     exclude_emails,
-    "data/emails_exclude.csv",
+    "data_raw/emails_exclude.csv",
     read_csv(!!.x)
   ),
   # Load CSV of URLs for Google ballots
   tar_file_read(
     ballot_url,
-    "data/ballot-url.csv",
+    "data_raw/ballot-url.csv",
     read_csv(!!.x)
   ),
   # Load voting data
@@ -61,5 +61,40 @@ tar_plan(
   tar_file(
     taxon_comments_csv,
     tar_write_csv(taxon_comments, "data/ppg_comments.csv")
+  ),
+  # Issues
+  tar_url(
+    ppg_repo_url,
+    "https://github.com/pteridogroup/ppg/",
+  ),
+  tar_target(
+    ppg_issues_raw,
+    fetch_issues(ppg_repo_url),
+    cue = tar_cue("always")
+  ),
+  # - Remove invalid and TBD issues
+  ppg_issues = remove_invalid_issues(ppg_issues_raw),
+  # - Get github user names of commenters for each valid issue
+  commenters = fetch_commenters(ppg_issues$number),
+  # - Get voting results for each valid issue
+  voting_results = fetch_voting_results(ppg_issues$number),
+  # - Generate initial automatic count of isses by type (sink/split)
+  ppg_issue_count_raw = count_issues(ppg_issues),
+  # - Write out CSV files
+  tar_file(
+    ppg_issues_csv,
+    tar_write_csv(ppg_issues, "data/ppg_issues.csv")
+  ),
+  tar_file(
+    commenters_csv,
+    tar_write_csv(commenters, "data/commenters.csv")
+  ),
+  tar_file(
+    voting_results_csv,
+    tar_write_csv(voting_results, "data/voting_results.csv")
+  ),
+  tar_file(
+    ppg_issue_count_raw_csv,
+    tar_write_csv(voting_results, "data_raw/ppg_issues_type_raw.csv")
   )
 )
