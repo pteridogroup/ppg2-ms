@@ -1,32 +1,15 @@
-# Use specific R version for reproducibility
-FROM rocker/r-ver:4.5.0
+# Use Rocker image with R and Quarto pre-installed
+# This avoids architecture-specific Quarto installation issues
+FROM rocker/verse:4.5.0
 
 # Install system dependencies needed for R packages
+# rocker/verse includes most dependencies, but add extras needed for this project
 RUN apt-get update && apt-get install -y --no-install-recommends \
-  libcurl4-openssl-dev \
-  libssl-dev \
-  libxml2-dev \
-  libfontconfig1-dev \
-  libharfbuzz-dev \
-  libfribidi-dev \
-  libfreetype6-dev \
-  libpng-dev \
-  libtiff5-dev \
-  libjpeg-dev \
   libglpk-dev \
   libcairo2-dev \
   libmagick++-dev \
   libx11-dev \
-  git \
-  curl \
   && rm -rf /var/lib/apt/lists/*
-
-# Install Quarto
-# Quarto bundles its own pandoc, so no need to install system pandoc
-ARG QUARTO_VERSION=1.5.57
-RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb \
-  && dpkg -i quarto-${QUARTO_VERSION}-linux-amd64.deb \
-  && rm quarto-${QUARTO_VERSION}-linux-amd64.deb
 
 # Set working directory
 WORKDIR /project
@@ -49,9 +32,8 @@ RUN R -e "install.packages('renv', repos='https://cloud.r-project.org')" \
 # Copy project files
 COPY . .
 
-# Create non-root user for security
-RUN useradd -m -u 1000 rstudio \
-  && chown -R rstudio:rstudio /project \
+# Set permissions for rstudio user (already exists in rocker/verse)
+RUN chown -R rstudio:rstudio /project \
   && chmod -R 755 /usr/local/lib/R/renv-library \
   && chmod -R 755 /usr/local/lib/R/renv-cache
 
