@@ -17,16 +17,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libcairo2-dev \
   libmagick++-dev \
   libx11-dev \
-  pandoc \
   git \
   curl \
   && rm -rf /var/lib/apt/lists/*
 
-# Install Quarto
+# Install Quarto (with architecture detection)
+# Quarto bundles its own pandoc, so no need to install system pandoc
 ARG QUARTO_VERSION=1.5.57
-RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb \
-  && dpkg -i quarto-${QUARTO_VERSION}-linux-amd64.deb \
-  && rm quarto-${QUARTO_VERSION}-linux-amd64.deb
+ARG TARGETARCH
+RUN if [ "$TARGETARCH" = "arm64" ]; then \
+  QUARTO_ARCH="arm64"; \
+  else \
+  QUARTO_ARCH="amd64"; \
+  fi && \
+  curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-${QUARTO_ARCH}.deb && \
+  dpkg -i quarto-${QUARTO_VERSION}-linux-${QUARTO_ARCH}.deb && \
+  rm quarto-${QUARTO_VERSION}-linux-${QUARTO_ARCH}.deb
 
 # Set working directory
 WORKDIR /project
