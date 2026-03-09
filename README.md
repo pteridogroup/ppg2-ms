@@ -21,15 +21,22 @@ updated classification building on [PPG I (2016)](https://doi.org/10.1111/jse.12
     and phylogenetic tree manipulation
   - `packages.R`: Package dependencies
 - `data/`: Input data files
+  - `commenters.csv`: List of GitHub users who commented on taxonomic
+    proposals
   - `compare_ppg_wf_2025-12-21.csv`: Comparison between PPG II and
     [World Ferns](https://www.worldplants.de/world-ferns/ferns-and-lycophytes-list)
   - `ppg2_author_list.csv`: List of manuscript authors
   - `ppg_comments.csv`: Comments and notes for specific taxa
-  - `ppg_issues_edited.csv`: Manually categorized taxonomic proposals
+  - `ppg_issues.csv`: Taxonomic proposals from GitHub Issues with voting
+    outcomes
+  - `ppg_issues_type.csv`: Categorization of taxonomic proposal types
+    (split, lump, etc.)
   - `ppgi_taxonomy_original.csv`: Original PPG I classification (2016)
   - `species_count_updates.csv`: Manual corrections to species counts
   - `table_uncertainty.csv`: Descriptions of uncertain phylogenetic
     nodes
+  - `voting_results.csv`: Vote tallies and results for each taxonomic
+    proposal
   - `wf_taxa_count.csv`: Taxon counts from World Ferns database
 - `tests/`: Unit tests for data validation
 - `_targets.R`: Main workflow orchestration using the
@@ -118,6 +125,7 @@ cd ppg2-ms
 docker pull joelnitta/ppg2-ms:latest
 
 # Run the workflow (must be run from the repository directory)
+# For Apple Silicon (M1/M2/M3) Macs, add --platform linux/amd64
 docker run --rm -v $(pwd):/project joelnitta/ppg2-ms:latest
 
 # Or run interactively
@@ -128,12 +136,27 @@ docker run --rm -it -v $(pwd):/project \
 # The .Rprofile will automatically activate renv
 ```
 
-**Important:** The Docker command must be run from the cloned repository
-directory, as it mounts the current directory into the container.
+**Docker Notes:**
+- The Docker command must be run from the cloned repository directory,
+  as it mounts the current directory into the container.
+- **Apple Silicon (M1/M2/M3) Users**: The image is built for
+  `linux/amd64` architecture. When Docker emulates x86_64 on Apple
+  Silicon, Pandoc has extreme memory overhead (9+ GB spikes). You need to:
+  1. Increase Docker Desktop memory: Settings → Resources → Memory →
+     set to at least **12-16 GB**
+  2. Add `--platform linux/amd64` if you encounter "Function not
+     implemented" errors:
+     ```bash
+     docker run --rm --platform linux/amd64 -v $(pwd):/project \
+       joelnitta/ppg2-ms:latest
+     ```
+  This is a known issue with x86_64 emulation on ARM Macs. See
+  [quarto-cli#2716](https://github.com/quarto-dev/quarto-cli/issues/2716)
+  for details.
 
 The Docker image includes:
 - R 4.5.0
-- Quarto 1.5.57
+- Quarto (pre-installed from rocker/verse base image)
 - All R package dependencies from `renv.lock`
 - Required system libraries
 
