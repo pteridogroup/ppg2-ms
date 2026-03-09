@@ -117,11 +117,11 @@ institutions <-
 
 ```
 
-Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta\*^1^, Michael Hassler^2^, Harald Schneider^3^, Christopher Hoess^4^, Carl Rothfels^5^, and Eric Schuettpelz\*^6^; with additional contributions from (in alphabetical order): `r other_authors`
+Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta^1^, Michael Hassler^2^, Harald Schneider^3^, Christopher Hoess^4^, Carl Rothfels^5^, and Eric Schuettpelz^6^; with additional contributions from (in alphabetical order): `r other_authors`
 
 `r institutions`
 
-\*Authors for correspondence
+Addresses for correspondence: Joel H. Nitta, <joelnitta@gmail.com>; Eric Schuettpelz, <schuettpelze@si.edu>
 
 ```{r}
 #| label: abstract
