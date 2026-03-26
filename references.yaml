@@ -99,6 +99,20 @@ references:
   URL: http://turczaninowia.asu.ru/index.php/tur/article/view/2421
   volume: '20'
 
+- id: '616956'
+  author:
+    - family: Löve
+      given: Áskell
+    - family: Löve
+      given: Doris
+  citation-key: '616956'
+  container-title: University of Colorado Studies
+  issued:
+    - year: 1966
+  title: Cytotaxonomy of the alpine vascular plants of Mount Washingrton
+  type: article-journal
+  volume: '24'
+
 - id: aagaard2009resolving
   abstract: >-
     Diphasiastrum comprises 20–30 species. In addition to a number of species
@@ -1537,6 +1551,139 @@ references:
   URL: http://www.nrcresearchpress.com/doi/10.1139/B09-048
   volume: '87'
 
+- id: batten2001revision
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Batten
+      given: D.J
+    - family: Collinson
+      given: M.E
+  citation-key: batten2001revision
+  container-title: Review of Palaeobotany and Palynology
+  container-title-short: Review of Palaeobotany and Palynology
+  DOI: 10.1016/S0034-6667(00)00071-3
+  ISSN: '00346667'
+  issue: 1–2
+  issued:
+    - year: 2001
+      month: 5
+  language: en
+  license: https://www.elsevier.com/tdm/userlicense/1.0/
+  page: 1–32
+  source: DOI.org (Crossref)
+  title: >-
+    Revision of species of *Minerisporites, Azolla* and associated plant
+    microfossils from deposits of the Upper Palaeocene and Palaeocene/Eocene
+    transition in the Netherlands, Belgium and the USA
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0034666700000713
+  volume: '115'
+
+- id: batten2001revisiona
+  abstract: >-
+    Species of the megaspore genus Minerisporites PotonieÂ, megaspore
+    apparatuses of species of the water fern Azolla Lamarck, and some associated
+    organic-walled microfossils recovered from deposits of the Upper Palaeocene
+    and Palaeocene/Eocene transition in the southern part of the Netherlands and
+    neighbouring Belgium are redescribed on the basis of an examination of
+    specimens under scanning and transmission electron microscopes. Originally
+    studied about 40 years ago by S.J. Dijkstra, the reexamination has enabled
+    emended diagnoses to be produced for six taxa: Minerisporites glossoferus
+    7Dijkstra) Tschudy, M. mirabilis 7Miner) PotonieÂ, M. mirabilissimus
+    7Dijkstra) PotonieÂ, Azolla schop®i Dijkstra, A. teschiana FlorschuÈtz, and
+    A. velus 7Dijkstra) Jain and Hall. In addition, a revised description is
+    provided for massulae of Salvinia SeÂguier that were originally thought to
+    be megaspores and, hence, named by Dijkstra as Triletes? exiguus. The gross
+    morphology and construction of the exospore of the species of Minerisporites
+    are similar, but nevertheless suf®ciently distinct for them to be maintained
+    as separate taxa. Monolete microspores are preserved in hollows in the
+    reticulate surface of some of the specimens of M. mirabilissimus. This is
+    consistent with the presumed isoetalean af®nity of Minerisporites. An
+    apparent stratigraphic morphocline from M. glossoferus to M. mirabilis,
+    suggested previously, is con®rmed following our reassessment of their
+    characteristics. The species of Azolla are all multi-¯oated, but they differ
+    from each other in several ways, in particular with respect to the
+    ultrastructure of the megaspore wall. They are also distinct from all other
+    species that have been considered in suf®cient detail for satisfactory
+    comparisons to be made. The massulae of A. teschiana are described for the
+    ®rst time. The ¯oats in A. velus are attached to the proximal part of the
+    megaspore only by supra®losal hairs. There are no maniculae. It is argued
+    that these structures do not exist in either this or any other species of
+    Azolla. Whole fertile fossil remains that demonstrate the nature and habitat
+    of the living plants are known for all three genera. Hence, their
+    reproductive structures can be used with con®dence in palaeoenvironmental
+    interpretation. The overall assemblage, which also includes a few specimens
+    of the marsilealean megaspore Molaspora lobata 7Dijkstra) Hall, undoubtedly
+    re¯ects the presence of lowland aquatic and semi-aquatic vegetation. q 2001
+    Elsevier Science B.V. All rights reserved.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 19
+  author:
+    - family: Batten
+      given: D.J
+    - family: Collinson
+      given: M.E
+  citation-key: batten2001revisiona
+  container-title: Review of Palaeobotany and Palynology
+  container-title-short: Review of Palaeobotany and Palynology
+  DOI: 10.1016/S0034-6667(00)00071-3
+  ISSN: '00346667'
+  issue: 1–2
+  issued:
+    - year: 2001
+      month: 5
+  language: en
+  license: https://www.elsevier.com/tdm/userlicense/1.0/
+  page: 1–32
+  source: DOI.org (Crossref)
+  title: >-
+    Revision of species of Minerisporites, Azolla and associated plant
+    microfossils from deposits of the Upper Palaeocene and Palaeocene/Eocene
+    transition in the Netherlands, Belgium and the USA
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0034666700000713
+  volume: '115'
+
+- id: batten2011megaspores
+  accessed:
+    - year: 2026
+      month: 3
+      day: 3
+  author:
+    - family: Batten
+      given: David J.
+    - family: Collinson
+      given: Margaret E.
+    - family: Brain
+      given: Anthony P. R.
+  citation-key: batten2011megaspores
+  container-title: International Journal of Plant Sciences
+  container-title-short: International Journal of Plant Sciences
+  DOI: 10.1086/662030
+  ISSN: 1058-5893, 1537-5315
+  issue: '9'
+  issued:
+    - year: 2011
+      month: 11
+  language: en
+  page: 1087–1100
+  source: DOI.org (Crossref)
+  title: >-
+    Megaspores and Microspores of the Extant and Paleogene Marsileaceous Fern
+    *Regnellidium* and Cretaceous *Molaspora* : Evolutionary and Phytogeographic
+    Implications
+  title-short: >-
+    Megaspores and Microspores of the Extant and Paleogene Marsileaceous Fern
+    *Regnellidium* and Cretaceous *Molaspora*
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/10.1086/662030
+  volume: '172'
+
 - id: bauer1999ustilaginomycetes
   author:
     - family: Bauer
@@ -1703,6 +1850,18 @@ references:
   type: article-journal
   URL: http://www.amjbot.org/cgi/doi/10.3732/ajb.1200199
   volume: '99'
+
+- id: belajeff1898uber
+  author:
+    - family: Belajeff
+      given: W.
+  citation-key: belajeff1898uber
+  container-title: Bot. Ztg
+  issued:
+    - year: 1898
+  title: Über die männlichen Prothallien der Wasserfarne
+  type: article-journal
+  volume: '56'
 
 - id: bellefroid2010base
   author:
@@ -1959,6 +2118,17 @@ references:
   type: article-journal
   volume: '15'
 
+- id: bierhorst1971morphology
+  author:
+    - family: Bierhorst
+      given: David W.
+  citation-key: bierhorst1971morphology
+  container-title: (No Title)
+  issued:
+    - year: 1971
+  title: Morphology of vascular plants
+  type: article-journal
+
 - id: bierhorst1977systematic
   author:
     - family: Bierhorst
@@ -2071,7 +2241,7 @@ references:
   issued:
     - year: 1970
   page: 98–101
-  title: A note on the gametophytes of Cystopteris tenuisecta
+  title: A note on the gametophytes of *Cystopteris tenuisecta*
   type: article-journal
   volume: '60'
 
@@ -2411,6 +2581,39 @@ references:
   type: article-journal
   URL: http://dx.doi.org/10.1186/s12862-015-0400-7
 
+- id: boothbyRemovalRetainedIntrons2013
+  accessed:
+    - year: 2026
+      month: 3
+      day: 3
+  author:
+    - family: Boothby
+      given: "Thomas\_C."
+    - family: Zipper
+      given: "Richard\_S."
+    - family: "van\_der\_Weele"
+      given: "Corine\_M."
+    - family: Wolniak
+      given: "Stephen\_M."
+  citation-key: boothbyRemovalRetainedIntrons2013
+  container-title: Developmental Cell
+  container-title-short: Developmental Cell
+  DOI: 10.1016/j.devcel.2013.01.015
+  ISSN: '15345807'
+  issue: '5'
+  issued:
+    - year: 2013
+      month: 3
+  language: en
+  page: 517–529
+  source: DOI.org (Crossref)
+  title: >-
+    Removal of retained introns regulates translation in the rapidly developing
+    gametophyte of *Marsilea vestita*
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1534580713000634
+  volume: '24'
+
 - id: borsch2020world
   abstract: |-
     Abstract
@@ -2563,6 +2766,20 @@ references:
   title: Studies in the phylogeny of the filicales, IV. Blechnum and allied genera
   type: article-journal
   volume: '28'
+
+- id: bower1926ferns
+  author:
+    - family: Bower
+      given: Frederick Orpen
+  citation-key: bower1926ferns
+  issued:
+    - year: 1926
+  publisher: University Press
+  title: >-
+    The ferns (Filicales) treated comparatively with a view to their natural
+    classification
+  type: book
+  volume: '2'
 
 - id: bower1928ferns
   author:
@@ -2800,6 +3017,75 @@ references:
   URL: http://dx.doi.org/10.1007/BF00936288
   volume: '155'
 
+- id: brinkhuis2006episodic
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Brinkhuis
+      given: Henk
+    - literal: the Expedition 302 Scientists
+    - family: Schouten
+      given: Stefan
+    - family: Collinson
+      given: Margaret E.
+    - family: Sluijs
+      given: Appy
+    - family: Damsté
+      given: Jaap S. Sinninghe
+    - family: Dickens
+      given: Gerald R.
+    - family: Huber
+      given: Matthew
+    - family: Cronin
+      given: Thomas M.
+    - family: Onodera
+      given: Jonaotaro
+    - family: Takahashi
+      given: Kozo
+    - family: Bujak
+      given: Jonathan P.
+    - family: Stein
+      given: Ruediger
+    - family: Van Der Burgh
+      given: Johan
+    - family: Eldrett
+      given: James S.
+    - family: Harding
+      given: Ian C.
+    - family: Lotter
+      given: André F.
+    - family: Sangiorgi
+      given: Francesca
+    - family: Cittert
+      given: Han Van Konijnenburg-van
+    - family: De Leeuw
+      given: Jan W.
+    - family: Matthiessen
+      given: Jens
+    - family: Backman
+      given: Jan
+    - family: Moran
+      given: Kathryn
+  citation-key: brinkhuis2006episodic
+  container-title: Nature
+  container-title-short: Nature
+  DOI: 10.1038/nature04692
+  ISSN: 0028-0836, 1476-4687
+  issue: '7093'
+  issued:
+    - year: 2006
+      month: 6
+  language: en
+  license: http://www.springer.com/tdm
+  page: 606–609
+  source: DOI.org (Crossref)
+  title: Episodic fresh surface waters in the Eocene Arctic Ocean
+  type: article-journal
+  URL: https://www.nature.com/articles/nature04692
+  volume: '441'
+
 - id: britton1953chromosome
   author:
     - family: Britton
@@ -2921,7 +3207,7 @@ references:
   issued:
     - year: 2014
   page: 1069–1082
-  title: Azolla domestication towards a biobased economy?
+  title: '*Azolla* domestication towards a biobased economy?'
   type: article-journal
   URL: http://doi.wiley.com/10.1111/nph.12708
   volume: '202'
@@ -3530,6 +3816,32 @@ references:
     virginianum
   type: article-journal
   volume: '12'
+
+- id: buchholz1941hybridization
+  accessed:
+    - year: 2026
+      month: 3
+      day: 5
+  author:
+    - family: Buchholz
+      given: J. T.
+    - family: Selett
+      given: J. W.
+  citation-key: buchholz1941hybridization
+  container-title: The American Naturalist
+  DOI: 10.1086/280935
+  ISSN: 0003-0147
+  issue: '756'
+  issued:
+    - year: 1941
+      month: 1
+  page: 90–93
+  publisher: The University of Chicago Press
+  source: journals.uchicago.edu (Atypon)
+  title: The Hybridization of Water Ferns-Marsilea and Pilularia
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/abs/10.1086/280935
+  volume: '75'
 
 - id: bui2018power
   accessed:
@@ -4835,8 +5147,8 @@ references:
     - year: 1933
   page: 30–45
   title: >-
-    On the nomenclature and systematic position of Polypodium dryopteris L. and
-    related species
+    On the nomenclature and systematic position of *Polypodium dryopteris* L.
+    and related species
   type: article-journal
 
 - id: ching1936revision
@@ -5784,6 +6096,20 @@ references:
   type: article-journal
   volume: '31'
 
+- id: collinson1991diversification
+  author:
+    - family: Collinson
+      given: M. E.
+  citation-key: collinson1991diversification
+  issued:
+    - year: 1991
+  publisher: Clarendon Press, Oxford
+  title: >-
+    Diversification of modern heterosporous pteridophytes. In S. Blackmore and
+    SH Barnes [eds.]. Pollen and spores: patterns of diversification.
+    Systematics Association, Special Vol. 44: 119–150
+  type: book
+
 - id: collinson2002ecology
   author:
     - family: Collinson
@@ -5859,6 +6185,38 @@ references:
   type: article-journal
   URL: http://dx.doi.org/10.1016/j.revpalbo.2009.12.001
   volume: '159'
+
+- id: collinson2017reinterpretation
+  accessed:
+    - year: 2026
+      month: 3
+      day: 19
+  author:
+    - family: Collinson
+      given: Margaret E.
+    - family: Van Konijnenburg-van Cittert
+      given: Johanna H.A.
+    - family: Marone
+      given: Federica
+    - family: Brain
+      given: Anthony P.R.
+  citation-key: collinson2017reinterpretation
+  container-title: Review of Palaeobotany and Palynology
+  container-title-short: Review of Palaeobotany and Palynology
+  DOI: 10.1016/j.revpalbo.2017.02.005
+  ISSN: '00346667'
+  issued:
+    - year: 2017
+      month: 5
+  language: en
+  page: 33–48
+  source: DOI.org (Crossref)
+  title: >-
+    Reinterpretation of Azolla primaeva (Azollaceae, Eocene, Canada) using
+    electron microscopy and X-ray tomographic microscopy
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0034666716302019
+  volume: '240'
 
 - id: condack2013polystichum
   author:
@@ -5970,20 +6328,6 @@ references:
   title: Genera Filicum
   type: book
   volume: '75'
-
-- id: courchamp2013alien
-  author:
-    - family: Courchamp
-      given: Franck
-  citation-key: courchamp2013alien
-  container-title: Nature
-  issue: '7452'
-  issued:
-    - year: 2013
-  page: '37'
-  title: 'Alien species: Monster fern makes IUCN invader list'
-  type: article-journal
-  volume: '498'
 
 - id: courchamp2013monster
   author:
@@ -6544,35 +6888,6 @@ references:
   title: 'Heterosporous Ferns From Patagonia: The Case of Azolla'
   type: chapter
   URL: http://dx.doi.org/10.1016/B978-0-12-813012-4.00015-2
-
-- id: debenedetti2018heterosporousa
-  accessed:
-    - year: 2026
-      month: 2
-      day: 24
-  author:
-    - family: De Benedetti
-      given: Facundo
-    - family: Zamaloa
-      given: María Del C.
-    - family: Gandolfo
-      given: María A.
-    - family: Cúneo
-      given: Néstor Rubén
-  citation-key: debenedetti2018heterosporousa
-  container-title: Transformative Paleobotany
-  DOI: 10.1016/B978-0-12-813012-4.00015-2
-  ISBN: 978-0-12-813012-4
-  issued:
-    - year: 2018
-  language: en
-  license: https://www.elsevier.com/tdm/userlicense/1.0/
-  page: 361–373
-  publisher: Elsevier
-  source: DOI.org (Crossref)
-  title: Heterosporous Ferns From Patagonia
-  type: chapter
-  URL: https://linkinghub.elsevier.com/retrieve/pii/B9780128130124000152
 
 - id: debenedetti2020reinterpretation
   author:
@@ -8181,7 +8496,7 @@ references:
   issued:
     - year: 2012
   page: 1515–1529
-  title: Apomixis and reticulate evolution in the Asplenium monanthes fern complex
+  title: Apomixis and reticulate evolution in the *Asplenium monanthes* fern complex
   type: article-journal
   volume: '110'
 
@@ -8220,7 +8535,7 @@ references:
   page: '219'
   title: >-
     Genome size expansion and the relationship between nuclear DNA content and
-    spore size in the Asplenium monanthes fern complex (Aspleniaceae)
+    spore size in the *Asplenium monanthes* fern complex (Aspleniaceae)
   type: article-journal
   URL: http://www.biomedcentral.com/1471-2229/13/219
   volume: '13'
@@ -8265,6 +8580,34 @@ references:
   type: article-journal
   URL: http://www.nrcresearchpress.com/doi/10.4141/cjps85-131
   volume: '65'
+
+- id: earl1994mystery
+  accessed:
+    - year: 2026
+      month: 3
+      day: 3
+  author:
+    - family: Earl
+      given: John W.
+    - family: McCleary
+      given: Barry V.
+  citation-key: earl1994mystery
+  container-title: Nature
+  container-title-short: Nature
+  DOI: 10.1038/368683a0
+  ISSN: 0028-0836, 1476-4687
+  issue: '6473'
+  issued:
+    - year: 1994
+      month: 4
+  language: en
+  license: http://www.springer.com/tdm
+  page: 683–684
+  source: DOI.org (Crossref)
+  title: Mystery of the poisoned expedition
+  type: article-journal
+  URL: https://www.nature.com/articles/368683a0
+  volume: '368'
 
 - id: eaton1860filices
   author:
@@ -8731,8 +9074,8 @@ references:
   page: mcv152
   title: >-
     Between sexual and apomictic: Unexpectedly variable sporogenesis and
-    production of viable polyhaploids in the pentaploid fern of the Dryopteris
-    affinis agg. (Dryopteridaceae)
+    production of viable polyhaploids in the pentaploid fern of the *Dryopteris
+    affinis* agg. (Dryopteridaceae)
   type: article-journal
   URL: http://aob.oxfordjournals.org/lookup/doi/10.1093/aob/mcv152
 
@@ -9708,6 +10051,54 @@ references:
   URL: http://doi.wiley.com/10.12705/662.21
   volume: '66'
 
+- id: fraser-jenkins2020pteridophytes
+  abstract: >-
+    We outline the phytogeographical relations of Turkish pteridophytes
+    following revision of our previous check-list. Although mainly European, the
+    Turkish fern-flora has c. 40% of its species and subspecies in common with
+    or related to the West Himalayan European phytogeographical element. In the
+    pteridophyte accounts of the recent Illustrated Flora of Turkey, it is clear
+    that many specimens have been misidentified and various species incorrectly
+    illustrated.  In addition the extensive Turkish pteridophyte collections in
+    international herbaria made by non-Turkish collectors, including those of
+    the present first author, were not drawn upon and international consultation
+    was intentionally not entered into. Although it is unfortunately not
+    possible in the present circumstances to study and re-identify the great
+    bulk of authentic specimens in Turkish herbaria cited in the Flora, we have
+    reassessed some important records and corrected the many obvious anomalies
+    in the Flora and we have added to the distributional data from our own
+    critically studied collections. We therefore present an updated and
+    taxonomically revised checklist with notes and additional distributions,
+    including a few taxa overlooked in the Flora.  We also treat the important
+    subspecies which were omitted there. A new hybrid Asplenium and another of
+    Cystopteris are described and a few necessary new combinations are made.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 13
+  author:
+    - family: Fraser-Jenkins
+      given: C.R.
+    - family: Parris
+      given: Barbara Sydney
+  citation-key: fraser-jenkins2020pteridophytes
+  container-title: Indian Journal of Forestry
+  container-title-short: Indian J. Forest.
+  DOI: 10.54207/bsmps1000-2021-6YAJ92
+  ISSN: '09719431'
+  issue: '3'
+  issued:
+    - year: 2020
+  language: en
+  page: 263--284
+  source: DOI.org (Crossref)
+  title: >-
+    Pteridophytes of Turkey - A revised check-list and their relationships to
+    Europe and the West Himalaya
+  type: article-journal
+  URL: https://www.bsmpsbooks.com/journal/1000/article/NllBSjky
+  volume: '43'
+
 - id: fraser-jenkinsnepals
   abstract: >-
     The Pteridophytic flora of parts of the east Indo-Himalaya in
@@ -10077,6 +10468,26 @@ references:
   type: article-journal
   URL: http://dx.doi.org/10.1016/j.aquabot.2015.07.005
   volume: '127'
+
+- id: galka2013phenology
+  author:
+    - family: Gałka
+      given: Agnieszka
+    - family: Szmeja
+      given: Józef
+  citation-key: galka2013phenology
+  container-title: Limnologica
+  ISBN: 0075-9511
+  issue: '2'
+  issued:
+    - year: 2013
+  page: 100–105
+  publisher: Elsevier
+  title: >-
+    Phenology of the aquatic fern Salvinia natans (L.) All. in the Vistula Delta
+    in the context of climate warming
+  type: article-journal
+  volume: '43'
 
 - id: game2017new
   abstract: New Zealand Journal of Botany, 2017. doi:10.1080/0028825X.2017.1383276
@@ -10636,6 +11047,18 @@ references:
     (Dryopteridaceae)
   type: article-journal
   volume: '34'
+
+- id: genera
+  author:
+    - family: Copeland
+      given: Edwin Bingham
+  citation-key: genera
+  issued:
+    - year: 1947
+  language: en
+  source: Zotero
+  title: Genera Filicum, the genera of ferns
+  type: book
 
 - id: george2019baja
   author:
@@ -11585,6 +12008,74 @@ references:
   type: article-journal
   volume: '57'
 
+- id: hall1969studies
+  abstract: >-
+    Fossil Salviniaceae are described from the Claggett Shale and Judith River
+    Formation, late Cretaceous (Campanian stage) of Montana. A new genus,
+                  Parazolla
+                  , from the Claggett Shale, has megaspores in which the swimming apparatus is composed of a number of elongate floats attached to the megaspore body and invested by coiled hairs. The floats separate at maturity. Massulae (bearing microspores) have simple hair‐like glochidia, many of which are knobbed at their tips. Glochidia tend to resemble the perisporial hairs of the megaspore body. This resemblance provides fossil evidence of the homology of these two hair‐like structures among living species of
+                  Azolla
+                  . In
+                  Azolla simplex
+                  from the Judith River Formation the megaspore has a single cap‐like so‐called columellate float. Massulae, which have anchor‐shaped glochidia, are associated with these megaspores.
+                  A. simplex
+                  is the oldest species of
+                  Azolla
+                  and
+                  Parazolla
+                  the oldest member of the Salviniaceae so far found.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 20
+  author:
+    - family: Hall
+      given: John W.
+  citation-key: hall1969studies
+  container-title: American Journal of Botany
+  container-title-short: American J of Botany
+  DOI: 10.1002/j.1537-2197.1969.tb09773.x
+  ISSN: 0002-9122, 1537-2197
+  issue: '10'
+  issued:
+    - year: 1969
+      month: 11
+  language: en
+  license: http://onlinelibrary.wiley.com/termsAndConditions#vor
+  page: 1173–1180
+  source: DOI.org (Crossref)
+  title: >-
+    STUDIES ON FOSSIL AZOLLA: PRIMITIVE TYPES OF MEGASPORES AND MASSULAE FROM
+    THE CRETACEOUS
+  title-short: STUDIES ON FOSSIL AZOLLA
+  type: article-journal
+  URL: >-
+    https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/j.1537-2197.1969.tb09773.x
+  volume: '56'
+
+- id: hall1974cretaceous
+  accessed:
+    - year: 2026
+      month: 2
+      day: 27
+  author:
+    - family: Hall
+      given: John W.
+  citation-key: hall1974cretaceous
+  container-title: Annals of the Missouri Botanical Garden
+  container-title-short: Annals of the Missouri Botanical Garden
+  DOI: 10.2307/2395062
+  ISSN: '00266493'
+  issue: '2'
+  issued:
+    - year: 1974
+  page: '354'
+  source: DOI.org (Crossref)
+  title: Cretaceous Salviniaceae
+  type: article-journal
+  URL: https://www.jstor.org/stable/2395062?origin=crossref
+  volume: '61'
+
 - id: hanusova2014continuous
   abstract: >-
     Introgressive hybridization is an important evolutionary process frequently
@@ -11766,6 +12257,23 @@ references:
   type: article-journal
   URL: http://www.sciencedirect.com/science/article/pii/S0031942200974752
   volume: '15'
+
+- id: harperPopulationBiologyPlants1979
+  author:
+    - family: Harper
+      given: John L.
+  citation-key: harperPopulationBiologyPlants1979
+  edition: 3. print
+  ISBN: 978-0-12-325850-2
+  issued:
+    - year: 1979
+  language: eng
+  number-of-pages: '892'
+  publisher: Academic Press
+  publisher-place: London
+  source: K10plus ISBN
+  title: Population biology of plants
+  type: book
 
 - id: hasebe1994rbcl
   abstract: >-
@@ -13255,6 +13763,60 @@ references:
   URL: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.20368
   volume: '245'
 
+- id: hoffman1992vegetative
+  author:
+    - family: Hoffman
+      given: G. L.
+    - family: Stockey
+      given: R. A.
+  citation-key: hoffman1992vegetative
+  container-title: Am. J. Bot
+  issued:
+    - year: 1992
+  page: 102–103
+  title: >-
+    Vegetative and fertile remains of Azolla from the Paleocene Joffre Bridge
+    locality, Alberta
+  type: article-journal
+  volume: '79'
+
+- id: hoffman1994sporophytes
+  abstract: >-
+    Several hundred vegetative and fertile specimens of Azolla Lam. have been
+    recovered from the Paleocene Paskapoo Formation at the Joffre Bridge
+    locality (Middle Tiffanian (Ti
+                  3
+                  ) age) near Red Deer, Alberta. The spore complexes closely resemble those of the Paleocene A. stanleyi Jain & Hall, and the vegetative material is referred to that species. The specimens are unusually complete in that the remains of the fragile sporophyte are preserved, commonly with reproductive structures in place. Plants reaching up to 2.25 cm in length consist of alternately branched rhizomes bearing alternate, imbricate, sessile leaves. Leaves are ovate with entire margins, papillate surfaces, and a single midvein. Reproductive structures have been examined using light, scanning, and transmission electron microscopy. This new material is compared with the other Paleocene species for which sporophytes are known and discussed in terms of evolutionary trends for the genus. The specimens suggest that most of the vegetative characteristics of modern Azolla species were established by the middle Paleocene. Key words: Azolla, Salviniaceae, megaspore, massula, ultrastructure, Paleocene.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 20
+  author:
+    - family: Hoffman
+      given: Georgia L.
+    - family: Stockey
+      given: Ruth A.
+  citation-key: hoffman1994sporophytes
+  container-title: Canadian Journal of Botany
+  container-title-short: Can. J. Bot.
+  DOI: 10.1139/b94-039
+  ISSN: 0008-4026
+  issue: '3'
+  issued:
+    - year: 1994
+      month: 3
+      day: 1
+  language: en
+  license: http://www.nrcresearchpress.com/page/about/CorporateTextAndDataMining
+  page: 301–308
+  source: DOI.org (Crossref)
+  title: >-
+    Sporophytes, megaspores, and massulae of *Azolla stanleyi* from the
+    Paleocene Joffre Bridge locality, Alberta
+  type: article-journal
+  URL: http://www.nrcresearchpress.com/doi/10.1139/b94-039
+  volume: '72'
+
 - id: holbrook-walker1973reproductive
   abstract: >-
     Comparative ontogenetic studies were made of the gametophyte generation
@@ -13443,6 +14005,35 @@ references:
     Dryopteris of Christensen’s Index Filicum, and other ferns of similar habit
     and sori
   type: article-journal
+  volume: '17'
+
+- id: holttum1968typification
+  abstract: >-
+    The genus Gymnocarpium Newman should be typified by the species Polypodium
+    robertianum Hoffm. Then Phegopteris Fie, as typified by Polypodium
+    phegopteris L., is legitimate.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 2
+  author:
+    - family: Holttum
+      given: R. E.
+  citation-key: holttum1968typification
+  container-title: TAXON
+  container-title-short: TAXON
+  DOI: 10.2307/1216053
+  ISSN: 0040-0262, 1996-8175
+  issue: '5'
+  issued:
+    - year: 1968
+      month: 10
+  language: en
+  page: 529–530
+  source: DOI.org (Crossref)
+  title: Typification of the generic names *Gymnocarpium* and *Phegopteris*
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.2307/1216053
   volume: '17'
 
 - id: holttum1971family
@@ -14140,6 +14731,36 @@ references:
     fern Asplenium majoricum
   type: article-journal
 
+- id: hussain2016vermiremediation
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Hussain
+      given: Naseer
+    - family: Abbasi
+      given: Tasneem
+    - family: Abbasi
+      given: S.A.
+  citation-key: hussain2016vermiremediation
+  container-title: Ecological Engineering
+  container-title-short: Ecological Engineering
+  DOI: 10.1016/j.ecoleng.2016.03.010
+  ISSN: '09258574'
+  issued:
+    - year: 2016
+      month: 6
+  language: en
+  page: 432–440
+  source: DOI.org (Crossref)
+  title: >-
+    Vermiremediation of an invasive and pernicious weed salvinia (Salvinia
+    molesta)
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0925857416301598
+  volume: '91'
+
 - id: hussner2012alien
   abstract: >-
     Alien aquatic plant species cause serious ecological and economic impacts to
@@ -14282,7 +14903,7 @@ references:
   citation-key: integrative
   container-title: Taxon
   issued:
-    - literal: inReview
+    - literal: In Review
   title: >-
     Integrative species delimitation of two species complexes in *Cystopteris*,
     with description of two new species from Asia: *C. shengbangii* and *C.
@@ -14311,6 +14932,67 @@ references:
   source: Zotero
   title: 'CURL-TIP DISEASE OF PTERIDIUM AQUILINUM (DENNSTAEDTIACEAE: PTERIDOPHYTA)'
   type: article-journal
+
+- id: ishii2025reticulate
+  abstract: >-
+    Homospory represents an intriguing reproductive strategy, including the
+    potential for gametophytic selfing, considered the ultimate form of selfing.
+    The plants of the fern genus Sceptridium (Ophioglossaceae) are generally
+    considered to be predominantly selfing, making them suitable for analyzing
+    speciation patterns and intraspecific variation characteristic of
+    homosporous plants. The Sceptridium species in Japan not only exhibit
+    variations in ploidy, including diploids, tetraploids, and hexaploids, but
+    also pose taxonomic challenges due to morphologically distinctive forms that
+    are difficult to be assigned to previously described species. We developed
+    multiple single-copy nuclear markers and aimed to identify ancestral species
+    of the polyploids and to elucidate the evolutionary entity of an undescribed
+    species. Chromosome counts and analyses of individual gene trees confirmed
+    that S. japonicum, S. atrovirens, and the undescribed species are
+    allohexaploids originating through hybridization between a maternal
+    tetraploid ancestor closely related to S. formosanum and a paternal diploid
+    ancestor closely related to extant diploid species. By identifying
+    homoeologs derived from the diploid ancestor, we successfully analyzed the
+    phylogenetic relationship between the diploid ancestor of the hexaploid
+    species and extant diploid species using the multispecies coalescent model.
+    The examined undescribed species could not be distinguished from S.
+    atrovirens by multiple nuclear markers or by SNP data obtained from
+    multiplexed ISSR genotyping by sequencing. This species appears to represent
+    one of the polymorphisms of S. atrovirens, which was fixed through
+    gametophytic selfing.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 9
+  author:
+    - family: Ishii
+      given: Sousuke
+    - family: Sahashi
+      given: Norio
+    - family: Ebihara
+      given: Atushi
+    - family: Hirota
+      given: Shun K.
+    - family: Suyama
+      given: Yoshihisa
+    - family: Watano
+      given: Yasuyuki
+  citation-key: ishii2025reticulate
+  container-title: Molecular Phylogenetics and Evolution
+  container-title-short: Molecular Phylogenetics and Evolution
+  DOI: 10.1016/j.ympev.2024.108244
+  ISSN: '10557903'
+  issued:
+    - year: 2025
+      month: 1
+  language: en
+  page: '108244'
+  source: DOI.org (Crossref)
+  title: >-
+    Reticulate Evolution in Japanese *Sceptridium* (Ophioglossaceae), including
+    diploid, tetraploid, and hexaploid species
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1055790324002367
+  volume: '202'
 
 - id: ishikawa2002development
   author:
@@ -14591,7 +15273,7 @@ references:
   license: http://onlinelibrary.wiley.com/termsAndConditions#vor
   page: 527–539
   source: DOI.org (Crossref)
-  title: A CONTRIBUTION TO THE EARLY TERTIARY FOSSIL RECORD OF THE SALVINIACEAE
+  title: A contribution to the early Tertiary fossil record of the Salviniaceae
   type: article-journal
   URL: >-
     https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/j.1537-2197.1969.tb07566.x
@@ -14760,6 +15442,24 @@ references:
   title: >-
     Cytotaxonomic studies of the ferns of Trinidad. 3. Descriptions of new
     species and hybrids and a new combination
+  type: article-journal
+  volume: '13'
+
+- id: jermy1985cytotaxonomicb
+  author:
+    - family: Jermy
+      given: Anthony Clive
+  citation-key: jermy1985cytotaxonomicb
+  container-title: Bulletin of the British Museum. Natural History. Botany
+  issue: '2'
+  issued:
+    - year: 1985
+  language: en
+  page: 133--147
+  source: Zotero
+  title: >-
+    Cytotaxonomic studies of the ferns of Trinidad 1. The climate, geology, and
+    vegetation of Trinidad with particular reference to the ecology of ferns
   type: article-journal
   volume: '13'
 
@@ -14947,6 +15647,40 @@ references:
   type: article-journal
   URL: https://ojs.ub.uni-frankfurt.de/kochia/index.php/kochia/article/view/163
   volume: '16'
+
+- id: jessen2026neue
+  abstract: >-
+    New Cystopteris hybrids from Switzerland and first record of Cystopteris
+    pseudoregia for Germany. Three new Cystopteris hybrids from Switzerland are
+    described: Cystopteris ×axalpensis, C. ×pertusioensis, and C. ×heptaploidea.
+    The hybrids usually occur singly or scattered at the common locations of the
+    parent taxa. Furthermore, the first record of the octoploid C. pseudoregia
+    for Germany is published.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 10
+  author:
+    - family: Jeßen
+      given: Stefan
+  citation-key: jessen2026neue
+  container-title: Kochia
+  container-title-short: kochia
+  DOI: 10.21248/kochia.v19.280
+  ISSN: 2698-9239, 1863-155X
+  issued:
+    - year: 2026
+      month: 3
+      day: 8
+  language: de
+  page: 85–100
+  source: DOI.org (Crossref)
+  title: >-
+    Neue *Cystopteris*-Hybriden aus der Schweiz und Erstnachweis von
+    *Cystopteris pseudoregia* für Deutschland
+  type: article-journal
+  URL: https://ojs.ub.uni-frankfurt.de/kochia/index.php/kochia/article/view/280
+  volume: '19'
 
 - id: ji1994technique
   author:
@@ -15200,6 +15934,34 @@ references:
   title: Trophopods in North American species of *Athyrium* (Aspleniaceae)
   type: article-journal
   volume: '11'
+
+- id: johnson1988911
+  accessed:
+    - year: 2026
+      month: 3
+      day: 2
+  author:
+    - family: Johnson
+      given: David M.
+  citation-key: johnson1988911
+  container-title: Taxon
+  container-title-short: Taxon
+  DOI: 10.2307/1222181
+  ISSN: '00400262'
+  issue: '2'
+  issued:
+    - year: 1988
+      month: 5
+  language: en
+  page: '483'
+  source: DOI.org (Crossref)
+  title: >-
+    (911) Proposal to Conserve Marsilea L. (Pteridophyta: Marsileaceae) with
+    Marsilea quadrifolia as typ. conserv.
+  title-short: (911) Proposal to Conserve Marsilea L. (Pteridophyta
+  type: article-journal
+  URL: https://www.jstor.org/stable/1222181?origin=crossref
+  volume: '37'
 
 - id: johnson2000adaptations
   author:
@@ -15711,7 +16473,7 @@ references:
     - family: Kramer
       given: K
   citation-key: kato1990athyrioideae
-  container-title: The families and genera of vascular plants
+  container-title: The Families and Genera of Vascular Plants
   editor:
     - family: Kramer
       given: K U
@@ -16145,6 +16907,33 @@ references:
   type: article-journal
   URL: http://www.jstor.org/stable/10.2307/1546552
 
+- id: kempf1968wasserfarne
+  accessed:
+    - year: 2026
+      month: 3
+      day: 20
+  author:
+    - family: Kempf
+      given: E.K.
+  citation-key: kempf1968wasserfarne
+  container-title: Zeitschrift der Deutschen Geologischen Gesellschaft
+  container-title-short: zdgg_alt
+  DOI: 10.1127/zdgg/118/1968/161
+  ISSN: 0012-0189
+  issue: '1'
+  issued:
+    - year: 1968
+      month: 5
+      day: 2
+  language: en
+  page: 161–161
+  source: DOI.org (Crossref)
+  title: Wasserfarne im rheinischen Braunkohlentertiär und ihr stratigraphischer Wert
+  type: article-journal
+  URL: >-
+    http://www.schweizerbart.de/papers/zdgg/detail/118/95950/Wasserfarne_im_rheinischen_Braunkohlentertiar_und_?af=crossref
+  volume: '118'
+
 - id: kenrick1997origin
   abstract: >-
     The origin and early evolution of land plants in the mid-Palaeozoic era,
@@ -16551,15 +17340,15 @@ references:
   URL: http://www.nrcresearchpress.com/doi/abs/10.1139/b89-014
   volume: '67'
 
-- id: khokhrjakov1985protolog
+- id: khokhrjakov1985flora
   author:
     - family: Khokhrjakov
       given: Andrej Pavlovich
-  citation-key: khokhrjakov1985protolog
+  citation-key: khokhrjakov1985flora
   issued:
     - year: 1985
-  title: protolog for Rhizomatopteris
-  type: article-journal
+  title: Flora Magadanskoi Oblasti
+  type: book
 
 - id: kholia2013new
   abstract: >-
@@ -17412,6 +18201,25 @@ references:
   type: chapter
   volume: '1'
 
+- id: kramer1990marsileaceae
+  author:
+    - family: Kramer
+      given: K U
+  citation-key: kramer1990marsileaceae
+  collection-editor:
+    - family: Kubitzki
+      given: K
+  collection-title: The Families and Genera of Vascular Plants
+  container-title: Pteridophytes and Gymnosperms
+  issued:
+    - year: 1990
+  page: 256–258
+  publisher: Spring
+  publisher-place: Berlin
+  title: Marsileaceae
+  type: chapter
+  volume: '1'
+
 - id: kramer1990pteridophytes
   accessed:
     - year: 2025
@@ -17678,7 +18486,7 @@ references:
     - year: 2016
   page: 1–33
   title: >-
-    Historical biogeography of the fern genus Deparia (Athyriaceae) and its
+    Historical biogeography of the fern genus *Deparia* (Athyriaceae) and its
     relation with polyploidy
   type: article-journal
   URL: http://dx.doi.org/10.1016/j.ympev.2016.08.004
@@ -18400,7 +19208,7 @@ references:
   container-title: In prep.
   issued:
     - year: 2013
-  title: Phylogeny of Woodsia (Woodsiaceae)
+  title: Phylogeny of *Woodsia* (Woodsiaceae)
   type: article-journal
 
 - id: larsson2014systematics
@@ -18413,7 +19221,7 @@ references:
   number-of-pages: 1–162
   publisher: Acta Universitatis Upsaliensis
   publisher-place: Uppsala
-  title: Systematics of Woodsia. Ferns, bioinformatics and more
+  title: Systematics of *Woodsia*. Ferns, bioinformatics and more
   type: thesis
 
 - id: lawton1936regeneration
@@ -19335,8 +20143,8 @@ references:
     - year: 2011
   page: 142–155
   title: >-
-    Phylogenetic positions of the enigmatic asiatic fern genera Diplaziopsis and
-    Rhachidosorus from analyses of four plastid genes
+    Phylogenetic positions of the enigmatic asiatic fern genera *Diplaziopsis*
+    and *Rhachidosorus* from analyses of four plastid genes
   type: article-journal
   volume: '101'
 
@@ -19636,7 +20444,7 @@ references:
   issue: '1'
   issued:
     - year: 2016
-  title: 'Asplenium pifongia (Aspleniaceae: Polypodiales), a new species from Taiwan'
+  title: '*Asplenium pifongia* (Aspleniaceae: Polypodiales), a new species from Taiwan'
   type: article-journal
   volume: '41'
 
@@ -21044,17 +21852,6 @@ references:
   citation-key: lu2015chloroplast
   container-title: Journal of Systematics and Evolution
   DOI: 10.1111/jse.12180
-  editor:
-    - family: Wen
-      given: Jun
-    - family: Liu
-      given: Jianquan
-    - family: Ge
-      given: Song
-    - family: Xiang
-      given: Qiu-Yun Jenny
-    - family: Zimmer
-      given: Elizabeth A
   issue: '5'
   issued:
     - year: 2015
@@ -21166,6 +21963,17 @@ references:
   type: article-journal
   URL: https://onlinelibrary.wiley.com/doi/10.1002/tax.12180
   volume: '68'
+
+- id: luerssen1889farnpflanzen
+  author:
+    - family: Luerssen
+      given: C.
+  citation-key: luerssen1889farnpflanzen
+  container-title: Eduard Dummer, Leipzig
+  issued:
+    - year: 1889
+  title: Die Farnpflanzen, Ordnung Gefdssbiindelkryptogamen (Pteridophyta)
+  type: article-journal
 
 - id: lugardon1993ultrastructure
   author:
@@ -22210,6 +23018,31 @@ references:
   type: article-journal
   URL: http://www.jstor.org/stable/10.2307/2437804
 
+- id: martin1976structures
+  accessed:
+    - year: 2026
+      month: 3
+      day: 20
+  author:
+    - family: Martin
+      given: A.R.H.
+  citation-key: martin1976structures
+  container-title: Review of Palaeobotany and Palynology
+  container-title-short: Review of Palaeobotany and Palynology
+  DOI: 10.1016/0034-6667(76)90016-6
+  ISSN: '00346667'
+  issue: '2'
+  issued:
+    - year: 1976
+      month: 2
+  language: en
+  page: 141–169
+  source: DOI.org (Crossref)
+  title: Some structures in Azolla megaspores, and an anomalous form
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/0034666776900166
+  volume: '21'
+
 - id: martinez-cabrera2018diversidad
   author:
     - family: Martínez-Cabrera
@@ -22234,6 +23067,28 @@ references:
     estado de Hidalgo, México
   type: article-journal
   URL: http://abm.ojs.inecol.mx/index.php/abm/article/view/1434
+
+- id: martius1835conspectus
+  author:
+    - family: Martius
+      given: Karl Friedrich Philipp
+      dropping-particle: von
+    - family: Martius
+      given: Karl Friedrich Philipp
+      dropping-particle: von
+  citation-key: martius1835conspectus
+  DOI: 10.5962/bhl.title.7730
+  issued:
+    - year: 1835
+  number-of-pages: '106'
+  page: 1-106
+  publisher: Joh. Leonhard Schrag
+  publisher-place: Nürnberg
+  source: COinS
+  title: Conspectus regni vegetabilis
+  title-short: Conspectus regni vegetabilis
+  type: book
+  URL: https://www.biodiversitylibrary.org/item/32164
 
 - id: masuyama1975sequence
   author:
@@ -29265,6 +30120,19 @@ references:
   type: article-journal
   volume: '17'
 
+- id: pringsheim1863zur
+  author:
+    - family: Pringsheim
+      given: N.
+  citation-key: pringsheim1863zur
+  container-title: Jahrb Wiss Bot
+  issued:
+    - year: 1863
+  page: 464–472
+  title: Zur morphologie der Salvinia natans
+  type: article-journal
+  volume: '3'
+
 - id: profumo1965cystopteris
   author:
     - family: Profumo
@@ -30459,6 +31327,55 @@ references:
   type: article-journal
   URL: http://www.jstor.org/stable/2444885
 
+- id: rahmatpourAnalysesMarsileaVestita2023
+  accessed:
+    - year: 2026
+      month: 2
+      day: 27
+  author:
+    - family: Rahmatpour
+      given: Nasim
+    - family: Kuo
+      given: Li‐Yaung
+    - family: Kang
+      given: Jessica
+    - family: Herman
+      given: Eliana
+    - family: Lei
+      given: Lily
+    - family: Li
+      given: Muzi
+    - family: Srinivasan
+      given: Sruthi
+    - family: Zipper
+      given: Richard
+    - family: Wolniak
+      given: Stephen M.
+    - family: Delwiche
+      given: Charles F.
+    - family: Mount
+      given: Stephen
+    - family: Li
+      given: Fay‐Wei
+  citation-key: rahmatpourAnalysesMarsileaVestita2023
+  container-title: New Phytologist
+  container-title-short: New Phytologist
+  DOI: 10.1111/nph.18652
+  ISSN: 0028-646X, 1469-8137
+  issue: '5'
+  issued:
+    - year: 2023
+      month: 3
+  language: en
+  page: 1490–1494
+  source: DOI.org (Crossref)
+  title: >-
+    Analyses of *Marsilea vestita* genome and transcriptomes do not support
+    widespread intron retention during spermatogenesis
+  type: article-journal
+  URL: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.18652
+  volume: '237'
+
 - id: rai2007wastewater
   author:
     - family: Rai
@@ -30854,6 +31771,20 @@ references:
   type: article-journal
   volume: '84'
 
+- id: ReclassificationFamilyThelypteridaceae
+  author:
+    - family: Ching
+      given: Ren-Chang
+  citation-key: ReclassificationFamilyThelypteridaceae
+  container-title: Acta Phytotaxonomica Sinica
+  issue: '4'
+  issued:
+    - year: 1963
+  page: 289--335
+  title: A reclassification of the family Thelypteridaceae from the mainland of Asia
+  type: article-journal
+  volume: '8'
+
 - id: reed1947phylogeny
   author:
     - family: Reed
@@ -30880,6 +31811,33 @@ references:
     in Kentucky
   type: article-journal
   volume: '42'
+
+- id: reed1955multiple
+  accessed:
+    - year: 2026
+      month: 3
+      day: 2
+  author:
+    - family: Reed
+      given: Clyde F.
+  citation-key: reed1955multiple
+  container-title: Taxon
+  container-title-short: TAXON
+  DOI: 10.2307/1216644
+  ISSN: 0040-0262, 1996-8175
+  issue: '5'
+  issued:
+    - year: 1955
+      month: 7
+  language: en
+  page: 105–117
+  source: DOI.org (Crossref)
+  title: >-
+    Multiple uses of some generic names of ferns and fern‐allies, living and
+    fossil
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/10.2307/1216644
+  volume: '4'
 
 - id: reeves1976cystopteris
   author:
@@ -31103,7 +32061,7 @@ references:
     - year: 2006
   page: 529–538
   title: >-
-    Phylogenetic relationships in the heterosporous fern genus Azolla
+    Phylogenetic relationships in the heterosporous fern genus *Azolla*
     (Azollaceae) based on DNA sequence data from three noncoding regions
   type: article-journal
   volume: '167'
@@ -33451,6 +34409,24 @@ references:
   URL: http://www.plantphysiol.org/cgi/doi/10.1104/pp.105.062851
   volume: '138'
 
+- id: salviniaceae
+  abstract: >-
+    Salviniaceae Erin M. Sigel1, Caleb Onoja Akogwu2, Michael J. Song3 and Carl
+    J. Rothfels2     Affiliations:  Erin M. Sigel Department of Biological
+    Sciences, University of New Hampshire, 38 Academic Way,  Durham, NH, USA
+    03824  erin.sigel@unh.edu Orcid: 0000-0001-8656-7726  Caleb address em...
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  citation-key: salviniaceae
+  container-title: Google Docs
+  language: en
+  title: Salviniaceae
+  type: webpage
+  URL: >-
+    https://docs.google.com/document/d/1PKwNEby2W_rAJD93ZB100C5fa7ExEef_ydYGZ4GtQS8/edit?tab=t.0&pli=1&authuser=0&usp=embed_facebook
+
 - id: salvo1986gymnocarpium
   author:
     - family: Salvo
@@ -33752,8 +34728,8 @@ references:
   page: 329–357
   source: DOI.org (Crossref)
   title: >-
-    A morphological taxonomic revision of Azolla Lam. section Rhizosperma (Mey.)
-    Mett. (Azollaceae)
+    A morphological taxonomic revision of *Azolla* Lam. section *Rhizosperma*
+    (Mey.) Mett. (Azollaceae)
   type: article-journal
   URL: >-
     https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1992.tb00277.x
@@ -33771,7 +34747,7 @@ references:
     - year: 1993
   page: 175–193
   title: >-
-    The supraspeeific taxonomy and evolution of the fern  genus Azolla
+    The supraspecific taxonomy and evolution of the fern  genus *Azolla*
     (Azollaceae)
   type: article-journal
   volume: '184'
@@ -33807,6 +34783,39 @@ references:
   type: article-journal
   URL: http://www.bioone.org/doi/abs/10.3417/2010059
   volume: '22'
+
+- id: schaeferEuropeanPrioritySpecies2011
+  accessed:
+    - year: 2026
+      month: 2
+      day: 27
+  author:
+    - family: Schaefer
+      given: Hanno
+    - family: Carine
+      given: Mark A
+    - family: Rumsey
+      given: Fred J
+  citation-key: schaeferEuropeanPrioritySpecies2011
+  container-title: Systematic Botany
+  container-title-short: Systematic Botany
+  DOI: 10.1600/036364411X604868
+  ISSN: 0363-6445
+  issue: '4'
+  issued:
+    - year: 2011
+      month: 11
+      day: 14
+  language: en
+  page: 845–853
+  source: DOI.org (Crossref)
+  title: >-
+    From European Priority Species to Invasive Weed: *Marsilea azorica*
+    (Marsileaceae) is a Misidentified Alien
+  title-short: From European Priority Species to Invasive Weed
+  type: article-journal
+  URL: https://www.ingentaconnect.com/content/10.1600/036364411X604868
+  volume: '36'
 
 - id: scheele1987new
   abstract: >-
@@ -33875,6 +34884,16 @@ references:
   title: >-
     CRYPTOGRAMMA BITHYNICA SPEC NOV. (PTERIDACEAE, PTERIDOPHYTA) - A NEW FERN
     SPECIES FROM NORTHWESTERN ANATOLIA / TURKEY
+  type: article-journal
+
+- id: schmidtBeitragVerstandnisMorphologie1978
+  author:
+    - family: Schmidt
+      given: K. D.
+  citation-key: schmidtBeitragVerstandnisMorphologie1978
+  issued:
+    - year: 1978
+  title: Ein Beitrag zum Verständnis von Morphologie und Anatomie der Marsileaceae
   type: article-journal
 
 - id: schneider1996vergleichende
@@ -34503,6 +35522,30 @@ references:
   type: article-journal
   volume: '161'
 
+- id: schneller1990azollaceae
+  author:
+    - family: Schneller
+      given: J Jakob
+  citation-key: schneller1990azollaceae
+  collection-editor:
+    - family: Kubitzki
+      given: K
+  collection-title: The Families and Genera of Vascular Plants
+  container-title: Pteridophytes and Gymnosperms
+  editor:
+    - family: Kramer
+      given: K U
+    - family: Green
+      given: P S
+  issued:
+    - year: 1990
+  page: 57--60
+  publisher: Spring
+  publisher-place: Berlin
+  title: Azollaceae
+  type: chapter
+  volume: '1'
+
 - id: schneller1990salviniaceae
   author:
     - family: Schneller
@@ -34511,7 +35554,7 @@ references:
   collection-editor:
     - family: Kubitzki
       given: K
-  collection-title: The Family and Genera of Vascular Plants
+  collection-title: The Families and Genera of Vascular Plants
   container-title: Pteridophytes and Gymnosperms
   editor:
     - family: Kramer
@@ -34524,25 +35567,6 @@ references:
   publisher: Spring
   publisher-place: Berlin
   title: Salviniaceae
-  type: chapter
-  volume: '1'
-
-- id: schneller1990salviniaceae
-  author:
-    - family: Kramer
-      given: K U
-  citation-key: schneller1990salviniaceae
-  collection-editor:
-    - family: Kubitzki
-      given: K
-  collection-title: The Family and Genera of Vascular Plants
-  container-title: Pteridophytes and Gymnosperms
-  issued:
-    - year: 1990
-  page: 256–258
-  publisher: Spring
-  publisher-place: Berlin
-  title: Marsileaceae
   type: chapter
   volume: '1'
 
@@ -36536,7 +37560,7 @@ references:
   page: 564–570
   title: >-
     The use of matk in Ophioglossaceae phylogeny and the determination of
-    Mankyua chromosome number shed light on chromosome number evolution in
+    *Mankyua* chromosome number shed light on chromosome number evolution in
     Ophioglossaceae
   type: article-journal
   URL: >-
@@ -36622,6 +37646,144 @@ references:
     Morphology of sporophytes and population ecology of Gymnocarpium dryopteris
     (L.) Newman
   type: article-journal
+
+- id: shukla2016expression
+  accessed:
+    - year: 2026
+      month: 2
+      day: 26
+  author:
+    - family: Shukla
+      given: Anoop Kumar
+    - family: Upadhyay
+      given: Santosh Kumar
+    - family: Mishra
+      given: Manisha
+    - family: Saurabh
+      given: Sharad
+    - family: Singh
+      given: Rahul
+    - family: Singh
+      given: Harpal
+    - family: Thakur
+      given: Nidhi
+    - family: Rai
+      given: Preeti
+    - family: Pandey
+      given: Paras
+    - family: Hans
+      given: Aradhana L
+    - family: Srivastava
+      given: Subhi
+    - family: Rajapure
+      given: Vikram
+    - family: Yadav
+      given: Sunil Kumar
+    - family: Singh
+      given: Mithlesh Kumar
+    - family: Kumar
+      given: Jitendra
+    - family: Chandrashekar
+      given: K
+    - family: Verma
+      given: Praveen C
+    - family: Singh
+      given: Ajit Pratap
+    - family: Nair
+      given: K N
+    - family: Bhadauria
+      given: Smrati
+    - family: Wahajuddin
+      given: Muhammad
+    - family: Singh
+      given: Sarika
+    - family: Sharma
+      given: Sharad
+    - literal: Omkar
+    - family: Upadhyay
+      given: Ram Sanmukh
+    - family: Ranade
+      given: Shirish A
+    - family: Tuli
+      given: Rakesh
+    - family: Singh
+      given: Pradhyumna Kumar
+  citation-key: shukla2016expression
+  container-title: Nature Biotechnology
+  container-title-short: Nat Biotechnol
+  DOI: 10.1038/nbt.3665
+  ISSN: 1087-0156, 1546-1696
+  issue: '10'
+  issued:
+    - year: 2016
+      month: 10
+  language: en
+  page: 1046–1051
+  source: DOI.org (Crossref)
+  title: >-
+    Expression of an insecticidal fern protein in cotton protects against
+    whitefly
+  type: article-journal
+  URL: https://www.nature.com/articles/nbt.3665
+  volume: '34'
+
+- id: shukor2023emerging
+  abstract: >-
+    Intro -- Organization -- Preface -- Contents -- Sustainable Biomass
+    Resources for Decarbonising the Economy -- Phytoremediation Potential of
+    Salvinia Molesta to Reduce Ni and Cd from Simulated Wastewater -- 1
+    Introduction -- 2 Materials and Methods -- 2.1 Plant Sampling -- 2.2
+    Experimental Design -- 2.3 Water and Plant Sample Collection -- 2.4
+    Determination of Heavy Metals Concentration -- 2.5 Data Analysis -- 3
+    Results and Discussions -- 3.1 Removal Efficiency of Ni and Cd by S. Molesta
+    -- 3.2 Distribution of Heavy Metals in S. Molesta -- 3.3 Bioconcentration
+    Factor and Translocation Factor -- 3.4 Tolerance Index and Toxicity Symptoms
+    of S. Molesta Exposed to Ni and Cd -- 4 Conclusions -- References -- Soil
+    Risk Assessment on the Usage of Molasses-Based Distillery Effluent for Paddy
+    Irrigation: Heavy Metals Content -- 1 Introduction -- 2 Materials and
+    Methods -- 2.1 Sampling Site -- 2.2 Sampling and Preparation of Effluent
+    Sample -- 2.3 Soil Sample Collection and Analysis -- 2.4 Heavy Metal
+    Pollution Analysis -- 2.5 Data Analysis -- 3 Results and Discussion -- 3.1
+    Characteristics of the Effluent Final Discharge -- 3.2 Heavy Metals
+    Concentration in Soil Samples -- 3.3 Geoaccumulation Index (Igeo) and
+    Pollution Load Index (PLI) -- 4 Conclusion -- References -- Effects of Soil
+    Conditioners on Rice Growth and Soil Properties Under Water Stress at
+    Vegetative Stage -- 1 Introduction -- 2 Material and Methods -- 2.1
+    Preparation of Paddy Plant Samples -- 2.2 Soil Chemical Properties -- 2.3
+    Water Stress Behavior Treatment -- 2.4 Plant Growth -- 3 Results and
+    Discussion -- 3.1 Soil Physicochemical Properties -- 3.2 Plant Growth -- 4
+    Conclusion -- References -- Soil Amelioration Effects on Morphology Traits
+    of Upland Rice Root-Shoot and Soil Productivity Under Water Deficit -- 1
+    Introduction -- 2 Materials and Methods -- 3 Results and Discussion
+  author:
+    - family: Shukor
+      given: Hafiza
+  citation-key: shukor2023emerging
+  collection-title: Green Energy and Technology Series
+  contributor:
+    - family: Halim
+      given: Hairul Nazirah Abdul
+    - family: Ong
+      given: Hui Lin
+    - family: Lee
+      given: Boon-Beng
+    - family: Mohd Pisal
+      given: Mohd Hanif
+  edition: 1st ed
+  ISBN: 978-981-99-1695-5
+  issued:
+    - year: 2023
+  language: eng
+  number-of-pages: '1'
+  publisher: Springer
+  publisher-place: Singapore
+  source: K10plus ISBN
+  title: >-
+    Emerging Technologies for Future Sustainability: Proceedings of the 2nd
+    International Conference on Biomass Utilization and Sustainable Energy;
+    ICoBiomasSE 2022; 20-21 Sept. , Malaysia
+  title-short: Emerging Technologies for Future Sustainability
+  type: book
 
 - id: shuPhylogenomicAnalysisReconstructed2022
   abstract: >-
@@ -37008,6 +38170,42 @@ references:
   type: article-journal
   URL: https://BNRC.springeropen.com/articles/10.1186/s42269-022-00822-z
   volume: '46'
+
+- id: skog1992new
+  abstract: >-
+    Discovery of compression/impression megafossil material from the Cenomanian
+    (mid-Cretaceous) in Kansas documents the occurrence of the genus Marsilea
+    during this age. Only vegetative material has been found as complete plants;
+    associated structures that may be fertile structures could belong to the
+    genus also. This new fossil species extends the megafossil record of the
+    genus back to the mid-Cretaceous when previously only megaspores attributed
+    to the family occurred during this time. The fossil record of the
+    heterosporous aquatic fern families is reviewed with emphasis on the
+    Marsileaceae.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 5
+  author:
+    - family: Skog
+      given: Judith E.
+    - family: Dilcher
+      given: David L.
+  citation-key: skog1992new
+  container-title: American Journal of Botany
+  DOI: 10.1002/j.1537-2197.1992.tb13687.x
+  ISSN: 1537-2197
+  issue: '9'
+  issued:
+    - year: 1992
+  language: en
+  license: © 1992 Botanical Society of America
+  page: 982–988
+  source: Wiley Online Library
+  title: A New Species of Marsilea from the Dakota Formation in Central Kansas
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/j.1537-2197.1992.tb13687.x
+  volume: '79'
 
 - id: skog2001biogeography
   abstract: >-
@@ -37844,33 +39042,17 @@ references:
     https://bioone.org/journals/american-fern-journal/volume-114/issue-4/0002-8444-114.4.334/The-complete-chloroplast-sequence-of-the-invasive-feathered-mosquito-fern/10.1640/0002-8444-114.4.334.full
   volume: '114'
 
-- id: song2024genome
-  abstract: >-
-    Azolla is a genus of freshwater ferns that is economically important as a
-    nitrogen-fixing biofertilizer, biofuel, bioremediator, and for potential
-    carbon sequestration, but also contains weedy invasive species. In
-    California, only 2 species are currently recognized but the actual diversity
-    may include up to 6 species, with the discrepancy being due to the
-    difficulty in identifying taxa, hybridization, and the introduction of
-    non-native species. Here, we report a new haplotype-resolved,
-    chromosome-level assembly and annotation of Azolla caroliniana as part of
-    the California Conservation Genomics Project (CCGP), using a combination of
-    PacBio HiFi and Omni-C sequencing technologies. The assembly is 521 Mb in
-    length, with a contig N50 of 1.6 Mb, and is scaffolded into 22
-    pseudochromosomes. A total of 21,848 protein-coding genes was predicted with
-    a Benchmarking Universal Single-Copy Orthologs (BUSCO) completeness score of
-    89.88%. In combination with the previously published Azola filiculoides
-    genome, this A. caroliniana genome will be a powerful tool for understanding
-    the population genetics and taxonomy of one of the most cryptic,
-    economically important, and poorly circumscribed fern taxa, and for
-    facilitating land plant genomics more broadly.
+- id: song2025genome
+  abstract: "Abstract\n            Azolla is a genus of freshwater ferns that is economically important as a nitrogen-fixing biofertilizer, biofuel, bioremediator, and for potential carbon sequestration, but also contains weedy invasive species. In California, only 2 species are currently recognized but the actual diversity may include up to 6 species, with the discrepancy being due to the difficulty in identifying taxa, hybridization, and the introduction of non-native species. Here, we report a new haplotype-resolved, chromosome-level assembly and annotation of Azolla caroliniana as part of the California Conservation Genomics Project (CCGP), using a combination of PacBio HiFi and Omni-C sequencing technologies. The assembly is 521\_Mb in length, with a contig N50 of 1.6\_Mb, and is scaffolded into 22 pseudochromosomes. A total of 21,848 protein-coding genes was predicted with a Benchmarking Universal Single-Copy Orthologs (BUSCO)\_completeness score of 89.88%. In combination with the previously published Azola filiculoides genome, this A. caroliniana genome will be a powerful tool for understanding the population genetics and taxonomy of one of the most cryptic, economically important, and poorly circumscribed fern taxa, and for facilitating land plant genomics more broadly."
   accessed:
-    - year: 2025
-      month: 8
-      day: 16
+    - year: 2026
+      month: 2
+      day: 26
   author:
     - family: Song
-      given: Michael J.
+      given: Michael J
+    - family: Rizzieri
+      given: Yanã C
     - family: Li
       given: Fay-Wei
     - family: Freund
@@ -37882,34 +39064,41 @@ references:
     - family: Miller
       given: Courtney
     - family: Shaffer
-      given: H. Bradley
+      given: H Bradley
     - family: Nguyen
       given: Oanh
     - family: Marimuthu
-      given: Mohan P.A.
+      given: Mohan P A
     - family: Chumchim
       given: Noravit
     - family: Tribble
       given: Carrie
     - family: Fairbairn
-      given: Colin W.
+      given: Colin W
     - family: Seligmann
       given: William
     - family: Rothfels
-      given: Carl J.
-  citation-key: song2024genome
-  DOI: 10.1101/2024.10.22.619683
+      given: Carl J
+  citation-key: song2025genome
+  container-title: Journal of Heredity
+  DOI: 10.1093/jhered/esaf022
+  editor:
+    - family: Li
+      given: Gang
+  ISSN: 0022-1503, 1465-7333
+  issue: '5'
   issued:
-    - year: 2024
-      month: 10
-      day: 25
+    - year: 2025
+      month: 8
+      day: 23
   language: en
-  license: http://creativecommons.org/licenses/by-nc-nd/4.0/
-  publisher: Genomics
+  license: https://creativecommons.org/licenses/by-nc/4.0/
+  page: 691–701
   source: DOI.org (Crossref)
   title: The genome assembly of the duckweed fern, *Azolla caroliniana*
-  type: article
-  URL: http://biorxiv.org/lookup/doi/10.1101/2024.10.22.619683
+  type: article-journal
+  URL: https://academic.oup.com/jhered/article/116/5/691/8116395
+  volume: '116'
 
 - id: song2025landscape
   abstract: >-
@@ -38554,6 +39743,23 @@ references:
   title: The gametophyte of Blechnum spicant (L.) Wither. and B. buchtienii Rosenst.
   type: article-journal
   volume: '2'
+
+- id: stokey1954gametophyte
+  author:
+    - family: Stokey
+      given: Alma G
+    - family: Atkinson
+      given: R
+  citation-key: stokey1954gametophyte
+  container-title: Phytomorphology
+  issued:
+    - year: 1954
+  language: en
+  page: 310--315
+  source: Zotero
+  title: The gametophyte of *Didymochlaena sinuata* Desv.
+  type: article-journal
+  volume: '4'
 
 - id: stolzcparti
   author:
@@ -39362,6 +40568,26 @@ references:
   type: article-journal
   volume: '60'
 
+- id: szmeja2013survival
+  author:
+    - family: Szmeja
+      given: Józef
+    - family: Gałka
+      given: Agnieszka
+  citation-key: szmeja2013survival
+  container-title: Journal of Freshwater Ecology
+  ISBN: 0270-5060
+  issue: '1'
+  issued:
+    - year: 2013
+  page: 113–123
+  publisher: Taylor & Francis
+  title: >-
+    Survival and reproduction of the aquatic fern Salvinia natans (L.) All.
+    during expansion in the Vistula Delta, south Baltic Sea coast
+  type: article-journal
+  volume: '28'
+
 - id: szovenyi2021charting
   accessed:
     - year: 2025
@@ -39489,6 +40715,53 @@ references:
     consideratii taxonomice
   type: article-journal
   volume: '45'
+
+- id: takahashi2001fossil
+  abstract: >-
+    Bulk sieving of sedimentary samples from upper Coniacian to lower Santonian
+    (Upper Cretaceous) of the Tamagawa Formation (Kuji Group) in northeastern
+    Japan has yielded more than 600 fossil megaspores, which comprise the first
+    megaspore assemblage to be described from the Cretaceous of Japan.
+    Megaspores were studied in detail with scanning electron microscopy,
+    including fractures that allow examination of the wall structure. Molaspora
+    (Marsileales) is the most distinctive component of the assemblage, with a
+    spirally twisted acrolamella. The other megaspores share three laesurae and
+    a granular exospore structure that is ordered to varying degrees. The most
+    abundant megaspores are Erlansonisporites and Verrutriletes, followed by
+    Bacutriletes and Trileites. The regular orientation of exospore granules in
+    Erlansonisporites suggests a selaginellalean affinity. Evidence from the new
+    assemblage indicates that the Marsileales and Selaginellales were components
+    of the late Cretaceous paleoflora on the eastern side of Eurasia and expands
+    previous knowledge of the Cretaceous vegetation of this region.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 5
+  author:
+    - family: Takahashi
+      given: Masamichi
+    - family: Crane
+      given: "Peter\_R."
+    - family: Ando
+      given: Hisao
+  citation-key: takahashi2001fossil
+  container-title: International Journal of Plant Sciences
+  DOI: 10.1086/319575
+  ISSN: 1058-5893
+  issue: '2'
+  issued:
+    - year: 2001
+      month: 3
+  page: 431–439
+  publisher: The University of Chicago Press
+  source: journals.uchicago.edu (Atypon)
+  title: >-
+    Fossil Megaspores of Marsileales and Selaginellales from the Upper Coniacian
+    to Lower Santonian (Upper Cretaceous) of the Tamagawa Formation (Kuji Group)
+    in Northeastern Japan
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/abs/10.1086/319575
+  volume: '162'
 
 - id: takahashi2015developmental
   author:
@@ -41119,7 +42392,7 @@ references:
   collection-editor:
     - family: Kubitzki
       given: K
-  collection-title: The families and genera of vascular plants
+  collection-title: The Families and Genera of Vascular Plants
   container-title: Pteridophytes and Gymnosperms
   editor:
     - family: Kramer
@@ -42953,7 +44226,7 @@ references:
   page: '116'
   source: DOI.org (Crossref)
   title: >-
-    Evidence for the origin of the hybrid cliff fern, *Woodsia* x *Abbeae*
+    Evidence for the origin of the hybrid cliff fern, *Woodsia* x *abbeae*
     (Aspleniaceae: Athyrioideae)
   title-short: >-
     Evidence for the Origin of the Hybrid Cliff Fern, Woodsia x Abbeae
@@ -43331,20 +44604,6 @@ references:
   type: article-journal
   volume: '16'
 
-- id: walker1973additional
-  author:
-    - family: Walker
-      given: Trevor G
-  citation-key: walker1973additional
-  container-title: Trans. Roy. Soc. Edinburgh
-  issue: '5'
-  issued:
-    - year: 1973
-  page: 109–135
-  title: Additional cytotaxonomic notes on the pteridophytes of Jamaica
-  type: article-journal
-  volume: '69'
-
 - id: walker1973aditional
   author:
     - family: Walker
@@ -43354,7 +44613,7 @@ references:
   issued:
     - year: 1973
   page: 109–135
-  title: Aditional cytotaxonomic notes on the pteridophytes of Jamaica
+  title: Additional cytotaxonomic notes on the pteridophytes of Jamaica
   type: article-journal
   volume: '69'
 
@@ -43415,6 +44674,22 @@ references:
   title: >-
     Cytotaxonomic studies of the ferns of Trinidad 2. The cytological and
     taxonomic implications
+  type: article-journal
+  volume: '13'
+
+- id: walker1985cytotaxonomica
+  author:
+    - family: Walker
+      given: Trevor G
+  citation-key: walker1985cytotaxonomica
+  container-title: Bulletin of the British Museum. Natural History. Botany
+  issue: '2'
+  issued:
+    - year: 1985
+  page: 149--249
+  title: >-
+    Cytotaxonomic studies of the ferns of Trinidad 2. The cytology and taxonomic
+    implications
   type: article-journal
   volume: '13'
 
@@ -44840,6 +46115,38 @@ references:
     (Continued)
   type: article-journal
   volume: '26'
+
+- id: weber2013salvinia
+  abstract: >-
+    A new fossil water fern, Salvinia coahuilensis Weber, is described from
+    material of the Maestrichtian Olmos Formation, Coahuila, Mexico. This is the
+    first pre-Tertiary species of Salvinia formally described on the basis of
+    megafossils. The species belongs to the Section Carinatae Shaparenko, and is
+    closely related to S. nigropunctata A. Br., a recent African form. The most
+    similar fossil species is S. bjerringii Mathiesen, from Neogene deposits of
+    Denmark. Some paleoecological data referring S. coahuilensis are given.
+  accessed:
+    - year: 2026
+      month: 3
+      day: 5
+  author:
+    - family: Weber
+      given: Reinhard
+  citation-key: weber2013salvinia
+  container-title: Ameghiniana
+  ISSN: 1851-8044
+  issue: '2'
+  issued:
+    - year: 2013
+      month: 8
+      day: 25
+  language: es
+  page: 173–190
+  source: ameghiniana.org.ar
+  title: SALVINIA COAHUILENSIS NOV. SP. DEL CRETACICO SUPERIOR DE MEXICO
+  type: article-journal
+  URL: https://ameghiniana.org.ar/index.php/ameghiniana/article/view/1410
+  volume: '10'
 
 - id: wefferling2024polyploid
   abstract: >-
@@ -47441,6 +48748,22 @@ references:
   URL: https://www.frontiersin.org/articles/10.3389/fpls.2025.1661720/full
   volume: '16'
 
+- id: yasui1911lifehistory
+  author:
+    - family: Yasui
+      given: Kono
+  citation-key: yasui1911lifehistory
+  container-title: Annals of Botany
+  ISBN: 0305-7364
+  issue: '98'
+  issued:
+    - year: 1911
+  page: 469–483
+  publisher: JSTOR
+  title: On the life-history of Salvinia natans
+  type: article-journal
+  volume: '25'
+
 - id: yatabe2009genetic
   author:
     - family: Yatabe
@@ -47630,12 +48953,14 @@ references:
     - family: Windham
       given: Michael D
   citation-key: yatskievych2008azollaceae
+  container-title: Canotia
+  issue: '2'
   issued:
     - year: 2008
   language: en
-  page: '4'
+  page: 31--33
   source: Zotero
-  title: AZOLLACEAE MOSQUITO FERN FAMILY
+  title: Azollaceae Mosquito Fern Family
   type: article-journal
   volume: '4'
 
@@ -47998,8 +49323,8 @@ references:
   page: e1418
   source: DOI.org (Crossref)
   title: >-
-    THE USE OF FLOATING MACROPHYTES AS A BIOLOGICAL ALTERNATIVE FOR WATER
-    QUALITY IMPROVEMENT IN EUTROPHIC ENVIRONMENTS
+    The use of floating macrophytes as a biological alternative for water
+    quality improvement in eutrophic environments
   type: article-journal
   URL: https://www.revistaacademicaonline.com/index.php/rao/article/view/1418
   volume: '11'
@@ -49465,6 +50790,33 @@ references:
   type: article-journal
   URL: http://link.springer.com/article/10.1007/BF00023057
   volume: '43'
+
+- id: zotero-item-29338
+  author:
+    - family: Bower
+      given: F O
+  citation-key: zotero-item-29338
+  issued:
+    - year: 1932
+  number-of-pages: '306'
+  publisher: Cambridge University Press,
+  publisher-place: Cambridge
+  title: The ferns (Filicales)
+  type: book
+  volume: '3'
+
+- id: zotero-item-29374
+  author:
+    - family: Pteridophyte Phylogeny Group II
+      given: ''
+  citation-key: zotero-item-29374
+  container-title: Taxon
+  issued:
+    - literal: in Review
+  title: >-
+    An update of the Pteridophyte Phylogeny Group classification for extant
+    ferns and lycophytes: PPG II
+  type: article-journal
 
 - id: zuquim2008guide
   author:
