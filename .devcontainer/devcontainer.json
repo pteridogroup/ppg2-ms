@@ -1,0 +1,28 @@
+{
+  "name": "ppg2-ms",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/project",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/project,type=bind,consistency=cached",
+  "remoteUser": "rstudio",
+  "updateRemoteUserUID": true,
+  "postCreateCommand": "R --no-save -e 'renv::restore()'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "REditorSupport.r-debugger",
+        "quarto.quarto"
+      ],
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/R",
+        "r.bracketedPaste": true,
+        "[r]": {
+          "editor.formatOnSave": false
+        }
+      }
+    }
+  }
+}

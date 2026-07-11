@@ -1,0 +1,5 @@
+{
+  "r.lsp.promptToInstall": false,
+  "r.lsp.enabled": false,
+  "r.sessionWatcher": false
+}
