@@ -13186,6 +13186,51 @@ references:
   type: article-journal
   volume: '47'
 
+- id: grassphylogenyworkinggroupiii2025nuclear
+  abstract: |-
+    Summary
+                
+                  
+                    
+                      
+                        Grasses (Poaceae) comprise
+                        c
+                        . 11 800 species and are central to human livelihoods and terrestrial ecosystems. Knowing their relationships and evolutionary history is key to comparative research and crop breeding. Advances in genome‐scale sequencing allow for increased breadth and depth of phylogenomic analyses, making it possible to infer a new reference species tree of the family.
+                      
+                    
+                    
+                      We inferred a comprehensive species tree of grasses by combining new and published sequences for 331 nuclear genes from genome, transcriptome, target enrichment and shotgun data. Our 1153‐tip tree covers 79% of grass genera (including 21 genera sequenced for the first time) and all but two small tribes. We compared it to a newly inferred 910‐tip plastome tree.
+                    
+                    
+                      We recovered most of the tribes and subfamilies previously established, despite pervasive incongruence among nuclear gene trees. The early diversification of the PACMAD clade could represent a hard polytomy. Gene tree–species tree reconciliation suggests that reticulation events occurred repeatedly. Nuclear–plastome incongruence is rare, with very few cases of supported conflict.
+                    
+                    
+                      We provide a robust framework for the grass tree of life to support research on grass evolution, including modes of reticulation, and genetic diversity for sustainable agriculture.
+  accessed:
+    - year: 2026
+      month: 7
+      day: 13
+  author:
+    - literal: Grass Phylogeny Working Group III
+  citation-key: grassphylogenyworkinggroupiii2025nuclear
+  container-title: New Phytologist
+  container-title-short: New Phytologist
+  DOI: 10.1111/nph.20263
+  ISSN: 0028-646X, 1469-8137
+  issue: '2'
+  issued:
+    - year: 2025
+      month: 1
+  language: en
+  page: 818–834
+  source: DOI.org (Crossref)
+  title: >-
+    A nuclear phylogenomic tree of grasses (Poaceae) recovers current
+    classification despite gene tree incongruence
+  type: article-journal
+  URL: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.20263
+  volume: '245'
+
 - id: greilhuber2005origin
   abstract: >-
     Background Perusing the literature on nuclear ‘genome size’ shows that the
@@ -38361,6 +38406,51 @@ references:
   URL: http://www.publish.csiro.au/?paper=SB18033
   volume: '56'
 
+- id: ruggiero2015higher
+  accessed:
+    - year: 2026
+      month: 7
+      day: 13
+  author:
+    - family: Ruggiero
+      given: Michael A.
+    - family: Gordon
+      given: Dennis P.
+    - family: Orrell
+      given: Thomas M.
+    - family: Bailly
+      given: Nicolas
+    - family: Bourgoin
+      given: Thierry
+    - family: Brusca
+      given: Richard C.
+    - family: Cavalier-Smith
+      given: Thomas
+    - family: Guiry
+      given: Michael D.
+    - family: Kirk
+      given: Paul M.
+  citation-key: ruggiero2015higher
+  container-title: PLoS ONE
+  container-title-short: PLoS ONE
+  DOI: 10.1371/journal.pone.0119248
+  editor:
+    - family: Thuesen
+      given: Erik V.
+  ISSN: 1932-6203
+  issue: '4'
+  issued:
+    - year: 2015
+      month: 4
+      day: 29
+  language: en
+  page: e0119248
+  source: DOI.org (Crossref)
+  title: A Higher Level Classification of All Living Organisms
+  type: article-journal
+  URL: https://dx.plos.org/10.1371/journal.pone.0119248
+  volume: '10'
+
 - id: ruhfel2008phylogenetic
   author:
     - family: Ruhfel
@@ -46131,6 +46221,35 @@ references:
   type: article-journal
   URL: http://link.springer.com/10.1007/s002990050557
   volume: '18'
+
+- id: theangiospermphylogenygroup2016update
+  accessed:
+    - year: 2023
+      month: 3
+      day: 2
+  author:
+    - literal: The Angiosperm Phylogeny Group
+  citation-key: theangiospermphylogenygroup2016update
+  container-title: Botanical Journal of the Linnean Society
+  container-title-short: Bot. J. Linn. Soc.
+  DOI: 10.1111/boj.12385
+  ISSN: '00244074'
+  issue: '1'
+  issued:
+    - year: 2016
+      month: 5
+  language: en
+  page: 1–20
+  source: DOI.org (Crossref)
+  title: >-
+    An update of the Angiosperm Phylogeny Group classification for the orders
+    and families of flowering plants: APG IV
+  title-short: >-
+    An update of the Angiosperm Phylogeny Group classification for the orders
+    and families of flowering plants
+  type: article-journal
+  URL: https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/boj.12385
+  volume: '181'
 
 - id: thefujianacademyofagriculturalsciences1987azolla
   citation-key: thefujianacademyofagriculturalsciences1987azolla
