@@ -122,53 +122,17 @@ clean_ppg <- function(ppg_raw) {
       taxonID = "wfo-4000031359",
       scientificNameAuthorship = "Newman"
     ) |>
-    # TODO these have been updated in Rhakhis, should remove this code
-    # once PPG data are updated
-    # - Podosorus
-    dct_add_row(
-      scientificName = "Podosorus",
-      scientificNameAuthorship = "Holttum",
-      taxonRank = "genus",
-      nomenclaturalStatus = "valid",
-      taxonomicStatus = "accepted",
-      parentNameUsage = "Microsoroideae"
-    ) |>
-    dct_add_row(
-      scientificName = "Podosorus angustatus",
-      scientificNameAuthorship = "Holttum",
-      taxonRank = "species",
-      nomenclaturalStatus = "valid",
-      taxonomicStatus = "accepted",
-      parentNameUsage = "Podosorus"
-    ) |>
-    # - Brownseya
+    # TODO the "×" hybrid marker has been dropped from this nothogenus
+    # name in Rhakhis; restore it so it matches data/ppg_issues*.csv,
+    # which still reference "× Lindsaeosoria". Remove this code once
+    # PPG data are updated.
     dct_modify_row(
-      scientificName = "Brownseya",
-      nomenclaturalStatus = "valid",
-      taxonomicStatus = "accepted",
-      parentNameUsage = "Lycopodielloideae"
-    ) |>
-    dct_modify_row(
-      scientificName = "Brownseya serpentina",
-      nomenclaturalStatus = "valid",
-      taxonomicStatus = "accepted",
-      parentNameUsage = "Brownseya"
-    ) |>
-    dct_modify_row(
-      scientificName = "Pseudolycopodiella serpentina",
-      acceptedNameUsage = "Brownseya serpentina",
-      nomenclaturalStatus = "valid",
-      taxonomicStatus = "synonym"
+      taxonID = "wfo-4000021862",
+      scientificName = "× Lindsaeosoria"
     ) |>
     # Filter by nomenclatural, taxonomic status
     filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
-    filter(taxonomicStatus %in% c("accepted", "synonym")) |>
-    dct_fill_col(
-      fill_to = "parentNameUsageID",
-      fill_from = "taxonID",
-      match_to = "scientificName",
-      match_from = "parentNameUsage"
-    )
+    filter(taxonomicStatus %in% c("accepted", "synonym"))
 }
 
 #' Delete a Taxon and All Its Descendants and Synonyms
@@ -900,6 +864,7 @@ set_taxon_priority <- function(ppg, families_in_phy_order) {
     "Osmundales",
     "Hymenophyllales",
     "Gleicheniales",
+    "Matoniales",
     "Schizaeales",
     "Salviniales",
     "Cyatheales",
