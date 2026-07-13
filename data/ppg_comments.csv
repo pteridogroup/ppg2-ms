@@ -87,7 +87,7 @@ wfo-4000011648,Didymoglossum,Desv.,genus,no,NA
 wfo-4000030769,Polyphlebium,Copel.,genus,no,NA
 wfo-4000039008,Trichomanes,L.,genus,yes,NA
 wfo-4000039997,Vandenboschia,Copel.,genus,no,NA
-wfo-9000000230,Gleicheniales,Link,order,no,"The monophyly of Gleicheniales is uncertain. They tend to be resolved as monophyletic in analyses of small-to-medium sized datasets [e.g., @schuettpelz2007fern; @rothfels2015evolutionary; @testo20164000species] but non-monophyletic in phylogenomic analyses [e.g., @qi2018wellresolved; @shen2018largescale; @du2022structural; @nitta2022open]. A vote to divide Gleicheniales among three orders did not pass (<https://github.com/pteridogroup/ppg/issues/44>)."
+wfo-9000000230,Gleicheniales,Link,order,no,NA
 wfo-7000000251,Gleicheniaceae,C.Presl,family,no,NA
 wfo-4000011525,Dicranopteris,Bernh.,genus,no,NA
 wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,no,NA
@@ -192,7 +192,7 @@ wfo-4000026281,Notholaena,R.Br.,genus,no,Not monophyletic as circumscribed [@rot
 wfo-4000027168,Ormopteris,J.Sm. ex J.Sm.,genus,no,NA
 wfo-4000028034,Paragymnopteris,K.H.Shing,genus,no,NA
 wfo-4000028038,Parahemionitis,Panigrahi,genus,yes,*Parahemionitis* is conserved with a conserved type to avoid nomenclatural instability in the genus name and in the epithet of the sole recognized species; *Mickelopteris* Fraser-Jenk. is thus a homotypic synonym [@lindsay20212836; @turland2024xx].
-wfo-4000028472,Pellaea,Link,genus,yes,Not monophyletic as circumscribed [@kirkpatrick2007investigating; @zhao2025phylogeny].
+wfo-4000028472,Pellaea,Link,genus,yes,NA
 wfo-4000028473,Pellaeopsis,J.Sm.,genus,no,NA
 wfo-4000028587,Pentagramma,"Yatsk., Windham & E.Wollenw.",genus,no,NA
 wfo-4100005088,Quechuapteris,Windham,genus,no,NA

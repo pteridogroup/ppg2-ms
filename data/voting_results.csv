@@ -1,4 +1,10 @@
 issue,total_votes,yes_votes,yes_percent,no_votes,no_percent,ballot,result
+147,81,79,97.5,2,2.5,25,passes
+146,82,79,96.3,3,3.7,25,passes
+121,88,83,94.3,5,5.7,24,passes
+120,60,35,58.3,25,41.7,23,does not pass
+119,70,59,84.3,11,15.7,23,passes
+118,67,56,83.6,11,16.4,23,passes
 117,81,75,92.6,6,7.4,22,passes
 116,81,67,82.7,14,17.3,22,passes
 114,65,50,76.9,15,23.1,21,passes
