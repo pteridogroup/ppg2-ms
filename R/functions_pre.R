@@ -201,35 +201,46 @@ fetch_issues <- function(repo_url, n_max = 1000) {
     magrittr::extract2(2) |>
     str_remove_all("\\/$")
 
-  issues_json <-
-    glue::glue(
-      "https://api.github.com/repos/{repo}/issues?state=all&page=1&per_page={n_max}"
-    ) |>
-    jsonlite::fromJSON()
+  # GitHub silently caps per_page at 100, so a single request with a large
+  # per_page value truncates results without warning; page through instead.
+  per_page <- 100L
+  page <- 1L
+  issues_pages <- list()
 
-  # Create initial tibble of issues (may include PRs)
-  issues_df <- tibble::tibble(
-    number = issues_json$number,
-    title = issues_json$title,
-    url = issues_json$url,
-    created_at = issues_json$created_at,
-    user = issues_json$user$login,
-    state = issues_json$state,
-    body = issues_json$body
-  )
+  repeat {
+    issues_json <-
+      glue::glue(
+        "https://api.github.com/repos/{repo}/issues?state=all&page={page}&per_page={per_page}"
+      ) |>
+      jsonlite::fromJSON()
 
-  if (nrow(issues_df) == n_max) {
-    stop("Maximum number of issues fetched; increase n_max")
+    if (length(issues_json$number) == 0) break
+
+    issues_pages[[page]] <- tibble::tibble(
+      number = issues_json$number,
+      title = issues_json$title,
+      url = issues_json$url,
+      created_at = issues_json$created_at,
+      user = issues_json$user$login,
+      state = issues_json$state,
+      body = issues_json$body,
+      draft = if (is.null(issues_json$draft)) NA else issues_json$draft
+    )
+
+    if (nrow(issues_pages[[page]]) < per_page) break
+
+    page <- page + 1L
+    if (page * per_page > n_max) {
+      stop("Maximum number of issues fetched; increase n_max")
+    }
   }
 
-  # If any PRs exist, remove them
-  if (!is.null(issues_json$draft)) {
-    issues_df <-
-      issues_df |>
-      dplyr::mutate(draft = issues_json$draft) |>
-      dplyr::filter(is.na(draft)) |>
-      dplyr::select(-draft)
-  }
+  # Combine pages; drop PRs (they have a non-NA draft field, plain issues
+  # don't)
+  issues_df <-
+    dplyr::bind_rows(issues_pages) |>
+    dplyr::filter(is.na(draft)) |>
+    dplyr::select(-draft)
 
   # Format final data frame
   issues_df |>
