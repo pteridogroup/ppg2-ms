@@ -6,7 +6,7 @@ Sys.setenv(TAR_PROJECT = "main")
 tar_plan(
   # Download PPG taxonomy ----
   ppg_raw = read_ppg_from_archive(
-    "https://github.com/pteridogroup/ppg/archive/refs/tags/v0.0.0.9007.tar.gz"
+    "https://github.com/pteridogroup/ppg/archive/refs/tags/v0.0.0.9008.tar.gz"
   ),
 
   # Clean PPG data
