@@ -257,9 +257,11 @@ Species-level curation will continue indefinitely with the publication of PPG II
 **Versioning.---** Starting with this version of the PPG classification (PPG 2.0.0), we are implementing a semantic versioning system, where the smallest digit indicates changes to the taxonomy at the species level or below, the middle digit indicates changes at the genus level or higher, and the largest digit indicates major changes (e.g., major rearrangements of the taxonomic hierarchy).
 New versions will be issued as needed, for example, following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open] or PteridoPortal [@rothfels2025pteridoportal].
 We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
+Whenever a new version is released, the classification on our website (<https://pteridogroup.github.io/>) will be immediately and automatically updated.
 This will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing through the versioning system the ability to unambiguously reference a specific snapshot of the classification.
+Note that although WFO classification is derived directly from PPG, it has its own release schedule (twice yearly, on the solstices) and may not always include the most recent changes.
 
-**Code availability.---** All data and code used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
+**Code and data availability.---** All code and data used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
 
 **AI usage.---** Generative AI was used to help write some of the code.
 Generative AI was not used to write any content of the manuscript.
@@ -343,16 +345,17 @@ Proposals averaged `r vote_stats$mean` votes (range `r vote_stats$min` to `r vot
 #| label: results
 #| include: false
 
-# make sure n class, subclass, order, and suborder agree between
-# ppg I and ppg II
+# make sure n class, subclass, and suborder agree between ppg I and
+# ppg II; order is checked separately below since PPG II adds one
+# order (Matoniales) relative to PPG I
 ppg_2_higher <-
   ppg_2_taxa_count |>
-  filter(taxonRank %in% c("class", "subclass", "order", "suborder")) |>
+  filter(taxonRank %in% c("class", "subclass", "suborder")) |>
   select(taxonRank, accepted)
 
 ppg_i_higher <-
   ppg_i_taxa_count |>
-  filter(taxonRank %in% c("class", "subclass", "order", "suborder"))
+  filter(taxonRank %in% c("class", "subclass", "suborder"))
 
 assert_that(
   magrittr::equals(
@@ -364,18 +367,33 @@ assert_that(
   msg = "Number of higher taxa in PPG I and PPG II don't match"
 )
 
+# PPG II recognizes one more order than PPG I: Matoniales
+# (github.com/pteridogroup/ppg/issues/121)
+n_order_ppg1 <- ppg_i_taxa_count |>
+  filter(taxonRank == "order") |>
+  pull(accepted)
+
+n_order_ppg2 <- ppg_2_taxa_count |>
+  filter(taxonRank == "order") |>
+  pull(accepted)
+
+assert_that(
+  magrittr::equals(n_order_ppg2 - n_order_ppg1, 1),
+  msg = "Number of orders in PPG II changed by an unexpected amount relative to PPG I"
+)
+
 ```
 
-The higher taxonomic levels of PPG II are largely unchanged relative to PPG I.
-Two classes are recognized, Lycopodiopsida (lycophytes) and Polypodiopsida (ferns; @fig-tree).
+The highest taxonomic levels of PPG II are largely unchanged relative to PPG I.
+Consistent with other higher level classifications (e.g., Ruggiero et al. 2015), two classes are recognized: Lycopodiopsida (lycophytes) and Polypodiopsida (ferns; @fig-tree).
 These two classes are distinct lineages; ferns are more closely related to seed plants than they are to lycophytes [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns].
 However, lycophytes and ferns have historically been studied together as seed-free vascular plants and we continue in that tradition.
-Our recognition of `r n$subclass$ppg2` subclasses, `r n$order$ppg2` orders, and `r n$suborder$ppg2` suborders is also unchanged from PPG I.
+Our recognition of `r n$subclass$ppg2` subclasses is also unchanged from PPG I.
 
-PPG II begins to diverge from PPG I at the level of family, where `r n$family$ppg2` families are recognized in PPG II versus `r n$family$ppg1` in PPG I (@tbl-taxa).
-The number of subfamilies and genera is also greater in PPG II vs. PPG I (`r n$subfamily$ppg2` vs. `r n$subfamily$ppg1` and `r n$genus$ppg2` vs. `r n$genus$ppg1`, respectively).
+PPG II begins to diverge from PPG I at the level of order: PPG II recognizes Matoniales, which had been treated in PPG I as a family (Matoniaceae) within Gleicheniales, thereby increasing the number of orders from `r n$order$ppg1` to `r n$order$ppg2` (@tbl-taxa).
+The number of families, subfamilies and genera is also greater in PPG II vs. PPG I (`r n$family$ppg2` vs. `r n$family$ppg1`, `r n$subfamily$ppg2` vs. `r n$subfamily$ppg1`, and `r n$genus$ppg2` vs. `r n$genus$ppg1`, respectively).
 Most taxonomic changes were caused by the addition of new names, i.e., splitting (@tbl-changes), whereas a smaller number of changes stems from the subsumption of existing names, i.e., sinking (@tbl-changes).
-Another change is the recognition of `r n$nothogenus$ppg2` nothogenera, which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
+Another change is the recognition of `r n$nothogenus$ppg2` nothogenera (intergeneric hybrids), which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting PPG II classification at the level of genus and above is presented below.
 
 The number of taxa at the level of species and below (>13,000 accepted species) precludes publishing those names here, but the full classification (extending to infraspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
@@ -383,10 +401,10 @@ The number of taxa at the level of species and below (>13,000 accepted species) 
 ## Discussion
 
 **An open, community-based approach to taxonomy.---** PPG is unique in its open, community-based approach to taxonomy.
-While other community efforts have been established [e.g., Legume Phylogeny Working Group\; @leroux2022expert], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
+While other community efforts have been established [e.g., Angiosperm Phylogeny Group, Legume Phylogeny Working Group, Grass Phylogeny Working Group; @leroux2022expert], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
-PPG II includes `r n_authors` authors representing `r n_countries` countries, underscoring the breadth of participation in this process.
-It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, and others.
+PPG II includes `r n_authors` authors representing `r n_countries` countries and all continents except Antarctica, underscoring the breadth of participation in this process.
+It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, horticulturists, and others.
 
 One clear benefit of the community approach is the ability to keep up with the rapid pace of systematics research.
 We live in an age where data generation exceeds the ability of any individual to comprehensively track new insights across such a large and heterogeneous group as pteridophytes.
@@ -398,11 +416,13 @@ nchild <- children_tally %>%
 ```
 
 **Trends in pteridophyte classification.---** In comparison to PPG I, the general trend has been an increase in the number of genera (@tbl-changes; Fig. S1).
-This increase is driven primarily by a few (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. `r count_ppgi_gen(ppg_i, family == "Thelypteridaceae")`), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae")`), and Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae")`).
-Notable exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* (J.Sm.) Ching and *Selliguea* Bory, subsuming six and four genera, respectively, that were recognized in PPG I.
+This increase is driven primarily by efforts to recognize monophyletic taxa, particuarly in the following (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. `r count_ppgi_gen(ppg_i, family == "Thelypteridaceae")`), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae")`), and Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae")`).
+Exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* (J.Sm.) Ching and *Selliguea* Bory, subsuming six and four genera, respectively, that were recognized in PPG I.
+Notably, PPG II recognizes a new order, Matoniales.
+This reflects the technological progress made in next-generation DNA sequencing, which is helping to clarify relationships that were intractable with morphological approaches alone.
 
 **Conclusion.---** The vast majority of taxa recognized herein are well established as monophyletic and were supported by a strong majority of voting members.
-However, there are still areas of the classification that need resolution, and in some cases we recognize non-monophyletic taxa because no clear monophyletic option exists.
+However, there are still areas of the classification that need resolution, and in some cases we recognize non-monophyletic taxa because no clear monophyletic option exists (e.g., *Microsorum* Link, *Notholaena* R.Br.).
 Known non-monophyletic taxa have been noted in the classification.
 In addition, there are some relatively deep relationships that have still not been adequately resolved, as indicated by the numbered nodes in @fig-tree and summarized in @tbl-uncertain.
 
@@ -416,6 +436,7 @@ Circumscriptions and synonymy are generally not shown, although we account for a
 A complete table of synonymy at the genus level and higher is provided in Table S1.
 Species counts exclude hybrids and should be considered approximate.
 All taxa are considered monophyletic unless otherwise indicated.
+Taxa at the rank of class to subfamily presented in the order they appear in @fig-tree; genera presented alphabetically.
 Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online (<https://www.worldfloraonline.org/>).
 
 ```{r}
