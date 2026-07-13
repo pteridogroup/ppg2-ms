@@ -22,6 +22,18 @@ fix_email <- function(data) {
         stringr::str_replace_all(
           "zuozhengyu\\@mail\\.kib\\.ac\\.cn",
           "zuozhengyu@sdau.edu.cn"
+        ) |>
+        stringr::str_replace_all(
+          "arsmith\\@berkeeley\\.edu",
+          "arsmith\\@berkeley\\.edu"
+        ) |>
+        stringr::str_replace_all(
+          "rggranil\\@gmail\\.com",
+          "rhgranil\\@gmail\\.com"
+        ) |>
+        stringr::str_replace_all(
+          "kaiemizhang\\@163\\.com",
+          "kaimeizhang\\@163\\.com"
         )
     )
 }
