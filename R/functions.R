@@ -248,6 +248,7 @@ delete_taxon <- function(
 #'   family names as tip labels.
 make_family_tree <- function() {
   require(ftolr)
+  require(phytools)
   # Load tree
   phy <- ftolr::ft_tree(branch_len = "ultra", rooted = TRUE, drop_og = TRUE)
   # Load fern taxonomy
@@ -328,6 +329,15 @@ make_family_tree <- function() {
     phy_family,
     outgroup = "Equisetaceae",
     resolve.root = TRUE
+  )
+
+  # Add Cryptocaulaceae, which is not yet included in FTOL, as sister to
+  # Nephrolepidaceae per the new PPG classification
+  phy_family <- phytools::bind.tip(
+    phy_family,
+    "Cryptocaulaceae",
+    edge.length = 0,
+    where = which(phy_family$tip.label == "Nephrolepidaceae")
   )
 
   ape::ladderize(phy_family)
@@ -1487,8 +1497,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
     getMRCA(phy_tracheo, c("Equisetaceae", "Ophioglossaceae"))     , "1"    ,
     getMRCA(phy_tracheo, c("Marattiaceae", "Osmundaceae"))         , "2"    ,
     getMRCA(phy_tracheo, c("Hymenophyllaceae", "Gleicheniaceae"))  , "3"    ,
-    getMRCA(phy_tracheo, c("Gleicheniaceae", "Dipteridaceae"))     , "4"    ,
-    getMRCA(phy_tracheo, c("Hypodematiaceae", "Dennstaedtiaceae")) , "5"    ,
+    getMRCA(phy_tracheo, c("Hypodematiaceae", "Dennstaedtiaceae")) , "4"    ,
   ) |>
     mutate(label_type = "clade")
 
@@ -1510,7 +1519,8 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
           "Lindsaeineae",
           "Cyatheales",
           "Salviniales",
-          "Schizaeales"
+          "Schizaeales",
+          "Matoniales"
         )
     ) |>
     # ggtree wants different column names for each 'label' in every
@@ -1585,7 +1595,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
   # - node labels to add to uncertain nodes
   node_labs_nums <- all_labs |>
     filter(label_type == "clade") |>
-    filter(taxon %in% as.character(1:5)) |>
+    filter(taxon %in% as.character(1:4)) |>
     rename(node_num = taxon)
 
   # Since we can only adjust x-nudge for an entire layer at a time,
@@ -1606,7 +1616,7 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
 
   line_types_nodes_add <- all_labs |>
     filter(label_type == "clade") |>
-    filter(taxon %in% as.character(1:5)) |>
+    filter(taxon %in% as.character(1:4)) |>
     select(node) |>
     mutate(uncertain = TRUE)
 
@@ -1687,16 +1697,6 @@ make_tree_figure <- function(phy_family, ppg, ppg_tl, children_tally) {
       offset = clade_lab_offset,
       fontsize = fig_font_size,
       extend = 0.25
-    ) +
-    # Paraphyletic group labels (right side)
-    geom_strip(
-      "Gleicheniaceae",
-      "Matoniaceae",
-      label = "Gleicheniales",
-      offset = clade_lab_offset,
-      fontsize = fig_font_size,
-      extend = 0.25,
-      offset.text = 0.2
     ) +
     # Tip labels (family)
     geom_tiplab(
