@@ -1,11 +1,14 @@
 {
-  "name": "ppg2-ms (default, no data_raw)",
+  "name": "ppg2-ms (Mac, with data_raw)",
   "build": {
-    "dockerfile": "../Dockerfile",
-    "context": ".."
+    "dockerfile": "../../Dockerfile",
+    "context": "../.."
   },
   "workspaceFolder": "/project",
   "workspaceMount": "source=${localWorkspaceFolder},target=/project,type=bind,consistency=cached",
+  "mounts": [
+    "source=/Users/joelnitta/Library/CloudStorage/Dropbox/project_data/ppg2_ms/data_raw,target=/project/data_raw,type=bind,consistency=cached"
+  ],
   "remoteUser": "rstudio",
   "updateRemoteUserUID": true,
   "postCreateCommand": "R --no-save -e 'renv::restore()'",
