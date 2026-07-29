@@ -9,7 +9,7 @@ wfo-4000029442,Phylloglossum,Kunze,genus,no,NA
 wfo-6500000514,Lycopodielloideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,no,NA
 wfo-4000020714,Lateristachys,Holub,genus,no,NA
 wfo-4000022506,Lycopodiella,Holub,genus,no,NA
-wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,yes,"*Palhinhaea* Franco & Vasc. is conserved against *Lepidotis* P.Beauv. ex Mirb. [@greuter20142292, @applequist2016report]."
+wfo-4000027783,Palhinhaea,Franco & Vasc.,genus,yes,*Palhinhaea* Franco & Vasc. is conserved against *Lepidotis* P.Beauv. ex Mirb. [@greuter20142292; @applequist2016report].
 wfo-4000031578,Pseudolycopodiella,Holub,genus,no,NA
 wfo-6500000515,Lycopodioideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,no,NA
 wfo-4000003736,Austrolycopodium,Holub,genus,no,NA
@@ -94,7 +94,7 @@ wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,no,NA
 wfo-4000015735,Gleichenella,Ching,genus,no,NA
 wfo-4000015736,Gleichenia,Sm.,genus,yes,NA
 wfo-4100000867,Rouxopteris,Hong M.Liu,genus,no,NA
-wfo-4000036680,Sticherus,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
+wfo-4000036680,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
 wfo-4000036909,Stromatopteris,Mett.,genus,no,NA
 wfo-7000000368,Matoniaceae,C.Presl,family,no,NA
 wfo-4000023323,Matonia,R.Br. ex Wall.,genus,no,NA
@@ -310,7 +310,7 @@ wfo-4100000969,Strophocaulon,S.E.Fawc. & A.R.Sm.,genus,no,NA
 wfo-4000038147,Thelypteris,Schmidel,genus,yes,NA
 wfo-4000039168,Trigonospora,Holttum,genus,no,NA
 wfo-7000000646,Woodsiaceae,Herter,family,no,NA
-wfo-4000040814,Woodsia,R.Br.,genus,no,A proposal to split the segregate genus *Physematium* Kaulf. out of *Woodsia* did not pass (<https://github.com/pteridogroup/ppg/issues/73>).
+wfo-4000040814,Woodsia,R.Br.,genus,no,A proposal to recognize *Physematium* Kaulf. did not pass (<https://github.com/pteridogroup/ppg/issues/73>).
 wfo-7000000055,Athyriaceae,Alston,family,no,NA
 wfo-4100001999,× Apseudathyrium,Xia Wan & Li Bing Zhang,genus,no,Nothogenus between *Athyrium* and *Pseudathyrium*.
 wfo-4000009334,× Cornoathyrium,Nakaike,genus,no,Nothogenus between *Athyrium* and *Cornopteris*.
