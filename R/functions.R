@@ -435,7 +435,11 @@ count_children_ppg <- function(
   families_in_phy_order,
   exclude_hybrids = FALSE
 ) {
-  # Filter to accepted names and convert to taxlist
+  # Filter to accepted names and convert to taxlist.
+  # Subgenus must be included here even though it isn't tallied on its own:
+  # some genera (e.g. Danaea) place species directly under a subgenus rather
+  # than the genus, so dropping subgenus rows would orphan those species from
+  # their genus in the taxlist hierarchy and undercount them (e.g. as 0).
   ppg_for_counting_tl <- dwc_to_tl(
     ppg,
     families_in_phy_order,
@@ -447,6 +451,7 @@ count_children_ppg <- function(
       "family",
       "subfamily",
       "genus",
+      "subgenus",
       "species"
     )
   )
@@ -483,6 +488,7 @@ count_children_ppg <- function(
       ),
       n_genera = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         TRUE ~ count_children(
           ppg_for_counting_tl,
           taxon_name,
@@ -492,6 +498,7 @@ count_children_ppg <- function(
       ),
       n_subfamily = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         level == "subfamily" ~ NaN,
         TRUE ~ count_children(
           ppg_for_counting_tl,
@@ -503,6 +510,7 @@ count_children_ppg <- function(
       ),
       n_family = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         TRUE ~ count_children(
@@ -514,6 +522,7 @@ count_children_ppg <- function(
       ),
       n_suborder = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
@@ -526,6 +535,7 @@ count_children_ppg <- function(
       ),
       n_order = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
@@ -539,6 +549,7 @@ count_children_ppg <- function(
       ),
       n_subclass = case_when(
         level == "genus" ~ NaN,
+        level == "subgenus" ~ NaN,
         level == "subfamily" ~ NaN,
         level == "family" ~ NaN,
         level == "suborder" ~ NaN,
@@ -2614,16 +2625,19 @@ make_tree_figure_appendix <- function(
       rank,
       change
     ) |>
+    filter_out(change == "none") |>
+    unique() |>
     left_join(
-      select(
-        ppg_higher,
-        name = scientificName,
-        acceptedNameUsageID
+      unique(
+        select(
+          ppg_higher,
+          name = scientificName,
+          acceptedNameUsageID
+        )
       ),
       by = "name"
     ) |>
-    filter_out(change == "none") |>
-    unique() |>
+    assert(is_uniq, name) |>
     assert(not_na, acceptedNameUsageID)
 
   ppg_issues_count_genus <-
