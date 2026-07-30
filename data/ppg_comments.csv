@@ -1,7 +1,7 @@
 taxon_id,scientific_name,scientific_name_authorship,taxon_rank,conserved,comment
 wfo-4100003338,Lycopodiopsida,Bartl.,class,no,NA
-wfo-9000000308,Lycopodiales,DC. ex Bercht. & J.Presl,order,no,NA
-wfo-7000000354,Lycopodiaceae,P.Beauv. ex Mirb.,family,no,NA
+wfo-9000000308,Lycopodiales,DC. ex Bercht. & J.Presl,order,no,A proposal to recognize Huperziaceae did not pass (<https://github.com/pteridogroup/ppg/issues/75>).
+wfo-7000000354,Lycopodiaceae,P.Beauv. ex Mirb.,family,no,A proposal to recognize Lycopodiastroideae did not pass (<https://github.com/pteridogroup/ppg/issues/76>).
 wfo-6500000511,Huperzioideae,W.H.Wagner & Beitel ex B.Øllg.,subfamily,no,NA
 wfo-4000018438,Huperzia,Bernh.,genus,no,NA
 wfo-4000029272,Phlegmariurus,(Herter) Holub,genus,no,NA
@@ -25,7 +25,7 @@ wfo-9000000275,Isoetales,Prantl,order,no,NA
 wfo-7000000301,Isoetaceae,Dumort.,family,no,NA
 wfo-4000019273,Isoetes,L.,genus,no,NA
 wfo-9000000493,Selaginellales,Prantl,order,no,NA
-wfo-7000000562,Selaginellaceae,Willk.,family,no,"Some treatments recognize multiple genera within Selaginellaceae [e.g., @zhou2023phylogeny; @zhouphylogeny; @zhao2026widespread]. No such proposal has been submitted to PPG, so we continue to recognize only *Selaginella*."
+wfo-7000000562,Selaginellaceae,Willk.,family,no,"Generic delimitation within Selaginellaceae remains debated. Some recent treatments recognize multiple genera [e.g., @zhou2023phylogeny; @zhouphylogeny; @zhao2026widespread], whereas others retain a broadly circumscribed *Selaginella* [e.g., @valdespino2024rebuttal; @velazquezmontes2025dos; @fu2026selaginella; @lopez2026rediscovering]. Although the recognition of segregate genera was discussed during the PPG II process (<https://github.com/pteridogroup/ppg/discussions/29>), no formal proposal to adopt a multigeneric classification was submitted. We therefore continue to recognize only *Selaginella*."
 wfo-4000034966,Selaginella,P.Beauv.,genus,yes,NA
 wfo-4100003341,Polypodiopsida,"Cronquist, Takht. & W.Zimm.",class,no,NA
 wfo-4100003340,Equisetidae,Warm.,subclass,no,NA
@@ -52,7 +52,7 @@ wfo-4000023047,Mankyua,"B.Y.Sun, M.H.Kim & C.H.Kim",genus,no,NA
 wfo-6500000518,Ophioglossoideae,C.Presl,subfamily,no,NA
 wfo-4000007779,Cheiroglossa,C.Presl,genus,no,NA
 wfo-4000026936,Ophioderma,(Blume) Endl.,genus,no,NA
-wfo-4000026939,Ophioglossum,L.,genus,no,Includes *Rhizoglossum* C.Presl.
+wfo-4000026939,Ophioglossum,L.,genus,no,"Includes *Rhizoglossum* C.Presl. A proposal to recognize segregate genera *Goswamia* Li Bing Zhang & Liang Zhang, *Haukia* Li Bing Zhang & Liang Zhang, and *Whittieria* Li Bing Zhang & Liang Zhang did not pass (<https://github.com/pteridogroup/ppg/issues/69>)."
 wfo-4100003343,Marattiidae,Klinge,subclass,no,NA
 wfo-9000000314,Marattiales,Link,order,no,NA
 wfo-7000000362,Marattiaceae,Kaulf.,family,yes,NA
@@ -94,7 +94,7 @@ wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,no,NA
 wfo-4000015735,Gleichenella,Ching,genus,no,NA
 wfo-4000015736,Gleichenia,Sm.,genus,yes,NA
 wfo-4100000867,Rouxopteris,Hong M.Liu,genus,no,NA
-wfo-4000036680,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
+wfo-4000036680,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
 wfo-4000036909,Stromatopteris,Mett.,genus,no,NA
 wfo-7000000368,Matoniaceae,C.Presl,family,no,NA
 wfo-4000023323,Matonia,R.Br. ex Wall.,genus,no,NA
@@ -161,7 +161,7 @@ wfo-4000036048,Sphenomeris,Maxon,genus,yes,NA
 wfo-4000037550,Tapeinidium,(C.Presl) C.Chr.,genus,no,NA
 wfo-4000041065,Xyropteris,K.U.Kramer,genus,no,NA
 wfo-4100005208,Pteridineae,J.Prado & Schuettp.,suborder,no,NA
-wfo-7000000503,Pteridaceae,E.D.M.Kirchn.,family,no,NA
+wfo-7000000503,Pteridaceae,E.D.M.Kirchn.,family,no,A proposal to elevate the subfamilies of Pteridaceae to family level did not pass (<https://github.com/pteridogroup/ppg/issues/101>).
 wfo-1200096492,Adiantoideae,Horvat,subfamily,no,NA
 wfo-4000000695,Adiantum,L.,genus,no,NA
 wfo-6500000504,Cheilanthoideae,Horvat,subfamily,no,NA
@@ -176,7 +176,7 @@ wfo-4000004948,Bommeria,E.Fourn.,genus,no,NA
 wfo-4100005082,Brasiliopteris,"J.Prado, Schuettp. & Yatsk.",genus,no,NA
 wfo-4000005992,Calciphilopteris,Yesilyurt & H.Schneid.,genus,no,NA
 wfo-4100005083,Carlottahallia,Windham,genus,no,NA
-wfo-4000007749,Cheilanthes,Sw.,genus,yes,"*Cheilanthes* is more narrowly defined here than in most previous classifications. The bulk of the genus consists of a moderately supported clade within the hemionitids [@schuettpelz2025phylogenetically], but a few species treated in this genus are known to fall elsewhere in the cheilanthoid phylogeny [e.g., @kao2019lowcopy]."
+wfo-4000007749,Cheilanthes,Sw.,genus,yes,NA
 wfo-4000007762,Cheiloplecton,Fée,genus,no,NA
 wfo-4000008112,Choristosoria,Mett. ex Kuhn,genus,no,NA
 wfo-4100005084,Christenhuszia,Schuettp. & J.Prado,genus,no,NA
@@ -191,8 +191,8 @@ wfo-4100005086,Namaquapteris,Windham & Pryer,genus,no,NA
 wfo-4000026281,Notholaena,R.Br.,genus,no,Not monophyletic as circumscribed [@rothfels2008monophyletic; @johnson2012unique; @kao2019lowcopy].
 wfo-4000027168,Ormopteris,J.Sm. ex J.Sm.,genus,no,NA
 wfo-4000028034,Paragymnopteris,K.H.Shing,genus,no,NA
-wfo-4000028038,Parahemionitis,Panigrahi,genus,yes,*Parahemionitis* is conserved with a conserved type to avoid nomenclatural instability in the genus name and in the epithet of the sole recognized species; *Mickelopteris* Fraser-Jenk. is thus a homotypic synonym [@lindsay20212836; @turland2024xx].
-wfo-4000028472,Pellaea,Link,genus,yes,NA
+wfo-4000028038,Parahemionitis,Panigrahi,genus,yes,*Parahemionitis* is conserved with a conserved type to avoid nomenclatural instability in the genus name and in the epithet of the sole recognized species; *Mickelopteris* Fraser-Jenk. is thus a synonym [@lindsay20212836; @turland2024xx].
+wfo-4000028472,Pellaea,Link,genus,yes,"A proposal to recognize *Sericopteris* Jing Zhao, X.M.Zhou & Z.R.He and *Paraceterach* Copel. did not pass (<https://github.com/pteridogroup/ppg/issues/120>)."
 wfo-4000028473,Pellaeopsis,J.Sm.,genus,no,NA
 wfo-4000028587,Pentagramma,"Yatsk., Windham & E.Wollenw.",genus,no,NA
 wfo-4100005088,Quechuapteris,Windham,genus,no,NA
@@ -477,8 +477,8 @@ wfo-4000022340,Loxogramme,(Blume) C.Presl,genus,no,NA
 wfo-6500000517,Microsoroideae,B.K.Nayar,subfamily,no,NA
 wfo-4000016002,Goniophlebium,(Blume) C.Presl,genus,no,NA
 wfo-4100000745,Bosmania,Testo,genus,no,NA
-wfo-4000020829,Lecanopteris,Reinw.,genus,no,NA
-wfo-4000021173,Lepisorus,(J.Sm.) Ching,genus,yes,"Includes *Lemmaphyllum* C.Presl, *Paragramma* (Blume) T.Moore, *Neocheiropteris* Christ, *Neolepisorus* Ching, *Tricholepidium* Ching, and *Lepidomicrosorium* Ching & K.H.Shing."
+wfo-4000020829,Lecanopteris,Reinw.,genus,no,A proposal to expand *Lecanopteris* to include *Dendroconche* and *Zealandia* did not pass (<https://github.com/pteridogroup/ppg/issues/28>).
+wfo-4000021173,Lepisorus,(J.Sm.) Ching,genus,yes,"Includes *Lemmaphyllum* C.Presl, *Paragramma* (Blume) T.Moore, *Neocheiropteris* Christ, *Neolepisorus* Ching, *Tricholepidium* Ching, and *Lepidomicrosorium* Ching & K.H.Shing. A proposal to recognize *Ellipinema* Li Bing Zhang & Liang Zhang did not pass (<https://github.com/pteridogroup/ppg/issues/46>)."
 wfo-4000021236,Leptochilus,Kaulf.,genus,no,NA
 wfo-4000024217,Microsorum,Link,genus,no,Not monophyletic as currently circumscribed [@nitta2022open].
 wfo-4000030518,Podosorus,Holttum,genus,no,NA
