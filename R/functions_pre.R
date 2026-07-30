@@ -219,11 +219,22 @@ fetch_issues <- function(repo_url, n_max = 1000) {
   page <- 1L
   issues_pages <- list()
 
+  # Authenticate with GITHUB_PAT (if set) so this uses the 5000/hour token
+  # quota instead of the 60/hour unauthenticated one
+  auth <- if (gh::gh_token_exists()) {
+    httr::add_headers(Authorization = paste("token", gh::gh_token()))
+  } else {
+    httr::add_headers()
+  }
+
   repeat {
-    issues_json <-
+    response <-
       glue::glue(
         "https://api.github.com/repos/{repo}/issues?state=all&page={page}&per_page={per_page}"
       ) |>
+      httr::GET(auth)
+    httr::stop_for_status(response)
+    issues_json <- httr::content(response, as = "text", encoding = "UTF-8") |>
       jsonlite::fromJSON()
 
     if (length(issues_json$number) == 0) break
