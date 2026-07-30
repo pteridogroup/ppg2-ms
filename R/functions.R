@@ -1907,6 +1907,15 @@ format_ppg_classification <- function(
       pretty = glue::glue("{indent}{pretty}")
     ) |>
     dplyr::select(pretty) |>
+    dplyr::mutate(pretty = as.character(pretty)) |>
+    # FIXME: remove this on next Rhakhis update
+    dplyr::mutate(
+      pretty = str_replace_all(
+        pretty,
+        "\\*\\*Vittarioideae\\*\\* Crabbe, Jermy \\& Mickel",
+        "**Vittarioideae** Link"
+      )
+    ) |>
     dplyr::pull(pretty)
 }
 
