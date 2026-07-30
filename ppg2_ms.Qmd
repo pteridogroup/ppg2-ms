@@ -152,6 +152,7 @@ n <- ppg_2_taxa_count |>
 
 We thank the organizers of the XX International Botanical Congress (Madrid, 2024) and the Botany 2025 (Palm Springs, CA) conferences for hosting in-person meetings and workshops that were vital to developing this update.
 We thank Alan Elliott and Roger Hyam for technical support in transitioning to the World Flora Online database, and World Flora Online for its cooperation and recognition of PPG as a TEN.
+This research was supported by the Japan Society for the Promotion of Science (Kakenhi grant number 22K15171).
 
 ## Author contributions
 
@@ -198,7 +199,7 @@ The PPG II classification can be accessed on our website (<https://pteridogroup.
 
 ## Introduction
 
-Ferns and lycophytes, which together compose the paraphyletic pteridophytes, are globally important plant groups that have shown remarkable resilience during their long phylogenetic history [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns; @li2025fernsa].
+Ferns and lycophytes, together comprising the paraphyletic group traditionally referred to as pteridophytes, are globally important plant lineages that have shown remarkable resilience during their long phylogenetic history [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns; @li2025fernsa].
 Our understanding of fern and lycophyte relationships has been revolutionized by molecular methods, which demonstrated that horsetails (*Equisetum* L.) and whisk ferns (*Psilotum* Sw., *Tmesipteris* Bernh.) are true ferns rather than so-called fern allies, and further that ferns are sister to seed plants and only distantly related to lycophytes [@pryer2001horsetails].
 @smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due in part to their extensive consolidation of genera and families, they were not widely accepted by the broader pteridological community [@schuettpelz2018are].
@@ -240,17 +241,17 @@ The database editor provided by WFO, called Rhakhis (<https://list.worldfloraonl
 Furthermore, Rhakhis is available as a live, web-based database, so PPG members can collaboratively edit the data in real time, with no need for synchronizing database files across multiple computers.
 
 When PPG joined WFO as a TEN, data for ferns and lycophytes were already in Rhakhis, but the classification scheme was based on the World Checklist of Vascular Plants [@govaertsWorldChecklistVascular2021], which reflected the views of its editors rather than the larger community and deviated substantially from PPG I [-@pteridophytephylogenygroupi2016communityderived].
-Therefore, taxonomic data from the World Ferns database [@hassler2025world], which more closely followed PPG I [-@pteridophytephylogenygroupi2016communityderived], were imported into Rhakhis and synchronized with the existing data while prioritizing the World Ferns classification.
+Therefore, taxonomic data from the World Ferns database [@hassler2026world], which more closely followed PPG I [-@pteridophytephylogenygroupi2016communityderived], were imported into Rhakhis and synchronized with the existing data while prioritizing the World Ferns classification.
 Finally, the data were further edited to reflect accepted taxonomic proposals from our voting process.
 There will be ongoing data exchange between WFO/PPG and World Ferns.
 
 **Extension to the species level.---** Another major change from PPG I is that the PPG II classification includes names at the rank of species and below (PPG I extended only to genus).
-By using existing data in Rhakhis and World Ferns [@hassler2025world], PPG II was pre-populated with these lower-ranked taxa.
+By using existing data in Rhakhis and World Ferns [@hassler2026world], PPG II was pre-populated with these lower-ranked taxa.
 As changes to higher-ranked taxa were approved through our voting process, we moved taxa in Rhakhis at the level of species and below to the appropriate position in the revised classification.
 Given that there are >13,000 accepted fern and lycophyte species names, it is not feasible to implement the same discussion and voting protocol that we applied to ranks at genus and above to ranks at species and below.
 Instead, we have established committees of specialists (curators) who are responsible for reviewing and maintaining taxonomic data at the species level and below in Rhakhis for particular taxa, such that all taxa are accounted for.
 If disagreement arises between curators over species level treatment and cannot be resolved through dialogue, the taxonomic decision is put to a community-wide vote using the same process as for genus and above (as of writing, this has not yet been necessary).
-When the World Ferns data [@hassler2025world] were imported into Rhakhis, not all species names could be successfully synchronized due to orthographic variation, resulting in differing numbers of accepted species between PPG II and World Ferns (@tbl-taxa).
+When the World Ferns data [@hassler2026world] were imported into Rhakhis, not all species names could be successfully synchronized due to orthographic variation, resulting in differing numbers of accepted species between PPG II and World Ferns (@tbl-taxa).
 One task of the PPG curators is to resolve these unmatched names.
 Species-level curation will continue indefinitely with the publication of PPG II.
 
@@ -403,6 +404,7 @@ The large number of taxa at the level of species and below (>13,000 accepted spe
 **An open, community-based approach to taxonomy.---** PPG is unique in its open, community-based approach to taxonomy.
 While other community efforts have been established [e.g., @theangiospermphylogenygroup2016update; @leroux2022expert; @grassphylogenyworkinggroupiii2025nuclear], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
+To maximize transparency, the comments accompanying the classification include links to proposals for taxonomic alternatives that failed to pass.
 PPG II includes `r n_authors` authors representing `r n_countries` countries and all continents except Antarctica, underscoring the breadth of participation in this process.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, horticulturists, and others.
 
@@ -456,7 +458,7 @@ cat(ppg_classification, sep = "\n")
 
 ```{r}
 #| label: tbl-taxa
-#| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2025world] by taxonomic status
+#| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2026world] by taxonomic status
 #|   (accepted or synonym).
 #|   Species counts exclude hybrids.
 #|   Complete synonymy was not presented in PPG I so this is not shown.
@@ -577,6 +579,7 @@ fig_tree_cap <- glue::glue("
   Numbers at nodes indicate uncertain relationships, summarized in Table 3.
   @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
   Equisetales is also shown in the position that has been observed in most other recent studies, although it was recovered as sister to Ophioglossales in @nitta2022open; see Table 3.
+  Cryptocaulaceae placed sister to Nephrolepidaceae after @fujiwara2026cryptocaulaceae.
   ") |>
   as.character() |>
   str_remove_all("//\n") |>
