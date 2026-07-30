@@ -7,7 +7,8 @@
   "workspaceFolder": "/project",
   "workspaceMount": "source=${localWorkspaceFolder},target=/project,type=bind,consistency=cached",
   "mounts": [
-    "source=/Users/joelnitta/Library/CloudStorage/Dropbox/project_data/ppg2_ms/data_raw,target=/project/data_raw,type=bind,consistency=cached"
+    "source=/Users/joelnitta/Library/CloudStorage/Dropbox/project_data/ppg2_ms/data_raw,target=/project/data_raw,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.Renviron,target=/home/rstudio/.Renviron,type=bind,consistency=cached"
   ],
   "remoteUser": "rstudio",
   "updateRemoteUserUID": true,

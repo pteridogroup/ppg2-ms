@@ -6,6 +6,9 @@
   },
   "workspaceFolder": "/project",
   "workspaceMount": "source=${localWorkspaceFolder},target=/project,type=bind,consistency=cached",
+  "mounts": [
+    "source=${localEnv:HOME}/.Renviron,target=/home/rstudio/.Renviron,type=bind,consistency=cached"
+  ],
   "remoteUser": "rstudio",
   "updateRemoteUserUID": true,
   "postCreateCommand": "R --no-save -e 'renv::restore()'",
