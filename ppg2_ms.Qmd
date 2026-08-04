@@ -79,7 +79,10 @@ auth_order <- tibble::tribble(
 
 authors <- author_list|>
   left_join(auth_order, by = "name") |>
-  arrange(order, str_to_lower(surname)) %>%
+  arrange(
+    order,
+    # order based on lowercase last name without accents etc
+    str_to_lower(stringi::stri_trans_general(surname, "Latin-ASCII"))) |>
   assert(not_na, name, institution) |>
   assert(is_uniq, name) |>
   mutate(
