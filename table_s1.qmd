@@ -28,7 +28,9 @@ conflicted::conflict_prefer("filter", "dplyr")
 # Load targets
 tar_load(
   c(
-    ppg
+    ppg,
+    # FIXME: this is a temporary work-around until rhakhis updates
+    si_table_name_update
   ),
   store = here::here("_targets")
 )
@@ -38,6 +40,19 @@ tar_load(
 #| label: tbl-taxa
 #| tbl-cap: "Synonymy in PPG II. Accepted names indicated with a dash (-). Species and below not included."
 #| echo: false
+
+# FIXME: this is a temporary work-around until rhakhis updates
+si_table_name_update_filtered <-
+  si_table_name_update |>
+  filter_out(
+    str_detect(response, "no change|already corrected")
+  ) |>
+  separate_wider_delim(
+    ipni,
+    names = c("scientificName", "scientificNameAuthorship"),
+    delim = " ",
+    too_many = "merge") |>
+  select(-response)
 
 ppg |>
   dplyr::filter_out(
@@ -60,6 +75,17 @@ ppg |>
     taxonomicStatus,
     acceptedNameUsageID
   ) |>
+  # FIXME: this is a temporary work-around until rhakhis updates
+  mutate(
+    name_original = paste(scientificName, scientificNameAuthorship)
+  ) |>
+  verify(all(si_table_name_update_filtered$name_original %in% name_original)) |>
+  rows_update(
+    si_table_name_update_filtered,
+    by = "name_original"
+  ) |>
+  select(-name_original) |>
+  # END FIX
   left_join(
     select(
       ppg,
@@ -67,7 +93,8 @@ ppg |>
       accepted_sci_name = scientificName,
       accepted_sci_auth = scientificNameAuthorship,
       accepted_rank = taxonRank
-    )
+    ),
+    by = join_by(acceptedNameUsageID)
   ) |>
   arrange(scientificName) |>
   select(-acceptedNameUsageID) |>
@@ -90,10 +117,13 @@ ppg |>
       .default = acc_name
     )
   ) |>
+  filter(name != acc_name) |>
   select(
     Name = name,
     `Accepted name` = acc_name
   ) |>
   unique() |>
+  assert(is_uniq, Name) |>
+  assert(not_na, c(Name, `Accepted name`)) |>
   knitr::kable()
 ```

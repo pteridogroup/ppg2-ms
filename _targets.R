@@ -44,6 +44,13 @@ tar_plan(
     read_csv(!!.x)
   ),
 
+  # FIXME: this is a temporary work-around until rhakhis updates
+  tar_file_read(
+    si_table_name_update,
+    "data_raw/update_table_s2.csv",
+    read_csv(!!.x)
+  ),
+
   # Process GitHub issues ----
 
   # - Load valid issues
