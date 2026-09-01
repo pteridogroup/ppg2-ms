@@ -25,8 +25,10 @@ COPY .Rprofile .Rprofile
 COPY renv/activate.R renv/activate.R
 COPY renv/settings.json renv/settings.json
 
-# Install renv and restore R package environment to persistent location
-RUN R -e "install.packages('renv', repos='https://cloud.r-project.org')" \
+# Install the exact renv version pinned in renv.lock (not latest CRAN) so
+# renv::restore() doesn't try to update/reinstall itself mid-restore, which
+# leaves the restored library in an inconsistent state
+RUN R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/renv/renv_1.1.5.tar.gz', repos = NULL, type = 'source')" \
   && R -e "renv::restore()"
 
 # Copy project files
