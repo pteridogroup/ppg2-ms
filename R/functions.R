@@ -1,23 +1,44 @@
-#' Read PPG Data from tar.gz Archive URL
+#' Read PPG Data from a GitHub Repo Archive
 #'
-#' Downloads a tar.gz archive from a URL, extracts it, and reads the
-#' data/ppg.csv file contained within.
+#' Resolves `ref` (a release tag, branch name, or commit SHA) to an
+#' exact commit SHA via the GitHub API, downloads the corresponding
+#' tar.gz archive of the repo at that commit, extracts it, and reads
+#' the data/ppg.csv file contained within. Resolving to a SHA up
+#' front (rather than downloading `ref` directly) ensures the result
+#' is pinned to a specific commit, even when `ref` is a moving target
+#' like a branch name.
 #'
-#' @param url Character string specifying the URL to a tar.gz archive
-#'   (e.g., a GitHub release archive). The archive should contain
-#'   data/ppg.csv.
+#' @param owner Character string giving the GitHub repo owner (e.g.,
+#'   "pteridogroup").
+#' @param repo Character string giving the GitHub repo name (e.g.,
+#'   "ppg").
+#' @param ref Character string giving a release tag, branch name
+#'   (e.g., "main"), or commit SHA to fetch. Defaults to "main".
 #'
 #' @return A tibble containing the contents of data/ppg.csv from the
 #'   archive.
 #'
 #' @examples
 #' \dontrun{
+#' # Latest commit on main
+#' ppg <- read_ppg_from_archive("pteridogroup", "ppg")
+#'
+#' # A specific release
 #' ppg <- read_ppg_from_archive(
-#'   "https://github.com/pteridogroup/ppg/archive/refs/tags/v0.0.0.9003.tar.gz"
+#'   "pteridogroup", "ppg",
+#'   ref = "v0.0.0.9003"
 #' )
 #' }
-read_ppg_from_archive <- function(url) {
+read_ppg_from_archive <- function(owner, repo, ref = "main") {
   require(readr)
+
+  # Resolve ref to an exact commit SHA so the download is pinned to a
+  # specific, reproducible commit
+  sha <- gh::gh(
+    "GET /repos/{owner}/{repo}/commits/{ref}",
+    owner = owner, repo = repo, ref = ref
+  )$sha
+  url <- glue::glue("https://github.com/{owner}/{repo}/archive/{sha}.tar.gz")
 
   # Create temporary files
   temp_tar <- tempfile(fileext = ".tar.gz")

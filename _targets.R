@@ -5,8 +5,11 @@ Sys.setenv(TAR_PROJECT = "main")
 
 tar_plan(
   # Download PPG taxonomy ----
+  # Use a pinned release tag for reproducibility; swap ref = "main" to
+  # instead pull the latest commit on the main branch.
   ppg_raw = read_ppg_from_archive(
-    "https://github.com/pteridogroup/ppg/archive/refs/tags/v0.0.0.9009.tar.gz"
+    "pteridogroup", "ppg",
+    ref = "v0.0.0.9009"
   ),
 
   # Clean PPG data
