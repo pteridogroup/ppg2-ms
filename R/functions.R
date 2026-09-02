@@ -88,47 +88,11 @@ clean_ppg <- function(ppg_raw) {
       # in different publication
       taxonID != "wfo-0001114160"
     ) |>
-    # TODO fix these in Rhakhis
-    # Delete nothogenera that are still in Rhakhis but have not passed
-    # voting
-    delete_taxon("× Chrinephrium", quiet = TRUE) |>
-    delete_taxon("× Chrismatopteris", quiet = TRUE) |>
-    delete_taxon("× Glaphyrocyclosorus", quiet = TRUE) |>
     mutate(
       nomenclaturalStatus = tidyr::replace_na(
         nomenclaturalStatus,
         "unknown"
       )
-    ) |>
-    dct_modify_row(
-      taxonID = "wfo-4100005085",
-      scientificName = "Estrellita"
-    ) |>
-    # TODO these have been corrected in Rhakhis, should remove this code
-    # once PPG data are updated
-    dct_modify_row(
-      taxonID = "wfo-1000079650",
-      scientificName = "Estrellita mollis"
-    ) |>
-    dct_modify_row(
-      taxonID = "wfo-4000031881",
-      scientificNameAuthorship = "C.Chr. & Ching"
-    ) |>
-    dct_modify_row(
-      taxonID = "wfo-4000004741",
-      scientificNameAuthorship = "T.Moore"
-    ) |>
-    dct_modify_row(
-      taxonID = "wfo-4000031359",
-      scientificNameAuthorship = "Newman"
-    ) |>
-    # TODO the "×" hybrid marker has been dropped from this nothogenus
-    # name in Rhakhis; restore it so it matches data/ppg_issues*.csv,
-    # which still reference "× Lindsaeosoria". Remove this code once
-    # PPG data are updated.
-    dct_modify_row(
-      taxonID = "wfo-4000021862",
-      scientificName = "× Lindsaeosoria"
     ) |>
     # Filter by nomenclatural, taxonomic status
     filter(nomenclaturalStatus %in% c("conserved", "valid", "unknown")) |>
