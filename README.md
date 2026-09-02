@@ -46,6 +46,10 @@ updated classification building on [PPG I (2016)](https://doi.org/10.1111/jse.12
 - `_targets_pre.R`: Pre-workflow for generating data files from raw data
   (not all raw data made public due to personally identifiable
   information)
+  - `data_raw/`: Not under version control, kept in sync between Joel's
+    Mac (Dropbox) and the nittalab server. Use the `sync-data-raw` skill
+    (`.claude/skills/sync-data-raw/`) to reconcile the two copies,
+    keeping the newest version of each file.
 - `images/`: Image files used in the manuscript (not figures produced by
   analysis)
 - `renv.lock`: Package dependency specification for reproducibility
