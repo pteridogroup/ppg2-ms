@@ -88,6 +88,8 @@ read_ppg_from_archive <- function(owner, repo, ref = "main") {
 #' The function performs the following cleaning steps:
 #' \enumerate{
 #'   \item Removes a duplicate taxon (Selaginella sanguinolenta)
+#'   \item Removes fossil taxa (Rhakhis marks these with a "†" between
+#'     the genus and species epithet in scientificName)
 #'   \item Deletes three nothogenera that have not passed PPG voting:
 #'     × Chrinephrium, × Chrismatopteris, and × Glaphyrocyclosorus
 #'   \item Replaces NA values in nomenclaturalStatus with "unknown"
@@ -109,6 +111,8 @@ clean_ppg <- function(ppg_raw) {
       # in different publication
       taxonID != "wfo-0001114160"
     ) |>
+    # Remove fossil taxa (flagged in Rhakhis with "†" in scientificName)
+    filter(!str_detect(scientificName, "†")) |>
     mutate(
       nomenclaturalStatus = tidyr::replace_na(
         nomenclaturalStatus,
