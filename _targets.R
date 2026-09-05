@@ -9,7 +9,8 @@ tar_plan(
   # instead pull the latest commit on the main branch.
   ppg_raw = read_ppg_from_archive(
     "pteridogroup", "ppg",
-    ref = "v0.0.0.9009"
+    # this SHA should become PPG 2.0.0
+    ref = "1125c943a3d77c5a1f12b85a45551d43d6050f6b"
   ),
 
   # Clean PPG data
