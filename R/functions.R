@@ -2601,9 +2601,13 @@ make_tree_figure_appendix <- function(
   require(ggnewscale)
 
   ppg_higher <- ppg |>
+    # "Dennstaedtia" occurs as two genus-rank homonyms (Bernh. and T.Moore);
+    # drop the one currently treated as a synonym so the higher-taxon joins
+    # below resolve to a single record. Which authorship is accepted has
+    # flipped between PPG releases, so key off taxonomicStatus, not the author.
     filter_out(
       scientificName == "Dennstaedtia",
-      scientificNameAuthorship == "Bernh."
+      taxonomicStatus == "synonym"
     ) |>
     mutate(
       acceptedNameUsageID = case_when(
