@@ -94,7 +94,7 @@ wfo-4000012023,Diplopterygium,(Diels) Nakai,genus,no,NA
 wfo-4000015735,Gleichenella,Ching,genus,no,NA
 wfo-4000015736,Gleichenia,Sm.,genus,yes,NA
 wfo-4100000867,Rouxopteris,Hong M.Liu,genus,no,NA
-wfo-4000036680,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
+wfo-4000036680,Sticherus,C.Presl,genus,yes,*Sticherus* was conserved with a conserved type [@lima20243006] to avoid nomenclatural instability after its paraphyly was demonstrated [@vieiralima2023phylogenomic]. *Sticheroides* was subsequently described to achieve monophyly.
 wfo-4000036909,Stromatopteris,Mett.,genus,no,NA
 wfo-7000000368,Matoniaceae,C.Presl,family,no,NA
 wfo-4000023323,Matonia,R.Br. ex Wall.,genus,no,NA
@@ -234,7 +234,7 @@ wfo-4000040387,Vittaria,Sm.,genus,no,NA
 wfo-4100005209,Dennstaedtiineae,Schwartsb. & Hovenkamp,suborder,no,NA
 wfo-7000000183,Dennstaedtiaceae,Lotsy,family,no,NA
 wfo-4100004386,Dennstaedtioideae,Pic.Serm.,subfamily,no,NA
-wfo-1200105051,Dennstaedtia,T.Moore,genus,yes,"Includes *Leptolepia* Mett. ex Kuhn and *Oenotrichia* Copel. To avoid extensive nomenclatural instability---effectively, the species of *Microlepia* needing to be recognized in *Dennstaedtia*, and the bulk of *Dennstaedtia* needing recognition in *Patania* C.Presl [@triana-moreno2022phylogenetic]---*Dennstaedtia* was conserved on a conserved type [@triana-moreno20222892; @turland2024xx]."
+wfo-4000011137,Dennstaedtia,Bernh.,genus,yes,"Includes *Leptolepia* Mett. ex Kuhn and *Oenotrichia* Copel. To avoid extensive nomenclatural instability---effectively, the species of *Microlepia* needing to be recognized in *Dennstaedtia*, and the bulk of *Dennstaedtia* needing recognition in *Patania* C.Presl [@triana-moreno2022phylogenetic]---*Dennstaedtia* was conserved on a conserved type [@triana-moreno20222892; @turland2024xx]."
 wfo-4000024129,Microlepia,C.Presl,genus,yes,*Microlepia* is conserved against *Scyphofilix* Thouars [@schwartsburd20172508; @turland2024xx].
 wfo-4100002053,Mucura,L.A.Triana & Sundue,genus,no,NA
 wfo-4000035560,Sitobolium,Desv.,genus,no,NA
