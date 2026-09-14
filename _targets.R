@@ -10,7 +10,7 @@ tar_plan(
   ppg_raw = read_ppg_from_archive(
     "pteridogroup", "ppg",
     # this SHA should become PPG 2.0.0
-    ref = "1125c943a3d77c5a1f12b85a45551d43d6050f6b"
+    ref = "81240c35b254a6227b8b165de699215bc8f5dba3"
   ),
 
   # Clean PPG data
