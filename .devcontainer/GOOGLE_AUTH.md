@@ -12,22 +12,24 @@ Error in tar_make():
   Can't get Google credentials.
 ```
 
-This happens when there's no cached token in `~/.cache/R/gargle`.
-Inside the devcontainer, that directory used to live only in the
-container's ephemeral home dir, so it was wiped on every rebuild —
-hence needing to redo this after each rebuild.
+This happens when there's no cached token in `~/.cache/gargle` — that
+is gargle's actual default (`rappdirs::user_cache_dir("gargle")`),
+*not* `~/.cache/R/gargle`. Inside the devcontainer, that directory
+used to live only in the container's ephemeral home dir, so it was
+wiped on every rebuild — hence needing to redo this after each
+rebuild.
 
 ## Fix (one-time per machine, persists across rebuilds)
 
 Both `.devcontainer/devcontainer.json` and `.devcontainer/mac/devcontainer.json`
-bind-mount `~/.cache/R/gargle` from the host, the same way they already
+bind-mount `~/.cache/gargle` from the host, the same way they already
 mount `~/.Renviron`. As long as the directory exists on the host, the
 cached token survives container rebuilds.
 
 1. **On the host** (lab server or Mac, outside the container), create
    the directory once so Docker doesn't auto-create it as root-owned:
    ```sh
-   mkdir -p ~/.cache/R/gargle
+   mkdir -p ~/.cache/gargle
    ```
 2. **Rebuild the devcontainer** (VS Code: "Dev Containers: Rebuild
    Container") so it picks up the mount.
@@ -38,7 +40,7 @@ cached token survives container rebuilds.
    googlesheets4::gs4_auth()
    ```
    This opens a browser via the `$BROWSER` redirect set up in
-   `.Rprofile`, and caches the token into `~/.cache/R/gargle`.
+   `.Rprofile`, and caches the token into `~/.cache/gargle`.
 4. Run `tar_make()` — it will reuse the cached token from now on,
    including after future rebuilds.
 

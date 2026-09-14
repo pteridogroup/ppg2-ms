@@ -35,9 +35,15 @@ RUN R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/renv/
 COPY . .
 
 # Set permissions for rstudio user (already exists in rocker/verse)
+# Pre-create ~/.cache owned by rstudio so that bind-mounting a
+# subdirectory of it (e.g. .cache/gargle, for persisting Google auth
+# tokens) doesn't cause Docker to auto-create it as root, which would
+# block renv from creating its own ~/.cache/R/renv directory.
 RUN chown -R rstudio:rstudio /project \
   && chmod -R 755 /usr/local/lib/R/renv-library \
-  && chmod -R 755 /usr/local/lib/R/renv-cache
+  && chmod -R 755 /usr/local/lib/R/renv-cache \
+  && mkdir -p /home/rstudio/.cache \
+  && chown -R rstudio:rstudio /home/rstudio/.cache
 
 # Switch to non-root user
 USER rstudio

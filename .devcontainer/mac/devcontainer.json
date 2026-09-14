@@ -9,7 +9,7 @@
   "mounts": [
     "source=/Users/joelnitta/Library/CloudStorage/Dropbox/project_data/ppg2_ms/data_raw,target=/project/data_raw,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.Renviron,target=/home/rstudio/.Renviron,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.cache/R/gargle,target=/home/rstudio/.cache/R/gargle,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.cache/gargle,target=/home/rstudio/.cache/gargle,type=bind,consistency=cached"
   ],
   "remoteUser": "rstudio",
   "updateRemoteUserUID": true,
