@@ -1,5 +1,5 @@
 ---
-title: "An update of the Pteridophyte Phylogeny Group classification for extant ferns and lycophytes: PPG II"
+title: ""
 format:
   docx:
     reference-doc: template.docx
@@ -62,8 +62,6 @@ tar_load(
 )
 ```
 
-Running title: PPG II
-
 ```{r}
 #| label: load-names
 
@@ -120,11 +118,13 @@ institutions <-
 
 ```
 
-Recommended citation: PPG II (2026). This project was organized by Joel H. Nitta^1^, Michael Hassler^2^, Harald Schneider^3^, Christopher Hoess^4^, Carl Rothfels^5^, and Eric Schuettpelz^6^; with additional contributions from (in alphabetical order): `r other_authors`
+Running title: PPG II
 
-`r institutions`
+**An update of the Pteridophyte Phylogeny Group classification for extant ferns and lycophytes: PPG II**
 
-Addresses for correspondence: Joel H. Nitta, <joelnitta@gmail.com>; Eric Schuettpelz, <schuettpelze@si.edu>
+**Pteridophyte Phylogeny Group\***
+
+Addresses for correspondence: *Joel H. Nitta, <joelnitta@gmail.com>; Eric Schuettpelz, <schuettpelze@si.edu>*
 
 ```{r}
 #| label: abstract
@@ -142,10 +142,7 @@ n <- ppg_2_taxa_count |>
     c(ppg1, ppg2)
   ) |>
   mutate(
-    n = case_when(
-      n < 10 ~ as.character(english::english(n)),
-      n >= 10 ~ scales::number(n, big.mark = ",")
-    )
+    n = scales::number(n, big.mark = ",")
   ) %>%
   pivot_wider(names_from = system, values_from = n) %>%
   split(.$taxonRank)
@@ -206,7 +203,7 @@ Ferns and lycophytes, together comprising the paraphyletic group traditionally r
 Our understanding of fern and lycophyte relationships has been revolutionized by molecular methods, which demonstrated that horsetails (*Equisetum* L.) and whisk ferns (*Psilotum* Sw., *Tmesipteris* Bernh.) are true ferns rather than so-called fern allies, and further that ferns are sister to seed plants and only distantly related to lycophytes [@pryer2001horsetails].
 @smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due in part to their extensive consolidation of genera and families, they were not widely accepted by the broader pteridological community [@schuettpelz2018are].
-The next classification to receive wide acceptance was Pteridophyte Phylogeny Group (PPG) I [-@pteridophytephylogenygroupi2016communityderived].
+The next classification to receive wide acceptance was Pteridophyte Phylogeny Group (PPG) I [@pteridophytephylogenygroupi2016communityderived].
 PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts and included nearly 90 co-authors with global representation.
 
 Since the publication of PPG I, phylogenetic relationships have been further clarified and taxonomic novelties have accrued.
@@ -218,8 +215,8 @@ To maximize participation in taxonomic discussions and ensure that justification
 We briefly discuss this system below; technical details will be the focus of another publication.
 
 **Taxonomic criteria.---** Our general criteria for approving taxonomic proposals remained unchanged from PPG I [-@pteridophytephylogenygroupi2016communityderived]: We sought to only recognize monophyletic groups (clades), while minimizing taxonomic disruption and maximizing usefulness (diagnosability).
-Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the International Code of Nomenclature for Algae, Fungi, and Plants [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
-The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals are before the ICN.
+Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the **International Code of Nomenclature for algae, fungi, and plants** [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
+The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals still being considered by the relevant committees.
 Because such proposals may not be voted on by the Nomenclatural Committees of the ICN for several years, we allowed such names to be voted on and approved by PPG.
 If a nomenclatural proposal is rejected, we will update the PPG classification accordingly.
 
@@ -231,12 +228,12 @@ During this time, anyone who agreed to our Code of Conduct could comment on the 
 
 Following the discussion period, voting on proposals was conducted via Google Forms.
 For each proposal, PPG members could choose to agree, disagree, or abstain.
-Proposals receiving 2/3 agreement passed and were recognized by PPG.
+Proposals receiving two-thirds agreement passed and were recognized by PPG.
 All taxonomic discussions and results of voting are publicly available on our GitHub repository.
 The proposal, discussion, and voting process ran continuously, with a ballot issued monthly.
 
 **Database management.---** To curate taxonomic data, PPG has partnered with World Flora Online (WFO), a large-scale database project to provide a consensus taxonomy for all plants (<https://www.worldfloraonline.org/>).
-World Flora Online relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs), to curate the taxonomy of specific plant groups [@borsch2020world].
+WFO relies on a network of taxonomic experts, called Taxonomic Expert Networks (TENs), to curate the taxonomy of specific plant groups [@borsch2020world].
 PPG is the TEN for ferns and lycophytes.
 As such, all taxonomic decisions made by PPG will also be reflected in WFO.
 
@@ -251,7 +248,7 @@ There will be ongoing data exchange between WFO/PPG and World Ferns.
 **Extension to the species level.---** Another major change from PPG I is that the PPG II classification includes names at the rank of species and below (PPG I extended only to genus).
 By using existing data in Rhakhis and World Ferns [@hassler2026world], PPG II was pre-populated with these lower-ranked taxa.
 As changes to higher-ranked taxa were approved through our voting process, we moved taxa in Rhakhis at the level of species and below to the appropriate position in the revised classification.
-Given that there are >13,000 accepted fern and lycophyte species names, it is not feasible to implement the same discussion and voting protocol that we applied to ranks at genus and above to ranks at species and below.
+Given that there are more than 13,000 accepted fern and lycophyte species names, it is not feasible to implement the same discussion and voting protocol that we applied to ranks at genus and above to ranks at species and below.
 Instead, we have established committees of specialists (curators) who are responsible for reviewing and maintaining taxonomic data at the species level and below in Rhakhis for particular taxa, such that all taxa are accounted for.
 If disagreement arises between curators over species level treatment and cannot be resolved through dialogue, the taxonomic decision is put to a community-wide vote using the same process as for genus and above (as of writing, this has not yet been necessary).
 When the World Ferns data [@hassler2026world] were imported into Rhakhis, not all species names could be successfully synchronized due to orthographic variation, resulting in differing numbers of accepted species between PPG II and World Ferns (@tbl-taxa).
@@ -262,7 +259,7 @@ Species-level curation will continue indefinitely with the publication of PPG II
 New versions will be issued as needed, for example, following recognition of a new genus or if a specific version is needed to be cited by a project like the Fern Tree of Life [@nitta2022open] or PteridoPortal [@rothfels2025pteridoportal].
 We anticipate that updates (new versions) will be published much more frequently than the time that has elapsed between PPG I and PPG II.
 The release of a new version automatically triggers an update to the classification on our website (<https://pteridogroup.github.io/>) and the issuance of a new DOI (Digital Object Identifier).
-This responsivity will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing through the versioning system and DOI the ability to unambiguously reference a specific snapshot of the classification.
+This responsiveness will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing through the versioning system and DOI the ability to unambiguously reference a specific snapshot of the classification.
 Note that although the WFO classification is derived directly from PPG, it has its own release schedule (twice yearly, on the solstices) and may not always include the most recent changes.
 
 **Code and data availability.---** All code and data used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
@@ -389,7 +386,7 @@ assert_that(
 ```
 
 The highest taxonomic levels of PPG II are largely unchanged relative to PPG I.
-Consistent with other higher level classifications [e.g., @ruggiero2015higher], two classes are recognized: Lycopodiopsida (lycophytes) and Polypodiopsida (ferns; @fig-tree).
+Consistent with other higher-level classifications [e.g., @ruggiero2015higher], two classes are recognized: Lycopodiopsida (lycophytes) and Polypodiopsida (ferns; @fig-tree).
 These two classes are distinct lineages; ferns are more closely related to seed plants than they are to lycophytes [@kenrick1997origin; @pryer2004phylogeny; @schneider2004ferns].
 However, lycophytes and ferns have historically been studied together as seed-free vascular plants and we continue in that tradition.
 Our recognition of `r n$subclass$ppg2` subclasses within Polypodiopsida is also unchanged from PPG I.
@@ -400,7 +397,7 @@ Most taxonomic changes were caused by the addition of new names, i.e., splitting
 Another change is the recognition of `r n$nothogenus$ppg2` nothogenera (intergeneric hybrids), which were not treated in PPG I [-@pteridophytephylogenygroupi2016communityderived].
 The resulting PPG II classification at the level of genus and above is presented below.
 
-The large number of taxa at the level of species and below (>13,000 accepted species) precludes publishing those names here, but the full classification (extending to infraspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
+The large number of taxa at the level of species and below (more than 13,000 accepted species) precludes publishing those names here, but the full classification (extending to infraspecific ranks) is available on our website (<https://pteridogroup.github.io/>) and WFO (<https://www.worldfloraonline.org/>).
 
 ## Discussion
 
@@ -461,7 +458,7 @@ cat(ppg_classification, sep = "\n")
 
 ```{r}
 #| label: tbl-taxa
-#| tbl-cap: "Number of taxa in PPG II, PPG I [@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2026world] by taxonomic status
+#| tbl-cap: "Number of taxa in PPG II, PPG I [-@pteridophytephylogenygroupi2016communityderived], and World Ferns [@hassler2026world] by taxonomic status
 #|   (accepted or synonym).
 #|   Species counts exclude hybrids.
 #|   Complete synonymy was not presented in PPG I so this is not shown.
@@ -606,3 +603,15 @@ ggsave(
 
 tree_fig
 ```
+
+{{< pagebreak >}}
+
+**Appendix. 1.** Authors and affiliations.
+
+Recommended citation: PPG II (2026).
+
+**This project was organized by Joel H. Nitta^1^, Michael Hassler^2^, Harald Schneider^3^, Christopher Hoess^4^, Carl Rothfels^5^, and Eric Schuettpelz^6^; with additional contributions from (in alphabetical order):**
+
+**`r other_authors`**
+
+`r institutions`

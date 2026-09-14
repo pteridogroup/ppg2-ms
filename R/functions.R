@@ -2557,7 +2557,7 @@ italicize_gen_single <- function(x) {
   if (is_hybrid) {
     res <- str_remove_all(x, "×") |> str_squish()
     res <- paste0("*", res, "*")
-    res <- paste("×", res)
+    res <- paste0("×", res)
   } else {
     res <- paste0("*", x, "*")
   }
