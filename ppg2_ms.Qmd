@@ -438,7 +438,7 @@ Species counts exclude hybrids and should be considered approximate.
 All taxa are considered monophyletic unless otherwise indicated.
 Taxa at the rank of class to subfamily are presented in the order they appear in @fig-tree; genera are presented alphabetically.
 Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online (<https://www.worldfloraonline.org/>).
-The classification presented here is PPG v2.0.0 (DOI TO BE PROVIDED UPON ACCEPTANCE).
+The classification presented here is PPG v2.0.0 (<https://doi.org/10.5281/zenodo.22760361>).
 
 ```{r}
 #| label: ppg-treatment
@@ -575,6 +575,7 @@ fig_tree_cap <- glue::glue("
   Numbers next to each family indicate number of genera followed by number of species.
   Size of diamonds at tips indicate relative number of species in each family.
   Numbers at nodes indicate uncertain relationships, summarized in Table 3.
+  Starburst indicates seed plants.
   @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
   Equisetales is also shown in the position that has been observed in most other recent studies, although it was recovered as sister to Ophioglossales in @nitta2022open; see Table 3.
   Cryptocaulaceae placed sister to Nephrolepidaceae after @fujiwara2026cryptocaulaceae.
