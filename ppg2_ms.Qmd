@@ -142,7 +142,14 @@ n <- ppg_2_taxa_count |>
     c(ppg1, ppg2)
   ) |>
   mutate(
-    n = scales::number(n, big.mark = ",")
+    # Spell out numbers under 10 (e.g. "two classes"), matching normal
+    # prose style; larger numbers are printed as digits with thousands
+    # separators (unlike the Classification section, which uses plain
+    # digits throughout).
+    n = case_when(
+      n < 10 ~ as.character(english::english(n)),
+      .default = fmt_n(n)
+    )
   ) %>%
   pivot_wider(names_from = system, values_from = n) %>%
   split(.$taxonRank)
@@ -215,8 +222,8 @@ To maximize participation in taxonomic discussions and ensure that justification
 We briefly discuss this system below; technical details will be the focus of another publication.
 
 **Taxonomic criteria.---** Our general criteria for approving taxonomic proposals remained unchanged from PPG I [-@pteridophytephylogenygroupi2016communityderived]: We sought to only recognize monophyletic groups (clades), while minimizing taxonomic disruption and maximizing usefulness (diagnosability).
-Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the *International Code of Nomenclature for algae, fungi, and plants* [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
-The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals still being considered by the relevant committees.
+Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the *International Code of Nomenclature for algae, fungi, and plants* [*ICN*\; @turland2025international]; (3) involve taxa at the genus level or higher.
+The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals are still being considered by the relevant committees.
 Because such proposals may not be voted on by the Nomenclatural Committees of the ICN for several years, we allowed such names to be voted on and approved by PPG.
 If a nomenclatural proposal is rejected, we will update the PPG classification accordingly.
 
@@ -337,8 +344,8 @@ vote_stats <-
 
 ```
 
-A total of `r nrow(ppg_issues)` valid proposals were submitted from `r issues_time$min_month` `r issues_time$min_year` to `r issues_time$max_month` `r issues_time$max_year`, of which `r n_issues_passed` were accepted and adopted into PPG II (@fig-voting).
-Proposals averaged `r vote_stats$mean` votes (range `r vote_stats$min` to `r vote_stats$max`), and `r nrow(comment_count)` proposals featured a discussion among PPG members beyond the initial proposal itself.
+A total of `r fmt_n(nrow(ppg_issues))` valid proposals were submitted from `r issues_time$min_month` `r issues_time$min_year` to `r issues_time$max_month` `r issues_time$max_year`, of which `r fmt_n(n_issues_passed)` were accepted and adopted into PPG II (@fig-voting).
+Proposals averaged `r fmt_n(vote_stats$mean)` votes (range `r fmt_n(vote_stats$min)` to `r fmt_n(vote_stats$max)`), and `r fmt_n(nrow(comment_count))` proposals featured a discussion among PPG members beyond the initial proposal itself.
 
 ```{r}
 #| label: results
@@ -403,7 +410,7 @@ The large number of taxa at the level of species and below (more than 13,000 acc
 While other community efforts have been established [e.g., @theangiospermphylogenygroup2016update; @leroux2022expert; @grassphylogenyworkinggroupiii2025nuclear], to our knowledge, no comparable classification working group exists that makes its discussions and results transparent and publicly available.
 In addition, the non-hierarchical, inclusive nature of our approach reduces the risk of our taxonomic decisions being driven by a vocal minority.
 To maximize transparency, the comments accompanying the classification include links to proposals for taxonomic alternatives that failed to pass.
-PPG II includes `r n_authors` authors representing `r n_countries` countries and all continents except Antarctica, underscoring the breadth of participation in this process.
+PPG II includes `r fmt_n(n_authors)` authors representing `r fmt_n(n_countries)` countries and all continents except Antarctica, underscoring the breadth of participation in this process.
 It is our hope that this commitment to transparency and accessibility has resulted, and will continue to result, in a high-quality taxonomic classification that is widely used by stakeholders spanning a broad range of backgrounds, including researchers, conservationists, local botanists, curators, teachers, horticulturists, and others.
 
 One clear benefit of the community approach is the ability to keep up with the rapid pace of systematics research.
@@ -416,7 +423,7 @@ nchild <- children_tally %>%
 ```
 
 **Trends in pteridophyte classification.---** In comparison to PPG I, the general trend has been an increase in the number of genera (@tbl-changes; Fig. S1).
-This increase is driven primarily by efforts to recognize monophyletic taxa, particularly in the following (sub)families: Thelypteridaceae (`r nchild$Thelypteridaceae$n_genera` vs. `r count_ppgi_gen(ppg_i, family == "Thelypteridaceae")`), Grammitidoideae (`r nchild$Grammitidoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae")`), and Cheilanthoideae (`r nchild$Cheilanthoideae$n_genera` vs. `r count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae")`).
+This increase is driven primarily by efforts to recognize monophyletic taxa, particularly in the following (sub)families: Thelypteridaceae (`r fmt_n(nchild$Thelypteridaceae$n_genera)` vs. `r fmt_n(count_ppgi_gen(ppg_i, family == "Thelypteridaceae"))`), Grammitidoideae (`r fmt_n(nchild$Grammitidoideae$n_genera)` vs. `r fmt_n(count_ppgi_gen(ppg_i, subfamily == "Grammitidoideae"))`), and Cheilanthoideae (`r fmt_n(nchild$Cheilanthoideae$n_genera)` vs. `r fmt_n(count_ppgi_gen(ppg_i, subfamily == "Cheilanthoideae"))`).
 Exceptions to the trend of splitting include the recognition of broadly construed *Lepisorus* (J.Sm.) Ching and *Selliguea* Bory, subsuming six and four genera, respectively, that were recognized in PPG I.
 Notably, PPG II recognizes a new order, Matoniales.
 This reflects an improved understanding of previously intractable relationships stemming from technological progress made in next-generation DNA sequencing and models of sequence evolution.
@@ -602,6 +609,10 @@ ggsave(
 
 tree_fig
 ```
+
+**Fig. S1**: Summary cladogram showing relationships between families of tracheophytes recognized by PPG II, colored by number of taxonomic changes relative to PPG I at the level of genus and higher.
+
+**Table S1.** Synonymy in PPG II.
 
 {{< pagebreak >}}
 

@@ -737,6 +737,19 @@ make_rank_plural <- function(x) {
   )
 }
 
+#' Format a Count for Manuscript Prose
+#'
+#' Adds thousands separators, for use in prose outside the Classification
+#' section (which instead prints plain digits with no separators).
+#' Unlike scales::number(), which rounds to a whole number by default,
+#' this preserves any existing decimal places (e.g., a mean vote count).
+#'
+#' @param x Numeric vector.
+#' @return Character vector.
+fmt_n <- function(x) {
+  prettyNum(x, big.mark = ",")
+}
+
 format_ppg_taxa_count <- function(children_tally) {
   children_tally |>
     select(taxonID, starts_with("n_")) |>
@@ -750,12 +763,14 @@ format_ppg_taxa_count <- function(children_tally) {
         n > 1 ~ make_rank_plural(level),
         .default = level
       ),
-      n_eng = case_when(
-        n < 10 ~ as.character(english::english(n)),
-        .default = scales::number(n, big.mark = ",")
-      ),
-      text = glue("{n_eng} {level_eng}"),
-      text = str_replace_all(text, "one species", "monospecific")
+      # Editor's style for the classification section: numerals only, no
+      # thousands separators (unlike prose elsewhere in the manuscript,
+      # which spells out small numbers and uses comma separators).
+      n_eng = as.character(n),
+      text = case_when(
+        level == "species" & n == 1 ~ "monospecific",
+        .default = glue("{n_eng} {level_eng}")
+      )
     ) |>
     select(taxonID, level, text) |>
     pivot_wider(
@@ -786,7 +801,7 @@ format_ppg_taxa_count <- function(children_tally) {
       ) |>
         str_to_sentence() |>
         str_replace_all(
-          "One genus and monospecific",
+          "1 genus and monospecific",
           "Single monospecific genus"
         )
     ) |>
