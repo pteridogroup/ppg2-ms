@@ -7,11 +7,7 @@ tar_plan(
   # Download PPG taxonomy ----
   # Use a pinned release tag for reproducibility; swap ref = "main" to
   # instead pull the latest commit on the main branch.
-  ppg_raw = read_ppg_from_archive(
-    "pteridogroup", "ppg",
-    # this SHA should become PPG 2.0.0
-    ref = "81240c35b254a6227b8b165de699215bc8f5dba3"
-  ),
+  ppg_raw = read_ppg_from_archive("pteridogroup", "ppg", ref = "v2.0.0"),
 
   # Clean PPG data
   # - remove invalid nomenclatural status and unchecked taxa
