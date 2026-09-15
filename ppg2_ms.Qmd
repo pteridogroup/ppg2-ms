@@ -215,7 +215,7 @@ To maximize participation in taxonomic discussions and ensure that justification
 We briefly discuss this system below; technical details will be the focus of another publication.
 
 **Taxonomic criteria.---** Our general criteria for approving taxonomic proposals remained unchanged from PPG I [-@pteridophytephylogenygroupi2016communityderived]: We sought to only recognize monophyletic groups (clades), while minimizing taxonomic disruption and maximizing usefulness (diagnosability).
-Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the **International Code of Nomenclature for algae, fungi, and plants** [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
+Additionally, proposals were required to: (1) implement a change relative to PPG I [-@pteridophytephylogenygroupi2016communityderived]; (2) be limited to names that have been validly published and are legitimate under the *International Code of Nomenclature for algae, fungi, and plants* [ICN\; @turland2025international]; (3) involve taxa at the genus level or higher.
 The one exception to the second rule is in the case where nomenclatural conservation or rejection proposals still being considered by the relevant committees.
 Because such proposals may not be voted on by the Nomenclatural Committees of the ICN for several years, we allowed such names to be voted on and approved by PPG.
 If a nomenclatural proposal is rejected, we will update the PPG classification accordingly.
@@ -290,10 +290,8 @@ ppg_issues |>
   verify(all.equal(status, result), success_fun = success_logical)
 
 # Summarize time period of submitted issues
-# For month, add period only if abbreviated (not for May)
-months_abb <- as.character(month(1:12, label = TRUE, abbr = TRUE))
+# Use fully spelled out month name
 months_full <- as.character(month(1:12, label = TRUE, abbr = FALSE))
-months_abb_punc <- ifelse(months_abb == months_full, months_abb, paste0(months_abb, "."))
 
 issues_time <-
   ppg_issues |>
@@ -305,9 +303,9 @@ issues_time <-
   ) |>
   mutate(
     min_year = year(min),
-    min_month = months_abb_punc[month(min)],
+    min_month = months_full[month(min)],
     max_year = year(max),
-    max_month = months_abb_punc[month(max)]
+    max_month = months_full[month(max)]
   )
 
 # Count number of commenters per valid issue
