@@ -1907,6 +1907,9 @@ format_ppg_classification <- function(
       taxon_count = tidyr::replace_na(taxon_count, "")
     ) |>
     dplyr::mutate(
+      # Nothotaxa are stored as "× Name" (with a space); print without the
+      # space per production office style (e.g. "×Lindsaeosoria").
+      scientificName = stringr::str_replace(scientificName, "^× ", "×"),
       # genera in bold italics, everything else in bold
       name_print = dplyr::case_when(
         taxonRank == "genus" ~ glue::glue("***{scientificName}***"),
