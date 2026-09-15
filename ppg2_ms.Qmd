@@ -11,6 +11,9 @@ crossref:
 bibliography: references.yaml
 link-bibliography: true
 csl: taxon.csl
+filters:
+  - path: filters/bold-fig-caption.lua
+    at: post-render
 execute: 
   echo: false
   message: false
