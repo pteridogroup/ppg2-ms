@@ -1030,7 +1030,7 @@ count_ppgi <- function(ppg_i) {
     )
 }
 
-count_ppg2_taxa <- function(ppg, exclude_hybrids = FALSE) {
+count_ppg2_taxa <- function(ppg, children_tally, exclude_hybrids = FALSE) {
   initial_count <- ppg |>
     assert(in_set(c("conserved", "valid", "unknown")), nomenclaturalStatus) |>
     assert(in_set(c("synonym", "accepted")), taxonomicStatus) |>
@@ -1082,6 +1082,20 @@ count_ppg2_taxa <- function(ppg, exclude_hybrids = FALSE) {
       verify(all((taxonRank == "nothogenus") == is_nothotaxon))
   }
 
+  # The literal count of species-rank rows in `ppg` undercounts species
+  # richness for genera whose full species list has not yet been entered
+  # into the name database. apply_species_count_updates() corrects those
+  # genera and propagates the correction up to the class level in
+  # `children_tally`; use that corrected total here so the reported species
+  # count agrees with the class-level totals in the classification.
+  corrected_species_total <- children_tally |>
+    semi_join(
+      filter(ppg, taxonRank == "class", taxonomicStatus == "accepted"),
+      by = "taxonID"
+    ) |>
+    pull(n_species) |>
+    sum()
+
   # Format as wide table
   initial_count |>
     ungroup() |>
@@ -1093,6 +1107,13 @@ count_ppg2_taxa <- function(ppg, exclude_hybrids = FALSE) {
       names_from = taxonomicStatus,
       values_from = n,
       values_fill = 0
+    ) |>
+    mutate(
+      accepted = if_else(
+        taxonRank == "species",
+        corrected_species_total,
+        accepted
+      )
     )
 }
 

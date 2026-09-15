@@ -129,7 +129,7 @@ tar_plan(
     ppg
   ),
   # - count number of taxa per rank in PPG II
-  ppg_2_taxa_count = count_ppg2_taxa(ppg, exclude_hybrids = TRUE),
+  ppg_2_taxa_count = count_ppg2_taxa(ppg, children_tally, exclude_hybrids = TRUE),
   ppg_i_taxa_count = count_ppgi(ppg_i),
 
   # Compare PPG I and PPG II ----
