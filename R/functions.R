@@ -1361,8 +1361,13 @@ make_issues_plot <- function(ppg_issues) {
     by = "4 months"
   )
   # Ensure the last date is included
+  date_break_labels <- format(date_breaks_seq, "%Y-%m")
   if (max(date_breaks_seq) < date_range$max_date_actual) {
     date_breaks_seq <- c(date_breaks_seq, date_range$max_date_actual)
+    # The appended break sits too close to the previous one to print its
+    # label without overlapping, so leave it blank; the tick (and data)
+    # still appear at the correct date.
+    date_break_labels <- c(date_break_labels, "")
   }
 
   # Make plot of cumulative count of submitted proposals
@@ -1383,8 +1388,8 @@ make_issues_plot <- function(ppg_issues) {
       y = "Number of proposals"
     ) +
     scale_x_date(
-      date_labels = "%Y-%m",
       breaks = date_breaks_seq,
+      labels = date_break_labels,
       limits = c(date_range$min_date, date_range$max_date)
     ) +
     theme_bw(base_size = 12) +
@@ -1412,8 +1417,8 @@ make_issues_plot <- function(ppg_issues) {
       labels = c("Passed", "Not passed")
     ) +
     scale_x_date(
-      date_labels = "%Y-%m",
       breaks = date_breaks_seq,
+      labels = date_break_labels,
       limits = c(date_range$min_date, date_range$max_date)
     ) +
     scale_y_continuous(
