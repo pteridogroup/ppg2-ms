@@ -158,6 +158,10 @@ n <- ppg_2_taxa_count |>
   split(.$taxonRank)
 ```
 
+## Data availability statement
+
+All code and data used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
+
 ## Acknowledgements
 
 We thank the organizers of the XX International Botanical Congress (Madrid, 2024) and the Botany 2025 (Palm Springs, CA) conferences for hosting in-person meetings and workshops that were vital to developing this update.
@@ -214,7 +218,7 @@ Our understanding of fern and lycophyte relationships has been revolutionized by
 @smith2006classification published the first higher-level fern classification in the molecular era.
 Two subsequent classifications extended the taxonomic scope to genera [@christenhusz2011linear; @christenhusz2014trends], but due in part to their extensive consolidation of genera and families, they were not widely accepted by the broader pteridological community [@schuettpelz2018are].
 The next classification to receive wide acceptance was Pteridophyte Phylogeny Group (PPG) I [@pteridophytephylogenygroupi2016communityderived].
-PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts and included nearly 90 co-authors with global representation.
+PPG I was remarkable for its community-based approach, which sought to obtain consensus among fern and lycophyte experts and included more than 90 co-authors with global representation.
 
 Since the publication of PPG I, phylogenetic relationships have been further clarified and taxonomic novelties have accrued.
 Accordingly, the PPG community provides a revised taxonomic system for ferns and lycophytes, PPG II.
@@ -271,8 +275,6 @@ We anticipate that updates (new versions) will be published much more frequently
 The release of a new version automatically triggers an update to the classification on our website (<https://pteridogroup.github.io/>) and the issuance of a new DOI (Digital Object Identifier).
 This responsiveness will benefit stakeholders who need an up-to-date, standardized taxonomy for ferns and lycophytes, while simultaneously providing through the versioning system and DOI the ability to unambiguously reference a specific snapshot of the classification.
 Note that although the WFO classification is derived directly from PPG, it has its own release schedule (twice yearly, on the solstices) and may not always include the most recent changes.
-
-**Code and data availability.---** All code and data used to generate this manuscript are available at <https://github.com/pteridogroup/ppg2-ms>.
 
 **AI usage.---** Generative AI was used to help write some of the code.
 Generative AI was not used to write any content of the manuscript.
@@ -447,7 +449,7 @@ A complete table of synonymy at the genus level and higher is provided in Table 
 Species counts exclude hybrids and should be considered approximate.
 All taxa are considered monophyletic unless otherwise indicated.
 Taxa at the rank of class to subfamily are presented in the order they appear in @fig-tree; genera are presented alphabetically.
-Additional information can be found on the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online (<https://www.worldfloraonline.org/>).
+Additional information can be found in the digital version of the classification at <https://pteridogroup.github.io> or at World Flora Online (<https://www.worldfloraonline.org/>).
 The classification presented here is PPG v2.0.0 (<https://doi.org/10.5281/zenodo.22760361>).
 
 ```{r}
