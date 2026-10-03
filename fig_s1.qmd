@@ -24,6 +24,7 @@ Newly recognized nothogenera counted as splits.
 Color of diamonds indicates number of splits; color of circles indicates number of sinks.
 @nitta2022open recovered Salviniales sister to Cyatheales, but this has generally not been observed in other studies [e.g., @schuettpelz2007fern; @testo20164000species; @rothfels2015evolutionary; @du2022structural], so the consensus topology is shown instead.
 Equisetales is also shown in the position that has been observed in most other recent studies, although it was recovered as sister to Ophioglossales in @nitta2022open; see Table 3.
+Cryptocaulaceae placed sister to Nephrolepidaceae after @fujiwara2026cryptocaulaceae.
 
 {{< pagebreak >}}
 
